@@ -1,0 +1,12 @@
+# Generar requerimientos:
+# ~~~~~~~~~~~~~~~~~~~~~~
+# pip freeze > requirements.txt
+#
+# Instalar requermientos:
+# ~~~~~~~~~~~~~~~~~~~~~~
+# pip install -r requirements.txt
+
+django==1.5.1
+argparse==1.2.1
+distribute==0.6.34
+wsgiref==0.1.2
