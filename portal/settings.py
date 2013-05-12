@@ -153,3 +153,11 @@ LOGGING = {
         },
     }
 }
+
+# Preparamos el entorno para cargar una
+# configuracion personalizada:
+try:
+    from local_settings import *
+except ImportError:
+    pass
+
