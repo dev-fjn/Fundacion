@@ -1,0 +1,55 @@
+#!/bin/bash
+
+# Fase I: Instalación del entorno virtual
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+apt-get install python-virtualenv virtualenvwrapper python-pip
+
+apt-get install git-flow
+
+# Creamos el fichero /etc/profile.d/virtualenvwraper.sh
+
+## ---- 8< --------------------------------------------- ##
+
+#!/bin/sh
+
+# Para virtualenv:
+export PROJECT_HOME=${HOME}/Proyectos/Python/
+
+# Preparamos el entorno para virtualenvwrapper:
+export WORKON_HOME=${HOME}/.virtualenvs
+
+# Directorio temporal para todas las operaciones
+export VIRTUALENVWRAPPER_TMPDIR=/tmp
+
+# Cargamos todo en la sesión:
+source /etc/bash_completion.d/virtualenvwrapper
+
+## ---- >8 --------------------------------------------- ##
+
+# Una vez creado este fichero, tendremos que salir de la sesión
+# para recargar los cambios.
+
+
+
+# Fase II: Personalizar el entorno
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# Directorio de Proyectos:
+cd ${PROJECT_HOME}
+
+git clone git@github.com:dev-fjn/Fundacion.git
+
+# Generamos el entorno virtual adecuado:
+mkvirtualenv -a ~/Proyectos/Python/Fundacion --no-site-packages Fundacion
+
+# Una vez dentro del  entorno, instalamos Django:
+pip install -r requirements.txt
+
+# Ejecutamos git-flow
+git-flow init -d
+
+git checkout develop
+
+## → a trabajar :)
+
