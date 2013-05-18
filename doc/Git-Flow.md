@@ -20,6 +20,7 @@ Contiene el desarrollo del proyecto
 >Se crea a partir de: -
 
 >Se integra en: -
+
 ###Rama Feature
 Cada rama contiene el desarrollo de una funcionalidad.
 
