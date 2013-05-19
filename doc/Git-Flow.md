@@ -46,7 +46,7 @@ Se corrige un fallo urgente.
 <center>![Alt "Esquema de comandos usados en Git Flow"] (https://community.jboss.org/servlet/JiveServlet/showImage/16474/RichFacesWorkflow.png) "Flujo de trabajo usando git-flow"</center>
 
 #Referencias
-  * (http://jesuslc.com/2013/04/28/cheat-sheet-sobre-git-flow-chuletaresumen/) "http://jesuslc.com/2013/04/28/cheat-sheet-sobre-git-flow-chuletaresumen/"
+  * http://jesuslc.com/2013/04/28/cheat-sheet-sobre-git-flow-chuletaresumen/
   * http://sysvar.net/es/entendiendo-git-flow/
   * http://codeloveandboards.com/blog/2013/04/06/automatiza-tu-manera-de-usar-git-con-git-flow/
 
