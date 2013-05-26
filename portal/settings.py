@@ -169,3 +169,11 @@ for f in ["settings_local.py"]:
        execfile(full)
 
 ##
+
+try:
+    from local_settings import *
+except ImportError:
+    raise ImproperlyConfigured('El fichero local_settings.py no existe. Copia el fichero local_settings.py.demo y personaliza en él tus configuraciones.')
+
+
+
