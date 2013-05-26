@@ -10,3 +10,8 @@ Fijar tanto la rama develop, en los dos extremos, como rama por defecto:
 git branch --set-upstream-to=origin/develop develop
 ```
 
+Vídeo para cuando metamos la pata con Git: 
+```sh
+http://aprendegit.com/git-la-he-liado-parda/
+```
+
