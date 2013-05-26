@@ -64,6 +64,8 @@ $ python manage.py migrate {app_name} zero
 
  * http://www.djangopro.com/2011/01/django-database-migration-tool-south-explained/
 
+ * http://www.lumile.com.ar/2012/03/migracion-de-esquemas-de-datos-en-django-usando-south/
+
 # Notas sobre Django 1.5:
  * http://unoyunodiez.com/2013/03/16/django-in-a-nutshell-i/
  * http://unoyunodiez.com/2013/04/04/django-in-a-nutshell-ii/
