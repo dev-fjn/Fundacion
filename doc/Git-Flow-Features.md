@@ -23,7 +23,7 @@ $ git checkout -b {NOMBRE_RAMA} develop
 
  * Subimos la nueva rama a github:
 ```sh
-git push origin develop
+git push origin {NOMBRE_RAMA}
 ```
 
 
