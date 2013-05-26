@@ -15,6 +15,37 @@ $ workon Proyecto
   master
 ```
 
+A partir de aquí, tenemos dos formas de hacer las cosas:
+ * usando git-flow
+ * usando git a pelo
+
+## Usemos git-flow
+
+Con git-flow, los pasos a dar son:
+
+ * Comenzamos creando la rama para la nueva característica:
+```sh
+$ git flow feature start {NOMBRE_RAMA}
+```
+
+ * Nos puede interesar subir la nueva rama al repositorio central, para que otros desarrolladores participen en la misma:
+```sh
+$ git flow feature publish {NOMBRE_RAMA}
+```
+
+ * Los demás desarrolladores, para descargarse la nueva rama, harán esto:
+```sh
+$ git flow feature track {NOMBRE_RAMA}
+```
+
+ * Una vez terminado el desarrollo, cerramos la rama de la forma correcta:
+```sh
+$ git flow feature finish {NOMBRE_RAMA}
+```
+
+
+## Usando git, a pelo
+
  * Creamos la nueva rama para comenzar a desarrollar en ella la nueva
    caracteristica
 ```sh
@@ -60,3 +91,7 @@ $ git push origin develop
 ```
 
 Con esto, finalizamos un ciclo de desarrollo para una nueva funcionalidad.
+
+## REFERENCIAS
+ * http://sysvar.net/es/usando-git-flow/
+

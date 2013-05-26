@@ -5,23 +5,27 @@ Vamos a dar por supuesto, siendo además nuestro caso, que el desarrollo que
 estamos haciendo, lo hacemos desde 0. A partir de esta presunción, estos
 serían los pasos a dar:
 
- * Cuando tengamos personalizado el entorno inicial, ejecutamos *manage.py syncdb* como lo hacemos normalmente:
+ * Cuando tengamos personalizado el entorno inicial, ejecutamos **manage.py syncdb** como lo hacemos normalmente
+
 ```sh
 $ python manage.py syncdb
 ```
 
- * ahora comenzaremos a crear las __apps__ que formarán el proyecto. Cuando creemos una nueva __app__, lo primero que vamos a hacer es ejecutar, después de adaptar el models.py, los siguientes comandos:
+
+ 1. ahora comenzaremos a crear las __apps__ que formarán el proyecto. Cuando creemos una nueva __app__, lo primero que vamos a hacer es ejecutar, después de adaptar el models.py, los siguientes comandos:
 ```sh
 $ python manage.py schemamigration {app_name} --initial
-
+```
+Ahora hacemos la migración en si:
+```sh
 $ python manage.py migrate {app_name}
 ```
 Esto se hace solo la primera vez, la inicial
 
- * A partir de aquí, cada vez que se ejecute un cambio en el models.py de esa misma aplicación, se ejecutarán estos dos pasos:
+
+ 2. A partir de aquí, cada vez que se ejecute un cambio en el models.py de esa misma aplicación, se ejecutarán estos dos pasos:
 ```sh
 $ python manage.py schemamigration {app_name} --auto
-
 $ python manage.py migrate {app_name}
 ```
 
