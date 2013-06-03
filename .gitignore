@@ -1,5 +1,16 @@
 *~
+*.swp
 *.log
 *.pot
 *.pyc
+dev.db
+
+# Personalizaciones
+# ~~~~~~~~~~~~~~~~~
+settings_local.py
 local_settings.py
+
+000.STATUS.py
+correo_gmail.py
+
+virtualenv
