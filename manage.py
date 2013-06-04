@@ -1,9 +1,17 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+'''Gestor básico de Django.'''
+
 import os
 import sys
 
-if __name__ == "__main__":
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "portal.settings")
+if __name__ == '__main__':
+
+    os.environ.setdefault(
+        'DJANGO_SETTINGS_MODULE',
+        'portal.settings'
+    )
 
     from django.core.management import execute_from_command_line
 
