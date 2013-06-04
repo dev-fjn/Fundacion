@@ -4,14 +4,14 @@
 *.pot
 *.pyc
 *.bak
-dev.db
 
 # Personalizaciones
 # ~~~~~~~~~~~~~~~~~
 settings_local.py
 local_settings.py
+*.db
 
-STATUS.py
+000.STATUS.py
 DATABASES.py
 correo_gmail.py
 
