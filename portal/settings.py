@@ -1,4 +1,6 @@
-# Django settings for portal project.
+# -*- coding: utf-8 -*-
+
+'''Django settings for portal project.'''
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -156,24 +158,14 @@ LOGGING = {
 
 # Preparamos el entorno para cargar una
 # configuracion personalizada:
-#try:
-#    from local_settings import *
-#except ImportError:
-#    pass
 
-# Sustituimos el método anterior de leer variables en el local_settings.py,
-# por este otro, menos obstrusivo:
-for f in ["settings_local.py"]:
-   full = os.path.join(os.path.dirname(__file__), f)
-   if os.path.isfile(full):
-       execfile(full)
+import os
 
-##
+PROJECT_ROOT = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
+PROJECT_NAME = 'portal'
 
-try:
-    from local_settings import *
-except ImportError:
-    raise ImproperlyConfigured('El fichero local_settings.py no existe. Copia el fichero local_settings.py.demo y personaliza en él tus configuraciones.')
-
-
-
+for root, dirs, files in os.walk(os.path.join(PROJECT_ROOT, PROJECT_NAME + '/settings.d')):
+    for f in sorted(files):
+        full = os.path.join(PROJECT_ROOT, root, f)
+        if os.path.isfile(full) and full.endswith(".py"):
+            execfile(full)
