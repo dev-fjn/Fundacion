@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}
+supertitulo
+{% endblock title %}
+
+{% block body %}
+<p>
+    Probando la plantilla base.html a las {% now "jS F Y H:i" %}.<br />
+    Hoy es {% now "l" %}<br />
+    {% now "r" %}
+</p>
+{% endblock body %}
