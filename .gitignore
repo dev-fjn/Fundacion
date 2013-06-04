@@ -3,6 +3,7 @@
 *.log
 *.pot
 *.pyc
+*.bak
 dev.db
 
 # Personalizaciones
