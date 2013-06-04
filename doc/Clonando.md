@@ -1,9 +1,9 @@
 
 cd ${PROJECT_HOME}
 
-git clone git@github.com:lcabrera/Boliche.git
+git clone git@github.com:lcabrera/Fundacion.git
 
-workon Boliche
+workon Fundacion
 
 git flow init -d
 
