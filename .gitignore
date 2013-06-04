@@ -11,7 +11,8 @@ dev.db
 settings_local.py
 local_settings.py
 
-000.STATUS.py
+STATUS.py
+DATABASES.py
 correo_gmail.py
 
 virtualenv
