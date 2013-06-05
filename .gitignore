@@ -13,6 +13,7 @@ local_settings.py
 
 000.STATUS.py
 DATABASES.py
-correo_gmail.py
+SECRET_KEY.py
+GMAIL.py
 
 virtualenv
