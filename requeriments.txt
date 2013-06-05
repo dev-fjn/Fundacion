@@ -7,11 +7,14 @@
 # pip install --upgrade -r requirements.txt
 
 Django>=1.5.1
+Fabric>=1.6.1
 South>=0.8.1
 argparse>=1.2.1
-distribute>=0.6.34
+distribute>=0.6.45
 django-debug-toolbar>=0.9.4
 docutils>=0.10
 gunicorn>=0.17.4
 ipython>=0.13.2
+paramiko>=1.10.1
+pycrypto>=2.6
 wsgiref>=0.1.2
