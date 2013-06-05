@@ -1,0 +1,8 @@
+Todos los ficheros que se depositen en este directorio, y que además
+tengan la extensión *.py, serán leidos durante el arranque del sistema.
+
+Este directorio será utilizado para configurar variables que serán de
+uso personal de cada uno de los desarrolladores.
+
+Los ficheros incluidos en este directorio, no serán incorporados al
+repositorio público.
