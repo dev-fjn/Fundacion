@@ -160,9 +160,9 @@ Workflow para un deploy con Fabric:
 
 """
 
-import os
-
 from __future__ import with_statement
+
+import os
 
 from fabric.api import *
 from fabric.contrib.console import confirm
@@ -173,54 +173,55 @@ from fabric.context_managers import cd, prefix
 # TODO: Reordenar todo este lio en la cabeza y convertirlo en algo práctico.
 
 PROJECT_NAME = 'portal'
-env.project_name = 'project_name'
-
 REPOS = (
     ('my_project', 'origin', 'master'),
-    ('my_app', 'origin', 'master'))
+    ('my_app', 'origin', 'master'),
+)
 
+env.project_name = 'project_name'
 env.roledefs = {
     'dev': ['dev.re-cycledair.com'],
     'staging': ['staging.re-cycledair.com'],
-    'live': ['re-cycledair.com']}
+    'prod': ['re-cycledair.com'],
+}
 
 ########################################################################
 # Listado de Funciones
 ########################################################################
 
-
 def build_commit(warn_only=True):
-    """Build a commit"""
+    '''Hacer commit seguro.'''
 
     local_branch = prompt('checkout branch: ')
     rebase_branch = prompt('rebase branch: ')
 
-    local('git checkout %s' % local_branch)
-    local('git add .')
-    local('git add -u .')
+    #local('git checkout %s' % local_branch)
+    #local('git add .')
+    #local('git add -u .')
 
     message = prompt('commit message: ')
 
-    local('git commit -m "%s"' % message)
-    local('git checkout %s' % rebase_branch)
-    local('git pull origin %s' % rebase_branch)
-    local('git checkout %s' % local_branch)
-    local('git rebase %s' % rebase_branch)
-    local('git checkout %s' % rebase_branch)
-    local('git merge %s' % local_branch)
-    local('git push origin %s' % rebase_branch)
-    local('git checkout %s' % local_branch)
-
+    #local('git commit -m "%s"' % message)
+    #local('git checkout %s' % rebase_branch)
+    #local('git pull origin %s' % rebase_branch)
+    #local('git checkout %s' % local_branch)
+    #local('git rebase %s' % rebase_branch)
+    #local('git checkout %s' % rebase_branch)
+    #local('git merge %s' % local_branch)
+    #local('git push origin %s' % rebase_branch)
+    #local('git checkout %s' % local_branch)
+    print red('Finalizando build_commit.')
 
 def collectstatic():
     ''' Fijar los ficheros estáticos. '''
 
-    with cd(os.path.join(env.directory, PROJECT_NAME)):
+    #with cd(os.path.join(env.directory, PROJECT_NAME)):
 
-        # TODO research: with prefix('workon myvenv'):
+    #    # TODO research: with prefix('workon myvenv'):
 
-        with prefix('source ' + env.activate):
-            run('./manage.py collectstatic --noinput')
+    #    with prefix('source ' + env.activate):
+    #        run('./manage.py collectstatic --noinput')
+    print red('Finalizando collectstatic.')
 
 
 def deploy():
@@ -230,40 +231,43 @@ def deploy():
     then restart the webserver
     """
 
-    require('hosts', provided_by=[local])
-    require('path')
+    #require('hosts', provided_by=[local])
+    #require('path')
 
     import time
     env.release = time.strftime('%Y%m%d%H%M%S')
+    print green(env.release)
 
-    upload_tar_from_git()
-    install_requirements()
-    install_site()
-    symlink_current_release()
-    migrate()
-    restart_webserver()
+    #upload_tar_from_git()
+    #install_requirements()
+    #install_site()
+    #symlink_current_release()
+    #migrate()
+    #restart_webserver()
+    print red('Finalizando deploy.')
 
 
 def deploy2():
+    '''Faltaba el docstring.'''
 
     # TODO: add a initialise function which sets the project up fresh
     # TODO: do DB backups here
     # TODO: pip update requirements.txt here
 
-    git_pull()  # could switch branches here
+    #git_pull()  # could switch branches here
 
     # could tag the release
     # TODO: research symlinking different versions of the site
 
-    rsync()
-    install_requirements()
+    #rsync()
+    #install_requirements()
 
-    # TODO: how to stop fixtures running on live if using them
+    # TODO: how to stop fixtures running on prod if using them
 
-    migrate_database()
-    collectstatic()
-    restart_webserver()
-
+    #migrate_database()
+    #collectstatic()
+    #restart_webserver()
+    print red('Finalizando deploy2.')
 
 @roles('staging')
 def deploy_staging(tag=False):
@@ -273,153 +277,283 @@ will deploy the head of the master branch and
     fab deploy_staging:tag=1.0.0
 will deploy the 1.0.0 tag.'''
 
-    code_dir = '/path/to/remote/directory'
-    with cd(code_dir):
-        run('git fetch')
-        if tag:
-            run('git checkout %s' % tag)
-        else:
-            run('git checkout master')
-            run('git pull origin master')
+    #code_dir = '/path/to/remote/directory'
+    #with cd(code_dir):
+    #    run('git fetch')
+    #    if tag:
+    #        run('git checkout %s' % tag)
+    #    else:
+    #        run('git checkout master')
+    #        run('git pull origin master')
 
-        with prefix('source /path/to/virtual/environment/bin/activate'):
-            run('pip install -r requirements.txt')
-            run('python manage.py syncdb')
-            run('python manage.py migrate')
-            run('python manage.py collectstatic --noinput')
-            run('touch path/to/wsgi.py')
-
+    #    with prefix('source /path/to/virtual/environment/bin/activate'):
+    #        run('pip install -r requirements.txt')
+    #        run('python manage.py syncdb')
+    #        run('python manage.py migrate')
+    #        run('python manage.py collectstatic --noinput')
+    #        run('touch path/to/wsgi.py')
+    print red('Finalizando deploy_staging.')
 
 def deploy_vagrant():
     ''' ... '''
+
     git_pull()
     install_requirements()
     migrate_database()
     collectstatic()
     restart_apache()
-
+    print red('Finalizando deploy_vagrant.')
 
 def deploy_version(version):
-    '''Specify a specific version to be made live'''
+    '''Specify a specific version to be made prod'''
 
-    require('hosts', provided_by=[local])
-    require('path')
+    #require('hosts', provided_by=[local])
+    #require('path')
 
-    env.version = version
-    run('cd $(path); \
-        rm releases/previous; mv releases/current releases/previous;')
-    run('cd $(path); ln -s $(version) releases/current')
+    #env.version = version
+    #run('cd $(path); \
+    #    rm releases/previous; mv releases/current releases/previous;')
+    #run('cd $(path); ln -s $(version) releases/current')
     restart_webserver()
+    print red('Finalizando deploy_version.')
 
 
 def develop():
-    env.hosts = ['127.0.0.1']
-    env.user = 'vagrant'
-    env.port = 2222
+    '''Faltaba el docstring.'''
+
+    #env.hosts = ['127.0.0.1']
+    #env.user = 'vagrant'
+    #env.port = 2222
 
     # TODO: read from conf file generated by chef
 
-    env.directory = '/var/www/favouritequestion.com/'
-    env.activate = '/venv/bin/activate'
-    env.git_repo_path = '/var/www/favouritequestion.com/'
-    env.forward_agent = True
+    #env.directory = '/var/www/favouritequestion.com/'
+    #env.activate = '/venv/bin/activate'
+    #env.git_repo_path = '/var/www/favouritequestion.com/'
+    #env.forward_agent = True
+    print red('Finalizando develop.')
 
 
 def git_pull():
     '''Updates the repository.'''
 
-    run('cd ~/git/$(repo)/; git pull $(parent) $(branch)')
+    #run('cd ~/git/$(repo)/; git pull $(parent) $(branch)')
+    print red('Finalizando git_pull.')
 
 
 def git_pull2():
     '''Updates the repository.'''
 
-    run('cd ~/git/$(repo)/; git pull $(parent) $(branch)')
+    #run('cd ~/git/$(repo)/; git pull $(parent) $(branch)')
+    print red('Finalizando git_pull2.')
 
 
 def git_pull3():
-    ''' ... '''
+    '''Actualizando el repositorio.'''
 
-    with cd(env.git_repo_path):
+    #with cd(env.git_repo_path):
 
-        # TODO: take branch or tag as an argument
+    #    # TODO: take branch or tag as an argument
 
-        run('git pull origin master')
+    #    run('git pull origin master')
 
 
     # TODO: also update the config repo (this should be checked out with ssh
     # keys as the GuntOps bit bucket user)
-
+    print red('Finalizando git_pull3.')
 
 def git_reset():
     '''Resets the repository to specified version.'''
 
-    run('cd ~/git/$(repo)/; git reset --hard $(hash)')
+    #run('cd ~/git/$(repo)/; git reset --hard $(hash)')
+    print red('Finalizando git_reset.')
 
- 
+
 def git_reset2():
     '''Resets the repository to specified version.'''
 
-    run('cd ~/git/$(repo)/; git reset --hard $(hash)')
+    #run('cd ~/git/$(repo)/; git reset --hard $(hash)')
+    print red('Finalizando git_pull2.')
 
 
 def install_requirements():
     '''Install the required packages from the requirements file using pip'''
 
-    require('release', provided_by=[deploy, setup])
-    run('cd $(path); \
-        pip install -E . -r ./releases/$(release)/requirements.txt')
+    #require('release', provided_by=[deploy, setup])
+    #run('cd $(path); \
+    #    pip install -E . -r ./releases/$(release)/requirements.txt')
+    print red('Finalizando requirements.')
 
 
 def install_requirements2():
     ''' ... '''
 
-    with cd(os.path.join(env.directory)):
-        with prefix('source ' + env.activate):
-            run('pip install -r requirements/requirements.txt')
-            run('pip install -r requirements/requirements_production.txt')
+    #with cd(os.path.join(env.directory)):
+    #    with prefix('source ' + env.activate):
+    #        run('pip install -r requirements/requirements.txt')
+    #        run('pip install -r requirements/requirements_production.txt')
+    print red('Finalizando requirements2.')
 
 
 def install_site():
     '''Add the virtualhost file to apache'''
 
-    require('release', provided_by=[deploy, setup])
-    sudo('cd $(path)/releases/$(release); \
-        cp $(project_name)$(virtualhost_path)$(project_name) \
-        /etc/apache2/sites-available/')
-    sudo('cd /etc/apache2/sites-available/; a2ensite $(project_name)')
+    #require('release', provided_by=[deploy, setup])
+    #sudo('cd $(path)/releases/$(release); \
+    #    cp $(project_name)$(virtualhost_path)$(project_name) \
+    #    /etc/apache2/sites-available/')
+    #sudo('cd /etc/apache2/sites-available/; a2ensite $(project_name)')
+    print red('Finalizando install_site.')
 
 
-def localVirtualServer():
+def local_virtual_server():
     '''Use the local virtual server'''
 
-    env.hosts = ['172.16.142.130']
-    env.path = '/path/to/project_name'
-    env.user = 'garethr'
-    env.virtualhost_path = '/'
+    #env.hosts = ['172.16.142.130']
+    #env.path = '/path/to/project_name'
+    #env.user = 'garethr'
+    #env.virtualhost_path = '/'
+    print red('Finalizando local_virtual_server.')
 
 
 @roles('dev')
 def ls_on_dev():
+    '''Faltaba el docstring.'''
 
-    run('ls')  # Runs 'ls' on dev.re-cycledair.com
+    #run('ls')  # Runs 'ls' on dev.re-cycledair.com
+    print red('Finalizando ls_on_dev.')
 
 
 @roles('staging')
 def ls_on_staging():
+    '''Faltaba el docstring.'''
 
-    run('ls')  # Runs 'ls' on staging.re-cycledair.com
+    #run('ls')  # Runs 'ls' on staging.re-cycledair.com
+    print red('Finalizando ls_on_staging.')
 
 
+def migrate():
+    '''Update the database'''
+
+    #require('project_name')
+    #run('cd $(path)/releases/current/$(project_name); \
+    #    ../../../bin/python manage.py syncdb --noinput')
+    print red('Finalizando migrate.')
 
 
+def migrate_database():
+    '''Faltaba docstring.'''
 
-# tasks
+    #with cd(os.path.join(env.directory, PROJECT_NAME)):
+    #    with prefix('source ' + env.activate):
 
-def test():
-    '''Run the test suite and bail out if it fails'''
+    #        # Could use fexpect as an alternative
+    #        # https://pypi.python.org/pypi/fexpect
 
-    local('cd $(project_name); python manage.py test', fail='abort')
+    #        run('echo "no\n"| python manage.py syncdb')
+    #        run('python manage.py migrate')
+    print red('Finalizando migrate_database.')
+
+
+def production():
+    '''Faltaba el docstring.'''
+
+    #env.fab_hosts = ['a.example.com']
+    #env.repos = REPOS
+    print red('Finalizando production.')
+
+
+def production2():
+    '''Faltaba docstring.'''
+
+    #env.hosts = ['54.228.188.132']
+    #env.user = 'ec2-user'
+    #env.directory = '/srv/www/www.favouritequestion.com/'
+    #env.activate = \
+    #    '/home/ec2-user/virtualenv/favouriteQ/env/bin/activate'
+    #env.git_repo_path = '/srv/www/git_favouriteQ/'
+    #env.key_filename = ['~/.ssh/django.pem']
+    #env.server_name = 'favourite_q' # The name supervisor uses
+    print red('Finalizando production2.')
+
+
+def pull():
+    '''Faltaba el docstring.'''
+
+    #require('fab_hosts', provided_by=[production])
+
+    #for (repo, parent, branch) in env.repos:
+    #    env.repo = repo
+    #    env.parent = parent
+    #    env.branch = branch
+    #    # TODO: invoke no es reconocido como comando.
+    #    #invoke(git_pull)
+    print red('Finalizando pull.')
+
+def reboot2():
+    '''Reboot Apache2 server.'''
+
+    #sudo('apache2ctl graceful')
+    print red('Finalizando reboot2.')
+
+
+def restart_apache():
+    '''Faltaba docstring.'''
+
+    #sudo('/etc/init.d/apache2 restart')
+    print red('Finalizando restart_apache.')
+
+
+def restart_webserver():
+    '''Restart the web server'''
+
+    #sudo('/etc/init.d/apache2 restart')
+    print red('Finalizando restart_webserver.')
+
+
+def restart_webserver2():
+    """ Restart Gnunicorn wih Supervisor """
+
+    #sudo('supervisorctl restart ' + env.server_name)
+    print red('Finalizando restart_webserver2.')
+
+
+def rollback():
+    """
+    Limited rollback capability. Simple loads the previously current
+    version of the code. Rolling back again will swap between the two.
+    """
+
+    require('hosts', provided_by=[local])
+    require('path')
+
+    run('cd $(path); mv releases/current releases/_previous;')
+    run('cd $(path); mv releases/previous releases/current;')
+    run('cd $(path); mv releases/_previous releases/previous;')
+    restart_webserver()
+
+
+def rsync():
+    '''Faltaba docstring.'''
+
+    run('rsync -av --delete --exclude .git* --exclude localsettings.py '
+         + env.git_repo_path + ' ' + env.directory)
+
+
+def server():
+    """This pushes to the EC2 instance defined below"""
+
+    # The Elastic IP to your server
+
+    env.host_string = '999.999.999.999'
+
+    # your user on that system
+
+    env.user = 'ubuntu'
+
+    # Assumes that your *.pem key is in the same directory as your fabfile.py
+
+    env.key_filename = 'my_ec2_security_group.pem'
 
 
 def setup():
@@ -441,171 +575,81 @@ def setup():
 
     sudo('cd /etc/apache2/sites-available/; a2dissite default;')
     run('mkdir -p $(path); cd $(path); virtualenv .;')
+    # TODO: revisar el uso de la opción fail en este comando.
     run('cd $(path); mkdir releases; mkdir shared; mkdir packages;',
         fail='ignore')
     deploy()
 
 
-def rollback():
-    """
-    Limited rollback capability. Simple loads the previously current
-    version of the code. Rolling back again will swap between the two.
-    """
-
-    require('hosts', provided_by=[local])
-    require('path')
-
-    run('cd $(path); mv releases/current releases/_previous;')
-    run('cd $(path); mv releases/previous releases/current;')
-    run('cd $(path); mv releases/_previous releases/previous;')
-    restart_webserver()
-
-
-# Helpers. These are called by other functions rather than directly
-
-def upload_tar_from_git():
-    require('release', provided_by=[deploy, setup])
-    local('git archive --format=tar master | gzip > $(release).tar.gz')
-    run('mkdir $(path)/releases/$(release)')
-    put('$(release).tar.gz', '$(path)/packages/')
-    run('cd $(path)/releases/$(release); \
-        tar zxf ../../packages/$(release).tar.gz')
-    local('rm $(release).tar.gz')
-
-
-def symlink_current_release():
-    '''Symlink our current release'''
-
-    require('release', provided_by=[deploy, setup])
-    run('cd $(path); \
-        rm releases/previous; \
-        mv releases/current releases/previous;', fail='ignore')
-    run('cd $(path); ln -s $(release) releases/current')
-
-
-def migrate():
-    '''Update the database'''
-
-    require('project_name')
-    run('cd $(path)/releases/current/$(project_name); \
-        ../../../bin/python manage.py syncdb --noinput')
-
-
-## http://lethain.com/deploying-django-with-fabric/
-
-def restart_webserver():
-    '''Restart the web server'''
-
-    sudo('/etc/init.d/apache2 restart')
-
-
-def production():
-    env.fab_hosts = ['a.example.com']
-    env.repos = REPOS
-
-
 def staging():
+    '''Faltaba el docstring.'''
+
     env.fab_hosts = ['a.staging_example.com']
     env.repos = REPOS
 
 
-def reboot():
-    '''Reboot Apache2 server.'''
-
-    sudo('apache2ctl graceful')
 
 
-def pull():
-    require('fab_hosts', provided_by=[production])
-    for (repo, parent, branch) in env.repos:
-        env.repo = repo
-        env.parent = parent
-        env.branch = branch
-        invoke(git_pull)
 
 
-def test2():
-    local('python manage.py test', fail='abort')
 
 
-def reset(repo, hash):
-    """
-    Reset all git repositories to specified hash.
-    Usage:
-        fab reset:repo=my_repo,hash=etcetc123
-    """
 
-    require('fab_hosts', provided_by=[production])
-    env.hash = hash
-    env.repo = repo
-    invoke(git_reset)
+
+
+
+
+# tasks
+
+
+
+# Helpers. These are called by other functions rather than directly
+
+
+
+## http://lethain.com/deploying-django-with-fabric/
+
 
 
 ## http://www.yaconiello.com/blog/ \
 ##    deploying-django-site-fabric/#sthash.Yl5n8ExY.LZsro5zM.dpbs
 
-
-
-def server():
-    """This pushes to the EC2 instance defined below"""
-
-    # The Elastic IP to your server
-
-    env.host_string = '999.999.999.999'
-
-    # your user on that system
-
-    env.user = 'ubuntu'
-
-    # Assumes that your *.pem key is in the same directory as your fabfile.py
-
-    env.key_filename = 'my_ec2_security_group.pem'
-
-
 def staging2():
     ''' ... '''
 
     # path to the directory on the server where your vhost is set up
-
-    path = '/home/ubuntu/www/dev.yaconiello.com'
+    server_path = '/home/ubuntu/www/dev.yaconiello.com'
 
     # name of the application process
-
     process = 'staging'
 
     print red('Beginning Deploy:')
 
-    with cd('%s/app' % path):
+    with cd('%s/app' % server_path):
 
         run('pwd')
 
         print green('Pulling master from GitHub...')
-
         run('git pull origin master')
 
         print green('Installing requirements...')
-
         run('source %s/venv/bin/activate && pip install -r requirements.txt'
-             % path)
+             % server_path)
 
         print green('Collecting static files...')
-
         run("source %s/venv/bin/activate && python manage.py collectstatic \
             --noinput"
-             % path)
+             % server_path)
 
         print green('Syncing the database...')
-
         run('source %s/venv/bin/activate && python manage.py syncdb'
-            % path)
+            % server_path)
 
         print green('Migrating the database...')
-
         run('source %s/venv/bin/activate && python manage.py migrate'
-            % path)
+            % server_path)
 
         print green('Restart the uwsgi process')
-
         run('sudo service %s restart' % process)
 
     print red('DONE!')
@@ -613,22 +657,9 @@ def staging2():
 
 ## http://www.re-cycledair.com/deploying-django-with-fabric
 
-
-def production2():
-    env.hosts = ['54.228.188.132']
-    env.user = 'ec2-user'
-    env.directory = '/srv/www/www.favouritequestion.com/'
-    env.activate = \
-        '/home/ec2-user/virtualenv/favouriteQ/env/bin/activate'
-    env.git_repo_path = '/srv/www/git_favouriteQ/'
-    env.key_filename = ['~/.ssh/django.pem']
-
-    # The name supervisor uses
-
-    env.server_name = 'favourite_q'
-
-
 def staging3():
+    '''Faltaba docstring.'''
+
     env.hosts = ['54.228.188.132']
     env.user = 'ec2-user'
     env.directory = '/srv/www/staging.favouritequestion.com/'
@@ -641,34 +672,45 @@ def staging3():
     env.key_filename = ['~/.ssh/django.pem']
 
     # The name supervisor uses
-
     env.server_name = 'favourite_q_staging'
 
 
-def restart_apache():
-    sudo('/etc/init.d/apache2 restart')
+def symlink_current_release():
+    '''Symlink our current release'''
+
+    require('release', provided_by=[deploy, setup])
+    # TODO: Revisar el uso del parámetro fail en esta orden.
+    run('cd $(path); \
+        rm releases/previous; \
+        mv releases/current releases/previous;', fail='ignore')
+    run('cd $(path); ln -s $(release) releases/current')
 
 
-def rsync():
-    run('rsync -av --delete --exclude .git* --exclude localsettings.py '
-         + env.git_repo_path + ' ' + env.directory)
+def test():
+    '''Run the test suite and bail out if it fails.
+
+Hay un aviso sobre el parámetro fail. Revisarlo.'''
+
+    local('cd $(project_name); python manage.py test', fail='abort')
 
 
-def migrate_database():
-    with cd(os.path.join(env.directory, PROJECT_NAME)):
-        with prefix('source ' + env.activate):
+def test2():
+    '''Faltaba el docstring.'''
 
-            # Could use fexpect as an alternative
-            # https://pypi.python.org/pypi/fexpect
-
-            run('echo "no\n"| python manage.py syncdb')
-            run('python manage.py migrate')
+    # TODO: revisar el uso de fail en esta línea.
+    local('python manage.py test', fail='abort')
 
 
-def restart_webserver2():
-    """ Restart Gnunicorn wih Supervisor """
+def upload_tar_from_git():
+    '''Faltaba docstring.'''
 
-    sudo('supervisorctl restart ' + env.server_name)
+    require('release', provided_by=[deploy, setup])
+    local('git archive --format=tar master | gzip > $(release).tar.gz')
+    run('mkdir $(path)/releases/$(release)')
+    put('$(release).tar.gz', '$(path)/packages/')
+    run('cd $(path)/releases/$(release); \
+        tar zxf ../../packages/$(release).tar.gz')
+    local('rm $(release).tar.gz')
 
 
 # def syncdb():
