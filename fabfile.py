@@ -143,15 +143,46 @@ you can do the following.
 
 
 
+Los 3 estados que contemplamos:
+    * dev
+    * beta / staging
+    * prod
 
-Workflow para un deploy con Fabric:
+
+Ejemplos de órdenes compuestas:
+
+Configuración
+
+    fab setup virtualenv
+    fab setup user
+    fab setup db
+    fab setup webserver
+
+    fab setup virtualenv
+    fab setup user
+    fab setup db
+    fab setup webserver
+
+    fab setup virtualenv
+    fab setup user
+    fab setup db
+    fab setup webserver
+
+Puesta en marcha
+
+    fab deploy dev
+    fab deploy beta
+    fab deploy prod
+
+
+Workflow para trabajar con Fabric:
 
 .
 └── workflow
     ├── deploy
     │   ├── dev
     │   ├── prod
-    │   └── staging
+    │   └── beta / staging
     └── setup
         ├── db
         ├── user
@@ -173,19 +204,70 @@ from fabric.context_managers import cd, prefix
 # TODO: Reordenar todo este lio en la cabeza y convertirlo en algo práctico.
 
 PROJECT_NAME = 'portal'
+DOMAIN = 'fundacionjuannegrin.com'
 REPOS = ((PROJECT_NAME, 'origin', 'master'),)
 
 env.project_name = PROJECT_NAME
 env.roledefs = {
-    'dev': ['dev.re-cycledair.com'],
-    'staging': ['scycledair.com'],
-    'prod': ['re-cycledair.com'],
+    'dev': ['dev.' + DOMAIN],
+    'beta': ['beta' + DOMAIN],
+    'prod': ['www' + DOMAIN],
 }
 
 
 ########################################################################
 # Definición de los Entornos
 #######################################################################
+
+def setup():
+    '''setup(): Definimos todo lo necesario para crear las diferentes
+    configuraciones.
+
+    * Preguntamos por el estado a usar
+    *
+
+    '''
+
+    prompt('¿Ámbito en el que vamos a trabajar? (dev, beta, prod): ',
+            key = 'status', default = 'dev')
+    if env.status == 'dev':
+        print 'dev'
+        with prefix('workon myvenv'):
+            run('./manage.py syncdb')
+    elif env.status == 'beta':
+        print 'beta'
+    elif env.status == 'prod':
+        print 'prod'
+    else:
+        print 'Entrada no válido'
+
+    print green('Fijamos el entorno de trabajo en %s' % env.status)
+
+    print red('Saliendo de setup()')
+
+
+def deploy():
+    '''[deploy()] Herramienta para hacer los distintos tipos de deploy.'''
+
+    env.hosts = prompt('IP del host de destino: ')
+
+    print red('Saliendo de deploy()')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 def develop():
     '''Faltaba el docstring.'''
@@ -297,7 +379,7 @@ def collectstatic():
     print red('Finalizando collectstatic.')
 
 
-def deploy():
+def deploy1():
     """
     Deploy the latest version of the site to the servers, install any
     required third party modules, install the virtual host and
@@ -571,7 +653,7 @@ def rsync():
     print red('Finalizando rsync.')
 
 
-def setup():
+def setup2():
     """
     Setup a fresh virtualenv as well as a few useful directories, then run
     a full deployment
@@ -656,6 +738,7 @@ def staging2():
     print red('Finalizando staging2.')
 
 ## http://www.re-cycledair.com/deploying-django-with-fabric
+
 
 def symlink_current_release():
     '''Symlink our current release'''
