@@ -153,19 +153,25 @@ Ejemplos de órdenes compuestas:
 
 Configuración
 
+    fab setup system
+        _ añadir a /etc/skell: ~/Proyectos/Python
+        _ Copiar a /etc/profile.d: virtualenvwraper.sh
+        _ apt-get install python-virtualenv virtualenvwrapper python-pip git-flow
+        _ apt-get install makepasswd
+        _ instalar apache/nginx/varnish/loquetoque
     fab setup virtualenv
+        _ cd ${PROJECT_HOME}
+        _ mkdir Fundacion
+        _ git clone ...
+        _ mkvirtualenv -a ~/Proyectos/Python/Fundacion --no-site-packages Fundacion
+        _ pip install --upgrade -r requirements.txt
     fab setup user
+        _ makepasswd --chars 50 > /Proyectos/Python/Fundacion/portal/settings_local.d/SECRET_KEY.py
+        _ cp ~/Python/Fundacion/portal/settings.d/000.STATUS.py.demo ~/Proyectos/Python/Fundacion/portal/settings.d/000.STATUS.py
+        _ Modificar STATUS según sea beta o producción
     fab setup db
-    fab setup webserver
-
-    fab setup virtualenv
-    fab setup user
-    fab setup db
-    fab setup webserver
-
-    fab setup virtualenv
-    fab setup user
-    fab setup db
+        _ cp ~/Proyectos/Python/Fundacion/portal/settings_local.d/DATABASES.py.demo ~/Proyectos/Python/Fundacion/portal/settings_local.d/DATABASES.py
+        _ ./manage.py syncdb
     fab setup webserver
 
 Puesta en marcha
