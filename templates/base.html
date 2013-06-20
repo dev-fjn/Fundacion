@@ -1,3 +1,4 @@
+{% load i18n %}
 <!DOCTYPE html>
 <!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7">	<![endif]-->
 <!--[if    IE 7]>		<html class="no-js lt-ie9 lt-ie8">			<![endif]-->
@@ -37,11 +38,10 @@
 							login
 						</div>
 					</div>
-
-					<div class="">banner</div>
-
-					<div class="searchbox">Buscador</div>
-
+					
+					<div class="">{% trans "banner" %}</div>
+					
+					<div class="searchbox">{% trans "Buscador" %}</div>
 					<div class="menubox">
 						<div class="mymenus">
 							<nav>
@@ -72,6 +72,18 @@
 						<div class="chromeframe">
 							<p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 						</div>
+
+						<!-- formulario seleccion idioma django -->
+						<form action="/i18n/setlang/" method="post">
+							{% csrf_token %}
+							<!--<input name="next" type="hidden" value="/next/page/" />-->
+							<select name="language">
+								{% for lang in LANGUAGES %}
+								<option value="{{ lang.0 }}">{{ lang.1 }}</option>
+								{% endfor %}
+							</select>
+							<input type="submit" value="{% trans 'Go' %}" />
+						</form>
 
 				</header>
 			</section>
@@ -112,7 +124,7 @@
 
 			<div class="footer-container">
 				<footer class="wrapper">
-					<h3>footer</h3>
+					<h3>footer {% now "DATE_FORMAT" %}</h3>
 				</footer>
 			</div>
 
