@@ -1,0 +1,60 @@
+// ---------------------------------------------------------------------------
+// Imports
+@import "compass/reset";
+@import "compass/css3";
+@import "susy";
+
+// ---------------------------------------------------------------
+// http://www.shingokko.com/blog-entry/responsively-design-a-blog.html
+// http://lab.xms.pl/css-generator/
+// ---------------------------------------------------------------------
+
+// Basic Grid
+
+$total-columns  : 12;
+$column-width   : 4em;
+$gutter-width   : 1em;
+//$grid-padding   : $gutter-width;
+$grid-padding   : 0;
+
+//$container-width: 60em;
+
+$container-style: magic;
+//$container-style: fluid;
+//$container-style: fixed;
+
+
+$show-grid-backgrounds				: true;
+$show-column-grid-backgrounds		: true;
+$show-baseline-grid-backgrounds		: true;
+
+$grid-background-baseline-color		: rgba(  0,   0,   0, 1    );
+$grid-background-column-color		: rgba(191, 191, 191, 0.75 );
+$grid-background-gutter-color		: rgba(127, 127, 127, 0.75 );
+
+$tamaño_base						: 16;
+$base_font_size_px					: $tamaño_base;
+$base_line_height_px				: 24;
+$font_base							: $base_font_size_px;
+
+// COLORES
+// ~~~~~~~
+
+$color01: #ffffff;	// 255 255 255
+$color02: #ffeab4;	// 255 234 180
+$color03: #e4b368;	// 228 179 104
+$color04: #cf4902;	// 207  73   2
+$color05: #9d897c;	// 157 137 124
+$color06: #8ea797;	// 142 167 151
+$color07: #784421;	// 120  68  33	// 04
+$color08: #5c7565;	//  92 117 101
+$color09: #48261c;	//  72  38  28	// 06
+$color10: #294d5b;	//  41  77  91
+$color11: #183c4a;	//  24  60  74
+$color12: #000000;	//   0   0   0
+$color13: #603920;
+
+////////////////////////////////////////////////////////////////////////
+@import "funciones";
+@import "mixins";
+@import "style";

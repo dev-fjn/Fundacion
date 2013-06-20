@@ -158,6 +158,7 @@ Configuración
         _ Copiar a /etc/profile.d: virtualenvwraper.sh
         _ apt-get install python-virtualenv virtualenvwrapper python-pip git-flow
         _ apt-get install makepasswd
+        _ apt-get install gnulib (buscamos readline, pero peligro con las dependencias)
         _ instalar apache/nginx/varnish/loquetoque
     fab setup virtualenv
         _ cd ${PROJECT_HOME}
