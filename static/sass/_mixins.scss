@@ -1,0 +1,101 @@
+// Mixins
+
+/* ******************************************************************
+ * Mixins principal
+ *
+ * grid/mixins
+ *
+********************************************************************* */
+
+// clearfix from http://nicolasgallagher.com/micro-clearfix-hack/
+@mixin clearfix() {
+	*zoom:1;
+
+	&:before,
+	&:after {
+		content:"";
+		display:table;
+	}
+	&:after {
+		clear:both;
+	}
+}
+
+.clearfix {
+	@include clearfix;
+}
+
+// Trabaja con filas
+// ~~~~~~~~~~~~~~~~~
+@mixin row($columns:$columns) {
+	display: block;
+	width: $total-width*(($gutter-width + gridsystem-width($columns))/gridsystem-width($columns));
+	margin: 0 $total-width*((($gutter-width*.5)/gridsystem-width($columns))*-1);
+	// *width: $total-width*(($gutter-width + gridsystem-width($columns))/gridsystem-width($columns))-$correction;
+	// *margin: 0 $total-width*((($gutter-width*.5)/gridsystem-width($columns))*-1)-$correction;
+	@include clearfix();
+}
+
+// Columnas
+// ~~~~~~~~
+@mixin column($x,$columns:$columns) {
+	display: inline;
+	float: left;
+	width: $total-width*(((($gutter-width+$column-width)*$x)-$gutter-width) / gridsystem-width($columns));
+	margin: 0 $total-width*(($gutter-width*.5)/gridsystem-width($columns));
+	// *width: $total-width*(((($gutter-width+$column-width)*$x)-$gutter-width) / gridsystem-width($columns))-$correction;
+	// *margin: 0 $total-width*(($gutter-width*.5)/gridsystem-width($columns))-$correction;
+}
+
+// Push
+// ~~~~
+@mixin push($offset:1) {
+	margin-left: $total-width*((($gutter-width+$column-width)*$offset) / gridsystem-width($columns)) + $total-width*(($gutter-width*.5)/gridsystem-width($columns));
+}
+
+// Pull
+// ~~~~
+@mixin pull($offset:1) {
+	margin-right: $total-width*((($gutter-width+$column-width)*$offset) / gridsystem-width($columns)) + $total-width*(($gutter-width*.5)/gridsystem-width($columns));
+}
+
+// ====================================================================
+// Fondo degradado.
+//
+// http://css-tricks.com/forums/discussion/17614/lets-learn-sass-together-/p1
+// ====================================================================
+@mixin linear-gradient($fromColor, $toColor) {
+	background-color: $fromColor;
+	@include filter-gradient($fromColor, $toColor, vertical);
+	$experimental-support-for-svg: true;
+	@include background-image(linear-gradient(top, $fromColor 0%,$toColor 100%));
+}
+
+// ====================================================================
+// Menús reutilizables
+//
+// http://sachagreif.com/useful-sass-mixins/
+// ====================================================================
+$color-2: red;
+$color-5: blue;
+
+@mixin navigation-list() {
+	list-style-type: none;
+	margin: 0;
+	overflow: hidden;
+	> li {
+		display: block;
+		float: left;
+		padding-left: .25em;
+		padding-right: .25em;
+		&:last-child {
+			margin-right: 0;
+		}
+		&.current{
+			color: $color-2!important;
+			&:hover {
+				background-color:   $color-5;
+			}
+		}
+	}
+}
