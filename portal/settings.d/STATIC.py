@@ -15,11 +15,6 @@ if DEBUG and not PRODUCCION:
     STATICFILES_DIRS = (
         #os.path.join(PROJECT_ROOT, 'blog/static'),
     )
-    print 'PROJECT_ROOT = %s' % PROJECT_ROOT
-    print 'STATIC_ROOT = %s' % STATIC_ROOT
-    print 'STATIC_URL = %s' % STATIC_URL
-    #print 'STATIC_DIR = %s' % STATIC_DIR
-    pass
 elif DEBUG and PRODUCCION:
     # Beta
     #STATIC_ROOT = '/var/www/produccion/static'
