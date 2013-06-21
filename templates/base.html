@@ -1,4 +1,4 @@
-{% load i18n %}
+{% load i18n staticfiles %}
 <!DOCTYPE html>
 <!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7">	<![endif]-->
 <!--[if    IE 7]>		<html class="no-js lt-ie9 lt-ie8">			<![endif]-->
@@ -15,16 +15,17 @@
 		<!-- http://developer.apple.com/library/ios/#documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html -->
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-		<link href="img/ios/touch-icon-iphone.png"        rel="apple-touch-icon" sizes="57x57" />
-		<link href="img/ios/touch-icon-ipad.png"          rel="apple-touch-icon" sizes="72x72" />
-		<link href="img/ios/touch-icon-iphone-retina.png" rel="apple-touch-icon" sizes="114x114" />
-		<link href="img/ios/touch-icon-ipad-retina.png"   rel="apple-touch-icon" sizes="144x144" />
-		<link href="img/ios/startup.png"                  rel="apple-touch-startup-image" />
+        <link href="{{STATIC_URL}}img/ios/touch-icon-iphone.png"        rel="apple-touch-icon" sizes="57x57" />
+		<link href="{{STATIC_URL}}img/ios/touch-icon-ipad.png"          rel="apple-touch-icon" sizes="72x72" />
+		<link href="{{STATIC_URL}}img/ios/touch-icon-iphone-retina.png" rel="apple-touch-icon" sizes="114x114" />
+		<link href="{{STATIC_URL}}img/ios/touch-icon-ipad-retina.png"   rel="apple-touch-icon" sizes="144x144" />
+		<link href="{{STATIC_URL}}img/ios/startup.png"                  rel="apple-touch-startup-image" />
 		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 		<link href="#" type="text/css" rel="stylesheet" />
 		<link href="#" type="text/css" rel="stylesheet" />
-		<link href="static/css/screen.css" type="text/css" rel="stylesheet" media="screen, projection" />
+        {% comment %}<link href="{{STATIC_URL}}css/screen.css" type="text/css" rel="stylesheet" media="screen, projection" /> {% endcomment %}
+        <link href="{% static 'css/screen.css' %}" type="text/css" rel="stylesheet" media="screen, projection" />
 
 	</head>
 	<body>
