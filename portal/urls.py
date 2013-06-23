@@ -11,12 +11,15 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-        url(r'^$', 'portada.views.home', name='home'),
-        #url(r'^blog/', include('blog.urls')),
-        url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-        url(r'^admin/', include(admin.site.urls)),
-        (r'^i18n/', include('django.conf.urls.i18n')),
-    )
+                       url(r'^$', 'portada.views.home', name='home'),
+                       # Blog
+                       url(r'^weblog/', include('zinnia.urls')),
+                       url(r'^comments/', include('django.contrib.comments.urls')),
+                       # ~~~~
+                       url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+                       url(r'^admin/', include(admin.site.urls)),
+                       (r'^i18n/', include('django.conf.urls.i18n')),
+                       )
 
 #from django.conf import settings
 #if settings.DEBUG and not settings.PRODUCCION:
