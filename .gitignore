@@ -5,6 +5,9 @@
 *.pyc
 *.bak
 
+ChangeLog
+
+
 # Personalizaciones
 # ~~~~~~~~~~~~~~~~~
 settings_local.py
