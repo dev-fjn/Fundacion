@@ -5,6 +5,11 @@
 # Instalar requermientos:
 # ~~~~~~~~~~~~~~~~~~~~~~
 # pip install --upgrade -r requirements.txt
+#
+# Instalar directamente de repositorios:
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# $ pip install -e git+git://github.com/bitmazk/django-rapid-prototyping.git#egg=rapid_prototyping
+#
 
 Django>=1.5.1
 Fabric>=1.6.1
