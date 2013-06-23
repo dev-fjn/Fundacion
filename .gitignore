@@ -20,3 +20,5 @@ SECRET_KEY.py
 GMAIL.py
 
 virtualenv
+
+media/uploads/*
