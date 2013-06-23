@@ -1,4 +1,6 @@
-# Django settings for portal project.
+# -*- coding: utf-8 -*-
+
+'''Django settings for portal project.'''
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -120,9 +122,9 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
+    #'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
+    #'django.contrib.admindocs',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -156,8 +158,26 @@ LOGGING = {
 
 # Preparamos el entorno para cargar una
 # configuracion personalizada:
-try:
-    from local_settings import *
-except ImportError:
-    pass
+
+import os
+
+PROJECT_ROOT = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
+PROJECT_NAME = 'portal'
+
+# Directorio donde poner recursos comunes
+# a todos los desarrolladores:
+for root, dirs, files in os.walk(os.path.join(PROJECT_ROOT, PROJECT_NAME + '/settings.d')):
+    for f in sorted(files):
+        full = os.path.join(PROJECT_ROOT, root, f)
+        if os.path.isfile(full) and full.endswith(".py"):
+            execfile(full)
+
+
+# Directorio donde poner recursos no comunes, es decir, personales
+# de cada uno de los desarrolladores:
+for root, dirs, files in os.walk(os.path.join(PROJECT_ROOT, PROJECT_NAME + '/settings_local.d')):
+    for f in sorted(files):
+        full = os.path.join(PROJECT_ROOT, root, f)
+        if os.path.isfile(full) and full.endswith(".py"):
+            execfile(full)
 
