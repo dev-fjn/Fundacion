@@ -8,19 +8,27 @@
 #
 # Instalar directamente de repositorios:
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# $ pip install -e git+git://github.com/bitmazk/django-rapid-prototyping.git#egg=rapid_prototyping
+# pip install -U -e git://github.com/Fantomas42/django-blog-zinnia.git#egg=django-blog-zinnia
 #
 
-Django>=1.5.1
-Fabric>=1.6.1
-South>=0.8.1
 argparse>=1.2.1
+BeautifulSoup>=3.2.1
 distribute>=0.6.45
+Django>=1.5.1
+django-blog-zinnia>=0.12.3
 django-debug-toolbar>=0.9.4
 django-menu>=0.1.7
+django-mptt>=0.5.5
+django-tagging>=0.3.1
+django-xmlrpc>=0.1.5
 docutils>=0.10
+Fabric>=1.6.1
 gunicorn>=0.17.4
 ipython>=0.13.2
 paramiko>=1.10.1
+PIL>=1.1.7
 pycrypto>=2.6
+pyparsing==1.5.7
+pytz>=2013b
+South>=0.8.1
 wsgiref>=0.1.2
