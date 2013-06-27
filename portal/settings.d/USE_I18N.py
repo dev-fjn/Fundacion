@@ -7,6 +7,13 @@ not to load the internationalization machinery.
 
 USE_I18N = True
 
+# A string representing the language code for this installation.
+LANGUAGE_CODE = 'en'
+
+LANGUAGE_COOKIE_NAME = 'Lang site: '
+
+LANGUAGE_BIDI = False
+
 # ESTO PUEDE DAR LA LATA La documentacion
 # https://docs.djangoproject.com/en/1.0/topics/i18n/ dice que te
 # asegures de que es uno de los primeros middlewares, pero que debe ir
@@ -18,8 +25,8 @@ LOCALE_PATHS = (os.path.join(os.path.dirname(os.path.dirname(__file__)), 'conf/l
 
 ugettext = lambda s: s
 LANGUAGES = (
-    ('es', ugettext(u'Español')),
-    ('en', ugettext(u'Inglés')),
+    ('es', ugettext(u'Spanish')),
+    ('en', ugettext(u'English')),
 )
 
 #
