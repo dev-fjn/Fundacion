@@ -6,6 +6,7 @@
 
 INSTALLED_APPS += (
     'django.contrib.comments',
+    'django.contrib.sitemaps',
     'mptt',
     'tagging',
     'zinnia',
