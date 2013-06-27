@@ -11,15 +11,19 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-                       url(r'^$', 'portada.views.home', name='home'),
-                       # Blog
-                       url(r'^weblog/', include('zinnia.urls')),
-                       url(r'^comments/', include('django.contrib.comments.urls')),
-                       # ~~~~
-                       url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-                       url(r'^admin/', include(admin.site.urls)),
-                       (r'^i18n/', include('django.conf.urls.i18n')),
-                       )
+                        # Componentes de la Debug ToolBar
+                        url(r'', include('debug_toolbar_user_panel.urls')),
+                        url(r'^', include('debug_toolbar_htmltidy.urls')),
+                        # Portada
+                        url(r'^$', 'portada.views.home', name='home'),
+                        # Weblog
+                        url(r'^weblog/', include('zinnia.urls')),
+                        url(r'^comments/', include('django.contrib.comments.urls')),
+                        # ~~~~
+                        url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+                        url(r'^admin/', include(admin.site.urls)),
+                        (r'^i18n/', include('django.conf.urls.i18n')),
+)
 
 #from django.conf import settings
 #if settings.DEBUG and not settings.PRODUCCION:
