@@ -1,7 +1,8 @@
 Aplicaciones por instalar
 	Eventos/Calendario
-		https://github.com/dev-fjn/django-eventpickrs
-		https://github.com/blancltd/blanc-basic-events
+		[_] https://github.com/dev-fjn/django-eventpickrs
+		[_] https://github.com/blancltd/blanc-basic-events
 	ical
-		https://github.com/statesofpop/django-cal
+		[_] https://github.com/statesofpop/django-cal
+	
 
