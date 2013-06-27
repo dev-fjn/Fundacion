@@ -15,3 +15,5 @@ Vídeo para cuando metamos la pata con Git:
 http://aprendegit.com/git-la-he-liado-parda/
 ```
 
+# Cómo gestionar las fixtures:
+https://code.djangoproject.com/wiki/Fixtures
