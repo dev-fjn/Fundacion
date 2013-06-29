@@ -1,0 +1,134 @@
+[
+{
+    "pk": 1, 
+    "model": "flatpages_i18n.flatpage_i18n", 
+    "fields": {
+        "registration_required": false, 
+        "content_en": "This is the page for <strong>About Us</strong>", 
+        "weight": 0, 
+        "title_es": "Acerca de", 
+        "url": "/aboutus/", 
+        "template_name": "", 
+        "title": "About us", 
+        "title_en": "About us", 
+        "sites": [
+            1
+        ], 
+        "content": "This is the page for <strong>About Us</strong>", 
+        "url_es": "/acercade/", 
+        "url_en": "/aboutus/", 
+        "content_es": "Esto es la p\u00e1gina conocida c\u00f3mo <strong>Acerca de</strong>", 
+        "enable_comments": false
+    }
+},
+{
+    "pk": 2, 
+    "model": "flatpages_i18n.flatpage_i18n", 
+    "fields": {
+        "registration_required": false, 
+        "content_en": "Esta es la p\u00e1gina de Condiciones de uso", 
+        "weight": 0, 
+        "title_es": "Condiciones de uso", 
+        "url": "/uso/", 
+        "template_name": "", 
+        "title": "Condiciones de uso", 
+        "title_en": "Condiciones de uso", 
+        "sites": [
+            2
+        ], 
+        "content": "Esta es la p\u00e1gina de Condiciones de uso", 
+        "url_es": "/uso/", 
+        "url_en": "/uso/", 
+        "content_es": "Esta es la p\u00e1gina de Condiciones de uso", 
+        "enable_comments": false
+    }
+},
+{
+    "pk": 3, 
+    "model": "flatpages_i18n.flatpage_i18n", 
+    "fields": {
+        "registration_required": false, 
+        "content_en": "Esta es la p\u00e1gina en ingl\u00e9s de Privacidad", 
+        "weight": 0, 
+        "title_es": "Privacidad", 
+        "url": "/privacidad/", 
+        "template_name": "", 
+        "title": "Privacidad", 
+        "title_en": "Privacidad", 
+        "sites": [
+            2
+        ], 
+        "content": "Esta es la p\u00e1gina en ingl\u00e9s de Privacidad", 
+        "url_es": "/privacidad/", 
+        "url_en": "/privacidad/", 
+        "content_es": "Esta es la p\u00e1gina en espa\u00f1ol de Privacidad", 
+        "enable_comments": false
+    }
+},
+{
+    "pk": 4, 
+    "model": "flatpages_i18n.flatpage_i18n", 
+    "fields": {
+        "registration_required": false, 
+        "content_en": "Esta es la p\u00e1gina, en ingl\u00e9s, de Condiciones Legales.", 
+        "weight": 0, 
+        "title_es": "Condiciones Legales", 
+        "url": "/legal/", 
+        "template_name": "", 
+        "title": "Condiciones Legales (en)", 
+        "title_en": "Condiciones Legales (en)", 
+        "sites": [
+            2
+        ], 
+        "content": "Esta es la p\u00e1gina, en ingl\u00e9s, de Condiciones Legales.", 
+        "url_es": "/legal/", 
+        "url_en": "/legal/", 
+        "content_es": "Esta es la p\u00e1gina, en espa\u00f1ol, de Condiciones Legales.", 
+        "enable_comments": false
+    }
+},
+{
+    "pk": 5, 
+    "model": "flatpages_i18n.flatpage_i18n", 
+    "fields": {
+        "registration_required": false, 
+        "content_en": "P\u00e1gina de Enlaces de Inter\u00e9s, en ingl\u00e9s.", 
+        "weight": 0, 
+        "title_es": "Enlaces de Inter\u00e9s", 
+        "url": "/enlaces/", 
+        "template_name": "", 
+        "title": "Enlaces de Inter\u00e9s (en)", 
+        "title_en": "Enlaces de Inter\u00e9s (en)", 
+        "sites": [
+            2
+        ], 
+        "content": "P\u00e1gina de Enlaces de Inter\u00e9s, en ingl\u00e9s.", 
+        "url_es": "/enlaces/", 
+        "url_en": "/enlaces/", 
+        "content_es": "P\u00e1gina de Enlaces de Inter\u00e9s, en espa\u00f1ol.", 
+        "enable_comments": false
+    }
+},
+{
+    "pk": 6, 
+    "model": "flatpages_i18n.flatpage_i18n", 
+    "fields": {
+        "registration_required": false, 
+        "content_en": "P\u00e1gina de Accesibilidad en ingl\u00e9s.", 
+        "weight": 0, 
+        "title_es": "Accesibilidad", 
+        "url": "/accesibilidad/", 
+        "template_name": "", 
+        "title": "Accesibilidad (en)", 
+        "title_en": "Accesibilidad (en)", 
+        "sites": [
+            2
+        ], 
+        "content": "P\u00e1gina de Accesibilidad en ingl\u00e9s.", 
+        "url_es": "/accesibilidad/", 
+        "url_en": "/accesibilidad/", 
+        "content_es": "P\u00e1gina de Accesibilidad en espa\u00f1ol.", 
+        "enable_comments": false
+    }
+}
+]

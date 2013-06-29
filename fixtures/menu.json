@@ -1,0 +1,96 @@
+[
+{
+    "pk": 2, 
+    "model": "menu.menu", 
+    "fields": {
+        "base_url": "", 
+        "description": "Men\u00fa principal", 
+        "name": "Menu Principal", 
+        "slug": "menu_principal"
+    }
+},
+{
+    "pk": 5, 
+    "model": "menu.menuitem", 
+    "fields": {
+        "title": "Admin", 
+        "menu": 2, 
+        "link_url": "/admin/", 
+        "login_required": false, 
+        "anonymous_only": false, 
+        "order": 10
+    }
+},
+{
+    "pk": 6, 
+    "model": "menu.menuitem", 
+    "fields": {
+        "title": "Documentaci\u00f3n", 
+        "menu": 2, 
+        "link_url": "/admin/doc/", 
+        "login_required": false, 
+        "anonymous_only": false, 
+        "order": 20
+    }
+},
+{
+    "pk": 7, 
+    "model": "menu.menuitem", 
+    "fields": {
+        "title": "Agenda", 
+        "menu": 2, 
+        "link_url": "/calendar/", 
+        "login_required": false, 
+        "anonymous_only": false, 
+        "order": 30
+    }
+},
+{
+    "pk": 8, 
+    "model": "menu.menuitem", 
+    "fields": {
+        "title": "Evento Agenda (1)", 
+        "menu": 2, 
+        "link_url": "/event/1/", 
+        "login_required": false, 
+        "anonymous_only": false, 
+        "order": 40
+    }
+},
+{
+    "pk": 9, 
+    "model": "menu.menuitem", 
+    "fields": {
+        "title": "Sitemap", 
+        "menu": 2, 
+        "link_url": "/sitemap.xml", 
+        "login_required": false, 
+        "anonymous_only": false, 
+        "order": 50
+    }
+},
+{
+    "pk": 10, 
+    "model": "menu.menuitem", 
+    "fields": {
+        "title": "Bit\u00e1cora", 
+        "menu": 2, 
+        "link_url": "/weblog/", 
+        "login_required": false, 
+        "anonymous_only": false, 
+        "order": 60
+    }
+},
+{
+    "pk": 11, 
+    "model": "menu.menuitem", 
+    "fields": {
+        "title": "Acerca de", 
+        "menu": 2, 
+        "link_url": "/acercade/", 
+        "login_required": false, 
+        "anonymous_only": false, 
+        "order": 7
+    }
+}
+]
