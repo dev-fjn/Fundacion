@@ -4,6 +4,7 @@
 *.pot
 *.pyc
 *.bak
+*.mo
 
 ChangeLog
 
