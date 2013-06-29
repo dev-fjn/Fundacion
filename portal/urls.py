@@ -26,6 +26,8 @@ urlpatterns = patterns('',
                         # Componentes de la Debug ToolBar
                         url(r'', include('debug_toolbar_user_panel.urls')),
                         url(r'^', include('debug_toolbar_htmltidy.urls')),
+                        # Eventos/calendario
+                        url(r'^calendar/', include('schedule.urls')),
                         # Portada
                         url(r'^$', 'portada.views.home', name='home'),
                         # Weblog
