@@ -23,20 +23,24 @@ sitemaps = {
 }
 
 urlpatterns = patterns('',
-                        # Componentes de la Debug ToolBar
-                        url(r'', include('debug_toolbar_user_panel.urls')),
-                        url(r'^', include('debug_toolbar_htmltidy.urls')),
-                        # Eventos/calendario
-                        url(r'^calendar/', include('schedule.urls')),
                         # Portada
                         url(r'^$', 'portada.views.home', name='home'),
+                        
+                        # Eventos/calendario
+                        url(r'', include('schedule.urls')),
+
                         # Weblog
                         url(r'^weblog/', include('zinnia.urls')),
                         url(r'^comments/', include('django.contrib.comments.urls')),
+                        
                         # ~~~~
                         url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
                         url(r'^admin/', include(admin.site.urls)),
                         (r'^i18n/', include('django.conf.urls.i18n')),
+                        
+                        # Componentes de la Debug ToolBar
+                        url(r'', include('debug_toolbar_user_panel.urls')),
+                        url(r'^', include('debug_toolbar_htmltidy.urls')),
 )
 
 
