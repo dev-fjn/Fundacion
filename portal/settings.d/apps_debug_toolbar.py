@@ -10,7 +10,6 @@ if DEBUG and not PRODUCCION:
         'debug_toolbar',
         'debug_toolbar_htmltidy',
         'debug_toolbar_user_panel',
-        'debug_toolbar_autoreload',
     )
     DEBUG_TOOLBAR_CONFIG = {
         'INTERCEPT_REDIRECTS': False,
@@ -35,9 +34,6 @@ if DEBUG and not PRODUCCION:
 
             # debug_toolbar_user_panel
             'debug_toolbar_user_panel.panels.UserPanel',
-
-            # autoreload_panel
-            'debug_toolbar_autoreload.AutoreloadPanel',
     )
 
     def custom_show_toolbar(request):
