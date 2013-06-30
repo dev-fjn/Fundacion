@@ -49,6 +49,11 @@ urlpatterns += patterns('django.contrib.sitemaps.views',
         url(r'^sitemap-(?P<section>.+)\.xml$', 'sitemap', {'sitemaps': sitemaps}),
         )
 
+from django.views.generic import TemplateView
+urlpatterns += patterns('',
+	(r'^plantilla$', TemplateView.as_view(template_name='base.html')),
+)
+
 #from django.conf import settings
 #if settings.DEBUG and not settings.PRODUCCION:
 #    # FIXME Esto es lo documentado, pero no sirve media
