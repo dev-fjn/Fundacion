@@ -15,7 +15,7 @@
 		{% comment %}<!-- http://developer.apple.com/library/ios/#documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html -->{% endcomment %}
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-        <link href="{{STATIC_URL}}img/ios/touch-icon-iphone.png"        rel="apple-touch-icon" sizes="57x57" />
+		<link href="{{STATIC_URL}}img/ios/touch-icon-iphone.png"        rel="apple-touch-icon" sizes="57x57" />
 		<link href="{{STATIC_URL}}img/ios/touch-icon-ipad.png"          rel="apple-touch-icon" sizes="72x72" />
 		<link href="{{STATIC_URL}}img/ios/touch-icon-iphone-retina.png" rel="apple-touch-icon" sizes="114x114" />
 		<link href="{{STATIC_URL}}img/ios/touch-icon-ipad-retina.png"   rel="apple-touch-icon" sizes="144x144" />
@@ -28,6 +28,8 @@
 		{% endcomment %}
 		<link href="{% static 'css/screen.css' %}" type="text/css" rel="stylesheet" media="screen, projection" />
 
+		{% block extra_head %}
+		{% endblock extra_head %}
 	</head>
 	<body>
 		<div class="container">
@@ -88,6 +90,8 @@
 					<div class="chromeframe">
 						<p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 					</div>
+					{% block subnav %}
+					{% endblock subnav %}
 				</header>
 			</section>
 
@@ -100,12 +104,16 @@
 
 					<article>
 						<header>
+							{% block head_title %}
 							<h1>article header h1</h1>
 							<p>...</p>
+							{% endblock head_title %}
 						</header>
 						<section>
+							{% block body %}
 							<h2>article section h2</h2>
 							<p>...</p>
+							{% endblock body %}
 						</section>
 						<section>
 							<h2>article section h2</h2>
