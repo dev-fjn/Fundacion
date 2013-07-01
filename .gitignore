@@ -7,7 +7,7 @@
 *.mo
 
 ChangeLog
-
+.sass-cache
 
 # Personalizaciones
 # ~~~~~~~~~~~~~~~~~
