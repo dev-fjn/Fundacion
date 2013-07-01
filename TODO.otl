@@ -1,4 +1,21 @@
+TAREAS PENDIENTES
+
+	· Adaptar base.html
+	· Mover las apps externas a su propio directorio
+
+
+
+
 Aplicaciones por instalar
+	Para la gestión de usuarios:
+		[_] https://bitbucket.org/ubernostrum/django-registration/
+		[_] https://bitbucket.org/ubernostrum/django-profiles/
+	Para las búsquedas:
+		[_] http://haystacksearch.org/
+	Registro de log's
+		[_] 																																																																																			
+	Mejoras en el panel de administración:
+		[_] 
 	Eventos/Calendario
 		[_] https://github.com/dev-fjn/django-eventpickrs
 		[_] https://github.com/blancltd/blanc-basic-events
@@ -6,5 +23,10 @@ Aplicaciones por instalar
 		[_] https://github.com/statesofpop/django-cal
 	django-short-urls
 		[_] https://github.com/mouradmourafiq/django-short-urls
-	
+	django-notification
+		[_] https://github.com/pinax/django-notification
 
+
+Motas:
+	·http://www.hostucan.com/webmaster-tutorials/10-popular-django-apps
+	" 
