@@ -17,20 +17,19 @@ $gutter-width   : 1em;
 //$grid-padding   : $gutter-width;
 $grid-padding   : 0;
 
-//$container-width: 60em;
-
+$container-width: 60em;
 $container-style: magic;
 //$container-style: fluid;
 //$container-style: fixed;
 
 
-$show-grid-backgrounds				: true;
-$show-column-grid-backgrounds		: true;
-$show-baseline-grid-backgrounds		: true;
+//$show-grid-backgrounds				: true;
+//$show-column-grid-backgrounds		: true;
+//$show-baseline-grid-backgrounds		: true;
 
-$grid-background-baseline-color		: rgba(  0,   0,   0, 1    );
-$grid-background-column-color		: rgba(191, 191, 191, 0.75 );
-$grid-background-gutter-color		: rgba(127, 127, 127, 0.75 );
+//$grid-background-baseline-color		: rgba(  0,   0,   0, 1    );
+//$grid-background-column-color		: rgba(191, 191, 191, 0.75 );
+//$grid-background-gutter-color		: rgba(127, 127, 127, 0.75 );
 
 $tamaño_base						: 16;
 $base_font_size_px					: $tamaño_base;
