@@ -4,58 +4,72 @@
 
 '''
 
-from django.conf.urls import patterns, include, url
-
-# Uncomment the next two lines to enable the admin:
+from django.conf import settings
 from django.contrib import admin
-admin.autodiscover()
-
+from django.conf.urls import patterns
+from django.conf.urls import include
+from django.conf.urls import url
+from django.views.generic import TemplateView
 from zinnia.sitemaps import TagSitemap
 from zinnia.sitemaps import EntrySitemap
 from zinnia.sitemaps import CategorySitemap
 from zinnia.sitemaps import AuthorSitemap
 
+admin.autodiscover()
+
 sitemaps = {
-    'tags': TagSitemap,
-    'blog': EntrySitemap,
-    'authors': AuthorSitemap,
-    'categories': CategorySitemap,
+    'tags':         TagSitemap,
+    'blog':         EntrySitemap,
+    'authors':      AuthorSitemap,
+    'categories':   CategorySitemap,
 }
 
-urlpatterns = patterns('',
-                        # Portada
-                        url(r'^$', 'portada.views.home', name='home'),
-                        
-                        # Eventos/calendario
-                        url(r'', include('schedule.urls')),
+urlpatterns = patterns(
+    r'',
 
-                        # Weblog
-                        url(r'^weblog/', include('zinnia.urls')),
-                        url(r'^comments/', include('django.contrib.comments.urls')),
-                        
-                        # ~~~~
-                        url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-                        url(r'^admin/', include(admin.site.urls)),
-                        (r'^i18n/', include('django.conf.urls.i18n')),
-                        
-                        # Componentes de la Debug ToolBar
-                        url(r'', include('debug_toolbar_user_panel.urls')),
-                        url(r'^', include('debug_toolbar_htmltidy.urls')),
+    url(r'^i18n/',      include('django.conf.urls.i18n')),
+
+    url(r'^admin/',     include( admin.site.urls )),
+    url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+
+    url(r'^$',          'portada.views.home', name='home'),
+    url(r'^weblog/',    include('zinnia.urls')),
+    url(r'^comments/',  include('django.contrib.comments.urls')),
+    url(r'',            include('schedule.urls')),
 )
 
-
-urlpatterns += patterns('django.contrib.sitemaps.views',
-        url(r'^sitemap.xml$', 'index', {'sitemaps': sitemaps}),
-        url(r'^sitemap-(?P<section>.+)\.xml$', 'sitemap', {'sitemaps': sitemaps}),
-        )
-
-from django.views.generic import TemplateView
-urlpatterns += patterns('',
-	(r'^plantilla$', TemplateView.as_view(template_name='base.html')),
+urlpatterns += patterns(
+    'django.contrib.sitemaps.views',
+    url(r'^sitemap.xml$',                   'index',    {'sitemaps': sitemaps}),
+    url(r'^sitemap-(?P<section>.+)\.xml$',  'sitemap',  {'sitemaps': sitemaps}),
 )
 
-#from django.conf import settings
-#if settings.DEBUG and not settings.PRODUCCION:
+if settings.DEBUG and not settings.PRODUCCION:
+    # Desarrollo
+    urlpatterns += patterns(
+        r'',
+        url(r'^plantilla/', TemplateView.as_view(template_name='base.html')),
+        url(r'', include('debug_toolbar_user_panel.urls')),
+        url(r'', include('debug_toolbar_htmltidy.urls')),
+    )
+elif settings.DEBUG and settings.PRODUCCION:
+    # Beta
+    pass
+else:
+    # Producción
+    pass
+
+
+
+
+
+
+
+
+
+
+# from django.conf import settings
+# if settings.DEBUG and not settings.PRODUCCION:
 #    # FIXME Esto es lo documentado, pero no sirve media
 #    #from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 #    #urlpatterns += staticfiles_urlpatterns()
