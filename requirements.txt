@@ -1,0 +1,44 @@
+# virtualenv virtualenv --no-site-packages
+# . virtualenv/bin/activate
+# pip install -r requirements.txt
+# pip freeze > requirements_freeze.txt
+# (vigilar) grep install_required external/*/setup.py
+
+
+# la base
+Django
+
+# de base para trabajar
+Fabric
+South
+ipython
+gunicorn
+
+# modulos necesarios en la aplicacion pillados de paquete
+django-menu
+
+# requerido por algo (django?)
+pytz
+
+# para usar imagefields
+PIL
+
+# requerido por django-flatpages-i18n (external)
+django_modeltranslation
+
+# requerido por zinnia (external)
+beautifulsoup4>=4.1
+django-tagging
+django-mptt
+
+# requerido por django-schedule (external)
+python-dateutil
+vobject
+django_nose
+
+# util para depurar
+django-debug-toolbar
+django-debug-toolbar-extra
+django-debug-toolbar-user-panel-fc
+django-dtpanel-htmltidy
+django-extensions
