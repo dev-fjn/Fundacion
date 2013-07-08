@@ -31,7 +31,8 @@
 		{% block extra_head %}
 		{% endblock extra_head %}
 	</head>
-	<body>
+    <body>
+
 		<div class="container">
 			{% comment %}<!-- Comienzo del contenido del container -->{% endcomment %}
 
@@ -57,9 +58,9 @@
 						</div>
 					</div>
 
-					<div class="">{% trans "banner" %}</div>
+					<div class="banner">{% trans "banner" %}</div>
 
-					<div class="searchbox">{% trans "Buscador" %}</div>
+					<div class="searchbox">{% trans "Search Box" %}</div>
 					<div class="menubox">
 						<div class="mymenus">
 							<nav>
@@ -70,22 +71,11 @@
 								</ul>
 							</nav>
 						</div>
-<!--
-						<div class="mymenus">
-							<nav>
-								<ul>
-									<li><a href="#">nav ul li a</a></li>
-									<li><a href="#">nav ul li a</a></li>
-									<li><a href="#">nav ul li a</a></li>
-								</ul>
-							</nav>
-						</div>
--->
 						<div class="myicons">
 							<span>Iconos Sociales</span>
 						</div>
 					</div>
-					<div class="hormigas">Inicio → Estás aquí</div>
+                    <div class="hormigas">{% trans "Inicio → Estás aquí" %}</div>
 					{% if messages %}
 					<div class="chromeframe">
 						<ul id="messages">
@@ -93,7 +83,7 @@
 							<li id="message_{{ forloop.counter }}"><a href="#" onclick="$('#message_{{ forloop.counter }}').fadeOut(); return false;"><small>{% trans "clear" %}</small></a> {{ message }}</li>
 						{% endfor %}
 						</ul>
-						<p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+                        <p>{% trans "You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> or <a href='http://www.google.com/chromeframe/?redirect=true'>activate Google Chrome Frame</a> to improve your experience." %}</p>
 					</div>
 					{% endif %}
 
@@ -106,7 +96,7 @@
 				<div class="main wrapper clearfix">
 
 					<section class="myslideshow">
-						<div>SlideShow</div>
+                    <div>{% trans "SlideShow" %}</div>
 					</section>
 
 					<article>
@@ -133,7 +123,7 @@
 					</article>
 
 					<aside>
-						<h2>aside</h2>
+                        <h2>{% trans "aside" %}</h2>
 						<ul>
 							<li>...</li>
 							<li>...</li>

@@ -91,10 +91,6 @@ a:hover {
   color: #183c4a;
 }
 
-body {
-  background: #8ea797 url(../img/bg.png);
-}
-
 h1, h2 {
   font-family: SFSpeakeasyRegular, cursive;
   font-weight: 700;
@@ -127,55 +123,155 @@ h1, h2 {
   -o-animation-property: 0;
 }
 
-.ribbon {
-  background-color: #784421;
-}
-
+/*Login*/
 /* Layout */
-.container {
-  *zoom: 1;
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 0.8em;
-  *zoom: 1;
-}
-.container:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.container section#head header.header-container div.ribbon_container {
-  background-color: red;
-}
-.container section#head header.header-container div.menubox {
-  clear: both;
-}
-.container section#head header.header-container div.menubox div.mymenus nav ul {
-  list-style-type: none;
-  margin: 0;
-  overflow: hidden;
-}
-.container section#head header.header-container div.menubox div.mymenus nav ul > li {
-  display: block;
-  float: left;
-  padding-left: .25em;
-  padding-right: .25em;
-}
-.container section#head header.header-container div.menubox div.mymenus nav ul > li:last-child {
-  margin-right: 0;
-}
-.container section#head header.header-container div.menubox div.mymenus nav ul > li.current {
-  color: red !important;
-}
-.container section#head header.header-container div.menubox div.mymenus nav ul > li.current:hover {
-  background-color: blue;
-}
-.container:before, .container:after {
-  content: "";
-  display: table;
-}
-.container:after {
-  clear: both;
+@media screen and (min-width: 481px) and (max-width: 2048px) {
+  .container {
+    *zoom: 1;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.04em;
+    *zoom: 1;
+  }
+  .container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .container * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .container section#head {
+    width: 100%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline;
+  }
+  .container section#head header.header-container {
+    width: 100%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline;
+    clear: both;
+    clear: both;
+  }
+  .container section#head header.header-container div.ribbon-container {
+    width: 100%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline;
+  }
+  .container section#head header.header-container div.ribbon-container div.langid {
+    width: 74.57627%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline;
+  }
+  .container section#head header.header-container div.ribbon-container div.ribbon {
+    width: 23.72881%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1em;
+    display: inline;
+  }
+  .container section#head header.header-container div.banner {
+    padding-left: 16.94915%;
+    padding-right: 16.94915%;
+  }
+  .container section#head header.header-container div.searchbox {
+    padding-left: 33.89831%;
+    padding-right: 33.89831%;
+  }
+  .container section#head header.header-container div.menubox {
+    padding-left: 16.94915%;
+    clear: both;
+  }
+  .container section#head header.header-container div.menubox div.mymenus {
+    width: 59.18367%;
+    float: left;
+    margin-right: 2.04082%;
+    display: inline;
+  }
+  .container section#head header.header-container div.menubox div.mymenus nav ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+  }
+  .container section#head header.header-container div.menubox div.mymenus nav ul > li {
+    display: block;
+    float: left;
+    padding-left: .25em;
+    padding-right: .25em;
+  }
+  .container section#head header.header-container div.menubox div.mymenus nav ul > li:last-child {
+    margin-right: 0;
+  }
+  .container section#head header.header-container div.menubox div.mymenus nav ul > li.current {
+    color: red !important;
+  }
+  .container section#head header.header-container div.menubox div.mymenus nav ul > li.current:hover {
+    background-color: blue;
+  }
+  .container section#head header.header-container div.menubox div.myicons {
+    width: 35.89744%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1em;
+    display: inline;
+  }
+  .container section#head header.header-container div.hormigas {
+    width: 100%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline;
+  }
+  .container section#head header.header-container div.chromeframe {
+    float: right;
+    margin-right: 0;
+    *margin-left: -1em;
+    display: inline;
+  }
+  .container:before, .container:after {
+    content: "";
+    display: table;
+  }
+  .container:after {
+    clear: both;
+  }
+  .container div.main-container {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1em;
+    display: inline;
+  }
+  .container div.main-container div.main.wrapper.clearfix section.myslideshow {
+    width: 100%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline;
+  }
+  .container div.main-container div.main.wrapper.clearfix article {
+    width: 74.57627%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline;
+  }
+  .container div.main-container div.main.wrapper.clearfix aside {
+    width: 23.72881%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1em;
+    display: inline;
+  }
+  .container div.footer-container {
+    width: 100%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline;
+  }
 }

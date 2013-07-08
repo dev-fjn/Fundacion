@@ -24,109 +24,28 @@
 ////////////////////////////////////////////////////////////////////////
 
 //@media screen and (min-width:    1px) and (max-width:  480px) {
-	$container-style: fluid;
-	$fuente: $font_base * 0.05em;
-
-	.container{
-		@include container;
-		//@include susy-grid-background;
-		//@include border-box-sizing;
-		//background-color: lime;
-		font-size: $fuente;
-
-		section#head {
-			header.header-container {
-				div.ribbon_container{
-					background-color: red;
-					div.langid{
-					}
-					div.ribbon {
-					}
-				}
-				div.searchbox {}
-				div.menubox{
-					div.mymenus{
-						nav {
-							ul {
-								@include navigation-list();
-								li {
-									a {
-									}
-								}
-							}
-						}
-					}
-					div.myicons{
-						span {}
-					}
-				clear: both;
-				}
-
-				div.hormigas{}
-				div.chromeframe {}
-			}
-		}
-
-		@include clearfix();
-
-////////////////////////////////////////////////////////////////////////
-
-		div.main-container {
-			div.main.wrapper.clearfix {
-				section.myslideshow{
-					div {}
-				}
-				article {
-					header {
-						h1 {}
-						p {}
-					}
-					section {
-						h2 {}
-						p {}
-					}
-					footer {
-						h3 {}
-						p {}
-					}
-				}
-				aside {
-					h3 {}
-					p {}
-				}
-			}
-		}
-	}
-//}
-
-
-//@media screen and (min-width:  481px) and (max-width: 1024px) {
 //	$container-style: fluid;
-//	$fuente: $font_base * 0.065em;
-//
-//	.container {
-//		@include container;
+//	$fuente: $font_base * 0.05em;
+
+//	.container{
+		//@include container;
 //		//@include susy-grid-background;
 //		//@include border-box-sizing;
-//		//background-color: red;
+//		//background-color: lime;
 //		font-size: $fuente;
-//
-//////////////////////////////////////////////////////////////////////////
-//
+
 //		section#head {
-//			@include span-columns(12, 12);
 //			header.header-container {
-//				@include span-columns(12, 12);
-//				div.ribbon {
-//					@include span-columns(12, 12);
+//				div.ribbon_container{
+//					background-color: //red;
+//					div.langid{
+//					}
+//					div.ribbon {
+//					}
 //				}
-//				div.searchbox {
-//					@include pad(4, 4, 12);
-//				}
+//				div.searchbox {}
 //				div.menubox{
-//					@include prefix(4, 12);
 //					div.mymenus{
-//						@include span-columns(5, 8);
 //						nav {
 //							ul {
 //								@include navigation-list();
@@ -138,37 +57,26 @@
 //						}
 //					}
 //					div.myicons{
-//						@include span-columns(3 omega, 8);
-//						span {
-//						}
+//						span {}
 //					}
 //				clear: both;
 //				}
-//
-//				div.hormigas{
-//					@include span-columns(12, 12);
-//					//@include omega;
-//				}
-//				div.chromeframe {
-//					@include omega;
-//				}
+
+//				div.hormigas{}
+//				div.chromeframe {}
 //			}
 //		}
-//
+
 //		@include clearfix();
-//
-//////////////////////////////////////////////////////////////////////////
-//
+
+////////////////////////////////////////////////////////////////////////
+
 //		div.main-container {
-//			@include span-columns(12 omega, 12);
 //			div.main.wrapper.clearfix {
 //				section.myslideshow{
-//					@include span-columns(12, 12);
-//					div {
-//					}
+//					div {}
 //				}
 //				article {
-//					@include span-columns(9, 12);
 //					header {
 //						h1 {}
 //						p {}
@@ -183,24 +91,135 @@
 //					}
 //				}
 //				aside {
-//					@include span-columns(3 omega, 12);
 //					h3 {}
 //					p {}
 //				}
 //			}
 //		}
-//
-//////////////////////////////////////////////////////////////////////////
-//
-//		div.footer-container {
-//			@include span-columns(12, 12);
-//			footer.wrapper {
-//				h3 {}
-//			}
-//		}
 //	}
 //}
-//
+
+
+@media screen and (min-width:  481px) and (max-width: 2048px) {
+	$container-style: fluid;
+	$fuente: $font_base * 0.065em;
+
+	.container {
+		@include container;
+		//@include susy-grid-background;
+		@include border-box-sizing;
+		//background-color: red;
+		font-size: $fuente;
+
+////////////////////////////////////////////////////////////////////////
+
+		section#head {
+			@include span-columns(12, 12);
+			header.header-container {
+				@include span-columns(12, 12);
+
+				div.ribbon-container{
+					@include span-columns(12, 12);
+					div.langid{
+						@include span-columns(9, 12);
+						form{
+							select {}
+							input{}
+						}
+					}
+					div.ribbon {
+						@include span-columns(3 omega, 12);
+					}
+				}
+				clear: both;
+
+				div.banner {
+					@include pad(2, 2, 12);
+				}
+
+				clear: both;
+
+				div.searchbox {
+					@include pad(4, 4, 12);
+				}
+				div.menubox{
+					@include prefix(2, 12);
+					div.mymenus{
+						@include span-columns(6, 10);
+						nav {
+							ul {
+								@include navigation-list();
+								li {
+									a {
+									}
+								}
+							}
+						}
+					}
+					div.myicons{
+						@include span-columns(3 omega, 8);
+						span {
+						}
+					}
+				clear: both;
+				}
+
+				div.hormigas{
+					@include span-columns(12, 12);
+					//@include omega;
+				}
+				div.chromeframe {
+					@include omega;
+				}
+			}
+		}
+
+		@include clearfix();
+
+////////////////////////////////////////////////////////////////////////
+
+		div.main-container {
+			@include span-columns(12 omega, 12);
+			div.main.wrapper.clearfix {
+				section.myslideshow{
+					@include span-columns(12, 12);
+					div {
+					}
+				}
+				article {
+					@include span-columns(9, 12);
+					header {
+						h1 {}
+						p {}
+					}
+					section {
+						h2 {}
+						p {}
+					}
+					footer {
+						h3 {}
+						p {}
+					}
+				}
+				aside {
+					@include span-columns(3 omega, 12);
+					h3 {}
+					p {}
+				}
+			}
+		}
+
+////////////////////////////////////////////////////////////////////////
+
+		div.footer-container {
+			@include span-columns(12, 12);
+			footer.wrapper {
+				h3 {}
+			}
+		}
+	}
+}
+
 //@media screen and (min-width: 1025px) and (max-width: 1640px) {
 //	$container-style: fixed;
 //	$fuente: $font_base * 0.08em;
