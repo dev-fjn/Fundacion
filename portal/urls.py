@@ -10,10 +10,17 @@ from django.conf.urls import patterns
 from django.conf.urls import include
 from django.conf.urls import url
 from django.views.generic import TemplateView
+
+# Soporte para robots.txt && favicon.ico
+#from django.views.generic.simple import direct_to_template
+#from django.views.generic.simple import redirect_to
+
 from zinnia.sitemaps import TagSitemap
 from zinnia.sitemaps import EntrySitemap
 from zinnia.sitemaps import CategorySitemap
 from zinnia.sitemaps import AuthorSitemap
+
+
 
 admin.autodiscover()
 
@@ -38,11 +45,22 @@ urlpatterns = patterns(
     url(r'',            include('schedule.urls')),
 )
 
+
+# Un par de casos especiales a estudiar:
+#urlpatterns += patterns(
+#    r'',
+#    (r'^favicon\.ico$', redirect_to, {'url': settings.STATIC_URL + 'favicon.ico'}),
+#    (r'^robots\.txt$', direct_to_template, {'template': 'robots.txt', 'mimetype': 'text/plain'}),
+#)
+
+
 urlpatterns += patterns(
     'django.contrib.sitemaps.views',
     url(r'^sitemap.xml$',                   'index',    {'sitemaps': sitemaps}),
     url(r'^sitemap-(?P<section>.+)\.xml$',  'sitemap',  {'sitemaps': sitemaps}),
 )
+
+
 
 if settings.DEBUG and not settings.PRODUCCION:
     # Desarrollo
