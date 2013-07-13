@@ -6,5 +6,4 @@ INSTALLED_APPS += (
     'south',
     'gunicorn',
     'portada',
-    'menu',
 )
