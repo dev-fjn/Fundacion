@@ -63,12 +63,8 @@
 					<div class="searchbox">{% trans "Search Box" %}</div>
 					<div class="menubox">
 						<div class="mymenus">
-							<nav>
-								<ul>{% load menubuilder %}
-									{% menu menu_principal %}{% for item in menuitems %}
-									<li><a href="{{ item.url }}" title="{{ item.title|escape }}"{% if item.current %} class='current'{% endif %}>{{ item.title }}</a></li>
-									{% endfor %}
-								</ul>
+                            <nav>
+
 							</nav>
 						</div>
 						<div class="myicons">
