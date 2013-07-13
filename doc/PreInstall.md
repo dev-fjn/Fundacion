@@ -41,7 +41,7 @@ pip install -r requirements.txt
 
 ## Ejecutamos git-flow
 ```sh
-git-flow init -d
+git flow init -d
 git checkout develop
 ```
 
