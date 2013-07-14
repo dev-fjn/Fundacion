@@ -9,5 +9,5 @@
 
  * http://lethain.com/deploying-django-with-fabric/
  * http://www.morethanseven.net/2009/07/27/fabric-django-git-apache-mod-wsgi-virtualenv-and-p/
-
+ * http://raidersec.blogspot.com.es/2013/07/building-ssh-botnet-c-using-python-and.html
 
