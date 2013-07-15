@@ -21,6 +21,7 @@ if DEBUG and not PRODUCCION:
     #
     #EMAIL_BACKEND       = 'django.core.mail.backends.console.EmailBackend'
     #CONTACTME_SALT      = b"es-war-einmal-una-bella-princesa-in-a-beautiful-castle"
+    #CONTACTME_MSG_MAX_LEN = 3000
     #CONTACTME_NOTIFY_TO = "Your name <user@gmail.com>"
     pass
 
@@ -42,6 +43,7 @@ elif DEBUG and PRODUCCION:
     #
     #EMAIL_BACKEND       = 'django.core.mail.backends.console.EmailBackend'
     #CONTACTME_SALT      = b"es-war-einmal-una-bella-princesa-in-a-beautiful-castle"
+    #CONTACTME_MSG_MAX_LEN = 3000
     #CONTACTME_NOTIFY_TO = "Your name <user@gmail.com>"
     pass
 
@@ -61,6 +63,7 @@ else:
     # following line to let the django demo sending actual emails
     #
     #EMAIL_BACKEND       = 'django.core.mail.backends.console.EmailBackend'
+    #CONTACTME_MSG_MAX_LEN = 3000
     #CONTACTME_SALT      = b"es-war-einmal-una-bella-princesa-in-a-beautiful-castle"
     #CONTACTME_NOTIFY_TO = "Your name <user@gmail.com>"
     pass
