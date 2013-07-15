@@ -61,6 +61,13 @@ urlpatterns += patterns(
 )
 
 
+# Formulario de contacto:
+# ~~~~~~~~~~~~~~~~~~~~~~
+urlpatterns += patterns(
+    '',
+    url(r'^contact/', include('django_contactme.urls')),
+)
+
 
 if settings.DEBUG and not settings.PRODUCCION:
     # Desarrollo
