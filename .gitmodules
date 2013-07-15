@@ -7,3 +7,6 @@
 [submodule "external/django-blog-zinnia"]
 	path = external/django-blog-zinnia
 	url = https://github.com/dev-fjn/django-blog-zinnia.git
+[submodule "external/django-contactme"]
+	path = external/django-contactme
+	url = https://github.com/dev-fjn/django-contactme.git
