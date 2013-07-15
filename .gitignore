@@ -20,6 +20,7 @@ local_settings.py
 DATABASES.py
 SECRET_KEY.py
 GMAIL.py
+portal/settings_local.d/apps_django_contactme.py
 
 virtualenv
 
