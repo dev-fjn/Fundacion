@@ -1,0 +1,15 @@
+[submodule "external/django-contactme"]
+	path = external/django-contactme
+	url = git@github.com:dev-fjn/django-contactme.git
+[submodule "external/django-scheduler"]
+	path = external/django-scheduler
+	url = git@github.com:dev-fjn/django-scheduler.git
+[submodule "external/django-blog-zinnia"]
+	path = external/django-blog-zinnia
+	url = git@github.com:dev-fjn/django-blog-zinnia.git
+[submodule "external/django-treemenus"]
+	path = external/django-treemenus
+	url = git@github.com:dev-fjn/django-treemenus.git
+[submodule "external/django-flatpages-i18n"]
+	path = external/django-flatpages-i18n
+	url = git@github.com:dev-fjn/django-flatpages-i18n.git
