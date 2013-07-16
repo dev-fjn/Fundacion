@@ -14,9 +14,6 @@ South
 ipython
 gunicorn
 
-# modulos necesarios en la aplicacion pillados de paquete
-django-menu
-
 # requerido por algo (django?)
 pytz
 
