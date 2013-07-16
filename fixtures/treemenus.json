@@ -1,0 +1,102 @@
+[DATABASES.py] Estamos en desarrollo.
+[
+{
+    "pk": 1, 
+    "model": "treemenus.menuitem", 
+    "fields": {
+        "parent": null, 
+        "level": 0, 
+        "url": "", 
+        "menu": 1, 
+        "rank": 0, 
+        "caption": "root", 
+        "named_url": ""
+    }
+},
+{
+    "pk": 2, 
+    "model": "treemenus.menuitem", 
+    "fields": {
+        "parent": 1, 
+        "level": 1, 
+        "url": "/", 
+        "menu": 1, 
+        "rank": 0, 
+        "caption": "raiz", 
+        "named_url": ""
+    }
+},
+{
+    "pk": 3, 
+    "model": "treemenus.menuitem", 
+    "fields": {
+        "parent": 1, 
+        "level": 1, 
+        "url": "/documentos/", 
+        "menu": 1, 
+        "rank": 2, 
+        "caption": "Documentos", 
+        "named_url": ""
+    }
+},
+{
+    "pk": 4, 
+    "model": "treemenus.menuitem", 
+    "fields": {
+        "parent": 1, 
+        "level": 1, 
+        "url": "/acercade/", 
+        "menu": 1, 
+        "rank": 1, 
+        "caption": "Acerca de ", 
+        "named_url": ""
+    }
+},
+{
+    "pk": 5, 
+    "model": "treemenus.menuitem", 
+    "fields": {
+        "parent": 4, 
+        "level": 2, 
+        "url": "/documento/1", 
+        "menu": null, 
+        "rank": 0, 
+        "caption": "documento1", 
+        "named_url": ""
+    }
+},
+{
+    "pk": 6, 
+    "model": "treemenus.menuitem", 
+    "fields": {
+        "parent": 4, 
+        "level": 2, 
+        "url": "/documento/2", 
+        "menu": null, 
+        "rank": 1, 
+        "caption": "documento2", 
+        "named_url": ""
+    }
+},
+{
+    "pk": 7, 
+    "model": "treemenus.menuitem", 
+    "fields": {
+        "parent": 4, 
+        "level": 2, 
+        "url": "/documento/3", 
+        "menu": null, 
+        "rank": 2, 
+        "caption": "documento3", 
+        "named_url": ""
+    }
+},
+{
+    "pk": 1, 
+    "model": "treemenus.menu", 
+    "fields": {
+        "root_item": 1, 
+        "name": "principal"
+    }
+}
+]
