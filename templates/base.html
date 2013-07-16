@@ -1,4 +1,4 @@
-{% load i18n staticfiles %}
+{% load i18n staticfiles tree_menu_tags %}
 <!DOCTYPE html>
 <!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7">	<![endif]-->
 <!--[if    IE 7]>		<html class="no-js lt-ie9 lt-ie8">			<![endif]-->
@@ -64,7 +64,7 @@
 					<div class="menubox">
 						<div class="mymenus">
                             <nav>
-                            {% comment %} menu aqui {% endcomment %}
+                                {% show_menu "principal" %}
 							</nav>
 						</div>
 						<div class="myicons">
