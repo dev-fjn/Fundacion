@@ -21,8 +21,8 @@
         "url": "/", 
         "menu": 1, 
         "rank": 0, 
-        "caption": "raiz", 
-        "named_url": ""
+        "caption": "Inicio", 
+        "named_url": "home"
     }
 },
 {
@@ -31,11 +31,11 @@
     "fields": {
         "parent": 1, 
         "level": 1, 
-        "url": "/documentos/", 
+        "url": "/fundacion/", 
         "menu": 1, 
-        "rank": 2, 
-        "caption": "Documentos", 
-        "named_url": ""
+        "rank": 1, 
+        "caption": "Fundación", 
+        "named_url": "fundacion"
     }
 },
 {
@@ -44,58 +44,306 @@
     "fields": {
         "parent": 1, 
         "level": 1, 
-        "url": "/acercade/", 
+        "url": "/juan-negrin/", 
         "menu": 1, 
-        "rank": 1, 
-        "caption": "Acerca de ", 
-        "named_url": ""
+        "rank": 2, 
+        "caption": "Juan Negrín", 
+        "named_url": "juannegrin"
     }
 },
 {
     "pk": 5, 
     "model": "treemenus.menuitem", 
     "fields": {
-        "parent": 4, 
-        "level": 2, 
-        "url": "/documento/1", 
-        "menu": null, 
-        "rank": 0, 
-        "caption": "documento1", 
-        "named_url": ""
+        "parent": 1, 
+        "level": 1, 
+        "url": "/fondos-y-recursos-documentales/", 
+        "menu": 1, 
+        "rank": 3, 
+        "caption": "Fondos y Recursos Documentales", 
+        "named_url": "fondosyrecursosdocumentales"
     }
 },
 {
     "pk": 6, 
     "model": "treemenus.menuitem", 
     "fields": {
-        "parent": 4, 
-        "level": 2, 
-        "url": "/documento/2", 
-        "menu": null, 
-        "rank": 1, 
-        "caption": "documento2", 
-        "named_url": ""
+        "parent": 1, 
+        "level": 1, 
+        "url": "/sala-de-prensa/", 
+        "menu": 1, 
+        "rank": 3, 
+        "caption": "Sala de Prensa", 
+        "named_url": "saladeprensa"
     }
 },
 {
     "pk": 7, 
     "model": "treemenus.menuitem", 
     "fields": {
-        "parent": 4, 
-        "level": 2, 
-        "url": "/documento/3", 
-        "menu": null, 
-        "rank": 2, 
-        "caption": "documento3", 
-        "named_url": ""
+        "parent": 1, 
+        "level": 1, 
+        "url": "/bitacora/", 
+        "menu": 1, 
+        "rank": 3, 
+        "caption": "Batácora", 
+        "named_url": "bitacora"
     }
 },
+
+{
+    "pk": 8, 
+    "model": "treemenus.menuitem", 
+    "fields": {
+        "parent": 3, 
+        "level": 2, 
+        "url": "/fundacion/presidente/", 
+        "menu": null, 
+        "rank": 0, 
+        "caption": "Presidente", 
+        "named_url": "presidente"
+    }
+},
+{
+    "pk": 9, 
+    "model": "treemenus.menuitem", 
+    "fields": {
+        "parent": 3, 
+        "level": 2, 
+        "url": "/fundacion/presidenta-de-honor/", 
+        "menu": null, 
+        "rank": 1, 
+        "caption": "Presidenta de honor", 
+        "named_url": "presidentadehonor"
+    }
+},
+{
+    "pk": 10, 
+    "model": "treemenus.menuitem", 
+    "fields": {
+        "parent": 3, 
+        "level": 2, 
+        "url": "/fundacion/patronato/", 
+        "menu": null, 
+        "rank": 2, 
+        "caption": "Patronato", 
+        "named_url": "patronato"
+    }
+},
+{
+    "pk": 11, 
+    "model": "treemenus.menuitem", 
+    "fields": {
+        "parent": 3, 
+        "level": 2, 
+        "url": "/fundacion/objetivos/", 
+        "menu": null, 
+        "rank": 3, 
+        "caption": "Objetivos", 
+        "named_url": "objetivos"
+    }
+},
+{
+    "pk": 12, 
+    "model": "treemenus.menuitem", 
+    "fields": {
+        "parent": 3, 
+        "level": 2, 
+        "url": "/fundacion/ayudanos/", 
+        "menu": null, 
+        "rank": 4, 
+        "caption": "Ayúdanos", 
+        "named_url": "ayudanos"
+    }
+},
+
+
+{
+    "pk": 13, 
+    "model": "treemenus.menuitem", 
+    "fields": {
+        "parent": 4, 
+        "level": 2, 
+        "url": "/juan-negrin/biografia/", 
+        "menu": null, 
+        "rank": 0, 
+        "caption": "Biografía", 
+        "named_url": "biografia"
+    }
+},
+{
+    "pk": 14, 
+    "model": "treemenus.menuitem", 
+    "fields": {
+        "parent": 4, 
+        "level": 2, 
+        "url": "/juan-negrin/cronobiografia/", 
+        "menu": null, 
+        "rank": 1, 
+        "caption": "Cronobiografía", 
+        "named_url": "cronobiografia"
+    }
+},
+{
+    "pk": 15, 
+    "model": "treemenus.menuitem", 
+    "fields": {
+        "parent": 4, 
+        "level": 2, 
+        "url": "/juan-negrin/biliografia/", 
+        "menu": null, 
+        "rank": 2, 
+        "caption": "Bibliografía", 
+        "named_url": "bibliografia"
+    }
+},
+{
+    "pk": 16, 
+    "model": "treemenus.menuitem", 
+    "fields": {
+        "parent": 4, 
+        "level": 2, 
+        "url": "/juan-negrin/presencia/", 
+        "menu": null, 
+        "rank": 3, 
+        "caption": "Presencia", 
+        "named_url": "presencia"
+    }
+},
+{
+    "pk": 17, 
+    "model": "treemenus.menuitem", 
+    "fields": {
+        "parent": 4, 
+        "level": 2, 
+        "url": "/juan-negrin/citas/", 
+        "menu": null, 
+        "rank": 3, 
+        "caption": "Citas", 
+        "named_url": "citas"
+    }
+},
+
+
+{
+    "pk": 18, 
+    "model": "treemenus.menuitem", 
+    "fields": {
+        "parent": 5, 
+        "level": 2, 
+        "url": "/fondos-y-recursos-documentales/archivos/",
+        "menu": null, 
+        "rank": 0, 
+        "caption": "Archivos", 
+        "named_url": "archivos"
+    }
+},
+{
+    "pk": 19, 
+    "model": "treemenus.menuitem", 
+    "fields": {
+        "parent": 5, 
+        "level": 2, 
+        "url": "/fondos-y-recursos-documentales/biblioteca/",
+        "menu": null, 
+        "rank": 1, 
+        "caption": "Biblioteca", 
+        "named_url": "biblioteca"
+    }
+},
+{
+    "pk": 20, 
+    "model": "treemenus.menuitem", 
+    "fields": {
+        "parent": 5, 
+        "level": 2, 
+        "url": "/fondos-y-recursos-documentales/recursos-audiovisuales/",
+        "menu": null, 
+        "rank": 2, 
+        "caption": "Recursos Audiovisuales", 
+        "named_url": "recursosaudiovisuales"
+    }
+},
+{
+    "pk": 21, 
+    "model": "treemenus.menuitem", 
+    "fields": {
+        "parent": 5, 
+        "level": 2, 
+        "url": "/fondos-y-recursos-documentales/presencia-en-prensa/",
+        "menu": null, 
+        "rank": 3, 
+        "caption": "Presencia en Prensa", 
+        "named_url": "presenciaenprensa"
+    }
+},
+{
+    "pk": 22, 
+    "model": "treemenus.menuitem", 
+    "fields": {
+        "parent": 5, 
+        "level": 2, 
+        "url": "/fondos-y-recursos-documentales/catalogo-de-publicaciones/",
+        "menu": null, 
+        "rank": 4, 
+        "caption": "Catálogo de Publicaciones", 
+        "named_url": "catalogodepublicaciones"
+    }
+},
+
+
+{
+    "pk": 23, 
+    "model": "treemenus.menuitem", 
+    "fields": {
+        "parent": 6, 
+        "level": 2, 
+        "url": "/sala-de-prensa/imagen-corporativa/",
+        "menu": null, 
+        "rank": 0, 
+        "caption": "Imagen Corporativa", 
+        "named_url": "imagencorporativa"
+    }
+},
+{
+    "pk": 24, 
+    "model": "treemenus.menuitem", 
+    "fields": {
+        "parent": 6, 
+        "level": 2, 
+        "url": "/sala-de-prensa/dossieres-de-prensa/",
+        "menu": null, 
+        "rank": 1, 
+        "caption": "Dossieres de Prensa", 
+        "named_url": "dossieresdeprensa"
+    }
+},
+
+
+
+
 {
     "pk": 1, 
     "model": "treemenus.menu", 
     "fields": {
         "root_item": 1, 
         "name": "principal"
+    }
+},
+{
+    "pk": 2, 
+    "model": "treemenus.menu", 
+    "fields": {
+        "root_item": 2, 
+        "name": "central"
+    }
+},
+{
+    "pk": 3, 
+    "model": "treemenus.menu", 
+    "fields": {
+        "root_item": 3, 
+        "name": "piedepagina"
     }
 }
 ]
