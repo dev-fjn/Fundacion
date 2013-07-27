@@ -32,6 +32,10 @@ git clone git@github.com:dev-fjn/Fundacion.git
 ## Generamos el entorno virtual adecuado:
 ```sh
 mkvirtualenv -a ~/Proyectos/Python/Fundacion --no-site-packages Fundacion
+
+    ó
+
+mkvirtualenv --python=/usr/bin/python3 -a ~/Proyectos/Python/Fundacion --no-site-packages Fundacion
 ```
 
 ## Una vez dentro del  entorno, instalamos Django:
