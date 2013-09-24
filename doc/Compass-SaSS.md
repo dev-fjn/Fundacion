@@ -1,3 +1,14 @@
+# Breve introducción:
+# ~~~~~~~~~~~~~~~~~~~
+# http://dzignus.github.io/workshop-sass-compass/#1
+
+# Debian
+apt-get install ruby
+apt-get install rubygems
+
+# Instalamos paquetería:
+# ~~~~~~~~~~~~~~~~~~~~~~
+gem install sass compass susy
 
 # Crear la base:
 # ~~~~~~~~~~~~~
