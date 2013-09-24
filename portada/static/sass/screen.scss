@@ -101,15 +101,17 @@
 
 
 @media screen and (min-width:  481px) and (max-width: 2048px) {
+	@include sticky-footer(144px, "#layout", "#layout_footer", "#footer-container");
 	$container-style: fixed;
 	$fuente: $font_base * 0.065em;
 
 	.container {
 		@include container;
-		@include susy-grid-background;
+		//@include susy-grid-background;
 		@include border-box-sizing;
 		// background-color: red;
 		font-size: $fuente;
+		@include box-shadow(rgba(black, 0.4) 0 0 25px, rgba(black, 0.2) 0 0 3px 1px inset);
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -211,7 +213,7 @@
 
 ////////////////////////////////////////////////////////////////////////
 
-		div.footer-container {
+		div#footer-container {
 			@include span-columns(12, 12);
 			footer.wrapper {
 				h3 {}

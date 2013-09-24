@@ -2,6 +2,7 @@
 // Imports
 @import "compass/reset";
 @import "compass/css3";
+@import "compass/layout";
 @import "susy";
 
 // ---------------------------------------------------------------
@@ -38,20 +39,23 @@ $font_base							: $base_font_size_px;
 
 // COLORES
 // ~~~~~~~
-
-$color01: #ffffff;	// 255 255 255
-$color02: #ffeab4;	// 255 234 180
-$color03: #e4b368;	// 228 179 104
-$color04: #cf4902;	// 207  73   2
-$color05: #9d897c;	// 157 137 124
-$color06: #8ea797;	// 142 167 151
-$color07: #784421;	// 120  68  33	// 04
-$color08: #5c7565;	//  92 117 101
-$color09: #48261c;	//  72  38  28	// 06
-$color10: #294d5b;	//  41  77  91
-$color11: #183c4a;	//  24  60  74
-$color12: #000000;	//   0   0   0
-$color13: #603920;
+//
+// http://webcolourdata.com/profile/60980
+//
+$color00: #000000;
+$color01: #ffffff;
+$color02: #B6B09E;
+$color03: #ABA28E;
+$color04: #EB2C2D;
+$color05: #F3171B;
+$color06: #74644D;
+$color07: #C6C1B3;
+$color08: #C1B7A4;
+$color09: #A39579;
+$color10: #C6AD73;
+$color11: #977856;
+$color12: #9AA6AD;
+$color13: #EF9691;
 
 ////////////////////////////////////////////////////////////////////////
 @import "funciones";
