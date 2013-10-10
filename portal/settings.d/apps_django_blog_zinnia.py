@@ -13,6 +13,7 @@ INSTALLED_APPS += (
 )
 
 TEMPLATE_CONTEXT_PROCESSORS += (
+      'django.core.context_processors.request',
       'zinnia.context_processors.version',
 )
 
