@@ -1,0 +1,22 @@
+
+server {
+    listen *:80;
+    server_name  www.fundacionjuannegrin.com;
+
+    access_log  /var/log/nginx/prod_fjn.access.log;
+    error_log  /var/log/nginx/prod_fjn.error.log;
+
+    location /media  {
+        alias /var/www/fjn/prod/media/;
+    }
+
+    location /static {
+        alias /var/www/fjn/prod/media/;
+    }
+
+    location / {
+        proxy_pass   http://127.0.0.1:8002;
+        proxy_set_header Host      $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+}

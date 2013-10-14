@@ -5,25 +5,25 @@
 git pull
 
 # Limpiar todo lo posible
-rm -Rf .gitignore static virtualenv external/*
-cp .gitignore-minimo .gitignore
-git status # ver que no hay nada "extra"
-rm -Rf seguir_Borrando_cosas_sobrantes
+#rm -Rf .gitignore static virtualenv external/*
+#cp .gitignore-minimo .gitignore
+#git status # ver que no hay nada "extra"
+#rm -Rf seguir_Borrando_cosas_sobrantes
 
 # Revertimos gitignore aunque yo lo borraria
-git checkout .gitignore
+#git checkout .gitignore
 
 # Pillamos los external
 git submodule update
 
 # Vemos que ningun enlace simbolico está roto
-ls -l; read
+ls -l; echo "vemos que ningun enlace simbolico esta roto, pulsa enter"; read
 
 # Configuracion en desarrollo
 cp portal/settings.d/000.STATUS.py.demo portal/settings.d/000.STATUS.py
 
 # Generacion del virtualenv standard style
-virtualenv virtualenv
+test -d virtualenv || virtualenv virtualenv
 . virtualenv/bin/activate
 pip install -r requirements.txt
 deactivate
@@ -32,13 +32,13 @@ deactivate
 ## (o sea, que desactivaria el --no-site-packages del virtualenv)
 
 # Testear que está el virtualenv fino
-./python.sh manage.py ; read
+./python.sh manage.py ; echo "Si el python manage.py fue bien, pulsamos enter"; read
 
 # Crear base de datos (en sqlite debido a que estamos en debug!produccion)
 ./python.sh manage.py syncdb --noinput
 
 # Crear base de datos #2
-/python.sh manage.py migrate
+./python.sh manage.py migrate
 
 # Crear /var/www/tal (realmente ./static)
 ./python.sh manage.py collectstatic --noinput

@@ -8,23 +8,26 @@ in apps' "static/" subdirectories and in STATICFILES_DIRS.
 Example: "/home/media/media.lawrence.com/static/"
 
 '''
-if DEBUG and not PRODUCCION:
-    # Desarrollo
+if False:
+    # SubDesarrollo
     STATIC_ROOT = PROJECT_ROOT + '/static/'
     STATIC_URL = '/static/'
     STATICFILES_DIRS = (
         #os.path.join(PROJECT_ROOT, 'blog/static'),
     )
+elif DEBUG and not PRODUCCION:
+    # Desarrollo
+    STATIC_ROOT = '/var/www/fjn/dev/static'
+    STATIC_URL = '/static/'
+    STATICFILES_DIRS = ()
 elif DEBUG and PRODUCCION:
     # Beta
-    #STATIC_ROOT = '/var/www/produccion/static'
-    #STATIC_URL = '/static/'
-    #STATICFILES_DIRS = ()
-    pass
+    STATIC_ROOT = '/var/www/fjn/beta/static'
+    STATIC_URL = '/static/'
+    STATICFILES_DIRS = ()
 else:
     # Producción
-    #STATIC_ROOT = '/var/www/pruebas/static'
-    #STATIC_URL = '/static/'
-    #STATICFILES_DIRS = ()
-    pass
+    STATIC_ROOT = '/var/www/fjn/www/static'
+    STATIC_URL = '/static/'
+    STATICFILES_DIRS = ()
 
