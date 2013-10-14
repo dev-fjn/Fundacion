@@ -1,9 +1,11 @@
 # Preinstalación 
 
 ## Fase I: Instalación del entorno virtual
+
+# Instalación base para iniciar la instalación:
+
 ```sh
-apt-get install python-virtualenv virtualenvwrapper python-pip
-apt-get install git-flow
+apt-get install python-virtualenv virtualenvwrapper python-pip git-flow python-dev
 ```
 
 ### Creamos el fichero /etc/profile.d/virtualenvwraper.sh
