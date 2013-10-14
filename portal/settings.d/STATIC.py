@@ -17,17 +17,17 @@ if False:
     )
 elif DEBUG and not PRODUCCION:
     # Desarrollo
-    STATIC_ROOT = '/var/www/fjn/dev/static'
+    STATIC_ROOT = '/var/www/fjn_dev/static'
     STATIC_URL = '/static/'
     STATICFILES_DIRS = ()
 elif DEBUG and PRODUCCION:
     # Beta
-    STATIC_ROOT = '/var/www/fjn/beta/static'
+    STATIC_ROOT = '/var/www/fjn_beta/static'
     STATIC_URL = '/static/'
     STATICFILES_DIRS = ()
 else:
     # Producción
-    STATIC_ROOT = '/var/www/fjn/www/static'
+    STATIC_ROOT = '/var/www/fjn_www/static'
     STATIC_URL = '/static/'
     STATICFILES_DIRS = ()
 
