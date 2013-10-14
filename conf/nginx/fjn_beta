@@ -3,8 +3,8 @@ server {
     listen *:80;
     server_name  beta.fundacionjuannegrin.com;
 
-    access_log  /var/log/nginx/beta_fjn.access.log;
-    error_log  /var/log/nginx/beta_fjn.error.log;
+    access_log  /var/log/nginx/fjn_beta.access.log;
+    error_log  /var/log/nginx/fjn_beta.error.log;
 
     location /media  {
         alias /var/www/fjn/beta/media/;

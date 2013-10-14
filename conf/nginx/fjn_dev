@@ -3,8 +3,8 @@ server {
     listen *:80;
     server_name  dev.fundacionjuannegrin.com;
 
-    access_log  /var/log/nginx/dev_fjn.access.log;
-    error_log  /var/log/nginx/dev_fjn.error.log;
+    access_log  /var/log/nginx/fjn_dev.access.log;
+    error_log  /var/log/nginx/fjn_dev.error.log;
 
     location /media  {
         alias /var/www/fjn/dev/media/;
