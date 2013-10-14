@@ -8,6 +8,13 @@ mkdir -p beta/static beta/media
 mkdir -p dev/static dev/media
 mkdir -p www/static www/media
 
+# Crear base de datos para produccion (beta y dev no pues van con sqlite)
+
+su - postgres
+createuser fjn --no-superuser --no-createrole --no-createdb --password
+createdb fjn --owner fjn
+exit
+
 # clonar cada uno de los despliegues en /opt/fjn/
 
 mkdir -p /opt/fjn
