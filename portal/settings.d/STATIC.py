@@ -9,12 +9,12 @@ Example: "/home/media/media.lawrence.com/static/"
 
 '''
 if False:
-	# SubDesarrollo
-	STATIC_ROOT = PROJECT_ROOT + '/static/'
+    # SubDesarrollo
+    STATIC_ROOT = PROJECT_ROOT + '/static/'
     STATIC_URL = '/static/'
-	STATICFILES_DIRS = (
-	    #os.path.join(PROJECT_ROOT, 'blog/static'),
-	)
+    STATICFILES_DIRS = (
+        #os.path.join(PROJECT_ROOT, 'blog/static'),
+    )
 elif DEBUG and not PRODUCCION:
     # Desarrollo
     STATIC_ROOT = '/var/www/fjn/dev/static'
