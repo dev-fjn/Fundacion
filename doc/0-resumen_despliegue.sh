@@ -6,11 +6,13 @@ adduser fjn_dev
 
 # Crear las carpetas para el static y el media en /var/www/fjn/
 
-mkdir /var/www/fjn/
-cd /var/www/fjn/
-mkdir -p beta/static beta/media
-mkdir -p dev/static dev/media
-mkdir -p prod/static prod/media
+cd /var/www/
+mkdir -p fjn_beta/static fjn_beta/media
+mkdir -p fjn_dev/static fjn_dev/media
+mkdir -p fjn_prod/static fjn_prod/media
+chown -R fjn_beta fjn_beta
+chown -R fjn_dev fjn_dev
+chown -R fjn_prod fjn_prod 
 
 # Crear base de datos para produccion (beta y dev no pues van con sqlite)
 

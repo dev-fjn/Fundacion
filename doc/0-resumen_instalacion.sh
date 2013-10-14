@@ -14,7 +14,7 @@ git pull
 #git checkout .gitignore
 
 # Pillamos los external
-git submodule update
+git submodule update --init --recursive
 
 # Vemos que ningun enlace simbolico está roto
 ls -l; echo "vemos que ningun enlace simbolico esta roto, pulsa enter"; read
