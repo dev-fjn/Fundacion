@@ -3,15 +3,15 @@ server {
     listen *:80;
     server_name  www.fundacionjuannegrin.com;
 
-    access_log  /var/log/nginx/www_fjn.access.log;
-    error_log  /var/log/nginx/www_fjn.error.log;
+    access_log  /var/log/nginx/prod_fjn.access.log;
+    error_log  /var/log/nginx/prod_fjn.error.log;
 
     location /media  {
-        alias /var/www/fjn/www/media/;
+        alias /var/www/fjn/prod/media/;
     }
 
     location /static {
-        alias /var/www/fjn/www/media/;
+        alias /var/www/fjn/prod/media/;
     }
 
     location / {
