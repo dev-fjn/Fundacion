@@ -7,11 +7,11 @@ server {
     error_log  /var/log/nginx/fjn_beta.error.log;
 
     location /media  {
-        alias /var/www/fjn/beta/media/;
+        alias /var/www/fjn_beta/media/;
     }
 
     location /static {
-        alias /var/www/fjn/beta/media/;
+        alias /var/www/fjn_beta/media/;
     }
 
     location / {

@@ -7,11 +7,11 @@ server {
     error_log  /var/log/nginx/fjn_prod.error.log;
 
     location /media  {
-        alias /var/www/fjn/prod/media/;
+        alias /var/www/fjn_prod/media/;
     }
 
     location /static {
-        alias /var/www/fjn/prod/media/;
+        alias /var/www/fjn_prod/media/;
     }
 
     location / {
