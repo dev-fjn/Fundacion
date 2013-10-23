@@ -1,53 +1,51 @@
+// ----
+// Sass (v3.3.0.rc.1)
+// Compass (v0.13.alpha.7)
+// ----
+
 // ---------------------------------------------------------------------------
 // Imports
+@import "compass";
+
 @import "compass/reset";
+@import "compass/support";
+
+@import "compass/layout/sticky-footer";
+
 @import "compass/css3";
-@import "compass/layout";
+@import "compass/css3/columns";
+@import "compass/css3/border-radius";
+@import "compass/css3/font-face";
+
+@import "compass/utilities";
+
 @import "susy";
-
-// ---------------------------------------------------------------
-// http://www.shingokko.com/blog-entry/responsively-design-a-blog.html
-// http://lab.xms.pl/css-generator/
-// ---------------------------------------------------------------------
-
+// ---------------------------------------------------------------------------
 // Basic Grid
 
 $total-columns  : 12;
 $column-width   : 4em;
-$gutter-width   : 1em;
+$gutter-width   : 0.5em;
 //$grid-padding   : $gutter-width;
 $grid-padding   : 0;
 
+$show-grid-backgrounds  : true;
+
 $container-width: 60em;
 $container-style: magic;
-//$container-style: fluid;
-//$container-style: fixed;
 
-
-//$show-grid-backgrounds				: true;
-//$show-column-grid-backgrounds		: true;
-//$show-baseline-grid-backgrounds		: true;
-
-//$grid-background-baseline-color		: rgba(  0,   0,   0, 1    );
-//$grid-background-column-color		: rgba(191, 191, 191, 0.75 );
-//$grid-background-gutter-color		: rgba(127, 127, 127, 0.75 );
-
-$tamaño_base						: 16;
-$base_font_size_px					: $tamaño_base;
-$base_line_height_px				: 24;
-$font_base							: $base_font_size_px;
+$radio-standar: 10px;
 
 // COLORES
 // ~~~~~~~
 //
 // http://webcolourdata.com/profile/60980
-//
 $color00: #000000;
-$color01: #ffffff;
+$color01: #FFFFFF;
 $color02: #B6B09E;
 $color03: #ABA28E;
-$color04: #EB2C2D;
-$color05: #F3171B;
+$color04: #EB2C2D; // Rojo
+$color05: #F3171B; // Rojo
 $color06: #74644D;
 $color07: #C6C1B3;
 $color08: #C1B7A4;
@@ -55,9 +53,72 @@ $color09: #A39579;
 $color10: #C6AD73;
 $color11: #977856;
 $color12: #9AA6AD;
-$color13: #EF9691;
+$color13: #EF9691; // Rojo rosa
 
-////////////////////////////////////////////////////////////////////////
-@import "funciones";
-@import "mixins";
-@import "style";
+// Colores de los menus.
+$color_menu01: #fefefe;
+$color_menu02: #eee9f0;
+$color_menu03: $color04; // #db000b; //rojo
+$color_menu04: #ececec;
+$color_menu05: #000000;
+$color_menu06: #ffeeff;
+$color_menu07: $color05; // #ff0f1b; //rojo
+$color_menu08: #ffffff;
+$color_menu09: #a80008; //rojo oscuro
+$color_menu10: #8f0007; //rojo oscuro
+
+//@mixin navigation-list($c1: #FFF, $c2: #000) {
+//	list-style-type: none;
+//	margin: 0;
+//	overflow: hidden;
+//	> li {
+//		display: block;
+//		float: left;
+//		padding-left: .25em;
+//		padding-right: .25em;
+//		&:last-child {
+//			margin-right: 0;
+//		}
+//		&.current{
+//			color: $c1!important;
+//			&:hover {
+//				background-color: $c2;
+//			}
+//		}
+//	}
+//}
+
+// sf-speakeasy
+// glyphicons
+
+// Fuentes
+// ~~~~~~~
+@include font-face("sf-speakeasy", font-files("sf-speakeasy/SF_Speakeasy-webfont.woff", "sf-speakeasy/SF_Speakeasy-webfont.ttf", "sf-speakeasy/SF_Speakeasy-webfont.svg"), "sf-speakeasy/SF_Speakeasy-webfont.eot");
+@include font-face("glyphicons", font-files("glyphicons/glyphicons-halflings-regular.woff", "glyphicons/glyphicons-halflings-regular.ttf", "glyphicons/glyphicons-halflings-regular.svg"), "glyphicons/glyphicons-halflings-regular.eot");
+@include font-face("tron", font-files("tron/tron-webfont.woff", "tron/tron-webfont.ttf", "tron/tron-webfont.svg"), "tron/tron-webfont.eot");
+
+// Clases para aplicar las fuentes:
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.sf-speakeasy {
+    font-family: "sf-speakeasy";
+    font-size: 1.0em;
+}
+.glyphicons{
+    font-family: "glyphicons";
+    font-size: 1.0em;
+}
+.tron{
+    font-family: "tron";
+    font-size: 1.0em;
+}
+
+// Google Font:
+.opensans{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.0em;
+}
+.cantarell{
+    font-family: 'Cantarell', sans-serif;
+    font-size: 1em;
+}
+

@@ -1,428 +1,458 @@
+// ----
+// Sass (v3.3.0.rc.1)
+// Compass (v0.13.alpha.7)
+// ----
+
 // ---------------------------------------------------------------------------
 // Imports
 
 @import "base";
+//@import "menus";
 
-// ---------------------------------------------------------------------
-// http://www.shingokko.com/blog-entry/responsively-design-a-blog.html
-// http://lab.xms.pl/css-generator/
-// ---------------------------------------------------------------------
-
-
-//	<!--[if lt IE 10]>
-//		<div>
-//			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-//		</div>
-//	<![endif]-->
-
+/* -------------------------------------------------------------------------*/
 /* Layout */
+/* -------------------------------------------------------------------------*/
 
-////////////////////////////////////////////////////////////////////////
-//
-// Media Querys adaptativas
-// ~~~~~~~~~~~~~~~~~~~~~~~~
-////////////////////////////////////////////////////////////////////////
+.container {
+	@include container;
+	//@include susy-grid-background;
+	//@include sticky-footer(200px);
+	@include box-shadow(rgba(black, 0.4) 0 0 25px, rgba(black, 0.2) 0 0 3px 1px inset);
+	@include background-image(linear-gradient($color_menu01, $color_menu02));
 
-//@media screen and (min-width:    1px) and (max-width:  480px) {
-//	$container-style: fluid;
-//	$fuente: $font_base * 0.05em;
+	header {
 
-//	.container{
-		//@include container;
-//		//@include susy-grid-background;
-//		//@include border-box-sizing;
-//		//background-color: lime;
-//		font-size: $fuente;
+		section#banner{
+			//background-color: Red;
+			background-image: url(../img/cabecera.png);
+			background-repeat: no-repeat;
+			//background-color: $color01;
+			min-height: 125px;
 
-//		section#head {
-//			header.header-container {
-//				div.ribbon_container{
-//					background-color: //red;
-//					div.langid{
-//					}
-//					div.ribbon {
-//					}
-//				}
-//				div.searchbox {}
-//				div.menubox{
-//					div.mymenus{
-//						nav {
-//							ul {
-//								@include navigation-list();
-//								li {
-//									a {
-//									}
-//								}
-//							}
-//						}
-//					}
-//					div.myicons{
-//						span {}
-//					}
-//				clear: both;
-//				}
+			section#relleno{
+				@include span-columns(9, 12);
+				//background-color: Red;
+			}
 
-//				div.hormigas{}
-//				div.chromeframe {}
-//			}
-//		}
+			section#caja{
+				@include span-columns(3 omega, 12);
+				//background-color: Blue;
+				text-align: center;
+				max-height: 125px;
 
-//		@include clearfix();
+				section#acceso{
+					@include span-columns(3 omega, 3);
+					min-height: 42px;
+				}
 
-////////////////////////////////////////////////////////////////////////
+				section#social{
+					@include span-columns(3 omega, 3);
+					min-height: 42px;
+				}
 
-//		div.main-container {
-//			div.main.wrapper.clearfix {
-//				section.myslideshow{
-//					div {}
-//				}
-//				article {
-//					header {
-//						h1 {}
-//						p {}
-//					}
-//					section {
-//						h2 {}
-//						p {}
-//					}
-//					footer {
-//						h3 {}
-//						p {}
-//					}
-//				}
-//				aside {
-//					h3 {}
-//					p {}
-//				}
-//			}
-//		}
-//	}
-//}
+				section#contacto{
+					@include span-columns(3 omega, 3);
+					min-height: 41px;
+					//vertical-align: text-bottom;
+				}
+			}
+		}
 
+		section#menus{
+			@include span-columns(12 omega, 12);
+			//background-color: Green;
 
-@media screen and (min-width:  481px) and (max-width: 2048px) {
-	@include sticky-footer(144px, "#layout", "#layout_footer", "#footer-container");
-	$container-style: fixed;
-	$fuente: $font_base * 0.065em;
+			nav#cssmenu{
 
-	.container {
-		@include container;
-		//@include susy-grid-background;
-		@include border-box-sizing;
-		// background-color: red;
-		font-size: $fuente;
-		@include box-shadow(rgba(black, 0.4) 0 0 25px, rgba(black, 0.2) 0 0 3px 1px inset);
+				height: 49px;
+				@include border-top-radius(10px);
 
-////////////////////////////////////////////////////////////////////////
+				// Fondo degradado de los menús
+				background: $color_menu01;
+				@include background-image(linear-gradient($color_menu01, $color_menu02));
+				// Línea Base roja para todos los menús
+				border-bottom: 2px solid $color_menu03;
+				width: auto;
 
-		section#head {
-			@include span-columns(12, 12);
-			header.header-container {
-				@include span-columns(12, 12);
+				ul, li, span, a {
+					margin: 0;
+					padding: 0;
+					position: relative;
+				}
+				&:after, ul:after {
+					content: '';
+					display: block;
+					clear: both;
+				}
+				// Adaptar a scss
+				a {
+					color: $color_menu05;
+					background: $color_menu01;
+					@include background-image(linear-gradient($color_menu01, $color_menu04));
+					display: inline-block;
+					line-height: 49px;
+					padding: 0 20px;
+					text-decoration: none;
+				}
+				ul {
+					list-style: none;
+				}
+				> ul {
+					float: left;
+					> li {
+						float: left;
+						
+						> a {
+							color: $color_menu05;
+							/* font-size: 12px; */
+						}
+						// Dibujamos el triangulo rojo
+						&:hover:after {
+							content: '';
+							display: block;
+							width: 0;
+							height: 0;
+							position: absolute;
+							left: 50%;
+							bottom: 0;
+							border-left: 10px solid transparent;
+							border-right: 10px solid transparent;
+							border-bottom: 10px solid $color_menu03;
+							margin-left: -10px;
+						}
 
-				div.ribbon-container{
-					@include span-columns(12, 12);
-					div.langid{
-						@include span-columns(9, 12);
-						form{
-							select {}
-							input{}
+						&:first-child > a {
+							//Pasas a compass
+							//@include border-top-radius(10px);
+							border-radius: 5px 0 0 0;
+							-moz-border-radius: 5px 0 0 0;
+							-webkit-border-radius: 5px 0 0 0;
+						}
+						&.active {
+							&:after {
+								content: '';
+								display: block;
+								width: 0;
+								height: 0;
+								position: absolute;
+								left: 50%;
+								bottom: 0;
+								border-left: 10px solid transparent;
+								border-right: 10px solid transparent;
+								border-bottom: 10px solid $color_menu03;
+								margin-left: -10px;
+							}
+							> a {
+								background: $color_menu04;
+								//@include background-image(linear-gradient($color_menu04, $color_menu06));	// No lleva degradado.
+
+								// Pasar a compass
+								box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+								-moz-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+								-webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+							}
+						}
+						&:hover > a {
+							background: $color_menu04;
+							@include background-image(linear-gradient($color_menu04, $color_menu06));	//No lleva degradado
+							// Pasar a compass
+							box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+							-moz-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+							-webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
 						}
 					}
-					div.ribbon {
-						@include span-columns(3 omega, 12);
+				}
+				.has-sub {
+					//z-index: 1;
+					&:hover > ul {
+						display: block;
 					}
-				}
-				clear: both;
-
-				div.banner {
-					@include pad(2, 2, 12);
-				}
-
-				clear: both;
-
-				div.searchbox {
-					@include pad(4, 4, 12);
-				}
-				div.menubox{
-					@include prefix(2, 12);
-					div.mymenus{
-						@include span-columns(6, 10);
-						nav {
-							ul {
-								@include navigation-list();
-								li {
-									a {
-									}
+					ul {
+						display: none;
+						position: absolute;
+						width: 200px;
+						top: 100%;
+						left: 0;
+						li {
+							*margin-bottom: -1px;
+							a {
+								background: $color_menu03;
+								border-bottom: 1px dotted $color_menu07;
+								filter: none;
+								/* font-size: 11px; */
+								display: block;
+								line-height: 120%;
+								padding: 10px;
+								color: $color_menu08;
+							}
+							&:hover a {
+								background: $color_menu09;
+							}
+						}
+					}
+					.has-sub {
+						&:hover > ul {
+							display: block;
+						}
+						ul {
+							display: none;
+							position: absolute;
+							left: 100%;
+							top: 0;
+							li a {
+								background: $color_menu09;
+								border-bottom: 1px dotted $color_menu07;
+								&:hover {
+									background: $color_menu10;
 								}
 							}
 						}
 					}
-					div.myicons{
-						@include span-columns(3 omega, 8);
-						span {
-						}
-					}
-				clear: both;
 				}
-
-				div.hormigas{
-					@include span-columns(12, 12);
-					//@include omega;
-				}
-				div.chromeframe {
-					@include omega;
-				}
-			}
-		}
-
-		@include clearfix();
-
-////////////////////////////////////////////////////////////////////////
-
-		div.main-container {
-			@include span-columns(12 omega, 12);
-			div.main.wrapper.clearfix {
-				section.myslideshow{
-					@include span-columns(12, 12);
-					div {
-					}
-				}
-				article {
-					@include span-columns(9, 12);
-					header {
-						h1 {}
-						p {}
-					}
-					section {
-						h2 {}
-						p {}
-					}
-					footer {
-						h3 {}
-						p {}
-					}
-				}
-				aside {
-					@include span-columns(3 omega, 12);
-					h3 {}
-					p {}
-				}
-			}
-		}
-
-////////////////////////////////////////////////////////////////////////
-
-		div#footer-container {
-			@include span-columns(12, 12);
-			footer.wrapper {
-				h3 {}
 			}
 		}
 	}
-}
 
-//@media screen and (min-width: 1025px) and (max-width: 1640px) {
-//	$container-style: fixed;
-//	$fuente: $font_base * 0.08em;
-//
-//	.container {
-//		@include container;
-//		//@include susy-grid-background;
-//		//@include border-box-sizing;
-//		//background-color: blue;
-//		font-size: $fuente;
-//
-//////////////////////////////////////////////////////////////////////////
-//
-//		section#head {
-//			@include span-columns(12, 12);
-//			header.header-container {
-//				@include span-columns(12, 12);
-//				div.ribbon-container{
-//					@include span-columns(12, 12);
-//					div.ribbon {
-//					}
-//				}
-//				div.searchbox {
-//					@include pad(4, 4, 12);
-//				}
-//				div.menubox{
-//					@include prefix(4, 12);
-//					div.mymenus{
-//						@include span-columns(5, 8);
-//						nav {
-//							ul {
-//								@include navigation-list();
-//								li {
-//									a {
-//									}
-//								}
-//							}
-//						}
-//					}
-//					div.myicons{
-//						@include span-columns(3 omega, 8);
-//						span {
-//						}
-//					}
-//				clear: both;
-//				}
-//
-//				div.hormigas{
-//					@include span-columns(12, 12);
-//					//@include omega;
-//				}
-//				div.chromeframe {
-//					@include omega;
-//				}
-//			}
-//		}
-//
-//		@include clearfix();
-//
-//////////////////////////////////////////////////////////////////////////
-//
-//		div.main-container {
-//			@include span-columns(12 omega, 12);
-//			div.main.wrapper.clearfix {
-//				section.myslideshow{
-//					@include span-columns(12, 12);
-//					div {
-//					}
-//				}
-//				article {
-//					@include span-columns(9, 12);
-//					header {
-//						h1 {}
-//						p {}
-//					}
-//					section {
-//						h2 {}
-//						p {}
-//					}
-//					footer {
-//						h3 {}
-//						p {}
-//					}
-//				}
-//				aside {
-//					@include span-columns(3 omega, 12);
-//					h3 {}
-//					p {}
-//				}
-//			}
-//		}
-//
-//////////////////////////////////////////////////////////////////////////
-//
-//		div.footer-container {
-//			@include span-columns(12, 12);
-//			footer.wrapper {
-//				h3 {}
-//			}
-//		}
-//	}
-//}
-//
-//@media screen and (min-width: 1641px) and (max-width: 4092px) {
-//	$container-style: fixed;
-//	$fuente: $font_base * 0.11em;
-//
-//	.container {
-//		@include container;
-//		@include susy-grid-background;
-//		@include border-box-sizing;
-//		//background-color: orange;
-//		font-size: $fuente;
-//
-//////////////////////////////////////////////////////////////////////////
-//
-//		section#head {
-//			@include span-columns(12, 12);
-//			header.header-container {
-//				@include span-columns(12, 12);
-//				div.ribbon {
-//					@include span-columns(12, 12);
-//				}
-//				div.searchbox {
-//					@include pad(4, 4, 12);
-//				}
-//				div.menubox{
-//					@include prefix(4, 12);
-//					div.mymenus{
-//						@include span-columns(5, 8);
-//						nav {
-//							ul {
-//								@include navigation-list();
-//								li {
-//									a {
-//									}
-//								}
-//							}
-//						}
-//					}
-//					div.myicons{
-//						@include span-columns(3 omega, 8);
-//						span {
-//						}
-//					}
-//				clear: both;
-//				}
-//
-//				div.hormigas{
-//					@include span-columns(12, 12);
-//					//@include omega;
-//				}
-//				div.chromeframe {
-//					@include omega;
-//				}
-//			}
-//		}
-//
-//		@include clearfix();
-//
-//////////////////////////////////////////////////////////////////////////
-//
-//		div.main-container {
-//			@include span-columns(12 omega, 12);
-//			div.main.wrapper.clearfix {
-//				section.myslideshow{
-//					@include span-columns(12, 12);
-//					div {
-//					}
-//				}
-//				article {
-//					@include span-columns(9, 12);
-//					header {
-//						h1 {}
-//						p {}
-//					}
-//					section {
-//						h2 {}
-//						p {}
-//					}
-//					footer {
-//						h3 {}
-//						p {}
-//					}
-//				}
-//				aside {
-//					@include span-columns(3 omega, 12);
-//					h3 {}
-//					p {}
-//				}
-//			}
-//		}
-//
-//////////////////////////////////////////////////////////////////////////
-//
-//		div.footer-container {
-//			@include span-columns(12, 12);
-//			footer.wrapper {
-//				h3 {}
-//			}
-//		}
-//	}
-//
-//}
+@include clearfix;
+
+	div.content{
+		@include span-columns(12 omega, 12);
+		@include background-image(linear-gradient($color_menu01, $color_menu02));
+		//min-height: 12em;
+
+		section#hormiga{
+			@include span-columns(12 omega, 12);
+			//@include background-image(linear-gradient($color_menu01, $color_menu02));
+			//background-color: $color05;
+			//margin: 0;
+		}
+
+		section#info{
+			@include span-columns(12 omega, 12);
+			//@include background-image(linear-gradient($color_menu01, $color_menu02));
+			//background-color: $color10;
+		}
+		
+		section#variable{
+			@include span-columns(12 omega, 12);
+			//@include background-image(linear-gradient($color_menu01, $color_menu02));
+
+			aside#asidel{
+				// Lateral Izq.
+				@include span-columns(3, 12);
+				//@include background-image(linear-gradient($color_menu01, $color_menu02));
+				//background-color: $color06;
+				//min-height: 10em;
+
+				section#news{
+					@include border-radius($radio-standar);
+					@include background-image(linear-gradient($color_menu01, $color_menu02));
+					//background-color: $color11;
+					padding: .2em;
+					margin: .2em;
+					border: 1px solid $color08 ;
+					h2{
+						text-align:center;
+					}
+				}
+
+			}
+
+			section#body{
+				// Centro de la página
+				@include span-columns(6, 12);
+				//@include background-image(linear-gradient($color_menu01, $color_menu02));
+				//background-color: $color07;
+				//border: 1px solid $color08 ;
+
+				section#slide{
+					//@include span-columns(6, 6);
+					@include border-radius($radio-standar);
+					//@include background-image(linear-gradient($color_menu01, $color_menu02));
+					border: 1px solid $color08 ;
+					text-align: center;
+					vertical-align: middle;
+					padding: .2em;
+					margin: .2em;
+				}
+
+				@include clearfix;
+
+				div#ourinfo{
+					@include span-columns(6, 6);
+					//display:block;
+					//min-height: 5em;
+					//@include background-image(linear-gradient($color_menu01, $color_menu02));
+					//background-color: $color09;
+					clear: both;
+					text-align: center;
+
+					section#where{
+						@include span-columns(3, 6);
+						@include border-radius($radio-standar);
+						@include background-image(linear-gradient($color_menu01, $color_menu02));
+						//background-color: $color09;
+						//border: 1px solid $color08 ;
+						text-align: center;
+						vertical-align: middle;
+						padding-top: .2em;
+						padding-bottom: .2em;
+						min-height: 1.5em;
+					}
+
+					section#services{
+						@include span-columns(3 omega, 6);
+						@include border-radius($radio-standar);
+						@include background-image(linear-gradient($color_menu01, $color_menu02));
+						//background-color: $color09;
+						//border: 1px solid $color08 ;
+						text-align: center;
+						vertical-align: middle;
+						padding-top: .2em;
+						padding-bottom: .2em;
+						min-height: 1.5em;
+					}
+
+				}
+
+				@include clearfix;
+
+				section#expo{
+					//@include span-columns(6 omega, 6);
+					@include border-radius($radio-standar);
+					//@include background-image(linear-gradient($color_menu01, $color_menu02));
+					border: 1px solid $color08 ;
+					text-align: center;
+					vertical-align: middle;
+					padding: .2em;
+					margin: .2em;
+				}
+			
+			}
+
+			aside#asider{
+				// Lateral Derecho
+				@include span-columns(3 omega, 12);
+				@include background-image(linear-gradient($color_menu01, $color_menu02));
+				//background-color: $color08;
+				//min-height: 10em;
+
+				section#agenda{
+					@include border-radius($radio-standar);
+					//@include background-image(linear-gradient($color_menu01, $color_menu02));
+					//background-color: $color11;
+					padding: .2em;
+					margin: .2em;
+					border: 1px solid $color08 ;
+					h2{
+						text-align:center;
+					}
+
+				}
+
+				section#varios{
+					@include border-radius($radio-standar);
+					//@include background-image(linear-gradient($color_menu01, $color_menu02));
+					//background-color: $color11;
+					padding: .2em;
+					margin: .2em;
+					border: 1px solid $color08 ;
+
+					section#internal{
+						@include border-radius($radio-standar);
+						//@include background-image(linear-gradient($color_menu01, $color_menu02));
+						//background-color: $color11;
+						padding: .2em;
+						margin: .2em;
+						border: 1px solid $color08 ;
+						h2{
+							text-align:center;
+						}
+					}
+
+					section#externas{
+						@include border-radius($radio-standar);
+						//@include background-image(linear-gradient($color_menu01, $color_menu02));
+						//background-color: $color11;
+						padding: .2em;
+						margin: .2em;
+						border: 1px solid $color08 ;
+						h2{
+							text-align:center;
+						}
+					}
+				}
+
+				section#banner2{
+					//@include background-image(linear-gradient($color_menu01, $color_menu02));
+					text-align:center;
+					width:100%;
+				}
+			}
+
+		}
+	}
+
+@include clearfix;
+
+	footer#footer{
+		@include span-columns(12 omega, 12);
+		background-color: $color07;
+
+		div#finicial{
+			@include span-columns(12 omega, 12);
+			//background-color: $color10;
+			min-height:2em;
+		}
+		
+		div#col1{
+			@include span-columns(3, 12);
+			//background-color: $color08;
+			@include border-radius($radio-standar);
+			//padding: .2em;
+			//margin: .2em;
+			//border: 1px solid $color08 ;
+		}
+
+		div#col2{
+			@include span-columns(3, 12);
+			//background-color: $color09;
+			@include border-radius($radio-standar);
+			//padding: .2em;
+			//margin: .2em;
+			//border: 1px solid $color08 ;
+		}
+
+		div#col3{
+			@include span-columns(3, 12);
+			//background-color: $color08;
+			@include border-radius($radio-standar);
+			//padding: .2em;
+			//margin: .2em;
+			//border: 1px solid $color08 ;
+		}
+
+		div#col4{
+			@include span-columns(3 omega, 12);
+			//background-color: $color09;
+			@include border-radius($radio-standar);
+			//padding: .2em;
+			//margin: .2em;
+			//border: 1px solid $color08 ;
+		}
+
+		div#ffinal{
+			@include span-columns(12 omega, 12);
+			//background-color: $color10;
+			min-height:2em;
+		}
+
+		
+		div#legal{
+			@include span-columns(12 omega, 12);
+			//background-color: $color10;
+			text-align:right;
+		}
+	}
+
+}
