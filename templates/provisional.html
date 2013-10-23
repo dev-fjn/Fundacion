@@ -1,11 +1,11 @@
-{% load static %}<!DOCTYPE html>
+{% load staticfiles webdesign %}<!DOCTYPE html>
 <html>
 	<head>
-		<title>Título</title>
+		<title>{% block head_title %}Título{% endblock head_title %}</title>
 		<meta charset="utf-8" />
 <!--		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />-->
 
-		<meta name="description" content="Plantilla para el desarrollo de esta página" />
+		<meta name="description" content="{% block head_description %}Plantilla para el desarrollo de esta página{% endblock head_description %}" />
 		<meta name="keywords" content="plantilla, desarrollo, web" />
 		<meta name="robots" content="index, nofollow" />
 		<meta name="author" content="Luis" />
@@ -20,6 +20,22 @@
 		<!--  Google Font -->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Cantarell:400,700' rel='stylesheet' type='text/css'>
+
+		{% comment %}
+		FIXME cuando el señor diseñador se meta con esto, cambia el
+		comment por un block favicons endblock favicons
+		<!-- http://developer.apple.com/library/ios/#documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<link href="{% static 'img/ios/touch-icon-iphone.png' %}"        rel="apple-touch-icon" sizes="57x57" />
+		<link href="{% static 'img/ios/touch-icon-ipad.png' %}"          rel="apple-touch-icon" sizes="72x72" />
+		<link href="{% static 'img/ios/touch-icon-iphone-retina.png' %}" rel="apple-touch-icon" sizes="114x114" />
+		<link href="{% static 'img/ios/touch-icon-ipad-retina.png' %}"   rel="apple-touch-icon" sizes="144x144" />
+		<link href="{% static 'img/ios/startup.png' %}"                  rel="apple-touch-startup-image" />
+		{% endcomment %}
+
+		{% block extra_head %}
+		{% endblock extra_head %}
 	</head>
 	<body>
 		<div class="container">
@@ -34,6 +50,7 @@
 				</section>
 				<section id="menus">
 					<nav id="cssmenu">
+						{% block menu %}
 						<ul>
 							<li class='active'>
 								<a href='index.html'>
@@ -171,6 +188,7 @@
 								</a>
 							</li>
 						</ul>
+						{% endblock menu %}
 					</nav>
 <!--				<nav id="m2">
 						<ul>
@@ -181,26 +199,41 @@
 				</section>
 			</header>
 			<div class="content">
+				{% block hormiga_section %}
 				<section id="hormiga">
-					<span>Inicio &gt; otracosa &gt; otracosa mas</span>
+					<span>{% block hormiga %}Inicio &gt; otracosa &gt; otracosa mas{% endblock hormiga %}</span>
 				</section>
-				<!--[if lt IE 10]>
-					<section id="info">
-						<p class="chromeframe">You are using an
-							<strong>outdated</strong>browser. Please
-							<a href="http://browsehappy.com/">upgrade your browser</a>or
-							<a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a>to improve your experience.</p>
-					</section>
-				<![endif]-->
+				{% endblock hormiga_section %}
+				{% block info_section %}
+				<section id="info">
+					{% block info %}
+						{% block ie_outdated %}
+						<!--[if lt IE 11]>
+							<p class="chromeframe">You are using an
+								<strong>outdated</strong>browser. Please
+								<a href="http://browsehappy.com/">upgrade your browser</a>or
+								<a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a>to improve your experience.
+							</p>
+						<![endif]-->
+						{% endblock ie_outdated %}
+						{% block messages %}
+						<p id="message_1" class="chromeframe">
+							Esto es un mensaje de aviso excepcional donde la aplicacion comunica algun error importante o el resultado de alguna accion relevante
+							<a href="#" onclick="$('#message_1').fadeOut(); return false;" title="borrar"><small>cerrar</small></a>
+						</p>
+						{% endblock messages %}
+					{% endblock info %}
+				</section>
+				{% endblock info_section %}
 				<section id="variable">
 					<aside id="asidel">
 						<section id="news">
 
 							<h2>NOTICIAS</h2>
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis enim nisl. Nullam aliquam tortor at mauris scelerisque vehicula. lacinia tempus. Nam gravida dictum dolor a scelerisque.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis enim nisl. Nullam aliquam tortor at mauris scelerisque vehicula. lacinia tempus. Nam gravida dictum dolor a scelerisque.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis enim nisl. Nullam aliquam tortor at mauris scelerisque vehicula. lacinia tempus. Nam gravida dictum dolor a scelerisque.</p>
+							<p>{% lorem 32 w %}</p>
+							<p>{% lorem 32 w %}</p>
+							<p>{% lorem 32 w %}</p>
 
 						</section>
 					</aside>
@@ -224,23 +257,23 @@
 					<aside id="asider">
 						<section id="agenda">
 							<h2>AGENDA</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis enim nisl. Nullam aliquam tortor at mauris scelerisque vehicula. lacinia tempus. Nam gravida dictum dolor a scelerisque.</p>
+							<p>{% lorem 32 w %}</p>
 						</section>
 						<section id="varios">
 							<section id="internal" class="opensans">
 								<h2>Actividades
 									<br />Internas</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis enim nisl. Nullam aliquam tortor at mauris scelerisque vehicula. lacinia tempus. Nam gravida dictum dolor a scelerisque.</p>
+								<p>{% lorem 32 w %}</p>
 							</section>
 							<section id="externas" class="cantarell">
 								<h2>Actividades
 									<br />Externas</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis enim nisl. Nullam aliquam tortor at mauris scelerisque vehicula. lacinia tempus. Nam gravida dictum dolor a scelerisque.</p>
+								<p>{% lorem 41 w %}</p>
 							</section>
 						</section>
 						<section id="banner2">
 							<figure>
-								<img src="{% static 'Img/dummy-Banner-Vertical+(240x400).png' %}" alt="Banner Vertical" />
+								<img src="{% static 'img/dummy-Banner-Vertical+(240x400).png' %}" alt="Banner Vertical" />
 								<figcaption>
 									Título de la imagen anterior (banner)
 								</figcaption>
@@ -253,9 +286,11 @@
 				<br />
 			</div>
 			<footer id="footer">
+				{% block footer %}
 				<div id="finicial">&nbsp;</div>
 				<div id="col1">
 					<ul>
+						{% block links1 %}
 						<li>
 							<a href="#">Enlace 1</a>
 						</li>
@@ -265,10 +300,12 @@
 						<li>
 							<a href="#">Enlace 3</a>
 						</li>
+						{% endblock links1 %}
 					</ul>
 				</div>
 				<div id="col2">
 					<ul>
+						{% block links2 %}
 						<li>
 							<a href="#">Enlace 1</a>
 						</li>
@@ -278,10 +315,12 @@
 						<li>
 							<a href="#">Enlace 3</a>
 						</li>
+						{% endblock links2 %}
 					</ul>
 				</div>
 				<div id="col3">
 					<ul>
+						{% block links3 %}
 						<li>
 							<a href="#">Enlace 1</a>
 						</li>
@@ -291,10 +330,12 @@
 						<li>
 							<a href="#">Enlace 3</a>
 						</li>
+						{% endblock links3 %}
 					</ul>
 				</div>
 				<div id="col4">
 					<ul>
+						{% block links4 %}
 						<li>
 							<a href="#">Enlace 1</a>
 						</li>
@@ -304,15 +345,18 @@
 						<li>
 							<a href="#">Enlace 3</a>
 						</li>
+						{% endblock links4 %}
 					</ul>
 				</div>
 				<div id="ffinal">&nbsp;</div>
 				<div id="legal">
-					<span id="copyright">Copyright and attribution</span>
+					<span id="copyright">{% now "DATE_FORMAT" %} Copyright and attribution</span>
 				</div>
+				{% endblock footer %}
 			</footer>
 		</div>
 
+		{% block color_tests %}
 		<div>
 			<br />
 		</div>
@@ -359,7 +403,28 @@
 				<div style="background-color:#9AA6AD;">2</div>
 				<div style="background-color:#EF9691;">3</div>
 			</div>
-		</div>
-	</body>
+		{% endblock color_tests %}
+	</div>
 
+		{% comment %}
+		FIXME cuando el diseñador crea conveniente cambia este comment por
+		block footer_scripts endblock footer_scripts y arregla toda esta parte
+		<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+		<!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script> -->
+
+		<script>window.jQuery || document.write('<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" \/>')</script>
+
+		<!-- <script src="static/js/plugins.js"></script> -->
+		<!-- <script src="static/js/main.js"></script> -->
+
+		<!--
+		<script>
+			var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g,s)}(document,'script'));
+		</script>
+		-->
+		{% endcomment %}
+	</body>
 </html>
