@@ -9,7 +9,7 @@ from django.contrib import admin
 from django.conf.urls import patterns
 from django.conf.urls import include
 from django.conf.urls import url
-from django.views.generic import TemplateView
+from django.views.generic.base import TemplateView
 
 # Soporte para robots.txt && favicon.ico
 #from django.views.generic.simple import direct_to_template
@@ -42,6 +42,7 @@ urlpatterns = patterns(
     url(r'^$',          'portada.views.home', name='home'),
     url(r'^weblog/',    include('zinnia.urls')),
     url(r'^comments/',  include('django.contrib.comments.urls')),
+    url(r'^html$', TemplateView.as_view(template_name="provisional.html"), name='index'),
     url(r'',            include('schedule.urls')),
 )
 
