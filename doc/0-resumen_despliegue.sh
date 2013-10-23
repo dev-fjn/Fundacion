@@ -14,11 +14,15 @@ chown -R fjn_beta fjn_beta
 chown -R fjn_dev fjn_dev
 chown -R fjn_prod fjn_prod 
 
-# Crear base de datos para produccion (beta y dev no pues van con sqlite)
+# Crear base de datos para produccion beta y dev
 
 su - postgres
-createuser fjn --no-superuser --no-createrole --no-createdb --password
-createdb fjn --owner fjn
+createuser fjn_prod --no-superuser --no-createrole --no-createdb --password
+createdb fjn_prod --owner fjn_prod
+createuser fjn_beta --no-superuser --no-createrole --no-createdb --password
+createdb fjn_beta --owner fjn_beta
+createuser fjn_dev --no-superuser --no-createrole --no-createdb --password
+createdb fjn_dev --owner fjn_dev
 exit
 
 # clonar cada uno de los despliegues en /opt/fjn/
