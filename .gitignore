@@ -6,6 +6,8 @@
 *.bak
 *.mo
 
+*\.css
+
 ChangeLog
 .sass-cache
 external
