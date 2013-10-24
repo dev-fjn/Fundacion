@@ -34,7 +34,7 @@ $show-grid-backgrounds  : true;
 $container-width: 60em;
 $container-style: magic;
 
-$radio-standar: 10px;
+$font_base: 16px;
 
 // COLORES
 // ~~~~~~~
@@ -88,8 +88,15 @@ $color_menu10: #8f0007; //rojo oscuro
 //	}
 //}
 
-// sf-speakeasy
-// glyphicons
+// ---------------------------------------------------------------------------
+// Funciones:
+// ~~~~~~~~~
+// ---------------------------------------------------------------------------
+@function em($px, $base: $font_base) {
+	@return ($px / $base) * 1em;
+}
+
+$radio-standar: em(10px);
 
 // Fuentes
 // ~~~~~~~
@@ -101,24 +108,24 @@ $color_menu10: #8f0007; //rojo oscuro
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .sf-speakeasy {
     font-family: "sf-speakeasy";
-    font-size: 1.0em;
+    //font-size: 1.0em;
 }
 .glyphicons{
     font-family: "glyphicons";
-    font-size: 1.0em;
+    //font-size: 1.0em;
 }
 .tron{
     font-family: "tron";
-    font-size: 1.0em;
+    //font-size: 1.0em;
 }
 
 // Google Font:
 .opensans{
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.0em;
+    //font-size: 1.0em;
 }
 .cantarell{
     font-family: 'Cantarell', sans-serif;
-    font-size: 1em;
+    //font-size: 1em;
 }
 

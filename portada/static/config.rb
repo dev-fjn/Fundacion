@@ -3,8 +3,8 @@ require 'susy'
 
 
 # The environment mode. Defaults to :production, can also be :development
-#environment = :development
-environment = :production
+environment = :development
+#environment = :production
 
 # Set this to the root of your project when deployed:
 http_path = "/"
