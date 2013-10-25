@@ -7,8 +7,8 @@ Example: "/home/media/media.lawrence.com/media/"
 '''
 #MEDIA_ROOT += os.path.normpath(os.path.join(os.path.dirname(__file__),"../media/"))
 if DEBUG and not PRODUCCION:
-	#MEDIA_ROOT = os.path.join(PROJECT_ROOT,'media')
-    MEDIA_ROOT = '/var/www/fjn/dev/media'
+	MEDIA_ROOT = os.path.join(PROJECT_ROOT,'media')
+    #MEDIA_ROOT = '/var/www/fjn/dev/media'
 elif DEBUG and PRODUCCION:
     MEDIA_ROOT = '/var/www/fjn/beta/media'
 else:
