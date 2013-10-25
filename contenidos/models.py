@@ -10,10 +10,8 @@ def _siguiente_orden():
 	return 1 if not m else m+1
 
 class Imagen(models.Model):
-	activo = models.BooleanField()
-	titulo = models.CharField(max_length=250, unique=True)
-	orden = models.IntegerField(default=_siguiente_orden, unique=True)
-	url = models.CharField(max_length=200, blank=True)
+	titulo = models.CharField(max_length=250)
+	orden = models.IntegerField(default=_siguiente_orden)
 	imagen = models.ImageField(upload_to="diapositivas")
 
 	def __unicode__(self):
@@ -25,8 +23,7 @@ class Imagen(models.Model):
 		ordering = ('orden', )
 
 class Video(models.Model):
-	activo = models.BooleanField()
-	titulo = models.CharField(max_length=250, unique=True)
+	titulo = models.CharField(max_length=250)
 	flv_url = models.CharField(max_length=200, blank=True)
 	mp4_url = models.CharField(max_length=200, blank=True)
 
