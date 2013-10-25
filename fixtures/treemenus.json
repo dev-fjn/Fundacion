@@ -78,20 +78,6 @@
     }
 },
 {
-    "pk": 7, 
-    "model": "treemenus.menuitem", 
-    "fields": {
-        "parent": 1, 
-        "level": 1, 
-        "url": "/bitacora/", 
-        "menu": 1, 
-        "rank": 3, 
-        "caption": "Batácora", 
-        "named_url": "bitacora"
-    }
-},
-
-{
     "pk": 8, 
     "model": "treemenus.menuitem", 
     "fields": {
