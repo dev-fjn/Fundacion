@@ -1,6 +1,6 @@
 {% load tree_menu_tags %}
-<ul>
-    {% for menu_item in menu.root_item.children %}
-        {% show_menu_item menu_item %}
-    {% endfor %}
-</ul>
+{% for menu_item in menu.root_item.children %}
+	<li class="{% if menu_item.children %}has-sub{% endif %} {% if forloop.last %}last{% endif %}">
+		{% show_menu_item menu_item %}
+	</li>
+{% endfor %}

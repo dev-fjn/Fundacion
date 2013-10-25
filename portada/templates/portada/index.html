@@ -1,13 +1,22 @@
 {% extends 'base.html' %}
+{% load tree_menu_tags %}
 
 {% block title %}
     "Title Test"
 {% endblock title %}
 
-{% block body %}
-<p>
-    Probando la plantilla base.html a las {% now "jS F Y H:i" %}.<br />
-    Hoy es {% now "l" %}<br />
-    {% now "r" %}
-</p>
-{% endblock body %}
+{% block menu %}
+	<ul>
+		{% show_menu "principal" %}
+		<li class="right"><a href="{% url 'zinnia_entry_archive_index' %}"><span>Bitácora</span></a></li>
+	</ul>
+{% endblock menu %}
+
+{% block footer %}
+	{{block.super}}
+	<p>
+		Probando la plantilla base.html a las {% now "jS F Y H:i" %}.<br />
+		Hoy es {% now "l" %}<br />
+		{% now "r" %}
+	</p>
+{% endblock footer %}
