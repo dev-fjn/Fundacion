@@ -1,5 +1,11 @@
 {% extends 'base.html' %}
 {% load tree_menu_tags %}
+{% load contenidosblocks %}
+
+{% block extra_head %}
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="http://malsup.github.io/jquery.cycle2.js"></script>
+{% endblock extra_head %}
 
 {% block title %}
     "Title Test"
@@ -11,6 +17,14 @@
 		<li class="right"><a href="{% url 'zinnia_entry_archive_index' %}"><span>Bitácora</span></a></li>
 	</ul>
 {% endblock menu %}
+
+{% block slide %}
+{% imagenes %}
+{% endblock slide %}
+
+{% block expo %}
+{% videos %}
+{% endblock expo %}
 
 {% block footer %}
 	{{block.super}}

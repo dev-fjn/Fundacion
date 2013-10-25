@@ -22,4 +22,5 @@ Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
 
 #MEDIA_URL += 'http://127.0.0.1/media/'
 #MEDIA_URL += '/media/'
+MEDIA_URL = '/media/'
 

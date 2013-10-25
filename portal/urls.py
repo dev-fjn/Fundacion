@@ -42,9 +42,7 @@ urlpatterns = patterns(
     url(r'^$',          'portada.views.home', name='home'),
     url(r'^weblog/',    include('zinnia.urls')),
     url(r'^comments/',  include('django.contrib.comments.urls')),
-    url(r'^html$', TemplateView.as_view(template_name="provisional.html"), name='index'),
     url(r'',            include('schedule.urls')),
-    url(r'',            include('flatpages_i18n.urls')),
 )
 
 
@@ -56,8 +54,7 @@ urlpatterns = patterns(
 #)
 
 
-urlpatterns += patterns(
-    'django.contrib.sitemaps.views',
+urlpatterns += patterns('django.contrib.sitemaps.views',
     url(r'^sitemap.xml$',                   'index',    {'sitemaps': sitemaps}),
     url(r'^sitemap-(?P<section>.+)\.xml$',  'sitemap',  {'sitemaps': sitemaps}),
 )
@@ -73,11 +70,15 @@ urlpatterns += patterns(
 
 if settings.DEBUG and not settings.PRODUCCION:
     # Desarrollo
-    urlpatterns += patterns(
-        r'',
+    urlpatterns += patterns(r'',
+		url(r'^html$', TemplateView.as_view(template_name="provisional.html")),
         url(r'^plantilla/', TemplateView.as_view(template_name='base.html')),
         url(r'', include('debug_toolbar_user_panel.urls')),
         url(r'', include('debug_toolbar_htmltidy.urls')),
+    )
+    urlpatterns += patterns('django.views.static',
+        #url(r'^static/(.*)$',  'serve', {'document_root': settings.STATIC_ROOT, 'show_indexes': True}),
+        url(r'^media/(.*)$',  'serve', {'document_root': settings.MEDIA_ROOT, 'show_indexes': True}),
     )
 elif settings.DEBUG and settings.PRODUCCION:
     # Beta
@@ -86,6 +87,10 @@ else:
     # Producción
     pass
 
+# ESTA DEBE SER LA ULTIMA PUES PILLA TODO LO QUE NO PILLAN LAS DEMAS
+urlpatterns += patterns(r'',
+    url(r'',            include('flatpages_i18n.urls')),
+)
 
 
 

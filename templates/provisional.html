@@ -250,9 +250,13 @@
 					{% block section_body %}
 					<section id="body">
 						{% block body %}
+						{% block section_slide %}
 						<section id="slide">
+							{% block slide %}
 							<img src="{% static 'img/dummy-SlideShow+(384x288).png' %}" alt="SlideShow" />
+							{% endblock slide %}
 						</section>
+						{% endblock section_slide %}
 
 						<div id="ourinfo">
 							<section id="where">¿Dónde estamos?</section>
@@ -262,9 +266,13 @@
 						<div><br /></div>
 						<div><br /></div>
 
+						{% block section_expo %}
 						<section id="expo">
+							{% block expo %}
 							<img src="{% static 'img/dummy-Expo-Virtual+(384x288).png' %}" alt="Exposición Virtual" />
+							{% endblock expo %}
 						</section>
+						{% endblock section_expo %}
 						{% endblock body %}
 					</section>
 					{% endblock section_body %}

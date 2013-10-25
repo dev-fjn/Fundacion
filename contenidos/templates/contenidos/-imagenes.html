@@ -1,0 +1,9 @@
+<div class="cycle-slideshow" 
+    data-cycle-fx="scrollHorz" 
+    data-cycle-timeout="2000"
+    data-cycle-slides="> a"
+    >
+{% for imagen in imagenes %}
+	<a href="{{imagen.url}}"><img style="width: 100%;" src="{{MEDIA_URL}}{{imagen.imagen}}"></a>
+{% endfor %}
+</div>
