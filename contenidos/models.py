@@ -12,7 +12,7 @@ def _siguiente_orden():
 class Imagen(models.Model):
 	titulo = models.CharField(max_length=250)
 	orden = models.IntegerField(default=_siguiente_orden)
-	imagen = models.ImageField(upload_to="diapositivas")
+	imagen = models.ImageField(upload_to="imagenes")
 
 	def __unicode__(self):
 		return self.titulo
