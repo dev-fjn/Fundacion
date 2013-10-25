@@ -44,6 +44,7 @@ urlpatterns = patterns(
     url(r'^comments/',  include('django.contrib.comments.urls')),
     url(r'^html$', TemplateView.as_view(template_name="provisional.html"), name='index'),
     url(r'',            include('schedule.urls')),
+    url(r'',            include('flatpages_i18n.urls')),
 )
 
 
