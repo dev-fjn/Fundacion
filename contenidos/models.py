@@ -40,6 +40,18 @@ class Evento(models.Model):
 
 	def __unicode__(self):
 		return u"%s" % (self.titulo, )
+	
+	@staticmethod
+	def datos_para_calendario(start, end):
+		qs = FechaEvento.objects.filter(fecha__gte=start, fecha__lte=end)
+		# clasificamos los resultados por dias
+		v = {}
+		for fe in qs:
+			dmy = fe.fecha
+			if not dmy in v:
+				v[dmy] = []
+			v[dmy].append(fe.evento)
+		return v
 
 class LugarEvento(models.Model):
 	evento = models.ForeignKey(Evento)

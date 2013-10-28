@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	{{block.super}} Evento {{object}}
+{% endblock title %}
+
+{% block content %}
+<section id="cabecera">
+	<h1>{{object.titulo}}</h1>
+</section>
+<section id="left">
+	<img src="{{MEDIA_URL}}{{object.imagen}}"/>
+</section>
+<section id="centreright">
+	{{object.resumen}}
+	<h2>Fecha y lugar de celebración</h2>
+	<div>{{object.fecha_y_lugar}}</div>
+	{% if object.pdf %}
+		<div><button href="{{object.pdf}}">Más información</button></div>
+	{% endif %}
+	{% for lugar in object.lugarevento_set.all %}
+		<p>boliche.latlon=({{lugar.latitud}}, {{lugar.longitud}})</p>
+	{% endfor %}
+</section>
+{% endblock content %}
+

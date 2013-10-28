@@ -199,6 +199,7 @@
 				</section>
 			</header>
 			<div class="content">
+				{% block content %}
 				{% block section_hormiga %}
 				<section id="hormiga">
 					<span>{% block hormiga %}Inicio &gt; otracosa &gt; otracosa mas{% endblock hormiga %}</span>
@@ -308,6 +309,7 @@
 						</section>
 					</aside>
 				</section>
+				{% endblock content %}
 			</div>
 			<div>
 				<br />

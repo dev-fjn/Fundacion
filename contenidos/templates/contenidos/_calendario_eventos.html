@@ -1,5 +1,11 @@
 <table>
 	<tr>
+		<td><a href="{% url 'calendario' prev.year prev.month %}">&lt;&lt;</a></td>
+		<td colspan="5"><a href="{% url 'calendario' start.year start.month %}">{{start|date:"F Y"}}</a></td>
+		<td><a href="{% url 'calendario' next.year next.month %}">&gt;&gt;</a></td>
+	</tr>
+	<tr>
+		{# hay formas mejores de hacer esto, pero como hay prisa #}
 		<th width="14%">Lun</th>
 		<th width="14%">Mar</th>
 		<th width="14%">Mie</th>
@@ -12,9 +18,9 @@
 	<tr>
 		{% for dia, lista_eventos in semana %}
 		<td>
-			{% if dia.month == month %}
+			{% if dia.month == start.month %}
 				{% if lista_eventos %}
-					<a href="ir_a_algun_sitio/{{dia.year}}/{{dia.month}}/{{dia.day}}" title="{% for evento in lista_eventos %}{{evento}}{% endfor %}">{{dia.day}}</a>
+					<span style="background-color: green">{{dia.day}}</span>
 				{% else %}
 					{{dia.day}}
 				{% endif %}

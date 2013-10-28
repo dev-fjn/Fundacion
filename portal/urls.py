@@ -43,6 +43,7 @@ urlpatterns = patterns(
     url(r'^weblog/',    include('zinnia.urls')),
     url(r'^comments/',  include('django.contrib.comments.urls')),
     url(r'',            include('schedule.urls')),
+    url(r'',            include('contenidos.urls')),
 )
 
 
