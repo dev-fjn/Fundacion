@@ -1,6 +1,5 @@
 {% extends "provisional.html" %}
 {% load i18n staticfiles tree_menu_tags %}
-{% load zinnia_tags %}
 
 {% block head_title %}
 {% if site_name %}{{ site_name }} : {% else %}F. J. N. : {% endif %}
@@ -36,7 +35,3 @@ SE DEJA AQUI SOLO COMO REFERENCIA, HABRA QUE CAMBIARLO POR ALGO BASADO EN BANDER
 {% block color_tests %}
 {% endblock color_tests %}
 
-{% block noticias %}
-<h2>NOTICIAS</h2>
-{% get_recent_entries %}
-{% endblock noticias %}

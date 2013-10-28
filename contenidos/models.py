@@ -31,3 +31,33 @@ class Video(models.Model):
 		verbose_name = u'vídeo'
 		verbose_name_plural = u'vídeos'
 
+class Evento(models.Model):
+	titulo = models.CharField(max_length=250)
+	resumen = models.TextField()
+	fecha_y_lugar = models.TextField()
+	imagen = models.ImageField(upload_to="eventos/imagenes")
+	pdf = models.FileField(upload_to="eventos/pdf", blank=True, null=True)
+
+	def __unicode__(self):
+		return u"%s" % (self.titulo, )
+
+class LugarEvento(models.Model):
+	evento = models.ForeignKey(Evento)
+	latitud = models.FloatField()
+	longitud = models.FloatField()
+
+	def __unicode__(self):
+		return u"%.4f,%.4f (%s)" % (self.latitud, self.longitud, self.evento)
+
+class FechaEvento(models.Model):
+	evento = models.ForeignKey(Evento)
+	fecha = models.DateField()
+	hora_inicio = models.TimeField()
+	hora_final = models.TimeField()
+
+	def simple(self):
+		return u"%s %s...%s" % (self.fecha, self.hora_inicio, self.hora_final, )
+
+	def __unicode__(self):
+		return u"%s %s-%s (%s)" % (self.fecha, self.hora_inicio, self.hora_final, self.evento)
+

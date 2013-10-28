@@ -1,0 +1,25 @@
+<table>
+	<tr>
+		<th>Lun</th>
+		<th>Mar</th>
+		<th>Mie</th>
+		<th>Jue</th>
+		<th>Vie</th>
+		<th>Sab</th>
+		<th>Dom</th>
+	</tr>
+	{% for semana in semanas %}
+	<tr>
+		{% for dia, lista_eventos in semana %}
+		<td>
+			{% if dia.month == month %}
+				{{dia.day}}
+				{% for evento in lista_eventos %}
+				<br/><a href="evento={{evento.id}}">{{evento}}</a>
+				{% endfor %}
+			{% endif %}
+		</td>
+		{% endfor %}
+	</tr>
+	{% endfor %}
+</table>

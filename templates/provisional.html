@@ -277,10 +277,15 @@
 					</section>
 					{% endblock section_body %}
 					<aside id="asider">
+						{% block section_agenda %}
 						<section id="agenda">
+							{% block agenda %}
 							<h2>AGENDA</h2>
 							<p>{% lorem 32 w %}</p>
+							{% endblock agenda %}
 						</section>
+						{% endblock section_agenda %}
+
 						<section id="varios">
 							<section id="internal" class="opensans">
 								<h2>Actividades
