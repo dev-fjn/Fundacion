@@ -34,7 +34,7 @@
         "url": "/fundacion/", 
         "menu": 1, 
         "rank": 1, 
-        "caption": "Fundación", 
+        "caption": "Fundaci\u00f3n", 
         "named_url": "fundacion"
     }
 },
@@ -44,10 +44,10 @@
     "fields": {
         "parent": 1, 
         "level": 1, 
-        "url": "/juan-negrin/", 
+        "url": "/", 
         "menu": 1, 
         "rank": 2, 
-        "caption": "Juan Negrín", 
+        "caption": "Juan Negr\u00edn", 
         "named_url": "juannegrin"
     }
 },
@@ -57,7 +57,7 @@
     "fields": {
         "parent": 1, 
         "level": 1, 
-        "url": "/fondos-y-recursos-documentales/", 
+        "url": "/", 
         "menu": 1, 
         "rank": 3, 
         "caption": "Fondos y Recursos Documentales", 
@@ -72,7 +72,7 @@
         "level": 1, 
         "url": "/sala-de-prensa/", 
         "menu": 1, 
-        "rank": 3, 
+        "rank": 4, 
         "caption": "Sala de Prensa", 
         "named_url": "saladeprensa"
     }
@@ -83,8 +83,8 @@
     "fields": {
         "parent": 3, 
         "level": 2, 
-        "url": "/fundacion/presidente/", 
-        "menu": null, 
+        "url": "/presidente/", 
+        "menu": 1, 
         "rank": 0, 
         "caption": "Presidente", 
         "named_url": "presidente"
@@ -96,8 +96,8 @@
     "fields": {
         "parent": 3, 
         "level": 2, 
-        "url": "/fundacion/presidenta-de-honor/", 
-        "menu": null, 
+        "url": "/presidenta-de-honor/", 
+        "menu": 1, 
         "rank": 1, 
         "caption": "Presidenta de honor", 
         "named_url": "presidentadehonor"
@@ -109,8 +109,8 @@
     "fields": {
         "parent": 3, 
         "level": 2, 
-        "url": "/fundacion/patronato/", 
-        "menu": null, 
+        "url": "/patronato/", 
+        "menu": 1, 
         "rank": 2, 
         "caption": "Patronato", 
         "named_url": "patronato"
@@ -122,8 +122,8 @@
     "fields": {
         "parent": 3, 
         "level": 2, 
-        "url": "/fundacion/objetivos/", 
-        "menu": null, 
+        "url": "/objetivos/", 
+        "menu": 1, 
         "rank": 3, 
         "caption": "Objetivos", 
         "named_url": "objetivos"
@@ -135,25 +135,23 @@
     "fields": {
         "parent": 3, 
         "level": 2, 
-        "url": "/fundacion/ayudanos/", 
-        "menu": null, 
+        "url": "/hacerce-amigo-de-la-fundacion/", 
+        "menu": 1, 
         "rank": 4, 
-        "caption": "Ayúdanos", 
+        "caption": "Hacerse amigo de la Fundaci\u00f3n", 
         "named_url": "ayudanos"
     }
 },
-
-
 {
     "pk": 13, 
     "model": "treemenus.menuitem", 
     "fields": {
         "parent": 4, 
         "level": 2, 
-        "url": "/juan-negrin/biografia/", 
-        "menu": null, 
+        "url": "/biografia/", 
+        "menu": 1, 
         "rank": 0, 
-        "caption": "Biografía", 
+        "caption": "Biograf\u00eda", 
         "named_url": "biografia"
     }
 },
@@ -163,10 +161,10 @@
     "fields": {
         "parent": 4, 
         "level": 2, 
-        "url": "/juan-negrin/cronobiografia/", 
-        "menu": null, 
+        "url": "/cronobiograf\u00eda/", 
+        "menu": 1, 
         "rank": 1, 
-        "caption": "Cronobiografía", 
+        "caption": "Cronobiograf\u00eda", 
         "named_url": "cronobiografia"
     }
 },
@@ -176,10 +174,10 @@
     "fields": {
         "parent": 4, 
         "level": 2, 
-        "url": "/juan-negrin/biliografia/", 
-        "menu": null, 
+        "url": "/bibliografia/", 
+        "menu": 1, 
         "rank": 2, 
-        "caption": "Bibliografía", 
+        "caption": "Bibliograf\u00eda", 
         "named_url": "bibliografia"
     }
 },
@@ -189,8 +187,8 @@
     "fields": {
         "parent": 4, 
         "level": 2, 
-        "url": "/juan-negrin/presencia/", 
-        "menu": null, 
+        "url": "/presencia/", 
+        "menu": 1, 
         "rank": 3, 
         "caption": "Presencia", 
         "named_url": "presencia"
@@ -202,22 +200,20 @@
     "fields": {
         "parent": 4, 
         "level": 2, 
-        "url": "/juan-negrin/citas/", 
-        "menu": null, 
+        "url": "/citas-de-juan-negrin/", 
+        "menu": 1, 
         "rank": 3, 
         "caption": "Citas", 
         "named_url": "citas"
     }
 },
-
-
 {
     "pk": 18, 
     "model": "treemenus.menuitem", 
     "fields": {
         "parent": 5, 
         "level": 2, 
-        "url": "/fondos-y-recursos-documentales/archivos/",
+        "url": "/fondos-y-recursos-documentales/archivos/", 
         "menu": null, 
         "rank": 0, 
         "caption": "Archivos", 
@@ -230,7 +226,7 @@
     "fields": {
         "parent": 5, 
         "level": 2, 
-        "url": "/fondos-y-recursos-documentales/biblioteca/",
+        "url": "/fondos-y-recursos-documentales/biblioteca/", 
         "menu": null, 
         "rank": 1, 
         "caption": "Biblioteca", 
@@ -243,7 +239,7 @@
     "fields": {
         "parent": 5, 
         "level": 2, 
-        "url": "/fondos-y-recursos-documentales/recursos-audiovisuales/",
+        "url": "/fondos-y-recursos-documentales/recursos-audiovisuales/", 
         "menu": null, 
         "rank": 2, 
         "caption": "Recursos Audiovisuales", 
@@ -256,7 +252,7 @@
     "fields": {
         "parent": 5, 
         "level": 2, 
-        "url": "/fondos-y-recursos-documentales/presencia-en-prensa/",
+        "url": "/fondos-y-recursos-documentales/presencia-en-prensa/", 
         "menu": null, 
         "rank": 3, 
         "caption": "Presencia en Prensa", 
@@ -269,22 +265,20 @@
     "fields": {
         "parent": 5, 
         "level": 2, 
-        "url": "/fondos-y-recursos-documentales/catalogo-de-publicaciones/",
+        "url": "/fondos-y-recursos-documentales/catalogo-de-publicaciones/", 
         "menu": null, 
         "rank": 4, 
-        "caption": "Catálogo de Publicaciones", 
+        "caption": "Cat\u00e1logo de Publicaciones", 
         "named_url": "catalogodepublicaciones"
     }
 },
-
-
 {
     "pk": 23, 
     "model": "treemenus.menuitem", 
     "fields": {
         "parent": 6, 
         "level": 2, 
-        "url": "/sala-de-prensa/imagen-corporativa/",
+        "url": "/sala-de-prensa/imagen-corporativa/", 
         "menu": null, 
         "rank": 0, 
         "caption": "Imagen Corporativa", 
@@ -297,17 +291,26 @@
     "fields": {
         "parent": 6, 
         "level": 2, 
-        "url": "/sala-de-prensa/dossieres-de-prensa/",
+        "url": "/sala-de-prensa/dossieres-de-prensa/", 
         "menu": null, 
-        "rank": 1, 
+        "rank": 0, 
         "caption": "Dossieres de Prensa", 
         "named_url": "dossieresdeprensa"
     }
 },
-
-
-
-
+{
+    "pk": 25, 
+    "model": "treemenus.menuitem", 
+    "fields": {
+        "parent": 17, 
+        "level": 3, 
+        "url": "/citas-sobre-juan-negrin/", 
+        "menu": 1, 
+        "rank": 0, 
+        "caption": "Citas sobre Juan Negr\u00edn", 
+        "named_url": "citas-sobre-juan-negrin"
+    }
+},
 {
     "pk": 1, 
     "model": "treemenus.menu", 
@@ -318,14 +321,6 @@
 },
 {
     "pk": 2, 
-    "model": "treemenus.menu", 
-    "fields": {
-        "root_item": 2, 
-        "name": "central"
-    }
-},
-{
-    "pk": 3, 
     "model": "treemenus.menu", 
     "fields": {
         "root_item": 3, 
