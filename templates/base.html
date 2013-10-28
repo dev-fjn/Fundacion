@@ -22,6 +22,13 @@ SE DEJA AQUI SOLO COMO REFERENCIA, HABRA QUE CAMBIARLO POR ALGO BASADO EN BANDER
 </form>
 {% endblock form_i18n %}
 
+{% block menu %}
+	<ul>
+		{% show_menu "principal" %}
+		<li class="right"><a href="{% url 'zinnia_entry_archive_index' %}"><span>Bitácora</span></a></li>
+	</ul>
+{% endblock menu %}
+
 {% block messages %}
 	{% if messages %}
 		{% for message in messages %}
@@ -34,4 +41,13 @@ SE DEJA AQUI SOLO COMO REFERENCIA, HABRA QUE CAMBIARLO POR ALGO BASADO EN BANDER
 
 {% block color_tests %}
 {% endblock color_tests %}
+
+{% block footer %}
+	{{block.super}}
+	<p>
+		Probando la plantilla base.html a las {% now "jS F Y H:i" %}.<br />
+		Poner copyright ... tal {% now "l" %} o {% now "r" %}
+	</p>
+{% endblock footer %}
+
 

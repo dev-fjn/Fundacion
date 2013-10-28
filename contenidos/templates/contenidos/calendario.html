@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{block.super}} Agenda para el mes
+{% endblock title %}
+
+{% block content %}
+<section id="left">
+{% include "contenidos/_calendario_eventos.html" %}
+</section>
+<section id="right">
+<h2>Eventos mes de {{start|date:"F"}}</h2>
+<ul>
+	{% for fe in object_list %}
+	<li>{{fe.fecha|date:"d/m/Y"}}: <a href="{% url 'evento_view' fe.evento.pk %}">{{fe.evento}}</a></li>
+	{% empty %}
+	<li>No hay eventos para este mes.</li>
+	{% endfor %}
+</ul>
+</section>
+{% endblock content %}
