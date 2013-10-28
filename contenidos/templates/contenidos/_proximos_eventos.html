@@ -1,7 +1,7 @@
 <ul>
 {% for fechaevento in object_list %}
 <li>{{fechaevento.fecha}} {{fechaevento.hora_inicio}} -> <a href="evento={{fechaevento.evento.id}}">{{fechaevento.evento}}</a></li>
-{% emtpy %}
+{% empty %}
 <li>(No hay eventos próximos)</li>
 {% endfor %}
 </ul>
