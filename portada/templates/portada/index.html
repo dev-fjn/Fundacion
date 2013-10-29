@@ -1,6 +1,5 @@
-{% extends 'base.html' %}
+{% extends 'base_3col.html' %}
 {% load contenidosblocks %}
-{% load zinnia_tags %}
 
 {% block extra_head %}
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
@@ -19,13 +18,3 @@
 {% videos %}
 {% endblock expo %}
 
-{% block noticias %}
-<h2>NOTICIAS</h2>
-{% get_recent_entries %}
-{% endblock noticias %}
-
-{% block agenda %}
-<h2>AGENDA</h2>
-{% proximos_eventos %}
-<p><a href="{% url 'calendario' %}">ver mas</a></p>
-{% endblock agenda %}

@@ -2,13 +2,18 @@
 
 {# dejar uno de los dos metodos siguientes #}
 {% block section_id %}variable{% endblock section_id %}
-{% block columns %}2{% endblock columns %}
+{% block columns %}1{% endblock columns %}
 
 {% block body %}
-	<h1>Estilo 2 columnas</h1>
+<h1>Estilo 1 columna</h1>
 	{% include "_lorem_links.html" %}
 {% endblock body %}
 
 {% block aside_asidel %}
 {# anulado #}
 {% endblock aside_asidel %}
+
+{% block aside_asider %}
+{# anulado #}
+{% endblock aside_asider %}
+

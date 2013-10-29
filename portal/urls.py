@@ -72,8 +72,12 @@ urlpatterns += patterns(
 if settings.DEBUG and not settings.PRODUCCION:
     # Desarrollo
     urlpatterns += patterns(r'',
-		url(r'^html$', TemplateView.as_view(template_name="provisional.html")),
-        url(r'^plantilla/', TemplateView.as_view(template_name='base.html')),
+		url(r'^html/$', TemplateView.as_view(template_name="provisional.html"), name="p"),
+        url(r'^html/b$', TemplateView.as_view(template_name='base.html'), name="b"),
+        url(r'^html/b1$', TemplateView.as_view(template_name='base_1col.html'), name="b1"),
+        url(r'^html/b2$', TemplateView.as_view(template_name='base_2col.html'), name="b2"),
+        url(r'^html/b22$', TemplateView.as_view(template_name='base_2col2.html'), name="b22"),
+        url(r'^html/b3$', TemplateView.as_view(template_name='base_3col.html'), name="b3"),
         url(r'', include('debug_toolbar_user_panel.urls')),
         url(r'', include('debug_toolbar_htmltidy.urls')),
     )
