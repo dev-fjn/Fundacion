@@ -227,6 +227,7 @@
 				</section>
 				{% endblock section_info %}
 				<section id="variable">
+                    {% block aside_asidel %}
 					<aside id="asidel">
 						{% block section_noticias %}
 						<section id="news">
@@ -236,7 +237,7 @@
 							<p>{% lorem 32 w %}</p>
 							<p>{% lorem 32 w %}</p>
 							<p>{% lorem 32 w %}</p>
-							
+
 							<div><br /></div>
 							<h1>h1</h1>
 							<h2>h2</h2>
@@ -248,6 +249,8 @@
 						</section>
 						{% endblock section_noticias %}
 					</aside>
+                    {% endblock aside_asidel %}
+
 					{% block section_body %}
 					<section id="body">
 						{% block body %}

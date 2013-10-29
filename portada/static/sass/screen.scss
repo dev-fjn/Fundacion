@@ -74,6 +74,7 @@ h6 {
 	h4:after {
 		background: $color09; //#6Cf;
 	}
+
 	h1 {
 		$font_h1: $font_base*2; // 32px;
 		font-size: em($font_h1);
@@ -175,15 +176,14 @@ h6 {
 			//background-color: Green;
 
 			nav#cssmenu{
-
-				height: 49px;
-				@include border-top-radius(10px);
+				height: em(49px);
+				@include border-top-radius(em(10px));
 
 				// Fondo degradado de los menús
 				background: $color_menu01;
 				@include background-image(linear-gradient($color_menu01, $color_menu02));
 				// Línea Base roja para todos los menús
-				border-bottom: 2px solid $color_menu03;
+				border-bottom: em(2px) solid $color_menu03;
 				width: auto;
 
 				ul, li, span, a {
@@ -202,12 +202,13 @@ h6 {
 					background: $color_menu01;
 					@include background-image(linear-gradient($color_menu01, $color_menu04));
 					display: inline-block;
-					line-height: 49px;
-					padding: 0 20px;
+					line-height: em(49px);
+					padding: 0 em(20px);
 					text-decoration: none;
 				}
 				ul {
 					list-style: none;
+					z-index: 1000;
 				}
 				> ul {
 					float: left;
@@ -227,18 +228,18 @@ h6 {
 							position: absolute;
 							left: 50%;
 							bottom: 0;
-							border-left: 10px solid transparent;
-							border-right: 10px solid transparent;
-							border-bottom: 10px solid $color_menu03;
-							margin-left: -10px;
+							border-left: em(10px) solid transparent;
+							border-right: em(10px) solid transparent;
+							border-bottom: em(10px) solid $color_menu03;
+							margin-left: em(-10px);
 						}
 
 						&:first-child > a {
 							//Pasas a compass
 							//@include border-top-radius(10px);
-							border-radius: 5px 0 0 0;
-							-moz-border-radius: 5px 0 0 0;
-							-webkit-border-radius: 5px 0 0 0;
+							border-radius: em(5px) 0 0 0;
+							-moz-border-radius: em(5px) 0 0 0;
+							-webkit-border-radius: em(5px) 0 0 0;
 						}
 						&.active {
 							&:after {
@@ -249,28 +250,28 @@ h6 {
 								position: absolute;
 								left: 50%;
 								bottom: 0;
-								border-left: 10px solid transparent;
-								border-right: 10px solid transparent;
-								border-bottom: 10px solid $color_menu03;
-								margin-left: -10px;
+								border-left: em(10px) solid transparent;
+								border-right: em(10px) solid transparent;
+								border-bottom: em(10px) solid $color_menu03;
+								margin-left: em(-10px);
 							}
 							> a {
 								background: $color_menu04;
 								//@include background-image(linear-gradient($color_menu04, $color_menu06));	// No lleva degradado.
 
 								// Pasar a compass
-								box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
-								-moz-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
-								-webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+								box-shadow: inset 0 0 em(2px) rgba(0, 0, 0, 0.1);
+								-moz-box-shadow: inset 0 0 em(2px) rgba(0, 0, 0, 0.1);
+								-webkit-box-shadow: inset 0 0 em(2px) rgba(0, 0, 0, 0.1);
 							}
 						}
 						&:hover > a {
 							background: $color_menu04;
 							@include background-image(linear-gradient($color_menu04, $color_menu06));	//No lleva degradado
 							// Pasar a compass
-							box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
-							-moz-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
-							-webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+							box-shadow: inset 0 0 em(2px) rgba(0, 0, 0, 0.1);
+							-moz-box-shadow: inset 0 0 em(2px) rgba(0, 0, 0, 0.1);
+							-webkit-box-shadow: inset 0 0 em(2px) rgba(0, 0, 0, 0.1);
 						}
 					}
 				}
@@ -282,19 +283,19 @@ h6 {
 					ul {
 						display: none;
 						position: absolute;
-						width: 200px;
+						width: em(200px);
 						top: 100%;
 						left: 0;
 						li {
-							*margin-bottom: -1px;
+							*margin-bottom: em(-1px);
 							a {
 								background: $color_menu03;
-								border-bottom: 1px dotted $color_menu07;
+								border-bottom: em(1px) dotted $color_menu07;
 								filter: none;
 								/* font-size: 11px; */
 								display: block;
 								line-height: 120%;
-								padding: 10px;
+								padding: em(10px);
 								color: $color_menu08;
 							}
 							&:hover a {
