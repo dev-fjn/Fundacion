@@ -27,6 +27,5 @@
 {% block agenda %}
 <h2>AGENDA</h2>
 {% proximos_eventos %}
-<h2>Calendario</h2>
-{% calendario_eventos 0 %}
+<p><a href="{% url 'calendario' %}">ver mas</a></p>
 {% endblock agenda %}

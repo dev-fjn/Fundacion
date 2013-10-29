@@ -14,16 +14,18 @@ class Calendario(TemplateView):
 
 	def get_context_data(self, **kwargs):
 		context = super(Calendario, self).get_context_data(**kwargs)
+		now = timezone.now()
 		if not 'year' in kwargs or not 'month' in kwargs:
-			return context
-		year, month = int(kwargs.get('year')), int(kwargs.get('month'))
+			year, month = now.year, now.month
+		else:
+			year, month = int(kwargs.get('year')), int(kwargs.get('month'))
 		start = datetime.date(year, month, 1)
 		dsemana, dultimo = calendar.monthrange(year, month)
 		end = start + datetime.timedelta(days=dultimo-1)
 		diccionario = Evento.datos_para_calendario(start, end)
 		semanas = calendario_por_meses(start, end, diccionario)
 		context.update({
-				'hoy': timezone.now(),
+				'hoy': now,
 				'start': start,
 				'semanas': semanas,
 				'prev': start - datetime.timedelta(days=1),

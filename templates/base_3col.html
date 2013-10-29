@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block variable %}
+	{% block section_body %}
+	<section id="body222222">
+		{% block body %}
+		{% block section_slide %}
+		<section id="slide">
+			{% block slide %}
+			<img src="{% static 'img/dummy-SlideShow+(384x288).png' %}" alt="SlideShow" />
+			{% endblock slide %}
+		</section>
+		{% endblock section_slide %}
+
+		<div id="ourinfo">
+			<section id="where">¿Dónde estamos?</section>
+			<section id="services">Carta de Servicios</section>
+		</div>
+
+		<div><br /></div>
+		<div><br /></div>
+
+		{% block section_expo %}
+		<section id="expo">
+			{% block expo %}
+			<img src="{% static 'img/dummy-Expo-Virtual+(384x288).png' %}" alt="Exposición Virtual" />
+			{% endblock expo %}
+		</section>
+		{% endblock section_expo %}
+		{% endblock body %}
+	</section>
+	{% endblock section_body %}
+	<aside id="asider2222222">
+		{% block section_agenda %}
+		<section id="agenda">
+			{% block agenda %}
+			<h2>AGENDA</h2>
+			<p>{% lorem 32 w %}</p>
+			{% endblock agenda %}
+		</section>
+		{% endblock section_agenda %}
+
+		<section id="varios">
+			<section id="internal" class="opensans">
+				<h2>Actividades
+					<br />Internas</h2>
+				<p>{% lorem 32 w %}</p>
+			</section>
+			<section id="externas" class="cantarell">
+				<h2>Actividades
+					<br />Externas</h2>
+				<p>{% lorem 41 w %}</p>
+			</section>
+		</section>
+		<section id="banner2">
+			<figure>
+				<img src="{% static 'img/dummy-Banner-Vertical+(240x400).png' %}" alt="Banner Vertical" />
+				<figcaption>
+					Título de la imagen anterior (banner)
+				</figcaption>
+			</figure>
+		</section>
+	</aside>
+	<aside id="asidel">
+	</aside>
+{% endblock variable %}
