@@ -1,14 +1,21 @@
 {% extends "base.html" %}
 
 {# dejar uno de los dos metodos siguientes #}
-{% block section_id %}variable{% endblock section_id %}
-{% block columns %}1{% endblock columns %}
+{% block section_id %}variable_1col{% endblock section_id %}
+{# {% block columns %}1{% endblock columns %} #}
 
 {% block body %}
-<h1>Estilo 1 columna</h1>
-	{% include "_lorem_links.html" %}
+	<div><br /></div>
+	<div id="space">
+
+		<h1>Estilo 1 columna</h1>
+		{% include "_lorem_links.html" %}
+
+	</div>
+	<div><br /></div>
 {% endblock body %}
 
+{# --- Anulamos ambos laterales --- #}
 {% block aside_asidel %}
 {# anulado #}
 {% endblock aside_asidel %}
@@ -16,4 +23,4 @@
 {% block aside_asider %}
 {# anulado #}
 {% endblock aside_asider %}
-
+{# -------------------------------- #}

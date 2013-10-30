@@ -1,22 +1,29 @@
 {% extends "base.html" %}
 
 {# dejar uno de los dos metodos siguientes #}
-{% block section_id %}variable{% endblock section_id %}
-{% block columns %}2{% endblock columns %}
+{% block section_id %}variable_2col_especial{% endblock section_id %}
+{# {% block columns %}2{% endblock columns %} #}
 
 {% block body %}
-	<section class="left">
-		{% block contentl %}
-			<h1>Estilo 2 columnas left</h1>
-			{% include "_lorem_links.html" %}
-		{% endblock contentl %}
-	</section>
-	<section class="left">
-		{% block contentr %}
-			<h1>Estilo 2 columnas right</h1>
-			{% include "_lorem_links.html" %}
-		{% endblock contentr %}
-	</section>
+	<!--<div><br /></div>-->
+	<div id="space">
+
+		<section id="bodyleft">
+			{% block contentl %}
+				<h1>Estilo 2 columnas left</h1>
+				{% include "_lorem_links.html" %}
+			{% endblock contentl %}
+		</section>
+
+		<section id="bodyright">
+			{% block contentr %}
+				<h1>Estilo 2 columnas right</h1>
+				{% include "_lorem_links.html" %}
+			{% endblock contentr %}
+		</section>
+
+	</div>
+	<div><br /></div>
 {% endblock body %}
 
 {% block aside_asidel %}
