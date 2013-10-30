@@ -636,14 +636,13 @@ h6 {
 }
 /* line 514, ../sass/screen.scss */
 .container div.content section#variable_1col section#body div#space {
-  background-color: Red;
   max-width: 100%;
   min-height: 30em;
   margin: 1em;
   border: 1em;
   padding: 1em;
 }
-/* line 530, ../sass/screen.scss */
+/* line 529, ../sass/screen.scss */
 .container div.content section#variable_2col section#body {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fefefe), color-stop(100%, #eee9f0));
   background-image: -webkit-linear-gradient(#fefefe, #eee9f0);
@@ -660,7 +659,7 @@ h6 {
   -o-border-radius: 0.625em;
   border-radius: 0.625em;
 }
-/* line 535, ../sass/screen.scss */
+/* line 534, ../sass/screen.scss */
 .container div.content section#variable_2col section#body div#space {
   max-width: 100%;
   min-height: 30em;
@@ -668,7 +667,7 @@ h6 {
   border: 1em;
   padding: 1em;
 }
-/* line 545, ../sass/screen.scss */
+/* line 544, ../sass/screen.scss */
 .container div.content section#variable_2col aside#asider {
   width: 24.29907%;
   float: right;
@@ -681,7 +680,7 @@ h6 {
   background-image: -o-linear-gradient(#fefefe, #eee9f0);
   background-image: linear-gradient(#fefefe, #eee9f0);
 }
-/* line 552, ../sass/screen.scss */
+/* line 551, ../sass/screen.scss */
 .container div.content section#variable_2col aside#asider section#agenda {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
@@ -692,11 +691,11 @@ h6 {
   margin: .2em;
   border: 1px solid #c1b7a4;
 }
-/* line 559, ../sass/screen.scss */
+/* line 558, ../sass/screen.scss */
 .container div.content section#variable_2col aside#asider section#agenda h2 {
   text-align: center;
 }
-/* line 565, ../sass/screen.scss */
+/* line 564, ../sass/screen.scss */
 .container div.content section#variable_2col aside#asider section#varios {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
@@ -707,7 +706,7 @@ h6 {
   margin: .2em;
   border: 1px solid #c1b7a4;
 }
-/* line 573, ../sass/screen.scss */
+/* line 572, ../sass/screen.scss */
 .container div.content section#variable_2col aside#asider section#varios section#internal {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
@@ -718,11 +717,11 @@ h6 {
   margin: .2em;
   border: 1px solid #c1b7a4;
 }
-/* line 580, ../sass/screen.scss */
+/* line 579, ../sass/screen.scss */
 .container div.content section#variable_2col aside#asider section#varios section#internal h2 {
   text-align: center;
 }
-/* line 585, ../sass/screen.scss */
+/* line 584, ../sass/screen.scss */
 .container div.content section#variable_2col aside#asider section#varios section#externas {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
@@ -733,16 +732,16 @@ h6 {
   margin: .2em;
   border: 1px solid #c1b7a4;
 }
-/* line 592, ../sass/screen.scss */
+/* line 591, ../sass/screen.scss */
 .container div.content section#variable_2col aside#asider section#varios section#externas h2 {
   text-align: center;
 }
-/* line 598, ../sass/screen.scss */
+/* line 597, ../sass/screen.scss */
 .container div.content section#variable_2col aside#asider section#banner2 {
   text-align: center;
   width: 100%;
 }
-/* line 610, ../sass/screen.scss */
+/* line 609, ../sass/screen.scss */
 .container div.content section#variable_2col_especial section#body {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fefefe), color-stop(100%, #eee9f0));
   background-image: -webkit-linear-gradient(#fefefe, #eee9f0);
@@ -759,7 +758,7 @@ h6 {
   -o-border-radius: 0.625em;
   border-radius: 0.625em;
 }
-/* line 615, ../sass/screen.scss */
+/* line 614, ../sass/screen.scss */
 .container div.content section#variable_2col_especial section#body div#space {
   max-width: 100%;
   min-height: 30em;
@@ -767,14 +766,14 @@ h6 {
   border: 1em;
   padding: 1em;
 }
-/* line 623, ../sass/screen.scss */
+/* line 622, ../sass/screen.scss */
 .container div.content section#variable_2col_especial section#body div#space section#bodyleft {
   width: 43.75%;
   float: left;
   margin-right: 1.25%;
   display: inline;
 }
-/* line 627, ../sass/screen.scss */
+/* line 626, ../sass/screen.scss */
 .container div.content section#variable_2col_especial section#body div#space section#bodyright {
   width: 55.0%;
   float: right;
@@ -782,7 +781,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 633, ../sass/screen.scss */
+/* line 632, ../sass/screen.scss */
 .container div.content section#variable_2col_especial aside#asider {
   width: 24.29907%;
   float: right;
@@ -795,7 +794,7 @@ h6 {
   background-image: -o-linear-gradient(#fefefe, #eee9f0);
   background-image: linear-gradient(#fefefe, #eee9f0);
 }
-/* line 640, ../sass/screen.scss */
+/* line 639, ../sass/screen.scss */
 .container div.content section#variable_2col_especial aside#asider section#agenda {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
@@ -806,11 +805,11 @@ h6 {
   margin: .2em;
   border: 1px solid #c1b7a4;
 }
-/* line 647, ../sass/screen.scss */
+/* line 646, ../sass/screen.scss */
 .container div.content section#variable_2col_especial aside#asider section#agenda h2 {
   text-align: center;
 }
-/* line 653, ../sass/screen.scss */
+/* line 652, ../sass/screen.scss */
 .container div.content section#variable_2col_especial aside#asider section#varios {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
@@ -821,7 +820,7 @@ h6 {
   margin: .2em;
   border: 1px solid #c1b7a4;
 }
-/* line 661, ../sass/screen.scss */
+/* line 660, ../sass/screen.scss */
 .container div.content section#variable_2col_especial aside#asider section#varios section#internal {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
@@ -832,11 +831,11 @@ h6 {
   margin: .2em;
   border: 1px solid #c1b7a4;
 }
-/* line 668, ../sass/screen.scss */
+/* line 667, ../sass/screen.scss */
 .container div.content section#variable_2col_especial aside#asider section#varios section#internal h2 {
   text-align: center;
 }
-/* line 673, ../sass/screen.scss */
+/* line 672, ../sass/screen.scss */
 .container div.content section#variable_2col_especial aside#asider section#varios section#externas {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
@@ -847,16 +846,16 @@ h6 {
   margin: .2em;
   border: 1px solid #c1b7a4;
 }
-/* line 680, ../sass/screen.scss */
+/* line 679, ../sass/screen.scss */
 .container div.content section#variable_2col_especial aside#asider section#varios section#externas h2 {
   text-align: center;
 }
-/* line 686, ../sass/screen.scss */
+/* line 685, ../sass/screen.scss */
 .container div.content section#variable_2col_especial aside#asider section#banner2 {
   text-align: center;
   width: 100%;
 }
-/* line 699, ../sass/screen.scss */
+/* line 698, ../sass/screen.scss */
 .container footer#footer {
   width: 100%;
   float: right;
@@ -865,7 +864,7 @@ h6 {
   display: inline;
   background-color: #c6c1b3;
 }
-/* line 703, ../sass/screen.scss */
+/* line 702, ../sass/screen.scss */
 .container footer#footer div#finicial {
   width: 100%;
   float: right;
@@ -874,7 +873,7 @@ h6 {
   display: inline;
   min-height: 2em;
 }
-/* line 709, ../sass/screen.scss */
+/* line 708, ../sass/screen.scss */
 .container footer#footer div#col1 {
   width: 24.29907%;
   float: left;
@@ -886,7 +885,7 @@ h6 {
   -o-border-radius: 0.625em;
   border-radius: 0.625em;
 }
-/* line 718, ../sass/screen.scss */
+/* line 717, ../sass/screen.scss */
 .container footer#footer div#col2 {
   width: 24.29907%;
   float: left;
@@ -898,7 +897,7 @@ h6 {
   -o-border-radius: 0.625em;
   border-radius: 0.625em;
 }
-/* line 727, ../sass/screen.scss */
+/* line 726, ../sass/screen.scss */
 .container footer#footer div#col3 {
   width: 24.29907%;
   float: left;
@@ -910,7 +909,7 @@ h6 {
   -o-border-radius: 0.625em;
   border-radius: 0.625em;
 }
-/* line 736, ../sass/screen.scss */
+/* line 735, ../sass/screen.scss */
 .container footer#footer div#col4 {
   width: 24.29907%;
   float: right;
@@ -923,7 +922,7 @@ h6 {
   -o-border-radius: 0.625em;
   border-radius: 0.625em;
 }
-/* line 745, ../sass/screen.scss */
+/* line 744, ../sass/screen.scss */
 .container footer#footer div#ffinal {
   width: 100%;
   float: right;
@@ -932,7 +931,7 @@ h6 {
   display: inline;
   min-height: 2em;
 }
-/* line 752, ../sass/screen.scss */
+/* line 751, ../sass/screen.scss */
 .container footer#footer div#legal {
   width: 100%;
   float: right;
