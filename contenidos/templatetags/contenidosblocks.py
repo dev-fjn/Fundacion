@@ -32,6 +32,7 @@ def calendario_eventos(meses_atras):
 	diccionario = Evento.datos_para_calendario(start, end)
 	semanas = calendario_por_meses(start, end, diccionario)
 	return {
+			'only': True,
 			'hoy': timezone.now(), 
 			'start': start, 
 			'semanas': semanas, 
