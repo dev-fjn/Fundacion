@@ -18,7 +18,7 @@
 		<link href="{% static 'css/screen.css' %}" media="screen, projection" rel="stylesheet" type="text/css" />
 
 		<!--  Google Font -->
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+		<!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>-->
 		<link href='http://fonts.googleapis.com/css?family=Cantarell:400,700' rel='stylesheet' type='text/css'>
 
 		{% comment %}
@@ -260,6 +260,17 @@
                                                 </section>
                                             {% endblock section_slide %}
 
+											{% block section_expo %}
+                                                <section id="expo">
+                                                    {% block expo %}
+                                                        <img src="{% static 'img/dummy-Expo-Virtual+(384x288).png' %}" alt="Exposición Virtual" />
+                                                    {% endblock expo %}
+                                                </section>
+                                            {% endblock section_expo %}
+
+											<div><br /></div>
+                                            <div><br /></div>
+                                            
                                             {% block div_ourinfo %}
                                             <div id="ourinfo">
                                                 <section id="where">¿Dónde estamos?</section>
@@ -270,13 +281,7 @@
                                             <div><br /></div>
                                             <div><br /></div>
 
-                                            {% block section_expo %}
-                                                <section id="expo">
-                                                    {% block expo %}
-                                                        <img src="{% static 'img/dummy-Expo-Virtual+(384x288).png' %}" alt="Exposición Virtual" />
-                                                    {% endblock expo %}
-                                                </section>
-                                            {% endblock section_expo %}
+
                                         {% endblock body %}
                                     </section>
                                 {% endblock section_body %}
@@ -293,12 +298,12 @@
 										{% endblock section_agenda %}
 
 										<section id="varios">
-											<section id="internal" class="opensans">
+											<section id="internal">
 												<h2>Actividades
 													<br />Internas</h2>
 												<p>{% lorem 32 w %}</p>
 											</section>
-											<section id="externas" class="cantarell">
+											<section id="externas">
 												<h2>Actividades
 													<br />Externas</h2>
 												<p>{% lorem 41 w %}</p>

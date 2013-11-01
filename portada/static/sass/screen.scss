@@ -13,746 +13,745 @@
 /* -------------------------------------------------------------------------*/
 html {
     font-size: $font_base;
+    font-family: Delicious, sans-serif;
 }
 
 
-h1 {
-    font-size: em(30px);
-    //line-height: em(40px);
-}
- 
-h2 {
-    font-size: em(26px);
-    //line-height: em(40px);
-}
- 
-h3 {
-    font-size: em(22px);
-    //line-height: em(40px);
-}
- 
-h4 {
-    font-size: 18px;
-    //line-height: 20px;
-}
- 
-/* Won't be used here */
- 
-h5 {
-    font-size: 14px;
-    //line-height: 20px;
-}
- 
-h6 {
-    font-size: 12px;
-    //line-height: 20px;
-}
+//h1 {
+//    font-size: em(30px);
+//    //line-height: em(40px);
+//}
+
+//h2 {
+//    font-size: em(26px);
+//    line-height: em(40px);
+//}
+
+//h3 {
+//    font-size: em(22px);
+//    //line-height: em(40px);
+//}
+
+//h4 {
+//    font-size: 18px;
+//    //line-height: 20px;
+//}
+
+//h5 {
+//    font-size: 14px;
+//    //line-height: 20px;
+//}
+
+//h6 {
+//    font-size: 12px;
+//    //line-height: 20px;
+//}
 
 .container {
-	@include container;
-	//@include susy-grid-background;
-	//@include sticky-footer(200px);
-	@include box-shadow(rgba(black, 0.4) 0 0 25px, rgba(black, 0.2) 0 0 3px 1px inset);
-	@include background-image(linear-gradient($color_menu01, $color_menu02));
+    @include container;
+    //@include susy-grid-background;
+    //@include sticky-footer(200px);
+    @include box-shadow(rgba(black, 0.4) 0 0 25px, rgba(black, 0.2) 0 0 3px 1px inset);
+    @include background-image(linear-gradient($color_menu01, $color_menu02));
 
-//	h2:after, h3:after, h4:after {
-//		position: absolute;
-//		content: "";
-//		left: 0;
-//		top: 0;
-//		bottom: 0;
-//		width: em(5px);
-//		border-radius: em(2px);
-//		box-shadow: inset 0 em(1px) em(1px) rgba(0, 0, 0, 0.5), 0 em(1px) em(1px) rgba(255, 255, 255, 0.3);
-//	}
-//	h2:after {
-//		background: $color09; //#0AF;
-//	}
-//	h3:after {
-//		background: $color09; //#3BF;
-//	}
-//	h4:after {
-//		background: $color09; //#6Cf;
-//	}
+//    h2:after, h3:after, h4:after {
+//        position: absolute;
+//        content: "";
+//        left: 0;
+//        top: 0;
+//        bottom: 0;
+//        width: em(5px);
+//        border-radius: em(2px);
+//        box-shadow: inset 0 em(1px) em(1px) rgba(0, 0, 0, 0.5), 0 em(1px) em(1px) rgba(255, 255, 255, 0.3);
+//    }
+//    h2:after {
+//        background: $color09; //#0AF;
+//    }
+//    h3:after {
+//        background: $color09; //#3BF;
+//    }
+//    h4:after {
+//        background: $color09; //#6Cf;
+//    }
 //
-//	h1 {
-//		$font_h1: $font_base*2; // 32px;
-//		font-size: em($font_h1);
-//		line-height: em($font_h1 + 6px); // 36px;
-//		margin: .2em 0 .2em 0;
-//		font-weight: normal;
-//		color: $color04; // white;
-//		//font-family: 'Hammersmith One', sans-serif;
-//		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
-//		position: relative;
-//		//padding: 0 0 0 em($font_base);
-//		background-color: $color08;
-//		//color: #6Cf;
-//	}
-//	h2 {
-//		$font_h2: $font_base*1.7;
-//		font-size: em($font_h2);
-//		line-height: em($font_h2+4px);
-//		margin: .2em 0 .2em 0;
-//		font-weight: normal;
-//		color: $color05; // white;
-//		//font-family: 'Hammersmith One', sans-serif;
-//		text-shadow: 0 em(-1px) 0 rgba(0, 0, 0, 0.4);
-//		position: relative;
-//		// Extras
-//		padding: 0 0 0 em($font_base)-3px;
-//		background-color: $color08;
-//		//z-index:auto;
-//	}
-//	h3 {
-//		$font_h3: $font_base*1.4;
-//		font-size: em($font_h3);
-//		line-height: em($font_h3+6px);
-//		margin: .2em 0 .2em 0;
-//		font-weight: normal;
-//		color: $color05; // white;
-//		//font-family: 'Hammersmith One', sans-serif;
-//		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
-//		position: relative;
-//		padding: 0 0 0 (em($font_base) - em(6px));
-//		background-color: $color08;
-//	}
-//	h4 {
-//		$font_h4: $font_base*1.1;
-//		font-size: em($font_h4);
-//		line-height: em($font_h4+6px);
-//		margin: .2em 0 .2em 0;
-//		font-weight: normal;
-//		color: $color05; // white;
-//		//font-family: 'Hammersmith One', sans-serif;
-//		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
-//		position: relative;	
-//		padding: 0 0 0 em($font_base) - em(6px);
-//		background-color: $color08;
-//	}
+//    h1 {
+//        $font_h1: $font_base*2; // 32px;
+//        font-size: em($font_h1);
+//        line-height: em($font_h1 + 6px); // 36px;
+//        margin: .2em 0 .2em 0;
+//        font-weight: normal;
+//        color: $color04; // white;
+//        //font-family: 'Hammersmith One', sans-serif;
+//        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+//        position: relative;
+//        //padding: 0 0 0 em($font_base);
+//        background-color: $color08;
+//        //color: #6Cf;
+//    }
+//    h2 {
+//        $font_h2: $font_base*1.7;
+//        font-size: em($font_h2);
+//        line-height: em($font_h2+4px);
+//        margin: .2em 0 .2em 0;
+//        font-weight: normal;
+//        color: $color05; // white;
+//        //font-family: 'Hammersmith One', sans-serif;
+//        text-shadow: 0 em(-1px) 0 rgba(0, 0, 0, 0.4);
+//        position: relative;
+//        // Extras
+//        padding: 0 0 0 em($font_base)-3px;
+//        background-color: $color08;
+//        //z-index:auto;
+//    }
+//    h3 {
+//        $font_h3: $font_base*1.4;
+//        font-size: em($font_h3);
+//        line-height: em($font_h3+6px);
+//        margin: .2em 0 .2em 0;
+//        font-weight: normal;
+//        color: $color05; // white;
+//        //font-family: 'Hammersmith One', sans-serif;
+//        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+//        position: relative;
+//        padding: 0 0 0 (em($font_base) - em(6px));
+//        background-color: $color08;
+//    }
+//    h4 {
+//        $font_h4: $font_base*1.1;
+//        font-size: em($font_h4);
+//        line-height: em($font_h4+6px);
+//        margin: .2em 0 .2em 0;
+//        font-weight: normal;
+//        color: $color05; // white;
+//        //font-family: 'Hammersmith One', sans-serif;
+//        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+//        position: relative;
+//        padding: 0 0 0 em($font_base) - em(6px);
+//        background-color: $color08;
+//    }
 
 
 
-	header {
+    header {
 
-		section#banner{
-			//background-color: Red;
-			background-image: url(../img/cabecera.png);
-			background-repeat: no-repeat;
-			//background-color: $color01;
-			min-height: 125px;
+        section#banner{
+            //background-color: Red;
+            background-image: url(../img/cabecera.png);
+            background-repeat: no-repeat;
+            //background-color: $color01;
+            min-height: 125px;
 
-			section#relleno{
-				@include span-columns(9, 12);
-				//background-color: Red;
-			}
+            section#relleno{
+                @include span-columns(9, 12);
+                //background-color: Red;
+            }
 
-			section#caja{
-				@include span-columns(3 omega, 12);
-				//background-color: Blue;
-				text-align: center;
-				max-height: 125px;
+            section#caja{
+                @include span-columns(3 omega, 12);
+                //background-color: Blue;
+                text-align: center;
+                max-height: 125px;
 
-				section#acceso{
-					@include span-columns(3 omega, 3);
-					min-height: 42px;
-				}
+                section#acceso{
+                    @include span-columns(3 omega, 3);
+                    min-height: 42px;
+                }
 
-				section#social{
-					@include span-columns(3 omega, 3);
-					min-height: 42px;
-				}
+                section#social{
+                    @include span-columns(3 omega, 3);
+                    min-height: 42px;
+                }
 
-				section#contacto{
-					@include span-columns(3 omega, 3);
-					min-height: 41px;
-					//vertical-align: text-bottom;
-				}
-			}
-		}
+                section#contacto{
+                    @include span-columns(3 omega, 3);
+                    min-height: 41px;
+                    //vertical-align: text-bottom;
+                }
+            }
+        }
 
-		section#menus{
-			@include span-columns(12 omega, 12);
-			//background-color: Green;
+        section#menus{
+            @include span-columns(12 omega, 12);
+            //background-color: Green;
 
-			nav#cssmenu{
-				height: em(49px);
-				@include border-top-radius(em(10px));
+            nav#cssmenu{
+                height: em(49px);
+                @include border-top-radius(em(10px));
 
-				// Fondo degradado de los menús
-				background: $color_menu01;
-				@include background-image(linear-gradient($color_menu01, $color_menu02));
-				// Línea Base roja para todos los menús
-				border-bottom: em(2px) solid $color_menu03;
-				width: auto;
+                // Fondo degradado de los menús
+                background: $color_menu01;
+                @include background-image(linear-gradient($color_menu01, $color_menu02));
+                // Línea Base roja para todos los menús
+                border-bottom: em(2px) solid $color_menu03;
+                width: auto;
 
-				ul, li, span, a {
-					margin: 0;
-					padding: 0;
-					position: relative;
-				}
-				&:after, ul:after {
-					content: '';
-					display: block;
-					clear: both;
-				}
-				// Adaptar a scss
-				a {
-					color: $color_menu05;
-					background: $color_menu01;
-					@include background-image(linear-gradient($color_menu01, $color_menu04));
-					display: inline-block;
-					line-height: em(49px);
-					padding: 0 em(20px);
-					text-decoration: none;
-				}
-				ul {
-					list-style: none;
-					z-index: 1000;
-				}
-				> ul {
-					float: left;
-					> li {
-						float: left;
-						
-						> a {
-							color: $color_menu05;
-							/* font-size: 12px; */
-						}
-						// Dibujamos el triangulo rojo
-						&:hover:after {
-							content: '';
-							display: block;
-							width: 0;
-							height: 0;
-							position: absolute;
-							left: 50%;
-							bottom: 0;
-							border-left: em(10px) solid transparent;
-							border-right: em(10px) solid transparent;
-							border-bottom: em(10px) solid $color_menu03;
-							margin-left: em(-10px);
-						}
+                ul, li, span, a {
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+                }
+                &:after, ul:after {
+                    content: '';
+                    display: block;
+                    clear: both;
+                }
+                // Adaptar a scss
+                a {
+                    color: $color_menu05;
+                    background: $color_menu01;
+                    @include background-image(linear-gradient($color_menu01, $color_menu04));
+                    display: inline-block;
+                    line-height: em(49px);
+                    padding: 0 em(20px);
+                    text-decoration: none;
+                }
+                ul {
+                    list-style: none;
+                    z-index: 1000;
+                }
+                > ul {
+                    float: left;
+                    > li {
+                        float: left;
 
-						&:first-child > a {
-							//Pasas a compass
-							//@include border-top-radius(10px);
-							border-radius: em(5px) 0 0 0;
-							-moz-border-radius: em(5px) 0 0 0;
-							-webkit-border-radius: em(5px) 0 0 0;
-						}
-						&.active {
-							&:after {
-								content: '';
-								display: block;
-								width: 0;
-								height: 0;
-								position: absolute;
-								left: 50%;
-								bottom: 0;
-								border-left: em(10px) solid transparent;
-								border-right: em(10px) solid transparent;
-								border-bottom: em(10px) solid $color_menu03;
-								margin-left: em(-10px);
-							}
-							> a {
-								background: $color_menu04;
-								//@include background-image(linear-gradient($color_menu04, $color_menu06));	// No lleva degradado.
+                        > a {
+                            color: $color_menu05;
+                            /* font-size: 12px; */
+                        }
+                        // Dibujamos el triangulo rojo
+                        &:hover:after {
+                            content: '';
+                            display: block;
+                            width: 0;
+                            height: 0;
+                            position: absolute;
+                            left: 50%;
+                            bottom: 0;
+                            border-left: em(10px) solid transparent;
+                            border-right: em(10px) solid transparent;
+                            border-bottom: em(10px) solid $color_menu03;
+                            margin-left: em(-10px);
+                        }
 
-								// Pasar a compass
-								box-shadow: inset 0 0 em(2px) rgba(0, 0, 0, 0.1);
-								-moz-box-shadow: inset 0 0 em(2px) rgba(0, 0, 0, 0.1);
-								-webkit-box-shadow: inset 0 0 em(2px) rgba(0, 0, 0, 0.1);
-							}
-						}
-						&:hover > a {
-							background: $color_menu04;
-							@include background-image(linear-gradient($color_menu04, $color_menu06));	//No lleva degradado
-							// Pasar a compass
-							box-shadow: inset 0 0 em(2px) rgba(0, 0, 0, 0.1);
-							-moz-box-shadow: inset 0 0 em(2px) rgba(0, 0, 0, 0.1);
-							-webkit-box-shadow: inset 0 0 em(2px) rgba(0, 0, 0, 0.1);
-						}
-					}
-				}
-				.has-sub {
-					//z-index: 1;
-					&:hover > ul {
-						display: block;
-					}
-					ul {
-						display: none;
-						position: absolute;
-						width: em(200px);
-						top: 100%;
-						left: 0;
-						li {
-							*margin-bottom: em(-1px);
-							a {
-								background: $color_menu03;
-								border-bottom: em(1px) dotted $color_menu07;
-								filter: none;
-								/* font-size: 11px; */
-								display: block;
-								line-height: 120%;
-								padding: em(10px);
-								color: $color_menu08;
-							}
-							&:hover a {
-								background: $color_menu09;
-							}
-						}
-					}
-					.has-sub {
-						&:hover > ul {
-							display: block;
-						}
-						ul {
-							display: none;
-							position: absolute;
-							left: 100%;
-							top: 0;
-							li a {
-								background: $color_menu09;
-								border-bottom: 1px dotted $color_menu07;
-								&:hover {
-									background: $color_menu10;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+                        &:first-child > a {
+                            //Pasas a compass
+                            //@include border-top-radius(10px);
+                            border-radius: em(5px) 0 0 0;
+                            -moz-border-radius: em(5px) 0 0 0;
+                            -webkit-border-radius: em(5px) 0 0 0;
+                        }
+                        &.active {
+                            &:after {
+                                content: '';
+                                display: block;
+                                width: 0;
+                                height: 0;
+                                position: absolute;
+                                left: 50%;
+                                bottom: 0;
+                                border-left: em(10px) solid transparent;
+                                border-right: em(10px) solid transparent;
+                                border-bottom: em(10px) solid $color_menu03;
+                                margin-left: em(-10px);
+                            }
+                            > a {
+                                background: $color_menu04;
+                                //@include background-image(linear-gradient($color_menu04, $color_menu06));    // No lleva degradado.
 
-@include clearfix;
-
-	div.content{
-		@include span-columns(12 omega, 12);
-		@include background-image(linear-gradient($color_menu01, $color_menu02));
-		//min-height: 12em;
-
-		section#hormiga{
-			@include span-columns(12 omega, 12);
-			//@include background-image(linear-gradient($color_menu01, $color_menu02));
-			//background-color: $color05;
-			//margin: 0;
-		}
-
-		section#info{
-			@include span-columns(12 omega, 12);
-			//@include background-image(linear-gradient($color_menu01, $color_menu02));
-			//background-color: $color10;
-		}
-		
-		section#variable{
-			@include span-columns(12 omega, 12);
-			//@include background-image(linear-gradient($color_menu01, $color_menu02));
-
-			aside#asidel{
-				// Lateral Izq.
-				@include span-columns(3, 12);
-				//@include background-image(linear-gradient($color_menu01, $color_menu02));
-				//background-color: $color06;
-				//min-height: 10em;
-
-				section#news{
-					@include border-radius($radio-standar);
-					@include background-image(linear-gradient($color_menu01, $color_menu02));
-					//background-color: $color11;
-					padding: .2em;
-					margin: .2em;
-					border: 1px solid $color08 ;
-					h2{
-						text-align:center;
-					}
-				}
-
-			}
-
-			section#body{
-				// Centro de la página
-				@include span-columns(6, 12);
-				//@include background-image(linear-gradient($color_menu01, $color_menu02));
-				//background-color: $color07;
-				//border: 1px solid $color08 ;
-
-				section#slide{
-					//@include span-columns(6, 6);
-					@include border-radius($radio-standar);
-					//@include background-image(linear-gradient($color_menu01, $color_menu02));
-					border: 1px solid $color08 ;
-					text-align: center;
-					vertical-align: middle;
-					padding: .2em;
-					margin: .2em;
-				}
-
-				@include clearfix;
-
-				div#ourinfo{
-					@include span-columns(6, 6);
-					//display:block;
-					//min-height: 5em;
-					//@include background-image(linear-gradient($color_menu01, $color_menu02));
-					//background-color: $color09;
-					clear: both;
-					text-align: center;
-
-					section#where{
-						@include span-columns(3, 6);
-						@include border-radius($radio-standar);
-						@include background-image(linear-gradient($color_menu01, $color_menu02));
-						//background-color: $color09;
-						//border: 1px solid $color08 ;
-						text-align: center;
-						vertical-align: middle;
-						padding-top: .2em;
-						padding-bottom: .2em;
-						min-height: 1.5em;
-					}
-
-					section#services{
-						@include span-columns(3 omega, 6);
-						@include border-radius($radio-standar);
-						@include background-image(linear-gradient($color_menu01, $color_menu02));
-						//background-color: $color09;
-						//border: 1px solid $color08 ;
-						text-align: center;
-						vertical-align: middle;
-						padding-top: .2em;
-						padding-bottom: .2em;
-						min-height: 1.5em;
-					}
-
-				}
-
-				@include clearfix;
-
-				section#expo{
-					//@include span-columns(6 omega, 6);
-					@include border-radius($radio-standar);
-					//@include background-image(linear-gradient($color_menu01, $color_menu02));
-					border: 1px solid $color08 ;
-					text-align: center;
-					vertical-align: middle;
-					padding: .2em;
-					margin: .2em;
-				}
-			
-			}
-
-			aside#asider{
-				// Lateral Derecho
-				@include span-columns(3 omega, 12);
-				@include background-image(linear-gradient($color_menu01, $color_menu02));
-				//background-color: $color08;
-				//min-height: 10em;
-
-				section#agenda{
-					@include border-radius($radio-standar);
-					//@include background-image(linear-gradient($color_menu01, $color_menu02));
-					//background-color: $color11;
-					padding: .2em;
-					margin: .2em;
-					border: 1px solid $color08 ;
-					h2{
-						text-align:center;
-					}
-
-				}
-
-				section#varios{
-					@include border-radius($radio-standar);
-					//@include background-image(linear-gradient($color_menu01, $color_menu02));
-					//background-color: $color11;
-					padding: .2em;
-					margin: .2em;
-					border: 1px solid $color08 ;
-
-					section#internal{
-						@include border-radius($radio-standar);
-						//@include background-image(linear-gradient($color_menu01, $color_menu02));
-						//background-color: $color11;
-						padding: .2em;
-						margin: .2em;
-						border: 1px solid $color08 ;
-						h2{
-							text-align:center;
-						}
-					}
-
-					section#externas{
-						@include border-radius($radio-standar);
-						//@include background-image(linear-gradient($color_menu01, $color_menu02));
-						//background-color: $color11;
-						padding: .2em;
-						margin: .2em;
-						border: 1px solid $color08 ;
-						h2{
-							text-align:center;
-						}
-					}
-				}
-
-				section#banner2{
-					//@include background-image(linear-gradient($color_menu01, $color_menu02));
-					text-align:center;
-					width:100%;
-				}
-			}
-
-		}
-
-		// Sección 'variable' con una sola columna
-		// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		section#variable_1col{
-			@include border-radius($radio-standar);
-			//@include span-columns(12 omega, 12);
-			section#body{
-				div#space{
-					//@include background-image(linear-gradient($color_menu01, $color_menu02));
-					max-width: 100%;
-					min-height:em(480px);
-					margin: 1em;
-					border: 1em;
-					padding: 1em;
-				}
-			}
-		}
-
-		// Sección 'variable' con 2 columnas
-		// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		section#variable_2col{
-			
-			section#body{
-				@include background-image(linear-gradient($color_menu01, $color_menu02));
-				@include span-columns(9, 12);
-				@include border-radius($radio-standar);
-
-				div#space{
-					//background-color: Red;
-					max-width: 100%;
-					min-height:em(480px);
-					margin: 1em;
-					border: 1em;
-					padding: 1em;
-				}
-			}
-
-			aside#asider{
-				// Lateral Derecho
-				@include span-columns(3 omega, 12);
-				@include background-image(linear-gradient($color_menu01, $color_menu02));
-				//background-color: $color08;
-				//min-height: 10em;
-
-				section#agenda{
-					@include border-radius($radio-standar);
-					//@include background-image(linear-gradient($color_menu01, $color_menu02));
-					//background-color: $color11;
-					padding: .2em;
-					margin: .2em;
-					border: 1px solid $color08 ;
-					h2{
-						text-align:center;
-					}
-
-				}
-
-				section#varios{
-					@include border-radius($radio-standar);
-					//@include background-image(linear-gradient($color_menu01, $color_menu02));
-					//background-color: $color11;
-					padding: .2em;
-					margin: .2em;
-					border: 1px solid $color08 ;
-
-					section#internal{
-						@include border-radius($radio-standar);
-						//@include background-image(linear-gradient($color_menu01, $color_menu02));
-						//background-color: $color11;
-						padding: .2em;
-						margin: .2em;
-						border: 1px solid $color08 ;
-						h2{
-							text-align:center;
-						}
-					}
-
-					section#externas{
-						@include border-radius($radio-standar);
-						//@include background-image(linear-gradient($color_menu01, $color_menu02));
-						//background-color: $color11;
-						padding: .2em;
-						margin: .2em;
-						border: 1px solid $color08 ;
-						h2{
-							text-align:center;
-						}
-					}
-				}
-
-				section#banner2{
-					//@include background-image(linear-gradient($color_menu01, $color_menu02));
-					text-align:center;
-					width:100%;
-				}
-			}
-
-		}
-
-		// Sección "varioable", con 2 columnas (especial)
-		section#variable_2col_especial{
-			
-			section#body{
-				@include background-image(linear-gradient($color_menu01, $color_menu02));
-				@include span-columns(9, 12);
-				@include border-radius($radio-standar);
-
-				div#space{
-					//background-color: Red;
-					max-width: 100%;
-					min-height:em(480px);
-					margin: 1em;
-					border: 1em;
-					padding: 1em;
-
-					section#bodyleft{
-						@include span-columns(4, 9);
-					}
-
-					section#bodyright{
-						@include span-columns(5 omega, 9);
-					}
-				}
-			}
-
-			aside#asider{
-				// Lateral Derecho
-				@include span-columns(3 omega, 12);
-				@include background-image(linear-gradient($color_menu01, $color_menu02));
-				//background-color: $color08;
-				//min-height: 10em;
-
-				section#agenda{
-					@include border-radius($radio-standar);
-					//@include background-image(linear-gradient($color_menu01, $color_menu02));
-					//background-color: $color11;
-					padding: .2em;
-					margin: .2em;
-					border: 1px solid $color08 ;
-					h2{
-						text-align:center;
-					}
-
-				}
-
-				section#varios{
-					@include border-radius($radio-standar);
-					//@include background-image(linear-gradient($color_menu01, $color_menu02));
-					//background-color: $color11;
-					padding: .2em;
-					margin: .2em;
-					border: 1px solid $color08 ;
-
-					section#internal{
-						@include border-radius($radio-standar);
-						//@include background-image(linear-gradient($color_menu01, $color_menu02));
-						//background-color: $color11;
-						padding: .2em;
-						margin: .2em;
-						border: 1px solid $color08 ;
-						h2{
-							text-align:center;
-						}
-					}
-
-					section#externas{
-						@include border-radius($radio-standar);
-						//@include background-image(linear-gradient($color_menu01, $color_menu02));
-						//background-color: $color11;
-						padding: .2em;
-						margin: .2em;
-						border: 1px solid $color08 ;
-						h2{
-							text-align:center;
-						}
-					}
-				}
-
-				section#banner2{
-					//@include background-image(linear-gradient($color_menu01, $color_menu02));
-					text-align:center;
-					width:100%;
-				}
-			}
-
-		}
-		
-	}
+                                // Pasar a compass
+                                box-shadow: inset 0 0 em(2px) rgba(0, 0, 0, 0.1);
+                                -moz-box-shadow: inset 0 0 em(2px) rgba(0, 0, 0, 0.1);
+                                -webkit-box-shadow: inset 0 0 em(2px) rgba(0, 0, 0, 0.1);
+                            }
+                        }
+                        &:hover > a {
+                            background: $color_menu04;
+                            @include background-image(linear-gradient($color_menu04, $color_menu06));    //No lleva degradado
+                            // Pasar a compass
+                            box-shadow: inset 0 0 em(2px) rgba(0, 0, 0, 0.1);
+                            -moz-box-shadow: inset 0 0 em(2px) rgba(0, 0, 0, 0.1);
+                            -webkit-box-shadow: inset 0 0 em(2px) rgba(0, 0, 0, 0.1);
+                        }
+                    }
+                }
+                .has-sub {
+                    //z-index: 1;
+                    &:hover > ul {
+                        display: block;
+                    }
+                    ul {
+                        display: none;
+                        position: absolute;
+                        width: em(200px);
+                        top: 100%;
+                        left: 0;
+                        li {
+                            *margin-bottom: em(-1px);
+                            a {
+                                background: $color_menu03;
+                                border-bottom: em(1px) dotted $color_menu07;
+                                filter: none;
+                                /* font-size: 11px; */
+                                display: block;
+                                line-height: 120%;
+                                padding: em(10px);
+                                color: $color_menu08;
+                            }
+                            &:hover a {
+                                background: $color_menu09;
+                            }
+                        }
+                    }
+                    .has-sub {
+                        &:hover > ul {
+                            display: block;
+                        }
+                        ul {
+                            display: none;
+                            position: absolute;
+                            left: 100%;
+                            top: 0;
+                            li a {
+                                background: $color_menu09;
+                                border-bottom: 1px dotted $color_menu07;
+                                &:hover {
+                                    background: $color_menu10;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 @include clearfix;
 
-	footer#footer{
-		@include span-columns(12 omega, 12);
-		background-color: $color07;
+    div.content{
+        @include span-columns(12 omega, 12);
+        @include background-image(linear-gradient($color_menu01, $color_menu02));
+        //min-height: 12em;
 
-		div#finicial{
-			@include span-columns(12 omega, 12);
-			//background-color: $color10;
-			min-height:2em;
-		}
-		
-		div#col1{
-			@include span-columns(3, 12);
-			//background-color: $color08;
-			@include border-radius($radio-standar);
-			//padding: .2em;
-			//margin: .2em;
-			//border: 1px solid $color08 ;
-		}
+        section#hormiga{
+            @include span-columns(12 omega, 12);
+            //@include background-image(linear-gradient($color_menu01, $color_menu02));
+            //background-color: $color05;
+            //margin: 0;
+        }
 
-		div#col2{
-			@include span-columns(3, 12);
-			//background-color: $color09;
-			@include border-radius($radio-standar);
-			//padding: .2em;
-			//margin: .2em;
-			//border: 1px solid $color08 ;
-		}
+        section#info{
+            @include span-columns(12 omega, 12);
+            //@include background-image(linear-gradient($color_menu01, $color_menu02));
+            //background-color: $color10;
+        }
 
-		div#col3{
-			@include span-columns(3, 12);
-			//background-color: $color08;
-			@include border-radius($radio-standar);
-			//padding: .2em;
-			//margin: .2em;
-			//border: 1px solid $color08 ;
-		}
+        section#variable{
+            @include span-columns(12 omega, 12);
+            //@include background-image(linear-gradient($color_menu01, $color_menu02));
 
-		div#col4{
-			@include span-columns(3 omega, 12);
-			//background-color: $color09;
-			@include border-radius($radio-standar);
-			//padding: .2em;
-			//margin: .2em;
-			//border: 1px solid $color08 ;
-		}
+            aside#asidel{
+                // Lateral Izq.
+                @include span-columns(3, 12);
+                //@include background-image(linear-gradient($color_menu01, $color_menu02));
+                //background-color: $color06;
+                //min-height: 10em;
 
-		div#ffinal{
-			@include span-columns(12 omega, 12);
-			//background-color: $color10;
-			min-height:2em;
-		}
+                section#news{
+                    @include border-radius($radio-standar);
+                    @include background-image(linear-gradient($color_menu01, $color_menu02));
+                    //background-color: $color11;
+                    padding: .2em;
+                    margin: .2em;
+                    border: 1px solid $color08 ;
+                    h2{
+                        text-align:center;
+                    }
+                }
 
-		
-		div#legal{
-			@include span-columns(12 omega, 12);
-			//background-color: $color10;
-			text-align:right;
-		}
-	}
+            }
+
+            section#body{
+                // Centro de la página
+                @include span-columns(6, 12);
+                //@include background-image(linear-gradient($color_menu01, $color_menu02));
+                //background-color: $color07;
+                //border: 1px solid $color08 ;
+
+                section#slide{
+                    //@include span-columns(6, 6);
+                    @include border-radius($radio-standar);
+                    //@include background-image(linear-gradient($color_menu01, $color_menu02));
+                    border: 1px solid $color08 ;
+                    text-align: center;
+                    vertical-align: middle;
+                    padding: .2em;
+                    margin: .2em;
+                }
+
+                @include clearfix;
+
+                div#ourinfo{
+                    @include span-columns(6, 6);
+                    //display:block;
+                    //min-height: 5em;
+                    //@include background-image(linear-gradient($color_menu01, $color_menu02));
+                    //background-color: $color09;
+                    clear: both;
+                    text-align: center;
+
+                    section#where{
+                        @include span-columns(3, 6);
+                        @include border-radius($radio-standar);
+                        @include background-image(linear-gradient($color_menu01, $color_menu02));
+                        //background-color: $color09;
+                        //border: 1px solid $color08 ;
+                        text-align: center;
+                        vertical-align: middle;
+                        padding-top: .2em;
+                        padding-bottom: .2em;
+                        min-height: 1.5em;
+                    }
+
+                    section#services{
+                        @include span-columns(3 omega, 6);
+                        @include border-radius($radio-standar);
+                        @include background-image(linear-gradient($color_menu01, $color_menu02));
+                        //background-color: $color09;
+                        //border: 1px solid $color08 ;
+                        text-align: center;
+                        vertical-align: middle;
+                        padding-top: .2em;
+                        padding-bottom: .2em;
+                        min-height: 1.5em;
+                    }
+
+                }
+
+                @include clearfix;
+
+                section#expo{
+                    //@include span-columns(6 omega, 6);
+                    @include border-radius($radio-standar);
+                    //@include background-image(linear-gradient($color_menu01, $color_menu02));
+                    border: 1px solid $color08 ;
+                    text-align: center;
+                    vertical-align: middle;
+                    padding: .2em;
+                    margin: .2em;
+                }
+
+            }
+
+            aside#asider{
+                // Lateral Derecho
+                @include span-columns(3 omega, 12);
+                @include background-image(linear-gradient($color_menu01, $color_menu02));
+                //background-color: $color08;
+                //min-height: 10em;
+
+                section#agenda{
+                    @include border-radius($radio-standar);
+                    //@include background-image(linear-gradient($color_menu01, $color_menu02));
+                    //background-color: $color11;
+                    padding: .2em;
+                    margin: .2em;
+                    border: 1px solid $color08 ;
+                    h2{
+                        text-align:center;
+                    }
+
+                }
+
+                section#varios{
+                    @include border-radius($radio-standar);
+                    //@include background-image(linear-gradient($color_menu01, $color_menu02));
+                    //background-color: $color11;
+                    padding: .2em;
+                    margin: .2em;
+                    border: 1px solid $color08 ;
+
+                    section#internal{
+                        @include border-radius($radio-standar);
+                        //@include background-image(linear-gradient($color_menu01, $color_menu02));
+                        //background-color: $color11;
+                        padding: .2em;
+                        margin: .2em;
+                        border: 1px solid $color08 ;
+                        h2{
+                            text-align:center;
+                        }
+                    }
+
+                    section#externas{
+                        @include border-radius($radio-standar);
+                        //@include background-image(linear-gradient($color_menu01, $color_menu02));
+                        //background-color: $color11;
+                        padding: .2em;
+                        margin: .2em;
+                        border: 1px solid $color08 ;
+                        h2{
+                            text-align:center;
+                        }
+                    }
+                }
+
+                section#banner2{
+                    //@include background-image(linear-gradient($color_menu01, $color_menu02));
+                    text-align:center;
+                    width:100%;
+                }
+            }
+
+        }
+
+        // Sección 'variable' con una sola columna
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        section#variable_1col{
+            @include border-radius($radio-standar);
+            //@include span-columns(12 omega, 12);
+            section#body{
+                div#space{
+                    //@include background-image(linear-gradient($color_menu01, $color_menu02));
+                    max-width: 100%;
+                    min-height:em(480px);
+                    margin: 1em;
+                    border: 1em;
+                    padding: 1em;
+                }
+            }
+        }
+
+        // Sección 'variable' con 2 columnas
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        section#variable_2col{
+
+            section#body{
+                @include background-image(linear-gradient($color_menu01, $color_menu02));
+                @include span-columns(9, 12);
+                @include border-radius($radio-standar);
+
+                div#space{
+                    //background-color: Red;
+                    max-width: 100%;
+                    min-height:em(480px);
+                    margin: 1em;
+                    border: 1em;
+                    padding: 1em;
+                }
+            }
+
+            aside#asider{
+                // Lateral Derecho
+                @include span-columns(3 omega, 12);
+                @include background-image(linear-gradient($color_menu01, $color_menu02));
+                //background-color: $color08;
+                //min-height: 10em;
+
+                section#agenda{
+                    @include border-radius($radio-standar);
+                    //@include background-image(linear-gradient($color_menu01, $color_menu02));
+                    //background-color: $color11;
+                    padding: .2em;
+                    margin: .2em;
+                    border: 1px solid $color08 ;
+                    h2{
+                        text-align:center;
+                    }
+
+                }
+
+                section#varios{
+                    @include border-radius($radio-standar);
+                    //@include background-image(linear-gradient($color_menu01, $color_menu02));
+                    //background-color: $color11;
+                    padding: .2em;
+                    margin: .2em;
+                    border: 1px solid $color08 ;
+
+                    section#internal{
+                        @include border-radius($radio-standar);
+                        //@include background-image(linear-gradient($color_menu01, $color_menu02));
+                        //background-color: $color11;
+                        padding: .2em;
+                        margin: .2em;
+                        border: 1px solid $color08 ;
+                        h2{
+                            text-align:center;
+                        }
+                    }
+
+                    section#externas{
+                        @include border-radius($radio-standar);
+                        //@include background-image(linear-gradient($color_menu01, $color_menu02));
+                        //background-color: $color11;
+                        padding: .2em;
+                        margin: .2em;
+                        border: 1px solid $color08 ;
+                        h2{
+                            text-align:center;
+                        }
+                    }
+                }
+
+                section#banner2{
+                    //@include background-image(linear-gradient($color_menu01, $color_menu02));
+                    text-align:center;
+                    width:100%;
+                }
+            }
+
+        }
+
+        // Sección "varioable", con 2 columnas (especial)
+        section#variable_2col_especial{
+
+            section#body{
+                @include background-image(linear-gradient($color_menu01, $color_menu02));
+                @include span-columns(9, 12);
+                @include border-radius($radio-standar);
+
+                div#space{
+                    //background-color: Red;
+                    max-width: 100%;
+                    min-height:em(480px);
+                    margin: 1em;
+                    border: 1em;
+                    padding: 1em;
+
+                    section#bodyleft{
+                        @include span-columns(4, 9);
+                    }
+
+                    section#bodyright{
+                        @include span-columns(5 omega, 9);
+                    }
+                }
+            }
+
+            aside#asider{
+                // Lateral Derecho
+                @include span-columns(3 omega, 12);
+                @include background-image(linear-gradient($color_menu01, $color_menu02));
+                //background-color: $color08;
+                //min-height: 10em;
+
+                section#agenda{
+                    @include border-radius($radio-standar);
+                    //@include background-image(linear-gradient($color_menu01, $color_menu02));
+                    //background-color: $color11;
+                    padding: .2em;
+                    margin: .2em;
+                    border: 1px solid $color08 ;
+                    h2{
+                        text-align:center;
+                    }
+
+                }
+
+                section#varios{
+                    @include border-radius($radio-standar);
+                    //@include background-image(linear-gradient($color_menu01, $color_menu02));
+                    //background-color: $color11;
+                    padding: .2em;
+                    margin: .2em;
+                    border: 1px solid $color08 ;
+
+                    section#internal{
+                        @include border-radius($radio-standar);
+                        //@include background-image(linear-gradient($color_menu01, $color_menu02));
+                        //background-color: $color11;
+                        padding: .2em;
+                        margin: .2em;
+                        border: 1px solid $color08 ;
+                        h2{
+                            text-align:center;
+                        }
+                    }
+
+                    section#externas{
+                        @include border-radius($radio-standar);
+                        //@include background-image(linear-gradient($color_menu01, $color_menu02));
+                        //background-color: $color11;
+                        padding: .2em;
+                        margin: .2em;
+                        border: 1px solid $color08 ;
+                        h2{
+                            text-align:center;
+                        }
+                    }
+                }
+
+                section#banner2{
+                    //@include background-image(linear-gradient($color_menu01, $color_menu02));
+                    text-align:center;
+                    width:100%;
+                }
+            }
+
+        }
+
+    }
+
+@include clearfix;
+
+    footer#footer{
+        @include span-columns(12 omega, 12);
+        background-color: $color07;
+
+        div#finicial{
+            @include span-columns(12 omega, 12);
+            //background-color: $color10;
+            min-height:2em;
+        }
+
+        div#col1{
+            @include span-columns(3, 12);
+            //background-color: $color08;
+            @include border-radius($radio-standar);
+            //padding: .2em;
+            //margin: .2em;
+            //border: 1px solid $color08 ;
+        }
+
+        div#col2{
+            @include span-columns(3, 12);
+            //background-color: $color09;
+            @include border-radius($radio-standar);
+            //padding: .2em;
+            //margin: .2em;
+            //border: 1px solid $color08 ;
+        }
+
+        div#col3{
+            @include span-columns(3, 12);
+            //background-color: $color08;
+            @include border-radius($radio-standar);
+            //padding: .2em;
+            //margin: .2em;
+            //border: 1px solid $color08 ;
+        }
+
+        div#col4{
+            @include span-columns(3 omega, 12);
+            //background-color: $color09;
+            @include border-radius($radio-standar);
+            //padding: .2em;
+            //margin: .2em;
+            //border: 1px solid $color08 ;
+        }
+
+        div#ffinal{
+            @include span-columns(12 omega, 12);
+            //background-color: $color10;
+            min-height:2em;
+        }
+
+
+        div#legal{
+            @include span-columns(12 omega, 12);
+            //background-color: $color10;
+            text-align:right;
+        }
+    }
 
 }
