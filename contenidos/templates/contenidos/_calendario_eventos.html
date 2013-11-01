@@ -1,8 +1,16 @@
-<table>
+<table {% if only %}class="calendario_eventos"{% endif %}>
 	<tr>
-		<td><a href="{% url 'calendario' prev.year prev.month %}">&lt;&lt;</a></td>
-		<td colspan="5"><a href="{% url 'calendario' start.year start.month %}">{{start|date:"F Y"}}</a></td>
-		<td><a href="{% url 'calendario' next.year next.month %}">&gt;&gt;</a></td>
+		<td>
+			<a {% if only %}id="mes_previo"{% endif %} href="{% url 'calendario' prev.year prev.month %}">&laquo;</a>
+		</td>
+		<td colspan="5">
+			{% if only %}<a href="{% url 'calendario' start.year start.month %}">{{start|date:"F Y"}}</a>
+			{% else %} {{start|date:"F Y"}}
+			{% endif %}
+		</td>
+		<td>
+			<a {% if only %}id="mes_siguiente"{% endif %} href="{% url 'calendario' next.year next.month %}">&raquo;</a>
+		</td>
 	</tr>
 	<tr>
 		{# hay formas mejores de hacer esto, pero como hay prisa #}
@@ -33,3 +41,18 @@
 	{% endfor %}
 </table>
 
+{% if only %}
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#mes_previo').click(function(event) {
+				event.preventDefault();
+				$('.calendario_eventos').load("{% url 'calendario_only' prev.year prev.month %}");
+			});
+
+			$('#mes_siguiente').click(function(event) {
+				event.preventDefault();
+				$('.calendario_eventos').load("{% url 'calendario_only' next.year next.month %}");
+			});
+		});
+	</script>
+{% endif %}

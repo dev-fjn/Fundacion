@@ -7,6 +7,10 @@
 {% if site_name %}{{ site_name }} : {% else %}F. J. N. : {% endif %}
 {% endblock head_title %}
 
+{% block extra_head %}
+{{block.super}}
+<script type="text/javascript" src="{% static 'admin/js/jquery.min.js' %}"></script>
+{% endblock extra_head %}
 
 {% block form_i18n %}
 ESTO NO SE INSTANCIA EN LA PLANTILLA BASE POR TANTO NO SE PRESENTA
@@ -54,13 +58,13 @@ SE DEJA AQUI SOLO COMO REFERENCIA, HABRA QUE CAMBIARLO POR ALGO BASADO EN BANDER
 
 
 {% block noticias %}
-<h2>NOTICIAS</h2>
 {% get_recent_entries %}
 {% endblock noticias %}
 
 {% block agenda %}
-<h2>AGENDA</h2>
 {% calendario_eventos 0 %}
-{% proximos_eventos %}
-<p><a href="{% url 'calendario' %}">ver mas</a></p>
 {% endblock agenda %}
+
+{% block actividades_internas %}
+{% proximos_eventos 4 %}
+{% endblock actividades_internas %}

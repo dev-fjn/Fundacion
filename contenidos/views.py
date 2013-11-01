@@ -10,7 +10,11 @@ import calendar
 import datetime
 
 class Calendario(TemplateView):
-	template_name = "contenidos/calendario.html"
+	def get_template_names(self):
+		if 'only' in self.kwargs:
+			return "contenidos/_calendario_eventos.html"
+		else:
+			return "contenidos/calendario.html"
 
 	def get_context_data(self, **kwargs):
 		context = super(Calendario, self).get_context_data(**kwargs)
@@ -25,6 +29,7 @@ class Calendario(TemplateView):
 		diccionario = Evento.datos_para_calendario(start, end)
 		semanas = calendario_por_meses(start, end, diccionario)
 		context.update({
+				'only': self.kwargs.get('only'),
 				'hoy': now,
 				'start': start,
 				'semanas': semanas,
