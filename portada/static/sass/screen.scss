@@ -265,8 +265,10 @@ html {
                             }
                         }
                         &:hover > a {
-                            background: $color_menu04;
-                            @include background-image(linear-gradient($color_menu04, $color_menu06));    //No lleva degradado
+                            // Hover sobre los men´us principales
+                            //background: $color_menu04;
+                            //@include background-image(linear-gradient($color_menu04, $color_menu05));    //No lleva degradado
+    @include background-image(linear-gradient($color_menu04, #C2BEAF));    //No lleva degradado
                             // Pasar a compass
                             box-shadow: inset 0 0 em(2px) rgba(0, 0, 0, 0.1);
                             -moz-box-shadow: inset 0 0 em(2px) rgba(0, 0, 0, 0.1);

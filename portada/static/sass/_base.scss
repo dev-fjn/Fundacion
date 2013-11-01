@@ -55,37 +55,43 @@ $color11: #977856;
 $color12: #9AA6AD;
 $color13: #EF9691; // Rojo rosa
 
+// Color suave del logo:  #C2BEAF
+// Color fuerte del logo: #918B74
+
+$color_texto_menus_raiz: #000000;
+$color_texto_menus: #FFFFFF;
+
 // Colores de los menus.
-$color_menu01: #fefefe;
-$color_menu02: #eee9f0;
-$color_menu03: $color04; // #db000b; //rojo
-$color_menu04: #ececec;
-$color_menu05: #000000;
-$color_menu06: #ffeeff;
-$color_menu07: $color05; // #ff0f1b; //rojo
-$color_menu08: #ffffff;
-$color_menu09: #a80008; //rojo oscuro
-$color_menu10: #8f0007; //rojo oscuro
+$color_menu01: #fefefe; // PELIGRO, Hay una fuga que afecta a toda la pagina. LOCALIZAR
+$color_menu02: #eee9f0; // PELIGRO, Hay una fuga que afecta a toda la pagina. LOCALIZAR
+$color_menu03: $color09; // $color04; // #db000b; //rojo
+$color_menu04: lighten(#C2BEAF, 20%); // #ececec;
+$color_menu05: $color_texto_menus_raiz;
+$color_menu06: Blue; //$color_menu01;
+$color_menu07: lighten(#C2BEAF, 20%); //$color05; // #ff0f1b; //rojo
+$color_menu08: $color_texto_menus;
+$color_menu09: #918B74; // #a80008; //rojo oscuro
+$color_menu10: darken(#918B74, 20%); // #8f0007; //rojo mas oscuro
 
 //@mixin navigation-list($c1: #FFF, $c2: #000) {
-//	list-style-type: none;
-//	margin: 0;
-//	overflow: hidden;
-//	> li {
-//		display: block;
-//		float: left;
-//		padding-left: .25em;
-//		padding-right: .25em;
-//		&:last-child {
-//			margin-right: 0;
-//		}
-//		&.current{
-//			color: $c1!important;
-//			&:hover {
-//				background-color: $c2;
-//			}
-//		}
-//	}
+//    list-style-type: none;
+//    margin: 0;
+//    overflow: hidden;
+//    > li {
+//        display: block;
+//        float: left;
+//        padding-left: .25em;
+//        padding-right: .25em;
+//        &:last-child {
+//            margin-right: 0;
+//        }
+//        &.current{
+//            color: $c1!important;
+//            &:hover {
+//                background-color: $c2;
+//            }
+//        }
+//    }
 //}
 
 // ---------------------------------------------------------------------------
@@ -93,7 +99,7 @@ $color_menu10: #8f0007; //rojo oscuro
 // ~~~~~~~~~
 // ---------------------------------------------------------------------------
 @function em($px, $base: $font_base) {
-	@return ($px / $base) * 1em;
+    @return ($px / $base) * 1em;
 }
 
 $radio-standar: em(10px);
