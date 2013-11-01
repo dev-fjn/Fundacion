@@ -60,6 +60,7 @@ SE DEJA AQUI SOLO COMO REFERENCIA, HABRA QUE CAMBIARLO POR ALGO BASADO EN BANDER
 
 {% block agenda %}
 <h2>AGENDA</h2>
+{% calendario_eventos 0 %}
 {% proximos_eventos %}
 <p><a href="{% url 'calendario' %}">ver mas</a></p>
 {% endblock agenda %}

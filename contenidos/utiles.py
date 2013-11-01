@@ -1,18 +1,14 @@
 # -*- coding: utf-8 -*-
 
 from django.utils import timezone
+from dateutil.relativedelta import relativedelta
 import calendar
 import datetime
 
-def inicio_fin_mes(meses_atras):
-	month = int(meses_atras)
-	now = timezone.now()
-	# mes actual (del 1 al corriente)
-	start, end = now.replace(day=1), now
-	# ir meses atras (del 1 al ultimo)
-	for i in range(month):
-		end = start-datetime.timedelta(days=1)
-		start = end.replace(day=1)
+def inicio_fin_mes(meses_adelante): # acepta negativos tb
+	now = timezone.now() + relativedelta(months=int(meses_adelante))
+	start = now.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
+	end = start + relativedelta(months=1) - datetime.timedelta(seconds=1)
 	return start, end
 
 def calendario_por_meses(start, end, diccionario):
