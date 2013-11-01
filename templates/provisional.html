@@ -233,8 +233,8 @@
                                     <aside id="asidel">
                                         {% block section_noticias %}
                                             <section id="news">
+												<h2>NOTICIAS</h2>
                                                 {% block noticias %}
-                                                    <h2>NOTICIAS</h2>
 													{% include "_lorem_links.html" %}
                                                     <div><br /></div>
                                                     <h1>h1</h1>
@@ -290,8 +290,8 @@
 									<aside id="asider">
 										{% block section_agenda %}
 											<section id="agenda">
+												<h2>AGENDA</h2>
 												{% block agenda %}
-													<h2>AGENDA</h2>
 													<p>{% lorem 32 w %}</p>
 												{% endblock agenda %}
 											</section>
@@ -301,7 +301,9 @@
 											<section id="internal">
 												<h2>Actividades
 													<br />Internas</h2>
-												<p>{% lorem 32 w %}</p>
+												{% block actividades_internas %}
+													<p>{% lorem 32 w %}</p>
+												{% endblock actividades_internas %}
 											</section>
 											<section id="externas">
 												<h2>Actividades

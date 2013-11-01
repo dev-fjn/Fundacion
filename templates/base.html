@@ -58,13 +58,13 @@ SE DEJA AQUI SOLO COMO REFERENCIA, HABRA QUE CAMBIARLO POR ALGO BASADO EN BANDER
 
 
 {% block noticias %}
-<h2>NOTICIAS</h2>
 {% get_recent_entries %}
 {% endblock noticias %}
 
 {% block agenda %}
-<h2>AGENDA</h2>
 {% calendario_eventos 0 %}
-{% proximos_eventos %}
-<p><a href="{% url 'calendario' %}">ver mas</a></p>
 {% endblock agenda %}
+
+{% block actividades_internas %}
+{% proximos_eventos 4 %}
+{% endblock actividades_internas %}

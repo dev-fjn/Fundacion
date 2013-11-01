@@ -17,12 +17,13 @@ def videos():
     return {'MEDIA_URL': settings.MEDIA_URL, "videos": Video.objects.all() }
 
 @register.inclusion_tag('contenidos/_proximos_eventos.html')
-def proximos_eventos():
+def proximos_eventos(cuenta):
+	cuenta = int(cuenta)
 	start = timezone.now()
-	end = start+datetime.timedelta(days=60)
+	#end = start+datetime.timedelta(days=60)
 	# buscar eventos en rango
-	qs = FechaEvento.objects.filter(fecha__gte=start, fecha__lte=end)
-	return {'object_list': qs}
+	qs = FechaEvento.objects.filter(fecha__gte=start) #, fecha__lte=end)
+	return {'object_list': qs[:cuenta]}
 
 from contenidos.utiles import calendario_por_meses
 
@@ -86,12 +87,4 @@ def calendario_eventos(meses_atras):
 #	return {'object': c.formatmonth(start.year, start.month, v)}
 #
 # FIN BLOQUE ANTERIOR
-
-@register.inclusion_tag('contenidos/_proximos_eventos.html')
-def proximos_eventos():
-	start = timezone.now()
-	end = start+datetime.timedelta(days=60)
-	# buscar eventos en rango
-	qs = FechaEvento.objects.filter(fecha__gte=start, fecha__lte=end)
-	return {'object_list': qs}
 
