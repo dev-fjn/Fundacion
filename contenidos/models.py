@@ -40,7 +40,7 @@ class Evento(models.Model):
 
 	def __unicode__(self):
 		return u"%s" % (self.titulo, )
-	
+
 	@staticmethod
 	def datos_para_calendario(start, end):
 		qs = FechaEvento.objects.filter(fecha__gte=start, fecha__lte=end)
