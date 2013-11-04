@@ -51,6 +51,9 @@ deactivate
 # Crear /var/www/tal (realmente ./static)
 ./python.sh manage.py collectstatic --noinput
 
+# O, en DEV
+#./python.sh manage.py collectstatic --link --noinput
+
 # Pillar menus de serie
 ./python.sh  manage.py loaddata fixtures/treemenus.json 
 
