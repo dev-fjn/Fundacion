@@ -11,7 +11,7 @@ server {
     }
 
     location /static {
-        alias /var/www/fjn_beta/media/;
+        alias /var/www/fjn_beta/static/;
     }
 
     location / {
