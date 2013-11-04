@@ -9,3 +9,4 @@ urlpatterns = patterns('',
     url(r'calendario/$', Calendario.as_view(), name='calendario'),
     url(r'evento/(?P<pk>\d+)$', EventoView.as_view(), name='evento_view'),
 )
+

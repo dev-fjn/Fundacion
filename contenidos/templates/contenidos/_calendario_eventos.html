@@ -1,45 +1,66 @@
-<table {% if only %}class="calendario_eventos"{% endif %}>
-	<tr>
-		<td>
-			<a {% if only %}id="mes_previo"{% endif %} href="{% url 'calendario' prev.year prev.month %}">&laquo;</a>
-		</td>
-		<td colspan="5">
-			{% if only %}<a href="{% url 'calendario' start.year start.month %}">{{start|date:"F Y"}}</a>
-			{% else %} {{start|date:"F Y"}}
-			{% endif %}
-		</td>
-		<td>
-			<a {% if only %}id="mes_siguiente"{% endif %} href="{% url 'calendario' next.year next.month %}">&raquo;</a>
-		</td>
-	</tr>
-	<tr>
-		{# hay formas mejores de hacer esto, pero como hay prisa #}
-		<th width="14%">Lun</th>
-		<th width="14%">Mar</th>
-		<th width="14%">Mie</th>
-		<th width="14%">Jue</th>
-		<th width="14%">Vie</th>
-		<th width="14%">Sab</th>
-		<th width="14%">Dom</th>
-	</tr>
-	{% for semana in semanas %}
-	<tr>
-		{% for dia, lista_eventos in semana %}
-		<td>
-			{% if dia.month == start.month %}
-				{% if lista_eventos %}
-					<span style="background-color: green">{{dia.day}}</span>
-				{% else %}
-					{{dia.day}}
-				{% endif %}
+<div style="width: 100%;">
+
+	<div style="width: 100%;">
+		<span><a {% if only %}id="mes_previo"{% endif %} href="{% url 'calendario' prev.year prev.month %}">&nbsp;&#9664;&nbsp;</a></span>
+
+		<span>
+			{% if only %}
+                <a href="{% url 'calendario' start.year start.month %}">{{start|date:"F Y"}}</a>
 			{% else %}
-				&nbsp;
+                {{start|date:"F Y"}}
 			{% endif %}
-		</td>
-		{% endfor %}
-	</tr>
-	{% endfor %}
-</table>
+		</span>
+
+		<span><a {% if only %}id="mes_siguiente"{% endif %} href="{% url 'calendario' next.year next.month %}">&nbsp;&#9654;&nbsp;</a></span>
+	</div>
+
+	<table align="center" width="100%" {% if only %}class="calendario_eventos"{% endif %} accesskey="c" role="grid" title="Calendario de Eventos">
+		{# hay formas mejores de hacer esto, pero como hay prisa #}
+		<thead>
+			<tr>
+				<th width="14%">Lun</th>
+				<th width="14%">Mar</th>
+				<th width="14%">Mie</th>
+				<th width="14%">Jue</th>
+				<th width="14%">Vie</th>
+				<th width="14%">Sab</th>
+				<th width="14%">Dom</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			{% for semana in semanas %}
+			<tr>
+        		{# TODO: Faltaría resaltar la fecha actual #}
+				{% for dia, lista_eventos in semana %}
+					{% if dia.month == start.month %}
+						{% if lista_eventos %}
+                    		<td class="evento">{{dia.day}}</td>
+						{% else %}
+                    		<td class="dia">{{dia.day}}</td>
+						{% endif %}
+					{% else %}
+                		<td class="sin_dia">&nbsp;</td>
+					{% endif %}
+				{% endfor %}
+			</tr>
+			{% endfor %}
+		</tbody>
+
+		<tfoot>
+			<tr>
+				<th width="14%">Lun</th>
+				<th width="14%">Mar</th>
+				<th width="14%">Mie</th>
+				<th width="14%">Jue</th>
+				<th width="14%">Vie</th>
+				<th width="14%">Sab</th>
+				<th width="14%">Dom</th>
+			</tr>
+		</tfoot>
+
+	</table>
+</div>
 
 {% if only %}
 	<script type="text/javascript">

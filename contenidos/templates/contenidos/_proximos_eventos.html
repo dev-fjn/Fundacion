@@ -1,7 +1,7 @@
 <ul>
-{% for fechaevento in object_list %}
-<li>{{fechaevento.fecha}} {{fechaevento.hora_inicio}} -> <a href="{% url 'evento_view' fechaevento.evento.pk %}">{{fechaevento.evento}}</a></li>
-{% empty %}
-<li>(No hay eventos próximos)</li>
-{% endfor %}
+	{% for fechaevento in object_list %}
+	<li>{{fechaevento.fecha}} {{fechaevento.hora_inicio}} -> <a href="{% url 'evento_view' fechaevento.evento.pk %}">{{fechaevento.evento}}</a></li>
+	{% empty %}
+	<li>(No hay eventos próximos)</li>
+	{% endfor %}
 </ul>
