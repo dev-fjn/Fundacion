@@ -1,8 +1,8 @@
 #!/bin/sh -x
 
-adduser fjn_beta
-adduser fjn_prod
-adduser fjn_dev
+adduser fjn_beta --disabled-password
+adduser fjn_prod --disabled-password
+adduser fjn_dev --disabled-password
 
 # Crear las carpetas para el static y el media en /var/www/fjn/
 
@@ -27,24 +27,22 @@ exit
 
 # clonar cada uno de los despliegues en /opt/fjn/
 
-mkdir -p /opt/fjn
-
-test -d /opt/fjn/dev || git clone git@github.com:dev-fjn/Fundacion.git /opt/fjn/dev
-cd /opt/fjn/dev
+test -d /home/fjn_dev || git clone git@github.com:dev-fjn/Fundacion.git /home/fjn_dev/Fundacion
+cd /home/fjn_dev/Fundacion
 git checkout develop
 echo "DEBUG = True" > portal/settings.d/000.STATUS.py
 echo "PRODUCCION = False" >> portal/settings.d/000.STATUS.py
 bash -x doc/0-resumen_instalacion.sh
 
-test -d /opt/fjn/beta || git clone git@github.com:dev-fjn/Fundacion.git /opt/fjn/beta
-cd /opt/fjn/beta
+test -d /home/fjn_beta || git clone git@github.com:dev-fjn/Fundacion.git /home/fjn_beta/Fundacion
+cd /home/fjn_beta/Fundacion
 git checkout master
 echo "DEBUG = True" > portal/settings.d/000.STATUS.py
 echo "PRODUCCION = True" >> portal/settings.d/000.STATUS.py
 bash -x doc/0-resumen_instalacion.sh
 
-test -d /opt/fjn/prod || git clone git@github.com:dev-fjn/Fundacion.git /opt/fjn/prod
-cd /opt/fjn/prod
+test -d /home/fjn_prod || git clone git@github.com:dev-fjn/Fundacion.git /home/fjn_prod/Fundacion
+cd /home/fjn_prod/Fundacion
 git checkout master
 echo "DEBUG = True" > portal/settings.d/000.STATUS.py
 echo "PRODUCCION = False" >> portal/settings.d/000.STATUS.py

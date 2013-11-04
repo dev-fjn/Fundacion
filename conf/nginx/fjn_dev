@@ -7,11 +7,11 @@ server {
     error_log  /var/log/nginx/fjn_dev.error.log;
 
     location /media  {
-        alias /var/www/fjn_dev/media/;
+        alias /home/fjn_dev/Fundacion/media/;
     }
 
     location /static {
-        alias /var/www/fjn_dev/media/;
+        alias /home/fjn_dev/Fundacion/static/;
     }
 
     location / {

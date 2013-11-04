@@ -16,6 +16,14 @@ git pull
 # Pillamos los external
 git submodule update --init --recursive
 
+# O bien, si hay que rehacerlo es asi:
+# 
+# for a in django-blog-zinnia django-contactme django-flatpages-i18n django-scheduler django-treemenus; do
+# 	git submodule deinit external/$a; 
+# 	git rm external/$a; 
+# 	git submodule add -f https://github.com/dev-fjn/$a.git external/$a;
+# done
+
 # Vemos que ningun enlace simbolico está roto
 ls -l; echo "vemos que ningun enlace simbolico esta roto, pulsa enter"; read
 
