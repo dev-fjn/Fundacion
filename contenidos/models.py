@@ -53,14 +53,6 @@ class Evento(models.Model):
 			v[dmy].append(fe.evento)
 		return v
 
-class LugarEvento(models.Model):
-	evento = models.ForeignKey(Evento)
-	latitud = models.FloatField()
-	longitud = models.FloatField()
-
-	def __unicode__(self):
-		return u"%.4f,%.4f (%s)" % (self.latitud, self.longitud, self.evento)
-
 class FechaEvento(models.Model):
 	evento = models.ForeignKey(Evento)
 	fecha = models.DateField()
@@ -72,4 +64,19 @@ class FechaEvento(models.Model):
 
 	def __unicode__(self):
 		return u"%s %s-%s (%s)" % (self.fecha, self.hora_inicio, self.hora_final, self.evento)
+
+
+class Libro(models.Model):
+	titulo = models.CharField(max_length=250)
+	autor = models.CharField(max_length=250)
+	isbn = models.CharField(max_length=13)
+	fecha = models.DateField()
+	precio = models.FloatField()
+	miniatura = models.ImageField(upload_to="libros")
+	url = models.URLField(blank=True, null=True)
+	resumen = models.TextField()
+
+	def __unicode__(self):
+		return u"%s (%s)" % (self.titulo, self.autor)
+
 
