@@ -48,4 +48,5 @@ class EventoView(DetailView):
 
 class Libros(ListView):
 	model = Libro
+	paginate_by = 2
 
