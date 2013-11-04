@@ -1,11 +1,10 @@
 #-*- coding: utf-8 -*-
 
-from contenidos.models import Evento, FechaEvento
+from contenidos.models import Evento, FechaEvento, Libro
 from contenidos.utiles import inicio_fin_mes, calendario_por_meses
 from django.core.urlresolvers import reverse
 from django.utils import timezone
-from django.views.generic.base import TemplateView
-from django.views.generic.detail import DetailView
+from django.views.generic import TemplateView, ListView, DetailView
 import calendar
 import datetime
 
@@ -46,4 +45,7 @@ class EventoView(DetailView):
 		# Call the base implementation first to get a context
 		context = super(EventoView, self).get_context_data(**kwargs)
 		return context
+
+class Libros(ListView):
+	model = Libro
 

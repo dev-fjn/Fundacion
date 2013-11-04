@@ -1,0 +1,38 @@
+{% extends 'base_1col.html' %}
+
+{% block title %}
+{{block.super}} Listado de libros
+{% endblock title %}
+
+{% block extra_head %}
+{{block.super}}
+<style>
+	.libro { min-height: 200px; border: 1px solid gray; margin: 5px; padding: 2px; clear: left; }
+	img.miniatura { height: 200px; float: left; }
+	.libro ul { margin-left: 200px; padding: 5px; }
+	.libro li strong { display: inline-block; width: 200px; font-weight: bold;}
+	.right { text-align: right; }
+</style>
+{% endblock extra_head %}
+
+
+{% block body %}
+	<div id="space">
+		{% for object in object_list %}
+		<div class="libro">
+			<img class="miniatura" src="{{MEDIA_URL}}{{object.miniatura}}" />
+			<ul>
+				<li><strong>Titulo</strong> {{object.titulo}}</li>
+				<li><strong>Autor</strong> {{object.autor}}</li>
+				<li><strong>ISBN</strong> {{object.isbn}}</li>
+				<li><strong>Fecha</strong> {{object.fecha|date:"Y"}}</li>
+				<li><strong>Precio</strong> {{object.}} €</li>
+				<li><strong>URL</strong> {{object.url}}</li>
+				<li><strong>Resumen</strong> {{object.resumen}}</li>
+				{% if user.is_superuser %}<li class="right"><a href="{% url 'admin:contenidos_libro_change' object.id %}">editar</a></li>{% endif %}
+			</ul>
+		</div>
+		{% endfor %}
+	</div>
+{% endblock body %}
+
