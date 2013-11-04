@@ -1,7 +1,7 @@
 
 server {
     listen *:80;
-    server_name  www.fundacionjuannegrin.com;
+    server_name prod.fundacionjuannegrin.com www.fundacionjuannegrin.com;
 
     access_log  /var/log/nginx/fjn_prod.access.log;
     error_log  /var/log/nginx/fjn_prod.error.log;
@@ -11,7 +11,7 @@ server {
     }
 
     location /static {
-        alias /var/www/fjn_prod/media/;
+        alias /var/www/fjn_prod/static/;
     }
 
     location / {
@@ -20,3 +20,6 @@ server {
         proxy_set_header X-Real-IP $remote_addr;
     }
 }
+
+# en /etc/hosts:
+# 91.121.221.164 prod.fundacionjuannegrin.com
