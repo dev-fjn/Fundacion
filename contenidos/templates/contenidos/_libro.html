@@ -1,0 +1,14 @@
+<div class="libro">
+	<img class="miniatura" src="{{MEDIA_URL}}{{object.miniatura}}" />
+	<ul>
+		<li><strong>Titulo</strong> {{object.titulo}}</li>
+		<li><strong>Autor</strong> {{object.autor}}</li>
+		<li><strong>ISBN</strong> {{object.isbn}}</li>
+		<li><strong>Fecha</strong> {{object.fecha|date:"Y"}}</li>
+		<li><strong>Precio</strong> {{object.}} €</li>
+		<li><strong>URL</strong> {{object.url}}</li>
+		<li><strong>Resumen</strong> {{object.resumen}}</li>
+		{% if user.is_superuser %}<li class="right"><a href="{% url 'admin:contenidos_libro_change' object.id %}">editar</a></li>{% endif %}
+	</ul>
+</div>
+
