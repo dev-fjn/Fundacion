@@ -415,9 +415,13 @@ h6 {
                     }
                     ul{
                         li{
+                            padding-left: 0;
+                            -webkit-transition: all 0.5s ease-in-out;
+
                             a{
                                 //color: $color00;
                                 //text-decoration: none;
+//            -webkit-transition: all 0.5s ease-in-out;
 
                             //a:before {
                                 ////background-color: #FFFFFF ;
@@ -454,6 +458,18 @@ h6 {
                                 //    display: block ;
                                 //}
                             }
+                        }
+                        li:hover{
+                            padding-left: em(5px);
+                            -webkit-transition: all 0.5s ease-in-out;
+                        }
+                        li:hover:before{
+                            //background-color: Blue;
+                            content: "";
+                            left: 0;
+                            top: 0;
+                            bottom: auto;
+                            width: em(5px);
                         }
                     }
                 }
