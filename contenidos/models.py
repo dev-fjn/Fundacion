@@ -80,4 +80,42 @@ class Libro(models.Model):
 	def __unicode__(self):
 		return u"%s (%s)" % (self.titulo, self.autor)
 
+class TIPO:
+	RECURSOS_AUDIOVISUALES = 1
+	PRESENCIA_EN_PRENSA = 2
+	DOSIERES_DE_PRENSA = 3
+	CHOICES = (
+		(RECURSOS_AUDIOVISUALES, 'Recursos Audiovisuales'),
+		(PRESENCIA_EN_PRENSA, 'Presencia en Prensa'),
+		(DOSIERES_DE_PRENSA, 'Dosieres de Prensa'),
+		)
 
+
+class Documento(models.Model):
+	tipo = models.IntegerField(choices=TIPO.CHOICES)
+	titulo = models.CharField(max_length=250)
+	descripcion = models.TextField()
+
+	def adjuntos(self):
+		urls = list(self.url_set.all())
+		pdfs = list(self.pdf_set.all())
+		return sorted(urls + pdfs, key=lambda x: x.titulo)
+
+class Adjunto(models.Model):
+	documento = models.ForeignKey(Documento)
+	titulo = models.CharField(max_length=250)
+
+	def template(self):
+		return "contenidos/_adjunto_%s.html" % (self.__class__.__name__.lower(), )
+
+	def __unicode__(self):
+		return u"%s: %s" % (self.__class__.__name__.upper(), self.titulo)
+	
+	class Meta:
+		abstract = True
+
+class Url(Adjunto):
+	url = models.URLField()
+
+class Pdf(Adjunto):
+	pdf = FileBrowseField("pdf", max_length=200, extensions=[".pdf",], directory="documentos", blank=True, null=True)
