@@ -12,7 +12,10 @@ Django
 Fabric
 South
 ipython
+
+# en produccion
 gunicorn
+psycopg2
 
 # requerido por algo (django?)
 pytz
@@ -39,3 +42,4 @@ django-debug-toolbar-extra
 django-debug-toolbar-user-panel-fc
 django-dtpanel-htmltidy
 django-extensions
+

@@ -31,6 +31,11 @@ SE DEJA AQUI SOLO COMO REFERENCIA, HABRA QUE CAMBIARLO POR ALGO BASADO EN BANDER
 {% block menu %}
 	<ul>
 		{% show_menu "principal" %}
+		<li class="has-sub"><a href="#"><span>..</span></a>
+			<ul>
+				<li><a href="{% url 'libros' %}"><span>Biblioteca</span></a></li>
+			</ul>
+		</li>
 		<li class="right"><a href="{% url 'zinnia_entry_archive_index' %}"><span>Bitácora</span></a></li>
 	</ul>
 {% endblock menu %}

@@ -1,0 +1,27 @@
+{% extends 'base_1col.html' %}
+
+{% block title %}
+{{block.super}} Listado de libros
+{% endblock title %}
+
+{% block extra_head %}
+{{block.super}}
+<style>
+	.libro { min-height: 200px; border: 1px solid gray; margin: 5px; padding: 2px; clear: left; }
+	img.miniatura { height: 200px; float: left; }
+	.libro ul { margin-left: 200px; padding: 5px; }
+	.libro li strong { display: inline-block; width: 200px; font-weight: bold;}
+	.right { text-align: right; }
+</style>
+{% endblock extra_head %}
+
+
+{% block body %}
+	<div id="space">
+		{% for object in object_list %}
+			{% include "contenidos/_libro.html" %}
+		{% endfor %}
+		{% include "contenidos/_paginator.html" %}
+	</div>
+{% endblock body %}
+
