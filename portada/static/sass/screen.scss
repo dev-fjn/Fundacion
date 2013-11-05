@@ -82,7 +82,7 @@ h6 {
     @include container;
     //@include susy-grid-background;
     //@include sticky-footer(200px);
-    @include box-shadow(rgba(black, 0.4) 0 0 25px, rgba(black, 0.2) 0 0 3px 1px inset);
+    @include box-shadow(rgba(black, 0.4) 0 0 em(25px), rgba(black, 0.2) 0 0 em(3px) em(1px) inset);
     // TODO
     //@include background-image(linear-gradient($color_menu01, $color_menu02));
 
@@ -378,6 +378,84 @@ h6 {
             //@include background-image(linear-gradient($color_menu01, $color_menu02));
             //background-color: $color05;
             //margin: 0;
+            $hormiga_altura: 18px;
+            $hormiga_triangulo: ( ($hormiga_altura/100) * 50 );
+
+            $color_crumbs00: $color00;
+            $color_crumbs01: $color01;
+            $color_crumbs02: Red; //$color02;
+            $color_crumbs03: transparent; //$color03;
+            $color_crumbs04: $color02;
+
+            text-align: left;
+            ul {
+                list-style: none;
+                display: inline-table;
+                li {
+                    display: inline;
+                    a {
+                        display: block;
+                        float: left;
+                        height: em($hormiga_altura);
+                        background: $color02;
+                        //@include background-image(linear-gradient($color_menu01, $color_menu02));
+                        text-align: center;
+                        position: relative;
+                        //padding: em(30px) em(40px) 0 em(80px);
+                        padding: em(0px) em(0px) em(0px) em(0px);
+                        margin: em(0px) em(0px) em(0px) em(0px);
+                        border: em(0px) em(15px) em(0px) em(15px);
+                        border-color: transparent;
+                        //font-size: em(20px);
+                        text-decoration: none;
+                        text-indent: em(10px);
+                        color: $color_crumbs00;
+                        &:after {
+                            content: "";
+                            border-top: em($hormiga_triangulo) solid transparent;
+                            border-bottom: em($hormiga_triangulo) solid transparent;
+                            border-left: em($hormiga_triangulo) solid $color_crumbs04;
+                            position: absolute;
+                            right: -em($hormiga_triangulo);
+                            top: 0;
+                            z-index: 1;
+                        }
+                        &:before {
+                            content: "";
+                            border-top: em($hormiga_triangulo) solid transparent;
+                            border-bottom: em($hormiga_triangulo) solid transparent;
+                            border-left: em($hormiga_triangulo) solid $color_crumbs03;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                        }
+                    }
+                    &:first-child a {
+                        //border-top-left-radius: em(10px);
+                        //border-bottom-left-radius: em(10px);
+                        text-indent: 0;
+                        &:before {
+                            display: none;
+                        }
+                    }
+                    &:last-child a {
+                        padding-right: em(10px);
+                        //border-top-right-radius: em(10px);
+                        //border-bottom-right-radius: em(10px);
+                        &:after {
+                            display: none;
+                        }
+                    }
+                    a:hover {
+                        background: $color03; //$color_crumbs04;
+                        color:  $color_crumbs01;
+                        &:after {
+                            border-left-color: $color03; //$color_crumbs04;
+                            color:  $color_crumbs01;
+                        }
+                    }
+                }
+            }
         }
 
         section#info{
@@ -415,8 +493,9 @@ h6 {
                     }
                     ul{
                         li{
-                            padding-left: 0;
-                            -webkit-transition: all 0.5s ease-in-out;
+                            //padding-left: 0;
+                            //-webkit-transition: all 0.5s ease-in-out;
+                            text-indent: em(15px);
 
                             a{
                                 //color: $color00;
@@ -460,16 +539,18 @@ h6 {
                             }
                         }
                         li:hover{
-                            padding-left: em(5px);
-                            -webkit-transition: all 0.5s ease-in-out;
+                            //padding-left: em(5px);
+                            //-webkit-transition: all 0.5s ease-in-out;
                         }
                         li:hover:before{
-                            //background-color: Blue;
-                            content: "";
+                            background-color: $color02;
+                            color: $color03;
+                            content: "\2023";
                             left: 0;
                             top: 0;
-                            bottom: auto;
+                            bottom: inherit;
                             width: em(5px);
+                            text-indent: 0;
                         }
                     }
                 }
