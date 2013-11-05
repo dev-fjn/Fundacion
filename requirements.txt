@@ -23,6 +23,10 @@ pytz
 # para usar imagefields
 PIL
 
+# para usar django-filebrowser-no-grappelli tuneado para 1.5
+git+https://github.com/jose-lpa/django-filebrowser-no-grappelli.git
+pillow
+
 # requerido por django-flatpages-i18n (external)
 django_modeltranslation
 

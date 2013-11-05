@@ -36,6 +36,7 @@ urlpatterns = patterns(
 
     url(r'^i18n/',      include('django.conf.urls.i18n')),
 
+    url(r'^admin/filebrowser/', include('filebrowser.urls')),
     url(r'^admin/',     include( admin.site.urls )),
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
