@@ -1,6 +1,6 @@
 #-*- coding: utf-8 -*-
 
-from contenidos.models import Evento, FechaEvento, Libro
+from contenidos.models import Evento, FechaEvento, Libro, Documento, TIPO
 from contenidos.utiles import inicio_fin_mes, calendario_por_meses
 from django.core.urlresolvers import reverse
 from django.utils import timezone
@@ -50,3 +50,18 @@ class Libros(ListView):
 	model = Libro
 	paginate_by = 2
 
+class Documentos(ListView):
+	model = Documento
+	paginate_by = 2
+
+	def get_queryset(self):
+		qs = super(Documentos, self).get_queryset()
+		if 'tipo' in self.kwargs:
+			qs = qs.filter(tipo=self.kwargs['tipo'])
+		return qs
+
+	def get_context_data(self, **kwargs):
+		context = super(Documentos, self).get_context_data(**kwargs)
+		tipo = self.kwargs.get('tipo')
+		context["tipo"] = TIPO.DICT[tipo] if tipo in TIPO.DICT else "(Ninguno)"
+		return context

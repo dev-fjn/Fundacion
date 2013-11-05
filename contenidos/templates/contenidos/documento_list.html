@@ -1,0 +1,29 @@
+{% extends 'base_1col.html' %}
+
+{% block title %}
+{{block.super}} Listado de libros
+{% endblock title %}
+
+{% block extra_head %}
+{{block.super}}
+<style>
+	div.datos { min-height: 200px; border: 1px solid gray; margin: 5px; padding: 2px; float: left; %; clear: left; }
+	ul.adjuntos { margin-left: 200px; padding: 5px; list-style: inherit; }
+	.right { text-align: right; }
+</style>
+{% endblock extra_head %}
+
+
+{% block body %}
+	<h1>{{tipo}}</h1>
+	<div id="space">
+		{% for object in object_list %}
+			{% include "contenidos/_documento.html" %}
+		{% empty %}
+			<p>(No hay documentos)</p>
+		{% endfor %}
+		{% include "contenidos/_paginator.html" %}
+	</div>
+{% endblock body %}
+
+

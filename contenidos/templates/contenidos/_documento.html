@@ -1,0 +1,16 @@
+<div class="datos">
+	<h1>{{object.titulo}}</h1>
+	<p>{{object.descripcion}}</p>
+</div>
+<ul class="adjuntos">
+	{% for adjunto in object.adjuntos %}
+		<li>{% include adjunto.template %}</li>
+	{% empty %}
+		<li>(no hay adjuntos)</li>
+	{% endfor %}
+</ul>
+{% if user.is_superuser %}
+<div class="right">
+	<a href="{% url 'admin:contenidos_documento_change' object.id %}">editar</a>
+</div>
+{% endif %}

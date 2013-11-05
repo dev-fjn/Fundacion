@@ -83,13 +83,13 @@ class Libro(models.Model):
 class TIPO:
 	RECURSOS_AUDIOVISUALES = 1
 	PRESENCIA_EN_PRENSA = 2
-	DOSIERES_DE_PRENSA = 3
+	DOSSIERES_DE_PRENSA = 3
 	CHOICES = (
 		(RECURSOS_AUDIOVISUALES, 'Recursos Audiovisuales'),
 		(PRESENCIA_EN_PRENSA, 'Presencia en Prensa'),
-		(DOSIERES_DE_PRENSA, 'Dosieres de Prensa'),
+		(DOSSIERES_DE_PRENSA, 'Dossieres de Prensa'),
 		)
-
+	DICT = dict(CHOICES)
 
 class Documento(models.Model):
 	tipo = models.IntegerField(choices=TIPO.CHOICES)
