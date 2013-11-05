@@ -8,6 +8,7 @@
 @import "compass";
 
 @import "compass/reset";
+@import "compass/utilities/general/reset";
 @import "compass/support";
 
 @import "compass/layout/sticky-footer";
@@ -70,7 +71,7 @@ $color_menu04: lighten($color02, 20%); // #ececec;
 $color_menu05: $color00; //$color_texto_menus_raiz;
 $color_menu06: Blue; //$color_menu01;
 $color_menu07: lighten($color02, 20%); //$color05; // #ff0f1b; //rojo
-$color_menu08: $color_texto_menus;
+$color_menu08: $color01; //$color_texto_menus;
 $color_menu09: $color03; // #a80008; //rojo oscuro
 $color_menu10: darken($color03, 20%); // #8f0007; //rojo mas oscuro
 
