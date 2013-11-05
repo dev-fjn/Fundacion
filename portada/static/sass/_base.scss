@@ -45,7 +45,7 @@ $color00: #000000;
 $color01: #FFFFFF;
 $color02: #C2BEAF; // #B6B09E; color_marron_suave_del_logo
 $color03: #918B74; // #ABA28E; color_marron_fuerte_del_logo
-$color04: Blue;    // #EB2C2D; // Rojo
+$color04: darken($color02, 20%);    // #EB2C2D; // Rojo
 $color05: Red;     // #F3171B; // Rojo
 $color06: Green;   // #74644D; // → Texto
 $color07: #C6C1B3;

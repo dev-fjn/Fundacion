@@ -1,56 +1,56 @@
 {% load staticfiles webdesign %}<!DOCTYPE html>
 <html>
-	<head>
-		<title>{% block head_title %}Título{% endblock head_title %}</title>
-		<meta charset="utf-8" />
-<!--		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />-->
+    <head>
+        <title>{% block head_title %}Título{% endblock head_title %}</title>
+        <meta charset="utf-8" />
+<!--        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />-->
 
-		<meta name="description" content="{% block head_description %}Plantilla para el desarrollo de esta página{% endblock head_description %}" />
-		<meta name="keywords" content="plantilla, desarrollo, web" />
-		<meta name="robots" content="index, nofollow" />
-		<meta name="author" content="Luis" />
-		<meta name="revisit-after" content="3 month" />
-		<meta name="rating" content="general" />
-		<meta name="generator" content="FreeMetaTagGenerator.com" />
-		<meta name="googlebot" content="noodp" />
+        <meta name="description" content="{% block head_description %}Plantilla para el desarrollo de esta página{% endblock head_description %}" />
+        <meta name="keywords" content="plantilla, desarrollo, web" />
+        <meta name="robots" content="index, nofollow" />
+        <meta name="author" content="Luis" />
+        <meta name="revisit-after" content="3 month" />
+        <meta name="rating" content="general" />
+        <meta name="generator" content="FreeMetaTagGenerator.com" />
+        <meta name="googlebot" content="noodp" />
 
-		<meta name="viewport" content="width=device-width" />
-		<link href="{% static 'css/screen.css' %}" media="screen, projection" rel="stylesheet" type="text/css" />
+        <meta name="viewport" content="width=device-width" />
+        <link href="{% static 'css/screen.css' %}" media="screen, projection" rel="stylesheet" type="text/css" />
 
-		<!--  Google Font -->
-		<!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>-->
-		<link href='http://fonts.googleapis.com/css?family=Cantarell:400,700' rel='stylesheet' type='text/css'>
+        <!--  Google Font -->
+        <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>-->
+        <link href='http://fonts.googleapis.com/css?family=Cantarell:400,700' rel='stylesheet' type='text/css'>
 
-		{% comment %}
-		FIXME cuando el señor diseñador se meta con esto, cambia el
-		comment por un block favicons endblock favicons
-		<!-- http://developer.apple.com/library/ios/#documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html -->
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-		<link href="{% static 'img/ios/touch-icon-iphone.png' %}"        rel="apple-touch-icon" sizes="57x57" />
-		<link href="{% static 'img/ios/touch-icon-ipad.png' %}"          rel="apple-touch-icon" sizes="72x72" />
-		<link href="{% static 'img/ios/touch-icon-iphone-retina.png' %}" rel="apple-touch-icon" sizes="114x114" />
-		<link href="{% static 'img/ios/touch-icon-ipad-retina.png' %}"   rel="apple-touch-icon" sizes="144x144" />
-		<link href="{% static 'img/ios/startup.png' %}"                  rel="apple-touch-startup-image" />
-		{% endcomment %}
+        {% comment %}
+        FIXME cuando el señor diseñador se meta con esto, cambia el
+        comment por un block favicons endblock favicons
+        <!-- http://developer.apple.com/library/ios/#documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html -->
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link href="{% static 'img/ios/touch-icon-iphone.png' %}"        rel="apple-touch-icon" sizes="57x57" />
+        <link href="{% static 'img/ios/touch-icon-ipad.png' %}"          rel="apple-touch-icon" sizes="72x72" />
+        <link href="{% static 'img/ios/touch-icon-iphone-retina.png' %}" rel="apple-touch-icon" sizes="114x114" />
+        <link href="{% static 'img/ios/touch-icon-ipad-retina.png' %}"   rel="apple-touch-icon" sizes="144x144" />
+        <link href="{% static 'img/ios/startup.png' %}"                  rel="apple-touch-startup-image" />
+        {% endcomment %}
 
-		{% block extra_head %}
-		{% endblock extra_head %}
-	</head>
-	<body>
-		<div class="container">
-			<header>
-				<section id="banner">
-					<section id="relleno" title="Logotipo de esta página">&nbsp;</section>
-					<section id="caja">
-						<section id="acceso">Acceso | Registro</section>
-						<section id="social">[f] [t] RSS</section>
-						<section id="contacto">eMail</section>
-					</section>
-				</section>
-				<section id="menus">
-					<nav id="cssmenu">
-						{% block menu %}
+        {% block extra_head %}
+        {% endblock extra_head %}
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <section id="banner">
+                    <section id="relleno" title="Logotipo de esta página">&nbsp;</section>
+                    <section id="caja">
+                        <section id="acceso">Acceso | Registro</section>
+                        <section id="social">[f] [t] RSS</section>
+                        <section id="contacto">eMail</section>
+                    </section>
+                </section>
+                <section id="menus">
+                    <nav id="cssmenu">
+                        {% block menu %}
                             <ul>
                                 <li class='active'>
                                     <a href='index.html'>
@@ -188,21 +188,29 @@
                                     </a>
                                 </li>
                             </ul>
-						{% endblock menu %}
-					</nav>
-<!--				<nav id="m2">
-						<ul>
-							<li><a href="#">Blog</a></li>
-						</ul>
-					</nav>
+                        {% endblock menu %}
+                    </nav>
+<!--                <nav id="m2">
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </nav>
 -->
-				</section>
-			</header>
-			<div class="content">
-				{% block mycontent %}
+                </section>
+            </header>
+            <div class="content">
+                {% block mycontent %}
                     {% block section_hormiga %}
                         <section id="hormiga">
-                            <span>{% block hormiga %}Inicio &gt; otracosa &gt; otracosa mas{% endblock hormiga %}</span>
+                            {% block hormiga %}
+                            <ul>
+                                <li><a href="#1">One</a></li>
+                                <li><a href="#2">Two</a></li>
+                                <li><a href="#3">Three</a></li>
+                                <li><a href="#4">Four</a></li>
+                                <li><a href="#5">Five</a></li>
+                            </ul>
+                            {% endblock hormiga %}
                         </section>
                     {% endblock section_hormiga %}
                     {% block section_info %}
@@ -227,15 +235,15 @@
                         </section>
                     {% endblock section_info %}
                     {% block section_variable %}
-						<section id="{% block section_id %}variable{% endblock section_id %}">
+                        <section id="{% block section_id %}variable{% endblock section_id %}">
                             {% block variable %}
                                 {% block aside_asidel %}
                                     <aside id="asidel">
                                         {% block section_noticias %}
                                             <section id="news">
-												<h2>NOTICIAS</h2>
+                                                <h2>NOTICIAS</h2>
                                                 {% block noticias %}
-													{% include "_lorem_links.html" %}
+                                                    {% include "_lorem_links.html" %}
                                                     <div><br /></div>
                                                     <h1>h1</h1>
                                                     <h2>h2</h2>
@@ -260,7 +268,7 @@
                                                 </section>
                                             {% endblock section_slide %}
 
-											{% block section_expo %}
+                                            {% block section_expo %}
                                                 <section id="expo">
                                                     {% block expo %}
                                                         <img src="{% static 'img/dummy-Expo-Virtual+(384x288).png' %}" alt="Exposición Virtual" />
@@ -268,9 +276,9 @@
                                                 </section>
                                             {% endblock section_expo %}
 
-											<div><br /></div>
                                             <div><br /></div>
-                                            
+                                            <div><br /></div>
+
                                             {% block div_ourinfo %}
                                             <div id="ourinfo">
                                                 <section id="where">¿Dónde estamos?</section>
@@ -286,41 +294,41 @@
                                     </section>
                                 {% endblock section_body %}
 
-								{% block aside_asider %}
-									<aside id="asider">
-										{% block section_agenda %}
-											<section id="agenda">
-												<h2>AGENDA</h2>
-												{% block agenda %}
-													<p>{% lorem 32 w %}</p>
-												{% endblock agenda %}
-											</section>
-										{% endblock section_agenda %}
+                                {% block aside_asider %}
+                                    <aside id="asider">
+                                        {% block section_agenda %}
+                                            <section id="agenda">
+                                                <h2>AGENDA</h2>
+                                                {% block agenda %}
+                                                    <p>{% lorem 32 w %}</p>
+                                                {% endblock agenda %}
+                                            </section>
+                                        {% endblock section_agenda %}
 
-										<section id="varios">
-											<section id="internal">
-												<h2>Actividades
-													<br />Internas</h2>
-												{% block actividades_internas %}
-													<p>{% lorem 32 w %}</p>
-												{% endblock actividades_internas %}
-											</section>
-											<section id="externas">
-												<h2>Actividades
-													<br />Externas</h2>
-												<p>{% lorem 41 w %}</p>
-											</section>
-										</section>
-										<section id="banner2">
-											<figure>
-												<img src="{% static 'img/dummy-Banner-Vertical+(240x400).png' %}" alt="Banner Vertical" />
-												<figcaption>
-													Título de la imagen anterior (banner)
-												</figcaption>
-											</figure>
-										</section>
-									</aside>
-								{% endblock aside_asider %}
+                                        <section id="varios">
+                                            <section id="internal">
+                                                <h2>Actividades
+                                                    <br />Internas</h2>
+                                                {% block actividades_internas %}
+                                                    <p>{% lorem 32 w %}</p>
+                                                {% endblock actividades_internas %}
+                                            </section>
+                                            <section id="externas">
+                                                <h2>Actividades
+                                                    <br />Externas</h2>
+                                                <p>{% lorem 41 w %}</p>
+                                            </section>
+                                        </section>
+                                        <section id="banner2">
+                                            <figure>
+                                                <img src="{% static 'img/dummy-Banner-Vertical+(240x400).png' %}" alt="Banner Vertical" />
+                                                <figcaption>
+                                                    Título de la imagen anterior (banner)
+                                                </figcaption>
+                                            </figure>
+                                        </section>
+                                    </aside>
+                                {% endblock aside_asider %}
                             {% endblock variable %}
                         </section>
                     {% endblock section_variable %}
@@ -470,5 +478,5 @@
         </script>
         -->
         {% endcomment %}
-	</body>
+    </body>
 </html>
