@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from django.db import models
+from filebrowser.fields import FileBrowseField
 
 # Create your models here.
 
@@ -12,7 +13,7 @@ def _siguiente_orden():
 class Imagen(models.Model):
 	titulo = models.CharField(max_length=250)
 	orden = models.IntegerField(default=_siguiente_orden)
-	imagen = models.ImageField(upload_to="imagenes")
+	imagen = FileBrowseField("Imagen", max_length=200, directory="imagenes")
 
 	def __unicode__(self):
 		return self.titulo
@@ -24,8 +25,8 @@ class Imagen(models.Model):
 
 class Video(models.Model):
 	titulo = models.CharField(max_length=250)
-	flv_url = models.CharField(max_length=200, blank=True)
-	mp4_url = models.CharField(max_length=200, blank=True)
+	flv = FileBrowseField("FLV", max_length=200, extensions=[".flv",], directory="videos", blank=True, null=True)
+	mp4 = FileBrowseField("MP4", max_length=200, extensions=[".mp4",], directory="videos", blank=True, null=True)
 
 	class Meta:
 		verbose_name = u'vídeo'

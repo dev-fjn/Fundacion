@@ -4,7 +4,7 @@
  "model": "contenidos.imagen", 
  "fields": {
   "orden": 1, 
-  "imagen": "imagenes/1.jpg", 
+  "imagen": "/media/imagenes/1.jpg", 
   "titulo_en": "1.jpg", 
   "titulo_es": "1.jpg", 
   "titulo": "1.jpg"
@@ -15,7 +15,7 @@
  "model": "contenidos.imagen", 
  "fields": {
   "orden": 2, 
-  "imagen": "imagenes/2.jpg", 
+  "imagen": "/media/imagenes/2.jpg", 
   "titulo_en": "2.jpg", 
   "titulo_es": "2.jpg", 
   "titulo": "2.jpg"
@@ -26,7 +26,7 @@
  "model": "contenidos.imagen", 
  "fields": {
   "orden": 3, 
-  "imagen": "imagenes/3.jpg", 
+  "imagen": "/media/imagenes/3.jpg", 
   "titulo_en": "3.jpg", 
   "titulo_es": "3.jpg", 
   "titulo": "3.jpg"
@@ -37,7 +37,7 @@
  "model": "contenidos.imagen", 
  "fields": {
   "orden": 4, 
-  "imagen": "imagenes/4.jpg", 
+  "imagen": "/media/imagenes/4.jpg", 
   "titulo_en": "4.jpg", 
   "titulo_es": "4.jpg", 
   "titulo": "4.jpg"
@@ -48,7 +48,7 @@
  "model": "contenidos.imagen", 
  "fields": {
   "orden": 5, 
-  "imagen": "imagenes/5.jpg", 
+  "imagen": "/media/imagenes/5.jpg", 
   "titulo_en": "5.jpg", 
   "titulo_es": "5.jpg", 
   "titulo": "5.jpg"
@@ -59,7 +59,7 @@
  "model": "contenidos.imagen", 
  "fields": {
   "orden": 6, 
-  "imagen": "imagenes/6.jpg", 
+  "imagen": "/media/imagenes/6.jpg", 
   "titulo_en": "6.jpg", 
   "titulo_es": "6.jpg", 
   "titulo": "6.jpg"
@@ -70,7 +70,7 @@
  "model": "contenidos.imagen", 
  "fields": {
   "orden": 7, 
-  "imagen": "imagenes/7.jpg", 
+  "imagen": "/media/imagenes/7.jpg", 
   "titulo_en": "7.jpg", 
   "titulo_es": "7.jpg", 
   "titulo": "7.jpg"
@@ -81,7 +81,7 @@
  "model": "contenidos.imagen", 
  "fields": {
   "orden": 8, 
-  "imagen": "imagenes/8.jpg", 
+  "imagen": "/media/imagenes/8.jpg", 
   "titulo_en": "8.jpg", 
   "titulo_es": "8.jpg", 
   "titulo": "8.jpg"
@@ -92,7 +92,7 @@
  "model": "contenidos.imagen", 
  "fields": {
   "orden": 9, 
-  "imagen": "imagenes/9.jpg", 
+  "imagen": "/media/imagenes/9.jpg", 
   "titulo_en": "9.jpg", 
   "titulo_es": "9.jpg", 
   "titulo": "9.jpg"
@@ -103,7 +103,7 @@
  "model": "contenidos.imagen", 
  "fields": {
   "orden": 10, 
-  "imagen": "imagenes/10.jpg", 
+  "imagen": "/media/imagenes/10.jpg", 
   "titulo_en": "10.jpg", 
   "titulo_es": "10.jpg", 
   "titulo": "10.jpg"
@@ -114,7 +114,7 @@
  "model": "contenidos.imagen", 
  "fields": {
   "orden": 11, 
-  "imagen": "imagenes/11.jpg", 
+  "imagen": "/media/imagenes/11.jpg", 
   "titulo_en": "11.jpg", 
   "titulo_es": "11.jpg", 
   "titulo": "11.jpg"
@@ -125,7 +125,7 @@
  "model": "contenidos.imagen", 
  "fields": {
   "orden": 12, 
-  "imagen": "imagenes/12.jpg", 
+  "imagen": "/media/imagenes/12.jpg", 
   "titulo_en": "12.jpg", 
   "titulo_es": "12.jpg", 
   "titulo": "12.jpg"
@@ -136,7 +136,7 @@
  "model": "contenidos.imagen", 
  "fields": {
   "orden": 13, 
-  "imagen": "imagenes/13.jpg", 
+  "imagen": "/media/imagenes/13.jpg", 
   "titulo_en": "13.jpg", 
   "titulo_es": "13.jpg", 
   "titulo": "13.jpg"
@@ -147,7 +147,7 @@
  "model": "contenidos.imagen", 
  "fields": {
   "orden": 14, 
-  "imagen": "imagenes/14.jpg", 
+  "imagen": "/media/imagenes/14.jpg", 
   "titulo_en": "14.jpg", 
   "titulo_es": "14.jpg", 
   "titulo": "14.jpg"
@@ -158,7 +158,7 @@
  "model": "contenidos.imagen", 
  "fields": {
   "orden": 15, 
-  "imagen": "imagenes/15.jpg", 
+  "imagen": "/media/imagenes/15.jpg", 
   "titulo_en": "15.jpg", 
   "titulo_es": "15.jpg", 
   "titulo": "15.jpg"
@@ -169,7 +169,7 @@
  "model": "contenidos.imagen", 
  "fields": {
   "orden": 16, 
-  "imagen": "imagenes/16.jpg", 
+  "imagen": "/media/imagenes/16.jpg", 
   "titulo_en": "16.jpg", 
   "titulo_es": "16.jpg", 
   "titulo": "16.jpg"
@@ -180,7 +180,7 @@
  "model": "contenidos.imagen", 
  "fields": {
   "orden": 17, 
-  "imagen": "imagenes/17.jpg", 
+  "imagen": "/media/imagenes/17.jpg", 
   "titulo_en": "17.jpg", 
   "titulo_es": "17.jpg", 
   "titulo": "17.jpg"
@@ -191,7 +191,7 @@
  "model": "contenidos.imagen", 
  "fields": {
   "orden": 18, 
-  "imagen": "imagenes/18.jpg", 
+  "imagen": "/media/imagenes/18.jpg", 
   "titulo_en": "18.jpg", 
   "titulo_es": "18.jpg", 
   "titulo": "18.jpg"
@@ -202,7 +202,7 @@
  "model": "contenidos.imagen", 
  "fields": {
   "orden": 19, 
-  "imagen": "imagenes/19.jpg", 
+  "imagen": "/media/imagenes/19.jpg", 
   "titulo_en": "19.jpg", 
   "titulo_es": "19.jpg", 
   "titulo": "19.jpg"

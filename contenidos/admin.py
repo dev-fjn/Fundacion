@@ -6,7 +6,7 @@ from modeltranslation.admin import TranslationAdmin
 from models import Video, Imagen, Evento, FechaEvento, Libro
 
 class VideoAdmin(TranslationAdmin):
-	list_display = ['titulo', 'flv_url', 'mp4_url']
+	list_display = ['titulo', 'flv', 'mp4']
 
 class ImagenAdmin(TranslationAdmin):
 	list_display = ['titulo']
