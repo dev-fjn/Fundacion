@@ -4,6 +4,13 @@
 	{{block.super}} Evento {{object}}
 {% endblock title %}
 
+{% block hormiga %}
+<ul>
+	<li><a href="#">Agenda</a></li>
+	<li><a href="#">{{object.titulo}}</a></li>
+</ul>
+{% endblock hormiga %}
+
 {% block body %}
 	<section id="cabecera">
 		<h1>{{object.titulo}}</h1>
@@ -12,14 +19,17 @@
 		<img src="{{MEDIA_URL}}{{object.imagen}}"/>
 	</section>
 	<section id="centreright">
+		<h2>Resumen</h2>
 		{{object.resumen}}
 		<h2>Fecha y lugar de celebración</h2>
 		<div>{{object.fecha_y_lugar}}</div>
 		{% if object.pdf %}
 			<div><button href="{{object.pdf}}">Más información</button></div>
 		{% endif %}
-		{% for lugar in object.lugarevento_set.all %}
-			<p>boliche.latlon=({{lugar.latitud}}, {{lugar.longitud}})</p>
+		{% for fecha in object.fechaevento_set.all %}
+			El día {{fecha.fecha}} desde las {{fecha.hora_inicio}} hasta las {{fecha.hora_final}}<br />
+		{% empty %}
+			(no se ha asignado fecha a este evento)
 		{% endfor %}
 	</section>
 {% endblock body %}
