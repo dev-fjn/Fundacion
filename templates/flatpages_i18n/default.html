@@ -1,4 +1,5 @@
 {% extends "base_2col.html" %}
+{% load flatpages_treemenus %}
 
 {% block head_title %}
 {{ flatpage.title }}
@@ -10,6 +11,14 @@
 
 {% block aside_asidel %}
 {% endblock aside_asidel %}
+
+{% block hormiga %}
+<ul>
+	<li>{% enlace_a_pagina_padre_en_menu %}</li>
+	<li><a href="#">{{flatpage.title}}</a></li>
+</ul>
+{% endblock hormiga %}
+
 
 {% block body %}
 <div class="flatpage-i18n">
