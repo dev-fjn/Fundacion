@@ -31,16 +31,17 @@
 		<tbody>
 			{% for semana in semanas %}
 			<tr>
-        		{# TODO: Faltaría resaltar la fecha actual #}
 				{% for dia, lista_eventos in semana %}
 					{% if dia.month == start.month %}
 						{% if lista_eventos %}
-                    		<td class="evento">{{dia.day}}</td>
+							<td class="evento">{{dia.day}}</td>
+						{% elif hoy == dia %}
+							<td class="actual">{{dia.day}}</td>
 						{% else %}
-                    		<td class="dia">{{dia.day}}</td>
+							<td class="dia">{{dia.day}}</td>
 						{% endif %}
 					{% else %}
-                		<td class="sin_dia">&nbsp;</td>
+						<td class="sin_dia">&nbsp;</td>
 					{% endif %}
 				{% endfor %}
 			</tr>

@@ -64,4 +64,5 @@ class Documentos(ListView):
 		context = super(Documentos, self).get_context_data(**kwargs)
 		tipo = self.kwargs.get('tipo')
 		context["tipo"] = TIPO.DICT[tipo] if tipo in TIPO.DICT else "(Ninguno)"
+		context["base_tipo"] = TIPO.BASES_HORMIGAS[tipo] if tipo in TIPO.BASES_HORMIGAS else "(Ninguno)"
 		return context
