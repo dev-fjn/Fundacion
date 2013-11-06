@@ -36,7 +36,7 @@ def calendario_eventos(meses_atras):
 	semanas = calendario_por_meses(start, end, diccionario)
 	return {
 			'only': True,
-			'hoy': timezone.now(), 
+			'hoy': timezone.now().date(), 
 			'start': start, 
 			'semanas': semanas, 
 			'prev': start-datetime.timedelta(days=1), 
