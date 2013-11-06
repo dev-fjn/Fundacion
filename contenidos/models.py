@@ -97,16 +97,18 @@ class Documento(models.Model):
 	descripcion = models.TextField()
 
 	def adjuntos(self):
-		urls = list(self.url_set.all())
-		pdfs = list(self.pdf_set.all())
-		return sorted(urls + pdfs, key=lambda x: x.titulo)
+		l = list(self.urladjunto_set.all())
+		l += list(self.pdfadjunto_set.all())
+		l += list(self.videoadjunto_set.all())
+	        l += list(self.audioadjunto_set.all())
+		return sorted(l, key=lambda x: x.titulo)
 
 class Adjunto(models.Model):
 	documento = models.ForeignKey(Documento)
 	titulo = models.CharField(max_length=250)
 
 	def template(self):
-		return "contenidos/_adjunto_%s.html" % (self.__class__.__name__.lower(), )
+		return "contenidos/_%s.html" % (self.__class__.__name__.lower(), )
 
 	def __unicode__(self):
 		return u"%s: %s" % (self.__class__.__name__.upper(), self.titulo)
@@ -114,8 +116,31 @@ class Adjunto(models.Model):
 	class Meta:
 		abstract = True
 
-class Url(Adjunto):
-	url = models.URLField()
+class UrlAdjunto(Adjunto):
+    url = models.URLField()
 
-class Pdf(Adjunto):
-	pdf = FileBrowseField("pdf", max_length=200, extensions=[".pdf",], directory="documentos", blank=True, null=True)
+    class Meta:
+        verbose_name = u'URL adjunta'
+        verbose_name_plural = u'URLs adjuntas'
+
+class PdfAdjunto(Adjunto):
+    pdf = FileBrowseField("pdf", max_length=200, extensions=[".pdf",], directory="documentos", blank=True, null=True)
+
+    class Meta:
+        verbose_name = u'PDF adjunto'
+        verbose_name_plural = u'PDFs adjuntos'
+
+class VideoAdjunto(Adjunto):
+    video = FileBrowseField("video", max_length=200, extensions=[".flv", ".mp4",], directory="documentos", blank=True, null=True)
+
+    class Meta:
+        verbose_name = u'Vídeo adjunto'
+        verbose_name_plural = u'Vídeos adjuntos'
+
+class AudioAdjunto(Adjunto):
+    audio = FileBrowseField("audio", max_length=200, extensions=[".mp3", ".ogg",], directory="documentos", blank=True, null=True)
+
+    class Meta:
+        verbose_name = u'Audio adjunto'
+        verbose_name_plural = u'Audios adjuntos'
+

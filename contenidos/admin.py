@@ -27,18 +27,26 @@ class LibroAdmin(admin.ModelAdmin):
 	search_fields = ['titulo', 'autor', 'isbn']
 	date_hierarchy = 'fecha'
 
-class UrlInline(admin.TabularInline):
-	model = Url
+class UrlAdjuntoInline(admin.TabularInline):
+	model = UrlAdjunto
 	extra = 0
 
-class PdfInline(admin.TabularInline):
-	model = Pdf
+class PdfAdjuntoInline(admin.TabularInline):
+	model = PdfAdjunto
+	extra = 0
+
+class VideoAdjuntoInline(admin.TabularInline):
+	model = VideoAdjunto
+	extra = 0
+
+class AudioAdjuntoInline(admin.TabularInline):
+	model = AudioAdjunto
 	extra = 0
 
 class DocumentoAdmin(admin.ModelAdmin):
 	list_display = ['titulo', 'tipo', 'adjuntos_']
 	list_filter = ['tipo']
-	inlines = [UrlInline, PdfInline]
+	inlines = [UrlAdjuntoInline, PdfAdjuntoInline, VideoAdjuntoInline, AudioAdjuntoInline]
 
 	def adjuntos_(self, obj):
 		return "<br />".join([u"%s" % (i, ) for i in obj.adjuntos()])
