@@ -32,15 +32,6 @@ SE DEJA AQUI SOLO COMO REFERENCIA, HABRA QUE CAMBIARLO POR ALGO BASADO EN BANDER
 {% block menu %}
 	<ul>
 		{% show_menu "principal" %}
-		<li class="has-sub"><a href="#"><span>..</span></a>
-			<ul>
-				<li><a href="{% url 'recursos_audiovisuales' %}"><span>Recursos audiovisuales</span></a></li>
-				<li><a href="{% url 'presencia_en_prensa' %}"><span>Presencia en prensa</span></a></li>
-				<li><a href="{% url 'dossieres_de_prensa' %}"><span>Dossieres de prensa</span></a></li>
-				<li><a href="{% url 'libros' %}"><span>Catálogo de publicaciones</span></a></li>
-			</ul>
-		</li>
-		<li class="right"><a href="{% url 'zinnia_entry_archive_index' %}"><span>Bitácora</span></a></li>
 	</ul>
 {% endblock menu %}
 

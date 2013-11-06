@@ -1,330 +1,343 @@
 [
 {
-    "pk": 1, 
-    "model": "treemenus.menuitem", 
-    "fields": {
-        "parent": null, 
-        "level": 0, 
-        "url": "", 
-        "menu": 1, 
-        "rank": 0, 
-        "caption": "root", 
-        "named_url": ""
-    }
+ "pk": 1, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": null, 
+  "level": 0, 
+  "url": "", 
+  "menu": 1, 
+  "rank": 0, 
+  "caption": "root", 
+  "named_url": ""
+ }
 },
 {
-    "pk": 2, 
-    "model": "treemenus.menuitem", 
-    "fields": {
-        "parent": 1, 
-        "level": 1, 
-        "url": "/", 
-        "menu": 1, 
-        "rank": 0, 
-        "caption": "Inicio", 
-        "named_url": "home"
-    }
+ "pk": 2, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 1, 
+  "level": 1, 
+  "url": "", 
+  "menu": 1, 
+  "rank": 0, 
+  "caption": "Inicio", 
+  "named_url": "home"
+ }
 },
 {
-    "pk": 3, 
-    "model": "treemenus.menuitem", 
-    "fields": {
-        "parent": 1, 
-        "level": 1, 
-        "url": "/fundacion/", 
-        "menu": 1, 
-        "rank": 1, 
-        "caption": "Fundaci\u00f3n", 
-        "named_url": "fundacion"
-    }
+ "pk": 3, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 1, 
+  "level": 1, 
+  "url": "/fundacion/", 
+  "menu": 1, 
+  "rank": 1, 
+  "caption": "Fundaci\u00f3n", 
+  "named_url": ""
+ }
 },
 {
-    "pk": 4, 
-    "model": "treemenus.menuitem", 
-    "fields": {
-        "parent": 1, 
-        "level": 1, 
-        "url": "/", 
-        "menu": 1, 
-        "rank": 2, 
-        "caption": "Juan Negr\u00edn", 
-        "named_url": "juannegrin"
-    }
+ "pk": 4, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 1, 
+  "level": 1, 
+  "url": "/", 
+  "menu": 1, 
+  "rank": 2, 
+  "caption": "Juan Negr\u00edn", 
+  "named_url": ""
+ }
 },
 {
-    "pk": 5, 
-    "model": "treemenus.menuitem", 
-    "fields": {
-        "parent": 1, 
-        "level": 1, 
-        "url": "/", 
-        "menu": 1, 
-        "rank": 3, 
-        "caption": "Fondos y Recursos Documentales", 
-        "named_url": "fondosyrecursosdocumentales"
-    }
+ "pk": 5, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 1, 
+  "level": 1, 
+  "url": "", 
+  "menu": 1, 
+  "rank": 3, 
+  "caption": "Fondos y Recursos Documentales", 
+  "named_url": ""
+ }
 },
 {
-    "pk": 6, 
-    "model": "treemenus.menuitem", 
-    "fields": {
-        "parent": 1, 
-        "level": 1, 
-        "url": "/sala-de-prensa/", 
-        "menu": 1, 
-        "rank": 4, 
-        "caption": "Sala de Prensa", 
-        "named_url": "saladeprensa"
-    }
+ "pk": 6, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 1, 
+  "level": 1, 
+  "url": "/sala-de-prensa/", 
+  "menu": 1, 
+  "rank": 4, 
+  "caption": "Sala de Prensa", 
+  "named_url": ""
+ }
 },
 {
-    "pk": 8, 
-    "model": "treemenus.menuitem", 
-    "fields": {
-        "parent": 3, 
-        "level": 2, 
-        "url": "/presidente/", 
-        "menu": 1, 
-        "rank": 0, 
-        "caption": "Presidente", 
-        "named_url": "presidente"
-    }
+ "pk": 8, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 3, 
+  "level": 2, 
+  "url": "/presidente/", 
+  "menu": 1, 
+  "rank": 0, 
+  "caption": "Presidente", 
+  "named_url": ""
+ }
 },
 {
-    "pk": 9, 
-    "model": "treemenus.menuitem", 
-    "fields": {
-        "parent": 3, 
-        "level": 2, 
-        "url": "/presidenta-de-honor/", 
-        "menu": 1, 
-        "rank": 1, 
-        "caption": "Presidenta de honor", 
-        "named_url": "presidentadehonor"
-    }
+ "pk": 9, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 3, 
+  "level": 2, 
+  "url": "/presidenta-de-honor/", 
+  "menu": 1, 
+  "rank": 1, 
+  "caption": "Presidenta de honor", 
+  "named_url": ""
+ }
 },
 {
-    "pk": 10, 
-    "model": "treemenus.menuitem", 
-    "fields": {
-        "parent": 3, 
-        "level": 2, 
-        "url": "/patronato/", 
-        "menu": 1, 
-        "rank": 2, 
-        "caption": "Patronato", 
-        "named_url": "patronato"
-    }
+ "pk": 10, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 3, 
+  "level": 2, 
+  "url": "/patronato/", 
+  "menu": 1, 
+  "rank": 2, 
+  "caption": "Patronato", 
+  "named_url": ""
+ }
 },
 {
-    "pk": 11, 
-    "model": "treemenus.menuitem", 
-    "fields": {
-        "parent": 3, 
-        "level": 2, 
-        "url": "/objetivos/", 
-        "menu": 1, 
-        "rank": 3, 
-        "caption": "Objetivos", 
-        "named_url": "objetivos"
-    }
+ "pk": 11, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 3, 
+  "level": 2, 
+  "url": "/objetivos/", 
+  "menu": 1, 
+  "rank": 3, 
+  "caption": "Objetivos", 
+  "named_url": ""
+ }
 },
 {
-    "pk": 12, 
-    "model": "treemenus.menuitem", 
-    "fields": {
-        "parent": 3, 
-        "level": 2, 
-        "url": "/hacerce-amigo-de-la-fundacion/", 
-        "menu": 1, 
-        "rank": 4, 
-        "caption": "Hacerse amigo de la Fundaci\u00f3n", 
-        "named_url": "ayudanos"
-    }
+ "pk": 12, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 3, 
+  "level": 2, 
+  "url": "/hacerce-amigo-de-la-fundacion/", 
+  "menu": 1, 
+  "rank": 4, 
+  "caption": "Hacerse amigo de la Fundaci\u00f3n", 
+  "named_url": ""
+ }
 },
 {
-    "pk": 13, 
-    "model": "treemenus.menuitem", 
-    "fields": {
-        "parent": 4, 
-        "level": 2, 
-        "url": "/biografia/", 
-        "menu": 1, 
-        "rank": 0, 
-        "caption": "Biograf\u00eda", 
-        "named_url": "biografia"
-    }
+ "pk": 13, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 4, 
+  "level": 2, 
+  "url": "/biografia/", 
+  "menu": 1, 
+  "rank": 0, 
+  "caption": "Biograf\u00eda", 
+  "named_url": ""
+ }
 },
 {
-    "pk": 14, 
-    "model": "treemenus.menuitem", 
-    "fields": {
-        "parent": 4, 
-        "level": 2, 
-        "url": "/cronobiograf\u00eda/", 
-        "menu": 1, 
-        "rank": 1, 
-        "caption": "Cronobiograf\u00eda", 
-        "named_url": "cronobiografia"
-    }
+ "pk": 14, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 4, 
+  "level": 2, 
+  "url": "/cronobiograf\u00eda/", 
+  "menu": 1, 
+  "rank": 1, 
+  "caption": "Cronobiograf\u00eda", 
+  "named_url": ""
+ }
 },
 {
-    "pk": 15, 
-    "model": "treemenus.menuitem", 
-    "fields": {
-        "parent": 4, 
-        "level": 2, 
-        "url": "/bibliografia/", 
-        "menu": 1, 
-        "rank": 2, 
-        "caption": "Bibliograf\u00eda", 
-        "named_url": "bibliografia"
-    }
+ "pk": 15, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 4, 
+  "level": 2, 
+  "url": "/bibliografia/", 
+  "menu": 1, 
+  "rank": 2, 
+  "caption": "Bibliograf\u00eda", 
+  "named_url": ""
+ }
 },
 {
-    "pk": 16, 
-    "model": "treemenus.menuitem", 
-    "fields": {
-        "parent": 4, 
-        "level": 2, 
-        "url": "/presencia/", 
-        "menu": 1, 
-        "rank": 3, 
-        "caption": "Presencia", 
-        "named_url": "presencia"
-    }
+ "pk": 16, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 4, 
+  "level": 2, 
+  "url": "/presencia/", 
+  "menu": 1, 
+  "rank": 3, 
+  "caption": "Presencia", 
+  "named_url": ""
+ }
 },
 {
-    "pk": 17, 
-    "model": "treemenus.menuitem", 
-    "fields": {
-        "parent": 4, 
-        "level": 2, 
-        "url": "/citas-de-juan-negrin/", 
-        "menu": 1, 
-        "rank": 3, 
-        "caption": "Citas", 
-        "named_url": "citas"
-    }
+ "pk": 17, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 4, 
+  "level": 2, 
+  "url": "/citas-de-juan-negrin/", 
+  "menu": 1, 
+  "rank": 3, 
+  "caption": "Citas", 
+  "named_url": ""
+ }
 },
 {
-    "pk": 18, 
-    "model": "treemenus.menuitem", 
-    "fields": {
-        "parent": 5, 
-        "level": 2, 
-        "url": "/archivos/", 
-        "menu": 1, 
-        "rank": 0, 
-        "caption": "Archivos", 
-        "named_url": "archivos"
-    }
+ "pk": 18, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 5, 
+  "level": 2, 
+  "url": "/archivos/", 
+  "menu": 1, 
+  "rank": 0, 
+  "caption": "Archivos", 
+  "named_url": ""
+ }
 },
 {
-    "pk": 19, 
-    "model": "treemenus.menuitem", 
-    "fields": {
-        "parent": 5, 
-        "level": 2, 
-        "url": "/fondos-y-recursos-documentales/biblioteca/", 
-        "menu": null, 
-        "rank": 1, 
-        "caption": "Biblioteca", 
-        "named_url": "biblioteca"
-    }
+ "pk": 19, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 5, 
+  "level": 2, 
+  "url": "/fondos-y-recursos-documentales/biblioteca/", 
+  "menu": null, 
+  "rank": 1, 
+  "caption": "Biblioteca", 
+  "named_url": ""
+ }
 },
 {
-    "pk": 20, 
-    "model": "treemenus.menuitem", 
-    "fields": {
-        "parent": 5, 
-        "level": 2, 
-        "url": "/fondos-y-recursos-documentales/recursos-audiovisuales/", 
-        "menu": null, 
-        "rank": 2, 
-        "caption": "Recursos Audiovisuales", 
-        "named_url": "recursosaudiovisuales"
-    }
+ "pk": 20, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 5, 
+  "level": 2, 
+  "url": "", 
+  "menu": null, 
+  "rank": 2, 
+  "caption": "Recursos Audiovisuales", 
+  "named_url": "recursos_audiovisuales"
+ }
 },
 {
-    "pk": 21, 
-    "model": "treemenus.menuitem", 
-    "fields": {
-        "parent": 5, 
-        "level": 2, 
-        "url": "/fondos-y-recursos-documentales/presencia-en-prensa/", 
-        "menu": null, 
-        "rank": 3, 
-        "caption": "Presencia en Prensa", 
-        "named_url": "presenciaenprensa"
-    }
+ "pk": 21, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 5, 
+  "level": 2, 
+  "url": "", 
+  "menu": null, 
+  "rank": 3, 
+  "caption": "Presencia en Prensa", 
+  "named_url": "presencia_en_prensa"
+ }
 },
 {
-    "pk": 22, 
-    "model": "treemenus.menuitem", 
-    "fields": {
-        "parent": 5, 
-        "level": 2, 
-        "url": "/fondos-y-recursos-documentales/catalogo-de-publicaciones/", 
-        "menu": null, 
-        "rank": 4, 
-        "caption": "Cat\u00e1logo de Publicaciones", 
-        "named_url": "catalogodepublicaciones"
-    }
+ "pk": 22, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 5, 
+  "level": 2, 
+  "url": "", 
+  "menu": null, 
+  "rank": 4, 
+  "caption": "Cat\u00e1logo de Publicaciones", 
+  "named_url": "libros"
+ }
 },
 {
-    "pk": 23, 
-    "model": "treemenus.menuitem", 
-    "fields": {
-        "parent": 6, 
-        "level": 2, 
-        "url": "/sala-de-prensa/imagen-corporativa/", 
-        "menu": null, 
-        "rank": 0, 
-        "caption": "Imagen Corporativa", 
-        "named_url": "imagencorporativa"
-    }
+ "pk": 23, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 6, 
+  "level": 2, 
+  "url": "/sala-de-prensa/imagen-corporativa/", 
+  "menu": null, 
+  "rank": 0, 
+  "caption": "Imagen Corporativa", 
+  "named_url": ""
+ }
 },
 {
-    "pk": 24, 
-    "model": "treemenus.menuitem", 
-    "fields": {
-        "parent": 6, 
-        "level": 2, 
-        "url": "/sala-de-prensa/dossieres-de-prensa/", 
-        "menu": null, 
-        "rank": 0, 
-        "caption": "Dossieres de Prensa", 
-        "named_url": "dossieresdeprensa"
-    }
+ "pk": 24, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 6, 
+  "level": 2, 
+  "url": "", 
+  "menu": null, 
+  "rank": 0, 
+  "caption": "Dossieres de Prensa", 
+  "named_url": "dossieres_de_prensa"
+ }
 },
 {
-    "pk": 25, 
-    "model": "treemenus.menuitem", 
-    "fields": {
-        "parent": 17, 
-        "level": 3, 
-        "url": "/citas-sobre-juan-negrin/", 
-        "menu": 1, 
-        "rank": 0, 
-        "caption": "Citas sobre Juan Negr\u00edn", 
-        "named_url": "citas-sobre-juan-negrin"
-    }
+ "pk": 25, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 17, 
+  "level": 3, 
+  "url": "/citas-sobre-juan-negrin/", 
+  "menu": 1, 
+  "rank": 0, 
+  "caption": "Citas sobre Juan Negr\u00edn", 
+  "named_url": ""
+ }
 },
 {
-    "pk": 1, 
-    "model": "treemenus.menu", 
-    "fields": {
-        "root_item": 1, 
-        "name": "principal"
-    }
+ "pk": 26, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 1, 
+  "level": 1, 
+  "url": "", 
+  "menu": 1, 
+  "rank": 5, 
+  "caption": "Bit\u00e1cora", 
+  "named_url": "zinnia_entry_archive_index"
+ }
 },
 {
-    "pk": 2, 
-    "model": "treemenus.menu", 
-    "fields": {
-        "root_item": 3, 
-        "name": "piedepagina"
-    }
+ "pk": 1, 
+ "model": "treemenus.menu", 
+ "fields": {
+  "root_item": 1, 
+  "name": "principal"
+ }
+},
+{
+ "pk": 2, 
+ "model": "treemenus.menu", 
+ "fields": {
+  "root_item": 3, 
+  "name": "piedepagina"
+ }
 }
 ]

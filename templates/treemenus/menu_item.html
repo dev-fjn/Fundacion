@@ -1,5 +1,7 @@
 {% load tree_menu_tags %}
-<a href="{{ menu_item.url }}"><span>{{ menu_item.caption }}</span></a>
+
+
+<a href="{% if menu_item.named_url %}{% url menu_item.named_url %}{% else %}{{ menu_item.url }}{% endif %}"><span>{{ menu_item.caption }}</span></a>
 {% if menu_item.children %}
 <ul>
 	{% for child_item in menu_item.children %}
