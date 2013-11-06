@@ -424,88 +424,91 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 375, ../sass/screen.scss */
+/* line 376, ../sass/screen.scss */
 .container div.content section#hormiga {
   width: 100%;
   float: right;
   margin-right: 0;
   *margin-left: -0.5em;
   display: inline;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e6e6e6), color-stop(100%, #fefefe));
+  background-image: -webkit-linear-gradient(#e6e6e6, #fefefe);
+  background-image: -moz-linear-gradient(#e6e6e6, #fefefe);
+  background-image: -o-linear-gradient(#e6e6e6, #fefefe);
+  background-image: linear-gradient(#e6e6e6, #fefefe);
+  border-bottom: 0.125em solid #a39579;
   text-align: left;
 }
-/* line 391, ../sass/screen.scss */
+/* line 396, ../sass/screen.scss */
 .container div.content section#hormiga ul {
   list-style: none;
   display: inline-table;
 }
-/* line 394, ../sass/screen.scss */
+/* line 400, ../sass/screen.scss */
 .container div.content section#hormiga ul li {
   display: inline;
 }
-/* line 396, ../sass/screen.scss */
+/* line 402, ../sass/screen.scss */
 .container div.content section#hormiga ul li a {
   display: block;
   float: left;
-  height: 1.125em;
-  background: #c2beaf;
+  height: 1em;
   text-align: center;
   position: relative;
   padding: 0em 0em 0em 0em;
   margin: 0em 0em 0em 0em;
-  border: 0em 0.9375em 0em 0.9375em;
-  border-color: transparent;
   text-decoration: none;
-  text-indent: 0.625em;
-  color: black;
-}
-/* line 413, ../sass/screen.scss */
-.container div.content section#hormiga ul li a:after {
-  content: "";
-  border-top: 0.5625em solid transparent;
-  border-bottom: 0.5625em solid transparent;
-  border-left: 0.5625em solid #c2beaf;
-  position: absolute;
-  right: -em(9px);
-  top: 0;
-  z-index: 1;
+  min-width: 4em;
 }
 /* line 423, ../sass/screen.scss */
 .container div.content section#hormiga ul li a:before {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e6e6e6), color-stop(100%, #fefefe));
+  background-image: -webkit-linear-gradient(#e6e6e6, #fefefe);
+  background-image: -moz-linear-gradient(#e6e6e6, #fefefe);
+  background-image: -o-linear-gradient(#e6e6e6, #fefefe);
+  background-image: linear-gradient(#e6e6e6, #fefefe);
   content: "";
-  border-top: 0.5625em solid transparent;
-  border-bottom: 0.5625em solid transparent;
-  border-left: 0.5625em solid transparent;
+  border-top: 0.5em solid transparent;
+  border-bottom: 0.5em solid transparent;
+  border-left: 0.5em solid #c2beaf;
   position: absolute;
   left: 0;
   top: 0;
 }
-/* line 433, ../sass/screen.scss */
+/* line 444, ../sass/screen.scss */
 .container div.content section#hormiga ul li:first-child a {
   text-indent: 0;
 }
-/* line 437, ../sass/screen.scss */
+/* line 448, ../sass/screen.scss */
 .container div.content section#hormiga ul li:first-child a:before {
   display: none;
 }
-/* line 441, ../sass/screen.scss */
+/* line 452, ../sass/screen.scss */
 .container div.content section#hormiga ul li:last-child a {
   padding-right: 0.625em;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
 }
-/* line 445, ../sass/screen.scss */
+/* line 456, ../sass/screen.scss */
 .container div.content section#hormiga ul li:last-child a:after {
   display: none;
 }
-/* line 449, ../sass/screen.scss */
+/* line 460, ../sass/screen.scss */
 .container div.content section#hormiga ul li a:hover {
   background: #918b74;
   color: white;
 }
-/* line 452, ../sass/screen.scss */
+/* line 463, ../sass/screen.scss */
 .container div.content section#hormiga ul li a:hover:after {
-  border-left-color: #918b74;
+  border-left-color: Blue;
   color: white;
 }
-/* line 461, ../sass/screen.scss */
+/* line 468, ../sass/screen.scss */
+.container div.content section#hormiga ul li a:hover:before {
+  border-left-color: white;
+  color: white;
+}
+/* line 478, ../sass/screen.scss */
 .container div.content section#info {
   width: 100%;
   float: right;
@@ -513,7 +516,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 468, ../sass/screen.scss */
+/* line 485, ../sass/screen.scss */
 .container div.content section#variable {
   width: 100%;
   float: right;
@@ -521,14 +524,14 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 473, ../sass/screen.scss */
+/* line 490, ../sass/screen.scss */
 .container div.content section#variable aside#asidel {
   width: 24.29907%;
   float: left;
   margin-right: 0.93458%;
   display: inline;
 }
-/* line 481, ../sass/screen.scss */
+/* line 498, ../sass/screen.scss */
 .container div.content section#variable aside#asidel section#news {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
@@ -539,15 +542,11 @@ h6 {
   margin: .5em;
   border: 1px solid #c1b7a4;
 }
-/* line 491, ../sass/screen.scss */
+/* line 508, ../sass/screen.scss */
 .container div.content section#variable aside#asidel section#news h2 {
   text-align: center;
 }
-/* line 495, ../sass/screen.scss */
-.container div.content section#variable aside#asidel section#news ul li {
-  text-indent: 0.9375em;
-}
-/* line 524, ../sass/screen.scss */
+/* line 541, ../sass/screen.scss */
 .container div.content section#variable aside#asidel section#news ul li a:hover:before {
   background-color: Blue;
   background-color: #595546;
@@ -559,7 +558,7 @@ h6 {
   border-radius: 0.15625em;
   box-shadow: inset 0 0.0625em 0.0625em rgba(0, 0, 0, 0.5), 0 0.0625em 0.0625em rgba(255, 255, 255, 0.3);
 }
-/* line 545, ../sass/screen.scss */
+/* line 562, ../sass/screen.scss */
 .container div.content section#variable aside#asidel section#news ul li:hover:before {
   background-color: #c2beaf;
   color: #918b74;
@@ -568,9 +567,9 @@ h6 {
   top: 0;
   bottom: inherit;
   width: 0.3125em;
-  text-indent: 0;
+  padding-left: -em(15px);
 }
-/* line 560, ../sass/screen.scss */
+/* line 578, ../sass/screen.scss */
 .container div.content section#variable section#body {
   width: 49.53271%;
   float: left;
@@ -581,7 +580,7 @@ h6 {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 568, ../sass/screen.scss */
+/* line 586, ../sass/screen.scss */
 .container div.content section#variable section#body section#slide {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
@@ -594,7 +593,7 @@ h6 {
   padding: .2em;
   margin: .2em;
 }
-/* line 582, ../sass/screen.scss */
+/* line 600, ../sass/screen.scss */
 .container div.content section#variable section#body div#ourinfo {
   width: 100%;
   float: left;
@@ -603,7 +602,7 @@ h6 {
   clear: both;
   text-align: center;
 }
-/* line 592, ../sass/screen.scss */
+/* line 610, ../sass/screen.scss */
 .container div.content section#variable section#body div#ourinfo section#where {
   width: 49.0566%;
   float: left;
@@ -620,7 +619,7 @@ h6 {
   padding-bottom: .2em;
   min-height: 1.5em;
 }
-/* line 606, ../sass/screen.scss */
+/* line 624, ../sass/screen.scss */
 .container div.content section#variable section#body div#ourinfo section#services {
   width: 49.0566%;
   float: right;
@@ -638,7 +637,7 @@ h6 {
   padding-bottom: .2em;
   min-height: 1.5em;
 }
-/* line 624, ../sass/screen.scss */
+/* line 642, ../sass/screen.scss */
 .container div.content section#variable section#body section#expo {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
@@ -651,7 +650,7 @@ h6 {
   padding: .2em;
   margin: .2em;
 }
-/* line 638, ../sass/screen.scss */
+/* line 656, ../sass/screen.scss */
 .container div.content section#variable aside#asider {
   width: 24.29907%;
   float: right;
@@ -659,7 +658,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 646, ../sass/screen.scss */
+/* line 664, ../sass/screen.scss */
 .container div.content section#variable aside#asider section#agenda {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
@@ -670,11 +669,15 @@ h6 {
   margin: .5em;
   border: 1px solid #c1b7a4;
 }
-/* line 656, ../sass/screen.scss */
+/* line 674, ../sass/screen.scss */
 .container div.content section#variable aside#asider section#agenda h2 {
   text-align: center;
 }
-/* line 662, ../sass/screen.scss */
+/* line 678, ../sass/screen.scss */
+.container div.content section#variable aside#asider section#agenda div.calendario_eventos div {
+  text-align: center;
+}
+/* line 684, ../sass/screen.scss */
 .container div.content section#variable aside#asider section#varios {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
@@ -685,7 +688,7 @@ h6 {
   margin: .5em;
   border: 1px solid #c1b7a4;
 }
-/* line 673, ../sass/screen.scss */
+/* line 695, ../sass/screen.scss */
 .container div.content section#variable aside#asider section#varios section#internal {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
@@ -696,11 +699,11 @@ h6 {
   margin: .2em;
   border: 1px solid #c1b7a4;
 }
-/* line 681, ../sass/screen.scss */
+/* line 703, ../sass/screen.scss */
 .container div.content section#variable aside#asider section#varios section#internal h2 {
   text-align: center;
 }
-/* line 686, ../sass/screen.scss */
+/* line 708, ../sass/screen.scss */
 .container div.content section#variable aside#asider section#varios section#externas {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
@@ -711,16 +714,16 @@ h6 {
   margin: .2em;
   border: 1px solid #c1b7a4;
 }
-/* line 694, ../sass/screen.scss */
+/* line 716, ../sass/screen.scss */
 .container div.content section#variable aside#asider section#varios section#externas h2 {
   text-align: center;
 }
-/* line 700, ../sass/screen.scss */
+/* line 722, ../sass/screen.scss */
 .container div.content section#variable aside#asider section#banner2 {
   text-align: center;
   width: 100%;
 }
-/* line 712, ../sass/screen.scss */
+/* line 734, ../sass/screen.scss */
 .container div.content section#variable_1col {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
@@ -728,7 +731,7 @@ h6 {
   -o-border-radius: 0.625em;
   border-radius: 0.625em;
 }
-/* line 716, ../sass/screen.scss */
+/* line 738, ../sass/screen.scss */
 .container div.content section#variable_1col section#body div#space {
   max-width: 100%;
   min-height: 30em;
@@ -736,7 +739,7 @@ h6 {
   border: 1em;
   padding: 1em;
 }
-/* line 732, ../sass/screen.scss */
+/* line 754, ../sass/screen.scss */
 .container div.content section#variable_2col section#body {
   width: 74.76636%;
   float: left;
@@ -748,7 +751,7 @@ h6 {
   -o-border-radius: 0.625em;
   border-radius: 0.625em;
 }
-/* line 738, ../sass/screen.scss */
+/* line 760, ../sass/screen.scss */
 .container div.content section#variable_2col section#body div#space {
   max-width: 100%;
   min-height: 30em;
@@ -756,7 +759,7 @@ h6 {
   border: 1em;
   padding: 1em;
 }
-/* line 748, ../sass/screen.scss */
+/* line 770, ../sass/screen.scss */
 .container div.content section#variable_2col aside#asider {
   width: 24.29907%;
   float: right;
@@ -764,7 +767,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 756, ../sass/screen.scss */
+/* line 778, ../sass/screen.scss */
 .container div.content section#variable_2col aside#asider section#agenda {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
@@ -775,11 +778,11 @@ h6 {
   margin: .2em;
   border: 1px solid #c1b7a4;
 }
-/* line 764, ../sass/screen.scss */
+/* line 786, ../sass/screen.scss */
 .container div.content section#variable_2col aside#asider section#agenda h2 {
   text-align: center;
 }
-/* line 770, ../sass/screen.scss */
+/* line 792, ../sass/screen.scss */
 .container div.content section#variable_2col aside#asider section#varios {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
@@ -790,7 +793,7 @@ h6 {
   margin: .2em;
   border: 1px solid #c1b7a4;
 }
-/* line 779, ../sass/screen.scss */
+/* line 801, ../sass/screen.scss */
 .container div.content section#variable_2col aside#asider section#varios section#internal {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
@@ -801,11 +804,11 @@ h6 {
   margin: .2em;
   border: 1px solid #c1b7a4;
 }
-/* line 787, ../sass/screen.scss */
+/* line 809, ../sass/screen.scss */
 .container div.content section#variable_2col aside#asider section#varios section#internal h2 {
   text-align: center;
 }
-/* line 792, ../sass/screen.scss */
+/* line 814, ../sass/screen.scss */
 .container div.content section#variable_2col aside#asider section#varios section#externas {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
@@ -816,16 +819,16 @@ h6 {
   margin: .2em;
   border: 1px solid #c1b7a4;
 }
-/* line 800, ../sass/screen.scss */
+/* line 822, ../sass/screen.scss */
 .container div.content section#variable_2col aside#asider section#varios section#externas h2 {
   text-align: center;
 }
-/* line 806, ../sass/screen.scss */
+/* line 828, ../sass/screen.scss */
 .container div.content section#variable_2col aside#asider section#banner2 {
   text-align: center;
   width: 100%;
 }
-/* line 819, ../sass/screen.scss */
+/* line 841, ../sass/screen.scss */
 .container div.content section#variable_2col_especial section#body {
   width: 74.76636%;
   float: left;
@@ -837,7 +840,7 @@ h6 {
   -o-border-radius: 0.625em;
   border-radius: 0.625em;
 }
-/* line 825, ../sass/screen.scss */
+/* line 847, ../sass/screen.scss */
 .container div.content section#variable_2col_especial section#body div#space {
   max-width: 100%;
   min-height: 30em;
@@ -845,14 +848,14 @@ h6 {
   border: 1em;
   padding: 1em;
 }
-/* line 833, ../sass/screen.scss */
+/* line 855, ../sass/screen.scss */
 .container div.content section#variable_2col_especial section#body div#space section#bodyleft {
   width: 43.75%;
   float: left;
   margin-right: 1.25%;
   display: inline;
 }
-/* line 837, ../sass/screen.scss */
+/* line 859, ../sass/screen.scss */
 .container div.content section#variable_2col_especial section#body div#space section#bodyright {
   width: 55.0%;
   float: right;
@@ -860,7 +863,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 843, ../sass/screen.scss */
+/* line 865, ../sass/screen.scss */
 .container div.content section#variable_2col_especial aside#asider {
   width: 24.29907%;
   float: right;
@@ -868,7 +871,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 851, ../sass/screen.scss */
+/* line 873, ../sass/screen.scss */
 .container div.content section#variable_2col_especial aside#asider section#agenda {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
@@ -879,11 +882,11 @@ h6 {
   margin: .2em;
   border: 1px solid #c1b7a4;
 }
-/* line 859, ../sass/screen.scss */
+/* line 881, ../sass/screen.scss */
 .container div.content section#variable_2col_especial aside#asider section#agenda h2 {
   text-align: center;
 }
-/* line 865, ../sass/screen.scss */
+/* line 887, ../sass/screen.scss */
 .container div.content section#variable_2col_especial aside#asider section#varios {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
@@ -894,7 +897,7 @@ h6 {
   margin: .2em;
   border: 1px solid #c1b7a4;
 }
-/* line 874, ../sass/screen.scss */
+/* line 896, ../sass/screen.scss */
 .container div.content section#variable_2col_especial aside#asider section#varios section#internal {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
@@ -905,11 +908,11 @@ h6 {
   margin: .2em;
   border: 1px solid #c1b7a4;
 }
-/* line 882, ../sass/screen.scss */
+/* line 904, ../sass/screen.scss */
 .container div.content section#variable_2col_especial aside#asider section#varios section#internal h2 {
   text-align: center;
 }
-/* line 887, ../sass/screen.scss */
+/* line 909, ../sass/screen.scss */
 .container div.content section#variable_2col_especial aside#asider section#varios section#externas {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
@@ -920,16 +923,16 @@ h6 {
   margin: .2em;
   border: 1px solid #c1b7a4;
 }
-/* line 895, ../sass/screen.scss */
+/* line 917, ../sass/screen.scss */
 .container div.content section#variable_2col_especial aside#asider section#varios section#externas h2 {
   text-align: center;
 }
-/* line 901, ../sass/screen.scss */
+/* line 923, ../sass/screen.scss */
 .container div.content section#variable_2col_especial aside#asider section#banner2 {
   text-align: center;
   width: 100%;
 }
-/* line 915, ../sass/screen.scss */
+/* line 937, ../sass/screen.scss */
 .container footer#footer {
   width: 100%;
   float: right;
@@ -938,7 +941,7 @@ h6 {
   display: inline;
   background-color: #c6c1b3;
 }
-/* line 919, ../sass/screen.scss */
+/* line 941, ../sass/screen.scss */
 .container footer#footer div#finicial {
   width: 100%;
   float: right;
@@ -947,7 +950,7 @@ h6 {
   display: inline;
   min-height: 2em;
 }
-/* line 925, ../sass/screen.scss */
+/* line 947, ../sass/screen.scss */
 .container footer#footer div#col1 {
   width: 24.29907%;
   float: left;
@@ -959,7 +962,7 @@ h6 {
   -o-border-radius: 0.625em;
   border-radius: 0.625em;
 }
-/* line 934, ../sass/screen.scss */
+/* line 956, ../sass/screen.scss */
 .container footer#footer div#col2 {
   width: 24.29907%;
   float: left;
@@ -971,7 +974,7 @@ h6 {
   -o-border-radius: 0.625em;
   border-radius: 0.625em;
 }
-/* line 943, ../sass/screen.scss */
+/* line 965, ../sass/screen.scss */
 .container footer#footer div#col3 {
   width: 24.29907%;
   float: left;
@@ -983,7 +986,7 @@ h6 {
   -o-border-radius: 0.625em;
   border-radius: 0.625em;
 }
-/* line 952, ../sass/screen.scss */
+/* line 974, ../sass/screen.scss */
 .container footer#footer div#col4 {
   width: 24.29907%;
   float: right;
@@ -996,7 +999,7 @@ h6 {
   -o-border-radius: 0.625em;
   border-radius: 0.625em;
 }
-/* line 961, ../sass/screen.scss */
+/* line 983, ../sass/screen.scss */
 .container footer#footer div#ffinal {
   width: 100%;
   float: right;
@@ -1005,7 +1008,7 @@ h6 {
   display: inline;
   min-height: 2em;
 }
-/* line 968, ../sass/screen.scss */
+/* line 990, ../sass/screen.scss */
 .container footer#footer div#legal {
   width: 100%;
   float: right;

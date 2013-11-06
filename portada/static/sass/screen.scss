@@ -304,7 +304,7 @@ h6 {
                             // Hover sobre los men´us principales
                             //background: $color_menu04;
                             //@include background-image(linear-gradient($color_menu04, $color_menu05));    //No lleva degradado
-                            @include background-image(linear-gradient($color_menu04, #C2BEAF));    //No lleva degradado
+                            @include background-image(linear-gradient($color_menu04, $color02));    //No lleva degradado
                             // Pasar a compass
                             -webkit-box-shadow: inset 0 0 em(2px) rgba(0, 0, 0, 0.1);
                                -moz-box-shadow: inset 0 0 em(2px) rgba(0, 0, 0, 0.1);
@@ -364,9 +364,10 @@ h6 {
         }
     }
 
-@include clearfix;
+    @include clearfix;
 
     div.content{
+
         @include span-columns(12 omega, 12);
         // TODO
         //@include background-image(linear-gradient($color_menu01, $color_menu02));
@@ -374,60 +375,70 @@ h6 {
 
         section#hormiga{
             @include span-columns(12 omega, 12);
-            // TODO
-            //@include background-image(linear-gradient($color_menu01, $color_menu02));
+            @include background-image(linear-gradient($color_menu02, $color_menu01));
+            border-bottom: em(2px) solid $color_menu03;
+            //border-bottom-color:currentColor;
+            //border-bottom-style:solid;
+            //border-bottom-width:medium;
             //background-color: $color05;
             //margin: 0;
-            $hormiga_altura: 18px;
+            $hormiga_altura: $font_base;
             $hormiga_triangulo: ( ($hormiga_altura/100) * 50 );
 
             $color_crumbs00: $color00;
             $color_crumbs01: $color01;
-            $color_crumbs02: Red; //$color02;
-            $color_crumbs03: transparent; //$color03;
-            $color_crumbs04: $color02;
+            $color_crumbs02: $color02;
+            $color_crumbs03: $color03; //transparent; //$color03;
+            $color_crumbs04: transparent; //$color02;
 
             text-align: left;
+
             ul {
                 list-style: none;
                 display: inline-table;
+
                 li {
                     display: inline;
                     a {
                         display: block;
                         float: left;
                         height: em($hormiga_altura);
-                        background: $color02;
+
+                        // Sin fondo, transparente.
+                        //background: $color02;
                         //@include background-image(linear-gradient($color_menu01, $color_menu02));
+
                         text-align: center;
                         position: relative;
                         //padding: em(30px) em(40px) 0 em(80px);
                         padding: em(0px) em(0px) em(0px) em(0px);
                         margin: em(0px) em(0px) em(0px) em(0px);
-                        border: em(0px) em(15px) em(0px) em(15px);
-                        border-color: transparent;
+                        //border: em(0px) em(25px) em(0px) em(25px);
+                        //border-color: transparent;
                         //font-size: em(20px);
                         text-decoration: none;
-                        text-indent: em(10px);
-                        color: $color_crumbs00;
-                        &:after {
-                            content: "";
-                            border-top: em($hormiga_triangulo) solid transparent;
-                            border-bottom: em($hormiga_triangulo) solid transparent;
-                            border-left: em($hormiga_triangulo) solid $color_crumbs04;
-                            position: absolute;
-                            right: -em($hormiga_triangulo);
-                            top: 0;
-                            z-index: 1;
-                        }
+                        //text-indent: em(10px);
+                        //color: $color_crumbs00;
+                        min-width: em($font_base * 4);
                         &:before {
+                            @include background-image(linear-gradient($color_menu02, $color_menu01));
                             content: "";
                             border-top: em($hormiga_triangulo) solid transparent;
                             border-bottom: em($hormiga_triangulo) solid transparent;
-                            border-left: em($hormiga_triangulo) solid $color_crumbs03;
+                            border-left: em($hormiga_triangulo) solid $color02; // darken($color_crumbs01, 20%);
                             position: absolute;
                             left: 0;
                             top: 0;
+                        }
+                        &:after {
+                            //content: "";
+                            //border-top: em($hormiga_triangulo) solid transparent;
+                            //border-bottom: em($hormiga_triangulo) solid transparent;
+                            //border-left: em($hormiga_triangulo) solid $color_crumbs02;
+                            //position: absolute;
+                            //right: -em($hormiga_triangulo);
+                            //top: 0;
+                            //z-index: 1;
                         }
                     }
                     &:first-child a {
@@ -440,17 +451,23 @@ h6 {
                     }
                     &:last-child a {
                         padding-right: em(10px);
-                        //border-top-right-radius: em(10px);
-                        //border-bottom-right-radius: em(10px);
+                        border-top-right-radius: em($hormiga_altura/2);
+                        border-bottom-right-radius: em($hormiga_altura/2);
                         &:after {
                             display: none;
                         }
                     }
                     a:hover {
-                        background: $color03; //$color_crumbs04;
+                        background: $color03; //$color_crumbs04;    // hover del texto
                         color:  $color_crumbs01;
                         &:after {
-                            border-left-color: $color03; //$color_crumbs04;
+                            //display: none;
+                            border-left-color: Blue; //$color03; //$color_crumbs04;        // Triangulo final (excepto ultima pieza.
+                            color:  $color_crumbs01;
+                        }
+                        &:before{
+                            //display: none;
+                            border-left-color: lighten($color_crumbs01, 20%);
                             color:  $color_crumbs01;
                         }
                     }
@@ -495,7 +512,7 @@ h6 {
                         li{
                             //padding-left: 0;
                             //-webkit-transition: all 0.5s ease-in-out;
-                            text-indent: em(15px);
+                            //text-indent: em(15px);
 
                             a{
                                 //color: $color00;
@@ -550,7 +567,8 @@ h6 {
                             top: 0;
                             bottom: inherit;
                             width: em(5px);
-                            text-indent: 0;
+                            //text-indent: 0;
+                            padding-left: -em(15px);
                         }
                     }
                 }
@@ -656,7 +674,11 @@ h6 {
                     h2{
                         text-align:center;
                     }
-
+                    div.calendario_eventos{
+                        div{
+                            text-align: center;
+                        }
+                    }
                 }
 
                 section#varios{
