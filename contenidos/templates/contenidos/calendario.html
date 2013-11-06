@@ -4,6 +4,13 @@
 {{block.super}} Agenda para el mes
 {% endblock title %}
 
+{% block hormiga %}
+<ul>
+	<li><a href="#">Agenda</a></li>
+	<li><a href="#">{{start|date:"F Y"}}</a></li>
+</ul>
+{% endblock hormiga %}
+
 {% block contentl %}
 	{% include "contenidos/_calendario_eventos.html" %}
 {% endblock contentl %}
