@@ -90,6 +90,11 @@ class TIPO:
 		(DOSSIERES_DE_PRENSA, 'Dossieres de Prensa'),
 		)
 	DICT = dict(CHOICES)
+        BASES_HORMIGAS = {
+            RECURSOS_AUDIOVISUALES: 'Fondos y Recursos Documentales',
+            PRESENCIA_EN_PRENSA: 'Fondos y Recursos Documentales',
+            DOSSIERES_DE_PRENSA: 'Sala de Prensa',
+        }
 
 class Documento(models.Model):
 	tipo = models.IntegerField(choices=TIPO.CHOICES)

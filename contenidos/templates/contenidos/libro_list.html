@@ -1,7 +1,7 @@
 {% extends 'base_1col.html' %}
 
 {% block title %}
-{{block.super}} Listado de libros
+{{block.super}} Catálogo de publicaciones
 {% endblock title %}
 
 {% block extra_head %}
@@ -15,11 +15,21 @@
 </style>
 {% endblock extra_head %}
 
+{% block hormiga %}
+<ul>
+	{# PROBLEMA: el menu en sí no tiene sitio fijo #}
+	<li><a href="#">Fondos y Recursos Documentales</a></li>
+	<li><a href="#">Catálogo de publicaciones</a></li>
+</ul>
+{% endblock hormiga %}
 
 {% block body %}
+	{# FALTA EL BUSCADOR #}
 	<div id="space">
 		{% for object in object_list %}
 			{% include "contenidos/_libro.html" %}
+		{% empty %}
+			<p>(No hay publicaciones)</p>
 		{% endfor %}
 		{% include "contenidos/_paginator.html" %}
 	</div>
