@@ -20,6 +20,3 @@ server {
         proxy_set_header X-Real-IP $remote_addr;
     }
 }
-
-# en /etc/hosts:
-# 91.121.221.164 prod.fundacionjuannegrin.com
