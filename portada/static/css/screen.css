@@ -81,27 +81,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   src: url('fonts/tron/tron-webfont.eot?#iefix') format('eot'), url('fonts/tron/tron-webfont.woff') format('woff'), url('fonts/tron/tron-webfont.ttf') format('truetype'), url('fonts/tron/tron-webfont.svg') format('svg');
 }
 
-/* line 117, ../sass/_base.scss */
+/* line 118, ../sass/_base.scss */
 .sf-speakeasy {
   font-family: "sf-speakeasy";
 }
 
-/* line 121, ../sass/_base.scss */
+/* line 122, ../sass/_base.scss */
 .glyphicons {
   font-family: "glyphicons";
 }
 
-/* line 125, ../sass/_base.scss */
+/* line 126, ../sass/_base.scss */
 .tron {
   font-family: "tron";
 }
 
-/* line 131, ../sass/_base.scss */
+/* line 132, ../sass/_base.scss */
 .opensans {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* line 135, ../sass/_base.scss */
+/* line 136, ../sass/_base.scss */
 .cantarell {
   font-family: 'Cantarell', sans-serif;
 }
@@ -691,51 +691,56 @@ section#agenda div.calendario_eventos div {
 section#agenda div.calendario_eventos div span a {
   text-decoration: none;
 }
-/* line 28, ../sass/estilos/_agenda.scss */
+/* line 29, ../sass/estilos/_agenda.scss */
 section#agenda div.calendario_eventos table thead tr {
   padding: 0 0 0.3125em 0;
 }
-/* line 30, ../sass/estilos/_agenda.scss */
+/* line 31, ../sass/estilos/_agenda.scss */
 section#agenda div.calendario_eventos table thead tr th {
   width: 14%;
   background-color: #918b74;
   color: white;
 }
-/* line 38, ../sass/estilos/_agenda.scss */
+/* line 39, ../sass/estilos/_agenda.scss */
 section#agenda div.calendario_eventos table tbody {
   background-color: whitesmoke;
 }
-/* line 41, ../sass/estilos/_agenda.scss */
+/* line 42, ../sass/estilos/_agenda.scss */
 section#agenda div.calendario_eventos table tbody tr td.sin_dia {
   text-align: right;
 }
-/* line 44, ../sass/estilos/_agenda.scss */
+/* line 45, ../sass/estilos/_agenda.scss */
 section#agenda div.calendario_eventos table tbody tr td.dia {
   text-align: right;
-  background-color: white;
 }
-/* line 48, ../sass/estilos/_agenda.scss */
+/* line 51, ../sass/estilos/_agenda.scss */
 section#agenda div.calendario_eventos table tbody tr td.actual {
+  text-align: right;
+}
+/* line 53, ../sass/estilos/_agenda.scss */
+section#agenda div.calendario_eventos table tbody tr td.actual span {
   -webkit-border-radius: 0.1875em;
   -moz-border-radius: 0.1875em;
   -ms-border-radius: 0.1875em;
   -o-border-radius: 0.1875em;
   border-radius: 0.1875em;
-  text-align: right;
   background-color: transparent;
   color: black;
   border-style: solid;
   border-color: red;
   border-width: 0.0625em;
 }
-/* line 57, ../sass/estilos/_agenda.scss */
+/* line 62, ../sass/estilos/_agenda.scss */
 section#agenda div.calendario_eventos table tbody tr td.evento {
+  text-align: right;
+}
+/* line 64, ../sass/estilos/_agenda.scss */
+section#agenda div.calendario_eventos table tbody tr td.evento span {
   -webkit-border-radius: 0.1875em;
   -moz-border-radius: 0.1875em;
   -ms-border-radius: 0.1875em;
   -o-border-radius: 0.1875em;
   border-radius: 0.1875em;
-  text-align: right;
   background-color: #918b74;
   color: white;
 }
@@ -834,7 +839,7 @@ footer#footer div#legal {
 /* -------------------------------------------------------------------------*/
 /* Layout */
 /* -------------------------------------------------------------------------*/
-/* line 33, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 a:link {
   color: black;
   text-decoration: none;
@@ -845,61 +850,62 @@ a:link {
   -o-transition: opacity .3s ease-in, color .3s ease-in, background-color .3s ease-in;
 }
 
-/* line 42, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 a:active {
   color: black;
   text-decoration: none;
 }
 
-/* line 47, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 a:visited {
   color: black;
   text-decoration: none;
 }
 
-/* line 52, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 a:hover {
   color: black;
   text-decoration: underline;
 }
 
-/* line 57, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 html {
   font-size: 16px;
   font-family: cantarell, sans-serif;
+  line-height: normal;
 }
 
-/* line 63, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 h1 {
   padding: 0.3125em 0;
 }
 
-/* line 69, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 h2 {
   padding: 0.3125em 0;
 }
 
-/* line 75, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 h3 {
   padding: 0.3125em 0;
 }
 
-/* line 81, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 h4 {
   padding: 0.3125em 0;
 }
 
-/* line 87, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 h5 {
   padding: 0.3125em 0;
 }
 
-/* line 93, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 h6 {
   padding: 0.3125em 0;
 }
 
-/* line 99, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 .container {
   *zoom: 1;
   max-width: 60em;
@@ -922,14 +928,14 @@ h6 {
   display: table;
   clear: both;
 }
-/* line 188, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
 .container header section#banner section#relleno {
   width: 74.76636%;
   float: left;
   margin-right: 0.93458%;
   display: inline;
 }
-/* line 192, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 .container header section#banner section#caja {
   width: 24.29907%;
   float: right;
@@ -937,7 +943,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 195, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
 .container header section#banner section#caja section#acceso {
   width: 100%;
   float: right;
@@ -945,7 +951,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 199, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 .container header section#banner section#caja section#social {
   width: 100%;
   float: right;
@@ -953,7 +959,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 203, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 .container header section#banner section#caja section#contacto {
   width: 100%;
   float: right;
@@ -961,7 +967,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 209, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 .container header section#menus {
   width: 100%;
   float: right;
@@ -969,7 +975,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 254, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 .container div.content {
   width: 100%;
   float: right;
@@ -977,7 +983,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 258, ../sass/screen.scss */
+/* line 261, ../sass/screen.scss */
 .container div.content section#hormiga {
   width: 100%;
   float: right;
@@ -985,7 +991,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 280, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 .container div.content section#info {
   width: 100%;
   float: right;
@@ -993,7 +999,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 284, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 .container div.content section#variable {
   width: 100%;
   float: right;
@@ -1001,14 +1007,14 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 287, ../sass/screen.scss */
+/* line 290, ../sass/screen.scss */
 .container div.content section#variable aside#asidel {
   width: 24.29907%;
   float: left;
   margin-right: 0.93458%;
   display: inline;
 }
-/* line 307, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 .container div.content section#variable section#body {
   width: 49.53271%;
   float: left;
@@ -1019,21 +1025,21 @@ h6 {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 314, ../sass/screen.scss */
+/* line 317, ../sass/screen.scss */
 .container div.content section#variable section#body div#ourinfo {
   width: 100%;
   float: left;
   margin-right: 1.88679%;
   display: inline;
 }
-/* line 317, ../sass/screen.scss */
+/* line 320, ../sass/screen.scss */
 .container div.content section#variable section#body div#ourinfo section#where {
   width: 49.0566%;
   float: left;
   margin-right: 1.88679%;
   display: inline;
 }
-/* line 321, ../sass/screen.scss */
+/* line 324, ../sass/screen.scss */
 .container div.content section#variable section#body div#ourinfo section#services {
   width: 49.0566%;
   float: right;
@@ -1041,7 +1047,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 333, ../sass/screen.scss */
+/* line 336, ../sass/screen.scss */
 .container div.content section#variable aside#asider {
   width: 24.29907%;
   float: right;
@@ -1049,14 +1055,14 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 355, ../sass/screen.scss */
+/* line 358, ../sass/screen.scss */
 .container div.content section#variable_2col section#body {
   width: 74.76636%;
   float: left;
   margin-right: 0.93458%;
   display: inline;
 }
-/* line 361, ../sass/screen.scss */
+/* line 364, ../sass/screen.scss */
 .container div.content section#variable_2col aside#asider {
   width: 24.29907%;
   float: right;
@@ -1064,21 +1070,21 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 380, ../sass/screen.scss */
+/* line 383, ../sass/screen.scss */
 .container div.content section#variable_2col_especial section#body {
   width: 74.76636%;
   float: left;
   margin-right: 0.93458%;
   display: inline;
 }
-/* line 385, ../sass/screen.scss */
+/* line 388, ../sass/screen.scss */
 .container div.content section#variable_2col_especial section#body div#space section#bodyleft {
   width: 43.75%;
   float: left;
   margin-right: 1.25%;
   display: inline;
 }
-/* line 389, ../sass/screen.scss */
+/* line 392, ../sass/screen.scss */
 .container div.content section#variable_2col_especial section#body div#space section#bodyright {
   width: 55.0%;
   float: right;
@@ -1086,7 +1092,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 397, ../sass/screen.scss */
+/* line 400, ../sass/screen.scss */
 .container div.content section#variable_2col_especial aside#asider {
   width: 24.29907%;
   float: right;
@@ -1094,7 +1100,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 423, ../sass/screen.scss */
+/* line 426, ../sass/screen.scss */
 .container footer#footer {
   width: 100%;
   float: right;
@@ -1102,7 +1108,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 426, ../sass/screen.scss */
+/* line 429, ../sass/screen.scss */
 .container footer#footer div#finicial {
   width: 100%;
   float: right;
@@ -1110,28 +1116,28 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 430, ../sass/screen.scss */
+/* line 433, ../sass/screen.scss */
 .container footer#footer div#col1 {
   width: 24.29907%;
   float: left;
   margin-right: 0.93458%;
   display: inline;
 }
-/* line 434, ../sass/screen.scss */
+/* line 437, ../sass/screen.scss */
 .container footer#footer div#col2 {
   width: 24.29907%;
   float: left;
   margin-right: 0.93458%;
   display: inline;
 }
-/* line 438, ../sass/screen.scss */
+/* line 441, ../sass/screen.scss */
 .container footer#footer div#col3 {
   width: 24.29907%;
   float: left;
   margin-right: 0.93458%;
   display: inline;
 }
-/* line 442, ../sass/screen.scss */
+/* line 445, ../sass/screen.scss */
 .container footer#footer div#col4 {
   width: 24.29907%;
   float: right;
@@ -1139,7 +1145,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 446, ../sass/screen.scss */
+/* line 449, ../sass/screen.scss */
 .container footer#footer div#ffinal {
   width: 100%;
   float: right;
@@ -1147,7 +1153,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 451, ../sass/screen.scss */
+/* line 454, ../sass/screen.scss */
 .container footer#footer div#legal {
   width: 100%;
   float: right;

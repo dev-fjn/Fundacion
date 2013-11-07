@@ -1,4 +1,4 @@
-//
+// Calendario / Agenda de eventos
 $radio-agenda: 3px;
 
 section#agenda{
@@ -24,6 +24,7 @@ section#agenda{
 
         table{
             // Aquí va la cabecera, con los días
+
             thead{
                 tr{
                     padding: 0 0 em(5px) 0;
@@ -43,22 +44,28 @@ section#agenda{
                     }
                     td.dia{
                         text-align: right;
-                        background-color: $color01;
+                        span{
+                            //background-color: $color01;
+                        }
                     }
                     td.actual{
-                        @include border-radius(em($radio-agenda));
                         text-align: right;
-                        background-color: transparent;
-                        color: $color00;
-                        border-style: solid;
-                        border-color: Red ;
-                        border-width: em(1px);
+                        span{
+                            @include border-radius(em($radio-agenda));
+                            background-color: transparent;
+                            color: $color00;
+                            border-style: solid;
+                            border-color: Red ;
+                            border-width: em(1px);
+                        }
                     }
                     td.evento{
-                        @include border-radius(em($radio-agenda));
                         text-align: right;
-                        background-color: $color03;
-                        color: $color01;
+                        span{
+                            @include border-radius(em($radio-agenda));
+                            background-color: $color03;
+                            color: $color01;
+                        }
                     }
                 }
             }
