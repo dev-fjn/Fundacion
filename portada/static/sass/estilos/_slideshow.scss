@@ -1,0 +1,10 @@
+// Espacio para el slideshow
+
+section#slide{
+	@include border-radius($radio-standar);
+	border: 1px solid $color08 ;
+	text-align: center;
+	vertical-align: middle;
+	padding: .2em;
+	margin: .2em;
+}

@@ -1,0 +1,30 @@
+// Widget derecho, dedicado a los eventos internos y externos
+$padding-interno-eventos: 5px;
+$margen-interno-eventos: 5px;
+
+section#varios{
+    @include border-radius($radio-standar);
+    border: 1px solid $color08 ;
+    padding: .2em;
+    margin: .5em;
+
+    section#internal{
+        @include border-radius($radio-standar);
+        border: 1px solid $color08 ;
+        padding: em($padding-interno-eventos);
+        margin: em($margen-interno-eventos);
+        h2{
+            text-align:center;
+        }
+    }
+
+    section#externas{
+        @include border-radius($radio-standar);
+        border: 1px solid $color08 ;
+        padding: em($padding-interno-eventos);
+        margin: em($margen-interno-eventos);
+        h2{
+            text-align:center;
+        }
+    }
+}

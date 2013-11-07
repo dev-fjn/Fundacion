@@ -1,0 +1,35 @@
+// Pie de pagina
+
+footer#footer{
+	background-color: $color07;
+
+	div#finicial{
+		min-height:2em;
+	}
+
+	div#col1{
+		@include border-radius($radio-standar);
+	}
+
+	div#col2{
+		@include border-radius($radio-standar);
+
+	}
+
+	div#col3{
+		@include border-radius($radio-standar);
+	}
+
+	div#col4{
+		@include border-radius($radio-standar);
+	}
+
+	div#ffinal{
+		min-height:2em;
+	}
+
+
+	div#legal{
+		text-align:right;
+	}
+}
