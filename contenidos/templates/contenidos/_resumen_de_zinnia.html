@@ -1,0 +1,8 @@
+<ul>
+	{% for blog in object_list %}
+	<li><a href="{{blog.get_absolute_url}}">{{blog.title}}</a></li>
+	{% empty %}
+	<li>( No hay eventos previstos en los próximos días )</li>
+	{% endfor %}
+</ul>
+
