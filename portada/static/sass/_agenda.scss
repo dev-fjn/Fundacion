@@ -1,0 +1,67 @@
+//
+$radio-agenda: 3px;
+
+section#agenda{
+    @include border-radius($radio-standar);
+    padding: .5em;
+    margin: .5em;
+
+    h2{
+        text-align:center;
+    }
+
+    div.calendario_eventos{
+        // Mes y enlaces
+        div{
+            text-align: center;
+            padding: 0 0 em(5px) 0;
+            span{
+                a{
+                    text-decoration:none;
+                }
+            }
+        }
+
+        table{
+            // Aquí va la cabecera, con los días
+            thead{
+                tr{
+                    padding: 0 0 em(5px) 0;
+                    th{
+                        width: 14%;
+                        background-color: $color03;
+                        color: $color01;
+                    }
+                }
+            }
+            // Aquí, el calendario propiamente dicho.
+            tbody{
+                    background-color: $color13;
+                tr{
+                    td.sin_dia{
+                        text-align: right;
+                    }
+                    td.dia{
+                        text-align: right;
+                        background-color: $color01;
+                    }
+                    td.actual{
+                        @include border-radius(em($radio-agenda));
+                        text-align: right;
+                        background-color: transparent;
+                        color: $color00;
+                        border-style: solid;
+                        border-color: Red ;
+                        border-width: em(1px);
+                    }
+                    td.evento{
+                        @include border-radius(em($radio-agenda));
+                        text-align: right;
+                        background-color: $color03;
+                        color: $color01;
+                    }
+                }
+            }
+        }
+    }
+}
