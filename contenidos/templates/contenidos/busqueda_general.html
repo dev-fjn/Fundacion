@@ -1,0 +1,33 @@
+{% extends 'base_1col.html' %}
+
+{% block title %}
+	{{block.super}} Buscador simple 
+{% endblock title %}
+
+
+{% block hormiga %}
+	<ul>
+		<li><a href="#">Buscador simple</a></li>
+		<li><a href="#">en eventos, paginas fijas y catalogo de publicaciones</a></li>
+	</ul>
+{% endblock hormiga %}
+
+{% block body %}
+	<div id="space">
+		{% include "contenidos/_form_busqueda_general.html" %}
+		{% if error %}
+			<div style="color: red" class="error">No se pudo realizar la búsquda: {{error}}</div>
+		{% else %}
+			{% for object in eventos_list %}
+			Evento: <a href="{% url 'evento_view' object.pk %}">{{object}}</a><br />
+			{% endfor %}
+			{% for object in paginas_list %}
+			Página: <a href="{{object.url}}">{{object.title}}</a><br />
+			{% endfor %}
+			{% for object in libros_list %}
+			Libro: {{object.titulo}} <div style="border: 1px solid red">{% include "contenidos/_libro.html" %}</div>
+			{% endfor %}
+		{% endif %}
+	</div>
+{% endblock body %}
+
