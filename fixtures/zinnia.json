@@ -9,7 +9,7 @@
   "title": "Noticias", 
   "level": 0, 
   "lft": 1, 
-  "tree_id": 3, 
+  "tree_id": 4, 
   "slug": "noticias"
  }
 },
@@ -23,7 +23,7 @@
   "title": "Art\u00edculos", 
   "level": 0, 
   "lft": 1, 
-  "tree_id": 2, 
+  "tree_id": 3, 
   "slug": "articulos"
  }
 },
@@ -31,7 +31,7 @@
  "pk": 3, 
  "model": "zinnia.category", 
  "fields": {
-  "rght": 2, 
+  "rght": 6, 
   "description": "", 
   "parent": null, 
   "title": "Actividades", 
@@ -39,6 +39,34 @@
   "lft": 1, 
   "tree_id": 1, 
   "slug": "actividades"
+ }
+},
+{
+ "pk": 4, 
+ "model": "zinnia.category", 
+ "fields": {
+  "rght": 3, 
+  "description": "", 
+  "parent": 3, 
+  "title": "Externas", 
+  "level": 1, 
+  "lft": 2, 
+  "tree_id": 1, 
+  "slug": "actividades-externas"
+ }
+},
+{
+ "pk": 5, 
+ "model": "zinnia.category", 
+ "fields": {
+  "rght": 5, 
+  "description": "", 
+  "parent": 3, 
+  "title": "Internas", 
+  "level": 1, 
+  "lft": 4, 
+  "tree_id": 1, 
+  "slug": "actividades-internas"
  }
 },
 {

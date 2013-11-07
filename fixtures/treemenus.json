@@ -26,19 +26,6 @@
  }
 },
 {
- "pk": 3, 
- "model": "treemenus.menuitem", 
- "fields": {
-  "parent": 1, 
-  "level": 1, 
-  "url": "/fundacion/", 
-  "menu": 1, 
-  "rank": 1, 
-  "caption": "Fundaci\u00f3n", 
-  "named_url": ""
- }
-},
-{
  "pk": 4, 
  "model": "treemenus.menuitem", 
  "fields": {
@@ -46,7 +33,7 @@
   "level": 1, 
   "url": "/", 
   "menu": 1, 
-  "rank": 2, 
+  "rank": 1, 
   "caption": "Juan Negr\u00edn", 
   "named_url": ""
  }
@@ -59,7 +46,7 @@
   "level": 1, 
   "url": "", 
   "menu": 1, 
-  "rank": 3, 
+  "rank": 2, 
   "caption": "Fondos y Recursos Documentales", 
   "named_url": ""
  }
@@ -72,73 +59,8 @@
   "level": 1, 
   "url": "/sala-de-prensa/", 
   "menu": 1, 
-  "rank": 4, 
-  "caption": "Sala de Prensa", 
-  "named_url": ""
- }
-},
-{
- "pk": 8, 
- "model": "treemenus.menuitem", 
- "fields": {
-  "parent": 3, 
-  "level": 2, 
-  "url": "/presidente/", 
-  "menu": 1, 
-  "rank": 0, 
-  "caption": "Presidente", 
-  "named_url": ""
- }
-},
-{
- "pk": 9, 
- "model": "treemenus.menuitem", 
- "fields": {
-  "parent": 3, 
-  "level": 2, 
-  "url": "/presidenta-de-honor/", 
-  "menu": 1, 
-  "rank": 1, 
-  "caption": "Presidenta de honor", 
-  "named_url": ""
- }
-},
-{
- "pk": 10, 
- "model": "treemenus.menuitem", 
- "fields": {
-  "parent": 3, 
-  "level": 2, 
-  "url": "/patronato/", 
-  "menu": 1, 
-  "rank": 2, 
-  "caption": "Patronato", 
-  "named_url": ""
- }
-},
-{
- "pk": 11, 
- "model": "treemenus.menuitem", 
- "fields": {
-  "parent": 3, 
-  "level": 2, 
-  "url": "/objetivos/", 
-  "menu": 1, 
   "rank": 3, 
-  "caption": "Objetivos", 
-  "named_url": ""
- }
-},
-{
- "pk": 12, 
- "model": "treemenus.menuitem", 
- "fields": {
-  "parent": 3, 
-  "level": 2, 
-  "url": "/hacerce-amigo-de-la-fundacion/", 
-  "menu": 1, 
-  "rank": 4, 
-  "caption": "Hacerse amigo de la Fundaci\u00f3n", 
+  "caption": "Sala de Prensa", 
   "named_url": ""
  }
 },
@@ -319,9 +241,113 @@
   "level": 1, 
   "url": "", 
   "menu": 1, 
-  "rank": 5, 
+  "rank": 4, 
   "caption": "Bit\u00e1cora", 
   "named_url": "zinnia_entry_archive_index"
+ }
+},
+{
+ "pk": 27, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": null, 
+  "level": 0, 
+  "url": "", 
+  "menu": 3, 
+  "rank": 0, 
+  "caption": "raiz", 
+  "named_url": ""
+ }
+},
+{
+ "pk": 28, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 27, 
+  "level": 1, 
+  "url": "/hacerce-amigo-de-la-fundacion/", 
+  "menu": 3, 
+  "rank": 0, 
+  "caption": "Hacerse amigo de la Fundaci\u00f3n", 
+  "named_url": ""
+ }
+},
+{
+ "pk": 29, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": null, 
+  "level": 0, 
+  "url": "", 
+  "menu": 4, 
+  "rank": 0, 
+  "caption": "raiz", 
+  "named_url": ""
+ }
+},
+{
+ "pk": 30, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 29, 
+  "level": 1, 
+  "url": "/donde-estamos/", 
+  "menu": 4, 
+  "rank": 0, 
+  "caption": "Donde estamos", 
+  "named_url": ""
+ }
+},
+{
+ "pk": 31, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": null, 
+  "level": 0, 
+  "url": "", 
+  "menu": 5, 
+  "rank": 0, 
+  "caption": "raiz", 
+  "named_url": ""
+ }
+},
+{
+ "pk": 32, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 31, 
+  "level": 1, 
+  "url": "/contacto/", 
+  "menu": 5, 
+  "rank": 0, 
+  "caption": "Contacto", 
+  "named_url": ""
+ }
+},
+{
+ "pk": 33, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": null, 
+  "level": 0, 
+  "url": "", 
+  "menu": 6, 
+  "rank": 0, 
+  "caption": "raiz", 
+  "named_url": ""
+ }
+},
+{
+ "pk": 34, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 33, 
+  "level": 1, 
+  "url": "/aviso-legal/", 
+  "menu": 6, 
+  "rank": 0, 
+  "caption": "Aviso legal", 
+  "named_url": ""
  }
 },
 {
@@ -333,11 +359,35 @@
  }
 },
 {
- "pk": 2, 
+ "pk": 3, 
  "model": "treemenus.menu", 
  "fields": {
-  "root_item": 3, 
-  "name": "piedepagina"
+  "root_item": 27, 
+  "name": "pie1"
+ }
+},
+{
+ "pk": 4, 
+ "model": "treemenus.menu", 
+ "fields": {
+  "root_item": 29, 
+  "name": "pie2"
+ }
+},
+{
+ "pk": 5, 
+ "model": "treemenus.menu", 
+ "fields": {
+  "root_item": 31, 
+  "name": "pie3"
+ }
+},
+{
+ "pk": 6, 
+ "model": "treemenus.menu", 
+ "fields": {
+  "root_item": 33, 
+  "name": "pie4"
  }
 }
 ]
