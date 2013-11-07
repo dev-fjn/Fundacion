@@ -10,6 +10,7 @@
 	div.datos { min-height: 200px; border: 1px solid gray; margin: 5px; padding: 2px; float: left; %; clear: left; }
 	ul.adjuntos { margin-left: 200px; padding: 5px; list-style: inherit; }
 	.right { text-align: right; }
+	form { border: 1px solid green; }
 </style>
 {% endblock extra_head %}
 
@@ -24,7 +25,8 @@
 	<h1>{{tipo}}</h1>
 	<div id="space">
 		<form method="GET" action="." >
-			Búsqueda (por título o descripción) <input type="text" name="query" value="{{query}}" />
+			<strong>Búsqueda</strong>
+			<div><label for='input_query'>(por título o descripción)</label> <input type="text" id="input_query" name="query" value="{{query}}" /></div>
 			<input type="submit" value="Buscar" />
 		</form>
 		{% if count %}
