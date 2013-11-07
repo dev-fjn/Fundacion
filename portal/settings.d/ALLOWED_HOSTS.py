@@ -6,4 +6,4 @@ False.
 See https://docs.djangoproject.com/en/1.4/ref/settings/#allowed-hosts
 '''
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['prod.fundacionjuannegrin.com', 'www.fundacionjuannegrin.com', 'fundacionjuannegrin.com']
