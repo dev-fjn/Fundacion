@@ -21,16 +21,21 @@
 {% endblock hormiga %}
 
 {% block body %}
-	{# FALTA EL BUSCADOR #}
 	<h1>{{tipo}}</h1>
 	<div id="space">
-		{% for object in object_list %}
-			{% include "contenidos/_documento.html" %}
-		{% empty %}
+		<form method="GET" action="." >
+			Búsqueda (por título o descripción) <input type="text" name="query" value="{{query}}" />
+			<input type="submit" value="Buscar" />
+		</form>
+		{% if count %}
+			{{count}} Resultados <br />
+			{% for object in object_list %}
+				{% include "contenidos/_documento.html" %}
+			{% endfor %}
+			{% include "contenidos/_paginator.html" %}
+		{% else %}
 			<p>(No hay documentos)</p>
-		{% endfor %}
-		{% include "contenidos/_paginator.html" %}
+		{% endif %}
 	</div>
 {% endblock body %}
-
 
