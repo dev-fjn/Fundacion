@@ -3,10 +3,6 @@ $radio-agenda: 3px;
 
 section#agenda{
     @include border-radius($radio-standar);
-    // TODO
-    //@include background-image(linear-gradient($color_menu01, $color_menu02));
-    //background-color: $color11;
-
     padding: .5em;
     margin: .5em;
 
@@ -27,9 +23,8 @@ section#agenda{
         }
 
         table{
-            // Días
+            // Aquí va la cabecera, con los días
             thead{
-
                 tr{
                     padding: 0 0 em(5px) 0;
                     th{
@@ -39,14 +34,12 @@ section#agenda{
                     }
                 }
             }
-
+            // Aquí, el calendario propiamente dicho.
             tbody{
                     background-color: $color13;
                 tr{
-
                     td.sin_dia{
                         text-align: right;
-
                     }
                     td.dia{
                         text-align: right;

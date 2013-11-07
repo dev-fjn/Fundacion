@@ -44,8 +44,8 @@
                     <section id="relleno" title="Logotipo de esta página">&nbsp;</section>
                     <section id="caja">
                         <section id="acceso">Acceso | Registro</section>
-                        <section id="social">[f] [t] RSS</section>
-                        <section id="contacto">eMail</section>
+                        <section id="social"><span><img src="static/img/f.png" alt="Facebook" height="41px" width="41px" /></span>&nbsp;<span><img src="static/img/t.png" alt="Twitter" height="41px" width="41px" /></span></section>
+                        <section id="contacto"><span><img src="static/img/mail.png" alt="Correo Electrónico" height="41px" width="41px" /></span>&nbsp;<span><img src="static/img/rss.png" alt="RSS" height="41px" width="41px" /></span></section>
                     </section>
                 </section>
                 <section id="menus">
@@ -204,11 +204,11 @@
                         <section id="hormiga">
                             {% block hormiga %}
                             <ul>
-                                <li><a href="#1">One</a></li>
-                                <li><a href="#2">Two</a></li>
-                                <li><a href="#3">Three</a></li>
-                                <li><a href="#4">Four</a></li>
-                                <li><a href="#5">Five</a></li>
+                                <li><a href="#1">Aquí</a></li>
+                                <li><a href="#2">se inicia</a></li>
+                                <li><a href="#3">el largo camino</a></li>
+                                <li><a href="#4">de las hormigas</a></li>
+                                <li><a href="#5">amazónicas</a></li>
                             </ul>
                             {% endblock hormiga %}
                         </section>
@@ -307,15 +307,13 @@
 
                                         <section id="varios">
                                             <section id="internal">
-                                                <h2>Actividades
-                                                    <br />Internas</h2>
+                                                <h2>Actividades Internas</h2>
                                                 {% block actividades_internas %}
                                                     <p>{% lorem 32 w %}</p>
                                                 {% endblock actividades_internas %}
                                             </section>
                                             <section id="externas">
-                                                <h2>Actividades
-                                                    <br />Externas</h2>
+                                                <h2>Actividades Externas</h2>
                                                 <p>{% lorem 41 w %}</p>
                                             </section>
                                         </section>
