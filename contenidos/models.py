@@ -1,7 +1,11 @@
 # -*- coding: utf-8 -*-
 
+from django.contrib.sites.models import Site
 from django.db import models
+from django.db.models.signals import post_save, pre_save
+from django.dispatch import receiver
 from filebrowser.fields import FileBrowseField
+from zinnia.models import Category as CategoryZinnia, Entry as EntryZinnia
 
 # Create your models here.
 
@@ -41,6 +45,9 @@ class Evento(models.Model):
 
 	def __unicode__(self):
 		return u"%s" % (self.titulo, )
+	
+	def fecha_simple(self):
+		return ", ".join([ev.simple() for ev in self.fechaevento_set.all()])
 
 	@staticmethod
 	def datos_para_calendario(start, end):
@@ -149,3 +156,18 @@ class AudioAdjunto(Adjunto):
         verbose_name = u'Audio adjunto'
         verbose_name_plural = u'Audios adjuntos'
 
+@receiver(post_save, sender=Evento)
+def crea_blog_al_guardar_evento(sender, instance, **kwargs):
+    if instance:
+		e, created = EntryZinnia.objects.get_or_create(slug="evento-%d" % instance.pk)
+		if created:
+			print "Autocreando entrada", e, e.pk
+			e.title = u"Nuevo evento: %s" % instance.titulo
+			e.content = u"<p>Se va a producir el siguiente evento durante los días %s.</p><p>%s</p>" % (instance.fecha_simple(), instance.resumen)
+			e.excerpt = "Se ha creado un nuevo evento en la agenda"
+			e.categories = CategoryZinnia.objects.filter(slug="actividades-externas")
+			e.sites = Site.objects.all()
+			e.comment_enabled = False
+			e.save()
+		else:
+			print "No sobreescribo entrada existente", e, e.pk
