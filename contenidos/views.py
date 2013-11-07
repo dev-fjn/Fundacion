@@ -1,8 +1,8 @@
 #-*- coding: utf-8 -*-
 
-from contenidos.forms import BusquedaComplejaForm
 from contenidos.models import Evento, FechaEvento, Libro, Documento, TIPO
 from contenidos.utiles import inicio_fin_mes, calendario_por_meses
+from django.conf import settings
 from django.core.urlresolvers import reverse
 from django.db.models import Q
 from django.utils import timezone
@@ -51,32 +51,55 @@ class EventoView(DetailView):
 
 class Libros(ListView):
 	model = Libro
-	paginate_by = 2
+	paginate_by = settings.CONTENIDOS_PAGINADOR_MAX
+
+	CAMPO_QUERY = [
+			('autor', 'autor__icontains'),
+			('isbn', 'isbn__icontains'),
+			('titulo', 'titulo__icontains'),
+		]
+
+	def get_queryset(self):
+		qs = super(Libros, self).get_queryset()
+		self.busqueda = {}
+		_filter = {}
+		for campo, query in self.CAMPO_QUERY:
+			valor = self.request.GET.get(campo, '').strip()
+			self.busqueda[campo] = valor
+			if valor:
+				_filter[query] = valor
+		qs = qs.filter(**_filter)
+		self.count = qs.count()
+		return qs
+
+	def get_context_data(self, **kwargs):
+		context = super(Libros, self).get_context_data(**kwargs)
+		context['buscador'] = self.busqueda
+		context['count'] = self.count
+		return context
 
 class Documentos(ListView):
 	model = Documento
-	paginate_by = 2
+	paginate_by = settings.CONTENIDOS_PAGINADOR_MAX
 
 	def get_queryset(self):
 		qs = super(Documentos, self).get_queryset()
 		if 'tipo' in self.kwargs:
 			qs = qs.filter(tipo=self.kwargs['tipo'])
+		self.query = self.request.GET.get('query', '').strip()
+		if self.query:
+			qs = qs.filter(Q(titulo__icontains=self.query)|Q(descripcion__icontains=self.query))
+		self.count = qs.count()
 		return qs
 
 	def get_context_data(self, **kwargs):
 		context = super(Documentos, self).get_context_data(**kwargs)
 		tipo = self.kwargs.get('tipo')
+		context["query"] = self.query
+		context["count"] = self.count
 		context["tipo"] = TIPO.DICT[tipo] if tipo in TIPO.DICT else "(Ninguno)"
 		context["base_tipo"] = TIPO.BASES_HORMIGAS[tipo] if tipo in TIPO.BASES_HORMIGAS else "(Ninguno)"
 		return context
-
-class BusquedaLibros(FormView):
-	form_class = BusquedaComplejaForm
-	template_name = "contenidos/busqueda_libros.html"
-	success_url = "."
-
-	def form_valid(self, form):
-		return super(BusquedaLibros, self).form_valid(form)
 
 class BusquedaGeneral(TemplateView):
 	template_name = "contenidos/busqueda_general.html"

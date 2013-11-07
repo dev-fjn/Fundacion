@@ -12,6 +12,8 @@
 	.libro ul { margin-left: 200px; padding: 5px; }
 	.libro li strong { display: inline-block; width: 200px; font-weight: bold;}
 	.right { text-align: right; }
+	form { border: 1px solid green; }
+	form div { display: inline-block; }
 </style>
 {% endblock extra_head %}
 
@@ -23,14 +25,24 @@
 {% endblock hormiga %}
 
 {% block body %}
-	{# FALTA EL BUSCADOR #}
+	<h1>Catálogo de publicaciones</h1>
 	<div id="space">
-		{% for object in object_list %}
-			{% include "contenidos/_libro.html" %}
-		{% empty %}
+		<form method="GET" action="{% url 'libros' %}">
+			<strong>Búsqueda</strong>
+			<div><label for="input_autor">(por autor)</label> <input type="text" id="input_autor" name="autor" value="{{buscador.autor}}" /></div>
+			<div><label for="input_isbn">(por ISBN)</label> <input type="text" id="input_isbn" name="isbn" value="{{buscador.isbn}}" /></div>
+			<div><label for="input_titulo">(por título)</label> <input type="text" id="input_titulo" name="titulo" value="{{buscador.titulo}}" /></div>
+			<input type="submit" value="Buscar" />
+		</form>
+		{% if count %}
+			{{count}} Resultados <br />
+			{% for object in object_list %}
+				{% include "contenidos/_libro.html" %}
+			{% endfor %}
+			{% include "contenidos/_paginator.html" %}
+		{% else %}
 			<p>(No hay publicaciones)</p>
-		{% endfor %}
-		{% include "contenidos/_paginator.html" %}
+		{% endif %}
 	</div>
 {% endblock body %}
 
