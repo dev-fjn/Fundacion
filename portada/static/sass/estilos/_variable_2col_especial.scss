@@ -1,0 +1,95 @@
+// Sección "varioable", con 2 columnas (especial)
+
+section#variable_2col_especial{
+
+	section#body{
+		// TODO
+		//@include background-image(linear-gradient($color_menu01, $color_menu02));
+		@include span-columns(9, 12);
+		@include border-radius($radio-standar);
+
+		div#space{
+			//background-color: Red;
+			max-width: 100%;
+			min-height:em(480px);
+			margin: 1em;
+			border: 1em;
+			padding: 1em;
+
+			section#bodyleft{
+				@include span-columns(4, 9);
+			}
+
+			section#bodyright{
+				@include span-columns(5 omega, 9);
+			}
+		}
+	}
+
+	aside#asider{
+		// Lateral Derecho
+		@include span-columns(3 omega, 12);
+		// TODO
+		//@include background-image(linear-gradient($color_menu01, $color_menu02));
+		//background-color: $color08;
+		//min-height: 10em;
+
+		section#agenda{
+			@include border-radius($radio-standar);
+			// TODO
+			//@include background-image(linear-gradient($color_menu01, $color_menu02));
+			//background-color: $color11;
+			padding: .2em;
+			margin: .2em;
+			border: 1px solid $color08 ;
+			h2{
+				text-align:center;
+			}
+
+		}
+
+		section#varios{
+			@include border-radius($radio-standar);
+			// TODO
+			//@include background-image(linear-gradient($color_menu01, $color_menu02));
+			//background-color: $color11;
+			padding: .2em;
+			margin: .2em;
+			border: 1px solid $color08 ;
+
+			section#internal{
+				@include border-radius($radio-standar);
+				// TODO
+				//@include background-image(linear-gradient($color_menu01, $color_menu02));
+				//background-color: $color11;
+				padding: .2em;
+				margin: .2em;
+				border: 1px solid $color08 ;
+				h2{
+					text-align:center;
+				}
+			}
+
+			section#externas{
+				@include border-radius($radio-standar);
+				// TODO
+				//@include background-image(linear-gradient($color_menu01, $color_menu02));
+				//background-color: $color11;
+				padding: .2em;
+				margin: .2em;
+				border: 1px solid $color08 ;
+				h2{
+					text-align:center;
+				}
+			}
+		}
+
+		section#banner2{
+			// TODO
+			//@include background-image(linear-gradient($color_menu01, $color_menu02));
+			text-align:center;
+			width:100%;
+		}
+	}
+
+}
