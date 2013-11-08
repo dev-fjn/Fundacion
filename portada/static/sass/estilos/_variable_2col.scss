@@ -1,75 +1,86 @@
 // Sección 'variable' con 2 columnas
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-//html body div.container div.content section#variable_2col section#body div.flatpage-i18n
-
 section#variable_2col{
 
     section#body{
-
-        @include border-radius($radio-standar);
-        //background-color: Red;
-
-        max-width: 69%;
-        min-height:em(480px);
-        margin: 1em;
-        border: 1em;
-        padding: 1em;
-
         text-align: justify;
 
         div.flatpage-i18n{
-            img{
-                border: 1px solid #000000;
-            }
-
-        }
-
-        div#space{
-            max-width: 100%;
+            @include border-radius($radio-standar);
+            //background-color: Red;
+            //max-width: 69%;
             min-height:em(480px);
-            margin: 1em;
-            border: 1em;
-            padding: 1em;
-        }
-    }
+            margin: em($font_base);
+            border: em($font_base);
+            padding: em($font_base);
 
-    aside#asider{
-        section#agenda{
-            @include border-radius($radio-standar);
-            padding: .2em;
-            margin: .2em;
-            border: 1px solid $color08 ;
-            h2{
-                text-align:center;
+            font: inherit;
+            font-size: 100%;
+
+            h1{
+                font-weight:700;
             }
-        }
 
-        section#varios{
-            @include border-radius($radio-standar);
-            padding: .2em;
-            margin: .2em;
-            border: 1px solid $color08 ;
+            img{
+                padding: em($font_base);
+            }
 
-            section#internal{
+            p{
+                padding-bottom: em($font_base);
+            }
+            dl{
                 @include border-radius($radio-standar);
-                padding: .2em;
-                margin: .2em;
-                border: 1px solid $color08 ;
-                h2{
-                    text-align:center;
+                dt{
+                    font-weight:700;
+                    padding-top: em($font_base);
+                }
+                dd{
+                    text-indent: em($font_base * 1.5);
+                    &:before{
+                        content: "\261E ";
+                    }
                 }
             }
 
-            section#externas{
-                @include border-radius($radio-standar);
-                padding: .2em;
-                margin: .2em;
-                border: 1px solid $color08 ;
-                h2{
-                    text-align:center;
-                }
-            }
         }
     }
+
+//    aside#asider{
+//        section#agenda{
+//            @include border-radius($radio-standar);
+//            padding: .2em;
+//            margin: .2em;
+//            border: 1px solid $color08 ;
+//            h2{
+//                text-align:center;
+//            }
+//        }
+//
+//        section#varios{
+//            @include border-radius($radio-standar);
+//            padding: .2em;
+//            margin: .2em;
+//            border: 1px solid $color08 ;
+//
+//            section#internal{
+//                @include border-radius($radio-standar);
+//                padding: .2em;
+//                margin: .2em;
+//                border: 1px solid $color08 ;
+//                h2{
+//                    text-align:center;
+//                }
+//            }
+//
+//            section#externas{
+//                @include border-radius($radio-standar);
+//                padding: .2em;
+//                margin: .2em;
+//                border: 1px solid $color08 ;
+//                h2{
+//                    text-align:center;
+//                }
+//            }
+//        }
+//    }
 }

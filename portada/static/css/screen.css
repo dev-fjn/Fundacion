@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 17, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -490,87 +491,56 @@ section#variable_1col section#body div#space {
   padding: 1em;
 }
 
-/* line 8, ../sass/estilos/_variable_2col.scss */
+/* line 5, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body {
-  -webkit-border-radius: 0.625em;
-  -moz-border-radius: 0.625em;
-  -ms-border-radius: 0.625em;
-  -o-border-radius: 0.625em;
-  border-radius: 0.625em;
-  max-width: 69%;
-  min-height: 30em;
-  margin: 1em;
-  border: 1em;
-  padding: 1em;
   text-align: justify;
 }
-/* line 22, ../sass/estilos/_variable_2col.scss */
-section#variable_2col section#body div.flatpage-i18n img {
-  border: 1px solid #000000;
-}
-/* line 28, ../sass/estilos/_variable_2col.scss */
-section#variable_2col section#body div#space {
-  max-width: 100%;
+/* line 8, ../sass/estilos/_variable_2col.scss */
+section#variable_2col section#body div.flatpage-i18n {
+  -webkit-border-radius: 0.625em;
+  -moz-border-radius: 0.625em;
+  -ms-border-radius: 0.625em;
+  -o-border-radius: 0.625em;
+  border-radius: 0.625em;
   min-height: 30em;
   margin: 1em;
   border: 1em;
   padding: 1em;
+  font: inherit;
+  font-size: 100%;
 }
-/* line 38, ../sass/estilos/_variable_2col.scss */
-section#variable_2col aside#asider section#agenda {
+/* line 20, ../sass/estilos/_variable_2col.scss */
+section#variable_2col section#body div.flatpage-i18n h1 {
+  font-weight: 700;
+}
+/* line 24, ../sass/estilos/_variable_2col.scss */
+section#variable_2col section#body div.flatpage-i18n img {
+  padding: 1em;
+}
+/* line 28, ../sass/estilos/_variable_2col.scss */
+section#variable_2col section#body div.flatpage-i18n p {
+  padding-bottom: 1em;
+}
+/* line 31, ../sass/estilos/_variable_2col.scss */
+section#variable_2col section#body div.flatpage-i18n dl {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
   -ms-border-radius: 0.625em;
   -o-border-radius: 0.625em;
   border-radius: 0.625em;
-  padding: .2em;
-  margin: .2em;
-  border: 1px solid #c1b7a4;
 }
-/* line 43, ../sass/estilos/_variable_2col.scss */
-section#variable_2col aside#asider section#agenda h2 {
-  text-align: center;
+/* line 33, ../sass/estilos/_variable_2col.scss */
+section#variable_2col section#body div.flatpage-i18n dl dt {
+  font-weight: 700;
+  padding-top: 1em;
 }
-/* line 48, ../sass/estilos/_variable_2col.scss */
-section#variable_2col aside#asider section#varios {
-  -webkit-border-radius: 0.625em;
-  -moz-border-radius: 0.625em;
-  -ms-border-radius: 0.625em;
-  -o-border-radius: 0.625em;
-  border-radius: 0.625em;
-  padding: .2em;
-  margin: .2em;
-  border: 1px solid #c1b7a4;
+/* line 37, ../sass/estilos/_variable_2col.scss */
+section#variable_2col section#body div.flatpage-i18n dl dd {
+  text-indent: 1.5em;
 }
-/* line 54, ../sass/estilos/_variable_2col.scss */
-section#variable_2col aside#asider section#varios section#internal {
-  -webkit-border-radius: 0.625em;
-  -moz-border-radius: 0.625em;
-  -ms-border-radius: 0.625em;
-  -o-border-radius: 0.625em;
-  border-radius: 0.625em;
-  padding: .2em;
-  margin: .2em;
-  border: 1px solid #c1b7a4;
-}
-/* line 59, ../sass/estilos/_variable_2col.scss */
-section#variable_2col aside#asider section#varios section#internal h2 {
-  text-align: center;
-}
-/* line 64, ../sass/estilos/_variable_2col.scss */
-section#variable_2col aside#asider section#varios section#externas {
-  -webkit-border-radius: 0.625em;
-  -moz-border-radius: 0.625em;
-  -ms-border-radius: 0.625em;
-  -o-border-radius: 0.625em;
-  border-radius: 0.625em;
-  padding: .2em;
-  margin: .2em;
-  border: 1px solid #c1b7a4;
-}
-/* line 69, ../sass/estilos/_variable_2col.scss */
-section#variable_2col aside#asider section#varios section#externas h2 {
-  text-align: center;
+/* line 39, ../sass/estilos/_variable_2col.scss */
+section#variable_2col section#body div.flatpage-i18n dl dd:before {
+  content: "\261E ";
 }
 
 /* line 5, ../sass/estilos/_variable_2col_especial.scss */
@@ -846,10 +816,80 @@ footer#footer div#legal {
   text-align: right;
 }
 
+/* line 5, ../sass/clases.scss */
+.poema {
+  margin: auto;
+  padding: 1.25em 0;
+  text-align: left;
+  width: 24.375em;
+}
+/* line 10, ../sass/clases.scss */
+.poema h1, .poema h2 {
+  font-weight: normal;
+  text-align: center;
+}
+/* line 14, ../sass/clases.scss */
+.poema h1 {
+  font-size: 2.125em;
+  line-height: 1.2;
+  margin-bottom: 0.625em;
+}
+/* line 19, ../sass/clases.scss */
+.poema h2 {
+  color: #666;
+  font-size: 1.125em;
+  font-style: italic;
+  margin-bottom: 1.875em;
+}
+/* line 25, ../sass/clases.scss */
+.poema p {
+  line-height: 1.5;
+  margin-bottom: 0.9375em;
+}
+/* line 30, ../sass/clases.scss */
+.poema h2:before {
+  content: '— ';
+}
+/* line 33, ../sass/clases.scss */
+.poema h2:after {
+  content: ' —';
+}
+/* line 36, ../sass/clases.scss */
+.poema h2 + p:first-letter {
+  float: left;
+  font-size: 2.375em;
+  line-height: 1;
+  margin: 0.125em 0.3125em 0 0;
+}
+/* line 44, ../sass/clases.scss */
+.poema p:first-line {
+  font-variant: small-caps;
+  letter-spacing: 0.0625em;
+}
+/* line 48, ../sass/clases.scss */
+.poema p:last-child {
+  margin-bottom: 1.875em;
+  padding-bottom: 1.875em;
+}
+
+/* line 56, ../sass/clases.scss */
+.firma {
+  text-align: right;
+}
+
+/* line 61, ../sass/clases.scss */
+.fallecidos {
+  text-indent: 1.5em;
+}
+/* line 63, ../sass/clases.scss */
+.fallecidos:after {
+  content: "\205C";
+}
+
 /* -------------------------------------------------------------------------*/
 /* Layout */
 /* -------------------------------------------------------------------------*/
-/* line 35, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 a:link {
   color: black;
   text-decoration: none;
@@ -860,62 +900,62 @@ a:link {
   -o-transition: opacity .3s ease-in, color .3s ease-in, background-color .3s ease-in;
 }
 
-/* line 45, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 a:active {
   color: black;
   text-decoration: none;
 }
 
-/* line 50, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 a:visited {
   color: black;
   text-decoration: none;
 }
 
-/* line 55, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 a:hover {
   color: black;
   text-decoration: underline;
 }
 
-/* line 60, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 html {
   font-size: 16px;
   font-family: cantarell, sans-serif;
   line-height: normal;
 }
 
-/* line 67, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 h1 {
   padding: 0.3125em 0;
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 h2 {
   padding: 0.3125em 0;
 }
 
-/* line 79, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 h3 {
   padding: 0.3125em 0;
 }
 
-/* line 85, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 h4 {
   padding: 0.3125em 0;
 }
 
-/* line 91, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 h5 {
   padding: 0.3125em 0;
 }
 
-/* line 97, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 h6 {
   padding: 0.3125em 0;
 }
 
-/* line 103, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 .container {
   *zoom: 1;
   max-width: 60em;
@@ -938,14 +978,14 @@ h6 {
   display: table;
   clear: both;
 }
-/* line 192, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 .container header section#banner section#relleno {
   width: 74.76636%;
   float: left;
   margin-right: 0.93458%;
   display: inline;
 }
-/* line 196, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 .container header section#banner section#caja {
   width: 24.29907%;
   float: right;
@@ -953,7 +993,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 199, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 .container header section#banner section#caja section#acceso {
   width: 100%;
   float: right;
@@ -961,7 +1001,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 203, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 .container header section#banner section#caja section#social {
   width: 100%;
   float: right;
@@ -969,7 +1009,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 207, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 .container header section#banner section#caja section#contacto {
   width: 100%;
   float: right;
@@ -977,7 +1017,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 213, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 .container header section#menus {
   width: 100%;
   float: right;
@@ -985,7 +1025,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 258, ../sass/screen.scss */
+/* line 261, ../sass/screen.scss */
 .container div.content {
   width: 100%;
   float: right;
@@ -993,7 +1033,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 262, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 .container div.content section#hormiga {
   width: 100%;
   float: right;
@@ -1001,7 +1041,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 284, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 .container div.content section#info {
   width: 100%;
   float: right;
@@ -1009,7 +1049,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 288, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 .container div.content section#variable {
   width: 100%;
   float: right;
@@ -1017,14 +1057,14 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 291, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 .container div.content section#variable aside#asidel {
   width: 24.29907%;
   float: left;
   margin-right: 0.93458%;
   display: inline;
 }
-/* line 311, ../sass/screen.scss */
+/* line 314, ../sass/screen.scss */
 .container div.content section#variable section#body {
   width: 49.53271%;
   float: left;
@@ -1035,21 +1075,21 @@ h6 {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 318, ../sass/screen.scss */
+/* line 321, ../sass/screen.scss */
 .container div.content section#variable section#body div#ourinfo {
   width: 100%;
   float: left;
   margin-right: 1.88679%;
   display: inline;
 }
-/* line 321, ../sass/screen.scss */
+/* line 324, ../sass/screen.scss */
 .container div.content section#variable section#body div#ourinfo section#where {
   width: 49.0566%;
   float: left;
   margin-right: 1.88679%;
   display: inline;
 }
-/* line 325, ../sass/screen.scss */
+/* line 328, ../sass/screen.scss */
 .container div.content section#variable section#body div#ourinfo section#services {
   width: 49.0566%;
   float: right;
@@ -1057,7 +1097,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 337, ../sass/screen.scss */
+/* line 340, ../sass/screen.scss */
 .container div.content section#variable aside#asider {
   width: 24.29907%;
   float: right;
@@ -1065,14 +1105,14 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 359, ../sass/screen.scss */
+/* line 362, ../sass/screen.scss */
 .container div.content section#variable_2col section#body {
   width: 74.76636%;
   float: left;
   margin-right: 0.93458%;
   display: inline;
 }
-/* line 365, ../sass/screen.scss */
+/* line 368, ../sass/screen.scss */
 .container div.content section#variable_2col aside#asider {
   width: 24.29907%;
   float: right;
@@ -1080,21 +1120,21 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 384, ../sass/screen.scss */
+/* line 387, ../sass/screen.scss */
 .container div.content section#variable_2col_especial section#body {
   width: 74.76636%;
   float: left;
   margin-right: 0.93458%;
   display: inline;
 }
-/* line 389, ../sass/screen.scss */
+/* line 392, ../sass/screen.scss */
 .container div.content section#variable_2col_especial section#body div#space section#bodyleft {
   width: 43.75%;
   float: left;
   margin-right: 1.25%;
   display: inline;
 }
-/* line 393, ../sass/screen.scss */
+/* line 396, ../sass/screen.scss */
 .container div.content section#variable_2col_especial section#body div#space section#bodyright {
   width: 55.0%;
   float: right;
@@ -1102,7 +1142,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 401, ../sass/screen.scss */
+/* line 404, ../sass/screen.scss */
 .container div.content section#variable_2col_especial aside#asider {
   width: 24.29907%;
   float: right;
@@ -1110,7 +1150,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 427, ../sass/screen.scss */
+/* line 430, ../sass/screen.scss */
 .container footer#footer {
   width: 100%;
   float: right;
@@ -1118,7 +1158,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 430, ../sass/screen.scss */
+/* line 433, ../sass/screen.scss */
 .container footer#footer div#finicial {
   width: 100%;
   float: right;
@@ -1126,28 +1166,28 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 434, ../sass/screen.scss */
+/* line 437, ../sass/screen.scss */
 .container footer#footer div#col1 {
   width: 24.29907%;
   float: left;
   margin-right: 0.93458%;
   display: inline;
 }
-/* line 438, ../sass/screen.scss */
+/* line 441, ../sass/screen.scss */
 .container footer#footer div#col2 {
   width: 24.29907%;
   float: left;
   margin-right: 0.93458%;
   display: inline;
 }
-/* line 442, ../sass/screen.scss */
+/* line 445, ../sass/screen.scss */
 .container footer#footer div#col3 {
   width: 24.29907%;
   float: left;
   margin-right: 0.93458%;
   display: inline;
 }
-/* line 446, ../sass/screen.scss */
+/* line 449, ../sass/screen.scss */
 .container footer#footer div#col4 {
   width: 24.29907%;
   float: right;
@@ -1155,7 +1195,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 450, ../sass/screen.scss */
+/* line 453, ../sass/screen.scss */
 .container footer#footer div#ffinal {
   width: 100%;
   float: right;
@@ -1163,7 +1203,7 @@ h6 {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 455, ../sass/screen.scss */
+/* line 458, ../sass/screen.scss */
 .container footer#footer div#legal {
   width: 100%;
   float: right;
