@@ -14,55 +14,30 @@ section#hormiga{
 	border-bottom: em(2px) solid $color_menu03;
 	text-align: left;
 	ul {
+		padding-left: em(20px);
 		list-style: none;
 		display: inline-table;
+		//li:first-child {
+		//	&:before {
+		//		content: "\2302";
+		//	}
+		//}
 		li {
+			&:before {
+				content: "› ";
+				color:  $color_crumbs03;
+			}
 			display: inline;
+			height: em($hormiga_altura);
 			a {
-				display: block;
-				float: left;
-				height: em($hormiga_altura);
-				text-align: center;
-				position: relative;
-				padding: em(0px) em(0px) em(0px) em(0px);
-				margin: em(0px) em(0px) em(0px) em(0px);
 				text-decoration: none;
-				min-width: em($font_base * 4);
-				&:before {
-					@include background-image(linear-gradient($color_menu02, $color_menu01));
-					content: "";
-					border-top: em($hormiga_triangulo) solid transparent;
-					border-bottom: em($hormiga_triangulo) solid transparent;
-					border-left: em($hormiga_triangulo) solid $color02; // darken($color_crumbs01, 20%);
-					position: absolute;
-					left: 0;
-					top: 0;
-				}
-				&:after {}
-			}
-			&:first-child a {
-				text-indent: 0;
-				&:before {display: none;}
-			}
-			&:last-child a {
-				padding-right: em(10px);
-				border-top-right-radius: em($hormiga_altura/2);
-				border-bottom-right-radius: em($hormiga_altura/2);
-				&:after {
-					display: none;
-				}
+				padding-left: em(5px);
+				padding-right: em(5px);
 			}
 			a:hover {
 				background: $color02; //$color_crumbs04;    // hover del texto
 				color:  $color_crumbs01;
-				&:after {
-					border-left-color: Blue; //$color03; //$color_crumbs04;        // Triangulo final (excepto ultima pieza.
-					color: $color_crumbs01;
-				}
-				&:before{
-					border-left-color: lighten($color_crumbs01, 20%);
-					color:  $color_crumbs01;
-				}
+				//text-decoration: underline;
 			}
 		}
 	}
