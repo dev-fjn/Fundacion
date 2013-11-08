@@ -1,5 +1,9 @@
 @charset "UTF-8";
+<<<<<<< HEAD
 /* line 17, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+=======
+/* line 17, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+>>>>>>> 43dd213992ca40da33a3b5972e15c6230907c7f5
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +25,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -308,71 +312,29 @@ section#hormiga {
 }
 /* line 16, ../sass/estilos/_hormigas.scss */
 section#hormiga ul {
+  padding-left: 1.25em;
   list-style: none;
   display: inline-table;
 }
-/* line 19, ../sass/estilos/_hormigas.scss */
+/* line 25, ../sass/estilos/_hormigas.scss */
 section#hormiga ul li {
   display: inline;
-}
-/* line 21, ../sass/estilos/_hormigas.scss */
-section#hormiga ul li a {
-  display: block;
-  float: left;
   height: 1em;
-  text-align: center;
-  position: relative;
-  padding: 0em 0em 0em 0em;
-  margin: 0em 0em 0em 0em;
+}
+/* line 26, ../sass/estilos/_hormigas.scss */
+section#hormiga ul li:before {
+  content: "› ";
+  color: #918b74;
+}
+/* line 32, ../sass/estilos/_hormigas.scss */
+section#hormiga ul li a {
   text-decoration: none;
-  min-width: 4em;
+  padding-left: 0.3125em;
+  padding-right: 0.3125em;
 }
-/* line 31, ../sass/estilos/_hormigas.scss */
-section#hormiga ul li a:before {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e6e6e6), color-stop(100%, #fefefe));
-  background-image: -webkit-linear-gradient(#e6e6e6, #fefefe);
-  background-image: -moz-linear-gradient(#e6e6e6, #fefefe);
-  background-image: -o-linear-gradient(#e6e6e6, #fefefe);
-  background-image: linear-gradient(#e6e6e6, #fefefe);
-  content: "";
-  border-top: 0.5em solid transparent;
-  border-bottom: 0.5em solid transparent;
-  border-left: 0.5em solid #c2beaf;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-/* line 43, ../sass/estilos/_hormigas.scss */
-section#hormiga ul li:first-child a {
-  text-indent: 0;
-}
-/* line 45, ../sass/estilos/_hormigas.scss */
-section#hormiga ul li:first-child a:before {
-  display: none;
-}
-/* line 47, ../sass/estilos/_hormigas.scss */
-section#hormiga ul li:last-child a {
-  padding-right: 0.625em;
-  border-top-right-radius: 0.5em;
-  border-bottom-right-radius: 0.5em;
-}
-/* line 51, ../sass/estilos/_hormigas.scss */
-section#hormiga ul li:last-child a:after {
-  display: none;
-}
-/* line 55, ../sass/estilos/_hormigas.scss */
+/* line 37, ../sass/estilos/_hormigas.scss */
 section#hormiga ul li a:hover {
   background: #c2beaf;
-  color: white;
-}
-/* line 58, ../sass/estilos/_hormigas.scss */
-section#hormiga ul li a:hover:after {
-  border-left-color: Blue;
-  color: white;
-}
-/* line 62, ../sass/estilos/_hormigas.scss */
-section#hormiga ul li a:hover:before {
-  border-left-color: white;
   color: white;
 }
 
@@ -972,7 +934,7 @@ h6 {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 38, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .container:after {
   content: "";
   display: table;

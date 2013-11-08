@@ -2,7 +2,7 @@
     data-cycle-fx="scrollHorz" 
     data-cycle-timeout="2000"
     >
-{% for imagen in imagenes %}
-	<img style="width: 100%;" src="{{imagen.imagen}}">
-{% endfor %}
+    {% for imagen in imagenes %}
+        <img style="width: 100%;" alt="{{imagen.titulo}}" src="{{imagen.imagen}}">
+    {% endfor %}
 </div>
