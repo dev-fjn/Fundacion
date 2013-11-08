@@ -44,8 +44,8 @@
 					<section id="relleno" title="Logotipo de esta página">&nbsp;</section>
 					<section id="caja">
 						<section id="acceso">Acceso | Registro | <a href="{% url 'busqueda_general' %}">Buscar</a></section>
-						<section id="social"><span><img src="{% static 'img/f.png' %}" alt="Facebook" height="41px" width="41px" /></span>&nbsp;<span><img src="{% static 'img/t.png' %}" alt="Twitter" height="41px" width="41px" /></span></section>
-						<section id="contacto"><span><img src="{% static 'img/mail.png' %}" alt="Correo Electrónico" height="41px" width="41px" /></span>&nbsp;<span><img src="{% static 'img/rss.png' %}" alt="RSS" height="41px" width="41px" /></span></section>
+						<section id="social"><span><img src="{% static 'img/f.png' %}" alt="Facebook" height="41" width="41" /></span>&nbsp;<span><img src="{% static 'img/t.png' %}" alt="Twitter" height="41" width="41" /></span></section>
+						<section id="contacto"><span><img src="{% static 'img/mail.png' %}" alt="Correo Electrónico" height="41" width="41" /></span>&nbsp;<span><img src="{% static 'img/rss.png' %}" alt="RSS" height="41" width="41" /></span></section>
 					</section>
 				</section>
 				<section id="menus">
@@ -395,16 +395,9 @@
 		</div>
 
 		{% block color_tests %}
-			<div>
-				<br />
-			</div>
-			<div>
-				<br />
-			</div>
-			<div>
-				<br />
-			</div>
-
+			<div><br /></div>
+			<div><br /></div>
+			<div><br /></div>
 			<div class="container">
 				<div class="colour-strip">
 					<div style="height: 20px; width: 5%; background-color:#000000; float: left">0</div>
@@ -422,9 +415,7 @@
 					<div style="height: 20px; width: 3%; background-color:#9AA6AD; float: left">2</div>
 					<div style="height: 20px; width: 2%; background-color:#EF9691; float: left">3</div>
 				</div>
-				<div>
-					<br />
-				</div>
+				<div><br /></div>
 				<div>
 					<div style="background-color:#000000;">0</div>
 					<div style="background-color:#FFFFFF;">1</div>
@@ -441,8 +432,8 @@
 					<div style="background-color:#9AA6AD;">2</div>
 					<div style="background-color:#EF9691;">3</div>
 				</div>
-			{% endblock color_tests %}
-		</div>
+			</div>
+		{% endblock color_tests %}
 
 		{% comment %}
 		FIXME cuando el diseñador crea conveniente cambia este comment por
