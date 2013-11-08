@@ -34,228 +34,9 @@
         <link href="{% static 'img/ios/startup.png' %}"                  rel="apple-touch-startup-image" />
         {% endcomment %}
 
-<<<<<<< HEAD
-		{% block extra_head %}
-		{% endblock extra_head %}
-	</head>
-	<body>
-		<div class="container">
-			<header>
-				<section id="banner">
-					<section id="relleno" title="Logotipo de esta página">&nbsp;</section>
-					<section id="caja">
-						<section id="acceso">Acceso | Registro | <a href="{% url 'busqueda_general' %}">Buscar</a></section>
-						<section id="social"><span><img src="{% static 'img/f.png' %}" alt="Facebook" height="41" width="41" /></span>&nbsp;<span><img src="{% static 'img/t.png' %}" alt="Twitter" height="41" width="41" /></span></section>
-						<section id="contacto"><span><img src="{% static 'img/mail.png' %}" alt="Correo Electrónico" height="41" width="41" /></span>&nbsp;<span><img src="{% static 'img/rss.png' %}" alt="RSS" height="41" width="41" /></span></section>
-					</section>
-				</section>
-				<section id="menus">
-					<nav id="cssmenu">
-						{% block menu %}
-							<ul>
-								<li class='active'>
-									<a href='index.html'>
-										<span>Inicio</span>
-									</a>
-								</li>
-								<li class='has-sub'>
-									<a href='#'>
-										<span>Fundación</span>
-									</a>
-									<ul>
-										<li class='has-sub'>
-											<a href='#'>
-												<span>Presentación</span>
-											</a>
-											<ul>
-												<li>
-													<a href='#'>
-														<span>Presidente</span>
-													</a>
-												</li>
-												<li class='last'>
-													<a href='#'>
-														<span>Presidenta Honoraria</span>
-													</a>
-												</li>
-											</ul>
-										</li>
-										<li>
-											<a href='#'>
-												<span>Patronato</span>
-											</a>
-										</li>
-										<li>
-											<a href='#'>
-												<span>Objetivos</span>
-											</a>
-										</li>
-										<li class='last'>
-											<a href='#'>
-												<span>Ayúdanos a seguir</span>
-											</a>
-										</li>
-									</ul>
-								</li>
-								<li class='has-sub'>
-									<a href='#'>
-										<span>Juan Negrín</span>
-									</a>
-									<ul>
-										<li>
-											<a href='#'>
-												<span>Bibliografía</span>
-											</a>
-										</li>
-										<li>
-											<a href='#'>
-												<span>Cronobiografía</span>
-											</a>
-										</li>
-										<li>
-											<a href='#'>
-												<span>Bibliografía</span>
-											</a>
-										</li>
-										<li>
-											<a href='#'>
-												<span>Presencia</span>
-											</a>
-										</li>
-										<li class='last'>
-											<a href='#'>
-												<span>Citas</span>
-											</a>
-										</li>
-									</ul>
-								</li>
-								<li class='has-sub'>
-									<a href='#'>
-										<span>Fondo Documental</span>
-									</a>
-									<ul>
-										<li>
-											<a href='#'>
-												<span>Archivo</span>
-											</a>
-										</li>
-										<li>
-											<a href='#'>
-												<span>Biblioteca</span>
-											</a>
-										</li>
-										<li>
-											<a href='#'>
-												<span>Recusos Audiovisuales</span>
-											</a>
-										</li>
-										<li>
-											<a href='#'>
-												<span>Presencia en Prensa</span>
-											</a>
-										</li>
-										<li class='last'>
-											<a href='#'>
-												<span>Catálogo de Publicaciones</span>
-											</a>
-										</li>
-									</ul>
-								</li>
-								<li class='has-sub last'>
-									<a href='#'>
-										<span>Prensa</span>
-									</a>
-									<ul>
-										<li>
-											<a href='#'>
-												<span>Imagen Corporativa</span>
-											</a>
-										</li>
-										<li>
-											<a href='#'>
-												<span>Dossieres de Prensa</span>
-											</a>
-										</li>
-										<li class='last'>
-											<a href='#'>
-												<span>Contacto de Prensa</span>
-											</a>
-										</li>
-									</ul>
-								</li>
-								<li class='right'>
-									<a href='#'>
-										<span>Bitácora</span>
-									</a>
-								</li>
-							</ul>
-						{% endblock menu %}
-					</nav>
-				</section>
-			</header>
-			<div class="content">
-				{% block mycontent %}
-					{% block section_hormiga %}
-						<section id="hormiga">
-							{% block hormiga %}
-							<ul>
-								<li><a href="#1">Aquí</a></li>
-								<li><a href="#2">se inicia</a></li>
-								<li><a href="#3">el largo camino</a></li>
-								<li><a href="#4">de las hormigas</a></li>
-								<li><a href="#5">amazónicas</a></li>
-							</ul>
-							{% endblock hormiga %}
-						</section>
-					{% endblock section_hormiga %}
-					{% block section_info %}
-						<section id="info">
-							{% block info %}
-								{% block ie_outdated %}
-									<!--[if lt IE 11]>
-										<p class="chromeframe">You are using an
-											<strong>outdated</strong>browser. Please
-											<a href="http://browsehappy.com/">upgrade your browser</a>or
-											<a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a>to improve your experience.
-										</p>
-									<![endif]-->
-								{% endblock ie_outdated %}
-								{% block messages %}
-									<p id="message_1" class="chromeframe">
-										Esto es un mensaje de aviso excepcional donde la aplicacion comunica algun error importante o el resultado de alguna accion relevante
-										<a href="#" onclick="$('#message_1').fadeOut(); return false;" title="borrar"><small>cerrar</small></a>
-									</p>
-								{% endblock messages %}
-							{% endblock info %}
-						</section>
-					{% endblock section_info %}
-					{% block section_variable %}
-						<section id="{% block section_id %}variable{% endblock section_id %}">
-							{% block variable %}
-								{% block aside_asidel %}
-									<aside id="asidel">
-										{% block section_noticias %}
-											<section id="news">
-												<h2>NOTICIAS</h2>
-												{% block noticias %}
-													{% include "_lorem_links.html" %}
-													<div><br /></div>
-													<h1>h1</h1>
-													<h2>h2</h2>
-													<h3>h3</h3>
-													<h4>h4</h4>
-													<h5>h5</h5>
-													<h6>h6</h6>
-												{% endblock noticias %}
-											</section>
-										{% endblock section_noticias %}
-									</aside>
-								{% endblock aside_asidel %}
-=======
         <!--[if lt IE 9]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
->>>>>>> 03f5398565d2830ae38070261e7ae00a02e26469
 
         {% block extra_head %}
         {% endblock extra_head %}
@@ -267,8 +48,8 @@
                     <section id="relleno" title="Logotipo de esta página">&nbsp;</section>
                     <section id="caja">
                         <section id="acceso">Acceso | Registro | <a href="{% url 'busqueda_general' %}">Buscar</a></section>
-                        <section id="social"><span><img src="{% static 'img/f.png' %}" alt="Facebook" height="41px" width="41px" /></span>&nbsp;<span><img src="{% static 'img/t.png' %}" alt="Twitter" height="41px" width="41px" /></span></section>
-                        <section id="contacto"><span><img src="{% static 'img/mail.png' %}" alt="Correo Electrónico" height="41px" width="41px" /></span>&nbsp;<span><img src="{% static 'img/rss.png' %}" alt="RSS" height="41px" width="41px" /></span></section>
+                        <section id="social"><span><img src="{% static 'img/f.png' %}" alt="Facebook" height="41" width="41" /></span>&nbsp;<span><img src="{% static 'img/t.png' %}" alt="Twitter" height="41" width="41" /></span></section>
+                        <section id="contacto"><span><img src="{% static 'img/mail.png' %}" alt="Correo Electrónico" height="41" width="41" /></span>&nbsp;<span><img src="{% static 'img/rss.png' %}" alt="RSS" height="41" width="41" /></span></section>
                     </section>
                 </section>
                 <section id="menus">
@@ -617,46 +398,46 @@
             </footer>
         </div>
 
-	{% block color_tests %}
-		<div><br /></div>
-		<div><br /></div>
-		<div><br /></div>
-		<div class="container">
-			<div class="colour-strip">
-				<div style="height: 20px; width: 5%; background-color:#000000; float: left">0</div>
-				<div style="height: 20px; width: 5%; background-color:#FFFFFF; float: left">1</div>
-				<div style="height: 20px; width: 15%; background-color:#B6B09E; float: left">2</div>
-				<div style="height: 20px; width: 15%; background-color:#ABA28E; float: left">3</div>
-				<div style="height: 20px; width: 13%; background-color:#EB2C2D; float: left">4</div>
-				<div style="height: 20px; width: 9%; background-color:#F3171B; float: left">5</div>
-				<div style="height: 20px; width: 7%; background-color:#74644D; float: left">6</div>
-				<div style="height: 20px; width: 7%; background-color:#C6C1B3; float: left">7</div>
-				<div style="height: 20px; width: 5%; background-color:#C1B7A4; float: left">8</div>
-				<div style="height: 20px; width: 5%; background-color:#A39579; float: left">9</div>
-				<div style="height: 20px; width: 5%; background-color:#C6AD73; float: left">0</div>
-				<div style="height: 20px; width: 4%; background-color:#977856; float: left">1</div>
-				<div style="height: 20px; width: 3%; background-color:#9AA6AD; float: left">2</div>
-				<div style="height: 20px; width: 2%; background-color:#EF9691; float: left">3</div>
-			</div>
-			<div><br /></div>
-			<div>
-				<div style="background-color:#000000;">0</div>
-				<div style="background-color:#FFFFFF;">1</div>
-				<div style="background-color:#B6B09E;">2</div>
-				<div style="background-color:#ABA28E;">3</div>
-				<div style="background-color:#EB2C2D;">4</div>
-				<div style="background-color:#F3171B;">5</div>
-				<div style="background-color:#74644D;">6</div>
-				<div style="background-color:#C6C1B3;">7</div>
-				<div style="background-color:#C1B7A4;">8</div>
-				<div style="background-color:#A39579;">9</div>
-				<div style="background-color:#C6AD73;">0</div>
-				<div style="background-color:#977856;">1</div>
-				<div style="background-color:#9AA6AD;">2</div>
-				<div style="background-color:#EF9691;">3</div>
-			</div>
-		</div>
-	{% endblock color_tests %}
+        {% block color_tests %}
+            <div><br /></div>
+            <div><br /></div>
+            <div><br /></div>
+            <div class="container">
+                <div class="colour-strip">
+                    <div style="height: 20px; width: 5%; background-color:#000000; float: left">0</div>
+                    <div style="height: 20px; width: 5%; background-color:#FFFFFF; float: left">1</div>
+                    <div style="height: 20px; width: 15%; background-color:#B6B09E; float: left">2</div>
+                    <div style="height: 20px; width: 15%; background-color:#ABA28E; float: left">3</div>
+                    <div style="height: 20px; width: 13%; background-color:#EB2C2D; float: left">4</div>
+                    <div style="height: 20px; width: 9%; background-color:#F3171B; float: left">5</div>
+                    <div style="height: 20px; width: 7%; background-color:#74644D; float: left">6</div>
+                    <div style="height: 20px; width: 7%; background-color:#C6C1B3; float: left">7</div>
+                    <div style="height: 20px; width: 5%; background-color:#C1B7A4; float: left">8</div>
+                    <div style="height: 20px; width: 5%; background-color:#A39579; float: left">9</div>
+                    <div style="height: 20px; width: 5%; background-color:#C6AD73; float: left">0</div>
+                    <div style="height: 20px; width: 4%; background-color:#977856; float: left">1</div>
+                    <div style="height: 20px; width: 3%; background-color:#9AA6AD; float: left">2</div>
+                    <div style="height: 20px; width: 2%; background-color:#EF9691; float: left">3</div>
+                </div>
+                <div><br /></div>
+                <div>
+                    <div style="background-color:#000000;">0</div>
+                    <div style="background-color:#FFFFFF;">1</div>
+                    <div style="background-color:#B6B09E;">2</div>
+                    <div style="background-color:#ABA28E;">3</div>
+                    <div style="background-color:#EB2C2D;">4</div>
+                    <div style="background-color:#F3171B;">5</div>
+                    <div style="background-color:#74644D;">6</div>
+                    <div style="background-color:#C6C1B3;">7</div>
+                    <div style="background-color:#C1B7A4;">8</div>
+                    <div style="background-color:#A39579;">9</div>
+                    <div style="background-color:#C6AD73;">0</div>
+                    <div style="background-color:#977856;">1</div>
+                    <div style="background-color:#9AA6AD;">2</div>
+                    <div style="background-color:#EF9691;">3</div>
+                </div>
+            </div>
+        {% endblock color_tests %}
 
         {% comment %}
         FIXME cuando el diseñador crea conveniente cambia este comment por
