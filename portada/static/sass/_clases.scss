@@ -1,0 +1,66 @@
+// Clases listas para usar:
+// ~~~~~~~~~~~~~~~~~~~~~~~
+
+// Clase usada en la pagina del presidente.
+.poema {
+    margin: auto;
+    padding: em(20px) 0;
+    text-align: left;
+    width: em(390px);
+    h1, h2 {
+        font-weight: normal;
+        text-align: center;
+    }
+    h1 {
+        font-size: em(34px);
+        line-height: 1.2;
+        margin-bottom: em(10px);
+    }
+    h2 {
+        color: #666;
+        font-size: em(18px);
+        font-style: italic;
+        margin-bottom: em(30px);
+    }
+    p {
+        line-height: 1.5;
+        margin-bottom: em(15px);
+    }
+    h2 {
+        &:before {
+            content: '— ';
+        }
+        &:after {
+            content: ' —';
+        }
+        + p:first-letter {
+            float: left;
+            font-size: em(38px);
+            line-height: 1;
+            margin: em(2px) em(5px) 0 0;
+        }
+    }
+    p {
+        &:first-line {
+            font-variant: small-caps;
+            letter-spacing: em(1px);
+        }
+        &:last-child {
+            margin-bottom: em(30px);
+            padding-bottom: em(30px);
+        }
+    }
+}
+
+// Todas las firmas las he ido poniendo en un parrafo con esta clase.
+.firma{
+    text-align: right;
+}
+
+// Usada en la pagina del Patronato
+.fallecidos{
+    text-indent: em($font_base * 1.5);
+    &:after{
+        content: "\205C";
+    }
+}
