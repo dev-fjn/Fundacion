@@ -449,11 +449,11 @@ section#variable_1col section#body div#space {
   padding: 1em;
 }
 
-/* line 5, ../sass/estilos/_variable_2col.scss */
+/* line 13, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body {
   text-align: justify;
 }
-/* line 8, ../sass/estilos/_variable_2col.scss */
+/* line 16, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
@@ -465,14 +465,14 @@ section#variable_2col section#body div.flatpage-i18n {
   border: 1em;
   padding: 1em;
 }
-/* line 20, ../sass/estilos/_variable_2col.scss */
+/* line 28, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n h1 {
   font-weight: 700;
 }
-/* line 24, ../sass/estilos/_variable_2col.scss */
+/* line 32, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n img {
   position: relative;
-  padding: 1em;
+  padding: 0 1em 1em 0;
 }
 /* line 15, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-recipes-0.3.0/stylesheets/recipes/shadow/drop/_transform-requirement.scss */
 section#variable_2col section#body div.flatpage-i18n img > :last-child::before {
@@ -485,11 +485,11 @@ section#variable_2col section#body div.flatpage-i18n img > :last-child::before {
   left: 0;
   background: white;
 }
-/* line 29, ../sass/estilos/_variable_2col.scss */
+/* line 37, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n p {
   padding-bottom: 1em;
 }
-/* line 32, ../sass/estilos/_variable_2col.scss */
+/* line 40, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n dl {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
@@ -497,16 +497,16 @@ section#variable_2col section#body div.flatpage-i18n dl {
   -o-border-radius: 0.625em;
   border-radius: 0.625em;
 }
-/* line 34, ../sass/estilos/_variable_2col.scss */
+/* line 42, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n dl dt {
   font-weight: 700;
   padding-top: 1em;
 }
-/* line 38, ../sass/estilos/_variable_2col.scss */
+/* line 46, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n dl dd {
   text-indent: 1.5em;
 }
-/* line 40, ../sass/estilos/_variable_2col.scss */
+/* line 48, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n dl dd:before {
   content: "\261E ";
 }
@@ -784,72 +784,72 @@ footer#footer div#legal {
   text-align: right;
 }
 
-/* line 5, ../sass/clases.scss */
+/* line 5, ../sass/_clases.scss */
 .poema {
   margin: auto;
   padding: 1.25em 0;
   text-align: left;
   width: 24.375em;
 }
-/* line 10, ../sass/clases.scss */
+/* line 10, ../sass/_clases.scss */
 .poema h1, .poema h2 {
   font-weight: normal;
   text-align: center;
 }
-/* line 14, ../sass/clases.scss */
+/* line 14, ../sass/_clases.scss */
 .poema h1 {
   font-size: 2.125em;
   line-height: 1.2;
   margin-bottom: 0.625em;
 }
-/* line 19, ../sass/clases.scss */
+/* line 19, ../sass/_clases.scss */
 .poema h2 {
   color: #666;
   font-size: 1.125em;
   font-style: italic;
   margin-bottom: 1.875em;
 }
-/* line 25, ../sass/clases.scss */
+/* line 25, ../sass/_clases.scss */
 .poema p {
   line-height: 1.5;
   margin-bottom: 0.9375em;
 }
-/* line 30, ../sass/clases.scss */
+/* line 30, ../sass/_clases.scss */
 .poema h2:before {
   content: '— ';
 }
-/* line 33, ../sass/clases.scss */
+/* line 33, ../sass/_clases.scss */
 .poema h2:after {
   content: ' —';
 }
-/* line 36, ../sass/clases.scss */
+/* line 36, ../sass/_clases.scss */
 .poema h2 + p:first-letter {
   float: left;
   font-size: 2.375em;
   line-height: 1;
   margin: 0.125em 0.3125em 0 0;
 }
-/* line 44, ../sass/clases.scss */
+/* line 44, ../sass/_clases.scss */
 .poema p:first-line {
   font-variant: small-caps;
   letter-spacing: 0.0625em;
 }
-/* line 48, ../sass/clases.scss */
+/* line 48, ../sass/_clases.scss */
 .poema p:last-child {
   margin-bottom: 1.875em;
   padding-bottom: 1.875em;
 }
 
-/* line 56, ../sass/clases.scss */
+/* line 56, ../sass/_clases.scss */
 .firma {
   text-align: right;
 }
 
-/* line 61, ../sass/clases.scss */
+/* line 61, ../sass/_clases.scss */
 .fallecidos {
   text-indent: 1.5em;
 }
-/* line 63, ../sass/clases.scss */
+/* line 63, ../sass/_clases.scss */
 .fallecidos:after {
   content: "\205C";
 }

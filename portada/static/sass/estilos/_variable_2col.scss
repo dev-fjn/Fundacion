@@ -1,3 +1,11 @@
+// Referencias Interesantes:
+// ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// https://github.com/MoOx/compass-recipes
+// http://compass-recipes.moox.fr/tests/recipes/shadow/drop/
+
+// http://www.paulund.co.uk/creating-different-css3-box-shadows-effects
+
 // Sección 'variable' con 2 columnas
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 section#variable_2col{
@@ -23,7 +31,7 @@ section#variable_2col{
 
             img{
                 @include drop-shadow-transform-requirement($color01);
-                padding: em($font_base);
+                padding: 0 em($font_base) em($font_base) 0;
             }
 
             p{
