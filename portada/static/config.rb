@@ -1,4 +1,5 @@
 require 'susy'
+require 'compass-recipes'
 # Require any additional compass plugins here.
 
 

@@ -105,7 +105,7 @@ h6 {
 
 .container {
     @include container;
-    //@include susy-grid-background;
+    @include susy-grid-background;
     //@include sticky-footer(200px);
     @include box-shadow(rgba(black, 0.4) 0 0 em(25px), rgba(black, 0.2) 0 0 em(3px) em(1px) inset);
     // TODO

@@ -21,6 +21,12 @@
 @import "compass/utilities";
 
 @import "susy";
+
+// Recipes
+// ~~~~~~~
+//https://github.com/MoOx/compass-recipes/blob/master/tests/recipes/shadow/drop/s.scss
+@import "recipes/shadow";
+
 // ---------------------------------------------------------------------------
 // Basic Grid
 
@@ -61,8 +67,8 @@ $color13: #F5F5F5;
 $color_texto_menus_raiz: $color00;    // #000000; // Negro
 $color_texto_menus: $color01;        // #FFFFFF; // Blanco
 
-$color_marron_suave_del_logo:  #C2BEAF;
-$color_marron_fuerte_del_logo: #918B74;
+$color_marron_suave_del_logo:  $color02;
+$color_marron_fuerte_del_logo: $color03;
 
 // Colores de los menus.
 $color_menu01: #fefefe; // PELIGRO, Hay una fuga que afecta a toda la pagina. LOCALIZAR

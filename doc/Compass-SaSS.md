@@ -8,7 +8,7 @@ apt-get install rubygems
 
 # Instalamos paquetería:
 # ~~~~~~~~~~~~~~~~~~~~~~
-gem install sass compass susy
+gem install sass compass susy compass-recipes
 
 # Crear la base:
 # ~~~~~~~~~~~~~

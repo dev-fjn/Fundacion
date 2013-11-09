@@ -14,14 +14,15 @@ section#variable_2col{
             border: em($font_base);
             padding: em($font_base);
 
-            font: inherit;
-            font-size: 100%;
+            //font: inherit;
+            //font-size: 100%;
 
             h1{
                 font-weight:700;
             }
 
             img{
+                @include drop-shadow-transform-requirement($color01);
                 padding: em($font_base);
             }
 
