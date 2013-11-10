@@ -40,10 +40,8 @@ beautifulsoup4>=4.1
 django-tagging
 django-mptt
 
-# requerido por django-schedule (external)
+# util para trabajar
 python-dateutil
-vobject
-django_nose
 
 # util para depurar
 django-debug-toolbar
