@@ -32,37 +32,43 @@
             <div>
                 <label for="input_autor">(por autor)</label>
 		<input type="text" id="input_autor" name="autor" value="{{buscador.autor}}">
-		<datalist>
-			{% for autor in autores %} <option value="{{autor}}" />{% endfor %}
-		</datalist>
+            <datalist>
+                {% for autor in autores %} <option value="{{autor}}" />{% endfor %}
+            </datalist>
 		</input>
 	    </div>
             <div>
 		<label for="input_isbn">(por ISBN)</label>
 		<input type="text" id="input_isbn" name="isbn" value="{{buscador.isbn}}">
-		<datalist>
-			{% for isbn in isbns %} <option value="{{isbn}}" />{% endfor %}
-		</datalist>
+            <datalist>
+                {% for isbn in isbns %} <option value="{{isbn}}" />{% endfor %}
+            </datalist>
 		</input>
 	    </div>
             <div>
 		<label for="input_titulo">(por título)</label>
 		<input type="text" id="input_titulo" name="titulo" value="{{buscador.titulo}}">
-		<datalist>
-			{% for titulo in titulos %} <option value="{{titulo}}" />{% endfor %}
-		</datalist>
+            <datalist>
+                {% for titulo in titulos %} <option value="{{titulo}}" />{% endfor %}
+            </datalist>
 		</input>
 	    </div>
             <input type="submit" value="Buscar" />
         </form>
         {% if count %}
-            {{count}} Resultados <br />
+            <p>
+                {{count}} Resultados 
+                {% if user.is_superuser %}<a href="{% url 'admin:contenidos_libro_add' %}">&#8862;</a>{% endif %}
+            </p>
             {% for object in object_list %}
                 {% include "contenidos/_libro.html" %}
             {% endfor %}
             {% include "contenidos/_paginator.html" %}
         {% else %}
-            <p>(No hay publicaciones)</p>
+            <p>
+                (No hay publicaciones)
+                {% if user.is_superuser %}<a href="{% url 'admin:contenidos_libro_add' %}">&#8862;</a>{% endif %}
+            </p>
         {% endif %}
     </div>
 {% endblock body %}

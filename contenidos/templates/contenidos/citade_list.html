@@ -1,7 +1,7 @@
 {% extends "base_1col.html" %}
 
 {% block title %}
-	{{block.super}} Citas de Juan Negrín{{object}}
+    {{block.super}} Citas de Juan Negrín{{object}}
 {% endblock title %}
 
 {% block hormiga %}
@@ -13,9 +13,13 @@
 {% endblock hormiga %}
 
 {% block body %}
-    <div class="cambiame">
-        {% for object in object_list %}
-            {% include "contenidos/_cita_de.html" %}
-        {% endfor %}
-    </div>
+
+    <h1>Citas de Juan Negrín</h1>
+    <br />
+    {% for object in object_list %}
+        {% include "contenidos/_cita_de.html" %}
+    {% endfor %}
+
+    {# TODO: Activar el formulario de contacto #}
+
 {% endblock %}
