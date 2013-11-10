@@ -1,22 +1,20 @@
 #-*- coding: utf-8 -*-
 
-from contenidos.models import Evento, FechaEvento, Libro, Documento, TIPO, CitaDe, CitaSobre
-from contenidos.utiles import inicio_fin_mes, calendario_por_meses
+from contenidos.models import Evento, FechaEvento, Libro, Documento, TIPO
+from contenidos.utiles import calendario_por_meses
 from django.conf import settings
-from django.core.urlresolvers import reverse
 from django.db.models import Q
 from django.utils import timezone
-from django.views.generic import TemplateView, ListView, DetailView, FormView
+from django.views.generic import TemplateView, ListView
 from flatpages_i18n.models import FlatPage_i18n
 import calendar
 import datetime
 
-class Home(TemplateView):
-    template_name = "contenidos/home.html"
-
 class Calendario(TemplateView):
+    only = False
+
     def get_template_names(self):
-        if 'only' in self.kwargs:
+        if self.only:
             return "contenidos/_calendario_eventos.html"
         else:
             return "contenidos/calendario.html"
@@ -34,7 +32,7 @@ class Calendario(TemplateView):
         diccionario = Evento.datos_para_calendario(start, end)
         semanas = calendario_por_meses(start, end, diccionario)
         context.update({
-                'only': self.kwargs.get('only'),
+                'only': self.only,
                 'hoy': now,
                 'start': start,
                 'semanas': semanas,
@@ -44,17 +42,10 @@ class Calendario(TemplateView):
             })
         return context
 
-class EventoView(DetailView):
-    model = Evento
-
-    def get_context_data(self, **kwargs):
-        # Call the base implementation first to get a context
-        context = super(EventoView, self).get_context_data(**kwargs)
-        return context
-
 class Libros(ListView):
     model = Libro
     paginate_by = settings.CONTENIDOS_PAGINADOR_MAX
+    propios = False
 
     CAMPO_QUERY = [
             ('autor', 'autor__icontains'),
@@ -65,7 +56,6 @@ class Libros(ListView):
     def get_queryset(self):
         qs = super(Libros, self).get_queryset()
         _filter = {}
-        self.propios = bool(self.kwargs.get('propios'))
         _filter['precio__isnull'] = not self.propios
         self.busqueda = {}
         for campo, query in self.CAMPO_QUERY:
@@ -88,20 +78,15 @@ class Libros(ListView):
         context['titulos'] = set(Libro.objects.values_list('titulo', flat=True))
         return context
 
-class CitasDe(ListView):
-    model = CitaDe
-
-class CitasSobre(ListView):
-    model = CitaSobre
-
 class Documentos(ListView):
     model = Documento
     paginate_by = settings.CONTENIDOS_PAGINADOR_MAX
+    tipo = None
 
     def get_queryset(self):
         qs = super(Documentos, self).get_queryset()
-        if 'tipo' in self.kwargs:
-            qs = qs.filter(tipo=self.kwargs['tipo'])
+        if self.tipo:
+            qs = qs.filter(tipo=self.tipo)
         self.query = self.request.GET.get('query', '').strip()
         if self.query:
             qs = qs.filter(Q(titulo__icontains=self.query)|Q(descripcion__icontains=self.query))
@@ -110,11 +95,10 @@ class Documentos(ListView):
 
     def get_context_data(self, **kwargs):
         context = super(Documentos, self).get_context_data(**kwargs)
-        tipo = self.kwargs.get('tipo')
         context["query"] = self.query
         context["count"] = self.count
-        context["tipo"] = TIPO.DICT[tipo] if tipo in TIPO.DICT else "(Ninguno)"
-        context["base_tipo"] = TIPO.BASES_HORMIGAS[tipo] if tipo in TIPO.BASES_HORMIGAS else "(Ninguno)"
+        context["tipo"] = TIPO.DICT[self.tipo] if self.tipo in TIPO.DICT else "(Ninguno)"
+        context["base_tipo"] = TIPO.BASES_HORMIGAS[self.tipo] if self.tipo in TIPO.BASES_HORMIGAS else "(Ninguno)"
         return context
 
 class BusquedaGeneral(TemplateView):
