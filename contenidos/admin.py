@@ -52,9 +52,16 @@ class DocumentoAdmin(admin.ModelAdmin):
         return "<br />".join([u"%s" % (i, ) for i in obj.adjuntos()])
     adjuntos_.allow_tags = True
 
+class CitasDeAdmin(admin.ModelAdmin):
+    list_display = ['contenido', 'fecha']
+
+class CitasSobreAdmin(admin.ModelAdmin):
+    list_display = ['contenido', 'autor', 'fecha']
 
 admin.site.register(Imagen, ImagenAdmin)
 admin.site.register(Video, VideoAdmin)
 admin.site.register(Evento, EventoAdmin)
 admin.site.register(Libro, LibroAdmin)
 admin.site.register(Documento, DocumentoAdmin)
+admin.site.register(CitaDe, CitasDeAdmin)
+admin.site.register(CitaSobre, CitasSobreAdmin)

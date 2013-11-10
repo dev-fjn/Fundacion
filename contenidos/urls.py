@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
 from django.conf.urls import patterns, include, url
-from contenidos.views import Calendario, EventoView, Libros, Documentos, BusquedaGeneral
+from contenidos.views import Calendario, EventoView, Libros, Documentos, BusquedaGeneral, CitasDe, CitasSobre
 from contenidos.models import TIPO
 
 urlpatterns = patterns('',
@@ -14,5 +14,7 @@ urlpatterns = patterns('',
 	url(r'dossieres_de_prensa/$', Documentos.as_view(), {'tipo': TIPO.DOSSIERES_DE_PRENSA}, name="dossieres_de_prensa"),
 	url(r'evento/(?P<pk>\d+)$', EventoView.as_view(), name='evento_view'),
 	url(r'buscar/$', BusquedaGeneral.as_view(), name='busqueda_general'),
+	url(r'citas-de-juan-negrin/$', CitasDe.as_view(), name='citas_de_juan_negrin'),
+	url(r'citas-sobre-juan-negrin/$', CitasSobre.as_view(), name='citas_sobre_juan_negrin'),
 )
 

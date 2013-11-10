@@ -1,0 +1,21 @@
+{% extends "base_1col.html" %}
+
+{% block title %}
+	{{block.super}} Citas sobre Juan Negrín{{object}}
+{% endblock title %}
+
+{% block hormiga %}
+    <ul>
+        <li><a href="#">Juan Negrín</a></li>
+        <li><a href="#">Citas</a></li>
+        <li><a href="#">Citas sobre Juan Negrín</a></li>
+    </ul>
+{% endblock hormiga %}
+
+{% block body %}
+    <div class="cambiame">
+        {% for object in object_list %}
+            {% include "contenidos/_cita_sobre.html" %}
+        {% endfor %}
+    </div>
+{% endblock %}

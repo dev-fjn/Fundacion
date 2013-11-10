@@ -140,6 +140,33 @@ class Adjunto(models.Model):
     class Meta:
         abstract = True
 
+class CitaDe(models.Model):
+    contenido = models.TextField(help_text=u"Poner el texto que se cita")
+    descripcion = models.CharField('descripción', max_length=250, help_text="Evento (y lugar) donde se realizó", default=u"Discurso")
+    fecha = models.DateField(help_text="Escribir fecha exacta (o fecha de ordenación)")
+    fecha_literal = models.CharField(max_length=250, blank=True, null=True, help_text="Escribir fecha a mostrar (en blanco si es exacta, escribir algo si es ambigua o no se conoce la exacta)")
+
+    def __unicode__(self):
+        return u"%s" % (self.contenido, )
+
+    class Meta:
+        verbose_name = u'cita de Juan Negrín'
+        verbose_name_plural = u'citas de Juan Negrín'
+
+class CitaSobre(models.Model):
+    contenido = models.TextField(help_text=u"Poner el texto que se cita")
+    autor = models.CharField(max_length=250, help_text="Autor de la cita")
+    cargo = models.CharField(max_length=250, blank=True, null=True, help_text="Cargo del autor (si procede)")
+    fecha = models.DateField(help_text="Escribir fecha exacta (o fecha de ordenación)")
+    fecha_literal = models.CharField(max_length=250, blank=True, null=True, help_text="Escribir fecha a mostrar (en blanco si es exacta, escribir algo si es ambigua o no se conoce la exacta)")
+
+    def __unicode__(self):
+        return u"%s: %s" % (self.contenido, self.autor)
+
+    class Meta:
+        verbose_name = u'cita sobre Juan Negrín'
+        verbose_name_plural = u'citas sobre Juan Negrín'
+
 class UrlAdjunto(Adjunto):
     url = models.URLField()
 
