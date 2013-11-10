@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<django-objects version="1.0"><object pk="1" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/about-us/</field><field type="CharField" name="url_es">/acerca-de/</field><field type="CharField" name="url_en">/about-us/</field><field type="CharField" name="title">About us</field><field type="CharField" name="title_es">Quienes somos</field><field type="CharField" name="title_en">About us</field><field type="TextField" name="content">  &lt;h1&gt;Quiénes somos&lt;/h1&gt;
+<django-objects version="1.0"><object pk="1" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/about-us/</field><field type="CharField" name="url_es">/acerca-de/</field><field type="CharField" name="url_en">/about-us/</field><field type="CharField" name="title">About us</field><field type="CharField" name="title_es">Quienes somos</field><field type="CharField" name="title_en">About us</field><field type="TextField" name="content">&lt;h1&gt;Quiénes somos&lt;/h1&gt;
 
   &lt;p&gt;Fundación destinada al estudio, investigación y difusión de la personalidad política y científica de Juan Negrín López (Las Palmas de Gran Canaria, 1892-París, 1956) y de las claves políticas, sociales y culturales de su tiempo, particularmente el primer tercio del siglo XX (Edad de Plata de la cultura y la ciencia españolas), la II República y la guerra civil.&lt;/p&gt;
 
@@ -57,7 +57,7 @@
 
   &lt;p&gt;*El emplazamiento de la sede de la Fundación en el centro histórico de Las Palmas de Gran Canaria se suma al de otras instituciones y centros de cultura relevantes situados en esta zona de la ciudad, tales como El Museo Canario, Archivo Histórico, Casa Museo Pérez Galdós, Casa de Colón y Real Sociedad Económica de Amigos del País, así como la Biblioteca Insular y la Biblioteca Simón Benítez Padilla, entre otras sedes y equipamientos culturales.&lt;/p&gt;
 
-  &lt;p&gt;La Fundación Juan Negrín se constituyó en Las Palmas de Gran Canaria en el año 1991.&lt;/p&gt;</field><field type="TextField" name="content_en">  &lt;h1&gt;Quiénes somos&lt;/h1&gt;
+  &lt;p&gt;La Fundación Juan Negrín se constituyó en Las Palmas de Gran Canaria en el año 1991.&lt;/p&gt;</field><field type="TextField" name="content_en">&lt;h1&gt;Quiénes somos&lt;/h1&gt;
 
   &lt;p&gt;Fundación destinada al estudio, investigación y difusión de la personalidad política y científica de Juan Negrín López (Las Palmas de Gran Canaria, 1892-París, 1956) y de las claves políticas, sociales y culturales de su tiempo, particularmente el primer tercio del siglo XX (Edad de Plata de la cultura y la ciencia españolas), la II República y la guerra civil.&lt;/p&gt;
 
@@ -147,8 +147,7 @@ y el latido del mar en la garganta.&lt;/p&gt;
 
 &lt;p&gt;Y como colofón la designación de una sede y centro de investigación histórico a Juan Negrín en el barrio de Vegueta en Las Palmas, propiciada por el Cabildo de Gran Canaria, estando en proceso el concurso para la rehabilitación de inmueble que recoja para la posteridad esta figura canaria, española, europea.&lt;/p&gt;
 
-&lt;p class="firma"&gt;José Medina Jiménez&lt;br /&gt;Presidente&lt;/p&gt;
-</field><field type="TextField" name="content_en">&lt;h1&gt;President&lt;/h1&gt;
+&lt;p class="firma"&gt;José Medina Jiménez&lt;br /&gt;Presidente&lt;/p&gt;</field><field type="TextField" name="content_en">&lt;h1&gt;President&lt;/h1&gt;
 
 &lt;p&gt;
 	&lt;strong&gt;Spain we once lost, don’t you lose us;&lt;/strong&gt;&lt;br /&gt;
@@ -287,7 +286,7 @@ Fernando Ortiz Wiot&lt;br /&gt; Mª. Carmen Llopis Carbonell&lt;br /&gt; Rafael 
 &lt;h3&gt;Honorary Members&lt;/h3&gt;
 Santiago Carrillo Solares&lt;br /&gt; Alfonso Guerra González&lt;br /&gt; Manuel Negrin Angulo&lt;br /&gt; Agustín Millares Cantero&lt;br /&gt; José Luís Ruiz Martín&lt;br /&gt; Gonzalo Angulo González&lt;br /&gt;
 &lt;/div&gt;
-&lt;/div&gt;</field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="5" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/objetives/</field><field type="CharField" name="url_es">/objetivos/</field><field type="CharField" name="url_en">/objetives/</field><field type="CharField" name="title">Objetivos</field><field type="CharField" name="title_es">Objetivos</field><field type="CharField" name="title_en">Objetivos</field><field type="TextField" name="content">	&lt;h1&gt;Objetivos&lt;/h1&gt;
+&lt;/div&gt;</field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="5" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/objetives/</field><field type="CharField" name="url_es">/objetivos/</field><field type="CharField" name="url_en">/objetives/</field><field type="CharField" name="title">Objetivos</field><field type="CharField" name="title_es">Objetivos</field><field type="CharField" name="title_en">Objetivos</field><field type="TextField" name="content">&lt;h1&gt;Objetivos&lt;/h1&gt;
 
 	&lt;p&gt;La &lt;em&gt;FUNDACIÓN JUAN NEGRÍN&lt;/em&gt; es una Fundación cultural privada de interés público, sin ánimo de lucro, que tiene como objeto la investigación, el desarrollo y la difusión del pensamiento humanista democrático y socialmente avanzado, atendiendo especialmente al objetivo de divulgar el pensamiento de &lt;em&gt;JUAN NEGRÍN LÓPEZ (1892-1956)&lt;/em&gt;, eminente científico y político que simbolizó, como &lt;i&gt;Presidente del Gobierno de la IIª República&lt;/i&gt;, la resistencia frente a la dictadura y el totalitarismo.&lt;/p&gt;
 
@@ -306,7 +305,7 @@ Santiago Carrillo Solares&lt;br /&gt; Alfonso Guerra González&lt;br /&gt; Manue
 				&lt;li&gt;El estudio e investigación de la historia de Canarias.&lt;/li&gt;
 			&lt;/ol&gt;
 		&lt;/blockquote&gt;
-	&lt;/blockquote&gt;</field><field type="TextField" name="content_es">	&lt;h1&gt;Objetivos&lt;/h1&gt;
+	&lt;/blockquote&gt;</field><field type="TextField" name="content_es">&lt;h1&gt;Objetivos&lt;/h1&gt;
 
 	&lt;p&gt;La &lt;em&gt;FUNDACIÓN JUAN NEGRÍN&lt;/em&gt; es una Fundación cultural privada de interés público, sin ánimo de lucro, que tiene como objeto la investigación, el desarrollo y la difusión del pensamiento humanista democrático y socialmente avanzado, atendiendo especialmente al objetivo de divulgar el pensamiento de &lt;em&gt;JUAN NEGRÍN LÓPEZ (1892-1956)&lt;/em&gt;, eminente científico y político que simbolizó, como &lt;i&gt;Presidente del Gobierno de la IIª República&lt;/i&gt;, la resistencia frente a la dictadura y el totalitarismo.&lt;/p&gt;
 
@@ -325,7 +324,7 @@ Santiago Carrillo Solares&lt;br /&gt; Alfonso Guerra González&lt;br /&gt; Manue
 				&lt;li&gt;El estudio e investigación de la historia de Canarias.&lt;/li&gt;
 			&lt;/ol&gt;
 		&lt;/blockquote&gt;
-	&lt;/blockquote&gt;</field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="6" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/become-member/</field><field type="CharField" name="url_es">/hacerce-amigo-de-la-fundacion/</field><field type="CharField" name="url_en">/become-member/</field><field type="CharField" name="title">Become Member</field><field type="CharField" name="title_es">Hacerse amigo de la Fundación</field><field type="CharField" name="title_en">Become Member</field><field type="TextField" name="content">  &lt;div class="flat-page"&gt;
+	&lt;/blockquote&gt;</field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="6" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/become-member/</field><field type="CharField" name="url_es">/hacerce-amigo-de-la-fundacion/</field><field type="CharField" name="url_en">/become-member/</field><field type="CharField" name="title">Become Member</field><field type="CharField" name="title_es">Hacerse amigo de la Fundación</field><field type="CharField" name="title_en">Become Member</field><field type="TextField" name="content">&lt;div class="flat-page"&gt;
     &lt;h1&gt;Hacerse amigo de la Fundación&lt;/h1&gt;
     &lt;form method="post"&gt;
       &lt;input type="hidden" name="member[id]"&gt;&lt;input type="hidden" name="member[token]" value="77245f00dce60ee6c22cf6ed30ad2bab"&gt;
@@ -1953,7 +1952,7 @@ Santiago Carrillo Solares&lt;br /&gt; Alfonso Guerra González&lt;br /&gt; Manue
                 });
         });
     &lt;/script&gt;
-  &lt;/div&gt;</field><field type="TextField" name="content_es">  &lt;div class="flat-page"&gt;
+  &lt;/div&gt;</field><field type="TextField" name="content_es">&lt;div class="flat-page"&gt;
     &lt;h1&gt;Hacerse amigo de la Fundación&lt;/h1&gt;
     &lt;form method="post"&gt;
       &lt;input type="hidden" name="member[id]"&gt;&lt;input type="hidden" name="member[token]" value="77245f00dce60ee6c22cf6ed30ad2bab"&gt;
@@ -3581,7 +3580,7 @@ Santiago Carrillo Solares&lt;br /&gt; Alfonso Guerra González&lt;br /&gt; Manue
                 });
         });
     &lt;/script&gt;
-  &lt;/div&gt;</field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="7" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/biography/</field><field type="CharField" name="url_es">/biografia/</field><field type="CharField" name="url_en">/biography/</field><field type="CharField" name="title">Biography</field><field type="CharField" name="title_es">Biografía</field><field type="CharField" name="title_en">Biography</field><field type="TextField" name="content">	&lt;h1&gt;Biografía&lt;/h1&gt;
+  &lt;/div&gt;</field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="7" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/biography/</field><field type="CharField" name="url_es">/biografia/</field><field type="CharField" name="url_en">/biography/</field><field type="CharField" name="title">Biography</field><field type="CharField" name="title_es">Biografía</field><field type="CharField" name="title_en">Biography</field><field type="TextField" name="content">&lt;h1&gt;Biografía&lt;/h1&gt;
 	&lt;img src="http://fundacion.noc4net.com:8080/uploads/assets/9/0/2/b/a/3/c/d/a/1/juan-negrin-auto-retrato.jpg" width="226" height="300" alt="Juan Negrin" longdesc="Juan Negrin" style="float: left; " /&gt;
 	&lt;p&gt;Nace en la Calle Mayor de Triana en Las Palmas de Gran Canaria, isla de Gran Canaria, el 3 de febrero de 1892. Hijo primogénito de un próspero hombre de negocios, estudió las primeras letras en su ciudad natal en el colegio privado La Soledad y obtuvo las máximas calificaciones en el Bachillerato, durante el curso 1905-06, a la increíble edad de 14 años.&lt;/p&gt;
 	&lt;p&gt;Durante el curso 1906-07 se traslada a Alemania y comienza la carrera de Medicina a los quince años, primero en la Universidad de Kiel y luego en la de Leipzig, vinculándose a su Escuela de Fisiología dirigida por Ewald Hering. En 1912, a los veinte años, obtuvo el grado de Doctor.&lt;/p&gt;
@@ -3596,7 +3595,7 @@ Santiago Carrillo Solares&lt;br /&gt; Alfonso Guerra González&lt;br /&gt; Manue
 	&lt;p&gt;En 1940 traslada su residencia a Londres, donde encarnará la suprema autoridad de la República en el exilio, poniendo al servicio de las autoridades británicas su experiencia política internacional y sus conocimientos científicos en beneficio de la causa aliada.&lt;/p&gt;
 	&lt;p&gt;Una vez derrotado el eje fascista en Europa acude a México donde dimite de su cargo de Presidente del Gobierno ante las Cortes españolas en el exilio.&lt;/p&gt;
 	&lt;p&gt;El 12 de noviembre de 1956 muere Juan Negrín en París de un ataque al corazón.&lt;/p&gt;
-	&lt;p class="firma"&gt;Sergio Millares&lt;br /&gt;Historiador&lt;/p&gt;</field><field type="TextField" name="content_es">	&lt;h1&gt;Biografía&lt;/h1&gt;
+	&lt;p class="firma"&gt;Sergio Millares&lt;br /&gt;Historiador&lt;/p&gt;</field><field type="TextField" name="content_es">&lt;h1&gt;Biografía&lt;/h1&gt;
 	&lt;img src="http://fundacion.noc4net.com:8080/uploads/assets/9/0/2/b/a/3/c/d/a/1/juan-negrin-auto-retrato.jpg" width="226" height="300" alt="Juan Negrin" longdesc="Juan Negrin" style="float: left; " /&gt;
 	&lt;p&gt;Nace en la Calle Mayor de Triana en Las Palmas de Gran Canaria, isla de Gran Canaria, el 3 de febrero de 1892. Hijo primogénito de un próspero hombre de negocios, estudió las primeras letras en su ciudad natal en el colegio privado La Soledad y obtuvo las máximas calificaciones en el Bachillerato, durante el curso 1905-06, a la increíble edad de 14 años.&lt;/p&gt;
 	&lt;p&gt;Durante el curso 1906-07 se traslada a Alemania y comienza la carrera de Medicina a los quince años, primero en la Universidad de Kiel y luego en la de Leipzig, vinculándose a su Escuela de Fisiología dirigida por Ewald Hering. En 1912, a los veinte años, obtuvo el grado de Doctor.&lt;/p&gt;
@@ -3841,7 +3840,7 @@ Santiago Carrillo Solares&lt;br /&gt; Alfonso Guerra González&lt;br /&gt; Manue
 	&lt;dt&gt;&lt;time datetime="1956-1"&gt;1956&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Inicia la escritura de sus Memorias con el título provisional de Contribución a la guerra de España (mundial en España) que no llegó a concluir.&lt;/dd&gt;
 	&lt;dt&gt;&lt;time datetime="1956-11-12"&gt;12 de noviembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín muere de un ataque al corazón en París.&lt;/dd&gt;
 	&lt;dt&gt;&lt;time datetime="1956-1"&gt;&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Sus restos son enterrados en la más estricta intimidad.&lt;/dd&gt;
-&lt;/dl&gt;</field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="9" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/bibliography/</field><field type="CharField" name="url_es">/bibliografia/</field><field type="CharField" name="url_en">/bibliography/</field><field type="CharField" name="title">Bibliography</field><field type="CharField" name="title_es">Bibliografía</field><field type="CharField" name="title_en">Bibliography</field><field type="TextField" name="content">  &lt;div class="flat-page"&gt;
+&lt;/dl&gt;</field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="9" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/bibliography/</field><field type="CharField" name="url_es">/bibliografia/</field><field type="CharField" name="url_en">/bibliography/</field><field type="CharField" name="title">Bibliography</field><field type="CharField" name="title_es">Bibliografía</field><field type="CharField" name="title_en">Bibliography</field><field type="TextField" name="content">&lt;div class="flat-page"&gt;
     &lt;h1&gt;Bibliografía&lt;/h1&gt;
     &lt;div&gt;&lt;img src="../../uploads/assets/c/f/e/2/1/c/6/8/0/0/portada-libro-yo-fui-ministro-de-negrin-de-mariano-anso.jpg" alt="Yo fui Ministro de Negrín" hspace="25" vspace="5" height="300"&gt;&lt;/div&gt;
     &lt;table border="0" cellspacing="0" cellpadding="1" width="696"&gt;
@@ -5771,7 +5770,7 @@ Santiago Carrillo Solares&lt;br /&gt; Alfonso Guerra González&lt;br /&gt; Manue
     &lt;p&gt; &lt;/p&gt;
     &lt;p&gt; &lt;/p&gt;
     &lt;p&gt; &lt;/p&gt;
-  &lt;/div&gt;</field><field type="TextField" name="content_es">  &lt;div class="flat-page"&gt;
+  &lt;/div&gt;</field><field type="TextField" name="content_es">&lt;div class="flat-page"&gt;
     &lt;h1&gt;Bibliografía&lt;/h1&gt;
     &lt;div&gt;&lt;img src="../../uploads/assets/c/f/e/2/1/c/6/8/0/0/portada-libro-yo-fui-ministro-de-negrin-de-mariano-anso.jpg" alt="Yo fui Ministro de Negrín" hspace="25" vspace="5" height="300"&gt;&lt;/div&gt;
     &lt;table border="0" cellspacing="0" cellpadding="1" width="696"&gt;
@@ -7701,7 +7700,7 @@ Santiago Carrillo Solares&lt;br /&gt; Alfonso Guerra González&lt;br /&gt; Manue
     &lt;p&gt; &lt;/p&gt;
     &lt;p&gt; &lt;/p&gt;
     &lt;p&gt; &lt;/p&gt;
-  &lt;/div&gt;</field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="10" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/presence/</field><field type="CharField" name="url_es">/presencia/</field><field type="CharField" name="url_en">/presence/</field><field type="CharField" name="title">Presence</field><field type="CharField" name="title_es">Presencia</field><field type="CharField" name="title_en">Presence</field><field type="TextField" name="content">  &lt;div class="flat-page"&gt;
+  &lt;/div&gt;</field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="10" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/presence/</field><field type="CharField" name="url_es">/presencia/</field><field type="CharField" name="url_en">/presence/</field><field type="CharField" name="title">Presence</field><field type="CharField" name="title_es">Presencia</field><field type="CharField" name="title_en">Presence</field><field type="TextField" name="content">&lt;div class="flat-page"&gt;
     &lt;h1&gt;Presencia&lt;/h1&gt;
     &lt;div&gt;
       &lt;a href="../../uploads/assets/9/1/0/3/2/a/d/7/b/b/hospital-dr-juan-negrin-gc.jpg" target="_blank"&gt;&lt;img src="../../uploads/assets/9/1/0/3/2/a/d/7/b/b/hospital-dr-juan-negrin-gc.jpg" alt="Juan Negrin" hspace="25" vspace="5" width="200"&gt;&lt;/a&gt;
@@ -8068,7 +8067,7 @@ Santiago Carrillo Solares&lt;br /&gt; Alfonso Guerra González&lt;br /&gt; Manue
       &lt;/tbody&gt;
     &lt;/table&gt;
     &lt;p&gt;&lt;strong&gt;&amp;nbsp;Este apartado está abierto a aquellos que conozcan algún dato sobre la presencia de Juan Negrín en la sociedad. Enviar dicha aportación a través de nuestro correo electrónico o por carta a nuestra dirección. Es de agradecer si pueden aportar alguna fotografía.&lt;/strong&gt;&lt;/p&gt;
-  &lt;/div&gt;</field><field type="TextField" name="content_es">  &lt;div class="flat-page"&gt;
+  &lt;/div&gt;</field><field type="TextField" name="content_es">&lt;div class="flat-page"&gt;
     &lt;h1&gt;Presencia&lt;/h1&gt;
     &lt;div&gt;
       &lt;a href="../../uploads/assets/9/1/0/3/2/a/d/7/b/b/hospital-dr-juan-negrin-gc.jpg" target="_blank"&gt;&lt;img src="../../uploads/assets/9/1/0/3/2/a/d/7/b/b/hospital-dr-juan-negrin-gc.jpg" alt="Juan Negrin" hspace="25" vspace="5" width="200"&gt;&lt;/a&gt;
@@ -8435,387 +8434,7 @@ Santiago Carrillo Solares&lt;br /&gt; Alfonso Guerra González&lt;br /&gt; Manue
       &lt;/tbody&gt;
     &lt;/table&gt;
     &lt;p&gt;&lt;strong&gt;&amp;nbsp;Este apartado está abierto a aquellos que conozcan algún dato sobre la presencia de Juan Negrín en la sociedad. Enviar dicha aportación a través de nuestro correo electrónico o por carta a nuestra dirección. Es de agradecer si pueden aportar alguna fotografía.&lt;/strong&gt;&lt;/p&gt;
-  &lt;/div&gt;</field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="11" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/quotes-of-juan-negrin/</field><field type="CharField" name="url_es">/citas-de-juan-negrin/</field><field type="CharField" name="url_en">/quotes-of-juan-negrin/</field><field type="CharField" name="title">Quotes of Juan Negrín</field><field type="CharField" name="title_es">Citas de Juan Negrín</field><field type="CharField" name="title_en">Quotes of Juan Negrín</field><field type="TextField" name="content">  &lt;div class="flat-page"&gt;
-    &lt;h1&gt;Citas de Juan Negrín&lt;/h1&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          Bravura, combatientes frescos, material bélico en abundancia. Todo eso tenemos. ¿Qué necesitamos además para asegurar una línea infranqueable de resistencia? Necesitamos una fe ciega, absoluta en el resultado de nuestra lucha. Necesitamos que recobren el dominio de sus nervios los que lo hayan perdido. Serénese la retaguardia. Cumpla cada uno su misión cotidiana considerándola una misión de guerra. Júrense los soldados no retroceder ni un paso cuando el mando ordene clavarse en el suelo.
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Discurso | 27 de enero de 1939
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          La guerra se pierde cuando da uno la guerra por perdida. El vencedor lo proclama el vencido: no es él quien se erige en vencedor. Y mientras haya espíritu de resistencia, hay posibilidad de triunfo.
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Discurso ante la Cámara de diputados en 1938 | 16 de abril de 1938
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          Con fe en la victoria, con entusiasmo y disciplina, podremos en días o semanas limpiar de invasores las tierras que acaban de arrebatarnos y abrir los caminos del resto de España a nuestro ejército, el ejército de la independencia.
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Discurso | 16 de abril de 1938
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          Si Hitler triunfara, España, como las demás naciones de Europa y el mundo, se verían sometidas a la más abyecta esclavitud, sin vislumbre de redención posible. Por obligación patriótica y por nuestro egoísmo individual, es deber de españoles no hacer nada que pueda favorecer, es deber nuestro hacer todo lo que pueda dañar, a la hidra apocalíptica del nazismo, el mayor peligro que ha conocido la humanidad desde que tiene historia.
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Discurso de Londres | 20 de julio de 1941
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          …frente a la política de no intervención y manteniendo incólume el derecho del pueblo español a disponer de su destino, ha sabido el Gobierno de la República organizar la resistencia y crear un ejército que lleno de fe se prepara para las jornadas decisivas, que nos han de conducir a la victoria…
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Discurso | 16 de abril de 1938
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          Someto al mundo tres puntos que estimo condensa el espíritu por el cual combate el pueblo español. Son ellos: Primero. La garantía de la independencia de nuestra patria, libre de ingerencias extranjeras. Segundo. La seguridad de que sea el pueblo español el único que escoja su régimen y rija sus destinos. Tercero. El cese todas las persecuciones y represalias una vez liquidada la guerra.
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Discurso ante las Cortes celebrada en Figueras | 1 de febrero de 1939
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          ¡Animo y aliento, españoles de la retaguardia y del frente! Del coraje de los actos de heroísmo, depende la existencia de todos y lo que vale más, el porvenir de España. No os dejéis descorazonar por las desgracias. Sea nuestro temple el del acero. Vendrán días mejores en los que habremos de recordar orgullosos nuestro comportamiento en la adversidad.
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Discurso entre 1937-1939
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          Cada día de resistencia es una batalla ganada
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Discurso entre 1937-1939
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          La victoria impone a quienes la desean sacrificios considerables. Y uno de estos. Que no puede ser descuidado, si no queremos comprometerla, es la de producir más.
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Discurso en 1938
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          Tenemos la valentía comprobada de nuestros soldados. Tenemos fuerzas de refresco que han de preservarnos de un agotamiento. Tenemos material (ya empezamos a ponerlo en servicio) en cantidad, proporción y calidad que no soñábamos. Ha llegado tarde como, llegó tarde a Madrid, pero ha llegado aún a tiempo, como llegó a justo tiempo en 1936.
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Discurso en 1939
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      Si sabes alguna cita que no tenemos, por favor, &lt;a href="/es/contact"&gt;contacta&lt;/a&gt; con nosotros.
-    &lt;/div&gt;
-  &lt;/div&gt;</field><field type="TextField" name="content_es">  &lt;div class="flat-page"&gt;
-    &lt;h1&gt;Citas de Juan Negrín&lt;/h1&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          Bravura, combatientes frescos, material bélico en abundancia. Todo eso tenemos. ¿Qué necesitamos además para asegurar una línea infranqueable de resistencia? Necesitamos una fe ciega, absoluta en el resultado de nuestra lucha. Necesitamos que recobren el dominio de sus nervios los que lo hayan perdido. Serénese la retaguardia. Cumpla cada uno su misión cotidiana considerándola una misión de guerra. Júrense los soldados no retroceder ni un paso cuando el mando ordene clavarse en el suelo.
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Discurso | 27 de enero de 1939
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          La guerra se pierde cuando da uno la guerra por perdida. El vencedor lo proclama el vencido: no es él quien se erige en vencedor. Y mientras haya espíritu de resistencia, hay posibilidad de triunfo.
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Discurso ante la Cámara de diputados en 1938 | 16 de abril de 1938
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          Con fe en la victoria, con entusiasmo y disciplina, podremos en días o semanas limpiar de invasores las tierras que acaban de arrebatarnos y abrir los caminos del resto de España a nuestro ejército, el ejército de la independencia.
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Discurso | 16 de abril de 1938
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          Si Hitler triunfara, España, como las demás naciones de Europa y el mundo, se verían sometidas a la más abyecta esclavitud, sin vislumbre de redención posible. Por obligación patriótica y por nuestro egoísmo individual, es deber de españoles no hacer nada que pueda favorecer, es deber nuestro hacer todo lo que pueda dañar, a la hidra apocalíptica del nazismo, el mayor peligro que ha conocido la humanidad desde que tiene historia.
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Discurso de Londres | 20 de julio de 1941
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          …frente a la política de no intervención y manteniendo incólume el derecho del pueblo español a disponer de su destino, ha sabido el Gobierno de la República organizar la resistencia y crear un ejército que lleno de fe se prepara para las jornadas decisivas, que nos han de conducir a la victoria…
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Discurso | 16 de abril de 1938
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          Someto al mundo tres puntos que estimo condensa el espíritu por el cual combate el pueblo español. Son ellos: Primero. La garantía de la independencia de nuestra patria, libre de ingerencias extranjeras. Segundo. La seguridad de que sea el pueblo español el único que escoja su régimen y rija sus destinos. Tercero. El cese todas las persecuciones y represalias una vez liquidada la guerra.
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Discurso ante las Cortes celebrada en Figueras | 1 de febrero de 1939
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          ¡Animo y aliento, españoles de la retaguardia y del frente! Del coraje de los actos de heroísmo, depende la existencia de todos y lo que vale más, el porvenir de España. No os dejéis descorazonar por las desgracias. Sea nuestro temple el del acero. Vendrán días mejores en los que habremos de recordar orgullosos nuestro comportamiento en la adversidad.
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Discurso entre 1937-1939
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          Cada día de resistencia es una batalla ganada
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Discurso entre 1937-1939
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          La victoria impone a quienes la desean sacrificios considerables. Y uno de estos. Que no puede ser descuidado, si no queremos comprometerla, es la de producir más.
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Discurso en 1938
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          Tenemos la valentía comprobada de nuestros soldados. Tenemos fuerzas de refresco que han de preservarnos de un agotamiento. Tenemos material (ya empezamos a ponerlo en servicio) en cantidad, proporción y calidad que no soñábamos. Ha llegado tarde como, llegó tarde a Madrid, pero ha llegado aún a tiempo, como llegó a justo tiempo en 1936.
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Discurso en 1939
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      Si sabes alguna cita que no tenemos, por favor, &lt;a href="/es/contact"&gt;contacta&lt;/a&gt; con nosotros.
-    &lt;/div&gt;
-  &lt;/div&gt;</field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="12" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/quotes-about-juan-negrin/</field><field type="CharField" name="url_es">/citas-sobre-juan-negrin/</field><field type="CharField" name="url_en">/quotes-about-juan-negrin/</field><field type="CharField" name="title">Quotes about Juan Negrín</field><field type="CharField" name="title_es">Citas sobre Juan Negrín</field><field type="CharField" name="title_en">Quotes about Juan Negrín</field><field type="TextField" name="content">  &lt;div class="flat-page"&gt;
-    &lt;h1&gt;Citas sobre Juan Negrín&lt;/h1&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          ... España pierde con él un gran hombre de Estado; sus amigos, un corazón ardiente y una inteligencia fuera de lo común.
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Jules Moch | Ministro francés
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          ... Siento su muerte, en la certeza de que España lo honrará un día no lejano como a uno de sus mejores hijos.
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Pietro Nenni | Vicepresidente de la República de Italia
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          ... Negrín abrió amplias y fascinantes posiblidades en mi imaginación, no sólo a través de sus conferencias y enseñanzas de laboratorio sino mediante su consejo, ánimo y estímulo a leer monografías científicas en otras lenguas distintas al español.
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Severo Ochoa | Científico.
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          ... Debo decir, en honor a la verdad, que no podía haberlo hecho mejor. No tenía nada que reprocharse, salvo a lo mejor el haber dejado a su corazón quemar su vida ardiente, todavía corta y, para nosotros, tan necesaria.
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Vicent Auriol | Ministro francés
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          ... Sus actos estaban motivados sólo por su intelecto, que era de buena fibra. Favorecía la ley y el orden. Su integridad y valor eran tanto físicos como morales. De una gran capacidad de trabajo.
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Claude G. Bowers | Embajador de los EE.UU. en España durante la guerra
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          ... Su visión internacional que lo llevaba a contemplar y a analizar los problemas españoles encuadrados en un marco universal. Esto es (...) lo que más contribuyó a hacer de Negrín un gobernante moderno, enteramente limpio de ese tufillo pueblerino, de política de campanario, que con algunas excepciones muy honrosas, caracteriza la vida política española contemporánea.
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Pablo de Azcárate | Diplomático y Ministro español
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          ... No fue político, era más y menos. Dio la medida que se necesitaba en el momento preciso, cuando lo que se requería era hombría y decisión. Ajeno a los juegos naturales de la conquista y conservación del poder, cuando no tuvo que dar la cara, fue perdido ...
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Max Aub | Intelectual
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          … Negrín merece ocupar un puesto importante en la historia de nuestro país. (…) En aquel momento representó no sólo la lucha por la democracia frente al naciente nazismo y fascismo europeo sino la voluntad de aunar los esfuerzos de todos en beneficio de un futuro de convivencia y de prosperidad para España que se truncó por la pérdida de la guerra.
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Alfonso Guerra | ex Vicepresidente del Gobierno de España , Diputado del PSOE y Presidente de la Fundación Pablo Iglesias | 8 de octubre de 2006
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      Si sabes alguna cita que no tenemos, por favor, &lt;a href="../../ru/switch-culture?identifier=es&amp;path=%252Fcontact"&gt;contacta&lt;/a&gt; con nosotros.
-    &lt;/div&gt;
-  &lt;/div&gt;</field><field type="TextField" name="content_es">  &lt;div class="flat-page"&gt;
-    &lt;h1&gt;Citas sobre Juan Negrín&lt;/h1&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          ... España pierde con él un gran hombre de Estado; sus amigos, un corazón ardiente y una inteligencia fuera de lo común.
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Jules Moch | Ministro francés
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          ... Siento su muerte, en la certeza de que España lo honrará un día no lejano como a uno de sus mejores hijos.
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Pietro Nenni | Vicepresidente de la República de Italia
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          ... Negrín abrió amplias y fascinantes posiblidades en mi imaginación, no sólo a través de sus conferencias y enseñanzas de laboratorio sino mediante su consejo, ánimo y estímulo a leer monografías científicas en otras lenguas distintas al español.
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Severo Ochoa | Científico.
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          ... Debo decir, en honor a la verdad, que no podía haberlo hecho mejor. No tenía nada que reprocharse, salvo a lo mejor el haber dejado a su corazón quemar su vida ardiente, todavía corta y, para nosotros, tan necesaria.
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Vicent Auriol | Ministro francés
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          ... Sus actos estaban motivados sólo por su intelecto, que era de buena fibra. Favorecía la ley y el orden. Su integridad y valor eran tanto físicos como morales. De una gran capacidad de trabajo.
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Claude G. Bowers | Embajador de los EE.UU. en España durante la guerra
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          ... Su visión internacional que lo llevaba a contemplar y a analizar los problemas españoles encuadrados en un marco universal. Esto es (...) lo que más contribuyó a hacer de Negrín un gobernante moderno, enteramente limpio de ese tufillo pueblerino, de política de campanario, que con algunas excepciones muy honrosas, caracteriza la vida política española contemporánea.
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Pablo de Azcárate | Diplomático y Ministro español
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          ... No fue político, era más y menos. Dio la medida que se necesitaba en el momento preciso, cuando lo que se requería era hombría y decisión. Ajeno a los juegos naturales de la conquista y conservación del poder, cuando no tuvo que dar la cara, fue perdido ...
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Max Aub | Intelectual
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;div&gt;
-        &lt;blockquote&gt;
-          … Negrín merece ocupar un puesto importante en la historia de nuestro país. (…) En aquel momento representó no sólo la lucha por la democracia frente al naciente nazismo y fascismo europeo sino la voluntad de aunar los esfuerzos de todos en beneficio de un futuro de convivencia y de prosperidad para España que se truncó por la pérdida de la guerra.
-        &lt;/blockquote&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Alfonso Guerra | ex Vicepresidente del Gobierno de España , Diputado del PSOE y Presidente de la Fundación Pablo Iglesias | 8 de octubre de 2006
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      Si sabes alguna cita que no tenemos, por favor, &lt;a href="../../ru/switch-culture?identifier=es&amp;path=%252Fcontact"&gt;contacta&lt;/a&gt; con nosotros.
-    &lt;/div&gt;
-  &lt;/div&gt;</field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="13" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/where-we-are/</field><field type="CharField" name="url_es">/donde-estamos</field><field type="CharField" name="url_en">/where-we-are/</field><field type="CharField" name="title">Where we are</field><field type="CharField" name="title_es">Dónde estamos</field><field type="CharField" name="title_en">Where we are</field><field type="TextField" name="content">	&lt;div&gt;
+  &lt;/div&gt;</field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="13" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/where-we-are/</field><field type="CharField" name="url_es">/donde-estamos</field><field type="CharField" name="url_en">/where-we-are/</field><field type="CharField" name="title">Where we are</field><field type="CharField" name="title_es">Dónde estamos</field><field type="CharField" name="title_en">Where we are</field><field type="TextField" name="content">&lt;div&gt;
 		&lt;h1&gt;Dónde estamos&lt;/h1&gt;
 		&lt;div class="where_we_are"&gt;
 			&lt;div class="map"&gt;
@@ -8855,7 +8474,7 @@ Santiago Carrillo Solares&lt;br /&gt; Alfonso Guerra González&lt;br /&gt; Manue
 		&lt;div&gt;
 			&lt;span class="category"&gt;cat1&lt;/span&gt;, &lt;span class="category"&gt;cat2&lt;/span&gt;, &lt;span class="category"&gt;cat3&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/div&gt;</field><field type="TextField" name="content_es">	&lt;div&gt;
+	&lt;/div&gt;</field><field type="TextField" name="content_es">&lt;div&gt;
 		&lt;h1&gt;Dónde estamos&lt;/h1&gt;
 		&lt;div class="where_we_are"&gt;
 			&lt;div class="map"&gt;
@@ -8895,8 +8514,7 @@ Santiago Carrillo Solares&lt;br /&gt; Alfonso Guerra González&lt;br /&gt; Manue
 		&lt;div&gt;
 			&lt;span class="category"&gt;cat1&lt;/span&gt;, &lt;span class="category"&gt;cat2&lt;/span&gt;, &lt;span class="category"&gt;cat3&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/div&gt;</field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="14" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/contact/</field><field type="CharField" name="url_es">/contacto/</field><field type="CharField" name="url_en">/contact/</field><field type="CharField" name="title">Contact</field><field type="CharField" name="title_es">Contacto</field><field type="CharField" name="title_en">Contact</field><field type="TextField" name="content">
-	&lt;h1&gt;Contacto&lt;/h1&gt;
+	&lt;/div&gt;</field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="14" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/contact/</field><field type="CharField" name="url_es">/contacto/</field><field type="CharField" name="url_en">/contact/</field><field type="CharField" name="title">Contact</field><field type="CharField" name="title_es">Contacto</field><field type="CharField" name="title_en">Contact</field><field type="TextField" name="content">&lt;h1&gt;Contacto&lt;/h1&gt;
 	&lt;form class="formu" action="../ru/switch-culture?identifier=es&amp;path=%252Fcontact" method="post"&gt;
 		&lt;div id="row_contact_name" class="row"&gt;
 			&lt;div class="label"&gt;&lt;label for="contact_name"&gt;Nombre&lt;/label&gt;&lt;/div&gt;
@@ -8934,10 +8552,7 @@ Santiago Carrillo Solares&lt;br /&gt; Alfonso Guerra González&lt;br /&gt; Manue
 			&lt;div class="clear_left"&gt;&lt;/div&gt;
 		&lt;/div&gt;
 		&lt;div class="row-button"&gt;&lt;input type="submit" value="Enviar"&gt;&lt;/div&gt;
-	&lt;/form&gt;
-
-</field><field type="TextField" name="content_es">
-	&lt;h1&gt;Contacto&lt;/h1&gt;
+	&lt;/form&gt;</field><field type="TextField" name="content_es">&lt;h1&gt;Contacto&lt;/h1&gt;
 	&lt;form class="formu" action="../ru/switch-culture?identifier=es&amp;path=%252Fcontact" method="post"&gt;
 		&lt;div id="row_contact_name" class="row"&gt;
 			&lt;div class="label"&gt;&lt;label for="contact_name"&gt;Nombre&lt;/label&gt;&lt;/div&gt;
@@ -8975,9 +8590,7 @@ Santiago Carrillo Solares&lt;br /&gt; Alfonso Guerra González&lt;br /&gt; Manue
 			&lt;div class="clear_left"&gt;&lt;/div&gt;
 		&lt;/div&gt;
 		&lt;div class="row-button"&gt;&lt;input type="submit" value="Enviar"&gt;&lt;/div&gt;
-	&lt;/form&gt;
-
-</field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="15" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/corporate-image/</field><field type="CharField" name="url_es">/imagen-corporativa/</field><field type="CharField" name="url_en">/corporate-image/</field><field type="CharField" name="title">Corporate Image</field><field type="CharField" name="title_es">Imagen Corporativa</field><field type="CharField" name="title_en">Corporate Image</field><field type="TextField" name="content">	&lt;h1&gt;Imagen Corporativa&lt;/h1&gt;
+	&lt;/form&gt;</field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="15" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/corporate-image/</field><field type="CharField" name="url_es">/imagen-corporativa/</field><field type="CharField" name="url_en">/corporate-image/</field><field type="CharField" name="title">Corporate Image</field><field type="CharField" name="title_es">Imagen Corporativa</field><field type="CharField" name="title_en">Corporate Image</field><field type="TextField" name="content">&lt;h1&gt;Imagen Corporativa&lt;/h1&gt;
 	&lt;div&gt;
 		&lt;div&gt;
 			&lt;div&gt;
@@ -9002,7 +8615,7 @@ Santiago Carrillo Solares&lt;br /&gt; Alfonso Guerra González&lt;br /&gt; Manue
 		&lt;div&gt;
 			&lt;a href="http://fundacion.noc4net.com/uploads/assets/a/f/3/e/1/3/3/4/2/8/logotipo-imagen-corporativa-svg.xml"&gt;Versión Vectorial SVG&lt;/a&gt;
 		&lt;/div&gt;
-	&lt;/div&gt;</field><field type="TextField" name="content_es">	&lt;h1&gt;Imagen Corporativa&lt;/h1&gt;
+	&lt;/div&gt;</field><field type="TextField" name="content_es">&lt;h1&gt;Imagen Corporativa&lt;/h1&gt;
 	&lt;div&gt;
 		&lt;div&gt;
 			&lt;div&gt;
