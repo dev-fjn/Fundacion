@@ -13,18 +13,20 @@
 		<li><strong>Fecha</strong> {{object.fecha|date:"Y"}}</li>
 		<li><strong>Idioma</strong> {{object.idioma}}</li>
 		{% if object.precio %}
-		<li><strong>Precio</strong> {{object.precio}} €</li>
+            <li><strong>Precio</strong> {{object.precio}} €</li>
 		{% endif %}
 		{% if object.isbn %}
-		<li><strong>ISBN</strong> {{object.isbn}}</li>
+            <li><strong>ISBN</strong> {{object.isbn}}</li>
 		{% endif %}
 		{% if object.url %}
-		<li><strong>URL</strong> {{object.url}}</li>
+            <li><strong>URL</strong> {{object.url}}</li>
 		{% endif %}
 		{% if object.resumen %}
-		<li><strong>Resumen</strong> {{object.resumen}}</li>
+            <li><strong>Resumen</strong> {{object.resumen}}</li>
 		{% endif %}
-		{% if user.is_superuser %}<li class="right"><a href="{% url 'admin:contenidos_libro_change' object.id %}">editar</a></li>{% endif %}
+		{% if user.is_superuser %}
+            <li class="right"><a href="{% url 'admin:contenidos_libro_change' object.id %}">editar</a></li>
+        {% endif %}
 	</ul>
 </div>
 
