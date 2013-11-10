@@ -50,6 +50,9 @@ class CitasDeAdmin(admin.ModelAdmin):
 class CitasSobreAdmin(admin.ModelAdmin):
     list_display = ['contenido', 'autor', 'fecha']
 
+class PresenciaAdmin(admin.ModelAdmin):
+    list_display = ['denominacion', 'lugar', 'imagen']
+
 admin.site.register(Imagen, ImagenAdmin)
 admin.site.register(Video, VideoAdmin)
 admin.site.register(Evento, EventoAdmin)
@@ -57,3 +60,4 @@ admin.site.register(Libro, LibroAdmin)
 admin.site.register(Documento, DocumentoAdmin)
 admin.site.register(CitaDe, CitasDeAdmin)
 admin.site.register(CitaSobre, CitasSobreAdmin)
+admin.site.register(Presencia, PresenciaAdmin)

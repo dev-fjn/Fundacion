@@ -1,0 +1,28 @@
+{% extends "base_1col.html" %}
+
+{% block title %}
+    {{block.super}} Presencia {{object}}
+{% endblock title %}
+
+{% block hormiga %}
+    <ul>
+        <li><a href="#">Juan Negrín</a></li>
+        <li><a href="#">Presencia</a></li>
+    </ul>
+{% endblock hormiga %}
+
+{% block body %}
+
+    <h1>Presencia</h1>
+    <br />
+    <dl>
+    {% for object in object_list %}
+        {% include "contenidos/_presencia.html" %}
+    {% endfor %}
+</dl>
+
+    <p>Este apartado está abierto a aquellos que conozcan algún dato sobre la presencia de Juan Negrín en la sociedad. Enviar dicha aportación a través de nuestro correo electrónico o por carta a nuestra dirección. Es de agradecer si pueden aportar alguna fotografía.</p>
+
+    {# TODO: Activar el formulario de contacto #}
+
+{% endblock %}

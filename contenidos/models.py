@@ -194,6 +194,18 @@ class CitaSobre(models.Model):
         verbose_name = u'cita sobre Juan Negrín'
         verbose_name_plural = u'citas sobre Juan Negrín'
 
+class Presencia(models.Model):
+    denominacion = models.CharField(max_length=250)
+    lugar = models.CharField(max_length=250)
+    url_lugar = models.URLField(blank=True, null=True)
+    descripcion = models.TextField()
+    imagen = FileBrowseField("Imagen", max_length=200, directory="presencia")
+    latitud = models.FloatField(blank=True, null=True)
+    longitud = models.FloatField(blank=True, null=True)
+
+    def __unicode__(self):
+        return u"%s (%s)" % (self.denominacion, self.lugar)
+
 @receiver(post_save, sender=Evento)
 def crea_blog_al_guardar_evento(sender, instance, **kwargs):
     if instance:

@@ -1,0 +1,197 @@
+[
+{
+ "pk": 1, 
+ "model": "contenidos.presencia", 
+ "fields": {
+  "lugar": "Las Palmas de Gran Canaria", 
+  "latitud": null, 
+  "imagen": "/media/uploads/presencia/hospital-dr-juan-negrin-gc.jpg", 
+  "url_lugar": "http://maps.google.es/maps?q=28.120369,+-15.444785&num=1&sll=28.113423,-15.447193&sspn=0.006295,0.006295&hl=es&ie=UTF8&ll=28.120723,-15.444632&spn=0.008876,0.013797&z=16&iwloc=A", 
+  "denominacion": "Hospital General de Gran Canaria Dr. Negr\u00edn", 
+  "descripcion": "Se encuentra situado junto a la cincunvalaci\u00f3n, en la salida Norte, de la ciudad de Las Palmas de Gran Canaria en la parte baja el barranco de la Ballena.", 
+  "longitud": null
+ }
+},
+{
+ "pk": 2, 
+ "model": "contenidos.presencia", 
+ "fields": {
+  "lugar": "Las Palmas Gran Canaria", 
+  "latitud": null, 
+  "imagen": "/media/uploads/presencia/cp-juan-negrin-3palmas.jpg", 
+  "url_lugar": " ", 
+  "denominacion": "Colegio P\u00fablico Dr. Juan Negr\u00edn", 
+  "descripcion": "Sito en el barrio capitalino Hoya de la Plata de las Palmas de Gran Canaria. Colegio P\u00fablico de Ense\u00f1anza primaria, secundaria y bachillerato.", 
+  "longitud": null
+ }
+},
+{
+ "pk": 3, 
+ "model": "contenidos.presencia", 
+ "fields": {
+  "lugar": "Telde, Gran Canaria", 
+  "latitud": null, 
+  "imagen": "/media/uploads/presencia/ceip-juan-negrin-remudas-telde.jpg", 
+  "url_lugar": "http://maps.google.com/maps?f=q&source=s_q&hl=es&geocode=&q=Colegio+de+Ense%C3%B1anza+Infantil+y+Primaria+Juan+Negr%C3%ADn&sll=28.109935,-15.416565&sspn=0.00846,0.013711&ie=UTF8", 
+  "denominacion": "Colegio de Ense\u00f1anza Infantil y Primaria Juan Negr\u00edn", 
+  "descripcion": "Colegio p\u00fablico de Ense\u00f1anza Infantil y Primaria, ubicado en el barrio de las Remudas en el municipio de Telde, isla de Gran Canaria. Ha obtenido un premio del Gobierno de Canarias por su vocaci\u00f3n acad\u00e9mica.", 
+  "longitud": null
+ }
+},
+{
+ "pk": 4, 
+ "model": "contenidos.presencia", 
+ "fields": {
+  "lugar": "Las Palmas de Gran Canaria", 
+  "latitud": null, 
+  "imagen": "/media/uploads/presencia/escultura-juan-negrin-triana-lpgc.jpg", 
+  "url_lugar": "http://maps.google.es/maps?ll=28.103462,-15.415036&spn=0,0.004823&z=18&lci=com.panoramio.all&layer=c&cbll=28.103467,-15.415063&cbp=12,0,,0,5&photoid=po-26756147", 
+  "denominacion": "Escultura de Juan Negr\u00edn", 
+  "descripcion": "Escultura de Juan Negr\u00edn realizada por el escultor Juan Borges, ubicada en la calle Mayor de Triana, en Las Palmas de Gran Canaria", 
+  "longitud": null
+ }
+},
+{
+ "pk": 5, 
+ "model": "contenidos.presencia", 
+ "fields": {
+  "lugar": "Telde, Gran Canaria", 
+  "latitud": null, 
+  "imagen": "/media/uploads/presencia/calle-juan-negrin-telde.jpg", 
+  "url_lugar": "http://maps.google.es/maps?f=q&source=s_q&hl=es&geocode=&q=juan+negr%C3%ADn&sll=28.097792,-15.4163&sspn=0.014443,0.01929&ie=UTF8&hq=juan+negr%C3%ADn&hnear=&ll=27.91817,-15.424547&spn=0.028934,0.038581", 
+  "denominacion": "Calle Juan Negr\u00edn", 
+  "descripcion": "Calle situada en el barrio de San Gregorio del municipio de Telde en la isla de Gran Canaria.", 
+  "longitud": null
+ }
+},
+{
+ "pk": 6, 
+ "model": "contenidos.presencia", 
+ "fields": {
+  "lugar": "Telde, Gran Canaria", 
+  "latitud": null, 
+  "imagen": "/media/uploads/presencia/agrupacion-socialista-juan-negrin-telde.jpg", 
+  "url_lugar": "http://maps.google.es/maps?f=q&source=s_q&hl=es&geocode=&q=Agrupaci%C3%B3n+Socialista+Juan+Negr%C3%ADn+PSOE+telde&sll=27.91817,-15.424547&sspn=0.028934,0.038581&ie=UTF8&hq=Agrupaci%C3%B3n+Socialista+J", 
+  "denominacion": "Agrupaci\u00f3n Socialista Juan Negr\u00edn PSOE", 
+  "descripcion": "Sede socialista ubicada en el barrio de San Gregorio del municipio de Telde, isla de Gran Canaria.", 
+  "longitud": null
+ }
+},
+{
+ "pk": 7, 
+ "model": "contenidos.presencia", 
+ "fields": {
+  "lugar": "Las Palmas de Gran Canaria", 
+  "latitud": null, 
+  "imagen": "/media/uploads/presencia/cabildo-insular-de-gc1.jpg", 
+  "url_lugar": "http://maps.google.es/maps?f=q&source=s_q&hl=es&geocode=&q=cabildo+insular+de+gran+canaria&g=Calle+Juan+De+Quesada,+30,+35001+Las+Palmas+De+Gran+Canaria&ie=UTF8&hq=cabildo+insular&hnear=Gran+Canaria&l", 
+  "denominacion": "Beca de Investigaci\u00f3n Cient\u00edfica Juan Negr\u00edn", 
+  "descripcion": "Beca creada por el Cabildo Insular de Gran Canaria. El objetivo de la misma es apoyar a los j\u00f3venes investigadores en el \u00e1mbito de la Medicina, Farmacia, Biolog\u00eda, Bioqu\u00edmica y Veterinaria.", 
+  "longitud": null
+ }
+},
+{
+ "pk": 8, 
+ "model": "contenidos.presencia", 
+ "fields": {
+  "lugar": "Las Palmas de Gran Canaria", 
+  "latitud": null, 
+  "imagen": "/media/uploads/presencia/calle-dr-juan-negrin-lopez-en-las-palmas-de-gran-canaria.jpg", 
+  "url_lugar": "http://maps.google.com/maps?f=q&source=s_q&hl=es&geocode=&q=Doctor.+Juan+Negr%C3%ADn+L%C3%B3pez+Las+Palmas+de+Gran+Canaria,+Las+Palmas,+Islas+Canarias,+Espa%C3%B1a&sll=28.105951,-15.415333&sspn=0.0084", 
+  "denominacion": "Calle Dr. Juan Negr\u00edn", 
+  "descripcion": "Calle ubicada en la zona comercial de Triana. Esta calle se encuentra paralela entre las calles Rafael Cabrera y Francisco Gourie. El acceso a la misma es por la zona de la plaza del Teatro P\u00e9rez Galdos.", 
+  "longitud": null
+ }
+},
+{
+ "pk": 9, 
+ "model": "contenidos.presencia", 
+ "fields": {
+  "lugar": "Facultad de Medicina,  Universidad Complutense de Madrid", 
+  "latitud": null, 
+  "imagen": "/media/uploads/presencia/aula-juan-negrin-univ-complutense-madrid.jpg", 
+  "url_lugar": "", 
+  "denominacion": "Aula Juan Negr\u00edn de Inform\u00e1tica M\u00e9dica", 
+  "descripcion": "Aula destinada a la ense\u00f1anza inform\u00e1tica de aplicaci\u00f3n en medicina, durante varios a\u00f1os se desarrollo en la misma el Proyecto Dosis-2000 de la Facultad de Medicina, Pabell\u00f3n IV. Bajos Aula 15. Objetivos del Proyecto DOSIS-2000: Formaci\u00f3n te\u00f3rico-pr\u00e1ctica para trabajar como profesionales en el \u00e1rea de conocimiento de la documentaci\u00f3n cient\u00edfica asistencial y sanitaria en el marco del Sistema Nacional de Salud definido la Ley General de Sanidad.", 
+  "longitud": null
+ }
+},
+{
+ "pk": 10, 
+ "model": "contenidos.presencia", 
+ "fields": {
+  "lugar": "Ingenio, Gran Canaria", 
+  "latitud": null, 
+  "imagen": "/media/uploads/presencia/calle-juan-negrin-ingenio.jpg", 
+  "url_lugar": "http://maps.google.es/maps?f=q&source=s_q&hl=es&geocode=&q=Calle+Juan+Negr%C3%ADn+ingenio&sll=28.097792,-15.4163&sspn=0.014443,0.01929&ie=UTF8&hq=&hnear=Calle+de+Juan+Negr%C3%ADn,+35259+Ingenio,+Las+P", 
+  "denominacion": "Calle Juan Negr\u00edn", 
+  "descripcion": "Calle situada en el casco urbano del municipio de Ingenio en la isla de Gran Canaria.", 
+  "longitud": null
+ }
+},
+{
+ "pk": 11, 
+ "model": "contenidos.presencia", 
+ "fields": {
+  "lugar": "Fuenlabrada, Comunidad de Madrid", 
+  "latitud": null, 
+  "imagen": "/media/uploads/presencia/calle-juan-negrin-en-fuenlabrada-madrid.jpg", 
+  "url_lugar": "http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Calle+de+Juan+Negr%C3%ADn,+28942+Fuenlabrada,+Madrid,+Comunidad+de+Madrid,+Spain&sll=40.288246,-3.814246&sspn=0.001029,0.001714&ie=UTF8&hq=&", 
+  "denominacion": "Calle de Juan Negr\u00edn", 
+  "descripcion": "Se encuentra situada junto al Hospital de Fuenlabrada, en una calle lateral del mismo y paralela a la Autov\u00eda de Mostoles a Pinto. En \u00e9sta zona pr\u00f3xima al hospital, los nombres de calles est\u00e1n dedicadas a personalidades de la investigaci\u00f3n de las ciencias de la medicina.", 
+  "longitud": null
+ }
+},
+{
+ "pk": 12, 
+ "model": "contenidos.presencia", 
+ "fields": {
+  "lugar": "Getafe, Comunidad de Madrid", 
+  "latitud": null, 
+  "imagen": "/media/uploads/presencia/calle-juan-negrin-en-getafe-madrid.jpg", 
+  "url_lugar": "http://maps.google.com/maps?f=q&source=s_q&hl=en&q=Av+de+Juan+Negr%C3%ADn,+28905+Getafe,+Madrid,+Comunidad+de+Madrid,+Spain&sll=40.044438,-3.735352&sspn=8.390464,14.040527&ie=UTF8&cd=2&geocode=FY31ZgI", 
+  "denominacion": "Avenida de Juan Negr\u00edn", 
+  "descripcion": "Esta avenida est\u00e1 situada en la nueva zona de expansi\u00f3n urbana de Getafe. Se encuentra a unos 750 metros del Conservatorio de M\u00fasica de Getafe, unos 10 minutos de camino aproximadamente. Los nombres de las calles de \u00e9sta nueva zona urbana est\u00e1n dedicados a la Segunda Rep\u00fablica Espa\u00f1ola. La fotograf\u00eda es de la zona Cerro Buenavista, al fondo se encuentra ubicada \u00e9sta nueva urbanizaci\u00f3n.", 
+  "longitud": null
+ }
+},
+{
+ "pk": 13, 
+ "model": "contenidos.presencia", 
+ "fields": {
+  "lugar": "Leganes, Comunidad de Madrid", 
+  "latitud": null, 
+  "imagen": "/media/uploads/presencia/calle-juan-negrin-en-leganes-madrid.jpg", 
+  "url_lugar": "http://maps.google.com/maps?f=q&source=s_q&hl=en&q=Calle+de+Juan+Negr%C3%ADn,+28911+Legan%C3%A9s,+Madrid,+Comunidad+de+Madrid,+Spain&sll=40.044438,-3.735352&sspn=8.390464,14.040527&ie=UTF8&cd=3&geocod", 
+  "denominacion": "Calle de Juan Negr\u00edn", 
+  "descripcion": "Se encuentra situada junto al Pol\u00edgono Industrial Polvoranca, junto a la carretera de circunvalaci\u00f3n M 406.  Los nombres de las calles de \u00e9sta zona urbana est\u00e1n dedicados a personalidades y l\u00edderes de la Segunda Rep\u00fablica Espa\u00f1ola.", 
+  "longitud": null
+ }
+},
+{
+ "pk": 14, 
+ "model": "contenidos.presencia", 
+ "fields": {
+  "lugar": "Elche, Alicante, Comunidad de Valencia", 
+  "latitud": null, 
+  "imagen": "/media/uploads/presencia/calle-juan-negrin-en-elche-alicante.jpg", 
+  "url_lugar": "http://maps.google.com/maps?f=q&source=s_q&hl=en&q=Carrer+Juan+Negr%C3%ADn,+03203+Elx,+Alacant,+Comunitat+Valenciana,+Spain&sll=40.044438,-3.735352&sspn=8.390464,14.040527&ie=UTF8&cd=4&geocode=FexaSAI", 
+  "denominacion": "Carrer Juan Negr\u00edn", 
+  "descripcion": "Esta calle est\u00e1 situada en una zona industrial, en el Parque Industrial de Elche, junto a la autopista del Mediterr\u00e1neo, a unos 8 Kil\u00f3metros del centro de Elche. Los nombres de las calles de \u00e9ste Parque industrial est\u00e1n dedicados a personalidades cient\u00edficas e investigadores internacionales.", 
+  "longitud": null
+ }
+},
+{
+ "pk": 15, 
+ "model": "contenidos.presencia", 
+ "fields": {
+  "lugar": "Gij\u00f3n, Asturias", 
+  "latitud": null, 
+  "imagen": "/media/uploads/presencia/parque-juan-negrin-en-gijon.jpg", 
+  "url_lugar": "http://maps.google.com/maps?f=q&source=s_q&hl=es&geocode=&q=Parque+Dr.+Juan+Negrin,+Gij%C3%B3n,+Espa%C3%B1a&sll=43.535592,-5.6724&sspn=0.001956,0.003428&ie=UTF8&hq=Parque+Dr.+Juan+Negrin,&hnear=Gij%C3", 
+  "denominacion": "Parque Dr. Juan Negr\u00edn", 
+  "descripcion": "Se encuentra situado en pleno centro de la ciudad de Gij\u00f3n, junto a la calle Carlos Marx. La inauguraci\u00f3n del parque se realiz\u00f3 el 25 de noviembre de 2009, con la asistencia del concejal y portavoz de Izquierda Unida en el Ayuntamiento de Gij\u00f3n, Jes\u00fas Montes Estrada, la presidenta de Honor de la Fundaci\u00f3n Juan Negr\u00edn, Carmen Negr\u00edn, y el historiador Gabriel Jackson.", 
+  "longitud": null
+ }
+}
+]
