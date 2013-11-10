@@ -30,7 +30,8 @@ pillow
 # treemenus
 git+https://github.com/dev-fjn/django-treemenus#egg=treemenus
 
-# requerido por django-flatpages-i18n (external)
+# requerido por django-flatpages-i18n
+git+https://github.com/dev-fjn/django-flatpages-i18n#egg=flatpages_i18n
 django_modeltranslation
 
 # requerido por zinnia
