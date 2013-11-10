@@ -30,7 +30,8 @@ pillow
 # requerido por django-flatpages-i18n (external)
 django_modeltranslation
 
-# requerido por zinnia (external)
+# requerido por zinnia
+git+https://github.com/dev-fjn/django-blog-zinnia#egg=zinnia
 beautifulsoup4>=4.1
 django-tagging
 django-mptt
