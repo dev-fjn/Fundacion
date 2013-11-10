@@ -64,8 +64,10 @@ class Libros(ListView):
 
     def get_queryset(self):
         qs = super(Libros, self).get_queryset()
-        self.busqueda = {}
         _filter = {}
+        self.propios = bool(self.kwargs.get('propios'))
+        _filter['precio__isnull'] = not self.propios
+        self.busqueda = {}
         for campo, query in self.CAMPO_QUERY:
             valor = self.request.GET.get(campo, '').strip()
             self.busqueda[campo] = valor
@@ -77,6 +79,8 @@ class Libros(ListView):
 
     def get_context_data(self, **kwargs):
         context = super(Libros, self).get_context_data(**kwargs)
+        context['page_title'] = u"Catálogo de publicaciones" if self.propios else u"Bibliografía"
+        context['page_parent'] = u"Fondos y Recursos Documentales" if self.propios else u"Juan Negrín"
         context['buscador'] = self.busqueda
         context['count'] = self.count
         context['autores'] = set(Libro.objects.values_list('autor', flat=True))

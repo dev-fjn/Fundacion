@@ -1,7 +1,7 @@
 {% extends 'base_1col.html' %}
 
 {% block title %}
-{{block.super}} Catálogo de publicaciones
+    {{block.super}} {{page_title}}
 {% endblock title %}
 
 {% block extra_head %}
@@ -19,13 +19,13 @@
 
 {% block hormiga %}
 <ul>
-    <li><a href="#">Fondos y Recursos Documentales</a></li>
-    <li><a href="#">Catálogo de publicaciones</a></li>
+    <li><a href="#">{{page_parent}}</a></li>
+    <li><a href="#">{{page_title}}</a></li>
 </ul>
 {% endblock hormiga %}
 
 {% block body %}
-    <h1>Catálogo de publicaciones</h1>
+    <h1>{{page_title}}</h1>
     <div id="space">
         <form method="GET" action="{% url 'libros' %}">
             <strong>Búsqueda</strong>
