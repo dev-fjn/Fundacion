@@ -27,6 +27,9 @@ PIL
 git+https://github.com/jose-lpa/django-filebrowser-no-grappelli.git
 pillow
 
+# treemenus
+git+https://github.com/dev-fjn/django-treemenus#egg=treemenus
+
 # requerido por django-flatpages-i18n (external)
 django_modeltranslation
 
