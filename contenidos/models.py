@@ -139,6 +139,32 @@ class Adjunto(models.Model):
     class Meta:
         abstract = True
 
+class UrlAdjunto(Adjunto):
+    url = models.URLField()
+
+    class Meta:
+        verbose_name = u'URL adjunta'
+        verbose_name_plural = u'URLs adjuntas'
+
+class FicheroAdjunto(Adjunto):
+    filename = FileBrowseField("fichero", max_length=200, directory="documentos")
+
+    def extension(self):
+        return os.path.splitext(self.filename.path)[1]
+
+    def es_imagen(self):
+        return self.extension() in ['.png', '.jpg', '.jpeg', '.gif']
+
+    def es_audio(self):
+        return self.extension() in ['.mp3', ]
+
+    def es_video(self):
+        return self.extension() in ['.flv', '.mp4']
+
+    class Meta:
+        verbose_name = u'Fichero adjunto'
+        verbose_name_plural = u'Ficheros adjuntos'
+
 class CitaDe(models.Model):
     contenido = models.TextField(help_text=u"Poner el texto que se cita")
     descripcion = models.CharField('descripción', max_length=250, help_text="Evento (y lugar) donde se realizó", default=u"Discurso")
@@ -167,32 +193,6 @@ class CitaSobre(models.Model):
         ordering = ('autor', )
         verbose_name = u'cita sobre Juan Negrín'
         verbose_name_plural = u'citas sobre Juan Negrín'
-
-class UrlAdjunto(Adjunto):
-    url = models.URLField()
-
-    class Meta:
-        verbose_name = u'URL adjunta'
-        verbose_name_plural = u'URLs adjuntas'
-
-class FicheroAdjunto(Adjunto):
-    filename = FileBrowseField("fichero", max_length=200, directory="documentos")
-
-    def extension(self):
-        return os.path.splitext(self.filename.path)[1]
-
-    def es_imagen(self):
-        return self.extension() in ['.png', '.jpg', '.jpeg', '.gif']
-
-    def es_audio(self):
-        return self.extension() in ['.mp3', ]
-
-    def es_video(self):
-        return self.extension() in ['.flv', '.mp4']
-
-    class Meta:
-        verbose_name = u'Fichero adjunto'
-        verbose_name_plural = u'Ficheros adjuntos'
 
 @receiver(post_save, sender=Evento)
 def crea_blog_al_guardar_evento(sender, instance, **kwargs):
