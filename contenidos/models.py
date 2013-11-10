@@ -40,7 +40,7 @@ class Evento(models.Model):
 	titulo = models.CharField(max_length=250)
 	resumen = models.TextField()
 	fecha_y_lugar = models.TextField()
-	imagen = models.ImageField(upload_to="eventos/imagenes")
+	imagen = models.ImageField(upload_to="eventos/imagenes", blank=True, null=True)
 	pdf = models.FileField(upload_to="eventos/pdf", blank=True, null=True)
 
 	def __unicode__(self):

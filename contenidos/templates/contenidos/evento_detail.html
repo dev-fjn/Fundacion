@@ -16,7 +16,9 @@
 		<h1>{{object.titulo}}</h1>
 	</section>
 	<section id="left">
+		{% if object.imagen %}
 		<img src="{{MEDIA_URL}}{{object.imagen}}"/>
+		{% endif %}
 	</section>
 	<section id="centreright">
 		<h2>Resumen</h2>
