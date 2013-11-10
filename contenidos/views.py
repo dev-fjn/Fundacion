@@ -3,7 +3,9 @@
 from contenidos.models import Evento, FechaEvento, Libro, Documento, TIPO
 from contenidos.utiles import calendario_por_meses
 from django.conf import settings
+from django.core.urlresolvers import reverse
 from django.db.models import Q
+from django.shortcuts import redirect
 from django.utils import timezone
 from django.views.generic import TemplateView, ListView
 from flatpages_i18n.models import FlatPage_i18n
@@ -45,22 +47,58 @@ class Calendario(TemplateView):
 class Libros(ListView):
     model = Libro
     paginate_by = settings.CONTENIDOS_PAGINADOR_MAX
-    propios = False
+    externos = None
 
     CAMPO_QUERY = [
+            ('externos', 'precio__isnull'),
             ('autor', 'autor__icontains'),
             ('isbn', 'isbn__icontains'),
             ('titulo', 'titulo__icontains'),
         ]
 
+    
+    CONTEXT_PROPIOS = {
+            'url': "catalogo_de_publicaciones",
+            'page_title': u"Catálogo de publicaciones",
+            'page_parent': u"Fondos y Recursos Documentales",
+            'verbose_name': u"publicación",
+            'verbose_name_plural': u"publicaciones",
+        }
+
+    CONTEXT_EXTERNOS = {
+            'url': 'bibliografia',
+            'page_title': u"Bibliografía",
+            'page_parent': u"Juan Negrín",
+            'verbose_name': u"recurso bibliográfico",
+            'verbose_name_plural': u"recursos bibliográficos",
+        }
+
+    @property
+    def extra_context(self):
+        return self.CONTEXT_EXTERNOS if self.externos else self.CONTEXT_PROPIOS
+        
+    def dispatch(self, *args, **kwargs):
+        # Esto es para la vista del buscador. El resto de urls.py tienen "externos" puesto.
+        if self.externos is None:
+            self.externos = self.kwargs.get('tipo') == self.CONTEXT_EXTERNOS['url']
+        # si nos pasan rollos por GET, nos los quitamos de encima y redirigimos por URL
+        keys = self.request.GET.keys()
+        if 'autor' in keys or 'isbn' in keys or 'titulo' in keys:
+            d = dict(
+                tipo = self.extra_context['url'],
+                autor = self.request.GET.get('autor', ''),
+                isbn = self.request.GET.get('isbn', ''),
+                titulo = self.request.GET.get('titulo', ''),
+                )
+            return redirect(reverse('busqueda', kwargs=d))
+        return super(Libros, self).dispatch(*args, **kwargs)
+
     def get_queryset(self):
         qs = super(Libros, self).get_queryset()
         _filter = {}
-        _filter['precio__isnull'] = not self.propios
-        self.busqueda = {}
+        _filter['precio__isnull'] = self.externos
         for campo, query in self.CAMPO_QUERY:
-            valor = self.request.GET.get(campo, '').strip()
-            self.busqueda[campo] = valor
+            valor = self.kwargs.get(campo, '').strip()
             if valor:
                 _filter[query] = valor
         qs = qs.filter(**_filter)
@@ -69,9 +107,8 @@ class Libros(ListView):
 
     def get_context_data(self, **kwargs):
         context = super(Libros, self).get_context_data(**kwargs)
-        context['page_title'] = u"Catálogo de publicaciones" if self.propios else u"Bibliografía"
-        context['page_parent'] = u"Fondos y Recursos Documentales" if self.propios else u"Juan Negrín"
-        context['buscador'] = self.busqueda
+        context.update(self.extra_context)
+        context['buscador'] = self.kwargs
         context['count'] = self.count
         context['autores'] = set(Libro.objects.values_list('autor', flat=True))
         context['isbns'] = set(Libro.objects.filter(isbn__isnull=False).values_list('isbn', flat=True))

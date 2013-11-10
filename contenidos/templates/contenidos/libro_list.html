@@ -27,37 +27,37 @@
 {% block body %}
     <h1>{{page_title}}</h1>
     <div id="space">
-        <form method="GET" action="{% url 'libros' %}">
+        <form method="GET" action=".">
             <strong>Búsqueda</strong>
             <div>
                 <label for="input_autor">(por autor)</label>
-		<input type="text" id="input_autor" name="autor" value="{{buscador.autor}}">
-            <datalist>
-                {% for autor in autores %} <option value="{{autor}}" />{% endfor %}
-            </datalist>
-		</input>
-	    </div>
+                <input type="text" id="input_autor" name="autor" value="{{buscador.autor}}">
+                    <datalist>
+                        {% for autor in autores %} <option value="{{autor}}" />{% endfor %}
+                    </datalist>
+                </input>
+            </div>
             <div>
-		<label for="input_isbn">(por ISBN)</label>
-		<input type="text" id="input_isbn" name="isbn" value="{{buscador.isbn}}">
-            <datalist>
-                {% for isbn in isbns %} <option value="{{isbn}}" />{% endfor %}
-            </datalist>
-		</input>
-	    </div>
+                <label for="input_isbn">(por ISBN)</label>
+                <input type="text" id="input_isbn" name="isbn" value="{{buscador.isbn}}">
+                    <datalist>
+                        {% for isbn in isbns %} <option value="{{isbn}}" />{% endfor %}
+                    </datalist>
+                </input>
+            </div>
             <div>
-		<label for="input_titulo">(por título)</label>
-		<input type="text" id="input_titulo" name="titulo" value="{{buscador.titulo}}">
-            <datalist>
-                {% for titulo in titulos %} <option value="{{titulo}}" />{% endfor %}
-            </datalist>
-		</input>
-	    </div>
+                <label for="input_titulo">(por título)</label>
+                <input type="text" id="input_titulo" name="titulo" value="{{buscador.titulo}}">
+                    <datalist>
+                        {% for titulo in titulos %} <option value="{{titulo}}" />{% endfor %}
+                    </datalist>
+                </input>
+            </div>
             <input type="submit" value="Buscar" />
         </form>
         {% if count %}
             <p>
-                {{count}} Resultados 
+                {{count}} {{verbose_name_plural}} encontrados
                 {% if user.is_superuser %}<a href="{% url 'admin:contenidos_libro_add' %}">&#8862;</a>{% endif %}
             </p>
             {% for object in object_list %}
@@ -66,7 +66,7 @@
             {% include "contenidos/_paginator.html" %}
         {% else %}
             <p>
-                (No hay publicaciones)
+                (No hay {{verbose_name_plural}})
                 {% if user.is_superuser %}<a href="{% url 'admin:contenidos_libro_add' %}">&#8862;</a>{% endif %}
             </p>
         {% endif %}
