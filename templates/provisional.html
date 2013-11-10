@@ -47,7 +47,15 @@
                 <section id="banner">
                     <section id="relleno" title="Logotipo de esta página">&nbsp;</section>
                     <section id="caja">
-                        <section id="acceso">Acceso | Registro | <a href="{% url 'busqueda_general' %}">Buscar</a></section>
+                        <section id="acceso">
+                            <a href="{% url 'busqueda_general' %}">Buscar</a>
+                            {% if user.is_authenticated %}
+                                | <a href="{% url 'admin:index' %}" target="_blank">Admin</a>
+                                | <a href="{% url 'admin:logout' %}">Salir</a>
+                            {% else %}
+                                | <a href="{% url 'admin:index' %}">Entrar</a>
+                            {% endif %}
+                        </section>
                         <section id="social"><span><img src="{% static 'img/f.png' %}" alt="Facebook" height="41" width="41" /></span>&nbsp;<span><img src="{% static 'img/t.png' %}" alt="Twitter" height="41" width="41" /></span></section>
                         <section id="contacto"><span><img src="{% static 'img/mail.png' %}" alt="Correo Electrónico" height="41" width="41" /></span>&nbsp;<span><img src="{% static 'img/rss.png' %}" alt="RSS" height="41" width="41" /></span></section>
                     </section>
