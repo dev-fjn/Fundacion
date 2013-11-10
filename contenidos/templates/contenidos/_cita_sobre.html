@@ -6,12 +6,14 @@
             {% if object.cargo %} | {{object.cargo}} {% endif %}
         </cite>
 
-        &nbsp;| <time datetime="{{object.fecha|date:"Y-m-d"}}">
-            {% if object.fecha_literal %}
-                {{object.fecha_literal}}
-            {% else %}
-                {{object.fecha}}
-            {% endif %}
-        </time>
+        {% if object.fecha %}
+            &nbsp;| <time datetime="{{object.fecha|date:"Y-m-d"}}">
+                {% if object.fecha_literal %}
+                    {{object.fecha_literal}}
+                {% else %}
+                    {{object.fecha}}
+                {% endif %}
+            </time>
+        {% endif %}
     </footer>
 </blockquote>
