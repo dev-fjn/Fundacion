@@ -76,6 +76,9 @@ class Libros(ListView):
 		context = super(Libros, self).get_context_data(**kwargs)
 		context['buscador'] = self.busqueda
 		context['count'] = self.count
+		context['autores'] = set(Libro.objects.values_list('autor', flat=True))
+		context['isbns'] = set(Libro.objects.filter(isbn__isnull=False).values_list('isbn', flat=True))
+		context['titulos'] = set(Libro.objects.values_list('titulo', flat=True))
 		return context
 
 class Documentos(ListView):

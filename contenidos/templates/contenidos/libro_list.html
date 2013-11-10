@@ -31,15 +31,27 @@
             <strong>Búsqueda</strong>
             <div>
                 <label for="input_autor">(por autor)</label>
-		<input type="text" id="input_autor" name="autor" value="{{buscador.autor}}" />
+		<input type="text" id="input_autor" name="autor" value="{{buscador.autor}}">
+		<datalist>
+			{% for autor in autores %} <option value="{{autor}}" />{% endfor %}
+		</datalist>
+		</input>
 	    </div>
             <div>
 		<label for="input_isbn">(por ISBN)</label>
-		<input type="text" id="input_isbn" name="isbn" value="{{buscador.isbn}}" />
+		<input type="text" id="input_isbn" name="isbn" value="{{buscador.isbn}}">
+		<datalist>
+			{% for isbn in isbns %} <option value="{{isbn}}" />{% endfor %}
+		</datalist>
+		</input>
 	    </div>
             <div>
 		<label for="input_titulo">(por título)</label>
-		<input type="text" id="input_titulo" name="titulo" value="{{buscador.titulo}}" />
+		<input type="text" id="input_titulo" name="titulo" value="{{buscador.titulo}}">
+		<datalist>
+			{% for titulo in titulos %} <option value="{{titulo}}" />{% endfor %}
+		</datalist>
+		</input>
 	    </div>
             <input type="submit" value="Buscar" />
         </form>
