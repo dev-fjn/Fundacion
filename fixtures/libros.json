@@ -1,0 +1,542 @@
+[
+{
+ "pk": 1, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "978-84-3205-6", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "1976-01-01", 
+  "precio": null, 
+  "autor": "Mariano Ans\u00f3", 
+  "miniatura": "/media/uploads/bibliografia/yo-fui-ministro-de-negrin.jpg", 
+  "editorial": "Planeta", 
+  "pais": "Espa\u00f1a (Barcelona)", 
+  "titulo": "Yo fui ministro de Negr\u00edn", 
+  "idioma": "Espa\u00f1ol", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 2, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "1976-01-01", 
+  "precio": null, 
+  "autor": "Edmundo Dom\u00ednguez Aragon\u00e9s (comisario del Ej\u00e9rcito del Centro de las fuerzas republicanas durante la Guerra Civil espa\u00f1ola)", 
+  "miniatura": "/media/uploads/bibliografia/los-vencedores-de-negrin.jpg", 
+  "editorial": "Roca", 
+  "pais": "M\u00e9xico", 
+  "titulo": "Los Vencedores de Negr\u00edn", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 3, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "978-84-3204-3", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "1985-01-01", 
+  "precio": null, 
+  "autor": "Joan Llarch", 
+  "miniatura": "/media/uploads/bibliografia/negrin-resistir-es-vencer.jpg", 
+  "editorial": "Planeta", 
+  "pais": "Espa\u00f1a (Barcelona)", 
+  "titulo": "Negr\u00edn. \u00a1Resistir es vencer!", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 4, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "", 
+  "tipo": "Ponencias", 
+  "url": "", 
+  "fecha": "1988-01-01", 
+  "precio": null, 
+  "autor": "A. Gallego", 
+  "miniatura": "", 
+  "editorial": "Conferencias Plenarias, Mesas Redondas, Res\u00famenes de Comunicaciones del XXIII Congreso Nacional de la Sociedad espa\u00f1ola de Ciencias Fisiol\u00f3gicas", 
+  "pais": "Espa\u00f1a (Tenerife, Puerto de la Cruz)", 
+  "titulo": "El Fisi\u00f3logo Juan Negr\u00edn", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 5, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "1990-01-01", 
+  "precio": null, 
+  "autor": "Juan Marichal", 
+  "miniatura": "/media/uploads/bibliografia/el-intelectual-y-la-politica.jpg", 
+  "editorial": "Residencia de Estudiantes", 
+  "pais": "Espa\u00f1a (Madrid)", 
+  "titulo": "El intelectual y la pol\u00edtica. Unamuno, Ortega, Aza\u00f1a, Negr\u00edn.", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 6, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "1991-01-01", 
+  "precio": null, 
+  "autor": "Jordi Palafox", 
+  "miniatura": "/media/uploads/bibliografia/atraso-economico-y-democracia.jpg", 
+  "editorial": "Cr\u00edtica, DL", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "Atraso econ\u00f3mico y democracia : la Segunda Rep\u00fablica y la econom\u00eda espa\u00f1ola, 1892-1936", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 7, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "", 
+  "tipo": "Bolet\u00edn", 
+  "url": "", 
+  "fecha": "1993-01-01", 
+  "precio": null, 
+  "autor": "Josep Llu\u00eds Barona", 
+  "miniatura": "", 
+  "editorial": " Bolet\u00edn Instituci\u00f3n Libre de Ense\u00f1anza, II \u00e9poca", 
+  "pais": "Espa\u00f1a (Madrid, 1987)", 
+  "titulo": "Juan Negr\u00edn y la modernizaci\u00f3n cient\u00edfica en Espa\u00f1a", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 8, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "84-7960-093-4", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "1994-01-01", 
+  "precio": null, 
+  "autor": "Santiago \u00c1lvarez", 
+  "miniatura": "/media/uploads/bibliografia/negrin-personalidad-historica.jpg", 
+  "editorial": "Ediciones de La Torre", 
+  "pais": "Espa\u00f1a (Madrid)", 
+  "titulo": "Negr\u00edn, personalidad hist\u00f3rica. Biograf\u00eda", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 9, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "84-7960-094-2", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "1994-01-01", 
+  "precio": null, 
+  "autor": "Santiago \u00c1lvarez", 
+  "miniatura": "/media/uploads/bibliografia/negrin-personalidad-historica-documentos.jpg", 
+  "editorial": "Ediciones de La Torre", 
+  "pais": "Espa\u00f1a (Madrid)", 
+  "titulo": "Negr\u00edn, personalidad hist\u00f3rica. Documentos", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 10, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "84-96326-09-8", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "1996-01-01", 
+  "precio": null, 
+  "autor": "Francisco Olaya Morales", 
+  "miniatura": "/media/uploads/bibliografia/la-gran-estafa.jpg", 
+  "editorial": "Nossa y Jara Editores", 
+  "pais": "Espa\u00f1a (Madrid)", 
+  "titulo": "La Gran Estafa: Negr\u00edn, Prieto y el Patrimonio espa\u00f1ol", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 11, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "1996-01-01", 
+  "precio": null, 
+  "autor": "Manuel Tu\u00f1\u00f3n de Lara", 
+  "miniatura": "/media/uploads/bibliografia/juan-negrin-el-hombre-necesario.jpg", 
+  "editorial": "Consejer\u00eda de Educaci\u00f3n, Cultura y Deportes del Gobierno de Canarias", 
+  "pais": "Espa\u00f1a (Canarias)", 
+  "titulo": "Juan Negr\u00edn L\u00f3pez. El hombre necesario", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 12, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "978-84-3060-4", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2001-01-01", 
+  "precio": null, 
+  "autor": "Pablo Mart\u00edn Ace\u00f1a", 
+  "miniatura": "/media/uploads/bibliografia/el-oro-de-moscu-y-el-oro-de-berlin.jpg", 
+  "editorial": "Taurus", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "El Oro de Mosc\u00fa y el Oro de Berl\u00edn", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 13, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "84-8460-301-6", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2003-01-01", 
+  "precio": null, 
+  "autor": "Ricardo Miralles", 
+  "miniatura": "/media/uploads/bibliografia/juan-negrin-la-republica-en-guerra.jpg", 
+  "editorial": "Temas de hoy", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "Juan Negr\u00edn. La Rep\u00fablica en guerra.", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 14, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "978-84-7813-2", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2003-01-01", 
+  "precio": null, 
+  "autor": " Stoy\u00e1n M\u00ednev (Step\u00e1nov), delegado en Espa\u00f1a de la Komintern (1937 - 1039). \u00c1ngel L. Encinas Moral, traducci\u00f3n y edici\u00f3n.", 
+  "miniatura": "/media/uploads/bibliografia/las-causas-de-la-derrota-de-la-republica.jpg", 
+  "editorial": "Miraguano, S.A. Ediciones", 
+  "pais": "Espa\u00f1a (Madrid)", 
+  "titulo": "Las causas de la derrota de la Rep\u00fablica Espa\u00f1ola", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 15, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "978-184-5193-", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2010-01-01", 
+  "precio": null, 
+  "autor": "Gabriel Jockson", 
+  "miniatura": "/media/uploads/bibliografia/juan-negrin-physiologist-socialist-and-spanish-republican-war-leader.jpg", 
+  "editorial": "Sussex Academic Press", 
+  "pais": "Reino Unido", 
+  "titulo": "Juan Negrin: Physiologist, Socialist, and Spanish Republican War Leader", 
+  "idioma": "Ingl\u00e9s", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 16, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2004-01-01", 
+  "precio": null, 
+  "autor": "Francisco Olaya Morales", 
+  "miniatura": "/media/uploads/bibliografia/el-expolio-de-la-republica.jpg", 
+  "editorial": "Belacqua de ediciones y publicaciones, S.", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "El Expolio de la Segunda Rep\u00fablica", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 17, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2004-01-01", 
+  "precio": null, 
+  "autor": "Gabriel Jackson, Victor Alba", 
+  "miniatura": "/media/uploads/bibliografia/juan-negrin.jpg", 
+  "editorial": "B Ediciones", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "Juan Negr\u00edn", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 18, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "978-84-9892-0", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2006-01-01", 
+  "precio": null, 
+  "autor": "Angel Vi\u00f1as", 
+  "miniatura": "/media/uploads/bibliografia/la-soledad-de-la-republica.jpg", 
+  "editorial": "Critica", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "La soledad de la Rep\u00fablica: El abandono de las democracias y el viraje hacia la Uni\u00f3n Sovi\u00e9tica", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 19, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2006-01-01", 
+  "precio": null, 
+  "autor": "Jos\u00e9 Andr\u00e9s Rojo", 
+  "miniatura": "/media/uploads/bibliografia/vicente-rojo-retrato-de-un-general.jpg", 
+  "editorial": "Tusquets Editores", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "Vicente Rojo, Retrato de un general republicano", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 20, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "978-84-9892-0", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2007-01-01", 
+  "precio": null, 
+  "autor": "Angel Vi\u00f1as", 
+  "miniatura": "/media/uploads/bibliografia/el-escudo-de-la-republica.jpg", 
+  "editorial": "Critica", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "El escudo de la Rep\u00fablica: El oro de Espa\u00f1a, la apuesta sovi\u00e9tica y los hechos de mayo de 1937", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 21, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "84-96411-13-3", 
+  "tipo": "Cat\u00e1logo", 
+  "url": "", 
+  "fecha": "2007-01-01", 
+  "precio": null, 
+  "autor": "Varios", 
+  "miniatura": "/media/uploads/bibliografia/juan-negrin-medico-y-jefe-de-gobierno.jpg", 
+  "editorial": "Sociedad Estatal de Conmemoraciones Culturales", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "Juan Negr\u00edn. M\u00e9dico y Jefe de Gobierno (1892-1956)", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 22, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "84-96411-13-3", 
+  "tipo": "Cat\u00e1logo", 
+  "url": "", 
+  "fecha": "2007-01-01", 
+  "precio": null, 
+  "autor": "Varios", 
+  "miniatura": "/media/uploads/bibliografia/juan-negrin-1892-1956-barcelona-capital-de-la-republica .jpg", 
+  "editorial": "SocieSociedad Estatal de Conmemoraciones Culturalesdad Estatal de Conmemoraciones Culturales", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "Juan Negr\u00edn 1892-1956  Barcelona, capital de la Rep\u00fablica", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 23, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "84-95599-20-1", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2007-01-01", 
+  "precio": null, 
+  "autor": "Josep Llu\u00eds Barona", 
+  "miniatura": "/media/uploads/bibliografia/medicina-y-compromiso.gif", 
+  "editorial": "Nivola Ediciones", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "Medicina y compromiso. Entre la experimentaci\u00f3n y la pol\u00edtica", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 24, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "978-84-8432-996-1", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2008-01-01", 
+  "precio": null, 
+  "autor": "Gabriel Jackson", 
+  "miniatura": "/media/uploads/bibliografia/juan-negrin-medico-socialista-y-jefe-del-gobierno-de-la-II-republica.jpg", 
+  "editorial": "Critica", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "Juan Negr\u00edn m\u00e9dico socialista y jefe del gobierno de la II Rep\u00fablica", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 25, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "978-84-96764-34-7", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2008-01-01", 
+  "precio": null, 
+  "autor": "Antonio Cruz Gonz\u00e1lez", 
+  "miniatura": "/media/uploads/bibliografia/las-victimas-de-negrin.jpg", 
+  "editorial": "Sepha", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "Las v\u00edctimas de Negr\u00edn", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 26, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "978-84-8307-753-1", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2008-01-01", 
+  "precio": null, 
+  "autor": "Enrique Moradiellos", 
+  "miniatura": "/media/uploads/bibliografia/don-juan-negrin.jpg", 
+  "editorial": "Quinteto Bolsillo", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "Don Juan Negr\u00edn", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 27, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "978-84-670-3107-2", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2008-01-01", 
+  "precio": null, 
+  "autor": "Helen Graham", 
+  "miniatura": "/media/uploads/bibliografia/breve-historia-de-la-guerra-civil.jpg", 
+  "editorial": "Espasa CalpeEspasa Calpe", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "Breve historia de la Guerra Civil", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 29, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "978-84-7423-765-8", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2009-01-01", 
+  "precio": null, 
+  "autor": "Angel Vi\u00f1a", 
+  "miniatura": "/media/uploads/bibliografia/el-honor-de-la-republica.jpg", 
+  "editorial": "Critica", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "El Honor de la Rep\u00fablica: entre el acoso fascista, la hostilidad brit\u00e1nica y la pol\u00edtica de Stalin", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 30, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "978-84-9892-031-4", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2009-01-01", 
+  "precio": null, 
+  "autor": "Angel Vi\u00f1as y Fernando Hern\u00e1ndez S\u00e1nchez", 
+  "miniatura": "/media/uploads/bibliografia/el-desplome-de-la-republica.jpg", 
+  "editorial": "Critica", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "El desplome de la Rep\u00fablica: la verdadera historia del final de la Guerra Civil", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 31, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "978-184-5193-768", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2010-01-01", 
+  "precio": null, 
+  "autor": "Gabriel Jackson", 
+  "miniatura": "/media/uploads/bibliografia/juan-negrin-physiologist-socialist-and-spanish-republican-war-leader.jpg", 
+  "editorial": "Sussex Academic Press", 
+  "pais": "Reino Unido", 
+  "titulo": "Juan Negrin: Physiologist, Socialist, and Spanish Republican War Leader", 
+  "idioma": "Ingl\u00e9s", 
+  "resumen": ""
+ }
+}
+]
