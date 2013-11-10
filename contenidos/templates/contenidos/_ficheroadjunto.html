@@ -1,0 +1,15 @@
+{# programar aqui las diferentes formas de mostrar adjuntos de contenidos en una linea#}
+
+<!--{{adjunto.extension}}-->
+{% if adjunto.es_imagen %}
+    IMAGEN <img src="{{adjunto.filename}}" title="{{adjunto.titulo}}" />
+{% elif adjunto.es_video %}
+    VIDEO <a href="{{adjunto.filename}}">{{adjunto.titulo}}</a> 
+{% elif adjunto.es_audio %}
+    AUDIO <a href="{{adjunto.filename}}">{{adjunto.titulo}}</a> 
+{% elif adjunto.extension = ".pdf" %}
+    PDF <a href="{{adjunto.filename}}">{{adjunto.titulo}}</a> 
+{% else %}
+    OTRO <a href="{{adjunto.filename}}">{{adjunto.titulo}}</a> 
+{% endif %}
+

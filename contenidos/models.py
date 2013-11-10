@@ -6,6 +6,7 @@ from django.db.models.signals import post_save, pre_save
 from django.dispatch import receiver
 from filebrowser.fields import FileBrowseField
 from zinnia.models import Category as CategoryZinnia, Entry as EntryZinnia
+import os
 
 # Create your models here.
 
@@ -122,9 +123,7 @@ class Documento(models.Model):
 
     def adjuntos(self):
         l = list(self.urladjunto_set.all())
-        l += list(self.pdfadjunto_set.all())
-        l += list(self.videoadjunto_set.all())
-        l += list(self.audioadjunto_set.all())
+        l += list(self.ficheroadjunto_set.all())
         return sorted(l, key=lambda x: x.titulo)
 
 class Adjunto(models.Model):
@@ -176,26 +175,24 @@ class UrlAdjunto(Adjunto):
         verbose_name = u'URL adjunta'
         verbose_name_plural = u'URLs adjuntas'
 
-class PdfAdjunto(Adjunto):
-    pdf = FileBrowseField("pdf", max_length=200, extensions=[".pdf",], directory="documentos", blank=True, null=True)
+class FicheroAdjunto(Adjunto):
+    filename = FileBrowseField("fichero", max_length=200, directory="documentos")
+
+    def extension(self):
+        return os.path.splitext(self.filename.path)[1]
+
+    def es_imagen(self):
+        return self.extension() in ['.png', '.jpg', '.jpeg', '.gif']
+
+    def es_audio(self):
+        return self.extension() in ['.mp3', ]
+
+    def es_video(self):
+        return self.extension() in ['.flv', '.mp4']
 
     class Meta:
-        verbose_name = u'PDF adjunto'
-        verbose_name_plural = u'PDFs adjuntos'
-
-class VideoAdjunto(Adjunto):
-    video = FileBrowseField("video", max_length=200, extensions=[".flv", ".mp4",], directory="documentos", blank=True, null=True)
-
-    class Meta:
-        verbose_name = u'Vídeo adjunto'
-        verbose_name_plural = u'Vídeos adjuntos'
-
-class AudioAdjunto(Adjunto):
-    audio = FileBrowseField("audio", max_length=200, extensions=[".mp3", ".ogg",], directory="documentos", blank=True, null=True)
-
-    class Meta:
-        verbose_name = u'Audio adjunto'
-        verbose_name_plural = u'Audios adjuntos'
+        verbose_name = u'Fichero adjunto'
+        verbose_name_plural = u'Ficheros adjuntos'
 
 @receiver(post_save, sender=Evento)
 def crea_blog_al_guardar_evento(sender, instance, **kwargs):

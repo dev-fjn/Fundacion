@@ -31,22 +31,14 @@ class UrlAdjuntoInline(admin.TabularInline):
     model = UrlAdjunto
     extra = 0
 
-class PdfAdjuntoInline(admin.TabularInline):
-    model = PdfAdjunto
-    extra = 0
-
-class VideoAdjuntoInline(admin.TabularInline):
-    model = VideoAdjunto
-    extra = 0
-
-class AudioAdjuntoInline(admin.TabularInline):
-    model = AudioAdjunto
+class FicheroAdjuntoInline(admin.TabularInline):
+    model = FicheroAdjunto
     extra = 0
 
 class DocumentoAdmin(admin.ModelAdmin):
     list_display = ['titulo', 'tipo', 'adjuntos_']
     list_filter = ['tipo']
-    inlines = [UrlAdjuntoInline, PdfAdjuntoInline, VideoAdjuntoInline, AudioAdjuntoInline]
+    inlines = [UrlAdjuntoInline, FicheroAdjuntoInline]
 
     def adjuntos_(self, obj):
         return "<br />".join([u"%s" % (i, ) for i in obj.adjuntos()])
