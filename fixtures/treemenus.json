@@ -122,11 +122,11 @@
  "fields": {
   "parent": 4, 
   "level": 2, 
-  "url": "/citas-de-juan-negrin/", 
+  "url": "", 
   "menu": 1, 
   "rank": 3, 
   "caption": "Citas", 
-  "named_url": ""
+  "named_url": "citas_de_juan_negrin"
  }
 },
 {
@@ -226,11 +226,11 @@
  "fields": {
   "parent": 17, 
   "level": 3, 
-  "url": "/citas-sobre-juan-negrin/", 
+  "url": "", 
   "menu": 1, 
   "rank": 0, 
   "caption": "Citas sobre Juan Negr\u00edn", 
-  "named_url": ""
+  "named_url": "citas_sobre_juan_negrin"
  }
 },
 {
