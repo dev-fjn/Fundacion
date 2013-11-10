@@ -26,6 +26,19 @@
  }
 },
 {
+ "pk": 3, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 1, 
+  "level": 1, 
+  "url": "/fundacion/", 
+  "menu": 1, 
+  "rank": 1, 
+  "caption": "Fundaci\u00f3n", 
+  "named_url": ""
+ }
+},
+{
  "pk": 4, 
  "model": "treemenus.menuitem", 
  "fields": {
@@ -61,6 +74,71 @@
   "menu": 1, 
   "rank": 3, 
   "caption": "Sala de Prensa", 
+  "named_url": ""
+ }
+},
+{
+ "pk": 8, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 3, 
+  "level": 2, 
+  "url": "/presidente/", 
+  "menu": 1, 
+  "rank": 0, 
+  "caption": "Presidente", 
+  "named_url": ""
+ }
+},
+{
+ "pk": 9, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 3, 
+  "level": 2, 
+  "url": "/presidenta-de-honor/", 
+  "menu": 1, 
+  "rank": 1, 
+  "caption": "Presidenta de honor", 
+  "named_url": ""
+ }
+},
+{
+ "pk": 10, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 3, 
+  "level": 2, 
+  "url": "/patronato/", 
+  "menu": 1, 
+  "rank": 2, 
+  "caption": "Patronato", 
+  "named_url": ""
+ }
+},
+{
+ "pk": 11, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 3, 
+  "level": 2, 
+  "url": "/objetivos/", 
+  "menu": 1, 
+  "rank": 3, 
+  "caption": "Objetivos", 
+  "named_url": ""
+ }
+},
+{
+ "pk": 12, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 3, 
+  "level": 2, 
+  "url": "/hacerce-amigo-de-la-fundacion/", 
+  "menu": 1, 
+  "rank": 4, 
+  "caption": "Hacerse amigo de la Fundaci\u00f3n", 
   "named_url": ""
  }
 },
@@ -356,6 +434,14 @@
  "fields": {
   "root_item": 1, 
   "name": "principal"
+ }
+},
+{
+ "pk": 2, 
+ "model": "treemenus.menu", 
+ "fields": {
+  "root_item": 3, 
+  "name": "piedepagina"
  }
 },
 {
