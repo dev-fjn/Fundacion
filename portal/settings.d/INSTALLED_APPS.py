@@ -3,9 +3,7 @@
 INSTALLED_APPS += (
     'django.contrib.admin',
     'django.contrib.admindocs',
-	'django.contrib.webdesign',
+    'django.contrib.webdesign',
     'south',
     'gunicorn',
-    'portada',
-    'contenidos',
 )

@@ -1,1 +1,5 @@
+INSTALLED_APPS += (
+    'contenidos',
+)
+
 CONTENIDOS_PAGINADOR_MAX = 3

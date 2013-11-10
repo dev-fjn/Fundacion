@@ -11,6 +11,9 @@ from flatpages_i18n.models import FlatPage_i18n
 import calendar
 import datetime
 
+class Home(TemplateView):
+    template_name = "contenidos/home.html"
+
 class Calendario(TemplateView):
     def get_template_names(self):
         if 'only' in self.kwargs:

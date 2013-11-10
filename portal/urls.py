@@ -40,7 +40,6 @@ urlpatterns = patterns(
     url(r'^admin/',     include( admin.site.urls )),
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
-    url(r'^$',          'portada.views.home', name='home'),
     url(r'^weblog/',    include('zinnia.urls')),
     url(r'^comments/',  include('django.contrib.comments.urls')),
     url(r'',            include('contenidos.urls')),
