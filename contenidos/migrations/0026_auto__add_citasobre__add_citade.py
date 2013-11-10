@@ -9,6 +9,7 @@ class Migration(SchemaMigration):
 
     def forwards(self, orm):
         # Adding model 'CitaSobre'
+        db.delete_table(u'contenidos_citasobre')
         db.create_table(u'contenidos_citasobre', (
             (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
             ('contenido', self.gf('django.db.models.fields.TextField')()),
@@ -20,6 +21,7 @@ class Migration(SchemaMigration):
         db.send_create_signal(u'contenidos', ['CitaSobre'])
 
         # Adding model 'CitaDe'
+        db.delete_table(u'contenidos_citade')
         db.create_table(u'contenidos_citade', (
             (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
             ('contenido', self.gf('django.db.models.fields.TextField')()),
