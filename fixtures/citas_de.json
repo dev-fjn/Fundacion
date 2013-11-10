@@ -1,0 +1,102 @@
+[
+{
+ "pk": 1, 
+ "model": "contenidos.citade", 
+ "fields": {
+  "contenido": "Bravura, combatientes frescos, material b\u00e9lico en abundancia. Todo eso tenemos. \u00bfQu\u00e9 necesitamos adem\u00e1s para asegurar una l\u00ednea infranqueable de resistencia? Necesitamos una fe ciega, absoluta en el resultado de nuestra lucha. Necesitamos que recobren el dominio de sus nervios los que lo hayan perdido. Ser\u00e9nese la retaguardia. Cumpla cada uno su misi\u00f3n cotidiana consider\u00e1ndola una misi\u00f3n de guerra. J\u00farense los soldados no retroceder ni un paso cuando el mando ordene clavarse en el suelo.", 
+  "descripcion": "Discurso", 
+  "fecha": "1939-01-27", 
+  "fecha_literal": ""
+ }
+},
+{
+ "pk": 2, 
+ "model": "contenidos.citade", 
+ "fields": {
+  "contenido": "La guerra se pierde cuando da uno la guerra por perdida. El vencedor lo proclama el vencido: no es \u00e9l quien se erige en vencedor. Y mientras haya esp\u00edritu de resistencia, hay posibilidad de triunfo.", 
+  "descripcion": "Discurso ante la C\u00e1mara de diputados en 1938", 
+  "fecha": "1938-04-16", 
+  "fecha_literal": ""
+ }
+},
+{
+ "pk": 3, 
+ "model": "contenidos.citade", 
+ "fields": {
+  "contenido": "Con fe en la victoria, con entusiasmo y disciplina, podremos en d\u00edas o semanas limpiar de invasores las tierras que acaban de arrebatarnos y abrir los caminos del resto de Espa\u00f1a a nuestro ej\u00e9rcito, el ej\u00e9rcito de la independencia.", 
+  "descripcion": "Discurso", 
+  "fecha": "1938-04-16", 
+  "fecha_literal": ""
+ }
+},
+{
+ "pk": 4, 
+ "model": "contenidos.citade", 
+ "fields": {
+  "contenido": "Si Hitler triunfara, Espa\u00f1a, como las dem\u00e1s naciones de Europa y el mundo, se ver\u00edan sometidas a la m\u00e1s abyecta esclavitud, sin vislumbre de redenci\u00f3n posible. Por obligaci\u00f3n patri\u00f3tica y por nuestro ego\u00edsmo individual, es deber de espa\u00f1oles no hacer nada que pueda favorecer, es deber nuestro hacer todo lo que pueda da\u00f1ar, a la hidra apocal\u00edptica del nazismo, el mayor peligro que ha conocido la humanidad desde que tiene historia.", 
+  "descripcion": "Discurso de Londres", 
+  "fecha": "1941-07-20", 
+  "fecha_literal": ""
+ }
+},
+{
+ "pk": 5, 
+ "model": "contenidos.citade", 
+ "fields": {
+  "contenido": "\u2026 frente a la pol\u00edtica de no intervenci\u00f3n y manteniendo inc\u00f3lume el derecho del pueblo espa\u00f1ol a disponer de su destino, ha sabido el Gobierno de la Rep\u00fablica organizar la resistencia y crear un ej\u00e9rcito que lleno de fe se prepara para las jornadas decisivas, que nos han de conducir a la victoria \u2026", 
+  "descripcion": "Discurso", 
+  "fecha": "1938-04-16", 
+  "fecha_literal": ""
+ }
+},
+{
+ "pk": 6, 
+ "model": "contenidos.citade", 
+ "fields": {
+  "contenido": "Someto al mundo tres puntos que estimo condensa el esp\u00edritu por el cual combate el pueblo espa\u00f1ol. Son ellos: Primero. La garant\u00eda de la independencia de nuestra patria, libre de ingerencias extranjeras. Segundo. La seguridad de que sea el pueblo espa\u00f1ol el \u00fanico que escoja su r\u00e9gimen y rija sus destinos. Tercero. El cese todas las persecuciones y represalias una vez liquidada la guerra.", 
+  "descripcion": "Discurso ante las Cortes celebrada en Figueras", 
+  "fecha": "1939-02-01", 
+  "fecha_literal": ""
+ }
+},
+{
+ "pk": 7, 
+ "model": "contenidos.citade", 
+ "fields": {
+  "contenido": "\u00a1Animo y aliento, espa\u00f1oles de la retaguardia y del frente! Del coraje de los actos de hero\u00edsmo, depende la existencia de todos y lo que vale m\u00e1s, el porvenir de Espa\u00f1a. No os dej\u00e9is descorazonar por las desgracias. Sea nuestro temple el del acero. Vendr\u00e1n d\u00edas mejores en los que habremos de recordar orgullosos nuestro comportamiento en la adversidad.", 
+  "descripcion": "Discurso entre 1937-1939", 
+  "fecha": "1937-01-01", 
+  "fecha_literal": ""
+ }
+},
+{
+ "pk": 8, 
+ "model": "contenidos.citade", 
+ "fields": {
+  "contenido": "Cada d\u00eda de resistencia es una batalla ganada", 
+  "descripcion": "Discurso entre 1937-1939", 
+  "fecha": "1937-01-01", 
+  "fecha_literal": ""
+ }
+},
+{
+ "pk": 9, 
+ "model": "contenidos.citade", 
+ "fields": {
+  "contenido": "La victoria impone a quienes la desean sacrificios considerables. Y uno de estos. Que no puede ser descuidado, si no queremos comprometerla, es la de producir m\u00e1s.", 
+  "descripcion": "Discurso en 1938", 
+  "fecha": "1938-01-01", 
+  "fecha_literal": ""
+ }
+},
+{
+ "pk": 10, 
+ "model": "contenidos.citade", 
+ "fields": {
+  "contenido": "Tenemos la valent\u00eda comprobada de nuestros soldados. Tenemos fuerzas de refresco que han de preservarnos de un agotamiento. Tenemos material (ya empezamos a ponerlo en servicio) en cantidad, proporci\u00f3n y calidad que no so\u00f1\u00e1bamos. Ha llegado tarde como, lleg\u00f3 tarde a Madrid, pero ha llegado a\u00fan a tiempo, como lleg\u00f3 a justo tiempo en 1936.", 
+  "descripcion": "Discurso en 1939", 
+  "fecha": "1939-01-01", 
+  "fecha_literal": ""
+ }
+}
+]

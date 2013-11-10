@@ -1,0 +1,90 @@
+[
+{
+ "pk": 1, 
+ "model": "contenidos.citasobre", 
+ "fields": {
+  "contenido": "\u2026 Espa\u00f1a pierde con \u00e9l un gran hombre de Estado; sus amigos, un coraz\u00f3n ardiente y una inteligencia fuera de lo com\u00fan.", 
+  "autor": "Jules Moch", 
+  "fecha": null, 
+  "fecha_literal": "", 
+  "cargo": "Ministro franc\u00e9s"
+ }
+},
+{
+ "pk": 2, 
+ "model": "contenidos.citasobre", 
+ "fields": {
+  "contenido": "\u2026 Siento su muerte, en la certeza de que Espa\u00f1a lo honrar\u00e1 un d\u00eda no lejano como a uno de sus mejores hijos.", 
+  "autor": "Pietro Nenni", 
+  "fecha": null, 
+  "fecha_literal": "", 
+  "cargo": "Vicepresidente de la Rep\u00fablica de Italia"
+ }
+},
+{
+ "pk": 3, 
+ "model": "contenidos.citasobre", 
+ "fields": {
+  "contenido": "\u2026 Negr\u00edn abri\u00f3 amplias y fascinantes posibilidades en mi imaginaci\u00f3n, no s\u00f3lo a trav\u00e9s de sus conferencias y ense\u00f1anzas de laboratorio sino mediante su consejo, \u00e1nimo y est\u00edmulo a leer monograf\u00edas cient\u00edficas en otras lenguas distintas al espa\u00f1ol.", 
+  "autor": "Severo Ochoa", 
+  "fecha": null, 
+  "fecha_literal": "", 
+  "cargo": "Cient\u00edfico - Premio Nobel"
+ }
+},
+{
+ "pk": 4, 
+ "model": "contenidos.citasobre", 
+ "fields": {
+  "contenido": "\u2026 Debo decir, en honor a la verdad, que no pod\u00eda haberlo hecho mejor. No ten\u00eda nada que reprocharse, salvo a lo mejor el haber dejado a su coraz\u00f3n quemar su vida ardiente, todav\u00eda corta y, para nosotros, tan necesaria.", 
+  "autor": "Vicent Auriol", 
+  "fecha": null, 
+  "fecha_literal": "", 
+  "cargo": "Ministro franc\u00e9s"
+ }
+},
+{
+ "pk": 5, 
+ "model": "contenidos.citasobre", 
+ "fields": {
+  "contenido": "\u2026 Sus actos estaban motivados s\u00f3lo por su intelecto, que era de buena fibra. Favorec\u00eda la ley y el orden. Su integridad y valor eran tanto f\u00edsicos como morales. De una gran capacidad de trabajo.", 
+  "autor": "Claude G. Bowers", 
+  "fecha": null, 
+  "fecha_literal": "", 
+  "cargo": "Embajador de los EE.UU. en Espa\u00f1a durante la guerra"
+ }
+},
+{
+ "pk": 6, 
+ "model": "contenidos.citasobre", 
+ "fields": {
+  "contenido": "\u2026 Su visi\u00f3n internacional que lo llevaba a contemplar y a analizar los problemas espa\u00f1oles encuadrados en un marco universal. Esto es (...) lo que m\u00e1s contribuy\u00f3 a hacer de Negr\u00edn un gobernante moderno, enteramente limpio de ese tufillo pueblerino, de pol\u00edtica de campanario, que con algunas excepciones muy honrosas, caracteriza la vida pol\u00edtica espa\u00f1ola contempor\u00e1nea.", 
+  "autor": "Pablo de Azc\u00e1rate", 
+  "fecha": null, 
+  "fecha_literal": "", 
+  "cargo": "Diplom\u00e1tico y Ministro espa\u00f1ol"
+ }
+},
+{
+ "pk": 7, 
+ "model": "contenidos.citasobre", 
+ "fields": {
+  "contenido": "\u2026 No fue pol\u00edtico, era m\u00e1s y menos. Dio la medida que se necesitaba en el momento preciso, cuando lo que se requer\u00eda era hombr\u00eda y decisi\u00f3n. Ajeno a los juegos naturales de la conquista y conservaci\u00f3n del poder, cuando no tuvo que dar la cara, fue perdido ...", 
+  "autor": "Max Aub", 
+  "fecha": null, 
+  "fecha_literal": "", 
+  "cargo": "Intelectual"
+ }
+},
+{
+ "pk": 8, 
+ "model": "contenidos.citasobre", 
+ "fields": {
+  "contenido": "\u2026 Negr\u00edn merece ocupar un puesto importante en la historia de nuestro pa\u00eds. (\u2026) En aquel momento represent\u00f3 no s\u00f3lo la lucha por la democracia frente al naciente nazismo y fascismo europeo sino la voluntad de aunar los esfuerzos de todos en beneficio de un futuro de convivencia y de prosperidad para Espa\u00f1a que se trunc\u00f3 por la p\u00e9rdida de la guerra.", 
+  "autor": "Alfonso Guerra", 
+  "fecha": "2006-10-08", 
+  "fecha_literal": "", 
+  "cargo": "ex0Vicepresidente del Gobierno de Espa\u00f1a , Diputado del PSOE y Presidente de la Fundaci\u00f3n Pablo Iglesias"
+ }
+}
+]
