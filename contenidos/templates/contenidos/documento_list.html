@@ -30,13 +30,19 @@
 			<input type="submit" value="Buscar" />
 		</form>
 		{% if count %}
-			{{count}} Resultados <br />
+            <p>
+                {{count}} Resultados
+                {% if user.is_superuser %}<a href="{% url 'admin:contenidos_documento_add' %}">&#8862;</a>{% endif %}
+            </p>
 			{% for object in object_list %}
 				{% include "contenidos/_documento.html" %}
 			{% endfor %}
 			{% include "contenidos/_paginator.html" %}
 		{% else %}
-			<p>(No hay documentos)</p>
+			<p>
+                (No hay documentos)
+                {% if user.is_superuser %}<a href="{% url 'admin:contenidos_documento_add' %}">&#8862;</a>{% endif %}
+            </p>
 		{% endif %}
 	</div>
 {% endblock body %}

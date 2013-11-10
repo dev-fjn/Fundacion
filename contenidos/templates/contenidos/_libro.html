@@ -25,7 +25,7 @@
             <li><strong>Resumen</strong> {{object.resumen}}</li>
 		{% endif %}
 		{% if user.is_superuser %}
-            <li class="right"><a href="{% url 'admin:contenidos_libro_change' object.id %}">editar</a></li>
+            <li class="right"><a href="{% url 'admin:contenidos_libro_change' object.id %}">&#9998;</a></li>
         {% endif %}
 	</ul>
 </div>

@@ -10,5 +10,8 @@
                 {{object.fecha}}
             {% endif %}
         </time>
+        {% if user.is_superuser %}
+            <a href="{% url 'admin:contenidos_citade_change' object.id %}">&#9998;</a>
+        {% endif %}
     </footer>
 </blockquote>

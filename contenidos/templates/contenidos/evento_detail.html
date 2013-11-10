@@ -23,6 +23,9 @@
 	<section id="centreright">
 		<h2>Resumen</h2>
 		{{object.resumen}}
+		{% if user.is_superuser %}
+            <a href="{% url 'admin:contenidos_evento_change' object.id %}">&#9998;</a>
+        {% endif %}
 		<h2>Fecha y lugar de celebración</h2>
 		<div>{{object.fecha_y_lugar}}</div>
 		{% if object.pdf %}

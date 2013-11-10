@@ -19,7 +19,13 @@
 	<h2>Eventos mes de {{start|date:"F"}}</h2>
 	<ul>
 		{% for fe in object_list %}
-		<li>{{fe.fecha|date:"d/m/Y"}}: <a href="{% url 'evento_view' fe.evento.pk %}">{{fe.evento}}</a></li>
+		<li>
+            {{fe.fecha|date:"d/m/Y"}}:
+            <a href="{% url 'evento_view' fe.evento.pk %}">{{fe.evento}}</a>
+            {% if user.is_superuser %}
+                <a href="{% url 'admin:contenidos_evento_change' fe.evento.id %}">&#9998;</a>
+            {% endif %}
+        </li>
 		{% empty %}
 		<li>No hay eventos para este mes.</li>
 		{% endfor %}

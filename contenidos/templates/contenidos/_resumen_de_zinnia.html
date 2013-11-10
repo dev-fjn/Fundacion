@@ -5,4 +5,6 @@
 	<li>( No hay eventos previstos en los próximos días )</li>
 	{% endfor %}
 </ul>
-
+{% if user.is_superuser %}
+<a href="{% url 'admin:zinnia_entry_add' %}">&#8862;</a>
+{% endif %}
