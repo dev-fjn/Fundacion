@@ -1,18 +1,17 @@
 // Sección 'variable' con una sola columna
+//
+//section#variable_1col section#body
 
 section#variable_1col{
-	@include border-radius($radio-standar);
+    @include border-radius($radio-standar);
 
-	section#body{
-
-		div#space{
-			max-width: 100%;
-			min-height:em(480px);
-			margin: 1em;
-			border: 1em;
-			padding: 1em;
-		}
-
-	}
+    section#body{
+        @include border-radius($radio-standar);
+        max-width: 100%;
+        min-height:em(480px);
+        margin: em($font_base);
+        border: em($font_base);
+        padding: em($font_base);
+    }
 
 }

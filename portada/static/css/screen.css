@@ -432,7 +432,7 @@ div#ourinfo section#services {
   min-height: 1.5em;
 }
 
-/* line 3, ../sass/estilos/_variable_1col.scss */
+/* line 5, ../sass/estilos/_variable_1col.scss */
 section#variable_1col {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
@@ -441,7 +441,12 @@ section#variable_1col {
   border-radius: 0.625em;
 }
 /* line 8, ../sass/estilos/_variable_1col.scss */
-section#variable_1col section#body div#space {
+section#variable_1col section#body {
+  -webkit-border-radius: 0.625em;
+  -moz-border-radius: 0.625em;
+  -ms-border-radius: 0.625em;
+  -o-border-radius: 0.625em;
+  border-radius: 0.625em;
   max-width: 100%;
   min-height: 30em;
   margin: 1em;
@@ -508,7 +513,7 @@ section#variable_2col section#body div.flatpage-i18n dl dd {
 }
 /* line 48, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n dl dd:before {
-  content: "\261E ";
+  content: "\25B9\00A0";
 }
 
 /* line 5, ../sass/estilos/_variable_2col_especial.scss */
@@ -864,6 +869,37 @@ footer#footer div#legal {
 /* line 63, ../sass/_clases.scss */
 .fallecidos:after {
   content: "\205C";
+}
+
+/* line 69, ../sass/_clases.scss */
+.cita {
+  font-style: italic;
+  margin: 0.25em 0;
+  padding: 0.5em 2.5em;
+  line-height: 1.45;
+  position: relative;
+  color: #383838;
+}
+/* line 80, ../sass/_clases.scss */
+.cita:before {
+  display: block;
+  content: "\275D";
+  font-size: 5em;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  color: #7a7a7a;
+}
+/* line 92, ../sass/_clases.scss */
+.cita footer {
+  color: #999999;
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: right;
+}
+/* line 100, ../sass/_clases.scss */
+.cita footer:before {
+  content: "\2014 ";
 }
 
 /* -------------------------------------------------------------------------*/

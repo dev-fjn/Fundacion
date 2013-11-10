@@ -46,7 +46,7 @@ section#variable_2col{
                 dd{
                     text-indent: em($font_base * 1.5);
                     &:before{
-                        content: "\261E ";
+                        content: "\25B9\00A0";
                     }
                 }
             }

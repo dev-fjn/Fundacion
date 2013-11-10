@@ -64,3 +64,41 @@
         content: "\205C";
     }
 }
+
+// Citas de y sobre Juan Negrín.
+.cita {
+    //font-family: Georgia, serif;
+    //font-size: 18px;
+    font-style: italic;
+    //width: 500px;
+    margin: 0.25em 0;
+    padding: 0.5em em(40px);
+    line-height: 1.45;
+    position: relative;
+    color: #383838;
+
+    &:before {
+        display: block;
+        //content: "\201C";
+        content: "\275D";
+        font-size: em(80px);
+        position: absolute;
+        left: -20px;
+        top: -20px;
+        color: #7a7a7a;
+    }
+
+
+    footer {
+        color: #999999;
+        font-size: 14px;
+        //display: block;
+        margin-top: 5px;
+        text-align: right;
+    }
+
+    footer:before {
+        //content: "\2014 \2009";
+        content: "\2014 ";
+    }
+}
