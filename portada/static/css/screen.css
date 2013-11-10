@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* line 17, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -474,7 +474,7 @@ section#variable_2col section#body div.flatpage-i18n img {
   position: relative;
   padding: 0 1em 1em 0;
 }
-/* line 15, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-recipes-0.3.0/stylesheets/recipes/shadow/drop/_transform-requirement.scss */
+/* line 15, ../../../../../../var/lib/gems/1.9.1/gems/compass-recipes-0.3.0/stylesheets/recipes/shadow/drop/_transform-requirement.scss */
 section#variable_2col section#body div.flatpage-i18n img > :last-child::before {
   content: "";
   position: absolute;
@@ -662,10 +662,14 @@ section#agenda div.calendario_eventos table tbody tr td.dia {
   text-align: right;
 }
 /* line 51, ../sass/estilos/_agenda.scss */
+section#agenda div.calendario_eventos table tbody tr:hover {
+  font-weight: 700;
+}
+/* line 54, ../sass/estilos/_agenda.scss */
 section#agenda div.calendario_eventos table tbody tr td.actual {
   text-align: right;
 }
-/* line 53, ../sass/estilos/_agenda.scss */
+/* line 56, ../sass/estilos/_agenda.scss */
 section#agenda div.calendario_eventos table tbody tr td.actual span {
   -webkit-border-radius: 0.1875em;
   -moz-border-radius: 0.1875em;
@@ -678,11 +682,15 @@ section#agenda div.calendario_eventos table tbody tr td.actual span {
   border-color: red;
   border-width: 0.0625em;
 }
-/* line 62, ../sass/estilos/_agenda.scss */
+/* line 64, ../sass/estilos/_agenda.scss */
+section#agenda div.calendario_eventos table tbody tr td.actual:hover {
+  font-weight: 700;
+}
+/* line 68, ../sass/estilos/_agenda.scss */
 section#agenda div.calendario_eventos table tbody tr td.evento {
   text-align: right;
 }
-/* line 64, ../sass/estilos/_agenda.scss */
+/* line 70, ../sass/estilos/_agenda.scss */
 section#agenda div.calendario_eventos table tbody tr td.evento span {
   -webkit-border-radius: 0.1875em;
   -moz-border-radius: 0.1875em;
@@ -691,6 +699,10 @@ section#agenda div.calendario_eventos table tbody tr td.evento span {
   border-radius: 0.1875em;
   background-color: #918b74;
   color: white;
+}
+/* line 76, ../sass/estilos/_agenda.scss */
+section#agenda div.calendario_eventos table tbody tr:hover {
+  font-weight: 700;
 }
 
 /* line 5, ../sass/estilos/_eventos.scss */
@@ -948,7 +960,7 @@ h6 {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 38, ../../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .container:after {
   content: "";
   display: table;

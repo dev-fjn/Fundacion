@@ -48,6 +48,9 @@ section#agenda{
                             //background-color: $color01;
                         }
                     }
+                    &:hover{
+                        font-weight:700;
+                    }
                     td.actual{
                         text-align: right;
                         span{
@@ -58,6 +61,9 @@ section#agenda{
                             border-color: Red ;
                             border-width: em(1px);
                         }
+                        &:hover{
+                            font-weight:700;
+                        }
                     }
                     td.evento{
                         text-align: right;
@@ -66,6 +72,9 @@ section#agenda{
                             background-color: $color03;
                             color: $color01;
                         }
+                    }
+                    &:hover{
+                        font-weight:700;
                     }
                 }
             }
