@@ -51,7 +51,7 @@ class CitasSobreAdmin(admin.ModelAdmin):
     list_display = ['contenido', 'autor', 'fecha']
 
 class PresenciaAdmin(admin.ModelAdmin):
-    list_display = ['denominacion', 'lugar', 'imagen']
+    list_display = ['denominacion', 'lugar', ]
 
 admin.site.register(Imagen, ImagenAdmin)
 admin.site.register(Video, VideoAdmin)

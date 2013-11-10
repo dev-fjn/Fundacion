@@ -187,11 +187,11 @@
  "fields": {
   "parent": 4, 
   "level": 2, 
-  "url": "/presencia/", 
+  "url": "", 
   "menu": 1, 
   "rank": 3, 
   "caption": "Presencia", 
-  "named_url": ""
+  "named_url": "presencia"
  }
 },
 {
