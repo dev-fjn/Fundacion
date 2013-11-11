@@ -515,6 +515,31 @@ section#variable_2col section#body div.flatpage-i18n dl dd {
 section#variable_2col section#body div.flatpage-i18n dl dd:before {
   content: "\25B9\00A0";
 }
+/* line 55, ../sass/estilos/_variable_2col.scss */
+section#variable_2col section#body div.presencia {
+  -webkit-border-radius: 0.625em;
+  -moz-border-radius: 0.625em;
+  -ms-border-radius: 0.625em;
+  -o-border-radius: 0.625em;
+  border-radius: 0.625em;
+  min-height: 30em;
+  margin: 1em;
+  border: 1em;
+  adding: 1em;
+}
+/* line 62, ../sass/estilos/_variable_2col.scss */
+section#variable_2col section#body div.presencia h1 {
+  font-weight: 700;
+}
+/* line 66, ../sass/estilos/_variable_2col.scss */
+section#variable_2col section#body div.presencia dl dt {
+  background-color: #918b74;
+}
+/* line 68, ../sass/estilos/_variable_2col.scss */
+section#variable_2col section#body div.presencia dl dt span {
+  vertical-align: top;
+  color: white;
+}
 
 /* line 5, ../sass/estilos/_variable_2col_especial.scss */
 section#variable_2col_especial section#body {

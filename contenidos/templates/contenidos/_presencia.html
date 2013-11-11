@@ -1,8 +1,15 @@
-<dt>
-    {{object.denominacion}}
-    <a href="{{object.url_lugar}}">{{object.lugar}}</a>
-</dt>
+<dt><span>{{object.denominacion}}</span></dt>
 <dd>
-    <img src="{{object.imagen}}" />
-    <p>{{object.descripcion}}</p>
+    <figure>
+
+        <a href="{{object.url_lugar}}" target="_blank"><img src="{{object.imagen}}" width="100%" alt="{{object.denominacion}}" /></a>
+
+        <figcaption>
+            <p>{{object.descripcion}}</p>
+            <p class="firma">{{object.lugar}}</p>
+        </figcaption>
+    
+    </figure>
+    <br />
+    <br />
 </dd>

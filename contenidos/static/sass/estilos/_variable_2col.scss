@@ -52,6 +52,27 @@ section#variable_2col{
             }
 
         }
+        div.presencia{
+            //background-color: Red;
+            @include border-radius($radio-standar);
+            min-height:em(480px);
+            margin: em($font_base);
+            border: em($font_base);
+            adding: em($font_base);
+            h1{
+                font-weight:700;
+            }
+            dl{
+                dt{
+                    background-color: $color03;
+                    span{
+                        //max-height: ( $font_base * 1.5);
+                        vertical-align: top;
+                        color: $color01;
+                    }
+                }
+            }
+        }
     }
 
 //    aside#asider{
