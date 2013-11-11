@@ -34,7 +34,8 @@
 				{% for dia, lista_eventos in semana %}
 					{% if dia.month == start.month %}
 						{% if lista_eventos %}
-							<td class="evento"><span>{{dia.day}}</span></td>
+                            {# Poner enlace hacia el documento #}
+							<td class="evento"><span><a href="#">{{dia.day}}</a></span></td>
 						{% elif hoy == dia %}
 							<td class="actual"><span>{{dia.day}}</span></td>
 						{% else %}
