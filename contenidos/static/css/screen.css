@@ -525,7 +525,7 @@ section#variable_2col section#body div.presencia {
   min-height: 30em;
   margin: 1em;
   border: 1em;
-  adding: 1em;
+  padding: 1em;
 }
 /* line 62, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.presencia h1 {
@@ -539,6 +539,42 @@ section#variable_2col section#body div.presencia dl dt {
 section#variable_2col section#body div.presencia dl dt span {
   vertical-align: top;
   color: white;
+}
+/* line 76, ../sass/estilos/_variable_2col.scss */
+section#variable_2col section#body div.evento {
+  -webkit-border-radius: 0.625em;
+  -moz-border-radius: 0.625em;
+  -ms-border-radius: 0.625em;
+  -o-border-radius: 0.625em;
+  border-radius: 0.625em;
+  min-height: 30em;
+  margin: 1em;
+  border: 1em;
+  padding: 1em;
+}
+/* line 82, ../sass/estilos/_variable_2col.scss */
+section#variable_2col section#body div.evento h1 {
+  color: white;
+  background-color: #918b74;
+  padding-left: 1em;
+}
+/* line 88, ../sass/estilos/_variable_2col.scss */
+section#variable_2col section#body div.evento figure img {
+  width: 100%;
+}
+/* line 90, ../sass/estilos/_variable_2col.scss */
+section#variable_2col section#body div.evento figure figcaption h2 {
+  padding-left: 1em;
+  color: white;
+  background-color: #918b74;
+}
+/* line 95, ../sass/estilos/_variable_2col.scss */
+section#variable_2col section#body div.evento figure figcaption h2 span a {
+  color: white;
+}
+/* line 98, ../sass/estilos/_variable_2col.scss */
+section#variable_2col section#body div.evento figure figcaption button {
+  text-align: right;
 }
 
 /* line 5, ../sass/estilos/_variable_2col_especial.scss */
