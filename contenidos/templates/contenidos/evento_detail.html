@@ -12,30 +12,43 @@
 {% endblock hormiga %}
 
 {% block body %}
-	<section id="cabecera">
-		<h1>{{object.titulo}}</h1>
-	</section>
-	<section id="left">
-		{% if object.imagen %}
-		<img src="{{MEDIA_URL}}{{object.imagen}}"/>
-		{% endif %}
-	</section>
-	<section id="centreright">
-		<h2>Resumen</h2>
-		{{object.resumen}}
-		{% if user.is_superuser %}
-            <a href="{% url 'admin:contenidos_evento_change' object.id %}">&#9998;</a>
-        {% endif %}
-		<h2>Fecha y lugar de celebración</h2>
-		<div>{{object.fecha_y_lugar}}</div>
-		{% if object.pdf %}
-			<div><button href="{{object.pdf}}">Más información</button></div>
-		{% endif %}
-		{% for fecha in object.fechaevento_set.all %}
-			El día {{fecha.fecha}} desde las {{fecha.hora_inicio}} hasta las {{fecha.hora_final}}<br />
-		{% empty %}
-			(no se ha asignado fecha a este evento)
-		{% endfor %}
-	</section>
+	<div class="evento" itemscope itemtype="http://schema.org/Event">
+		<section id="cabecera">
+			<h1 itemprop="name">{{object.titulo}}</h1>
+		</section>
+
+		<section id="left">
+			{% if object.imagen %}
+			<img itemprop="image" src="{{MEDIA_URL}}{{object.imagen}}" width="100%" alt="{{object.titulo}}"/>
+			{% endif %}
+		</section>
+
+		<section id="centreright">
+			<h2>Resumen</h2>
+
+			<p>{{object.resumen}}</p>
+
+			{% if user.is_superuser %}
+				<a href="{% url 'admin:contenidos_evento_change' object.id %}">&#9998;</a>
+			{% endif %}
+
+			<h2>Fecha y lugar de celebración</h2>
+
+			<div>{{object.fecha_y_lugar}}</div>
+
+			{% if object.pdf %}
+				<div><button itemprop="url" href="{{object.pdf}}">Más información</button></div>
+			{% endif %}
+
+			{% for fecha in object.fechaevento_set.all %}
+			El día <time datetime="{{fecha.fecha}}">{{fecha.fecha}}</time> desde las <time datetime="{{fecha.hora_inicio}}">{{fecha.hora_inicio}}</time> hasta las <time datetime="{{fecha.hora_final}}">{{fecha.hora_final}}</a><br />
+			{% empty %}
+				(no se ha asignado fecha a este evento)
+			{% endfor %}
+
+		</section>
+
+	</div>
+
 {% endblock body %}
 
