@@ -1,10 +1,39 @@
 // Calendario / Agenda de eventos
 $radio-agenda: 3px;
+$color_texto: $color00;
+$color_texto_alternativo: $color01;
+
+
+$color_dias_semana: $color_texto_alternativo;
+$fondo_dias_semana: $color03;
+
+$color_global: $color_texto;
+$fondo_global: transparent;
+
+$color_sin_dia: transparent;
+$fondo_sin_dia: transparent;
+
+$color_dia: $color_texto;
+$fondo_dia: $color02;
+
+$color_actual: $color_texto;
+$fondo_actual: $color02;
+
+$color_evento: $color_texto;
+$fondo_evento: $color03;
+
+$color_evento_hoy: $color_texto;
+$fondo_evento_hoy: $color03;
 
 section#agenda{
-    @include border-radius($radio-standar);
-    padding: .5em;
-    margin: .5em;
+    @include border-radius($radio-standar*2);
+    //border: em(1px) #000  solid;
+    padding: em($radio_agenda);
+    margin: em($radio_agenda);
+    background-color: $fondo_global;
+    color: $color_global;
+
+
 
     h2{
         text-align:center;
@@ -15,6 +44,7 @@ section#agenda{
         div{
             text-align: center;
             padding: 0 0 em(5px) 0;
+
             span{
                 a{
                     text-decoration:none;
@@ -30,51 +60,89 @@ section#agenda{
                     padding: 0 0 em(5px) 0;
                     th{
                         width: 14%;
-                        background-color: $color03;
-                        color: $color01;
+                        background-color: $fondo_dias_semana ;
+                        color: $color_dias_semana;
+                        font-weight:700;
+                        text-align: center;
+                        border-left-color: darken($color_dias_semana, 60%);
+                        border-left-style: solid;
+                        border-left-width: em(.5px);
                     }
                 }
             }
             // Aquí, el calendario propiamente dicho.
             tbody{
-                    background-color: $color13;
+
                 tr{
+
                     td.sin_dia{
-                        text-align: right;
+
+                        background-color: $fondo_sin_dia;
+                        span{
+                            color: $color_sin_dia;
+                        }
                     }
                     td.dia{
                         text-align: right;
-                        span{
-                            //background-color: $color01;
+                        background-color: lighten($fondo_dia, 20%);
+                        color: $color_dia;
+                        span{}
+                        &:hover{
+                            background-color: $fondo_dia;
                         }
-                    }
-                    &:hover{
-                        font-weight:700;
                     }
                     td.actual{
                         text-align: right;
+                        background-color: lighten($fondo_actual, 20%);
+                        color: $color_actual;
                         span{
                             @include border-radius(em($radio-agenda));
-                            background-color: transparent;
-                            color: $color00;
                             border-style: solid;
                             border-color: Red ;
-                            border-width: em(1px);
+                            border-width: em(.5px);
                         }
                         &:hover{
-                            font-weight:700;
+                            background-color: $fondo_actual;
                         }
                     }
                     td.evento{
                         text-align: right;
+                        background-color: lighten($fondo_evento, 30%);
+                        color: $color_evento;
                         span{
-                            @include border-radius(em($radio-agenda));
-                            background-color: $color03;
-                            color: $color01;
+                            text-decoration:none;
+                            &:hover{
+                                color: lighten($color_texto, 10%);
+                            }
+                        }
+                        &:hover{
+                            background-color: lighten($fondo_evento, 20%);
                         }
                     }
-                    &:hover{
-                        font-weight:700;
+                    td.evento_hoy{
+                        text-align: right;
+                        //background-color: lighten($fondo_evento_hoy, 20%);
+                        background-color: lighten($fondo_dia, 20%);    // Caso especial
+                        color: $color_evento_hoy;
+                        span{
+                            @include border-radius(em($radio-agenda));
+                            border-style: solid;
+                            border-color: Red ;
+                            border-width: em(1px);
+                            background-color: lighten($fondo_evento_hoy, 20%);
+                            text-decoration:none;
+                            &:hover{
+                                background-color: $fondo_evento_hoy;
+                                //color: lighten($color_evento_hoy, 80%);
+                                color: Red;
+                            }
+                        }
+                        &:hover{
+
+                            background-color: lighten($fondo_dia, 20%);    // Caso especial
+                            //color: $color_evento_hoy;
+                            //color: Red;
+                        }
                     }
                 }
             }
