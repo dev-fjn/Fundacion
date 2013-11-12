@@ -10,96 +10,96 @@
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 section#variable_2col{
 
-	section#body{
-		text-align: justify;
+    section#body{
+        text-align: justify;
 
-		div.flatpage-i18n{
-			@include border-radius($radio-standar);
-			//background-color: Red;
-			//max-width: 69%;
-			min-height:em(480px);
-			margin: em($font_base);
-			border: em($font_base);
-			padding: em($font_base);
+        div.flatpage-i18n{
+            @include border-radius($radio-standar);
+            //background-color: Red;
+            //max-width: 69%;
+            min-height:em(480px);
+            margin: em($font_base);
+            border: em($font_base);
+            padding: em($font_base);
 
-			//font: inherit;
-			//font-size: 100%;
+            //font: inherit;
+            //font-size: 100%;
 
-			h1{
-				font-weight:700;
-			}
+            h1{
+                font-weight:700;
+            }
 
-			img{
-				@include drop-shadow-transform-requirement($color01);
-				padding: 0 em($font_base) em($font_base) 0;
-			}
+            img{
+                @include drop-shadow-transform-requirement($color01);
+                padding: 0 em($font_base) em($font_base) 0;
+            }
 
-			p{
-				padding-bottom: em($font_base);
-			}
-			dl{
-				@include border-radius($radio-standar);
-				dt{
-					font-weight:700;
-					padding-top: em($font_base);
-				}
-				dd{
-					text-indent: em($font_base * 1.5);
-					&:before{
-						content: "\25B9\00A0";
-					}
-				}
-			}
+            p{
+                padding-bottom: em($font_base);
+            }
+            dl{
+                @include border-radius($radio-standar);
+                dt{
+                    font-weight:700;
+                    padding-top: em($font_base);
+                }
+                dd{
+                    text-indent: em($font_base * 1.5);
+                    &:before{
+                        content: "\25B9\00A0";
+                    }
+                }
+            }
 
-		}
-		div.presencia{
-			//background-color: Red;
-			@include border-radius($radio-standar);
-			min-height:em(480px);
-			margin: em($font_base);
-			border: em($font_base);
-			padding: em($font_base);
-			h1{
-				font-weight:700;
-			}
-			dl{
-				dt{
-					background-color: $color03;
-					span{
-						//max-height: ( $font_base * 1.5);
-						vertical-align: top;
-						color: $color01;
-					}
-				}
-			}
-		}
-		div.evento{
-			@include border-radius($radio-standar);
-			min-height:em(480px);
-			margin: em($font_base);
-			border: em($font_base);
-			padding: em($font_base);
-			h1{
-				color: $color01;
-				background-color: $color03;
-				padding-left: em($font_base);
-			}
-			figure{
-				img{ width: 100%; }
-				figcaption{
-					h2{
-						padding-left: em($font_base);
-						color: $color01;
-						background-color: $color03;
-						span{
-							a{color: $color01;}
-						}
-					}
-					button{
-						text-align: right;
-					}
-				}
-			}
-		}
-	}
+        }
+        div.presencia{
+            //background-color: Red;
+            @include border-radius($radio-standar);
+            min-height:em(480px);
+            margin: em($font_base);
+            border: em($font_base);
+            padding: em($font_base);
+            h1{
+                font-weight:700;
+            }
+            dl{
+                dt{
+                    background-color: $color03;
+                    span{
+                        //max-height: ( $font_base * 1.5);
+                        vertical-align: top;
+                        color: $color01;
+                    }
+                }
+            }
+        }
+        div.evento{
+            @include border-radius($radio-standar);
+            min-height:em(480px);
+            margin: em($font_base);
+            border: em($font_base);
+            padding: em($font_base);
+            h1{
+                color: $color01;
+                background-color: $color03;
+                padding-left: em($font_base);
+            }
+            figure{
+                img{ width: 100%; }
+                figcaption{
+                    h2{
+                        padding-left: em($font_base);
+                        color: $color01;
+                        background-color: $color03;
+                        span{
+                            a{color: $color01;}
+                        }
+                    }
+                    button{
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
 }

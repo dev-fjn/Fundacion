@@ -37,431 +37,431 @@
 /* -------------------------------------------------------------------------*/
 
 a:link {
-	color: $color00;
-	text-decoration: none;
-			transition: opacity .3s ease-in, color .3s ease-in, background-color .3s ease-in;
-	-webkit-transition: opacity .3s ease-in, color .3s ease-in, background-color .3s ease-in;
-	-moz-transition: opacity .3s ease-in, color .3s ease-in, background-color .3s ease-in;
-		-ms-transition: opacity .3s ease-in, color .3s ease-in, background-color .3s ease-in;
-		-o-transition: opacity .3s ease-in, color .3s ease-in, background-color .3s ease-in;
+    color: $color00;
+    text-decoration: none;
+            transition: opacity .3s ease-in, color .3s ease-in, background-color .3s ease-in;
+    -webkit-transition: opacity .3s ease-in, color .3s ease-in, background-color .3s ease-in;
+    -moz-transition: opacity .3s ease-in, color .3s ease-in, background-color .3s ease-in;
+        -ms-transition: opacity .3s ease-in, color .3s ease-in, background-color .3s ease-in;
+        -o-transition: opacity .3s ease-in, color .3s ease-in, background-color .3s ease-in;
 }
 
 a:active{
-	color: $color00;
-	text-decoration: none;
+    color: $color00;
+    text-decoration: none;
 }
 
 a:visited{
-	color: $color00;
-	text-decoration: none;
-	&:visited:before {
-		content:  "\2713 ";
-	}
+    color: $color00;
+    text-decoration: none;
+    &:visited:before {
+        content:  "\2713 ";
+    }
 }
 
 a:hover{
-	color: $color00;
-	text-decoration: underline;
+    color: $color00;
+    text-decoration: underline;
 }
 
 html {
-	font-size: $font_base;
-	font-family: cantarell, sans-serif;
-	line-height: normal;
+    font-size: $font_base;
+    font-family: cantarell, sans-serif;
+    line-height: normal;
 }
 
 
 h1 {
-	padding: em(5px) 0;
-//	font-size: em(30px);
-//	//line-height: em(40px);
+    padding: em(5px) 0;
+//    font-size: em(30px);
+//    //line-height: em(40px);
 }
 
 h2 {
-	padding: em(5px) 0;
-//	font-size: em(26px);
-//	line-height: em(40px);
+    padding: em(5px) 0;
+//    font-size: em(26px);
+//    line-height: em(40px);
 }
 
 h3 {
-	padding: em(5px) 0;
-//	font-size: em(22px);
-//	//line-height: em(40px);
+    padding: em(5px) 0;
+//    font-size: em(22px);
+//    //line-height: em(40px);
 }
 
 h4 {
-	padding: em(5px) 0;
-//	font-size: 18px;
-//	//line-height: 20px;
+    padding: em(5px) 0;
+//    font-size: 18px;
+//    //line-height: 20px;
 }
 
 h5 {
-	padding: em(5px) 0;
-//	font-size: 14px;
-//	//line-height: 20px;
+    padding: em(5px) 0;
+//    font-size: 14px;
+//    //line-height: 20px;
 }
 
 h6 {
-	padding: em(5px) 0;
-//	font-size: 12px;
-//	//line-height: 20px;
+    padding: em(5px) 0;
+//    font-size: 12px;
+//    //line-height: 20px;
 }
 
 .container {
-	@include container;
-	@include susy-grid-background;
-	//@include sticky-footer(200px);
-	@include box-shadow(rgba(black, 0.4) 0 0 em(25px), rgba(black, 0.2) 0 0 em(3px) em(1px) inset);
-	// TODO
-	//@include background-image(linear-gradient($color_menu01, $color_menu02));
+    @include container;
+    @include susy-grid-background;
+    //@include sticky-footer(200px);
+    @include box-shadow(rgba(black, 0.4) 0 0 em(25px), rgba(black, 0.2) 0 0 em(3px) em(1px) inset);
+    // TODO
+    //@include background-image(linear-gradient($color_menu01, $color_menu02));
 
-//	h2:after, h3:after, h4:after {
-//		position: absolute;
-//		content: "";
-//		left: 0;
-//		top: 0;
-//		bottom: 0;
-//		width: em(5px);
-//		border-radius: em(2px);
-//		box-shadow: inset 0 em(1px) em(1px) rgba(0, 0, 0, 0.5), 0 em(1px) em(1px) rgba(255, 255, 255, 0.3);
-//	}
-//	h2:after {
-//		background: $color09; //#0AF;
-//	}
-//	h3:after {
-//		background: $color09; //#3BF;
-//	}
-//	h4:after {
-//		background: $color09; //#6Cf;
-//	}
+//    h2:after, h3:after, h4:after {
+//        position: absolute;
+//        content: "";
+//        left: 0;
+//        top: 0;
+//        bottom: 0;
+//        width: em(5px);
+//        border-radius: em(2px);
+//        box-shadow: inset 0 em(1px) em(1px) rgba(0, 0, 0, 0.5), 0 em(1px) em(1px) rgba(255, 255, 255, 0.3);
+//    }
+//    h2:after {
+//        background: $color09; //#0AF;
+//    }
+//    h3:after {
+//        background: $color09; //#3BF;
+//    }
+//    h4:after {
+//        background: $color09; //#6Cf;
+//    }
 //
-//	h1 {
-//		$font_h1: $font_base*2; // 32px;
-//		font-size: em($font_h1);
-//		line-height: em($font_h1 + 6px); // 36px;
-//		margin: .2em 0 .2em 0;
-//		font-weight: normal;
-//		color: $color04; // white;
-//		//font-family: 'Hammersmith One', sans-serif;
-//		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
-//		position: relative;
-//		//padding: 0 0 0 em($font_base);
-//		background-color: $color08;
-//		//color: #6Cf;
-//	}
-//	h2 {
-//		$font_h2: $font_base*1.7;
-//		font-size: em($font_h2);
-//		line-height: em($font_h2+4px);
-//		margin: .2em 0 .2em 0;
-//		font-weight: normal;
-//		color: $color05; // white;
-//		//font-family: 'Hammersmith One', sans-serif;
-//		text-shadow: 0 em(-1px) 0 rgba(0, 0, 0, 0.4);
-//		position: relative;
-//		// Extras
-//		padding: 0 0 0 em($font_base)-3px;
-//		background-color: $color08;
-//		//z-index:auto;
-//	}
-//	h3 {
-//		$font_h3: $font_base*1.4;
-//		font-size: em($font_h3);
-//		line-height: em($font_h3+6px);
-//		margin: .2em 0 .2em 0;
-//		font-weight: normal;
-//		color: $color05; // white;
-//		//font-family: 'Hammersmith One', sans-serif;
-//		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
-//		position: relative;
-//		padding: 0 0 0 (em($font_base) - em(6px));
-//		background-color: $color08;
-//	}
-//	h4 {
-//		$font_h4: $font_base*1.1;
-//		font-size: em($font_h4);
-//		line-height: em($font_h4+6px);
-//		margin: .2em 0 .2em 0;
-//		font-weight: normal;
-//		color: $color05; // white;
-//		//font-family: 'Hammersmith One', sans-serif;
-//		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
-//		position: relative;
-//		padding: 0 0 0 em($font_base) - em(6px);
-//		background-color: $color08;
-//	}
+//    h1 {
+//        $font_h1: $font_base*2; // 32px;
+//        font-size: em($font_h1);
+//        line-height: em($font_h1 + 6px); // 36px;
+//        margin: .2em 0 .2em 0;
+//        font-weight: normal;
+//        color: $color04; // white;
+//        //font-family: 'Hammersmith One', sans-serif;
+//        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+//        position: relative;
+//        //padding: 0 0 0 em($font_base);
+//        background-color: $color08;
+//        //color: #6Cf;
+//    }
+//    h2 {
+//        $font_h2: $font_base*1.7;
+//        font-size: em($font_h2);
+//        line-height: em($font_h2+4px);
+//        margin: .2em 0 .2em 0;
+//        font-weight: normal;
+//        color: $color05; // white;
+//        //font-family: 'Hammersmith One', sans-serif;
+//        text-shadow: 0 em(-1px) 0 rgba(0, 0, 0, 0.4);
+//        position: relative;
+//        // Extras
+//        padding: 0 0 0 em($font_base)-3px;
+//        background-color: $color08;
+//        //z-index:auto;
+//    }
+//    h3 {
+//        $font_h3: $font_base*1.4;
+//        font-size: em($font_h3);
+//        line-height: em($font_h3+6px);
+//        margin: .2em 0 .2em 0;
+//        font-weight: normal;
+//        color: $color05; // white;
+//        //font-family: 'Hammersmith One', sans-serif;
+//        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+//        position: relative;
+//        padding: 0 0 0 (em($font_base) - em(6px));
+//        background-color: $color08;
+//    }
+//    h4 {
+//        $font_h4: $font_base*1.1;
+//        font-size: em($font_h4);
+//        line-height: em($font_h4+6px);
+//        margin: .2em 0 .2em 0;
+//        font-weight: normal;
+//        color: $color05; // white;
+//        //font-family: 'Hammersmith One', sans-serif;
+//        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+//        position: relative;
+//        padding: 0 0 0 em($font_base) - em(6px);
+//        background-color: $color08;
+//    }
 
 
 
-	header {
+    header {
 
-		section#banner{
-			section#relleno{
-				@include span-columns(9, 12);
-			}
+        section#banner{
+            section#relleno{
+                @include span-columns(9, 12);
+            }
 
-			section#caja{
-				@include span-columns(3 omega, 12);
+            section#caja{
+                @include span-columns(3 omega, 12);
 
-				section#acceso{
-					@include span-columns(3 omega, 3);
-				}
+                section#acceso{
+                    @include span-columns(3 omega, 3);
+                }
 
-				section#social{
-					@include span-columns(3 omega, 3);
-				}
+                section#social{
+                    @include span-columns(3 omega, 3);
+                }
 
-				section#contacto{
-					@include span-columns(3 omega, 3);
-				}
-			}
-		}
+                section#contacto{
+                    @include span-columns(3 omega, 3);
+                }
+            }
+        }
 
-		section#menus{
-			@include span-columns(12 omega, 12);
-			nav#cssmenu{
-				ul, li, span, a {}
-				&:after, ul:after {}
-				a {}
-				ul {}
-				> ul {
-					> li {
-						> a {}
-						&:hover:after {}
+        section#menus{
+            @include span-columns(12 omega, 12);
+            nav#cssmenu{
+                ul, li, span, a {}
+                &:after, ul:after {}
+                a {}
+                ul {}
+                > ul {
+                    > li {
+                        > a {}
+                        &:hover:after {}
 
-						&:first-child > a {}
-						&.active {
-							&:after {}
-							> a {}
-						}
-						&:hover > a {}
-					}
-				}
+                        &:first-child > a {}
+                        &.active {
+                            &:after {}
+                            > a {}
+                        }
+                        &:hover > a {}
+                    }
+                }
 
-				.has-sub {
-					&:hover > ul {}
-					ul {
-						li {
-							a {}
-							&:hover a {}
-						}
-					}
-					.has-sub {
-						&:hover > ul {}
-						ul {
-							li a {
-								&:hover {}
-							}
-						}
-					}
-				}
-			}
-		}
+                .has-sub {
+                    &:hover > ul {}
+                    ul {
+                        li {
+                            a {}
+                            &:hover a {}
+                        }
+                    }
+                    .has-sub {
+                        &:hover > ul {}
+                        ul {
+                            li a {
+                                &:hover {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
-	}
+    }
 
-	@include clearfix;
+    @include clearfix;
 
-	div.content{
+    div.content{
 
-		@include span-columns(12 omega, 12);
+        @include span-columns(12 omega, 12);
 
-		section#hormiga{
-			@include span-columns(12 omega, 12);
-			ul {
-				li {
-					a {
-						&:before {}
-						&:after {}
-					}
-					&:first-child a {
-						&:before {}
-					}
-					&:last-child a {
-						&:after {}
-					}
-					a:hover {
-						&:after {}
-						&:before{}
-					}
-				}
-			}
-		}
+        section#hormiga{
+            @include span-columns(12 omega, 12);
+            ul {
+                li {
+                    a {
+                        &:before {}
+                        &:after {}
+                    }
+                    &:first-child a {
+                        &:before {}
+                    }
+                    &:last-child a {
+                        &:after {}
+                    }
+                    a:hover {
+                        &:after {}
+                        &:before{}
+                    }
+                }
+            }
+        }
 
-		section#info{
-			@include span-columns(12 omega, 12);
-		}
+        section#info{
+            @include span-columns(12 omega, 12);
+        }
 
-		section#variable{
-			@include span-columns(12 omega, 12);
+        section#variable{
+            @include span-columns(12 omega, 12);
 
-			aside#asidel{
-				@include span-columns(3, 12);
+            aside#asidel{
+                @include span-columns(3, 12);
 
-				section#news{
-					h2{}
-					ul{
-						li{
-							a{
-							a:before {}
-								&:hover:before {}
-								&:hover:after {}
-							}
-						}
-						li:hover{}
-						li:hover:before{}
-					}
-				}
+                section#news{
+                    h2{}
+                    ul{
+                        li{
+                            a{
+                            a:before {}
+                                &:hover:before {}
+                                &:hover:after {}
+                            }
+                        }
+                        li:hover{}
+                        li:hover:before{}
+                    }
+                }
 
-			}
+            }
 
-			section#body{
-				@include span-columns(6, 12);
+            section#body{
+                @include span-columns(6, 12);
 
-				section#slide{}
+                section#slide{}
 
-				@include clearfix;
+                @include clearfix;
 
-				div#ourinfo{
-					@include span-columns(6, 6);
+                div#ourinfo{
+                    @include span-columns(6, 6);
 
-					section#where{
-						@include span-columns(3, 6);
-					}
+                    section#where{
+                        @include span-columns(3, 6);
+                    }
 
-					section#services{
-						@include span-columns(3 omega, 6);
-					}
+                    section#services{
+                        @include span-columns(3 omega, 6);
+                    }
 
-				}
+                }
 
-				@include clearfix;
+                @include clearfix;
 
-				section#expo{}
+                section#expo{}
 
-			}
+            }
 
-			aside#asider{
-				@include span-columns(3 omega, 12);
+            aside#asider{
+                @include span-columns(3 omega, 12);
 
-				section#agenda{}
+                section#agenda{}
 
-				section#varios{}
+                section#varios{}
 
-			}
+            }
 
-		}
+        }
 
-		// Sección 'variable' con una sola columna
-		// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		section#variable_1col{
-			section#body{
-				div#space{}
-			}
-		}
+        // Sección 'variable' con una sola columna
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        section#variable_1col{
+            section#body{
+                div#space{}
+            }
+        }
 
-		// Sección 'variable' con 2 columnas
-		// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		section#variable_2col{
-			section#body{
-				@include span-columns(9, 12);
+        // Sección 'variable' con 2 columnas
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        section#variable_2col{
+            section#body{
+                @include span-columns(9, 12);
 
-				div#space{}
-			}
+                div#space{}
+            }
 
-			aside#asider{
-				@include span-columns(3 omega, 12);
-				section#agenda{
-					h2{}
-				}
-				section#varios{
-					section#internal{
-						h2{}
-					}
-					section#externas{
-						h2{}
-					}
-				}
-			}
-		}
+            aside#asider{
+                @include span-columns(3 omega, 12);
+                section#agenda{
+                    h2{}
+                }
+                section#varios{
+                    section#internal{
+                        h2{}
+                    }
+                    section#externas{
+                        h2{}
+                    }
+                }
+            }
+        }
 
-		// Sección "varioable", con 2 columnas (especial)
-		section#variable_2col_especial{
+        // Sección "varioable", con 2 columnas (especial)
+        section#variable_2col_especial{
 
-			section#body{
-				@include span-columns(9, 12);
+            section#body{
+                @include span-columns(9, 12);
 
-				div#space{
+                div#space{
 
-					section#bodyleft{
-						@include span-columns(4, 9);
-					}
+                    section#bodyleft{
+                        @include span-columns(4, 9);
+                    }
 
-					section#bodyright{
-						@include span-columns(5 omega, 9);
-					}
+                    section#bodyright{
+                        @include span-columns(5 omega, 9);
+                    }
 
-				}
+                }
 
-			}
+            }
 
-			aside#asider{
-				@include span-columns(3 omega, 12);
+            aside#asider{
+                @include span-columns(3 omega, 12);
 
-				section#agenda{
-					h2{}
-				}
+                section#agenda{
+                    h2{}
+                }
 
-				section#varios{
+                section#varios{
 
-					section#internal{
-						h2{}
-					}
+                    section#internal{
+                        h2{}
+                    }
 
-					section#externas{
-						h2{}
-					}
-				}
+                    section#externas{
+                        h2{}
+                    }
+                }
 
-			}
+            }
 
-		}
+        }
 
-	}
+    }
 
 @include clearfix;
 
-	footer#footer{
-		@include span-columns(12 omega, 12);
+    footer#footer{
+        @include span-columns(12 omega, 12);
 
-		div#finicial{
-			@include span-columns(12 omega, 12);
-		}
+        div#finicial{
+            @include span-columns(12 omega, 12);
+        }
 
-		div#col1{
-			@include span-columns(3, 12);
-		}
+        div#col1{
+            @include span-columns(3, 12);
+        }
 
-		div#col2{
-			@include span-columns(3, 12);
-		}
+        div#col2{
+            @include span-columns(3, 12);
+        }
 
-		div#col3{
-			@include span-columns(3, 12);
-		}
+        div#col3{
+            @include span-columns(3, 12);
+        }
 
-		div#col4{
-			@include span-columns(3 omega, 12);
-		}
+        div#col4{
+            @include span-columns(3 omega, 12);
+        }
 
-		div#ffinal{
-			@include span-columns(12 omega, 12);
-		}
+        div#ffinal{
+            @include span-columns(12 omega, 12);
+        }
 
 
-		div#legal{
-			@include span-columns(12 omega, 12);
-		}
-	}
+        div#legal{
+            @include span-columns(12 omega, 12);
+        }
+    }
 
 }
