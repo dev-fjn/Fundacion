@@ -1,0 +1,25 @@
+// Seccion dedicada a los avisos
+
+$color_inicial: #fcf8e3;
+$color_final:   #f8efc0;
+
+section#info{
+    margin: 16px 0 16px 0;
+    border: 16px 0 16px 0;
+    padding: em($font_base) em($font_base) em($font_base) em($font_base*-1);
+
+    div{
+        padding: em($font_base);
+        @include border-radius($radio-standar*2);
+        @include background-image(linear-gradient(left top, $color_inicial, $color_final));
+        background-image: -webkit-gradient(linear, 0 0, 0 100%, from($color_inicial), color-stop(0.33, 0%), color-stop(0.67, $color_final), to(100%));
+        background-repeat: repeat-x;
+        border: em(1px) solid Red;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffcf8e3', endColorstr='#fff8efc0', GradientType=0);
+        p{
+            a{
+                text-decoration: underline;
+            }
+        }
+    }
+}
