@@ -14,7 +14,8 @@
         <span><a {% if only %}id="mes_siguiente"{% endif %} href="{% url 'calendario' next.year next.month %}">&nbsp;&#9654;&nbsp;</a></span>
     </div>
 
-    <table style="align:center; width:100%;" accesskey="a" role="grid" title="Calendario de Eventos">
+    <table style="align:center; width:100%;" accesskey="a" role="grid">
+        {# <caption>Calendario de Eventos</caption> #}
         {# hay formas mejores de hacer esto, pero como hay prisa #}
         <thead>
             <tr>
@@ -33,15 +34,10 @@
             <tr>
                 {% for dia, lista_eventos in semana %}
                     {% if dia.month == start.month %}
-                        {% if lista_eventos %}
-                            {# Caso para cuando hay eventos en el día actual #}
-                            {% if hoy == dia %}
-                                {# TODO: Poner enlace hacia el documento #}
-                                <td class="evento_hoy"><span><a href="#">{{dia.day}}</a></span></td>
-                            {% else %}
-                                {# TODO: Poner enlace hacia el documento #}
-                                <td class="evento"><span><a href="#">{{dia.day}}</a></span></td>
-                            {% endif %}
+                        {% if lista_eventos|length == 1 %}
+                            <td class="{% if hoy == dia %}evento_hoy{% else %}evento{% endif %}"><span><a href="{% url 'evento_view' lista_eventos.0.pk %}" title="{{lista_eventos.0}}">{{dia.day}}</a></span></td>
+                        {% elif lista_eventos %}
+                            <td class="{% if hoy == dia %}evento_hoy{% else %}evento{% endif %}"><span><a href="{% url 'calendario' start.year start.month %}" title="{{lista_eventos|length}} eventos disponibles">{{dia.day}}</a></span></td>
                         {% elif hoy == dia %}
                             <td class="actual"><span>{{dia.day}}</span></td>
                         {% else %}
