@@ -61,8 +61,14 @@ if DEBUG and PRODUCCION:
     }
 
 # Configuracion para los petes por correo
-    import socket
-    EMAIL_SUBJECT_PREFIX = "cafeteria@" + socket.gethostname() + ": "
-    SERVER_EMAIL = "cafeteria@" + socket.getfqdn(socket.gethostname())
 
+import socket
+SERVER_EMAIL = "django-fundacion@" + socket.getfqdn(socket.gethostname())
+
+if DEBUG and not PRODUCCION:
+    EMAIL_SUBJECT_PREFIX = '[Fundacion-dev] '
+elif DEBUG and PRODUCCION:
+    EMAIL_SUBJECT_PREFIX = '[Fundacion-beta] '
+else:
+    EMAIL_SUBJECT_PREFIX = '[Fundacion-prod] '
 
