@@ -47,6 +47,12 @@ class Evento(models.Model):
     def __unicode__(self):
         return u"%s" % (self.titulo, )
     
+    class Meta:
+        # CUIDADO CUIDADO: Si aparecen efectos de duplicidad de eventos, hay que quitar esto.
+        # De momento solo lo veo en /admin/contenidos/evento/ con lo cual está limitado.
+        # Pero es que si no me aparecen desordenados y es feo.
+        ordering = ('fechaevento__fecha', )
+
     def fecha_simple(self):
         return ", ".join([ev.simple() for ev in self.fechaevento_set.all()])
 
@@ -73,6 +79,9 @@ class FechaEvento(models.Model):
 
     def __unicode__(self):
         return u"%s %s-%s (%s)" % (self.fecha, self.hora_inicio, self.hora_final, self.evento)
+
+    class Meta:
+        ordering = ('fecha', )
 
 class TIPO:
     PONENCIAS = u'Ponencias'
