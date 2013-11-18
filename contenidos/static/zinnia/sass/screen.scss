@@ -15,7 +15,13 @@
 //
 // Combine the partials into a single screen stylesheet.
 // under the body.zinnia class to avoid interferences
-.zinnia {
+html.js{
+body{
+div.container{
+div.content{
+section#variable_2col{
+section#body{
+div.zinnia {
   @import "partials/page";
   @import "partials/layouts";
   @import "partials/themes";
@@ -30,5 +36,11 @@
   @import "partials/paginator";
   @import "partials/slider";
   @import "partials/django-fixes";
+}
+}
+}
+}
+}
+}
 }
 

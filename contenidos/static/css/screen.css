@@ -436,9 +436,9 @@ section#menus nav#cssmenu .has-sub ul {
 }
 /* line 125, ../sass/estilos/_menus.scss */
 section#menus nav#cssmenu .has-sub ul li {
-  *margin-bottom: -0.0625em;
+  margin-bottom: -0.0625em;
 }
-/* line 127, ../sass/estilos/_menus.scss */
+/* line 128, ../sass/estilos/_menus.scss */
 section#menus nav#cssmenu .has-sub ul li a {
   background: #a39579;
   border-bottom: 0.0625em dotted #eeede9;
@@ -449,27 +449,27 @@ section#menus nav#cssmenu .has-sub ul li a {
   padding: 0.625em;
   color: white;
 }
-/* line 137, ../sass/estilos/_menus.scss */
+/* line 138, ../sass/estilos/_menus.scss */
 section#menus nav#cssmenu .has-sub ul li:hover a {
   background: #918b74;
 }
-/* line 143, ../sass/estilos/_menus.scss */
+/* line 144, ../sass/estilos/_menus.scss */
 section#menus nav#cssmenu .has-sub .has-sub:hover > ul {
   display: block;
 }
-/* line 146, ../sass/estilos/_menus.scss */
+/* line 147, ../sass/estilos/_menus.scss */
 section#menus nav#cssmenu .has-sub .has-sub ul {
   display: none;
   position: absolute;
   left: 100%;
   top: 0;
 }
-/* line 151, ../sass/estilos/_menus.scss */
+/* line 152, ../sass/estilos/_menus.scss */
 section#menus nav#cssmenu .has-sub .has-sub ul li a {
   background: #918b74;
   border-bottom: 1px dotted #eeede9;
 }
-/* line 154, ../sass/estilos/_menus.scss */
+/* line 155, ../sass/estilos/_menus.scss */
 section#menus nav#cssmenu .has-sub .has-sub ul li a:hover {
   background: #595546;
 }
@@ -899,6 +899,18 @@ section#variable_2col section#body div.evento figure figcaption h2 span a {
 /* line 98, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.evento figure figcaption button {
   text-align: right;
+}
+/* line 104, ../sass/estilos/_variable_2col.scss */
+section#variable_2col section#body div.zinnia {
+  -webkit-border-radius: 0.625em;
+  -moz-border-radius: 0.625em;
+  -ms-border-radius: 0.625em;
+  -o-border-radius: 0.625em;
+  border-radius: 0.625em;
+  min-height: 30em;
+  margin: 1em;
+  border: 1em;
+  padding: 1em;
 }
 
 /* line 5, ../sass/estilos/_variable_2col_especial.scss */
