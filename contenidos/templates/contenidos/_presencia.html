@@ -1,4 +1,7 @@
-<dt><span>{{object.denominacion}}</span></dt>
+<dt>
+    <span>{{object.denominacion}}</span>
+    {% if user.is_superuser %}<a href="{% url 'admin:contenidos_presencia_change' object.id %}">&#9998;</a>{% endif %}
+</dt>
 <dd>
     <figure>
 
