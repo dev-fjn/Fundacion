@@ -123,7 +123,7 @@ class Documentos(ListView):
     def get_queryset(self):
         qs = super(Documentos, self).get_queryset()
         if self.tipo:
-            qs = qs.filter(tipo=self.tipo)
+            qs = qs.filter(categoria__tipo=self.tipo)
         self.query = self.request.GET.get('query', '').strip()
         if self.query:
             qs = qs.filter(Q(titulo__icontains=self.query)|Q(descripcion__icontains=self.query))

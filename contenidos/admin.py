@@ -35,9 +35,12 @@ class FicheroAdjuntoInline(admin.TabularInline):
     model = FicheroAdjunto
     extra = 0
 
+class CategoriaDocumentoAdmin(admin.ModelAdmin):
+    pass
+
 class DocumentoAdmin(admin.ModelAdmin):
-    list_display = ['titulo', 'tipo', 'adjuntos_']
-    list_filter = ['tipo']
+    list_display = ['titulo', 'categoria', 'adjuntos_']
+    list_filter = ['categoria__tipo', 'categoria']
     inlines = [UrlAdjuntoInline, FicheroAdjuntoInline]
 
     def adjuntos_(self, obj):
@@ -57,6 +60,7 @@ admin.site.register(Imagen, ImagenAdmin)
 admin.site.register(Video, VideoAdmin)
 admin.site.register(Evento, EventoAdmin)
 admin.site.register(Libro, LibroAdmin)
+admin.site.register(Categoria, CategoriaDocumentoAdmin)
 admin.site.register(Documento, DocumentoAdmin)
 admin.site.register(CitaDe, CitasDeAdmin)
 admin.site.register(CitaSobre, CitasSobreAdmin)

@@ -91,7 +91,7 @@ class TIPO:
     CATALOGO = u'Catálogo'
     LIST = [PONENCIAS, LIBRO, INFORME, BOLETIN, CATALOGO]
     CHOICES = zip(LIST, LIST)
-
+			
 class Libro(models.Model):
     titulo = models.CharField(max_length=250)
     autor = models.CharField(max_length=250)
@@ -125,10 +125,29 @@ class TIPO:
         DOSSIERES_DE_PRENSA: 'Sala de Prensa',
     }
 
-class Documento(models.Model):
+class Categoria(models.Model):
     tipo = models.IntegerField(choices=TIPO.CHOICES)
-    titulo = models.CharField(max_length=250)
-    descripcion = models.TextField()
+    nombre = models.CharField(max_length=250, help_text=u"El nombre de la categoria, si hay más de uno", blank=True, null=True)
+
+    class Meta:
+        ordering = ('tipo', 'nombre')
+        unique_together = ( ('tipo', 'nombre'), )
+        verbose_name = u'Categoría de documentos'
+        verbose_name_plural = u'Categorías de documentos'
+
+    def __unicode__(self):
+        if self.nombre:
+            return u"%s - %s" % (self.get_tipo_display(), self.nombre)
+        else:
+            return u"%s" % (self.get_tipo_display(), )
+
+class Documento(models.Model):
+    categoria = models.ForeignKey(Categoria)
+    titulo = models.CharField(max_length=250, help_text=u"El título principal del documento")
+    autor = models.CharField(max_length=250, help_text=u"Autor del documento, si se conoce", blank=True, null=True)
+    descripcion = models.TextField(help_text=u"Escribir un resumen del documento, si es una entrevista detallar el entrevistado")
+    fecha = models.DateField()
+    fuente = models.CharField(max_length=250, help_text=u"La fuente del documento, si procede, o el nombre del periódico", blank=True, null=True)
 
     def adjuntos(self):
         l = list(self.urladjunto_set.all())
@@ -138,6 +157,7 @@ class Documento(models.Model):
 class Adjunto(models.Model):
     documento = models.ForeignKey(Documento)
     titulo = models.CharField(max_length=250)
+    miniatura = FileBrowseField("miniaturas", max_length=200, directory="documentos/thumbnails", help_text=u"Miniatura del contenido, si procede", blank=True, null=True)
 
     def template(self):
         return "contenidos/_%s.html" % (self.__class__.__name__.lower(), )
@@ -152,8 +172,8 @@ class UrlAdjunto(Adjunto):
     url = models.URLField()
 
     class Meta:
-        verbose_name = u'URL adjunta'
-        verbose_name_plural = u'URLs adjuntas'
+        verbose_name = u'Referencia al documento en internet'
+        verbose_name_plural = u'Referencias al documento en internet'
 
 class FicheroAdjunto(Adjunto):
     filename = FileBrowseField("fichero", max_length=200, directory="documentos")
@@ -162,17 +182,17 @@ class FicheroAdjunto(Adjunto):
         return os.path.splitext(self.filename.path)[1]
 
     def es_imagen(self):
-        return self.extension() in ['.png', '.jpg', '.jpeg', '.gif']
+        return self.extension() in ['.png', '.jpg', '.jpeg', '.gif', '.svg']
 
     def es_audio(self):
-        return self.extension() in ['.mp3', ]
+        return self.extension() in ['.mp3', '.ogg', '.wav']
 
     def es_video(self):
-        return self.extension() in ['.flv', '.mp4']
+        return self.extension() in ['.flv', '.mp4', '.ogv']
 
     class Meta:
-        verbose_name = u'Fichero adjunto'
-        verbose_name_plural = u'Ficheros adjuntos'
+        verbose_name = u'Enlace al documento almacenado por FTP'
+        verbose_name_plural = u'Enlaces al documento almacenado por FTP'
 
 class CitaDe(models.Model):
     contenido = models.TextField(help_text=u"Poner el texto que se cita")
