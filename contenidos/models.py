@@ -145,7 +145,7 @@ class Documento(models.Model):
     categoria = models.ForeignKey(Categoria)
     titulo = models.CharField(max_length=250, help_text=u"El título principal del documento")
     autor = models.CharField(max_length=250, help_text=u"Autor del documento, si se conoce", blank=True, null=True)
-    descripcion = models.TextField(help_text=u"Escribir un resumen del documento, si es una entrevista detallar el entrevistado")
+    descripcion = models.TextField(help_text=u"Escribir un resumen del documento, si es una entrevista detallar el entrevistado", blank=True, null=True)
     fecha = models.DateField()
     fuente = models.CharField(max_length=250, help_text=u"La fuente del documento, si procede, o el nombre del periódico", blank=True, null=True)
 
