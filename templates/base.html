@@ -5,7 +5,7 @@
 {% load url from future %}
 
 {% block head_title %}
-{% if site_name %}{{ site_name }} : {% else %}F. J. N. : {% endif %}
+{% if site_name %}{{ site_name }} : {% else %}Fundacion Juan Negrin{% endif %}
 {% endblock head_title %}
 
 {% block extra_head %}
@@ -18,44 +18,49 @@ ESTO NO SE INSTANCIA EN LA PLANTILLA BASE POR TANTO NO SE PRESENTA
 SE DEJA AQUI SOLO COMO REFERENCIA, HABRA QUE CAMBIARLO POR ALGO BASADO EN BANDERAS
 <!-- formulario seleccion idioma django -->
 <form action="/i18n/setlang/" method="post">
-	{% csrf_token %}
-	<input name="next" type="hidden" value="/" />
-	<select name="language">
-		{% for lang in LANGUAGES %}
-		<option value="{{ lang.0 }}">{{ lang.1 }}</option>
-		{% endfor %}
-	</select>
-	<input type="submit" value="{% trans 'Go' %}" />
+    {% csrf_token %}
+    <input name="next" type="hidden" value="/" />
+    <select name="language">
+        {% for lang in LANGUAGES %}
+        <option value="{{ lang.0 }}">{{ lang.1 }}</option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="{% trans 'Go' %}" />
 </form>
 {% endblock form_i18n %}
 
 {% block menu %}
-	<ul>
-		{% show_menu "principal" %}
-	</ul>
+    <ul>
+        {% show_menu "principal" %}
+    </ul>
 {% endblock menu %}
 
 {% block messages %}
-	{% if messages %}
-		{% for message in messages %}
-		<p id="message_{{ forloop.counter }}" class="chromeframe">
-			<a href="#" onclick="$('#message_{{ forloop.counter }}').fadeOut(); return false;"><small>{% trans "clear" %}</small></a> {{ message }}
-		</p>
-		{% endfor %}
-	{% endif %}
+    {% if messages %}
+        <div>
+            {% for message in messages %}
+                <p id="message_{{ forloop.counter }}" class="chromeframe">
+                    <a href="#" onclick="$('#message_{{ forloop.counter }}').fadeOut(); return false;"><small>{% trans "clear" %}</small></a> {{ message }}
+                </p>
+            {% endfor %}
+        </div>
+    {% endif %}
 {% endblock messages %}
 
 {% block color_tests %}
 {% endblock color_tests %}
 
+{#
 {% block footer %}
-	{{block.super}}
-	<p>
-		Probando la plantilla base.html a las {% now "jS F Y H:i" %}.<br />
-		Poner copyright ... tal {% now "l" %} o {% now "r" %}
-	</p>
+    {{block.super}}
+    <!--
+    <p>
+        Probando la plantilla base.html a las {% now "jS F Y H:i" %}.<br />
+        Poner copyright ... tal {% now "l" %} o {% now "r" %}
+    </p>
+    -->
 {% endblock footer %}
-
+#}
 
 {% block noticias %}
 {% get_recent_entries %}
@@ -75,17 +80,17 @@ SE DEJA AQUI SOLO COMO REFERENCIA, HABRA QUE CAMBIARLO POR ALGO BASADO EN BANDER
 
 
 {% block links1 %}
-	{% show_menu "pie1" %}
+    {% show_menu "pie1" %}
 {% endblock links1 %}
 
 {% block links2 %}
-	{% show_menu "pie2" %}
+    {% show_menu "pie2" %}
 {% endblock links2 %}
 
 {% block links3 %}
-	{% show_menu "pie3" %}
+    {% show_menu "pie3" %}
 {% endblock links3 %}
 
 {% block links4 %}
-	{% show_menu "pie4" %}
+    {% show_menu "pie4" %}
 {% endblock links4 %}
