@@ -1,35 +1,54 @@
 // Pie de pagina
 
+$color_top-bottom: $color03;
+
+$color_texto: $color00;
+$color_texto_alternativo: $color01;
+
+$color_fondo: $color_texto;
+$background_fondo: $color07;
+
+$color_legal: darken($color_texto_alternativo, 20%);
+$background_legal: darken($background_fondo, 5%);
+
+
 footer#footer{
-	background-color: $color07;
+    color: $color_fondo;
+    background-color: $background_fondo;
+    border-top: medium solid $color_top-bottom;
+    border-bottom: medium solid $color_top-bottom;
+    text-align: center;
+    border: 0 em($font_base) 0 em($font_base);
 
-	div#finicial{
-		min-height:2em;
-	}
+    div#finicial{
+        min-height:2em;
+    }
 
-	div#col1{
-		@include border-radius($radio-standar);
-	}
+    div#col1{
+        @include border-radius($radio-standar);
+    }
 
-	div#col2{
-		@include border-radius($radio-standar);
+    div#col2{
+        @include border-radius($radio-standar);
 
-	}
+    }
 
-	div#col3{
-		@include border-radius($radio-standar);
-	}
+    div#col3{
+        @include border-radius($radio-standar);
+    }
 
-	div#col4{
-		@include border-radius($radio-standar);
-	}
+    div#col4{
+        @include border-radius($radio-standar);
+    }
 
-	div#ffinal{
-		min-height:2em;
-	}
+    div#ffinal{
+        min-height:2em;
+    }
 
 
-	div#legal{
-		text-align:right;
-	}
+    div#legal{
+        text-align:right;
+        color: $color_legal;
+        background-color: $background_legal;
+    }
 }
