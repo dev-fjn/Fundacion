@@ -168,7 +168,7 @@ class Documento(models.Model):
 class Adjunto(models.Model):
     documento = models.ForeignKey(Documento)
     titulo = models.CharField(max_length=250)
-    miniatura = FileBrowseField("miniaturas", max_length=200, directory="documentos/thumbnails", help_text=u"Miniatura del contenido, si procede", blank=True, null=True)
+    miniatura = FileBrowseField("miniaturas", max_length=200, directory="documentos/miniaturas", help_text=u"Miniatura del contenido, si procede", blank=True, null=True)
 
     def template(self):
         return "contenidos/_%s.html" % (self.__class__.__name__.lower(), )
