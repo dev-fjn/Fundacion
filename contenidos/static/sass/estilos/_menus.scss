@@ -1,3 +1,6 @@
+// Menu corto:
+// http://tympanus.net/Development/ResponsiveMultiLevelMenu/index.html#
+
 section#menus{
     background-color: $color_menu01;
 
@@ -10,7 +13,7 @@ section#menus{
         @include background-image(linear-gradient($color_menu01, $color_menu02));
 
         // Línea Base roja para todos los menús
-        border-bottom: em(2px) solid $color_menu03;
+        border-bottom: medium solid $color_menu03;
         width: auto;
 
         ul, li, span, a {
