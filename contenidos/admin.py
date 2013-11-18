@@ -38,6 +38,9 @@ class FicheroAdjuntoInline(admin.TabularInline):
 class CategoriaDocumentoAdmin(admin.ModelAdmin):
     pass
 
+class AutorAdmin(admin.ModelAdmin):
+    pass
+
 class DocumentoAdmin(admin.ModelAdmin):
     list_display = ['titulo', 'categoria', 'autor', 'adjuntos_']
     list_filter = ['categoria__tipo', 'categoria']
@@ -61,6 +64,7 @@ admin.site.register(Video, VideoAdmin)
 admin.site.register(Evento, EventoAdmin)
 admin.site.register(Libro, LibroAdmin)
 admin.site.register(Categoria, CategoriaDocumentoAdmin)
+admin.site.register(Autor, AutorAdmin)
 admin.site.register(Documento, DocumentoAdmin)
 admin.site.register(CitaDe, CitasDeAdmin)
 admin.site.register(CitaSobre, CitasSobreAdmin)
