@@ -24,6 +24,7 @@ pytz
 PIL
 
 # para usar django-filebrowser-no-grappelli tuneado para 1.5
+# hay muchas ramas del sw que tienen soporte para 1.6 (mirarlas)
 git+https://github.com/jose-lpa/django-filebrowser-no-grappelli.git
 pillow
 
