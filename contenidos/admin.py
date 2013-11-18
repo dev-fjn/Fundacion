@@ -39,7 +39,7 @@ class CategoriaDocumentoAdmin(admin.ModelAdmin):
     pass
 
 class DocumentoAdmin(admin.ModelAdmin):
-    list_display = ['titulo', 'categoria', 'adjuntos_']
+    list_display = ['titulo', 'categoria', 'autor', 'adjuntos_']
     list_filter = ['categoria__tipo', 'categoria']
     inlines = [UrlAdjuntoInline, FicheroAdjuntoInline]
 
