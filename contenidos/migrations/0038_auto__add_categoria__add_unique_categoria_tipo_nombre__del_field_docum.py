@@ -24,7 +24,7 @@ class Migration(SchemaMigration):
 
         # Adding field 'Documento.categoria'
         db.add_column(u'contenidos_documento', 'categoria',
-                      self.gf('django.db.models.fields.related.ForeignKey')(default='', to=orm['contenidos.Categoria']),
+                      self.gf('django.db.models.fields.related.ForeignKey')(default=1, to=orm['contenidos.Categoria']),
                       keep_default=False)
 
 
