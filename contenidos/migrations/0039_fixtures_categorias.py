@@ -8,7 +8,7 @@ class Migration(DataMigration):
 
     def forwards(self, orm):
         from django.core.management import call_command
-        call_command("loaddata", "fixtures/treemenus.json")
+        call_command("loaddata", "fixtures/categorias.json")
 
     def backwards(self, orm):
         "Write your backwards methods here."
