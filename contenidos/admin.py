@@ -43,7 +43,7 @@ class AutorAdmin(admin.ModelAdmin):
 
 class DocumentoAdmin(admin.ModelAdmin):
     list_display = ['titulo', 'categoria', 'autor', 'adjuntos_']
-    list_filter = ['categoria__tipo', 'categoria']
+    list_filter = ['categoria__tipo', 'categoria', 'autor']
     inlines = [UrlAdjuntoInline, FicheroAdjuntoInline]
 
     def adjuntos_(self, obj):
