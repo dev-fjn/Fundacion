@@ -1,104 +1,113 @@
 // Clases listas para usar:
 // ~~~~~~~~~~~~~~~~~~~~~~~
 
+.ellipsis {
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	-ms-text-overflow: ellipsis; /* Required for IE8 */
+	 -o-text-overflow: ellipsis; /* Required for Opera */
+	    text-overflow: ellipsis;
+}
+
 // Clase usada en la pagina del presidente.
 .poema {
-    margin: auto;
-    padding: em(20px) 0;
-    text-align: left;
-    width: em(390px);
-    h1, h2 {
-        font-weight: normal;
-        text-align: center;
-    }
-    h1 {
-        font-size: em(34px);
-        line-height: 1.2;
-        margin-bottom: em(10px);
-    }
-    h2 {
-        color: #666;
-        font-size: em(18px);
-        font-style: italic;
-        margin-bottom: em(30px);
-    }
-    p {
-        line-height: 1.5;
-        margin-bottom: em(15px);
-    }
-    h2 {
-        &:before {
-            content: '— ';
-        }
-        &:after {
-            content: ' —';
-        }
-        + p:first-letter {
-            float: left;
-            font-size: em(38px);
-            line-height: 1;
-            margin: em(2px) em(5px) 0 0;
-        }
-    }
-    p {
-        &:first-line {
-            font-variant: small-caps;
-            letter-spacing: em(1px);
-        }
-        &:last-child {
-            margin-bottom: em(30px);
-            padding-bottom: em(30px);
-        }
-    }
+	margin: auto;
+	padding: em(20px) 0;
+	text-align: left;
+	width: em(390px);
+	h1, h2 {
+		font-weight: normal;
+		text-align: center;
+	}
+	h1 {
+		font-size: em(34px);
+		line-height: 1.2;
+		margin-bottom: em(10px);
+	}
+	h2 {
+		color: #666;
+		font-size: em(18px);
+		font-style: italic;
+		margin-bottom: em(30px);
+	}
+	p {
+		line-height: 1.5;
+		margin-bottom: em(15px);
+	}
+	h2 {
+		&:before {
+			content: '— ';
+		}
+		&:after {
+			content: ' —';
+		}
+		+ p:first-letter {
+			float: left;
+			font-size: em(38px);
+			line-height: 1;
+			margin: em(2px) em(5px) 0 0;
+		}
+	}
+	p {
+		&:first-line {
+			font-variant: small-caps;
+			letter-spacing: em(1px);
+		}
+		&:last-child {
+			margin-bottom: em(30px);
+			padding-bottom: em(30px);
+		}
+	}
 }
 
 // Todas las firmas las he ido poniendo en un parrafo con esta clase.
 .firma{
-    text-align: right;
+	text-align: right;
 }
 
 // Usada en la pagina del Patronato
 .fallecidos{
-    text-indent: em($font_base * 1.5);
-    &:after{
-        content: "\205C";
-    }
+	text-indent: em($font_base * 1.5);
+	&:after{
+		content: "\205C";
+	}
 }
 
 // Citas de y sobre Juan Negrín.
 .cita {
-    //font-family: Georgia, serif;
-    //font-size: 18px;
-    font-style: italic;
-    //width: 500px;
-    margin: 0.25em 0;
-    padding: 0.5em em(40px);
-    line-height: 1.45;
-    position: relative;
-    color: #383838;
+	//font-family: Georgia, serif;
+	//font-size: 18px;
+	font-style: italic;
+	//width: 500px;
+	margin: 0.25em 0;
+	padding: 0.5em em(40px);
+	line-height: 1.45;
+	position: relative;
+	color: #383838;
 
-    &:before {
-        display: block;
-        //content: "\201C";
-        content: "\275D";
-        font-size: em(80px);
-        position: absolute;
-        left: -20px;
-        top: -20px;
-        color: #7a7a7a;
-    }
+	&:before {
+		display: block;
+		//content: "\201C";
+		content: "\275D";
+		font-size: em(80px);
+		position: absolute;
+		left: -20px;
+		top: -20px;
+		color: #7a7a7a;
+	}
 
 
-    footer {
-        color: #999999;
-        font-size: 14px;
-        //display: block;
-        margin-top: 5px;
-        text-align: right;
-    }
+	footer {
+		color: #999999;
+		font-size: 14px;
+		//display: block;
+		margin-top: 5px;
+		text-align: right;
+	}
 
-    footer:before {
-        //content: "\2014 \2009";
-        content: "\2014 ";
-    }
+	footer:before {
+		//content: "\2014 \2009";
+		content: "\2014 ";
+	}
 }
