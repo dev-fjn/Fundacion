@@ -1,15 +1,22 @@
 {# programar aqui las diferentes formas de mostrar adjuntos de contenidos en una linea#}
 
+7A. {{adjunto.titulo}}<br />
+8A. {{adjunto.filename}}<br />
+9A. {{adjunto.miniatura}}<br />
+<br />
+
 <!--{{adjunto.extension}}-->
-{% if adjunto.es_imagen %}
-    IMAGEN <img src="{{adjunto.filename}}" title="{{adjunto.titulo}}" />
+{% if adjunto.es_imagen or adjunto.extension = ".pdf" %}
+    IMAGEN/PDF
+    {% if adjunto.miniatura %}
+        <a href="{{adjunto.filename}}"><img src="{{adjunto.miniatura}}" title="{{adjunto.titulo}}" ></a>
+    {% else %}
+        <img src="{{adjunto.filename}}" title="{{adjunto.titulo}}" />
+    {% endif %}
 {% elif adjunto.es_video %}
     VIDEO <a href="{{adjunto.filename}}">{{adjunto.titulo}}</a> 
 {% elif adjunto.es_audio %}
     AUDIO <a href="{{adjunto.filename}}">{{adjunto.titulo}}</a> 
-{% elif adjunto.extension = ".pdf" %}
-    PDF <a href="{{adjunto.filename}}">{{adjunto.titulo}}</a> 
 {% else %}
     OTRO <a href="{{adjunto.filename}}">{{adjunto.titulo}}</a> 
 {% endif %}
-

@@ -12,125 +12,145 @@ $radio: em(4px);
 $fondo: lighten($color02, 10%);
 
 .box{
-    // http://demo.web3designs.com/css3-box-shadow-effect.htm
-    position: relative;
-    width: 60%;
-    background: $fondo;
-         border-radius: $radio;
-    -moz-border-radius: $radio;
-    padding: 2em 1.5em;
-    color: rgba(0,0,0, .8);
-    text-shadow: 0 1px 0 #fff;
-    line-height: 1.5;
-    margin: 60px auto;
+	// http://demo.web3designs.com/css3-box-shadow-effect.htm
+	position: relative;
+	width: 60%;
+	background: $fondo;
+		border-radius: $radio;
+	-moz-border-radius: $radio;
+	padding: 2em 1.5em;
+	color: rgba(0,0,0, .8);
+	text-shadow: 0 1px 0 #fff;
+	line-height: 1.5;
+	margin: 60px auto;
 
-    &:before, &:after{
-        z-index: -1;
-        position: absolute;
-        content: "";
-        bottom: em(15px);
-        left: em(10px);
-        width: 50%;
-        top: 80%;
-        max-width: em(300px);
-        background: rgba(0, 0, 0, 0.7);
-        -webkit-box-shadow: 0 em(15px) em(10px) rgba(0, 0, 0, 0.7);
-           -moz-box-shadow: 0 em(15px) em(10px) rgba(0, 0, 0, 0.7);
-                box-shadow: 0 em(15px) em(10px) rgba(0, 0, 0, 0.7);
-        -webkit-transform: rotate(-3deg);
-           -moz-transform: rotate(-3deg);
-             -o-transform: rotate(-3deg);
-            -ms-transform: rotate(-3deg);
-                transform: rotate(-3deg);
-    }
+	&:before, &:after{
+		z-index: -1;
+		position: absolute;
+		content: "";
+		bottom: em(15px);
+		left: em(10px);
+		width: 50%;
+		top: 80%;
+		max-width: em(300px);
+		background: rgba(0, 0, 0, 0.7);
+		-webkit-box-shadow: 0 em(15px) em(10px) rgba(0, 0, 0, 0.7);
+		-moz-box-shadow: 0 em(15px) em(10px) rgba(0, 0, 0, 0.7);
+				box-shadow: 0 em(15px) em(10px) rgba(0, 0, 0, 0.7);
+		-webkit-transform: rotate(-3deg);
+		-moz-transform: rotate(-3deg);
+			-o-transform: rotate(-3deg);
+			-ms-transform: rotate(-3deg);
+				transform: rotate(-3deg);
+	}
 
-    &:after{
-        -webkit-transform: rotate(3deg);
-           -moz-transform: rotate(3deg);
-             -o-transform: rotate(3deg);
-            -ms-transform: rotate(3deg);
-                transform: rotate(3deg);
-        right: em(10px);
-        left: auto;
-    }
+	&:after{
+		-webkit-transform: rotate(3deg);
+		-moz-transform: rotate(3deg);
+			-o-transform: rotate(3deg);
+			-ms-transform: rotate(3deg);
+				transform: rotate(3deg);
+		right: em(10px);
+		left: auto;
+	}
 }
 
 section#variable_1col{
-    @include border-radius($radio-standar);
+	@include border-radius($radio-standar);
 
-    section#body{
-        text-align:justify;
+	section#body{
+		text-align:justify;
 
-        div#libro_list{
-            @include border-radius($radio-standar);
-            //background-color: Red;
-            //max-width: 69%;
-            min-height:em(480px);
-            margin: em($font_base);
-            border: em($font_base);
-            padding: em($font_base);
+		div#libro_list{
+			@include border-radius($radio-standar);
+			//background-color: Red;
+			//max-width: 69%;
+			min-height:em(480px);
+			margin: em($font_base);
+			border: em($font_base);
+			padding: em($font_base);
 
-            h1{
-                font-weight:700;
-            }
-            h2{
-                text-align: center;
-            }
+			h1{
+				font-weight:700;
+			}
+			h2{
+				text-align: center;
+			}
 
 
-            div.box{
-                //float: left;
-                background-color: $fondo;
+			div.box{
+				//float: left;
+				background-color: $fondo;
 
-                @include display-box;
-                @include box-orient(horizontal);
-                @include box-align(stretch);
-                @include box-direction(normal);
-                //height: 200px;
-                width: 90%;
-                //margin: auto 0;
-                .datos_libro, .portada_libro {
-                    padding: em(20px);
-                }
-                .datos_libro {
-                    @include box-flex(4);
-                    background-color: $fondo;
-                    dl{
-                        dt{
-                            font-weight: 700;
-                            font-variant-caps:unicase;
-                        }
-                        dd{
-                            text-indent: $font_base * 6;
-                            display: block;
-                        }
-                    }
-                }
-                .portada_libro {
-                    @include box-flex(1);
-                    $default-box-shadow-inset: true;
-                    @include single-box-shadow;
-                    background-color: $color01;
-                    margin-right: 1px;
-                    img{
-                        $default-box-shadow-inset: false;
-                        @include single-box-shadow;
-                        margin: auto 0;
-                        text-align: center;
-                        //max-height: 90%;
-                        max-width: em(200px);
+				@include display-box;
+				@include box-orient(horizontal);
+				@include box-align(stretch);
+				@include box-direction(normal);
+				//height: 200px;
+				width: 90%;
+				//margin: auto 0;
+				.datos_libro, .portada_libro {
+					padding: em(20px);
+				}
+				.datos_libro {
+					@include box-flex(4);
+					background-color: $fondo;
+					dl{
+						dt{
+							font-weight: 700;
+							font-variant-caps:unicase;
+						}
+						dd{
+							text-indent: $font_base * 6;
+							display: block;
+						}
+					}
+				}
+				.portada_libro {
+					@include box-flex(1);
+					$default-box-shadow-inset: true;
+					@include single-box-shadow;
+					background-color: $color01;
+					margin-right: 1px;
+					img{
+						$default-box-shadow-inset: false;
+						@include single-box-shadow;
+						margin: auto 0;
+						text-align: center;
+						//max-height: 90%;
+						max-width: em(200px);
 
-                    }
-                }
+					}
+				}
 
-            }
+			}
 
-            div.paginator{
-                background-color: transparent;
-                text-align: center;
-            }
+			div.paginator{
+				background-color: transparent;
+				text-align: center;
+			}
 
-        }
-    }
+		}
 
+		div.documento_list{
+			@include border-radius($radio-standar);
+			min-height:em(480px);
+			margin: em($font_base);
+			border: em($font_base);
+			padding: em($font_base);
+			h1{
+				font-weight:700;
+			}
+			h2{
+				font-weight:500;
+			}
+			div.doc{
+				background-color: #E6E6FA;
+				min-height:em(380px);
+				margin: em($font_base);
+				border: em($font_base);
+				padding: em($font_base);
+			}
+		}
+	}
 }

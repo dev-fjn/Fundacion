@@ -777,6 +777,34 @@ section#variable_1col section#body div#libro_list div.paginator {
   background-color: transparent;
   text-align: center;
 }
+/* line 135, ../sass/estilos/_variable_1col.scss */
+section#variable_1col section#body div.documento_list {
+  -webkit-border-radius: 0.625em;
+  -moz-border-radius: 0.625em;
+  -ms-border-radius: 0.625em;
+  -o-border-radius: 0.625em;
+  border-radius: 0.625em;
+  min-height: 30em;
+  margin: 1em;
+  border: 1em;
+  padding: 1em;
+}
+/* line 141, ../sass/estilos/_variable_1col.scss */
+section#variable_1col section#body div.documento_list h1 {
+  font-weight: 700;
+}
+/* line 144, ../sass/estilos/_variable_1col.scss */
+section#variable_1col section#body div.documento_list h2 {
+  font-weight: 500;
+}
+/* line 147, ../sass/estilos/_variable_1col.scss */
+section#variable_1col section#body div.documento_list div.doc {
+  background-color: #E6E6FA;
+  min-height: 23.75em;
+  margin: 1em;
+  border: 1em;
+  padding: 1em;
+}
 
 /* line 13, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body {
