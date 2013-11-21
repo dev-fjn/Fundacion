@@ -114,15 +114,30 @@ class Libros(LibrosBase, ListView):
         context['count'] = self.count
         return context
 
-class Documentos(ListView):
-    model = Documento
-    paginate_by = settings.CONTENIDOS_PAGINADOR_MAX
+class DocumentosBase(object):
     tipo = None
 
     def get_queryset(self):
-        qs = super(Documentos, self).get_queryset()
+        qs = super(DocumentosBase, self).get_queryset()
         if self.tipo:
             qs = qs.filter(categoria__tipo=self.tipo)
+        return qs
+
+    def get_context_data(self, **kwargs):
+        context = super(DocumentosBase, self).get_context_data(**kwargs)
+        context["tipo"] = TIPO.DICT[self.tipo] if self.tipo in TIPO.DICT else "(Ninguno)"
+        context["base_tipo"] = TIPO.BASES_HORMIGAS[self.tipo] if self.tipo in TIPO.BASES_HORMIGAS else "(Ninguno)"
+        return context
+
+class DocumentoDetalle(DocumentosBase, DetailView):
+    model = Documento
+
+class Documentos(DocumentosBase, ListView):
+    model = Documento
+    paginate_by = settings.CONTENIDOS_PAGINADOR_MAX
+
+    def get_queryset(self):
+        qs = super(Documentos, self).get_queryset()
         self.query = self.request.GET.get('query', '').strip()
         if self.query:
             qs = qs.filter(Q(titulo__icontains=self.query)|Q(descripcion__icontains=self.query))
@@ -133,8 +148,6 @@ class Documentos(ListView):
         context = super(Documentos, self).get_context_data(**kwargs)
         context["query"] = self.query
         context["count"] = self.count
-        context["tipo"] = TIPO.DICT[self.tipo] if self.tipo in TIPO.DICT else "(Ninguno)"
-        context["base_tipo"] = TIPO.BASES_HORMIGAS[self.tipo] if self.tipo in TIPO.BASES_HORMIGAS else "(Ninguno)"
         return context
 
 class BusquedaGeneral(TemplateView):

@@ -171,6 +171,16 @@ class Documento(models.Model):
         l = list(self.urladjunto_set.all())
         l += list(self.ficheroadjunto_set.all())
         return sorted(l, key=lambda x: x.titulo)
+    
+    def get_absolute_url(self):
+        if self.categoria.tipo == TIPO.RECURSOS_AUDIOVISUALES:
+            return reverse('recurso_audiovisual_detalle', args=[str(self.id)])
+        elif self.categoria.tipo == TIPO.PRESENCIA_EN_PRENSA:
+            return reverse('presencia_en_prensa_detalle', args=[str(self.id)])
+        elif self.categoria.tipo == TIPO.DOSSIERES_DE_PRENSA:
+            return reverse('dossier_de_prensa_detalle', args=[str(self.id)])
+        else:
+            raise RuntimeError("Tipo no soportado")
 
 class Adjunto(models.Model):
     documento = models.ForeignKey(Documento)
