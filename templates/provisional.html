@@ -31,6 +31,7 @@
         <meta name="msapplication-wide310x150logo"   content="{% static 'img/tiles/wide.png' %}" />
         <meta name="msapplication-square310x310logo" content="{% static 'img/tiles/large.png' %}"/>
 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
         {% block extra_head %}{% endblock extra_head %}
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -62,9 +63,6 @@
         <!--[if lt IE 10]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-        {% block extra_head %}{% endblock extra_head %}
     </head>
     <body itemscope itemtype="http://schema.org/WebPage">
         <div class="container">
