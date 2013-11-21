@@ -26,7 +26,7 @@
                 <dt>Páginas ({{paginas_list.count}} encontradas)</dt>
 
                 {% for object in paginas_list %}
-                <dd><strong><a href="{{object.url}}">{{object.title}}</a></strong><br/>{{object.content|striptags|truncatewords:20}}</dd>
+                <dd><strong><a href="{{object.url}}">{{object.title}}</a></strong><br/>{{object.content|striptags|truncatewords:20|safe}}</dd>
                 {% endfor %}
 
                 <dt>Libros ({{libros_list.count}} encontrados)</dt>
