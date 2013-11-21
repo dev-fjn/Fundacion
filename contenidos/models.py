@@ -164,7 +164,7 @@ class Documento(models.Model):
     titulo = models.CharField(max_length=250, help_text=u"El título principal del documento")
     autor = models.ForeignKey(Autor, blank=True, null=True)
     descripcion = models.TextField(help_text=u"Escribir un resumen del documento, si es una entrevista detallar el entrevistado", blank=True, null=True)
-    fecha = models.DateField()
+    fecha = models.DateField(blank=True, null=True)
     fuente = models.CharField(max_length=250, help_text=u"La fuente del documento, si procede, o el nombre del periódico", blank=True, null=True)
 
     def adjuntos(self):
