@@ -46,6 +46,7 @@
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
         {% block extra_head %}{% endblock extra_head %}
     </head>
     <body itemscope itemtype="http://schema.org/WebPage">
@@ -58,13 +59,15 @@
 
 
                             <div class="buscador" id="buscador">
-                                <form method="get" action="">
+                                {% block buscador %}
+                                <form method="get" action="{% url 'busqueda_general' %}">
                                     <div class="buscador-entrada-texto">
-                                        <input class="buscador-input" placeholder="Buscar..." type="text" value="" name="s" id="s" />
+                                        <input class="buscador-input" placeholder="Buscar..." type="text" value="" name="query" id="s" />
                                     </div>
-                                    <input class="buscador-submit" type="submit" id="go" value="">
+                                    <input class="sb-search-input buscador-submit" type="submit" id="go" value="">
                                     <span class="ct-icon-search"></span>
                                 </form>
+                                {% endblock buscador %}
                             </div>
 
                             <div>
@@ -594,7 +597,7 @@
         <script src="{% static 'js/classie.js' %}"></script>
         <script src="{% static 'js/uisearch.js' %}"></script>
         <script>
-            new UISearch( document.getElementById( 'buscador' ) );
+	     new UISearch( document.getElementById( 'buscador' ) );
         </script>
     </body>
 </html>
