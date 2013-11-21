@@ -26,5 +26,6 @@
 {% block body %}
     <div class="flatpage-i18n">
         {{ flatpage.content }}
+        {% if user.is_superuser %}<a href="{% url 'admin:flatpages_i18n_flatpage_i18n_change' flatpage.id %}">&#9998;</a>{% endif %}
     </div>
 {% endblock body %}
