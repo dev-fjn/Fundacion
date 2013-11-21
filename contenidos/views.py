@@ -176,6 +176,7 @@ class BusquedaGeneral(TemplateView):
                 'eventos_list': busqueda_exhaustiva(Evento, query, 'titulo'),
                 'paginas_list': busqueda_exhaustiva(FlatPage_i18n, query, 'title', 'content'),
                 'libros_list': busqueda_exhaustiva(Libro, query, 'titulo', 'autor', 'resumen', 'isbn'),
+                'documentos_list': busqueda_exhaustiva(Documento, query, 'titulo', 'autor__nombre', 'descripcion', 'fuente'),
             })
         return context
 

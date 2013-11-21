@@ -162,6 +162,7 @@ class Autor(models.Model):
 class Documento(models.Model):
     categoria = models.ForeignKey(Categoria)
     titulo = models.CharField(max_length=250, help_text=u"El título principal del documento")
+    slug = models.SlugField(help_text=u"La url que aparecerá en el navegador cuando se visualice el detalle de este documento (autogenerado)")
     autor = models.ForeignKey(Autor, blank=True, null=True)
     descripcion = models.TextField(help_text=u"Escribir un resumen del documento, si es una entrevista detallar el entrevistado", blank=True, null=True)
     fecha = models.DateField(blank=True, null=True)
@@ -174,11 +175,11 @@ class Documento(models.Model):
     
     def get_absolute_url(self):
         if self.categoria.tipo == TIPO.RECURSOS_AUDIOVISUALES:
-            return reverse('recurso_audiovisual_detalle', args=[str(self.id)])
+            return reverse('recurso_audiovisual_detalle', args=[self.slug])
         elif self.categoria.tipo == TIPO.PRESENCIA_EN_PRENSA:
-            return reverse('presencia_en_prensa_detalle', args=[str(self.id)])
+            return reverse('presencia_en_prensa_detalle', args=[self.slug])
         elif self.categoria.tipo == TIPO.DOSSIERES_DE_PRENSA:
-            return reverse('dossier_de_prensa_detalle', args=[str(self.id)])
+            return reverse('dossier_de_prensa_detalle', args=[self.slug])
         else:
             raise RuntimeError("Tipo no soportado")
 

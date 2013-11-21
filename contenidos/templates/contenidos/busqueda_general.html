@@ -34,6 +34,12 @@
                 {% for object in libros_list %}
                 <dd><strong><a href="{{object.get_absolute_url}}">{{object.titulo}}</a></strong><br/></dd>
                 {% endfor %}
+
+                <dt>Documentos ({{documentos_list.count}} encontrados)</dt>
+
+                {% for object in documentos_list %}
+                <dd><strong><a href="{{object.get_absolute_url}}">{{object.categoria}} - {{object.titulo}}</a></strong><br/></dd>
+                {% endfor %}
             </dl>
 		{% endif %}
 	</div>
