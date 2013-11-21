@@ -4,11 +4,6 @@
     {{block.super}} {{page_title}}
 {% endblock title %}
 
-{% block extra_head %}
-    {{block.super}}
-{% endblock extra_head %}
-
-
 {% block hormiga %}
 <ul>
     <li><a href="#">{{page_parent}}</a></li>
@@ -16,12 +11,18 @@
 </ul>
 {% endblock hormiga %}
 
+{% block buscador %}
+    {% include "contenidos/_form_busqueda_libro.html" %}
+{% endblock buscador %}
+
 {% block body %}
 
     <div id="libro_list">
 
         <h1>{{page_title}} {% if user.is_superuser %}<a href="{% url 'admin:contenidos_libro_add' %}">&#8862;</a>{% endif %}</h1>
-        <h2>{{count}} {{verbose_name_plural}} encontrados</h2>
+        <h2>{{count}} {{verbose_name_plural}} encontrados
+            {% if query %} al buscar "{{query}}" {% else %} en total {% endif %}
+        </h2>
 <!--
         <form method="GET" action=".">
             <strong>Búsqueda</strong>

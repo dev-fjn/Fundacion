@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from django.contrib.sites.models import Site
+from django.core.urlresolvers import reverse
 from django.db import models
 from django.db.models.signals import post_save, pre_save
 from django.dispatch import receiver
@@ -108,6 +109,12 @@ class Libro(models.Model):
 
     def __unicode__(self):
         return u"%s (%s)" % (self.titulo, self.autor)
+
+    def get_absolute_url(self):
+        if self.precio:
+            return reverse('publicacion_detalle', args=[str(self.id)])
+        else:
+            return reverse('libro_detalle', args=[str(self.id)])
 
 class TIPO:
     RECURSOS_AUDIOVISUALES = 1

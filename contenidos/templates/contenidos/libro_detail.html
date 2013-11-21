@@ -1,0 +1,21 @@
+{% extends 'base_1col.html' %}
+
+{% block title %}
+    {{block.super}} {{object.titulo}}
+{% endblock title %}
+
+{% block hormiga %}
+<ul>
+    <li><a href="#">{{page_parent}}</a></li>
+    <li><a href="#">{{page_title}}</a></li>
+    <li><a href="#">{{object.titulo}}</a></li>
+
+</ul>
+{% endblock hormiga %}
+
+{% block body %}
+    <div id="libro_list">
+        {% include "contenidos/_libro.html" %}
+    </div>
+{% endblock body %}
+
