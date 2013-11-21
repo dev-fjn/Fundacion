@@ -1,7 +1,7 @@
 {% load staticfiles webdesign %}<!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>{% block head_title %}Título{% endblock head_title %}</title>
+        {% block head_title %}<title>{% block title %}Título{% endblock title %}</title>{% endblock head_title %}
         <meta charset="utf-8" />
 <!--        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />-->
 
