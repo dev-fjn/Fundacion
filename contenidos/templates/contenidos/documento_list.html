@@ -1,7 +1,7 @@
 {% extends 'base_1col.html' %}
 
 {% block title %}
-    {{block.super}} Listado de {{tipo}}
+    {{block.super}} - {{tipo}} - {{ count|yesno:"Busqueda,Listado" }}
 {% endblock title %}
 
 {% block hormiga %}
