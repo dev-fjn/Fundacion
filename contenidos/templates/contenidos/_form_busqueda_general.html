@@ -1,5 +1,7 @@
-		<form method="GET" action="{% url 'busqueda_general' %}">
-			<input name="query" type="text" value="{{query}}">
-			<button type="submit">Buscar</button>
-		</form>
-
+<form method="get" action="{% url 'busqueda_general' %}">
+    <div class="buscador-entrada-texto">
+        <input class="buscador-input" type="text" value="{{query}}" name="query" id="s" placeholder="Buscar..." />
+    </div>
+    <input class="sb-search-input buscador-submit" type="submit" id="go" value="">
+    <span class="ct-icon-search"></span>
+</form>

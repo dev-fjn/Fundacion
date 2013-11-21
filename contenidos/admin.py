@@ -45,6 +45,7 @@ class DocumentoAdmin(admin.ModelAdmin):
     list_display = ['titulo', 'categoria', 'autor', 'adjuntos_']
     list_filter = ['categoria__tipo', 'categoria', 'autor']
     inlines = [UrlAdjuntoInline, FicheroAdjuntoInline]
+    prepopulated_fields = { "slug": ("titulo",) }
 
     def adjuntos_(self, obj):
         return "<br />".join([u"%s" % (i, ) for i in obj.adjuntos()])

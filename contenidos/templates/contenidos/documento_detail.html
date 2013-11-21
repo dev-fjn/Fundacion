@@ -1,0 +1,19 @@
+{% extends 'base_1col.html' %}
+
+{% block title %}
+    {{block.super}} Listado de {{tipo}} - {{object.titulo}}
+{% endblock title %}
+
+{% block hormiga %}
+    <ul>
+        <li><a href="#">{{base_tipo}}</a></li>
+        <li><a href="#">{{tipo}}</a></li>
+        <li><a href="#">{{object.titulo}}</a></li>
+    </ul>
+{% endblock hormiga %}
+
+{% block body %}
+    <div class="documento_list">
+        {% include "contenidos/_documento.html" %}
+    </div>
+{% endblock body %}

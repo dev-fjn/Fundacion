@@ -1,0 +1,12 @@
+<form method="get" action=".">
+    <div class="buscador-entrada-texto">
+        <input class="buscador-input" type="text" value="{{query}}" name="query" id="s" placeholder="Buscar libro..." list="slist" />
+        <datalist id="slist">
+            {% for value in datalist %}
+            <option value="{{value}}" >
+            {% endfor %}
+        </datalist>
+    </div>
+    <input class="sb-search-input buscador-submit" type="submit" id="go" value="">
+    <span class="ct-icon-search"></span>
+</form>

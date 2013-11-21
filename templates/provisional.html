@@ -1,7 +1,7 @@
 {% load staticfiles webdesign %}<!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>{% block head_title %}Título{% endblock head_title %}</title>
+        {% block head_title %}<title>{% block title %}Título{% endblock title %}</title>{% endblock head_title %}
         <meta charset="utf-8" />
 <!--        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />-->
 
@@ -63,7 +63,8 @@
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 
-
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+        {% block extra_head %}{% endblock extra_head %}
     </head>
     <body itemscope itemtype="http://schema.org/WebPage">
         <div class="container">
@@ -75,13 +76,9 @@
 
 
                             <div class="buscador" id="buscador">
-                                <form method="get" action="">
-                                    <div class="buscador-entrada-texto">
-                                        <input class="buscador-input" placeholder="Buscar..." type="text" value="" name="s" id="s" />
-                                    </div>
-                                    <input class="buscador-submit" type="submit" id="go" value="">
-                                    <span class="ct-icon-search"></span>
-                                </form>
+                                {% block buscador %}
+				    {% include "contenidos/_form_busqueda_general.html" %}
+                                {% endblock buscador %}
                             </div>
 
                             <div>

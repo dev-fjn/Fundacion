@@ -1,13 +1,9 @@
 {% extends "base_2col.html" %}
 {% load flatpages_treemenus %}
 
-{% block head_title %}
-{{ flatpage.title }}
-{% endblock head_title %}
-
-{% block head_article_title %}
-    <h1>{{ flatpage.title }}</h1>
-{% endblock head_article_title %}
+{% block title %}
+{{block.super}} - {{ flatpage.title }}
+{% endblock title %}
 
 {% block aside_asidel %}
 {% endblock aside_asidel %}

@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from django.contrib.sites.models import Site
+from django.core.urlresolvers import reverse
 from django.db import models
 from django.db.models.signals import post_save, pre_save
 from django.dispatch import receiver
@@ -109,6 +110,12 @@ class Libro(models.Model):
     def __unicode__(self):
         return u"%s (%s)" % (self.titulo, self.autor)
 
+    def get_absolute_url(self):
+        if self.precio:
+            return reverse('publicacion_detalle', args=[str(self.id)])
+        else:
+            return reverse('libro_detalle', args=[str(self.id)])
+
 class TIPO:
     RECURSOS_AUDIOVISUALES = 1
     PRESENCIA_EN_PRENSA = 2
@@ -155,20 +162,30 @@ class Autor(models.Model):
 class Documento(models.Model):
     categoria = models.ForeignKey(Categoria)
     titulo = models.CharField(max_length=250, help_text=u"El título principal del documento")
+    slug = models.SlugField(help_text=u"La url que aparecerá en el navegador cuando se visualice el detalle de este documento (autogenerado)")
     autor = models.ForeignKey(Autor, blank=True, null=True)
     descripcion = models.TextField(help_text=u"Escribir un resumen del documento, si es una entrevista detallar el entrevistado", blank=True, null=True)
-    fecha = models.DateField()
+    fecha = models.DateField(blank=True, null=True)
     fuente = models.CharField(max_length=250, help_text=u"La fuente del documento, si procede, o el nombre del periódico", blank=True, null=True)
 
     def adjuntos(self):
         l = list(self.urladjunto_set.all())
         l += list(self.ficheroadjunto_set.all())
         return sorted(l, key=lambda x: x.titulo)
+    
+    def get_absolute_url(self):
+        if self.categoria.tipo == TIPO.RECURSOS_AUDIOVISUALES:
+            return reverse('recurso_audiovisual_detalle', args=[self.slug])
+        elif self.categoria.tipo == TIPO.PRESENCIA_EN_PRENSA:
+            return reverse('presencia_en_prensa_detalle', args=[self.slug])
+        elif self.categoria.tipo == TIPO.DOSSIERES_DE_PRENSA:
+            return reverse('dossier_de_prensa_detalle', args=[self.slug])
+        else:
+            raise RuntimeError("Tipo no soportado")
 
 class Adjunto(models.Model):
     documento = models.ForeignKey(Documento)
     titulo = models.CharField(max_length=250)
-    miniatura = FileBrowseField("miniaturas", max_length=200, directory="documentos/miniaturas", help_text=u"Miniatura del contenido, si procede", blank=True, null=True)
 
     def template(self):
         return "contenidos/_%s.html" % (self.__class__.__name__.lower(), )
@@ -181,6 +198,7 @@ class Adjunto(models.Model):
 
 class UrlAdjunto(Adjunto):
     url = models.URLField()
+    miniatura = FileBrowseField("miniaturas", max_length=200, directory="documentos/miniaturas", help_text=u"Miniatura del contenido, si procede", blank=True, null=True)
 
     class Meta:
         verbose_name = u'Referencia al documento en internet'
@@ -188,6 +206,7 @@ class UrlAdjunto(Adjunto):
 
 class FicheroAdjunto(Adjunto):
     filename = FileBrowseField("fichero", max_length=200, directory="documentos")
+    miniatura = FileBrowseField("miniaturas", max_length=200, directory="documentos/miniaturas", help_text=u"Miniatura del contenido, si procede", blank=True, null=True)
 
     def extension(self):
         return os.path.splitext(self.filename.path)[1]

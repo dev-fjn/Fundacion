@@ -7,7 +7,7 @@ from django.core.urlresolvers import reverse
 from django.db.models import Q
 from django.shortcuts import redirect
 from django.utils import timezone
-from django.views.generic import TemplateView, ListView
+from django.views.generic import TemplateView, ListView, DetailView
 from flatpages_i18n.models import FlatPage_i18n
 import calendar
 import datetime
@@ -44,19 +44,9 @@ class Calendario(TemplateView):
             })
         return context
 
-class Libros(ListView):
-    model = Libro
-    paginate_by = settings.CONTENIDOS_PAGINADOR_MAX
+class LibrosBase(object):
     externos = None
 
-    CAMPO_QUERY = [
-            ('externos', 'precio__isnull'),
-            ('autor', 'autor__icontains'),
-            ('isbn', 'isbn__icontains'),
-            ('titulo', 'titulo__icontains'),
-        ]
-
-    
     CONTEXT_PROPIOS = {
             'url': "catalogo_de_publicaciones",
             'page_title': u"Catálogo de publicaciones",
@@ -77,53 +67,77 @@ class Libros(ListView):
     def extra_context(self):
         return self.CONTEXT_EXTERNOS if self.externos else self.CONTEXT_PROPIOS
         
+    def get_queryset(self):
+        return super(LibrosBase, self).get_queryset().filter(precio__isnull = self.externos)
+
+    def get_context_data(self, **kwargs):
+        context = super(LibrosBase, self).get_context_data(**kwargs)
+        context.update(self.extra_context)
+        autores = set(Libro.objects.values_list('autor', flat=True))
+        isbns = set(Libro.objects.filter(isbn__isnull=False).values_list('isbn', flat=True))
+        titulos = set(Libro.objects.values_list('titulo', flat=True))
+        context['datalist'] = autores.union(isbns, titulos)
+        return context
+
     def dispatch(self, *args, **kwargs):
         # Esto es para la vista del buscador. El resto de urls.py tienen "externos" puesto.
         if self.externos is None:
             self.externos = self.kwargs.get('tipo') == self.CONTEXT_EXTERNOS['url']
+        return super(LibrosBase, self).dispatch(*args, **kwargs)
+
+class LibroDetalle(LibrosBase, DetailView):
+    model = Libro
+
+class Libros(LibrosBase, ListView):
+    model = Libro
+    paginate_by = settings.CONTENIDOS_PAGINADOR_MAX
+
+    
+    def dispatch(self, *args, **kwargs):
         # si nos pasan rollos por GET, nos los quitamos de encima y redirigimos por URL
-        keys = self.request.GET.keys()
-        if 'autor' in keys or 'isbn' in keys or 'titulo' in keys:
-            d = dict(
-                tipo = self.extra_context['url'],
-                autor = self.request.GET.get('autor', ''),
-                isbn = self.request.GET.get('isbn', ''),
-                titulo = self.request.GET.get('titulo', ''),
-                )
-            return redirect(reverse('busqueda', kwargs=d))
+        query = self.request.GET.get('query', '')
+        if query:
+            return redirect(reverse('libro_busqueda', kwargs=dict(tipo = self.extra_context['url'], query = query)))
         return super(Libros, self).dispatch(*args, **kwargs)
 
     def get_queryset(self):
         qs = super(Libros, self).get_queryset()
-        _filter = {}
-        _filter['precio__isnull'] = self.externos
-        for campo, query in self.CAMPO_QUERY:
-            valor = self.kwargs.get(campo, '').strip()
-            if valor:
-                _filter[query] = valor
-        qs = qs.filter(**_filter)
+        self.valor = self.kwargs.get("query", "").strip() or self.request.GET.get("query", "")
+        if self.valor:
+            qs = qs.filter( Q(titulo__icontains=self.valor) | Q(autor__icontains=self.valor) | Q(resumen__icontains=self.valor) | Q(isbn__icontains=self.valor))
         self.count = qs.count()
         return qs
 
     def get_context_data(self, **kwargs):
         context = super(Libros, self).get_context_data(**kwargs)
-        context.update(self.extra_context)
-        context['buscador'] = self.kwargs
+        context['query'] = self.valor
         context['count'] = self.count
-        context['autores'] = set(Libro.objects.values_list('autor', flat=True))
-        context['isbns'] = set(Libro.objects.filter(isbn__isnull=False).values_list('isbn', flat=True))
-        context['titulos'] = set(Libro.objects.values_list('titulo', flat=True))
         return context
 
-class Documentos(ListView):
-    model = Documento
-    paginate_by = settings.CONTENIDOS_PAGINADOR_MAX
+class DocumentosBase(object):
     tipo = None
 
     def get_queryset(self):
-        qs = super(Documentos, self).get_queryset()
+        qs = super(DocumentosBase, self).get_queryset()
         if self.tipo:
             qs = qs.filter(categoria__tipo=self.tipo)
+        return qs
+
+    def get_context_data(self, **kwargs):
+        context = super(DocumentosBase, self).get_context_data(**kwargs)
+        context["tipo"] = TIPO.DICT[self.tipo] if self.tipo in TIPO.DICT else "(Ninguno)"
+        context["base_tipo"] = TIPO.BASES_HORMIGAS[self.tipo] if self.tipo in TIPO.BASES_HORMIGAS else "(Ninguno)"
+        return context
+
+class DocumentoDetalle(DocumentosBase, DetailView):
+    model = Documento
+
+class Documentos(DocumentosBase, ListView):
+    model = Documento
+    paginate_by = settings.CONTENIDOS_PAGINADOR_MAX
+
+    def get_queryset(self):
+        qs = super(Documentos, self).get_queryset()
         self.query = self.request.GET.get('query', '').strip()
         if self.query:
             qs = qs.filter(Q(titulo__icontains=self.query)|Q(descripcion__icontains=self.query))
@@ -134,8 +148,6 @@ class Documentos(ListView):
         context = super(Documentos, self).get_context_data(**kwargs)
         context["query"] = self.query
         context["count"] = self.count
-        context["tipo"] = TIPO.DICT[self.tipo] if self.tipo in TIPO.DICT else "(Ninguno)"
-        context["base_tipo"] = TIPO.BASES_HORMIGAS[self.tipo] if self.tipo in TIPO.BASES_HORMIGAS else "(Ninguno)"
         return context
 
 class BusquedaGeneral(TemplateView):
@@ -163,7 +175,8 @@ class BusquedaGeneral(TemplateView):
         context.update({
                 'eventos_list': busqueda_exhaustiva(Evento, query, 'titulo'),
                 'paginas_list': busqueda_exhaustiva(FlatPage_i18n, query, 'title', 'content'),
-                'libros_list': busqueda_exhaustiva(Libro, query, 'titulo', 'autor', 'resumen'),
+                'libros_list': busqueda_exhaustiva(Libro, query, 'titulo', 'autor', 'resumen', 'isbn'),
+                'documentos_list': busqueda_exhaustiva(Documento, query, 'titulo', 'autor__nombre', 'descripcion', 'fuente'),
             })
         return context
 

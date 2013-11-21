@@ -1287,72 +1287,71 @@ footer#footer div#legal {
   margin: auto;
   padding: 1.25em 0;
   text-align: left;
-  width: 24.375em;
+  font-style: italic;
 }
-/* line 19, ../sass/_clases.scss */
+/* line 20, ../sass/_clases.scss */
 .poema h1, .poema h2 {
   font-weight: normal;
   text-align: center;
 }
-/* line 23, ../sass/_clases.scss */
+/* line 24, ../sass/_clases.scss */
 .poema h1 {
   font-size: 2.125em;
   line-height: 1.2;
   margin-bottom: 0.625em;
 }
-/* line 28, ../sass/_clases.scss */
+/* line 29, ../sass/_clases.scss */
 .poema h2 {
   color: #666;
   font-size: 1.125em;
   font-style: italic;
-  margin-bottom: 1.875em;
+  margin-bottom: 0.3125em;
 }
-/* line 34, ../sass/_clases.scss */
+/* line 35, ../sass/_clases.scss */
 .poema p {
-  line-height: 1.5;
-  margin-bottom: 0.9375em;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
 }
-/* line 39, ../sass/_clases.scss */
+/* line 40, ../sass/_clases.scss */
 .poema h2:before {
   content: '— ';
 }
-/* line 42, ../sass/_clases.scss */
+/* line 43, ../sass/_clases.scss */
 .poema h2:after {
   content: ' —';
 }
-/* line 45, ../sass/_clases.scss */
+/* line 46, ../sass/_clases.scss */
 .poema h2 + p:first-letter {
   float: left;
   font-size: 2.375em;
   line-height: 1;
   margin: 0.125em 0.3125em 0 0;
 }
-/* line 53, ../sass/_clases.scss */
+/* line 54, ../sass/_clases.scss */
 .poema p:first-line {
-  font-variant: small-caps;
   letter-spacing: 0.0625em;
 }
-/* line 57, ../sass/_clases.scss */
+/* line 58, ../sass/_clases.scss */
 .poema p:last-child {
-  margin-bottom: 1.875em;
-  padding-bottom: 1.875em;
+  margin-bottom: 0.625em;
+  padding-bottom: 0.625em;
 }
 
-/* line 65, ../sass/_clases.scss */
+/* line 66, ../sass/_clases.scss */
 .firma {
   text-align: right;
 }
 
-/* line 70, ../sass/_clases.scss */
+/* line 71, ../sass/_clases.scss */
 .fallecidos {
   text-indent: 1.5em;
 }
-/* line 72, ../sass/_clases.scss */
+/* line 73, ../sass/_clases.scss */
 .fallecidos:after {
   content: "\205C";
 }
 
-/* line 78, ../sass/_clases.scss */
+/* line 79, ../sass/_clases.scss */
 .cita {
   font-style: italic;
   margin: 0.25em 0;
@@ -1361,7 +1360,7 @@ footer#footer div#legal {
   position: relative;
   color: #383838;
 }
-/* line 89, ../sass/_clases.scss */
+/* line 90, ../sass/_clases.scss */
 .cita:before {
   display: block;
   content: "\275D";
@@ -1371,14 +1370,14 @@ footer#footer div#legal {
   top: -20px;
   color: #7a7a7a;
 }
-/* line 101, ../sass/_clases.scss */
+/* line 102, ../sass/_clases.scss */
 .cita footer {
   color: #999999;
   font-size: 14px;
   margin-top: 5px;
   text-align: right;
 }
-/* line 109, ../sass/_clases.scss */
+/* line 110, ../sass/_clases.scss */
 .cita footer:before {
   content: "\2014 ";
 }
