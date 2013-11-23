@@ -2,13 +2,15 @@
 {% load contenidosblocks %}
 
 {% block extra_head %}
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
 <script src="http://malsup.github.io/jquery.cycle2.js"></script>
 {% endblock extra_head %}
 
 {% block title %}
-{{block.super}} Portada
+{{block.super}} - Portada
 {% endblock title %}
+
+{% block section_hormiga %}
+{% endblock section_hormiga %}
 
 {% block slide %}
 {% imagenes %}

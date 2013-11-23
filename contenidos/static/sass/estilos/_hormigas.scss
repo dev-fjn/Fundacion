@@ -11,7 +11,8 @@ $color_crumbs04: transparent; //$color02;
 
 section#hormiga{
 	@include background-image(linear-gradient($color_menu02, $color_menu01));
-	border-bottom: em(2px) solid $color_menu03;
+	//border-top: medium solid $color_menu03;   // Eliminamos, para no mezclar con la línea base de los menús.
+	border-bottom: medium solid $color_menu03;
 	text-align: left;
 	ul {
 		padding-left: em(20px);

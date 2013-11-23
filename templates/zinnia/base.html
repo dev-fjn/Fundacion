@@ -5,21 +5,29 @@
 {% block meta-keywords %}{% get_tags as entry_tags %}{{ entry_tags|join:", "}}{% endblock %} 
 
 {% block extra_head %}
-    {{block.super}}
-    <link rel="index" href="{% url 'zinnia_entry_archive_index' %}" />
-    <link rel="author" type="text/plain" href="{% url 'zinnia_humans' %}" />
-    <link rel="EditURI" type="application/rsd+xml" href="{% url 'zinnia_rsd' %}" />
-    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="{% url 'zinnia_wlwmanifest' %}" />
-    <link rel="search" type="application/opensearchdescription+xml" title="Zinnia's Blog" href="{% url 'zinnia_opensearch' %}" />
-    <link rel="alternate" type="application/rss+xml" title="{% trans "RSS Feed of latest entries" %}" href="{% url 'zinnia_entry_latest_feed' %}" />
-    <link rel="alternate" type="application/rss+xml" title="{% trans "RSS Feed of latest discussions" %}" href="{% url 'zinnia_discussion_latest_feed' %}" />
-    {% get_archives_entries "zinnia/tags/archives_entries_link.html" %} 
-    <link rel="stylesheet" type="text/css" media="screen, projection" href="{{ STATIC_URL }}zinnia/css/screen.css" />
-    <link rel="stylesheet" type="text/css" media="print" href="{{ STATIC_URL }}zinnia/css/print.css" />
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" type="text/css" media="screen, projection" href="{{ STATIC_URL }}zinnia/css/ie.css" />
-    <![endif]-->
+	{{block.super}}
+	<link rel="index" href="{% url 'zinnia_entry_archive_index' %}" />
+	<link rel="author" type="text/plain" href="{% url 'zinnia_humans' %}" />
+	<link rel="EditURI" type="application/rsd+xml" href="{% url 'zinnia_rsd' %}" />
+	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="{% url 'zinnia_wlwmanifest' %}" />
+	<link rel="search" type="application/opensearchdescription+xml" title="Zinnia's Blog" href="{% url 'zinnia_opensearch' %}" />
+	<link rel="alternate" type="application/rss+xml" title="{% trans "RSS Feed of latest entries" %}" href="{% url 'zinnia_entry_latest_feed' %}" />
+	<link rel="alternate" type="application/rss+xml" title="{% trans "RSS Feed of latest discussions" %}" href="{% url 'zinnia_discussion_latest_feed' %}" />
+	{% get_archives_entries "zinnia/tags/archives_entries_link.html" %} 
+	<link rel="stylesheet" type="text/css" media="screen, projection" href="{{ STATIC_URL }}zinnia/css/screen.css" />
+	<link rel="stylesheet" type="text/css" media="print" href="{{ STATIC_URL }}zinnia/css/print.css" />
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" media="screen, projection" href="{{ STATIC_URL }}zinnia/css/ie.css" />
+	<![endif]-->
 {% endblock extra_head %}
+
+{% block head_title %}
+{# esto esta repetido en templates/base.html pero con zinnia no se puede hacer otra cosa #}
+<title> 
+    {% if site_name %}{{ site_name }} : {% else %}Fundacion Juan Negrin{% endif %} -
+    {% block title %}{% endblock title %}
+</title>
+{% endblock head_title %}
 
 {% block hormiga %} {% zinnia_breadcrumbs %} {% endblock hormiga %}
 
@@ -27,11 +35,11 @@
 {% endblock aside_asidel %}
 
 {% block body %}
-    <div id="space">
-        {% block content %}
-        {% endblock content %}
-    </div>
-    <div><br /></div>
+	<div class="zinnia">
+		{% block content %}
+		{% endblock content %}
+	</div>
+	<div><br /></div>
 {% endblock body %}
 
 {% block section_agenda %}

@@ -1,2 +1,11 @@
-<a href="{{adjunto.url}}">{{adjunto.titulo}}</a>
+7B. {{adjunto.titulo}}<br />
+8B. {{adjunto.filename}}<br />
+9B. {{adjunto.miniatura}}<br />
+<br />
+
+{% if adjunto.miniatura %}
+    <a href="{{adjunto.url}}"><img src="{{adjunto.miniatura}}" title="{{adjunto.titulo}}" alt="{{adjunto.titulo}}" /></a>
+{% else %}
+    <a href="{{adjunto.url}}">{{adjunto.titulo}}</a>
+{% endif %}
 

@@ -7,26 +7,40 @@
 
 {% block hormiga %}
 	<ul>
-		<li><a href="#">Buscador simple</a></li>
-		<li><a href="#">en eventos, paginas fijas y catalogo de publicaciones</a></li>
+		<li><a href="#">Buscador</a></li>
 	</ul>
 {% endblock hormiga %}
 
 {% block body %}
 	<div id="space">
-		{% include "contenidos/_form_busqueda_general.html" %}
 		{% if error %}
 			<div style="color: red" class="error">No se pudo realizar la búsquda: {{error}}</div>
 		{% else %}
-			{% for object in eventos_list %}
-			Evento: <a href="{% url 'evento_view' object.pk %}">{{object}}</a><br />
-			{% endfor %}
-			{% for object in paginas_list %}
-			Página: <a href="{{object.url}}">{{object.title}}</a><br />
-			{% endfor %}
-			{% for object in libros_list %}
-			Libro: {{object.titulo}} <div style="border: 1px solid red">{% include "contenidos/_libro.html" %}</div>
-			{% endfor %}
+            <dl>
+                <dt>Eventos ({{eventos_list.count}} encontrados)</dt>
+
+                {% for object in eventos_list %}
+                <dd><a href="{% url 'evento_view' object.pk %}">{{object.titulo}}</a><br />Poner algo aqui</dd>
+                {% endfor %}
+
+                <dt>Páginas ({{paginas_list.count}} encontradas)</dt>
+
+                {% for object in paginas_list %}
+                <dd><strong><a href="{{object.url}}">{{object.title}}</a></strong><br/>{{object.content|striptags|truncatewords:20|safe}}</dd>
+                {% endfor %}
+
+                <dt>Libros ({{libros_list.count}} encontrados)</dt>
+
+                {% for object in libros_list %}
+                <dd><strong><a href="{{object.get_absolute_url}}">{{object.titulo}}</a></strong><br/></dd>
+                {% endfor %}
+
+                <dt>Documentos ({{documentos_list.count}} encontrados)</dt>
+
+                {% for object in documentos_list %}
+                <dd><strong><a href="{{object.get_absolute_url}}">{{object.categoria}} - {{object.titulo}}</a></strong><br/></dd>
+                {% endfor %}
+            </dl>
 		{% endif %}
 	</div>
 {% endblock body %}

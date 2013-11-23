@@ -1,27 +1,27 @@
 {% extends "base_2col.html" %}
 {% load flatpages_treemenus %}
 
-{% block head_title %}
-{{ flatpage.title }}
-{% endblock head_title %}
-
-{% block head_article_title %}
-<h1>{{ flatpage.title }}</h1>
-{% endblock head_article_title %}
+{% block title %}
+{{block.super}} - {{ flatpage.title }}
+{% endblock title %}
 
 {% block aside_asidel %}
 {% endblock aside_asidel %}
 
 {% block hormiga %}
 <ul>
-	<li>{% enlace_a_pagina_padre_en_menu %}</li>
-	<li><a href="#">{{flatpage.title}}</a></li>
+    <li>{% enlace_a_pagina_padre_en_menu %}</li>
+    <li>
+        <a href="#">{{flatpage.title}}</a>
+        {% if user.is_superuser %}<a href="{% url 'admin:flatpages_i18n_flatpage_i18n_change' flatpage.id %}">&#9998;</a>{% endif %}
+    </li>
 </ul>
 {% endblock hormiga %}
 
 
 {% block body %}
-<div class="flatpage-i18n">
-	{{ flatpage.content }}
-</div>
+    <div class="flatpage-i18n">
+        {{ flatpage.content }}
+        {% if user.is_superuser %}<a href="{% url 'admin:flatpages_i18n_flatpage_i18n_change' flatpage.id %}">&#9998;</a>{% endif %}
+    </div>
 {% endblock body %}

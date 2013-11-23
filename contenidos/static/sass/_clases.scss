@@ -1,12 +1,22 @@
 // Clases listas para usar:
 // ~~~~~~~~~~~~~~~~~~~~~~~
 
+.ellipsis {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis; /* Required for IE8 */
+     -o-text-overflow: ellipsis; /* Required for Opera */
+        text-overflow: ellipsis;
+}
+
 // Clase usada en la pagina del presidente.
 .poema {
     margin: auto;
     padding: em(20px) 0;
     text-align: left;
-    width: em(390px);
+    //width: em(390px);
+    font-style:italic;
     h1, h2 {
         font-weight: normal;
         text-align: center;
@@ -20,11 +30,11 @@
         color: #666;
         font-size: em(18px);
         font-style: italic;
-        margin-bottom: em(30px);
+        margin-bottom: em(5px);
     }
     p {
-        line-height: 1.5;
-        margin-bottom: em(15px);
+        line-height: 1.2;
+        margin-bottom: em(8px);
     }
     h2 {
         &:before {
@@ -42,12 +52,12 @@
     }
     p {
         &:first-line {
-            font-variant: small-caps;
+            //font-variant: small-caps;
             letter-spacing: em(1px);
         }
         &:last-child {
-            margin-bottom: em(30px);
-            padding-bottom: em(30px);
+            margin-bottom: em(10px);
+            padding-bottom: em(10px);
         }
     }
 }

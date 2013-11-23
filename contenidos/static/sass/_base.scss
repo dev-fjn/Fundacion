@@ -119,6 +119,9 @@ $radio-standar: em(10px);
 @include font-face("glyphicons", font-files("glyphicons/glyphicons-halflings-regular.woff", "glyphicons/glyphicons-halflings-regular.ttf", "glyphicons/glyphicons-halflings-regular.svg"), "glyphicons/glyphicons-halflings-regular.eot");
 @include font-face("tron", font-files("tron/tron-webfont.woff", "tron/tron-webfont.ttf", "tron/tron-webfont.svg"), "tron/tron-webfont.eot");
 
+@include font-face("entypo",font-files("entypo/entypo.woff","entypo/entypo.ttf","entypo/entypo.svg"),"entypo/entypo.eot");
+@include font-face("entypo-social",font-files("entypo-social/entypo-social.woff","entypo-social/entypo-social.ttf","entypo-social/entypo-social.svg"),"entypo-social/entypo-social.eot");
+
 // Clases para aplicar las fuentes:
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .sf-speakeasy {
@@ -144,3 +147,17 @@ $radio-standar: em(10px);
     //font-size: 1em;
 }
 
+// IconFont ←→ FontIcon
+// ~~~~~~~~~~~~~~~~~~~~
+// http://weloveiconfonts.com/
+// http://cssdeck.com/labs/social-footer
+
+/* entypo-social */
+[class*="entypo-social-"]:before {
+  font-family: 'entypo-social', sans-serif;
+}
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}

@@ -1,0 +1,42 @@
+[
+{
+ "pk": 1, 
+ "model": "contenidos.categoria", 
+ "fields": {
+  "nombre": "", 
+  "tipo": 1
+ }
+},
+{
+ "pk": 2, 
+ "model": "contenidos.categoria", 
+ "fields": {
+  "nombre": "Noticias", 
+  "tipo": 2
+ }
+},
+{
+ "pk": 3, 
+ "model": "contenidos.categoria", 
+ "fields": {
+  "nombre": "", 
+  "tipo": 3
+ }
+},
+{
+ "pk": 4, 
+ "model": "contenidos.categoria", 
+ "fields": {
+  "nombre": "Art\u00edculos", 
+  "tipo": 2
+ }
+},
+{
+ "pk": 5, 
+ "model": "contenidos.categoria", 
+ "fields": {
+  "nombre": "Revistas", 
+  "tipo": 2
+ }
+}
+]

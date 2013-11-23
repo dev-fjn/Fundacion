@@ -1,49 +1,36 @@
 {% extends 'base_1col.html' %}
 
 {% block title %}
-{{block.super}} Listado de libros
+    {{block.super}} - {{tipo}} - {{ count|yesno:"Busqueda,Listado" }}
 {% endblock title %}
 
-{% block extra_head %}
-{{block.super}}
-<style>
-	div.datos { min-height: 200px; border: 1px solid gray; margin: 5px; padding: 2px; float: left; %; clear: left; }
-	ul.adjuntos { margin-left: 200px; padding: 5px; list-style: inherit; }
-	.right { text-align: right; }
-	form { border: 1px solid green; }
-</style>
-{% endblock extra_head %}
-
 {% block hormiga %}
-<ul>
-	<li><a href="#">{{base_tipo}}</a></li>
-	<li><a href="#">{{tipo}}</a></li>
-</ul>
+    <ul>
+        <li><a href="#">{{base_tipo}}</a></li>
+        <li><a href="#">{{tipo}}</a></li>
+    </ul>
 {% endblock hormiga %}
 
 {% block body %}
-	<h1>{{tipo}}</h1>
-	<div id="space">
-		<form method="GET" action="." >
-			<strong>Búsqueda</strong>
-			<div><label for='input_query'>(por título o descripción)</label> <input type="text" id="input_query" name="query" value="{{query}}" /></div>
-			<input type="submit" value="Buscar" />
-		</form>
-		{% if count %}
-            <p>
-                {{count}} Resultados
-                {% if user.is_superuser %}<a href="{% url 'admin:contenidos_documento_add' %}">&#8862;</a>{% endif %}
-            </p>
-			{% for object in object_list %}
-				{% include "contenidos/_documento.html" %}
-			{% endfor %}
-			{% include "contenidos/_paginator.html" %}
-		{% else %}
-			<p>
-                (No hay documentos)
-                {% if user.is_superuser %}<a href="{% url 'admin:contenidos_documento_add' %}">&#8862;</a>{% endif %}
-            </p>
-		{% endif %}
-	</div>
-{% endblock body %}
 
+    <div class="documento_list">
+
+        <h1>{{tipo}}</h1>
+
+        {% if count %}
+            <h2>{{count}} resultados {% if user.is_superuser %}<a href="{% url 'admin:contenidos_documento_add' %}">&#8862;</a>{% endif %}</h2>
+
+            {% for object in object_list %}
+                {% include "contenidos/_documento.html" %}
+            {% endfor %}
+
+            {% include "contenidos/_paginator.html" %}
+
+        {% else %}
+
+            <h2>(No hay documentos) {% if user.is_superuser %}<a href="{% url 'admin:contenidos_documento_add' %}">&#8862;</a>{% endif %}</h2>
+
+        {% endif %}
+
+    </div>
+{% endblock body %}

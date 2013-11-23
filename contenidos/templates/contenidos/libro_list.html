@@ -1,21 +1,8 @@
 {% extends 'base_1col.html' %}
 
 {% block title %}
-    {{block.super}} {{page_title}}
+    {{block.super}} - {{page_title}} - {{count|yesno:"Busqueda,Listado"}}
 {% endblock title %}
-
-{% block extra_head %}
-{{block.super}}
-<style>
-    .libro { min-height: 200px; border: 1px solid gray; margin: 5px; padding: 2px; clear: left; }
-    img.miniatura { height: 200px; float: left; }
-    .libro ul { margin-left: 200px; padding: 5px; }
-    .libro li strong { display: inline-block; width: 200px; font-weight: bold;}
-    .right { text-align: right; }
-    form { border: 1px solid green; }
-    form div { display: inline-block; }
-</style>
-{% endblock extra_head %}
 
 {% block hormiga %}
 <ul>
@@ -24,52 +11,64 @@
 </ul>
 {% endblock hormiga %}
 
+{% block buscador %}
+    {% include "contenidos/_form_busqueda_libro.html" %}
+{% endblock buscador %}
+
 {% block body %}
-    <h1>{{page_title}}</h1>
-    <div id="space">
+
+    <div id="libro_list">
+
+        <h1>{{page_title}} {% if user.is_superuser %}<a href="{% url 'admin:contenidos_libro_add' %}">&#8862;</a>{% endif %}</h1>
+        <h2>{{count}} {{verbose_name_plural}} encontrados
+            {% if query %} al buscar "{{query}}" {% else %} en total {% endif %}
+        </h2>
+<!--
         <form method="GET" action=".">
             <strong>Búsqueda</strong>
             <div>
                 <label for="input_autor">(por autor)</label>
-                <input type="text" id="input_autor" name="autor" value="{{buscador.autor}}">
-                    <datalist>
+                <input type="text" id="input_autor" name="autor" value="{{buscador.autor}}" placeholder="Autor" autofocus >
+                    <datalist id="autor">
                         {% for autor in autores %} <option value="{{autor}}" />{% endfor %}
                     </datalist>
                 </input>
             </div>
             <div>
                 <label for="input_isbn">(por ISBN)</label>
-                <input type="text" id="input_isbn" name="isbn" value="{{buscador.isbn}}">
-                    <datalist>
+                <input type="text" id="input_isbn" name="isbn" value="{{buscador.isbn}}" placeholder="Número ISBN">
+                    <datalist id="isbn">
                         {% for isbn in isbns %} <option value="{{isbn}}" />{% endfor %}
                     </datalist>
                 </input>
             </div>
             <div>
                 <label for="input_titulo">(por título)</label>
-                <input type="text" id="input_titulo" name="titulo" value="{{buscador.titulo}}">
-                    <datalist>
+                <input type="text" id="input_titulo" name="titulo" value="{{buscador.titulo}}" placeholder="Título del documento">
+                    <datalist id="titulo">
                         {% for titulo in titulos %} <option value="{{titulo}}" />{% endfor %}
                     </datalist>
                 </input>
             </div>
-            <input type="submit" value="Buscar" />
+            <input id="submit" name="submit" type="submit" value="Buscar" list="autor,isbn,titulo" multiple />
         </form>
+-->
         {% if count %}
-            <p>
-                {{count}} {{verbose_name_plural}} encontrados
-                {% if user.is_superuser %}<a href="{% url 'admin:contenidos_libro_add' %}">&#8862;</a>{% endif %}
-            </p>
+
             {% for object in object_list %}
                 {% include "contenidos/_libro.html" %}
             {% endfor %}
-            {% include "contenidos/_paginator.html" %}
-        {% else %}
-            <p>
-                (No hay {{verbose_name_plural}})
-                {% if user.is_superuser %}<a href="{% url 'admin:contenidos_libro_add' %}">&#8862;</a>{% endif %}
-            </p>
-        {% endif %}
-    </div>
-{% endblock body %}
 
+            {% include "contenidos/_paginator.html" %}
+
+        {% else %}
+
+            <div>
+                (No hay {{verbose_name_plural}}) {% if user.is_superuser %}<a href="{% url 'admin:contenidos_libro_add' %}">&#8862;</a>{% endif %}
+            </div>
+
+        {% endif %}
+
+    </div>
+
+{% endblock body %}
