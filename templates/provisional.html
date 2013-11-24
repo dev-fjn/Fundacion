@@ -19,11 +19,11 @@
         <!-- Make sure the href of the link tag points to the icon you         created -->
         <link rel="shortcut icon" type="image/ico" href="{% static 'img/favicon.ico' %}" />
 
-        <meta name="application-name"                content="Build My Pinned Site" />
+        <meta name="application-name"                content="Construye el ancla para este sitio." />
         <meta name="msapplication-starturl"          content="http://buildmypinnedsite.com" />
         <meta name="msapplication-navbutton-color"   content="#3480C0" />
         <meta name="msapplication-window"            content="width=1024;height=768" />
-        <meta name="msapplication-tooltip"           content="Start Build My Pinned Site" />
+        <meta name="msapplication-tooltip"           content="Comienza anclando este sitio" />
 
         <meta name="msapplication-TileColor"         content="#FFFFFF"/>
         <meta name="msapplication-square70x70logo"   content="{% static 'img/tiles/tiny.png' %}"/>
@@ -68,12 +68,12 @@
         <div class="container">
             <header>
                 <section id="banner">
-                    <section id="relleno" title="Logotipo de esta página">&nbsp;</section>
+                    <section id="relleno" role="banner" aria-labelledby="bannerHeading" title="Cabecera de la pagina">&nbsp;</section>
                     <section id="caja">
                         <section id="acceso">
 
 
-                            <div class="buscador" id="buscador">
+                            <div class="buscador" id="buscador" role="search" aria-labelledby="searchLabel">
                                 {% block buscador %}
 				    {% include "contenidos/_form_busqueda_general.html" %}
                                 {% endblock buscador %}
@@ -156,7 +156,7 @@
                     </section>
                 </section>
                 <section id="menus">
-                    <nav id="cssmenu">
+                    <nav id="cssmenu" role="navigation" aria-label="Site Navigation">
                         {% block menu %}
                             <ul>
                                 <li class='active'>
@@ -337,7 +337,7 @@
                         {% endspaceless %}
                     {% endblock section_info %}
                     {% block section_variable %}
-                        <section id="{% block section_id %}variable{% endblock section_id %}">
+                        <section id="{% block section_id %}variable{% endblock section_id %}" role="main" aria-labelledby="mainContentLabel">
                             {% block variable %}
                                 {% block aside_asidel %}
                                     <aside id="asidel">
@@ -397,7 +397,7 @@
                                 {% endblock section_body %}
 
                                 {% block aside_asider %}
-                                    <aside id="asider">
+                                    <aside id="asider" role="complementary" aria-labelledby="validationLabel">
                                         {% block section_agenda %}
                                             <section id="agenda">
                                                 <h2>AGENDA</h2>
@@ -431,7 +431,7 @@
 
             <div><br /></div>
 
-            <footer id="footer">
+            <footer id="footer" role="contentinfo">
                 {% block footer %}
                     <div id="finicial">&nbsp;</div>
                     <div id="col1">

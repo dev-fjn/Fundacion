@@ -1,5 +1,5 @@
 // Calendario / Agenda de eventos
-$radio-agenda: 3px;
+$radio-agenda: .5em;
 $color_texto: $color00;
 $color_texto_alternativo: $color01;
 
@@ -27,11 +27,11 @@ $fondo_evento_hoy: $color03;
 
 section#agenda{
     @include border-radius($radio-standar*2);
-    //border: em(1px) #000  solid;
-    padding: em($radio_agenda);
-    margin: em($radio_agenda);
-    background-color: $fondo_global;
+    border: 1px solid $color08 ;
+    padding: $radio_agenda;
+    margin: $radio_agenda;
     color: $color_global;
+    background-color: $fondo_global;
 
 
 
@@ -96,7 +96,7 @@ section#agenda{
                         background-color: lighten($fondo_actual, 20%);
                         color: $color_actual;
                         span{
-                            @include border-radius(em($radio-agenda));
+                            @include border-radius($radio-agenda);
                             border-style: solid;
                             border-color: Red ;
                             border-width: em(.5px);
@@ -125,7 +125,7 @@ section#agenda{
                         background-color: lighten($fondo_dia, 20%);    // Caso especial
                         color: $color_evento_hoy;
                         span{
-                            @include border-radius(em($radio-agenda));
+                            @include border-radius($radio-agenda);
                             border-style: solid;
                             border-color: Red ;
                             border-width: em(1px);

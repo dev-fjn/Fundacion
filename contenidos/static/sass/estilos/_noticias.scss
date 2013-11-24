@@ -2,9 +2,9 @@
 
 section#news{
     @include border-radius($radio-standar);
+    border: 1px solid $color08 ;
     padding: .5em;
     margin: .5em;
-    border: 1px solid $color08 ;
 
     h2{
         text-align:center;

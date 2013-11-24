@@ -1,12 +1,15 @@
 // Menu corto:
 // http://tympanus.net/Development/ResponsiveMultiLevelMenu/index.html#
 
+$altura: $font_base * 2; // 25px;
+$top-radio: 9px;
+
 section#menus{
-    background-color: $color_menu01;
+    //background-color: $color_menu01;
 
     nav#cssmenu{
-        height: em(49px);
-        @include border-top-radius(em(10px));
+        height: em($altura);
+        @include border-top-radius(em($top-radio));
 
         // Fondo degradado de los menús
         background: $color_menu01;
@@ -14,7 +17,7 @@ section#menus{
 
         // Línea Base roja para todos los menús
         border-bottom: medium solid $color_menu03;
-        width: auto;
+        width: 99.9%;
 
         ul, li, span, a {
             margin: 0;
@@ -33,7 +36,7 @@ section#menus{
             //@include background-image(linear-gradient($color_menu01, $color_menu04));
 
             display: inline-block;
-            line-height: em(49px);
+            line-height: em($altura);
             padding: 0 em(20px);
             text-decoration: none;
         }
@@ -59,15 +62,15 @@ section#menus{
                     position: absolute;
                     left: 50%;
                     bottom: 0;
-                    border-left: em(10px) solid transparent;
-                    border-right: em(10px) solid transparent;
-                    border-bottom: em(10px) solid $color_menu03;
-                    margin-left: em(-10px);
+                    border-left: em($top-radio) solid transparent;
+                    border-right: em($top-radio) solid transparent;
+                    border-bottom: em($top-radio) solid $color_menu03;
+                    margin-left: em(-$top-radio);
                 }
 
                 &:first-child > a {
                     //Pasas a compass
-                    //@include border-top-radius(10px);
+                    //@include border-top-radius($top-radio);
                     -webkit-border-radius: em(5px) 0 0 0;
                        -moz-border-radius: em(5px) 0 0 0;
                             border-radius: em(5px) 0 0 0;
@@ -81,10 +84,10 @@ section#menus{
                         position: absolute;
                         left: 50%;
                         bottom: 0;
-                        border-left: em(10px) solid transparent;
-                        border-right: em(10px) solid transparent;
-                        border-bottom: em(10px) solid $color_menu03;
-                        margin-left: em(-10px);
+                        border-left: em($top-radio) solid transparent;
+                        border-right: em($top-radio) solid transparent;
+                        border-bottom: em($top-radio) solid $color_menu03;
+                        margin-left: em(-$top-radio);
                     }
                     > a {
                         background: $color_menu04;
@@ -132,7 +135,7 @@ section#menus{
                         /* font-size: 11px; */
                         display: block;
                         line-height: 120%;
-                        padding: em(10px);
+                        padding: em($top-radio);
                         color: $color_menu08;
                     }
                     &:hover a {
