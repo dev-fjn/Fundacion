@@ -1,0 +1,1016 @@
+[
+{
+ "pk": 1, 
+ "model": "contenidos.categoria", 
+ "fields": {
+  "nombre": "", 
+  "tipo": 1
+ }
+},
+{
+ "pk": 2, 
+ "model": "contenidos.categoria", 
+ "fields": {
+  "nombre": "Noticias", 
+  "tipo": 2
+ }
+},
+{
+ "pk": 3, 
+ "model": "contenidos.categoria", 
+ "fields": {
+  "nombre": "", 
+  "tipo": 3
+ }
+},
+{
+ "pk": 4, 
+ "model": "contenidos.categoria", 
+ "fields": {
+  "nombre": "Art\u00edculos", 
+  "tipo": 2
+ }
+},
+{
+ "pk": 5, 
+ "model": "contenidos.categoria", 
+ "fields": {
+  "nombre": "Entrevistas", 
+  "tipo": 2
+ }
+},
+{
+ "pk": 1, 
+ "model": "contenidos.autor", 
+ "fields": {
+  "nombre": "Eligio Hern\u00e1ndez"
+ }
+},
+{
+ "pk": 2, 
+ "model": "contenidos.autor", 
+ "fields": {
+  "nombre": "Silvina Monroy"
+ }
+},
+{
+ "pk": 3, 
+ "model": "contenidos.autor", 
+ "fields": {
+  "nombre": "Sergio Millares Cantero"
+ }
+},
+{
+ "pk": 4, 
+ "model": "contenidos.autor", 
+ "fields": {
+  "nombre": "Gabriel Jackson"
+ }
+},
+{
+ "pk": 5, 
+ "model": "contenidos.autor", 
+ "fields": {
+  "nombre": "Jos\u00e9 A. Medina Jim\u00e9nez"
+ }
+},
+{
+ "pk": 6, 
+ "model": "contenidos.autor", 
+ "fields": {
+  "nombre": "Cira Morote Medina"
+ }
+},
+{
+ "pk": 7, 
+ "model": "contenidos.autor", 
+ "fields": {
+  "nombre": "Jos\u00e9 Miguel P\u00e9rez Garc\u00eda"
+ }
+},
+{
+ "pk": 8, 
+ "model": "contenidos.autor", 
+ "fields": {
+  "nombre": "Antonio Aguado Su\u00e1rez"
+ }
+},
+{
+ "pk": 9, 
+ "model": "contenidos.autor", 
+ "fields": {
+  "nombre": "Nicol\u00e1s Guerra Aguiar"
+ }
+},
+{
+ "pk": 10, 
+ "model": "contenidos.autor", 
+ "fields": {
+  "nombre": "An\u00f3nimo"
+ }
+},
+{
+ "pk": 11, 
+ "model": "contenidos.autor", 
+ "fields": {
+  "nombre": "Javier Dur\u00e1n"
+ }
+},
+{
+ "pk": 12, 
+ "model": "contenidos.autor", 
+ "fields": {
+  "nombre": "Rafael G. Morera"
+ }
+},
+{
+ "pk": 13, 
+ "model": "contenidos.autor", 
+ "fields": {
+  "nombre": "Juan Marichal"
+ }
+},
+{
+ "pk": 14, 
+ "model": "contenidos.autor", 
+ "fields": {
+  "nombre": "Jorge Balb\u00e1s"
+ }
+},
+{
+ "pk": 4, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 4, 
+  "fuente": "La Provincia", 
+  "fecha": "2007-05-02", 
+  "autor": 12, 
+  "descripcion": "Descripci\u00f3n del Art\u00edculo", 
+  "titulo": "Dr. Juan Negr\u00edn"
+ }
+},
+{
+ "pk": 5, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 4, 
+  "fuente": "La Provincia", 
+  "fecha": "2007-04-22", 
+  "autor": 5, 
+  "descripcion": "Descripci\u00f3n", 
+  "titulo": "Negr\u00edn en La Regenta"
+ }
+},
+{
+ "pk": 6, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 4, 
+  "fuente": "La Provincia", 
+  "fecha": "2006-11-11", 
+  "autor": 8, 
+  "descripcion": "Descripci\u00f3n", 
+  "titulo": "Juan Negr\u00edn y su Fundaci\u00f3n"
+ }
+},
+{
+ "pk": 7, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 4, 
+  "fuente": "La Provincia", 
+  "fecha": "2004-05-16", 
+  "autor": 9, 
+  "descripcion": "Descripci\u00f3n", 
+  "titulo": "Por R\u00f3mulo Negr\u00edn"
+ }
+},
+{
+ "pk": 8, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 4, 
+  "fuente": "Rueda de escritores", 
+  "fecha": "2003-12-11", 
+  "autor": 4, 
+  "descripcion": "Descripci\u00f3n", 
+  "titulo": "Historia accidentada de un archivo"
+ }
+},
+{
+ "pk": 9, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 4, 
+  "fuente": "La Provincia", 
+  "fecha": "2003-09-28", 
+  "autor": 10, 
+  "descripcion": "Descripci\u00f3n", 
+  "titulo": "El patrimonio Negr\u00edn"
+ }
+},
+{
+ "pk": 10, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 4, 
+  "fuente": "El Pais", 
+  "fecha": "2002-03-31", 
+  "autor": 13, 
+  "descripcion": "Descripci\u00f3n", 
+  "titulo": "El legado patriota de Juan Negr\u00edn"
+ }
+},
+{
+ "pk": 11, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 4, 
+  "fuente": "La Provincia", 
+  "fecha": "2001-03-15", 
+  "autor": 1, 
+  "descripcion": "", 
+  "titulo": "Evocaci\u00f3n de Espa\u00f1a y Canarias en el sepelio de Juan Negr\u00edn"
+ }
+},
+{
+ "pk": 12, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 4, 
+  "fuente": "La Provincia", 
+  "fecha": "2001-03-14", 
+  "autor": 5, 
+  "descripcion": "", 
+  "titulo": "Un Hombre de ciencia"
+ }
+},
+{
+ "pk": 13, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 4, 
+  "fuente": "Tribuna de Canarias", 
+  "fecha": "1999-11-07", 
+  "autor": 3, 
+  "descripcion": "", 
+  "titulo": "El discreto silencio de Negr\u00edn"
+ }
+},
+{
+ "pk": 14, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 4, 
+  "fuente": "La Provincia", 
+  "fecha": "1999-02-21", 
+  "autor": 7, 
+  "descripcion": "", 
+  "titulo": "Sobre Juan Negr\u00edn: El Pol\u00edtico"
+ }
+},
+{
+ "pk": 15, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 4, 
+  "fuente": "La Provincia", 
+  "fecha": "1998-11-05", 
+  "autor": 5, 
+  "descripcion": "", 
+  "titulo": "La Universidad y el Doctor Negr\u00edn"
+ }
+},
+{
+ "pk": 16, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "Canarias7", 
+  "fecha": "1999-11-13", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Juan Negr\u00edn gobern\u00f3 en equilibrio entre socialistas y comunistas"
+ }
+},
+{
+ "pk": 17, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Tribuna de Canarias", 
+  "fecha": "1999-11-13", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Miralles: \"El PSOE ha hecho m\u00e1s da\u00f1o a Negr\u00edn que el franquismo\""
+ }
+},
+{
+ "pk": 18, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "1999-11-13", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Medina explica el silencio sobre Negr\u00edn por la rapi\u00f1a que sufri\u00f3 el patrimonio familiar"
+ }
+},
+{
+ "pk": 19, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Tribuna de Canarias", 
+  "fecha": "1999-11-11", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Garc\u00eda del Rosario: \"Negr\u00edn fue un gran l\u00edder nacido en Las Palmas\""
+ }
+},
+{
+ "pk": 20, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "1999-11-11", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Millares afirma que Negr\u00edn represent\u00f3 el orden tras el caos en la Hacienda espa\u00f1ola"
+ }
+},
+{
+ "pk": 21, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "1999-11-09", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Eligio Hern\u00e1ndez describe a Negr\u00edn como el espa\u00f1ol m\u00e1s europeo de su generaci\u00f3n"
+ }
+},
+{
+ "pk": 22, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Tribuna de Canarias", 
+  "fecha": "1999-11-09", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Rom\u00e1n Rodriguez aboga por recuperar en las Islas la figura de Juan Negr\u00edn"
+ }
+},
+{
+ "pk": 23, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Tribuna de Canarias", 
+  "fecha": "1999-11-07", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Una figura hist\u00f3rica para el siglo XXI"
+ }
+},
+{
+ "pk": 24, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "1999-11-07", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Un isle\u00f1o de nombre Negr\u00edn"
+ }
+},
+{
+ "pk": 25, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "1999-11-06", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "La Fundaci\u00f3n Juan Negr\u00edn rescata del silencio al pol\u00edtico y cient\u00edfico canario"
+ }
+},
+{
+ "pk": 26, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Tribuna de Canarias", 
+  "fecha": "1999-11-06", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Los silencios de Juan Negr\u00edn se rompen buscando la verdad"
+ }
+},
+{
+ "pk": 27, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "1999-05-15", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Bonis afirma que el hospital Doctor Negr\u00edn es un edificio \"hecho como dicen los libros\""
+ }
+},
+{
+ "pk": 28, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Tribuna de Canarias", 
+  "fecha": "1999-05-15", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Una lucha de 13 a\u00f1os que culmina con un edificio vanguardista"
+ }
+},
+{
+ "pk": 29, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "1998-11-15", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Un hospital para recuperar a Negr\u00edn"
+ }
+},
+{
+ "pk": 30, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "2005-03-14", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Conmemoraci\u00f3n 50 a\u00f1os muerte Negr\u00edn"
+ }
+},
+{
+ "pk": 31, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "2004-08-01", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Muere en M\u00e9xico R\u00f3mulo Negr\u00edn, hijo del presidente del Gobierno de la II Rep\u00fablica"
+ }
+},
+{
+ "pk": 32, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "Canarias7", 
+  "fecha": "2003-10-13", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Negr\u00edn sab\u00eda que se enfrentaba a una guerra de exterminio"
+ }
+},
+{
+ "pk": 33, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "2003-11-13", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Graham: \"Negr\u00edn vio la pol\u00edtica como un ejercicio de virtud c\u00edvica, no como los pol\u00edticos 'mercaderes' de ahora\""
+ }
+},
+{
+ "pk": 34, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "2003-10-17", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Jackon: \"No conozco un gran estadista tan mal entendido como Juan Negr\u00edn\""
+ }
+},
+{
+ "pk": 35, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "2003-10-15", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Jackson: \"Negr\u00edn acudi\u00f3 a la URSS para frenar a Franco, como Churchill para frenar a Hitler\""
+ }
+},
+{
+ "pk": 36, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "Canarias7", 
+  "fecha": "2003-09-28", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Los Negr\u00edn in\u00e9ditos"
+ }
+},
+{
+ "pk": 37, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "2003-09-21", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Una herida de la Historia"
+ }
+},
+{
+ "pk": 38, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "2003-02-12", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "La nieta de Negr\u00edn inaugura un espacio dedicado a su abuelo en el Museo Elder"
+ }
+},
+{
+ "pk": 39, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "Canarias7", 
+  "fecha": "2003-02-12", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "El Museo de la Ciencia muestra documentos in\u00e9ditos de Juan Negr\u00edn"
+ }
+},
+{
+ "pk": 40, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "2002-01-01", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "EL Cabildo grancanario aprueba la creaci\u00f3n de la beca Juan Negr\u00edn dotado con 24.040\u20ac"
+ }
+},
+{
+ "pk": 41, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "2001-06-03", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "La familia de Juan Negr\u00edn accede a vender la casa maternal al municipio de San Mateo"
+ }
+},
+{
+ "pk": 42, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "Canarias7", 
+  "fecha": "2007-04-29", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Una invitaci\u00f3n para conocer a Juan Negr\u00edn"
+ }
+},
+{
+ "pk": 43, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "Canarias7", 
+  "fecha": "2007-04-28", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "El archivo de Negr\u00edn busca un lugar para quedarse en la isla"
+ }
+},
+{
+ "pk": 44, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "2007-04-28", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Una muestra \"hace justicia\" a la figura de Negr\u00edn como cient\u00edfico y pol\u00edtico"
+ }
+},
+{
+ "pk": 45, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "Canarias7", 
+  "fecha": "2007-04-26", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Para ver a Negr\u00edn con ojos limpios"
+ }
+},
+{
+ "pk": 46, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "Canarias7", 
+  "fecha": "2006-05-12", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Historia y humor, la mirada de Schommer sobre la Transici\u00f3n"
+ }
+},
+{
+ "pk": 47, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "2006-05-12", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "El Gabinete Literario muestra las fotograf\u00edas de Schommer sobre la Transici\u00f3n"
+ }
+},
+{
+ "pk": 48, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 5, 
+  "fuente": "La Provincia", 
+  "fecha": "2003-10-19", 
+  "autor": 2, 
+  "descripcion": "Entrevistado: Gabriel Jackson, historiador hispanista", 
+  "titulo": "El PP de Aznar es franquismo disfrazado de democracia"
+ }
+},
+{
+ "pk": 49, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 5, 
+  "fuente": "La Provincia", 
+  "fecha": "2003-10-14", 
+  "autor": 6, 
+  "descripcion": "Entrevistado: Jos\u00e9 A. Medina Jim\u00e9nez", 
+  "titulo": "La verdad sobre los Negr\u00edn fue ocultada durante 40 a\u00f1os de manipulaci\u00f3n"
+ }
+},
+{
+ "pk": 50, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 5, 
+  "fuente": "La Provincia", 
+  "fecha": "2003-02-19", 
+  "autor": 14, 
+  "descripcion": "Entrevistado: Ricardo Miralles", 
+  "titulo": "Nuevos datos abrir\u00e1n pistas sobre el exilio, la guerra y las cuentas de Negr\u00edn"
+ }
+},
+{
+ "pk": 51, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 5, 
+  "fuente": "La Provincia", 
+  "fecha": "2003-02-13", 
+  "autor": 11, 
+  "descripcion": "Entrevistado: Carmen Negr\u00edn Fetter", 
+  "titulo": "Los que no quieran abrir los ojos con Negr\u00edn seguir\u00e1n as\u00ed, pese a sus memorias"
+ }
+},
+{
+ "pk": 1, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version PDF", 
+  "filename": "/media/uploads/documentos/articulos-dr-juan-negrin.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/articulos-dr-juan-negrin.jpg", 
+  "documento": 4
+ }
+},
+{
+ "pk": 3, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-juan-negrin-goberno-en-equilibrio.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-juan-negrin-goberno-en-equilibrio.jpg", 
+  "documento": 16
+ }
+},
+{
+ "pk": 4, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/entrevista-a-carmen-negrin.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/entrevista-a-carmen-negrin.jpg", 
+  "documento": 51
+ }
+},
+{
+ "pk": 5, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/entrevista-a-ricardo-miralles.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/entrevista-a-ricardo-miralles.jpg", 
+  "documento": 50
+ }
+},
+{
+ "pk": 6, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/entrevista-a-jose-medina.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/entrevista-a-jose-medina.jpg", 
+  "documento": 49
+ }
+},
+{
+ "pk": 7, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/entrevista-a-gabriel-jackson.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/entrevista-a-gabriel-jackson.jpg", 
+  "documento": 48
+ }
+},
+{
+ "pk": 8, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-el-gabinete-literario-muestra-las-fotografias.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-el-gabinete-literario-muestra-las-fotografias.jpg", 
+  "documento": 47
+ }
+},
+{
+ "pk": 9, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-historia-y-humor-la-mirada-de-schommer.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-historia-y-humor-la-mirada-de-schommer.jpg", 
+  "documento": 46
+ }
+},
+{
+ "pk": 10, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-para-ver-a-negrin-con-ojos-limpios.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-para-ver-a-negrin-con-ojos-limpios.jpg", 
+  "documento": 45
+ }
+},
+{
+ "pk": 11, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-el-archivo-de-negrin-busca-un-lugar.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-el-archivo-de-negrin-busca-un-lugar.jpg", 
+  "documento": 43
+ }
+},
+{
+ "pk": 12, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-una-muestra-hace-justicia.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-una-muestra-hace-justicia.jpg", 
+  "documento": 44
+ }
+},
+{
+ "pk": 13, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-una-invitacion-para-conocer-a-juan-negrin.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-una-invitacion-para-conocer-a-juan-negrin.jpg", 
+  "documento": 42
+ }
+},
+{
+ "pk": 14, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/articulos-un-hombre-de-ciencia.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/articulos-un-hombre-de-ciencia.jpg", 
+  "documento": 12
+ }
+},
+{
+ "pk": 15, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-una-lucha-de-13-anos-que-culmina.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-una-lucha-de-13-anos-que-culmina.jpg", 
+  "documento": 28
+ }
+},
+{
+ "pk": 16, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-una-figura-historica-para-el-siglo-xxi.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-una-figura-historica-para-el-siglo-xxi.jpg", 
+  "documento": 23
+ }
+},
+{
+ "pk": 17, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-un-isleno-de-nombre-negrin.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-un-isleno-de-nombre-negrin.jpg", 
+  "documento": 24
+ }
+},
+{
+ "pk": 18, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-negrin-sabia-que-se-enfrentaba-a-una-guerra.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-negrin-sabia-que-se-enfrentaba-a-una-guerra.jpg", 
+  "documento": 32
+ }
+},
+{
+ "pk": 19, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-muere-en-mexico-romulo-negrin.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-muere-en-mexico-romulo-negrin.jpg", 
+  "documento": 31
+ }
+},
+{
+ "pk": 20, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-los-silencios-de-juan-negrin-se-rompen.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-los-silencios-de-juan-negrin-se-rompen.jpg", 
+  "documento": 26
+ }
+},
+{
+ "pk": 21, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-la-fundacion-juan-negrin-recata-del-silencio.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-la-fundacion-juan-negrin-recata-del-silencio.jpg", 
+  "documento": 25
+ }
+},
+{
+ "pk": 22, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-roman-rodriguez-aboga-por-recuperar.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-roman-rodriguez-aboga-por-recuperar.jpg", 
+  "documento": 22
+ }
+},
+{
+ "pk": 23, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-millares-afirma-que-negrin-represento.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-millares-afirma-que-negrin-represento.jpg", 
+  "documento": 20
+ }
+},
+{
+ "pk": 24, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-medina-explica-el-silencio-sobre-negrin.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-medina-explica-el-silencio-sobre-negrin.jpg", 
+  "documento": 18
+ }
+},
+{
+ "pk": 25, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-miralles-el-psoe-ha-hecho-mas-dano-a-negrin.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-miralles-el-psoe-ha-hecho-mas-dano-a-negrin.jpg", 
+  "documento": 17
+ }
+},
+{
+ "pk": 26, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-garcia-del-rosario-negrin-fue-un-gran-lider.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-garcia-del-rosario-negrin-fue-un-gran-lider.jpg", 
+  "documento": 19
+ }
+},
+{
+ "pk": 27, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-eligio-hernandez-describe-a-negrin.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-eligio-hernandez-describe-a-negrin.jpg", 
+  "documento": 21
+ }
+},
+{
+ "pk": 28, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-conmemoracion-50-anos-muerte-negrin.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-conmemoracion-50-anos-muerte-negrin.jpg", 
+  "documento": 30
+ }
+},
+{
+ "pk": 29, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-bonis-afirma-que-el-hospital-doctor-negrin.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-bonis-afirma-que-el-hospital-doctor-negrin.jpg", 
+  "documento": 27
+ }
+},
+{
+ "pk": 30, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/articulos-juan-negrin-y-su-fundacion.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/articulos-juan-negrin-y-su-fundacion.jpg", 
+  "documento": 6
+ }
+},
+{
+ "pk": 31, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/articulos-negrin-en-la-regenta.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/articulos-negrin-en-la-regenta.jpg", 
+  "documento": 5
+ }
+}
+]
