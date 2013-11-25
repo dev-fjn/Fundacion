@@ -12,6 +12,7 @@ Django < 1.6
 Fabric
 South
 ipython
+django-tinymce
 
 # en produccion
 gunicorn

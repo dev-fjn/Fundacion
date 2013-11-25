@@ -2,8 +2,17 @@
 
 from django.contrib import admin
 from modeltranslation.admin import TranslationAdmin
+from tinymce.widgets import TinyMCE
 
 from models import *
+
+# http://www.tinymce.com/wiki.php/Configuration3x
+FORMFIELD_TINYMCE_AVANZADO = {
+        models.TextField: {'widget': TinyMCE(attrs={'cols': 10, 'cols': 80}, mce_attrs={'theme': 'advanced'}),},
+}
+FORMFIELD_TINYMCE_SIMPLE = {
+        models.TextField: {'widget': TinyMCE(attrs={'cols': 10, 'cols': 80}, mce_attrs={'theme': 'simple'}), },
+}
 
 class VideoAdmin(TranslationAdmin):
     list_display = ['titulo', 'flv', 'mp4']
@@ -18,14 +27,17 @@ class FechaEventoInline(admin.StackedInline):
 class EventoAdmin(admin.ModelAdmin):
     list_display = ['titulo', 'fechas']
     inlines = [FechaEventoInline, ]
+    formfield_overrides = FORMFIELD_TINYMCE_SIMPLE
 
     def fechas(self, obj):
         return ", ".join([fecha.simple() for fecha in obj.fechaevento_set.all()]) 
+
 
 class LibroAdmin(admin.ModelAdmin):
     list_display = ['titulo', 'autor', 'fecha', 'isbn']
     search_fields = ['titulo', 'autor', 'isbn']
     date_hierarchy = 'fecha'
+    formfield_overrides = FORMFIELD_TINYMCE_SIMPLE
 
 class UrlAdjuntoInline(admin.TabularInline):
     model = UrlAdjunto
@@ -46,6 +58,7 @@ class DocumentoAdmin(admin.ModelAdmin):
     list_filter = ['categoria__tipo', 'categoria', 'autor']
     inlines = [UrlAdjuntoInline, FicheroAdjuntoInline]
     prepopulated_fields = { "slug": ("titulo",) }
+    formfield_overrides = FORMFIELD_TINYMCE_SIMPLE
 
     def adjuntos_(self, obj):
         return "<br />".join([u"%s" % (i, ) for i in obj.adjuntos()])
@@ -53,12 +66,15 @@ class DocumentoAdmin(admin.ModelAdmin):
 
 class CitasDeAdmin(admin.ModelAdmin):
     list_display = ['contenido', 'fecha']
+    formfield_overrides = FORMFIELD_TINYMCE_SIMPLE
 
 class CitasSobreAdmin(admin.ModelAdmin):
     list_display = ['contenido', 'autor', 'fecha']
+    formfield_overrides = FORMFIELD_TINYMCE_SIMPLE
 
 class PresenciaAdmin(admin.ModelAdmin):
     list_display = ['denominacion', 'lugar', ]
+    formfield_overrides = FORMFIELD_TINYMCE_AVANZADO
 
 admin.site.register(Imagen, ImagenAdmin)
 admin.site.register(Video, VideoAdmin)

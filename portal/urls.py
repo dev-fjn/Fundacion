@@ -67,6 +67,11 @@ urlpatterns += patterns(
     url(r'^contact/', include('django_contactme.urls')),
 )
 
+if 'tinymce' in settings.INSTALLED_APPS:
+    urlpatterns += patterns('',
+        (r'^tinymce/', include('tinymce.urls')),
+    )
+
 
 if settings.DEBUG and not settings.PRODUCCION:
     # Desarrollo
