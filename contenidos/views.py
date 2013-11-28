@@ -150,33 +150,48 @@ class Documentos(DocumentosBase, ListView):
         context["count"] = self.count
         return context
 
-class BusquedaGeneral(TemplateView):
+class BusquedaGeneral(ListView):
     template_name = "contenidos/busqueda_general.html"
+    paginate_by = settings.CONTENIDOS_PAGINADOR_MAX
 
-    def get_context_data(self, **kwargs):
-        context = super(BusquedaGeneral, self).get_context_data(**kwargs)
-        query = self.request.GET.get('query', '').strip()
-        context['query'] = query
+    def get_queryset(self):
+        self.query = self.kwargs.get("query", "").strip() or self.request.GET.get("query", "")
+        self.query = self.query.strip()
+        self.tipo = self.kwargs.get("tipo", "").strip()
 
-        if len(query) == 0:
-            return context
-
-        if len(query) < 3:
-            context['error'] = "Necesita buscar un mínimo de 3 caracteres"
-            return context
-
-        def busqueda_exhaustiva(klz, query, *args):
+        def busqueda_exhaustiva(klz, *args):
             q = Q()
             for arg in args:
-                filtro = {"%s__icontains" % arg: query}
+                filtro = {"%s__icontains" % arg: self.query}
                 q |= Q(**filtro)
             return klz.objects.filter(q)
 
+        self.qs = {
+                'eventos': busqueda_exhaustiva(Evento, 'titulo'),
+                'paginas': busqueda_exhaustiva(FlatPage_i18n, 'title', 'content'),
+                'libros': busqueda_exhaustiva(Libro, 'titulo', 'autor', 'resumen', 'isbn'),
+                'documentos': busqueda_exhaustiva(Documento, 'titulo', 'autor__nombre', 'descripcion', 'fuente'),
+            }
+        return self.qs.get(self.tipo, Documento.objects.none())
+
+    def get_context_data(self, **kwargs):
+        context = super(BusquedaGeneral, self).get_context_data(**kwargs)
+
+        if len(self.query) == 0:
+            return context
+
+        if len(self.query) < 3:
+            context['error'] = "Necesita buscar un mínimo de 3 caracteres"
+            return context
+
+
         context.update({
-                'eventos_list': busqueda_exhaustiva(Evento, query, 'titulo'),
-                'paginas_list': busqueda_exhaustiva(FlatPage_i18n, query, 'title', 'content'),
-                'libros_list': busqueda_exhaustiva(Libro, query, 'titulo', 'autor', 'resumen', 'isbn'),
-                'documentos_list': busqueda_exhaustiva(Documento, query, 'titulo', 'autor__nombre', 'descripcion', 'fuente'),
+                'query': self.query,
+                'selected': self.tipo,
+                'eventos_count': self.qs['eventos'].count(),
+                'paginas_count': self.qs['paginas'].count(),
+                'libros_count': self.qs['libros'].count(),
+                'documentos_count': self.qs['documentos'].count(),
             })
         return context
 

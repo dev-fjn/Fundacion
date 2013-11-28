@@ -11,37 +11,87 @@
 	</ul>
 {% endblock hormiga %}
 
+{% block extra_head %}
+<style>
+    .pestanas {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        border-bottom: 2px solid #A39579;
+    }
+    .pestanas li {
+        border: 1px solid #A39579;
+        padding: 0px 10px;
+        display: inline;
+    }
+    .pestanas li:hover {
+        background-color:  #A39579;
+    }
+    .pestanas li.selected {
+        background-color: #918b74;
+        color: white;
+    }
+    .pestanas li.title {
+        font-weight: bold;
+        border: none;
+    }
+
+    /* esto para el dt-dd */
+    dl.busqueda {
+        padding: 20px;
+    }
+    dl.busqueda dt {
+        font-weight: bold;
+    }
+    dl.busqueda dd {
+        margin-bottom: 10px;
+    }
+    dl.busqueda dd a.right {
+        display: block;
+        float: right;
+    }
+
+    /* paginador al centro */
+    div.paginator {
+        padding: 5px;
+        text-align: center;
+    }
+
+</style>
+{% endblock extra_head%}
+
 {% block body %}
 	<div id="space">
 		{% if error %}
 			<div style="color: red" class="error">No se pudo realizar la búsquda: {{error}}</div>
 		{% else %}
-            <dl>
-                <dt>Eventos ({{eventos_list.count}} encontrados)</dt>
+            <ul class="pestanas">
+                <li class="title">Resultados de búsqueda</li>
+                {% if paginas_count %} <li {% if selected == "paginas" %}class="selected"{% endif %}><a href="{% url 'busqueda_general_resultados' 'paginas' query %}">Páginas ({{paginas_count}})</a></li> {% endif %}
+                {% if libros_count %} <li {% if selected == "libros" %}class="selected"{% endif %}><a href="{% url 'busqueda_general_resultados' 'libros' query %}">Libros ({{libros_count}})</a></li> {% endif %}
+                {% if documentos_count %}<li {% if selected == "documentos" %}class="selected"{% endif %}><a href="{% url 'busqueda_general_resultados' 'documentos' query %}">Documentos ({{documentos_count}})</a></li> {% endif %}
+                {% if eventos_count %}<li {% if selected == "eventos" %}class="selected"{% endif %}><a href="{% url 'busqueda_general_resultados' 'eventos' query %}">Eventos ({{eventos_count}})</a></li> {% endif %}
+            </ul>
 
-                {% for object in eventos_list %}
-                <dd><a href="{% url 'evento_view' object.pk %}">{{object.titulo}}</a><br />Poner algo aqui</dd>
-                {% endfor %}
-
-                <dt>Páginas ({{paginas_list.count}} encontradas)</dt>
-
-                {% for object in paginas_list %}
-                <dd><strong><a href="{{object.url}}">{{object.title}}</a></strong><br/>{{object.content|striptags|truncatewords:20|safe}}</dd>
-                {% endfor %}
-
-                <dt>Libros ({{libros_list.count}} encontrados)</dt>
-
-                {% for object in libros_list %}
-                <dd><strong><a href="{{object.get_absolute_url}}">{{object.titulo}}</a></strong><br/></dd>
-                {% endfor %}
-
-                <dt>Documentos ({{documentos_list.count}} encontrados)</dt>
-
-                {% for object in documentos_list %}
-                <dd><strong><a href="{{object.get_absolute_url}}">{{object.categoria}} - {{object.titulo}}</a></strong><br/></dd>
+            <dl class="busqueda">
+                {% for object in object_list %}
+                    {% if selected == "paginas" %}
+                        <dt>{{object.title}}</dt>
+                        <dd>{{object.content|striptags|truncatewords:20|safe}} <a class="right" href="{{object.url}}">ir</a></dd>
+                    {% elif selected == "libros" %}
+                        <dt>{{object.titulo}}</dt>
+                        <dd>Autor: {{object.autor}} <a class="right" href="{{object.get_absolute_url}}">ir</a></dd>
+                    {% elif selected == "documentos" %}
+                        <dt>{{object.titulo}}</dt>
+                        <dd>Categoría: {{object.categoria}} <a class="right" href="{{object.get_absolute_url}}">ir</a></dd>
+                    {% elif selected == "evento" %}
+                        <dt>{{object.titulo}}</dt>
+                        <dd><a class="right" href="{% url 'evento_view' object.pk %}">ir</a></dd>
+                    {% endif %}
                 {% endfor %}
             </dl>
 		{% endif %}
+        {% include "contenidos/_paginator.html" %}
 	</div>
 {% endblock body %}
 
