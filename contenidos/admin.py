@@ -8,10 +8,10 @@ from models import *
 
 # http://www.tinymce.com/wiki.php/Configuration3x
 FORMFIELD_TINYMCE_AVANZADO = {
-        models.TextField: {'widget': TinyMCE(attrs={'cols': 10, 'cols': 80}, mce_attrs={'theme': 'advanced'}),},
+    models.TextField: {'widget': TinyMCE(attrs={'cols': 10, 'cols': 80}, mce_attrs={'theme': 'advanced'}),},
 }
 FORMFIELD_TINYMCE_SIMPLE = {
-        models.TextField: {'widget': TinyMCE(attrs={'cols': 10, 'cols': 80}, mce_attrs={'theme': 'simple'}), },
+    models.TextField: {'widget': TinyMCE(attrs={'cols': 10, 'cols': 80}, mce_attrs={'theme': 'simple'}), },
 }
 
 class VideoAdmin(TranslationAdmin):
