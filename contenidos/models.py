@@ -219,10 +219,7 @@ COLETILLAS_VIDEO = [
         ('.mp4', 'audio/mp4'),
     ]
 
-class FicheroAdjunto(Adjunto):
-    filename = FileBrowseField("fichero", max_length=200, directory="documentos")
-    miniatura = FileBrowseField("miniaturas", max_length=200, directory="documentos/miniaturas", help_text=u"Miniatura del contenido, si procede", blank=True, null=True)
-
+class ComunesMultimedia(object):
     def extension(self):
         return os.path.splitext(self.filename.path)[1]
 
@@ -255,6 +252,11 @@ class FicheroAdjunto(Adjunto):
 
     def busca_audios_extensiones(self):
         return self.busca_por_coletillas(COLETILLAS_AUDIO)
+
+
+class FicheroAdjunto(ComunesMultimedia, Adjunto):
+    filename = FileBrowseField("fichero", max_length=200, directory="documentos")
+    miniatura = FileBrowseField("miniaturas", max_length=200, directory="documentos/miniaturas", help_text=u"Miniatura del contenido, si procede", blank=True, null=True)
 
     class Meta:
         verbose_name = u'Enlace al documento almacenado por FTP'
