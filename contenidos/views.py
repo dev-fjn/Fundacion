@@ -17,9 +17,11 @@ class Home(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super(Home, self).get_context_data(**kwargs)
-        context.update({
-                'carruseles': Carrusel.objects.all(),
-            })
+        context['carruseles'] = Carrusel.objects.all()
+        try:
+            context['flatpage'] = FlatPage_i18n.objects.get(title="Portada")
+        except FlatPage_i18n.DoesNotExist:
+            pass
         return context
 
 class Calendario(TemplateView):

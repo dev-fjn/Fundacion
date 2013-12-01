@@ -32,8 +32,15 @@
     </div>
 {% endblock slide %}
 
-{% block expo %}
-Texto descriptivo de la fundacion (estoy en c/t/c/home.html)
-{% endblock expo %}
+{% block section_expo %}
+    {% if flatpage %}
+        <section id="expo">
+            {{ flatpage.content|safe }}
+            {% if user.is_superuser %}<a href="{% url 'admin:flatpages_i18n_flatpage_i18n_change' flatpage.id %}">&#9998;</a>{% endif %}
+        </section>
+    {% else %}
+        (Cambiar el texto de la flatpage "Portada")
+    {% endif %}
+{% endblock section_expo %}
 
 
