@@ -3,7 +3,7 @@
 from django import template
 register = template.Library()
 
-from contenidos.models import Imagen, Video, Evento, FechaEvento
+from contenidos.models import Evento, FechaEvento
 from contenidos.utiles import inicio_fin_mes, calendario_por_meses
 from django.conf import settings
 from django.utils import timezone

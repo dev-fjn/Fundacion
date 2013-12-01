@@ -15,7 +15,7 @@ import os
 # 
 
 def _siguiente_orden():
-    m = Imagen.objects.aggregate(models.Max("orden"))["orden__max"]
+    m = Carrusel.objects.aggregate(models.Max("orden"))["orden__max"]
     return 1 if not m else m+1
 
 EXTENSIONES_IMAGEN = ['.png', '.jpg', '.jpeg', '.gif', '.svg']
@@ -88,27 +88,6 @@ class Carrusel(ComunesMultimedia, models.Model):
         verbose_name_plural = u'carruseles'
         ordering = ('orden', )
 
-class Imagen(models.Model):
-    titulo = models.CharField(max_length=250)
-    orden = models.IntegerField(default=_siguiente_orden)
-    imagen = FileBrowseField("Imagen", max_length=200, directory="imagenes")
-
-    def __unicode__(self):
-        return self.titulo
-
-    class Meta:
-        verbose_name = u'imagen'
-        verbose_name_plural = u'imágenes'
-        ordering = ('orden', )
-
-class Video(models.Model):
-    titulo = models.CharField(max_length=250)
-    flv = FileBrowseField("FLV", max_length=200, extensions=[".flv",], directory="videos", blank=True, null=True)
-    mp4 = FileBrowseField("MP4", max_length=200, extensions=[".mp4",], directory="videos", blank=True, null=True)
-
-    class Meta:
-        verbose_name = u'vídeo'
-        verbose_name_plural = u'vídeos'
 
 class Evento(models.Model):
     titulo = models.CharField(max_length=250)

@@ -17,19 +17,18 @@
         data-cycle-fx="scrollHorz" 
         data-cycle-timeout="2000"
         >
-        {% for imagen in imagenes %}
-                <img style="width: 100%;" alt="{{imagen.titulo}}" src="{{imagen.imagen}}">
+        {% for carrusel in carruseles %}
+            {% if carrusel.es_imagen %}
+                <img style="width: 100%;" alt="{{carrusel.titulo}}" src="{{carrusel.filename}}">
+            {% elif carrusel.es_video %}
+                <div>
+                    <video poster=""  controls="controls" width="320" height="240" id="player" preload="metadata">
+                        Your browser does not support the <code>video</code> element.
+                        <source src="{{carrusel.filename}}" type="ESTOHAYQUEPONERALGO">
+                    </video>
+                </div>
+            {% endif %}
         {% endfor %}
-        {% comment %}
-            {% for video in videos %}
-            <div>
-                <video poster=""  controls="controls" width="320" height="240" id="player" preload="metadata">
-                    Your browser does not support the <code>video</code> element.
-                    <source src="{{MEDIA_URL}}{{video}}" type="ESTOHAYQUEPONERALGO">
-                </video>
-            </div>
-            {% endfor %}
-        {% endcomment %}
     </div>
 {% endblock slide %}
 

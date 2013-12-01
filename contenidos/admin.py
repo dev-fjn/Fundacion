@@ -17,9 +17,6 @@ FORMFIELD_TINYMCE_SIMPLE = {
 class CarruselAdmin(TranslationAdmin):
     list_display = ['titulo', 'orden', 'filename']
 
-class ImagenAdmin(TranslationAdmin):
-    list_display = ['titulo']
-
 class FechaEventoInline(admin.StackedInline):
     model = FechaEvento
     extra = 1
@@ -77,8 +74,6 @@ class PresenciaAdmin(admin.ModelAdmin):
     formfield_overrides = FORMFIELD_TINYMCE_AVANZADO
 
 admin.site.register(Carrusel, CarruselAdmin)
-admin.site.register(Imagen, ImagenAdmin)
-admin.site.register(Video, VideoAdmin)
 admin.site.register(Evento, EventoAdmin)
 admin.site.register(Libro, LibroAdmin)
 admin.site.register(Categoria, CategoriaDocumentoAdmin)
