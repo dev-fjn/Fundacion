@@ -2,10 +2,12 @@
 <html lang="es">
 	<head>
 		{% block head_title %}<title>{% block title %}Título{% endblock title %}</title>{% endblock head_title %}
+
 		<meta charset="utf-8" />
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 
 		<!--[if lt IE 10]>
-            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<![endif]-->
 
 		<meta name="description" content="{% block head_description %}Fundacion Juan Negrin{% endblock head_description %}" />
@@ -23,13 +25,13 @@
 		<link rel="shortcut icon" type="image/ico" href="{% static 'img/favicon.ico' %}" />
 		<link href="{% static 'css/screen.css' %}" media="screen, projection" rel="stylesheet" type="text/css" />
 
-		<meta name="application-name"                content="Construye el ancla para este sitio." />
-		<meta name="msapplication-starturl"          content="http://buildmypinnedsite.com" />
+		<meta name="application-name"				content="Construye el ancla para este sitio." />
+		<meta name="msapplication-starturl"		  content="http://buildmypinnedsite.com" />
 		<meta name="msapplication-navbutton-color"   content="#3480C0" />
-		<meta name="msapplication-window"            content="width=1024;height=768" />
-		<meta name="msapplication-tooltip"           content="Comienza anclando este sitio" />
+		<meta name="msapplication-window"			content="width=1024;height=768" />
+		<meta name="msapplication-tooltip"		   content="Comienza anclando este sitio" />
 
-		<meta name="msapplication-TileColor"         content="#FFFFFF"/>
+		<meta name="msapplication-TileColor"		 content="#FFFFFF"/>
 		<meta name="msapplication-square70x70logo"   content="{% static 'img/tiles/tiny.png' %}"/>
 		<meta name="msapplication-square150x150logo" content="{% static 'img/tiles/square.png' %}"/>
 		<meta name="msapplication-wide310x150logo"   content="{% static 'img/tiles/wide.png' %}" />
@@ -50,11 +52,11 @@
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-		<link href="{% static 'img/ios/touch-icon-iphone.png' %}"        rel="apple-touch-icon" sizes="57x57" />
-		<link href="{% static 'img/ios/touch-icon-ipad.png' %}"          rel="apple-touch-icon" sizes="72x72" />
+		<link href="{% static 'img/ios/touch-icon-iphone.png' %}"		rel="apple-touch-icon" sizes="57x57" />
+		<link href="{% static 'img/ios/touch-icon-ipad.png' %}"		  rel="apple-touch-icon" sizes="72x72" />
 		<link href="{% static 'img/ios/touch-icon-iphone-retina.png' %}" rel="apple-touch-icon" sizes="114x114" />
 		<link href="{% static 'img/ios/touch-icon-ipad-retina.png' %}"   rel="apple-touch-icon" sizes="144x144" />
-		<link href="{% static 'img/ios/apple-touch-icon.png' %}"         rel="apple-touch-startup-image" />
+		<link href="{% static 'img/ios/apple-touch-icon.png' %}"		 rel="apple-touch-startup-image" />
 
 		<meta name="dcterms:description" />
 
@@ -88,35 +90,35 @@
 								<ul class="ct-connect">
 									<li>
 										<a href=""><img
-                                            src="{% static 'img/rss.png' %}"
-                                            alt="RSS"
-                                            width="34"
-                                            height="34"
-                                            /></a>
+											src="{% static 'img/rss.png' %}"
+											alt="RSS"
+											width="34"
+											height="34"
+											/></a>
 									</li>
 									<li>
 										<a href=""><img
-                                            src="{% static 'img/mail.png' %}"
-                                            alt="Correo Electrónico"
-                                            width="34"
-                                            height="34"
-                                            /></a>
+											src="{% static 'img/mail.png' %}"
+											alt="Correo Electrónico"
+											width="34"
+											height="34"
+											/></a>
 									</li>
 									<li>
 										<a href=""><img
-                                            src="{% static 'img/t.png' %}"
-                                            alt="Twitter"
-                                            width="34"
-                                            height="34"
-                                            /></a>
+											src="{% static 'img/t.png' %}"
+											alt="Twitter"
+											width="34"
+											height="34"
+											/></a>
 									</li>
 									<li>
 										<a href=""><img
-                                            src="{% static 'img/f.png' %}"
-                                            alt="Facebook"
-                                            width="34"
-                                            height="34"
-                                            /></a>
+											src="{% static 'img/f.png' %}"
+											alt="Facebook"
+											width="34"
+											height="34"
+											/></a>
 									</li>
 								</ul>
 							</div>
@@ -637,7 +639,7 @@
 		<script>
 			new UISearch( document.getElementById( 'buscador' ) );
 		</script>
-        {% block extra_footer %}
-        {% endblock extra_footer %}
+		{% block extra_footer %}
+		{% endblock extra_footer %}
 	</body>
 </html>
