@@ -2,7 +2,7 @@
 
 from contenidos.models import CitaDe, CitaSobre, Evento, Presencia
 from contenidos.models import TIPO
-from contenidos.views import Calendario, Libros, LibroDetalle, Documentos, DocumentoDetalle, BusquedaGeneral
+from contenidos.views import Home, Calendario, Libros, LibroDetalle, Documentos, DocumentoDetalle, BusquedaGeneral
 from django.conf.urls import patterns, include, url
 from django.views.generic import TemplateView, ListView, DetailView
 
@@ -27,6 +27,6 @@ urlpatterns = patterns('',
     url(r'presencia/$', ListView.as_view(model=Presencia), name="presencia"),
     url(r'recursos_audiovisuales/$', Documentos.as_view(tipo=TIPO.RECURSOS_AUDIOVISUALES), name="recursos_audiovisuales"),
     url(r'recursos_audiovisuales/(?P<slug>[-\w]+)$', DocumentoDetalle.as_view(tipo=TIPO.RECURSOS_AUDIOVISUALES), name="recurso_audiovisual_detalle"),
-    url(r'^$', TemplateView.as_view(template_name="contenidos/home.html"), name='home'),
+    url(r'^$', Home.as_view(), name='home'),
 )
 

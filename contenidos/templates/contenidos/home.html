@@ -1,9 +1,9 @@
 {% extends 'base_3col.html' %}
 {% load contenidosblocks %}
 
-{% block extra_head %}
+{% block extra_footer %}
 <script src="http://malsup.github.io/jquery.cycle2.js"></script>
-{% endblock extra_head %}
+{% endblock extra_footer %}
 
 {% block title %}
 {{block.super}} - Portada
@@ -13,11 +13,28 @@
 {% endblock section_hormiga %}
 
 {% block slide %}
-{% imagenes %}
+    <div class="cycle-slideshow" 
+        data-cycle-fx="scrollHorz" 
+        data-cycle-timeout="2000"
+        >
+        {% for imagen in imagenes %}
+                <img style="width: 100%;" alt="{{imagen.titulo}}" src="{{imagen.imagen}}">
+        {% endfor %}
+        {% comment %}
+            {% for video in videos %}
+            <div>
+                <video poster=""  controls="controls" width="320" height="240" id="player" preload="metadata">
+                    Your browser does not support the <code>video</code> element.
+                    <source src="{{MEDIA_URL}}{{video}}" type="ESTOHAYQUEPONERALGO">
+                </video>
+            </div>
+            {% endfor %}
+        {% endcomment %}
+    </div>
 {% endblock slide %}
 
 {% block expo %}
-{% videos %}
+Texto descriptivo de la fundacion (estoy en c/t/c/home.html)
 {% endblock expo %}
 
 

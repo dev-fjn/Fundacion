@@ -1,6 +1,6 @@
 #-*- coding: utf-8 -*-
 
-from contenidos.models import Evento, FechaEvento, Libro, Documento, TIPO
+from contenidos.models import Imagen, Video, Evento, FechaEvento, Libro, Documento, TIPO
 from contenidos.utiles import calendario_por_meses
 from django.conf import settings
 from django.core.urlresolvers import reverse
@@ -11,6 +11,17 @@ from django.views.generic import TemplateView, ListView, DetailView
 from flatpages_i18n.models import FlatPage_i18n
 import calendar
 import datetime
+
+class Home(TemplateView):
+    template_name = "contenidos/home.html"
+
+    def get_context_data(self, **kwargs):
+        context = super(Home, self).get_context_data(**kwargs)
+        context.update({
+                'imagenes': Imagen.objects.all(),
+                'videos': Video.objects.all(),
+            })
+        return context
 
 class Calendario(TemplateView):
     only = False

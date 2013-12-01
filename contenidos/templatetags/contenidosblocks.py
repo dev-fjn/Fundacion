@@ -10,15 +10,6 @@ from django.utils import timezone
 from zinnia.models import Category
 import datetime
 
-@register.inclusion_tag('contenidos/_imagenes.html')
-def imagenes():
-    imagenes = Imagen.objects.all()
-    return {'MEDIA_URL': settings.MEDIA_URL, 'imagenes': imagenes}
-
-@register.inclusion_tag('contenidos/_videos.html')
-def videos():
-    return {'MEDIA_URL': settings.MEDIA_URL, "videos": Video.objects.all() }
-
 @register.inclusion_tag('contenidos/_proximos_eventos.html', takes_context=True)
 def proximos_eventos(context, cuenta):
     cuenta = int(cuenta)
