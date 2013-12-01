@@ -10,12 +10,83 @@ from filebrowser.fields import FileBrowseField
 from zinnia.models import Category as CategoryZinnia, Entry as EntryZinnia
 import os
 
-# Create your models here.
-
+#
+# FUNCIONES/CLASES AUXILIARES
+# 
 
 def _siguiente_orden():
     m = Imagen.objects.aggregate(models.Max("orden"))["orden__max"]
     return 1 if not m else m+1
+
+EXTENSIONES_IMAGEN = ['.png', '.jpg', '.jpeg', '.gif', '.svg']
+EXTENSIONES_AUDIO = ['.mp3', '.ogg', '.wav']
+EXTENSIONES_VIDEO = ['.flv', '.mp4', '.ogv', '.webm']
+
+COLETILLAS_AUDIO = [
+    ('.mp3', 'audio/mpeg'),
+    ('.ogg', 'audio/ogg'),
+]
+
+COLETILLAS_VIDEO = [
+    ('_libtheora.ogv', 'audio/ogg'),
+    ('_VP8.webm', 'audio/webm'),
+    ('_x264.mp4', 'audio/mp4'),
+    ('.ogv', 'audio/ogg'),
+    ('.webm', 'audio/webm'),
+    ('.mp4', 'audio/mp4'),
+]
+
+class ComunesMultimedia(object):
+    # Esta clase asume que existe "self.filename" que es un FileBrowseField, 
+    # pero, aunque podria, no pongo ese field aqui ya que cada hijo lo lleva
+    # configurado en una carpeta diferente.
+
+    def extension(self):
+        return os.path.splitext(self.filename.path)[1]
+
+    def es_imagen(self):
+        return self.extension() in EXTENSIONES_IMAGEN
+
+    def es_audio(self):
+        return self.extension() in EXTENSIONES_AUDIO
+
+    def es_video(self):
+        return self.extension() in EXTENSIONES_VIDEO
+
+    def _busca_por_coletillas(self, lista_coletillas):
+        fichero_sin_coletilla = None
+        for coletilla, extension in lista_coletillas:
+            if self.filename.path.endswith(coletilla):
+                fichero_sin_coletilla = self.filename.path[:-len(coletilla)]
+                break
+        else:
+            # Si la extension no coincide con ninguna de la coletilla... no hacemos nada
+            return
+        # mostramos todos los ficheros/extension que coincidan y esten en el sistema de archivos
+        for coletilla, extension in lista_coletillas:
+            fichero = fichero_sin_coletilla + coletilla
+            if os.path.isfile(os.path.join(settings.MEDIA_ROOT, fichero)):
+                yield fichero, extension
+
+    def busca_videos_extensiones(self):
+        return self._busca_por_coletillas(COLETILLAS_VIDEO)
+
+    def busca_audios_extensiones(self):
+        return self._busca_por_coletillas(COLETILLAS_AUDIO)
+
+#
+# MODELOS DE DJANGO
+# 
+
+class Carrusel(ComunesMultimedia, models.Model):
+    titulo = models.CharField(max_length=250)
+    orden = models.IntegerField(default=_siguiente_orden)
+    filename = FileBrowseField("fichero", max_length=200, directory="carrusel")
+
+    class Meta:
+        verbose_name = u'carrusel'
+        verbose_name_plural = u'carruseles'
+        ordering = ('orden', )
 
 class Imagen(models.Model):
     titulo = models.CharField(max_length=250)
@@ -205,55 +276,6 @@ class UrlAdjunto(Adjunto):
         verbose_name = u'Referencia al documento en internet'
         verbose_name_plural = u'Referencias al documento en internet'
 
-COLETILLAS_AUDIO = [
-        ('.mp3', 'audio/mpeg'),
-        ('.ogg', 'audio/ogg'),
-    ]
-
-COLETILLAS_VIDEO = [
-        ('_libtheora.ogv', 'audio/ogg'),
-        ('_VP8.webm', 'audio/webm'),
-        ('_x264.mp4', 'audio/mp4'),
-        ('.ogv', 'audio/ogg'),
-        ('.webm', 'audio/webm'),
-        ('.mp4', 'audio/mp4'),
-    ]
-
-class ComunesMultimedia(object):
-    def extension(self):
-        return os.path.splitext(self.filename.path)[1]
-
-    def es_imagen(self):
-        return self.extension() in ['.png', '.jpg', '.jpeg', '.gif', '.svg']
-
-    def es_audio(self):
-        return self.extension() in ['.mp3', '.ogg', '.wav']
-
-    def es_video(self):
-        return self.extension() in ['.flv', '.mp4', '.ogv', '.webm']
-
-    def busca_por_coletillas(self, lista_coletillas):
-        fichero_sin_coletilla = None
-        for coletilla, extension in lista_coletillas:
-            if self.filename.path.endswith(coletilla):
-                fichero_sin_coletilla = self.filename.path[:-len(coletilla)]
-                break
-        else:
-            # Si la extension no coincide con ninguna de la coletilla... no hacemos nada
-            return
-        # mostramos todos los ficheros/extension que coincidan y esten en el sistema de archivos
-        for coletilla, extension in lista_coletillas:
-            fichero = fichero_sin_coletilla + coletilla
-            if os.path.isfile(os.path.join(settings.MEDIA_ROOT, fichero)):
-                yield fichero, extension
-
-    def busca_videos_extensiones(self):
-        return self.busca_por_coletillas(COLETILLAS_VIDEO)
-
-    def busca_audios_extensiones(self):
-        return self.busca_por_coletillas(COLETILLAS_AUDIO)
-
-
 class FicheroAdjunto(ComunesMultimedia, Adjunto):
     filename = FileBrowseField("fichero", max_length=200, directory="documentos")
     miniatura = FileBrowseField("miniaturas", max_length=200, directory="documentos/miniaturas", help_text=u"Miniatura del contenido, si procede", blank=True, null=True)
@@ -302,6 +324,10 @@ class Presencia(models.Model):
 
     def __unicode__(self):
         return u"%s (%s)" % (self.denominacion, self.lugar)
+
+#
+# SEÑALES
+# 
 
 @receiver(post_save, sender=Evento)
 def crea_blog_al_guardar_evento(sender, instance, **kwargs):

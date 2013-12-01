@@ -14,8 +14,8 @@ FORMFIELD_TINYMCE_SIMPLE = {
     models.TextField: {'widget': TinyMCE(attrs={'cols': 10, 'cols': 80}, mce_attrs={'theme': 'simple'}), },
 }
 
-class VideoAdmin(TranslationAdmin):
-    list_display = ['titulo', 'flv', 'mp4']
+class CarruselAdmin(TranslationAdmin):
+    list_display = ['titulo', 'orden', 'filename']
 
 class ImagenAdmin(TranslationAdmin):
     list_display = ['titulo']
@@ -76,6 +76,7 @@ class PresenciaAdmin(admin.ModelAdmin):
     list_display = ['denominacion', 'lugar', ]
     formfield_overrides = FORMFIELD_TINYMCE_AVANZADO
 
+admin.site.register(Carrusel, CarruselAdmin)
 admin.site.register(Imagen, ImagenAdmin)
 admin.site.register(Video, VideoAdmin)
 admin.site.register(Evento, EventoAdmin)
