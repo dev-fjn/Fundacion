@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from django.contrib.sites.models import Site
+from django.conf import settings
 from django.core.urlresolvers import reverse
 from django.db import models
 from django.db.models.signals import post_save, pre_save
@@ -204,6 +205,20 @@ class UrlAdjunto(Adjunto):
         verbose_name = u'Referencia al documento en internet'
         verbose_name_plural = u'Referencias al documento en internet'
 
+COLETILLAS_AUDIO = [
+        ('.mp3', 'audio/mpeg'),
+        ('.ogg', 'audio/ogg'),
+    ]
+
+COLETILLAS_VIDEO = [
+        ('_libtheora.ogv', 'audio/ogg'),
+        ('_VP8.webm', 'audio/webm'),
+        ('_x264.mp4', 'audio/mp4'),
+        ('.ogv', 'audio/ogg'),
+        ('.webm', 'audio/webm'),
+        ('.mp4', 'audio/mp4'),
+    ]
+
 class FicheroAdjunto(Adjunto):
     filename = FileBrowseField("fichero", max_length=200, directory="documentos")
     miniatura = FileBrowseField("miniaturas", max_length=200, directory="documentos/miniaturas", help_text=u"Miniatura del contenido, si procede", blank=True, null=True)
@@ -218,7 +233,28 @@ class FicheroAdjunto(Adjunto):
         return self.extension() in ['.mp3', '.ogg', '.wav']
 
     def es_video(self):
-        return self.extension() in ['.flv', '.mp4', '.ogv']
+        return self.extension() in ['.flv', '.mp4', '.ogv', '.webm']
+
+    def busca_por_coletillas(self, lista_coletillas):
+        fichero_sin_coletilla = None
+        for coletilla, extension in lista_coletillas:
+            if self.filename.path.endswith(coletilla):
+                fichero_sin_coletilla = self.filename.path[:-len(coletilla)]
+                break
+        else:
+            # Si la extension no coincide con ninguna de la coletilla... no hacemos nada
+            return
+        # mostramos todos los ficheros/extension que coincidan y esten en el sistema de archivos
+        for coletilla, extension in lista_coletillas:
+            fichero = fichero_sin_coletilla + coletilla
+            if os.path.isfile(os.path.join(settings.MEDIA_ROOT, fichero)):
+                yield fichero, extension
+
+    def busca_videos_extensiones(self):
+        return self.busca_por_coletillas(COLETILLAS_VIDEO)
+
+    def busca_audios_extensiones(self):
+        return self.busca_por_coletillas(COLETILLAS_AUDIO)
 
     class Meta:
         verbose_name = u'Enlace al documento almacenado por FTP'
