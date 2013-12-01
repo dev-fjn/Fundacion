@@ -1,25 +1,31 @@
 {% extends "base_1col.html" %}
 
 {% block title %}
-    {{block.super}} - Citas de Juan Negrín
+	{{block.super}} - Citas de Juan Negrín
 {% endblock title %}
 
 {% block hormiga %}
-    <ul>
-        <li><a href="#">Juan Negrín</a></li>
-        <li><a href="#">Citas</a></li>
-        <li><a href="#">Citas de Juan Negrín</a></li>
-    </ul>
+	<ul>
+		<li><a href="#">Juan Negrín</a></li>
+		<li><a href="#">Citas</a></li>
+		<li><a href="#">Citas de Juan Negrín</a></li>
+	</ul>
 {% endblock hormiga %}
 
 {% block body %}
 
-    <h1>Citas de Juan Negrín</h1>
-    <br />
-    {% for object in object_list %}
-        {% include "contenidos/_cita_de.html" %}
-    {% endfor %}
+	<div id="citade">
 
-    {# TODO: Activar el formulario de contacto #}
+		<h1>Citas de Juan Negrín</h1>
+
+		<hr />
+
+		{% for object in object_list %}
+			{% include "contenidos/_cita_de.html" %}
+		{% endfor %}
+
+		{# TODO: Activar el formulario de contacto #}
+
+	</div>
 
 {% endblock %}

@@ -1,79 +1,82 @@
-<div class="box">
+<div class="ficha box">
 
-    <div class="portada_libro">
-        {% if object.miniatura %}
-        <img src="{{object.miniatura}}" alt="{{object.titulo}}" longdesc="{{object.titulo}} - {{object.autor}}" />
-        {% else %}
-        <img src="{{MEDIA_URL}}uploads/bibliografia/portada-no-disponible.png" alt="Portada no disponible." />
-        {% endif %}
-    </div>
+	<div class="portada_libro">
+		{% if object.miniatura %}
+		<img src="{{object.miniatura}}" alt="{{object.titulo}}" longdesc="{{object.titulo}} - {{object.autor}}" />
+		{% else %}
+		<img src="{{MEDIA_URL}}uploads/bibliografia/portada-no-disponible.png" alt="Portada no disponible." />
+		{% endif %}
+	</div>
 
-    <div class="datos_libro">
+	<div class="datos_libro">
 
-        <dl itemscope itemtype="http://schema.org/Book">
-            {% if object.titulo %}
-            <dt>Titulo:</dt>
-            <dd itemprop="name">
-            {% if object.url %}
-                <a itemprop="url" href="{{object.url}}">{{object.titulo}}</a>
-            {% else %}
-                <a itemprop="url" href="#">{{object.titulo}}</a>
-            {% endif %}
+		<dl itemscope itemtype="http://schema.org/Book">
+			{% if object.titulo %}
+			<dt>Titulo:</dt>
+			<dd itemprop="name">
+			{% if object.url %}
+				<a itemprop="url" href="{{object.url}}">{{object.titulo}}</a>
+			{% else %}
+                <span>{{object.titulo}}</span>
+			{% endif %}
 
-            &nbsp;{% if user.is_superuser %}<a href="{% url 'admin:contenidos_libro_change' object.id %}">&#9998;</a>{% endif %}</dd>
-            {% endif %}
+			&nbsp;{% if user.is_superuser %}<a href="{% url 'admin:contenidos_libro_change' object.id %}">&#9998;</a>{% endif %}</dd>
+			{% endif %}
 
-            {% if object.descripcion %}
-            <dt>Descripcion:</dt>
-            <dd itemprop="description">{{object.resumen}}</dd>
-            {% endif %}
+			{% if object.descripcion %}
+			<dt>Descripcion:</dt>
+			<dd itemprop="description">{{object.resumen}}</dd>
+			{% endif %}
 
-            {% if object.autor %}
-            <dt>Autor:</dt>
-            <dd itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{object.autor}}</span></dd>
-            {% endif %}
+			{% if object.autor %}
+			<dt>Autor:</dt>
+			<dd itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{object.autor}}</span></dd>
+			{% endif %}
 
-            {% if object.editorial %}
-            <dt>Publicado por:</dt>
-            <dd itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">{{object.editorial}}</span></dd>
-            {% endif %}
+			{% if object.editorial %}
+			<dt>Publicado por:</dt>
+			<dd itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">{{object.editorial}}</span></dd>
+			{% endif %}
 
-            {% if object.fecha %}
-            <dt>Publicacion:</dt>
-            <dd><meta itemprop="datePublished" content="{{object.fecha|date:"Y-m-d"}}">{{object.fecha|date:"Y"}}</dd>
-            {% endif %}
+			{% if object.fecha %}
+			<dt>Publicacion:</dt>
+			<dd><meta itemprop="datePublished" content="{{object.fecha|date:"Y-m-d"}}">{{object.fecha|date:"Y"}}</dd>
+			{% endif %}
 
-            {% if object.edicionlibro %}
-            <dt>Edicion:</dt>
-            <dd><span itemprop="bookEdition">{{object.edicionlibro}}</span></dd>
-            {% endif %}
+			{% if object.edicionlibro %}
+			<dt>Edicion:</dt>
+			<dd><span itemprop="bookEdition">{{object.edicionlibro}}</span></dd>
+			{% endif %}
 
-            {% if object.tipo %}
-            <dt>Disponible en</dt>
-            <dd><link itemprop="bookFormat" href="http://schema.org/Hardcover">{{object.tipo}}</dd>
-            {% endif %}
+			{% if object.tipo %}
+			<dt>Disponible en</dt>
+			<dd><link itemprop="bookFormat" href="http://schema.org/Hardcover">{{object.tipo}}</dd>
+			{% endif %}
 
-            {% if object.pais %}
-            <dt>Pais:</dt>
-            <dd>{{object.pais}}</dd>
-            {% endif %}
+			{% if object.pais %}
+			<dt>Pais:</dt>
+			<dd>{{object.pais}}</dd>
+			{% endif %}
 
-            {% if object.idioma %}
-            <dt>Idioma:</dt>
-            <dd>{{object.idioma}}</dd>
-            {% endif %}
+			{% if object.idioma %}
+			<dt>Idioma:</dt>
+			<dd>{{object.idioma}}</dd>
+			{% endif %}
 
-            {% if object.isbn %}
-            <dt>ISBN:</dt>
-            <dd><span itemprop="isbn">{{object.isbn}}</span></dd>
-            {% endif %}
+			{% if object.isbn %}
+			<dt>ISBN:</dt>
+			<dd><span itemprop="isbn">{{object.isbn}}</span></dd>
+			{% endif %}
 
-            {% if object.precio %}
-            <dt>Precio:</dt>
-            <dd>{{object.precio}} €</dd>
-            {% endif %}
-        </dl>
+			{% if object.precio %}
+			<dt>Precio:</dt>
+			<dd>{{object.precio}} €</dd>
+			{% endif %}
+		</dl>
 
-    </div>
+	</div>
 
 </div>
+
+<br />
+<br />

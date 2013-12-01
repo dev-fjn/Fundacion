@@ -11,27 +11,39 @@
 section#variable_2col{
 
 	section#body{
-		text-align: justify;
-
+		
 		div.flatpage-i18n{
 			@include border-radius($radio-standar);
+			text-align: justify;
 			//background-color: Red;
 			//max-width: 69%;
 			min-height:em(480px);
 			margin: em($font_base);
 			border: em($font_base);
-			padding: em($font_base);
-
-			//font: inherit;
-			//font-size: 100%;
+			padding: em($font_base) 0px em($font_base) em($font_base);
 
 			h1{
 				font-weight:700;
 			}
 
-			img{
-				@include drop-shadow-transform-requirement($color01);
-				padding: 0 em($font_base) em($font_base) 0;
+			hr{
+				color: lighten($color02, 20%);
+			}
+
+			figure{
+				//@include drop-shadow-transform-requirement($color01);
+				//display: inline;
+				float: right;
+				text-align: center;
+				padding: em($font_base/2);
+				//border-botton: 1px $colo02 solid;
+				border-bottom: $color02 1px solid;
+				img{
+					//@include drop-shadow-lifted-corners;
+				}
+				figcaption{
+					//background-color: $color02;
+				}
 			}
 
 			p{
@@ -53,25 +65,39 @@ section#variable_2col{
 
 		}
 		div.presencia{
-			//background-color: Red;
 			@include border-radius($radio-standar);
+			text-align: justify;
+			//background-color: Red;
+			//max-width: 69%;
 			min-height:em(480px);
 			margin: em($font_base);
 			border: em($font_base);
-			padding: em($font_base);
-			h1{
-				font-weight:700;
-			}
+			padding: em($font_base) 0px em($font_base) em($font_base);   
+	
+			h1{font-weight:700;}
+
 			dl{
 				dt{
-					background-color: $color03;
-					span{
-						//max-height: ( $font_base * 1.5);
-						vertical-align: top;
-						color: $color01;
+					figure{
+						figcaption{
+							text-align: center;
+						}
 					}
 				}
+				dd{
+					border: 0 em($font_base);
+					h2{
+						font-weight:700;
+						text-align: inherit;
+						font-size: inherit;
+					}
+					p{}
+				}
+				hr{color: lighten($color02, 20%);}
 			}
+
+
+
 		}
 		div.evento{
 			@include border-radius($radio-standar);

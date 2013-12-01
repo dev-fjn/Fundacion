@@ -1,36 +1,36 @@
 {% extends 'base_1col.html' %}
 
 {% block title %}
-    {{block.super}} - {{tipo}} - {{ count|yesno:"Busqueda,Listado" }}
+	{{block.super}} - {{tipo}} - {{ count|yesno:"Busqueda,Listado" }}
 {% endblock title %}
 
 {% block hormiga %}
-    <ul>
-        <li><a href="#">{{base_tipo}}</a></li>
-        <li><a href="#">{{tipo}}</a></li>
-    </ul>
+	<ul>
+		<li><a href="#">{{base_tipo}}</a></li>
+		<li><a href="#">{{tipo}}</a></li>
+	</ul>
 {% endblock hormiga %}
 
 {% block body %}
 
-    <div class="documento_list">
+	<div class="documento_list">
 
-        <h1>{{tipo}}</h1>
+		<h1>{{tipo}}</h1>
 
-        {% if count %}
-            <h2>{{count}} resultados {% if user.is_superuser %}<a href="{% url 'admin:contenidos_documento_add' %}">&#8862;</a>{% endif %}</h2>
+		{% if count %}
+			<h2>{{count}} resultados {% if user.is_superuser %}<a href="{% url 'admin:contenidos_documento_add' %}">&#8862;</a>{% endif %}</h2>
 
-            {% for object in object_list %}
-                {% include "contenidos/_documento.html" %}
-            {% endfor %}
+			{% for object in object_list %}
+				{% include "contenidos/_documento.html" %}
+			{% endfor %}
 
-            {% include "contenidos/_paginator.html" %}
+			{% include "contenidos/_paginator.html" %}
 
-        {% else %}
+		{% else %}
 
-            <h2>(No hay documentos) {% if user.is_superuser %}<a href="{% url 'admin:contenidos_documento_add' %}">&#8862;</a>{% endif %}</h2>
+			<h2>(No hay documentos) {% if user.is_superuser %}<a href="{% url 'admin:contenidos_documento_add' %}">&#8862;</a>{% endif %}</h2>
 
-        {% endif %}
+		{% endif %}
 
-    </div>
+	</div>
 {% endblock body %}

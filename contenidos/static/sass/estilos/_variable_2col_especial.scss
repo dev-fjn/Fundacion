@@ -3,8 +3,6 @@
 section#variable_2col_especial{
 
 	section#body{
-		// TODO
-		//@include background-image(linear-gradient($color_menu01, $color_menu02));
 		@include span-columns(9, 12);
 		@include border-radius($radio-standar);
 

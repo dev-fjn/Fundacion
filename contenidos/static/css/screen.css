@@ -628,309 +628,306 @@ div#ourinfo section#services {
   min-height: 1.5em;
 }
 
-/* line 14, ../sass/estilos/_variable_1col.scss */
-.box {
-  position: relative;
-  width: 60%;
-  background: #d8d6cc;
-  border-radius: 0.25em;
-  -moz-border-radius: 0.25em;
-  padding: 2em 1.5em;
-  color: rgba(0, 0, 0, 0.8);
-  text-shadow: 0 1px 0 #fff;
-  line-height: 1.5;
-  margin: 60px auto;
-}
-/* line 27, ../sass/estilos/_variable_1col.scss */
-.box:before, .box:after {
-  z-index: -1;
-  position: absolute;
-  content: "";
-  bottom: 0.9375em;
-  left: 0.625em;
-  width: 50%;
-  top: 80%;
-  max-width: 18.75em;
-  background: rgba(0, 0, 0, 0.7);
-  -webkit-box-shadow: 0 0.9375em 0.625em rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: 0 0.9375em 0.625em rgba(0, 0, 0, 0.7);
-  box-shadow: 0 0.9375em 0.625em rgba(0, 0, 0, 0.7);
-  -webkit-transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
-  -o-transform: rotate(-3deg);
-  -ms-transform: rotate(-3deg);
-  transform: rotate(-3deg);
-}
-/* line 47, ../sass/estilos/_variable_1col.scss */
-.box:after {
-  -webkit-transform: rotate(3deg);
-  -moz-transform: rotate(3deg);
-  -o-transform: rotate(3deg);
-  -ms-transform: rotate(3deg);
-  transform: rotate(3deg);
-  right: 0.625em;
-  left: auto;
-}
-
-/* line 58, ../sass/estilos/_variable_1col.scss */
+/* line 17, ../sass/estilos/_variable_1col.scss */
 section#variable_1col {
-  -webkit-border-radius: 0.625em;
-  -moz-border-radius: 0.625em;
-  -ms-border-radius: 0.625em;
-  -o-border-radius: 0.625em;
-  border-radius: 0.625em;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
 }
-/* line 61, ../sass/estilos/_variable_1col.scss */
-section#variable_1col section#body {
-  text-align: justify;
-}
-/* line 64, ../sass/estilos/_variable_1col.scss */
+/* line 23, ../sass/estilos/_variable_1col.scss */
 section#variable_1col section#body div#libro_list {
-  -webkit-border-radius: 0.625em;
-  -moz-border-radius: 0.625em;
-  -ms-border-radius: 0.625em;
-  -o-border-radius: 0.625em;
-  border-radius: 0.625em;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
   min-height: 30em;
   margin: 1em;
   border: 1em;
   padding: 1em;
 }
-/* line 73, ../sass/estilos/_variable_1col.scss */
+/* line 30, ../sass/estilos/_variable_1col.scss */
 section#variable_1col section#body div#libro_list h1 {
   font-weight: 700;
 }
-/* line 76, ../sass/estilos/_variable_1col.scss */
+/* line 34, ../sass/estilos/_variable_1col.scss */
 section#variable_1col section#body div#libro_list h2 {
   text-align: center;
 }
+/* line 38, ../sass/estilos/_variable_1col.scss */
+section#variable_1col section#body div#libro_list div.ficha {
+  overflow: hidden;
+  *zoom: 1;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e3e1da), color-stop(100%, #b3af9f));
+  background-image: -webkit-linear-gradient(#e3e1da, #b3af9f);
+  background-image: -moz-linear-gradient(#e3e1da, #b3af9f);
+  background-image: -o-linear-gradient(#e3e1da, #b3af9f);
+  background-image: linear-gradient(#e3e1da, #b3af9f);
+  margin: 0 auto;
+  width: 86%;
+}
+/* line 51, ../sass/estilos/_variable_1col.scss */
+section#variable_1col section#body div#libro_list div.ficha .datos_libro dl {
+  width: 100%;
+  padding: 0.5em;
+}
+/* line 55, ../sass/estilos/_variable_1col.scss */
+section#variable_1col section#body div#libro_list div.ficha .datos_libro dl dt {
+  float: left;
+  clear: left;
+  width: 24%;
+  /* adjust the width; make sure the total of both is 100% */
+  text-align: right;
+  font-weight: 400;
+}
+/* line 70, ../sass/estilos/_variable_1col.scss */
+section#variable_1col section#body div#libro_list div.ficha .datos_libro dl dd {
+  float: left;
+  width: 76%;
+  /* adjust the width; make sure the total of both is 100% */
+  text-indent: 2ex;
+}
 /* line 81, ../sass/estilos/_variable_1col.scss */
-section#variable_1col section#body div#libro_list div.box {
-  background-color: #d8d6cc;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-box;
-  display: box;
-  -webkit-box-orient: horizontal;
-  -moz-box-orient: horizontal;
-  -ms-box-orient: horizontal;
-  box-orient: horizontal;
-  -webkit-box-align: stretch;
-  -moz-box-align: stretch;
-  -ms-box-align: stretch;
-  box-align: stretch;
-  -webkit-box-direction: normal;
-  -moz-box-direction: normal;
-  -ms-box-direction: normal;
-  box-direction: normal;
-  width: 90%;
-}
-/* line 92, ../sass/estilos/_variable_1col.scss */
-section#variable_1col section#body div#libro_list div.box .datos_libro, section#variable_1col section#body div#libro_list div.box .portada_libro {
-  padding: 1.25em;
-}
-/* line 95, ../sass/estilos/_variable_1col.scss */
-section#variable_1col section#body div#libro_list div.box .datos_libro {
-  -webkit-box-flex: 4;
-  -moz-box-flex: 4;
-  -ms-box-flex: 4;
-  box-flex: 4;
-  background-color: #d8d6cc;
-}
-/* line 99, ../sass/estilos/_variable_1col.scss */
-section#variable_1col section#body div#libro_list div.box .datos_libro dl dt {
-  font-weight: 700;
-  font-variant-caps: unicase;
-}
-/* line 103, ../sass/estilos/_variable_1col.scss */
-section#variable_1col section#body div#libro_list div.box .datos_libro dl dd {
-  text-indent: 96px;
-  display: block;
-}
-/* line 109, ../sass/estilos/_variable_1col.scss */
-section#variable_1col section#body div#libro_list div.box .portada_libro {
-  -webkit-box-flex: 1;
-  -moz-box-flex: 1;
-  -ms-box-flex: 1;
-  box-flex: 1;
-  -webkit-box-shadow: inset 0px 0px 5px #333333;
-  -moz-box-shadow: inset 0px 0px 5px #333333;
-  box-shadow: inset 0px 0px 5px #333333;
-  background-color: white;
-  margin-right: 1px;
-}
-/* line 115, ../sass/estilos/_variable_1col.scss */
-section#variable_1col section#body div#libro_list div.box .portada_libro img {
+section#variable_1col section#body div#libro_list div.ficha .portada_libro img {
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
-  margin: auto 0;
   text-align: center;
   max-width: 12.5em;
+  max-height: 16.625em;
+  margin: auto 0;
 }
-/* line 128, ../sass/estilos/_variable_1col.scss */
+/* line 92, ../sass/estilos/_variable_1col.scss */
 section#variable_1col section#body div#libro_list div.paginator {
   background-color: transparent;
   text-align: center;
 }
-/* line 135, ../sass/estilos/_variable_1col.scss */
+/* line 99, ../sass/estilos/_variable_1col.scss */
 section#variable_1col section#body div.documento_list {
-  -webkit-border-radius: 0.625em;
-  -moz-border-radius: 0.625em;
-  -ms-border-radius: 0.625em;
-  -o-border-radius: 0.625em;
-  border-radius: 0.625em;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
   min-height: 30em;
   margin: 1em;
   border: 1em;
   padding: 1em;
 }
-/* line 141, ../sass/estilos/_variable_1col.scss */
+/* line 105, ../sass/estilos/_variable_1col.scss */
 section#variable_1col section#body div.documento_list h1 {
   font-weight: 700;
 }
-/* line 144, ../sass/estilos/_variable_1col.scss */
+/* line 109, ../sass/estilos/_variable_1col.scss */
 section#variable_1col section#body div.documento_list h2 {
   font-weight: 500;
 }
-/* line 147, ../sass/estilos/_variable_1col.scss */
+/* line 113, ../sass/estilos/_variable_1col.scss */
 section#variable_1col section#body div.documento_list div.doc {
-  background-color: #E6E6FA;
-  min-height: 23.75em;
   margin: 1em;
   border: 1em;
   padding: 1em;
+  overflow: hidden;
+  *zoom: 1;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e3e1da), color-stop(100%, #b3af9f));
+  background-image: -webkit-linear-gradient(#e3e1da, #b3af9f);
+  background-image: -moz-linear-gradient(#e3e1da, #b3af9f);
+  background-image: -o-linear-gradient(#e3e1da, #b3af9f);
+  background-image: linear-gradient(#e3e1da, #b3af9f);
+  margin: 0 auto;
+  width: 86%;
 }
-
-/* line 13, ../sass/estilos/_variable_2col.scss */
-section#variable_2col section#body {
-  text-align: justify;
+/* line 127, ../sass/estilos/_variable_1col.scss */
+section#variable_1col section#body div.documento_list div.doc header span#titulo {
+  font-weight: 700;
 }
-/* line 16, ../sass/estilos/_variable_2col.scss */
-section#variable_2col section#body div.flatpage-i18n {
-  -webkit-border-radius: 0.625em;
-  -moz-border-radius: 0.625em;
-  -ms-border-radius: 0.625em;
-  -o-border-radius: 0.625em;
-  border-radius: 0.625em;
+/* line 130, ../sass/estilos/_variable_1col.scss */
+section#variable_1col section#body div.documento_list div.doc header span#autor {
+  font-weight: 400;
+}
+/* line 134, ../sass/estilos/_variable_1col.scss */
+section#variable_1col section#body div.documento_list div.doc div.documentos_adjuntos {
+  margin: 1em;
+  border: 1em;
+  padding: 1em;
+  text-align: center;
+}
+/* line 143, ../sass/estilos/_variable_1col.scss */
+section#variable_1col section#body div.documento_list div.doc div.documentos_adjuntos ul.adjuntos li section audio {
+  min-width: 20em;
+}
+/* line 147, ../sass/estilos/_variable_1col.scss */
+section#variable_1col section#body div.documento_list div.doc div.documentos_adjuntos ul.adjuntos li section video {
+  outline: #918b74 0.25em solid;
+  min-height: 15em;
+  min-width: 20em;
+}
+/* line 159, ../sass/estilos/_variable_1col.scss */
+section#variable_1col section#body div#citade {
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
   min-height: 30em;
   margin: 1em;
   border: 1em;
   padding: 1em;
 }
-/* line 28, ../sass/estilos/_variable_2col.scss */
+/* line 166, ../sass/estilos/_variable_1col.scss */
+section#variable_1col section#body div#citade h1 {
+  font-weight: 700;
+}
+/* line 171, ../sass/estilos/_variable_1col.scss */
+section#variable_1col section#body div#citasobre {
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
+  min-height: 30em;
+  margin: 1em;
+  border: 1em;
+  padding: 1em;
+}
+/* line 178, ../sass/estilos/_variable_1col.scss */
+section#variable_1col section#body div#citasobre h1 {
+  font-weight: 700;
+}
+
+/* line 15, ../sass/estilos/_variable_2col.scss */
+section#variable_2col section#body div.flatpage-i18n {
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
+  text-align: justify;
+  min-height: 30em;
+  margin: 1em;
+  border: 1em;
+  padding: 1em 0px 1em 1em;
+}
+/* line 25, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n h1 {
   font-weight: 700;
 }
-/* line 32, ../sass/estilos/_variable_2col.scss */
-section#variable_2col section#body div.flatpage-i18n img {
-  position: relative;
-  padding: 0 1em 1em 0;
+/* line 29, ../sass/estilos/_variable_2col.scss */
+section#variable_2col section#body div.flatpage-i18n hr {
+  color: #eeede9;
 }
-/* line 15, ../../../../../../var/lib/gems/1.9.1/gems/compass-recipes-0.3.0/stylesheets/recipes/shadow/drop/_transform-requirement.scss */
-section#variable_2col section#body div.flatpage-i18n img > :last-child::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: white;
+/* line 33, ../sass/estilos/_variable_2col.scss */
+section#variable_2col section#body div.flatpage-i18n figure {
+  float: right;
+  text-align: center;
+  padding: 0.5em;
+  border-bottom: #c2beaf 1px solid;
 }
-/* line 37, ../sass/estilos/_variable_2col.scss */
+/* line 49, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n p {
   padding-bottom: 1em;
 }
-/* line 40, ../sass/estilos/_variable_2col.scss */
+/* line 52, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n dl {
-  -webkit-border-radius: 0.625em;
-  -moz-border-radius: 0.625em;
-  -ms-border-radius: 0.625em;
-  -o-border-radius: 0.625em;
-  border-radius: 0.625em;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
 }
-/* line 42, ../sass/estilos/_variable_2col.scss */
+/* line 54, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n dl dt {
   font-weight: 700;
   padding-top: 1em;
 }
-/* line 46, ../sass/estilos/_variable_2col.scss */
+/* line 58, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n dl dd {
   text-indent: 1.5em;
 }
-/* line 48, ../sass/estilos/_variable_2col.scss */
+/* line 60, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n dl dd:before {
   content: "\25B9\00A0";
 }
-/* line 55, ../sass/estilos/_variable_2col.scss */
+/* line 67, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.presencia {
-  -webkit-border-radius: 0.625em;
-  -moz-border-radius: 0.625em;
-  -ms-border-radius: 0.625em;
-  -o-border-radius: 0.625em;
-  border-radius: 0.625em;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
+  text-align: justify;
   min-height: 30em;
   margin: 1em;
   border: 1em;
-  padding: 1em;
+  padding: 1em 0px 1em 1em;
 }
-/* line 62, ../sass/estilos/_variable_2col.scss */
+/* line 77, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.presencia h1 {
   font-weight: 700;
 }
-/* line 66, ../sass/estilos/_variable_2col.scss */
-section#variable_2col section#body div.presencia dl dt {
-  background-color: #918b74;
+/* line 82, ../sass/estilos/_variable_2col.scss */
+section#variable_2col section#body div.presencia dl dt figure figcaption {
+  text-align: center;
 }
-/* line 68, ../sass/estilos/_variable_2col.scss */
-section#variable_2col section#body div.presencia dl dt span {
-  vertical-align: top;
-  color: white;
+/* line 87, ../sass/estilos/_variable_2col.scss */
+section#variable_2col section#body div.presencia dl dd {
+  border: 0 1em;
 }
-/* line 76, ../sass/estilos/_variable_2col.scss */
+/* line 89, ../sass/estilos/_variable_2col.scss */
+section#variable_2col section#body div.presencia dl dd h2 {
+  font-weight: 700;
+  text-align: inherit;
+  font-size: inherit;
+}
+/* line 96, ../sass/estilos/_variable_2col.scss */
+section#variable_2col section#body div.presencia dl hr {
+  color: #eeede9;
+}
+/* line 102, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.evento {
-  -webkit-border-radius: 0.625em;
-  -moz-border-radius: 0.625em;
-  -ms-border-radius: 0.625em;
-  -o-border-radius: 0.625em;
-  border-radius: 0.625em;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
   min-height: 30em;
   margin: 1em;
   border: 1em;
   padding: 1em;
 }
-/* line 82, ../sass/estilos/_variable_2col.scss */
+/* line 108, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.evento h1 {
   color: white;
   background-color: #918b74;
   padding-left: 1em;
 }
-/* line 88, ../sass/estilos/_variable_2col.scss */
+/* line 114, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.evento figure img {
   width: 100%;
 }
-/* line 90, ../sass/estilos/_variable_2col.scss */
+/* line 116, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.evento figure figcaption h2 {
   padding-left: 1em;
   color: white;
   background-color: #918b74;
 }
-/* line 95, ../sass/estilos/_variable_2col.scss */
+/* line 121, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.evento figure figcaption h2 span a {
   color: white;
 }
-/* line 98, ../sass/estilos/_variable_2col.scss */
+/* line 124, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.evento figure figcaption button {
   text-align: right;
 }
-/* line 104, ../sass/estilos/_variable_2col.scss */
+/* line 130, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.zinnia {
-  -webkit-border-radius: 0.625em;
-  -moz-border-radius: 0.625em;
-  -ms-border-radius: 0.625em;
-  -o-border-radius: 0.625em;
-  border-radius: 0.625em;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
   min-height: 30em;
   margin: 1em;
   border: 1em;
@@ -943,13 +940,13 @@ section#variable_2col_especial section#body {
   float: left;
   margin-right: 0.93458%;
   display: inline;
-  -webkit-border-radius: 0.625em;
-  -moz-border-radius: 0.625em;
-  -ms-border-radius: 0.625em;
-  -o-border-radius: 0.625em;
-  border-radius: 0.625em;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
 }
-/* line 11, ../sass/estilos/_variable_2col_especial.scss */
+/* line 9, ../sass/estilos/_variable_2col_especial.scss */
 section#variable_2col_especial section#body div#space {
   max-width: 100%;
   min-height: 30em;
@@ -957,14 +954,14 @@ section#variable_2col_especial section#body div#space {
   border: 1em;
   padding: 1em;
 }
-/* line 19, ../sass/estilos/_variable_2col_especial.scss */
+/* line 17, ../sass/estilos/_variable_2col_especial.scss */
 section#variable_2col_especial section#body div#space section#bodyleft {
   width: 43.75%;
   float: left;
   margin-right: 1.25%;
   display: inline;
 }
-/* line 23, ../sass/estilos/_variable_2col_especial.scss */
+/* line 21, ../sass/estilos/_variable_2col_especial.scss */
 section#variable_2col_especial section#body div#space section#bodyright {
   width: 55.0%;
   float: right;
@@ -972,7 +969,7 @@ section#variable_2col_especial section#body div#space section#bodyright {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 29, ../sass/estilos/_variable_2col_especial.scss */
+/* line 27, ../sass/estilos/_variable_2col_especial.scss */
 section#variable_2col_especial aside#asider {
   width: 24.29907%;
   float: right;
@@ -980,63 +977,63 @@ section#variable_2col_especial aside#asider {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 37, ../sass/estilos/_variable_2col_especial.scss */
+/* line 35, ../sass/estilos/_variable_2col_especial.scss */
 section#variable_2col_especial aside#asider section#agenda {
-  -webkit-border-radius: 0.625em;
-  -moz-border-radius: 0.625em;
-  -ms-border-radius: 0.625em;
-  -o-border-radius: 0.625em;
-  border-radius: 0.625em;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
   padding: .2em;
   margin: .2em;
   border: 1px solid #c1b7a4;
 }
-/* line 45, ../sass/estilos/_variable_2col_especial.scss */
+/* line 43, ../sass/estilos/_variable_2col_especial.scss */
 section#variable_2col_especial aside#asider section#agenda h2 {
   text-align: center;
 }
-/* line 51, ../sass/estilos/_variable_2col_especial.scss */
+/* line 49, ../sass/estilos/_variable_2col_especial.scss */
 section#variable_2col_especial aside#asider section#varios {
-  -webkit-border-radius: 0.625em;
-  -moz-border-radius: 0.625em;
-  -ms-border-radius: 0.625em;
-  -o-border-radius: 0.625em;
-  border-radius: 0.625em;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
   padding: .2em;
   margin: .2em;
   border: 1px solid #c1b7a4;
 }
-/* line 60, ../sass/estilos/_variable_2col_especial.scss */
+/* line 58, ../sass/estilos/_variable_2col_especial.scss */
 section#variable_2col_especial aside#asider section#varios section#internal {
-  -webkit-border-radius: 0.625em;
-  -moz-border-radius: 0.625em;
-  -ms-border-radius: 0.625em;
-  -o-border-radius: 0.625em;
-  border-radius: 0.625em;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
   padding: .2em;
   margin: .2em;
   border: 1px solid #c1b7a4;
 }
-/* line 68, ../sass/estilos/_variable_2col_especial.scss */
+/* line 66, ../sass/estilos/_variable_2col_especial.scss */
 section#variable_2col_especial aside#asider section#varios section#internal h2 {
   text-align: center;
 }
-/* line 73, ../sass/estilos/_variable_2col_especial.scss */
+/* line 71, ../sass/estilos/_variable_2col_especial.scss */
 section#variable_2col_especial aside#asider section#varios section#externas {
-  -webkit-border-radius: 0.625em;
-  -moz-border-radius: 0.625em;
-  -ms-border-radius: 0.625em;
-  -o-border-radius: 0.625em;
-  border-radius: 0.625em;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
   padding: .2em;
   margin: .2em;
   border: 1px solid #c1b7a4;
 }
-/* line 81, ../sass/estilos/_variable_2col_especial.scss */
+/* line 79, ../sass/estilos/_variable_2col_especial.scss */
 section#variable_2col_especial aside#asider section#varios section#externas h2 {
   text-align: center;
 }
-/* line 87, ../sass/estilos/_variable_2col_especial.scss */
+/* line 85, ../sass/estilos/_variable_2col_especial.scss */
 section#variable_2col_especial aside#asider section#banner2 {
   text-align: center;
   width: 100%;
@@ -1044,11 +1041,11 @@ section#variable_2col_especial aside#asider section#banner2 {
 
 /* line 28, ../sass/estilos/_agenda.scss */
 section#agenda {
-  -webkit-border-radius: 1.25em;
-  -moz-border-radius: 1.25em;
-  -ms-border-radius: 1.25em;
-  -o-border-radius: 1.25em;
-  border-radius: 1.25em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  border-radius: 0.5em;
   border: 1px solid #c1b7a4;
   padding: 0.5em;
   margin: 0.5em;
@@ -1171,22 +1168,22 @@ section#agenda div.calendario_eventos table tbody tr td.evento_hoy:hover {
 
 /* line 5, ../sass/estilos/_eventos.scss */
 section#varios {
-  -webkit-border-radius: 0.625em;
-  -moz-border-radius: 0.625em;
-  -ms-border-radius: 0.625em;
-  -o-border-radius: 0.625em;
-  border-radius: 0.625em;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
   border: 1px solid #c1b7a4;
   padding: .2em;
   margin: .5em;
 }
 /* line 11, ../sass/estilos/_eventos.scss */
 section#varios section#internal {
-  -webkit-border-radius: 0.625em;
-  -moz-border-radius: 0.625em;
-  -ms-border-radius: 0.625em;
-  -o-border-radius: 0.625em;
-  border-radius: 0.625em;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
   border: 1px solid #c1b7a4;
   padding: 0.3125em;
   margin: 0.3125em;
@@ -1197,11 +1194,11 @@ section#varios section#internal h2 {
 }
 /* line 21, ../sass/estilos/_eventos.scss */
 section#varios section#externas {
-  -webkit-border-radius: 0.625em;
-  -moz-border-radius: 0.625em;
-  -ms-border-radius: 0.625em;
-  -o-border-radius: 0.625em;
-  border-radius: 0.625em;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
   border: 1px solid #c1b7a4;
   padding: 0.3125em;
   margin: 0.3125em;
@@ -1226,35 +1223,35 @@ footer#footer div#finicial {
 }
 /* line 27, ../sass/estilos/_footer.scss */
 footer#footer div#col1 {
-  -webkit-border-radius: 0.625em;
-  -moz-border-radius: 0.625em;
-  -ms-border-radius: 0.625em;
-  -o-border-radius: 0.625em;
-  border-radius: 0.625em;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
 }
 /* line 31, ../sass/estilos/_footer.scss */
 footer#footer div#col2 {
-  -webkit-border-radius: 0.625em;
-  -moz-border-radius: 0.625em;
-  -ms-border-radius: 0.625em;
-  -o-border-radius: 0.625em;
-  border-radius: 0.625em;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
 }
 /* line 36, ../sass/estilos/_footer.scss */
 footer#footer div#col3 {
-  -webkit-border-radius: 0.625em;
-  -moz-border-radius: 0.625em;
-  -ms-border-radius: 0.625em;
-  -o-border-radius: 0.625em;
-  border-radius: 0.625em;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
 }
 /* line 40, ../sass/estilos/_footer.scss */
 footer#footer div#col4 {
-  -webkit-border-radius: 0.625em;
-  -moz-border-radius: 0.625em;
-  -ms-border-radius: 0.625em;
-  -o-border-radius: 0.625em;
-  border-radius: 0.625em;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
 }
 /* line 44, ../sass/estilos/_footer.scss */
 footer#footer div#ffinal {
@@ -1267,7 +1264,58 @@ footer#footer div#legal {
   background-color: #bbb5a4;
 }
 
-/* line 4, ../sass/_clases.scss */
+/* line 11, ../sass/_clases.scss */
+figure img {
+  -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* line 15, ../sass/_clases.scss */
+.box {
+  position: relative;
+  width: 60%;
+  background: #d8d6cc;
+  border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  padding: 2em 1.5em;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 0 1px 0 #fff;
+  line-height: 1.5;
+  margin: 60px auto;
+}
+/* line 28, ../sass/_clases.scss */
+.box:before, .box:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 0.9375em;
+  left: 0.625em;
+  width: 50%;
+  top: 80%;
+  max-width: 18.75em;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0 0.9375em 0.625em rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 0.9375em 0.625em rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0.9375em 0.625em rgba(0, 0, 0, 0.7);
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+/* line 48, ../sass/_clases.scss */
+.box:after {
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 0.625em;
+  left: auto;
+}
+
+/* line 59, ../sass/_clases.scss */
 .ellipsis {
   width: 100%;
   white-space: nowrap;
@@ -1279,76 +1327,76 @@ footer#footer div#legal {
   text-overflow: ellipsis;
 }
 
-/* line 14, ../sass/_clases.scss */
+/* line 69, ../sass/_clases.scss */
 .poema {
   margin: auto;
   padding: 1.25em 0;
   text-align: left;
   font-style: italic;
 }
-/* line 20, ../sass/_clases.scss */
+/* line 75, ../sass/_clases.scss */
 .poema h1, .poema h2 {
   font-weight: normal;
   text-align: center;
 }
-/* line 24, ../sass/_clases.scss */
+/* line 79, ../sass/_clases.scss */
 .poema h1 {
   font-size: 2.125em;
   line-height: 1.2;
   margin-bottom: 0.625em;
 }
-/* line 29, ../sass/_clases.scss */
+/* line 84, ../sass/_clases.scss */
 .poema h2 {
   color: #666;
   font-size: 1.125em;
   font-style: italic;
   margin-bottom: 0.3125em;
 }
-/* line 35, ../sass/_clases.scss */
+/* line 90, ../sass/_clases.scss */
 .poema p {
   line-height: 1.2;
   margin-bottom: 0.5em;
 }
-/* line 40, ../sass/_clases.scss */
+/* line 95, ../sass/_clases.scss */
 .poema h2:before {
   content: '— ';
 }
-/* line 43, ../sass/_clases.scss */
+/* line 98, ../sass/_clases.scss */
 .poema h2:after {
   content: ' —';
 }
-/* line 46, ../sass/_clases.scss */
+/* line 101, ../sass/_clases.scss */
 .poema h2 + p:first-letter {
   float: left;
   font-size: 2.375em;
   line-height: 1;
   margin: 0.125em 0.3125em 0 0;
 }
-/* line 54, ../sass/_clases.scss */
+/* line 109, ../sass/_clases.scss */
 .poema p:first-line {
   letter-spacing: 0.0625em;
 }
-/* line 58, ../sass/_clases.scss */
+/* line 113, ../sass/_clases.scss */
 .poema p:last-child {
   margin-bottom: 0.625em;
   padding-bottom: 0.625em;
 }
 
-/* line 66, ../sass/_clases.scss */
+/* line 121, ../sass/_clases.scss */
 .firma {
   text-align: right;
 }
 
-/* line 71, ../sass/_clases.scss */
+/* line 126, ../sass/_clases.scss */
 .fallecidos {
   text-indent: 1.5em;
 }
-/* line 73, ../sass/_clases.scss */
+/* line 128, ../sass/_clases.scss */
 .fallecidos:after {
   content: "\205C";
 }
 
-/* line 79, ../sass/_clases.scss */
+/* line 134, ../sass/_clases.scss */
 .cita {
   font-style: italic;
   margin: 0.25em 0;
@@ -1357,7 +1405,7 @@ footer#footer div#legal {
   position: relative;
   color: #383838;
 }
-/* line 90, ../sass/_clases.scss */
+/* line 145, ../sass/_clases.scss */
 .cita:before {
   display: block;
   content: "\275D";
@@ -1367,14 +1415,14 @@ footer#footer div#legal {
   top: -20px;
   color: #7a7a7a;
 }
-/* line 102, ../sass/_clases.scss */
+/* line 157, ../sass/_clases.scss */
 .cita footer {
   color: #999999;
   font-size: 14px;
   margin-top: 5px;
   text-align: right;
 }
-/* line 110, ../sass/_clases.scss */
+/* line 165, ../sass/_clases.scss */
 .cita footer:before {
   content: "\2014 ";
 }
@@ -1612,14 +1660,51 @@ img {
   *margin-left: -0.5em;
   display: inline;
 }
+/* line 459, ../sass/screen.scss */
+.container div.content section#variable_1col section#body {
+  width: 100%;
+  float: left;
+  margin-right: 1.88679%;
+  display: inline;
+}
+/* line 464, ../sass/screen.scss */
+.container div.content section#variable_1col section#body div#libro_list div.ficha div.portada_libro {
+  width: 32.07547%;
+  float: left;
+  margin-right: 1.88679%;
+  display: inline;
+}
 /* line 467, ../sass/screen.scss */
+.container div.content section#variable_1col section#body div#libro_list div.ficha div.datos_libro {
+  width: 66.03774%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -0.5em;
+  display: inline;
+}
+/* line 480, ../sass/screen.scss */
 .container div.content section#variable_2col section#body {
   width: 74.76636%;
   float: left;
   margin-right: 0.93458%;
   display: inline;
 }
-/* line 473, ../sass/screen.scss */
+/* line 485, ../sass/screen.scss */
+.container div.content section#variable_2col section#body div.presencia dl dt {
+  width: 55.0%;
+  float: left;
+  margin-right: 1.25%;
+  display: inline;
+}
+/* line 488, ../sass/screen.scss */
+.container div.content section#variable_2col section#body div.presencia dl dd {
+  width: 43.75%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -0.5em;
+  display: inline;
+}
+/* line 496, ../sass/screen.scss */
 .container div.content section#variable_2col aside#asider {
   width: 24.29907%;
   float: right;
@@ -1627,21 +1712,21 @@ img {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 492, ../sass/screen.scss */
+/* line 515, ../sass/screen.scss */
 .container div.content section#variable_2col_especial section#body {
   width: 74.76636%;
   float: left;
   margin-right: 0.93458%;
   display: inline;
 }
-/* line 497, ../sass/screen.scss */
+/* line 520, ../sass/screen.scss */
 .container div.content section#variable_2col_especial section#body div#space section#bodyleft {
   width: 43.75%;
   float: left;
   margin-right: 1.25%;
   display: inline;
 }
-/* line 501, ../sass/screen.scss */
+/* line 524, ../sass/screen.scss */
 .container div.content section#variable_2col_especial section#body div#space section#bodyright {
   width: 55.0%;
   float: right;
@@ -1649,7 +1734,7 @@ img {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 509, ../sass/screen.scss */
+/* line 532, ../sass/screen.scss */
 .container div.content section#variable_2col_especial aside#asider {
   width: 24.29907%;
   float: right;
@@ -1657,7 +1742,7 @@ img {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 535, ../sass/screen.scss */
+/* line 558, ../sass/screen.scss */
 .container footer#footer {
   width: 100%;
   float: right;
@@ -1665,7 +1750,7 @@ img {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 538, ../sass/screen.scss */
+/* line 561, ../sass/screen.scss */
 .container footer#footer div#finicial {
   width: 100%;
   float: right;
@@ -1673,28 +1758,28 @@ img {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 542, ../sass/screen.scss */
+/* line 565, ../sass/screen.scss */
 .container footer#footer div#col1 {
   width: 24.29907%;
   float: left;
   margin-right: 0.93458%;
   display: inline;
 }
-/* line 546, ../sass/screen.scss */
+/* line 569, ../sass/screen.scss */
 .container footer#footer div#col2 {
   width: 24.29907%;
   float: left;
   margin-right: 0.93458%;
   display: inline;
 }
-/* line 550, ../sass/screen.scss */
+/* line 573, ../sass/screen.scss */
 .container footer#footer div#col3 {
   width: 24.29907%;
   float: left;
   margin-right: 0.93458%;
   display: inline;
 }
-/* line 554, ../sass/screen.scss */
+/* line 577, ../sass/screen.scss */
 .container footer#footer div#col4 {
   width: 24.29907%;
   float: right;
@@ -1702,7 +1787,7 @@ img {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 558, ../sass/screen.scss */
+/* line 581, ../sass/screen.scss */
 .container footer#footer div#ffinal {
   width: 100%;
   float: right;
@@ -1710,7 +1795,7 @@ img {
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 563, ../sass/screen.scss */
+/* line 586, ../sass/screen.scss */
 .container footer#footer div#legal {
   width: 100%;
   float: right;

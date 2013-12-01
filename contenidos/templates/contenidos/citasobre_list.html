@@ -13,12 +13,19 @@
 {% endblock hormiga %}
 
 {% block body %}
-    <h1>Citas sobre Juan Negrín</h1>
-    <br />
-    {% for object in object_list %}
-        {% include "contenidos/_cita_sobre.html" %}
-    {% endfor %}
 
-    {# TODO: Activar el formulario de contacto #}
+    <div id="citasobre">
+
+		<h1>Citas sobre Juan Negrín</h1>
+
+		<hr />
+
+		{% for object in object_list %}
+			{% include "contenidos/_cita_sobre.html" %}
+		{% endfor %}
+
+		{# TODO: Activar el formulario de contacto #}
+
+    </div>
 
 {% endblock %}

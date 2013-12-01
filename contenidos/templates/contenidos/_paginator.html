@@ -2,10 +2,10 @@
 <div class="paginator">
     <span>
         {% ifnotequal page_obj.first page_obj.number %}
-			<a href="?page={{ page_obj.first }}">|&lt;</a>
+            <a href="?page={{ page_obj.first }}" title="página primera">|&lt;</a>
         {% endifnotequal %}
         {% if page_obj.has_previous %}
-			<a href="?page={{ page_obj.previous_page_number }}">&lt;</a>
+			<a href="?page={{ page_obj.previous_page_number }}" title="página anterior">&lt;</a>
         {% endif %}
         {% for p in page_obj.paginator.page_range %}
 			{% ifequal p page_obj.number %}
@@ -17,10 +17,10 @@
 			({{ page_obj.number }})
         {% endfor %}
         {% if page_obj.has_next %}
-			<a href="?page={{ page_obj.next_page_number }}">&gt;</a>
+			<a href="?page={{ page_obj.next_page_number }}" title="página siguiente">&gt;</a>
         {% endif %}
         {% ifnotequal page_obj.last page_obj.number %}
-			<a href="?page={{ page_obj.last }}">&gt;|</a>
+			<a href="?page={{ page_obj.last }}" title="página última">&gt;|</a>
         {% endifnotequal %}
     </span>
 </div>

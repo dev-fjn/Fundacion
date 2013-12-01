@@ -1,7 +1,7 @@
 {% extends "base_2col.html" %}
 
 {% block title %}
-	{{block.super}} - Presencia
+	{{block.super}} - Presencia de Juan Negrín en la sociedad
 {% endblock title %}
 
 {% block hormiga %}
@@ -17,9 +17,18 @@
 
 		<h1>Presencia</h1>
 
+        <hr />
+
+        <br style="clear:both;" />
+
 		<dl>
 		{% for object in object_list %}
 			{% include "contenidos/_presencia.html" %}
+<!--            <br style="clear:both;" />-->
+            <br style="clear:both;" />
+            <hr />
+            <br style="clear:both;" />
+<!--            <br style="clear:both;" />-->
 		{% endfor %}
 		</dl>
 

@@ -1,18 +1,16 @@
+
 <dt>
-    <span>{{object.denominacion}}</span>
-    {% if user.is_superuser %}<a href="{% url 'admin:contenidos_presencia_change' object.id %}">&#9998;</a>{% endif %}
+    <figure>
+        <a href="{{object.url_lugar}}" target="_blank"><img src="{{object.imagen}}" width="100%" alt="{{object.denominacion}}" /></a>
+        <figcaption>
+            {{object.denominacion}}
+        </figcaption>
+    </figure>
 </dt>
 <dd>
-    <figure>
-
-        <a href="{{object.url_lugar}}" target="_blank"><img src="{{object.imagen}}" width="100%" alt="{{object.denominacion}}" /></a>
-
-        <figcaption>
-            <p>{{object.descripcion}}</p>
-            <p class="firma">{{object.lugar}}</p>
-        </figcaption>
-    
-    </figure>
+    <h2>{% if user.is_superuser %}<a href="{% url 'admin:contenidos_presencia_change' object.id %}">&#9998;</a>{% endif %} {{object.denominacion}}</h2>
     <br />
+    <p>{{object.descripcion}}</p>
     <br />
+    <p class="firma">{{object.lugar}}</p>
 </dd>

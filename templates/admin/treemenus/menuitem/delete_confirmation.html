@@ -12,9 +12,9 @@ Note the "super.super", as the direct parent has the wrong url.
 
 {% block breadcrumbs %}
 <div class="breadcrumbs">
-    <a href="../../../../../../">{% trans "Home" %}</a> &rsaquo;
-    <a href="../../../../">{% trans "Menus" %}</a> &rsaquo;
-    <a href="../../../">{{ menu.name }}</a> &rsaquo;
+	 <a href="../../../../../../">{% trans "Home" %}</a> &rsaquo;
+	 <a href="../../../../">{% trans "Menus" %}</a> &rsaquo;
+	 <a href="../../../">{{ menu.name }}</a> &rsaquo;
 	{% trans 'Items' %} &rsaquo;
 	<a href="../">{{ object|escape|truncatewords:"18" }}</a> &rsaquo;
 	{% trans 'Delete' %} &rsaquo;

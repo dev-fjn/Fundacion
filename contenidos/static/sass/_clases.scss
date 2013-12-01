@@ -1,6 +1,61 @@
 // Clases listas para usar:
 // ~~~~~~~~~~~~~~~~~~~~~~~
 
+// Variables usadas en la clase .box
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$radio: em(4px);
+$fondo: lighten($color02, 10%);
+
+
+figure{
+	img{@include drop-shadow-raised;}
+	//figcaption{@include drop-shadow-raised;}
+}
+
+.box{
+    // http://demo.web3designs.com/css3-box-shadow-effect.htm
+    position: relative;
+    width: 60%;
+    background: $fondo;
+        border-radius: $radio;
+    -moz-border-radius: $radio;
+    padding: 2em 1.5em;
+    color: rgba(0,0,0, .8);
+    text-shadow: 0 1px 0 #fff;
+    line-height: 1.5;
+    margin: 60px auto;
+
+    &:before, &:after{
+        z-index: -1;
+        position: absolute;
+        content: "";
+        bottom: em(15px);
+        left: em(10px);
+        width: 50%;
+        top: 80%;
+        max-width: em(300px);
+        background: rgba(0, 0, 0, 0.7);
+        -webkit-box-shadow: 0 em(15px) em(10px) rgba(0, 0, 0, 0.7);
+        -moz-box-shadow: 0 em(15px) em(10px) rgba(0, 0, 0, 0.7);
+                box-shadow: 0 em(15px) em(10px) rgba(0, 0, 0, 0.7);
+        -webkit-transform: rotate(-3deg);
+        -moz-transform: rotate(-3deg);
+            -o-transform: rotate(-3deg);
+            -ms-transform: rotate(-3deg);
+                transform: rotate(-3deg);
+    }
+
+    &:after{
+        -webkit-transform: rotate(3deg);
+        -moz-transform: rotate(3deg);
+            -o-transform: rotate(3deg);
+            -ms-transform: rotate(3deg);
+                transform: rotate(3deg);
+        right: em(10px);
+        left: auto;
+    }
+}
+
 .ellipsis {
     width: 100%;
     white-space: nowrap;
