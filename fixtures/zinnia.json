@@ -1035,12 +1035,12 @@
   "sites": [
    1
   ], 
-  "last_update": "2013-11-28T16:46:25.996Z", 
+  "last_update": "2013-12-01T22:48:54.710Z", 
   "content": "<p>Los archivos del presidente del Gobierno de la II Rep&uacute;blica Juan Negr&iacute;n llegar&aacute;n a Gran Canaria en noviembre. \"A mediados\", en fecha estimada por los firmantes ayer de un convenio que posibilita el traslado en barco desde el sur de Francia. La Fundaci&oacute;n Puertos, La Caixa y la Fundaci&oacute;n que lleva el nombre del cient&iacute;fico y pol&iacute;tico canario rubricaron ayer el esperado contrato, en base al cual los documentos, m&aacute;s de 153.000, salen de la casa de la nieta, Carmen Negr&iacute;n, para trasladarse al archivo del Cabildo de Gran Canaria, primero, y al museo que se dedicar&aacute; a la figura de Negr&iacute;n, en &uacute;ltimo t&eacute;rmino.</p>\r\n<p><br />El acontecimiento que acogi&oacute; el sal&oacute;n de actos de la Autoridad Portuaria de Las Palmas estuvo cargado de simbolismo. Acudieron el actual consejero insular de Cultura, el popular Larry &Aacute;lvarez, y el expresidente de la Corporaci&oacute;n y actual vicepresidente regional, Jos&eacute; Miguel P&eacute;rez, tambi&eacute;n historiador. La Fundaci&oacute;n Puertos fue representada por el igualmente mandatario de La Luz y militante del PSOE, Luis Ibarra. Y por La Caixa, que cofinancia el traslado, estuvo su delegado territorial en las Islas, Andr&eacute;s Orozco, curiosamente nieto del ministro canario del mismo nombre que tuvo la II Rep&uacute;blica. Uno de los cinco originarios de las Islas en aquella etapa, junto al propio Negr&iacute;n (que fue titular de Hacienda), Antonio Lara, Jos&eacute; Franchy Roca y Guerra del R&iacute;o. Entre el p&uacute;blico, adem&aacute;s, estaba un se&ntilde;alado historiador, como Agust&iacute;n Millares, y el parlamentario nacional por el PSOE, Sebasti&aacute;n Franquis.</p>\r\n<p><br />Unos y otros calificaron el traslado como \"un acto de normalidad democr&aacute;tica\". As&iacute; lo defini&oacute; &Aacute;lvarez, y tambi&eacute;n Ibarra, que s&iacute; confes&oacute; sentirse especialmente satisfecho por el acuerdo, \"como socialista\". Jos&eacute; Medina, presidente de la Fundaci&oacute;n Juan Negr&iacute;n, tampoco pudo disimular su emoci&oacute;n por un viaje \"hist&oacute;rico\". Medina record&oacute; el periplo \"novelesco\" de un archivo que pas&oacute; por Madrid, Valencia, Barcelona, Par&iacute;s, Niza, Normand&iacute;a y, de nuevo, la capital francesa. All&iacute;, hasta ayer, permanec&iacute;an los documentos, en el domicilio de la nieta, Carmen Negr&iacute;n. La salida del contingente de papeles desde su s&oacute;tano se hab&iacute;a previsto a las 9.00 horas de ayer. Luego, deb&iacute;an tomar rumbo al sur del territorio franc&eacute;s, para ser embalados en un contenedor que llegar&aacute; por mar al Archipi&eacute;lago, gracias a MSC.</p>\r\n<p><br />El traslado activa la puesta en marcha del museo dedicado a Negr&iacute;n, que tendr&aacute; el casco hist&oacute;rico de la capital grancanaria a partir del a&ntilde;o pr&oacute;ximo. &Aacute;lvarez y Medina confirmaron que trabajan conjuntamente para que la antigua Caja de Reclutas de la calle Reyes Cat&oacute;licos pueda abrirse en el pr&oacute;ximo 3 de febrero, en el aniversario del nacimiento del &uacute;ltimo presidente del Gobierno republicano, &uacute;nico primer mandatario que ha tenido Canarias en el Estado espa&ntilde;ol. El Cabildo, seg&uacute;n record&oacute; el consejo insular de Cultura, ha invertido un total de 1.563.000 euros en el inmueble, impulsado sucesivamente por las administraciones insulares de PSOE y PP. Jos&eacute; Miguel P&eacute;rez destac&oacute; el calado de un fondo documental \"que no s&oacute;lo es importante para Canarias, que tambi&eacute;n tiene relevancia nacional e internacional\", en el que, por ejemplo, se encuentran las transferencias de la primera constituci&oacute;n de la Generalitat catalana.</p>\r\n<p><br /> <strong>Fuente</strong>: <a href=\"http://www.laprovincia.es/las-palmas/2013/10/26/barco-msc-traslada-archivo-negrin/566957.html\" target=\"_blank\">Art&acute;iculo de A. Ojeda, en La Provincia</a></p>", 
   "comment_count": 0, 
   "trackback_enabled": true, 
   "end_publication": null, 
-  "image": "uploads/zinnia/20131026-el-barco-de-MSC-traslada-el-archivo-de-Negr\u00edn-a-Gran-Canaria-en-noviembre.jpg", 
+  "image": "uploads/zinnia/20131026-el-barco-de-MSC-traslada-el-archivo-de-Negrin-a-Gran-Canaria-en-n.jpg", 
   "status": 2, 
   "tags": "", 
   "authors": [
@@ -1242,6 +1242,42 @@
   "slug": "jose-medina-la-fundacion-negrin-va-luchar-contra-una-historia-deformada", 
   "categories": [
    1
+  ]
+ }
+},
+{
+ "pk": 32, 
+ "model": "zinnia.entry", 
+ "fields": {
+  "content_template": "zinnia/_entry_detail.html", 
+  "detail_template": "entry_detail.html", 
+  "start_publication": null, 
+  "pingback_enabled": true, 
+  "excerpt": "Se ha creado un nuevo evento en la agenda", 
+  "related": [], 
+  "creation_date": "2013-12-01T21:57:14.741Z", 
+  "featured": false, 
+  "pingback_count": 0, 
+  "trackback_count": 0, 
+  "comment_enabled": false, 
+  "title": "Nuevo evento: Evento prueba", 
+  "login_required": false, 
+  "sites": [
+   1
+  ], 
+  "last_update": "2013-12-01T21:57:14.741Z", 
+  "content": "<p>Se va a producir el siguiente evento durante los d\u00edas 2013-11-02 17:00:00...18:00:00, 2013-11-09 17:00:00...18:00:00.</p><p>Evento pruebaEvento pruebaEvento pruebaEvento pruebaEvento pruebaEvento prueba</p>", 
+  "comment_count": 0, 
+  "trackback_enabled": true, 
+  "end_publication": null, 
+  "image": "", 
+  "status": 0, 
+  "tags": "", 
+  "authors": [], 
+  "password": "", 
+  "slug": "evento-1", 
+  "categories": [
+   4
   ]
  }
 }
