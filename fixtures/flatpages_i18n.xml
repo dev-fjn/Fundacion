@@ -27,9 +27,7 @@
 
   &lt;p&gt;*El emplazamiento de la sede de la Fundación en el centro histórico de Las Palmas de Gran Canaria se suma al de otras instituciones y centros de cultura relevantes situados en esta zona de la ciudad, tales como El Museo Canario, Archivo Histórico, Casa Museo Pérez Galdós, Casa de Colón y Real Sociedad Económica de Amigos del País, así como la Biblioteca Insular y la Biblioteca Simón Benítez Padilla, entre otras sedes y equipamientos culturales.&lt;/p&gt;
 
-  &lt;p&gt;La Fundación Juan Negrín se constituyó en Las Palmas de Gran Canaria en el año 1991.&lt;/p&gt;</field><field type="TextField" name="content_es">&lt;p&gt;Fundación &gt; Presentación &gt; Acerca de&lt;/p&gt;
-
-&lt;h1&gt;Quiénes somos&lt;/h1&gt;
+  &lt;p&gt;La Fundación Juan Negrín se constituyó en Las Palmas de Gran Canaria en el año 1991.&lt;/p&gt;</field><field type="TextField" name="content_es">&lt;h1&gt;Quiénes somos&lt;/h1&gt;
 
   &lt;p&gt;Fundación destinada al estudio, investigación y difusión de la personalidad política y científica de Juan Negrín López (Las Palmas de Gran Canaria, 1892-París, 1956) y de las claves políticas, sociales y culturales de su tiempo, particularmente el primer tercio del siglo XX (Edad de Plata de la cultura y la ciencia españolas), la II República y la guerra civil.&lt;/p&gt;
 
@@ -85,7 +83,7 @@
 
   &lt;p&gt;*El emplazamiento de la sede de la Fundación en el centro histórico de Las Palmas de Gran Canaria se suma al de otras instituciones y centros de cultura relevantes situados en esta zona de la ciudad, tales como El Museo Canario, Archivo Histórico, Casa Museo Pérez Galdós, Casa de Colón y Real Sociedad Económica de Amigos del País, así como la Biblioteca Insular y la Biblioteca Simón Benítez Padilla, entre otras sedes y equipamientos culturales.&lt;/p&gt;
 
-  &lt;p&gt;La Fundación Juan Negrín se constituyó en Las Palmas de Gran Canaria en el año 1991.&lt;/p&gt;</field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="2" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/president/</field><field type="CharField" name="url_es">/presidente/</field><field type="CharField" name="url_en">/president/</field><field type="CharField" name="title">President</field><field type="CharField" name="title_es">Presidente</field><field type="CharField" name="title_en">President</field><field type="TextField" name="content">&lt;h1&gt;President&lt;/h1&gt;
+  &lt;p&gt;La Fundación Juan Negrín se constituyó en Las Palmas de Gran Canaria en el año 1991.&lt;/p&gt;</field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="2" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/president/</field><field type="CharField" name="url_es">/presidente/</field><field type="CharField" name="url_en">/president/</field><field type="CharField" name="title">President</field><field type="CharField" name="title_es">Presidente</field><field type="CharField" name="title_en">President</field><field type="TextField" name="content">&lt;h1&gt;President: José Medina Jiménez.&lt;/h1&gt;
 
 &lt;p&gt;
 	&lt;strong&gt;Spain we once lost, don’t you lose us;&lt;/strong&gt;&lt;br /&gt;
@@ -98,8 +96,6 @@
 	&lt;strong&gt;And the sea’s beat in our throats.&lt;/strong&gt;&lt;br /&gt;
 	&lt;strong&gt;&lt;em&gt;Pedro Garfias&lt;/em&gt;&lt;/strong&gt;
 &lt;/p&gt;
-
-&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
 
 &lt;div&gt;&lt;img src="/var/www/test/presidente-foto-jose-medina.jpg" width="10%" height="13" alt="Sr. Juan Medina Jiménez" longdesc="Sr. Juan Medina Jiménez" hspace="25" vspace="5" /&gt;&lt;/div&gt;
 &lt;p&gt;Here we meet the poet’s call on his heartrending appeal to the common Homeland, which he put into verses during his forced exile on foreign lands. This has been possible only after defeating the stubborn intransigence that those historians working for the dictatorship managed to spread and inject into generations following the Spanish Civil War. We are grateful to the exhaustive work of those rigorous researchers following present day methods and techniques: they have brought us closer to the facts and have restored the value of truth by making use of original sources, critical interpretations and real chronologies.&lt;/p&gt;
@@ -111,9 +107,7 @@
 &lt;p&gt;There have also been plenty of exhibitions with the purpose of commemorating Juan Negrín López’s death in Paris, 1956. The first one was organized by professor Sergio Millares and promoted by the &lt;em&gt;Fundación Juan Negrín&lt;/em&gt;. It was held in Las Palmas in 2005, using the motto &lt;em&gt;Juan Negrín&lt;/em&gt; &lt;em&gt;El Estadista&lt;/em&gt;. Then there was one in Madrid entitled &lt;em&gt;Juan Negrín, Médico y Jefe de Gobierno&lt;/em&gt;; there were others in between 2006 and 2007 in La Laguna, Las Palmas, Barcelona and Valencia, organized by the &lt;em&gt;Sociedad Española de Conmemoraciones Culturales&lt;/em&gt;, the &lt;em&gt;Fundación Pablo Iglesias&lt;/em&gt; and the FCJN, which was directed by UPV History professor Ricardo Miralles.&lt;/p&gt;
 &lt;p&gt;Finally we have to mention a centre for historical research on Juan Negrín in Vegueta, Las Palmas, which is promoted by the Inter-island Council and whose building restoration is being put out to tender. Such building will take in this important Canarian, Spanish, European figure for posterity. &lt;/p&gt;
 &lt;p&gt;José Medina Jiménez&lt;/p&gt;
-&lt;p&gt;Presidente.&lt;/p&gt;</field><field type="TextField" name="content_es">&lt;h1&gt;Presidente&lt;/h1&gt;
-
-&lt;div class="poema"&gt;
+&lt;p&gt;Presidente.&lt;/p&gt;</field><field type="TextField" name="content_es">&lt;div class="poema"&gt;
 &lt;p&gt;España que perdimos, no nos pierdas;&lt;br /&gt;
 guárdanos en tu frente derrumbada,&lt;br /&gt;
 conserva a tu costado el hueco vivo&lt;br /&gt;
@@ -124,30 +118,20 @@ de este mar, con los brazos ondeantes&lt;br /&gt;
 y el latido del mar en la garganta.&lt;/p&gt;
 &lt;h2&gt;Pedro Garfias&lt;/h2&gt;
 &lt;/div&gt;
-
-&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-
-&lt;img src="http://fundacion.noc4net.com:8080/uploads/assets/a/1/7/5/5/4/a/0/d/2/presidente-foto-jose-medina.jpg" width="300" height="400" alt="Sr. Juan Medina Jiménez" longdesc="Fotografía del Sr. Juan Medina Jiménez, actual Presidente de la Fundación Juan Negrín" style="float: left; " hspace="25" vspace="25" /&gt;
-
+&lt;figure style="float: left;"&gt;
+&lt;img src="/media/uploads/flatpages/presidente.jpg" width="200" height="267" alt="Sr. José Medina Jiménez" longdesc="Fotografía del Sr. José Medina Jiménez, actual Presidente de la Fundación Juan Negrín" /&gt;
+&lt;figcaption&gt;D. José Medina Jiménez&lt;/figcaption&gt;
+&lt;/figure&gt;
 &lt;p&gt;Ha sido posible atender a la llamada del poeta, desgarradora apelación a la Patria común, en versos bajo el obligado tránsito hacia las tierras ajenas - una vez vencida la tenaz intransigencia propagada por el sesgo interpretativo de los historiadores de la dictadura e inoculada sobre las generaciones  avenidas tras la Guerra de España- gracias al exhaustivo trabajo de investigadores rigurosos, con método y técnica actual, que haciendo uso de fuentes originales e interpretaciones críticas y cronologías reales nos han acercado a los hechos acaecidos restituyendo el valor de la verdad.&lt;/p&gt;
-
 &lt;p&gt;La Transición bajo el signo de la Reforma pospuso la tarea esclarecedora y divulgadora del pensamiento y la acción de los compatriotas transterrados o desterrados. El nacimiento de la nueva Constitución: democrática, libre y socialmente justa, abrió la puerta al regreso de algunos supervivientes pero la mayoría pereció en la ausencia. Ya solo nos queda para no perder la memoria colectiva,  honrar su descendencia, salvar, conservar y divulgar sus pensamientos, y asegurar sus archivos y defender sus pertenencias. A quienes sufrieron en el interior la intransigencia con la muerte, dar digna sepultura.&lt;/p&gt;
-
 &lt;p&gt;Juan Negrín ha sido, sin lugar a dudas, la figura española del siglo XX más difamada, ignorada, tachada de todos los libros de texto que enseñaban la Historia, excluida de la memoria colectiva, y la peor tratada en testimonios y referencias que sobre él se hicieron. Setenta años han debido transcurrir para que el Estado restituya de modo oficial para la Historia General de España la figura de Juan Negrín López. Se quiebra con ello un olvido deliberado; se rompe un silencio malintencionado. En los prolegómenos del siglo XXI su imagen está siendo restablecida en los libros de Historia, como  político, como médico científico y como humanista.&lt;/p&gt;
-
 &lt;p&gt;Facilitar la investigación histórica es una noble tarea que da sentido y justifica la existencia de la Fundación llamada con el nombre del  científico, humanista y estadista, Juan Negrín López; es cumplir objetivos fundacionales: el propiciar en base a documentación fehaciente la restitución y divulgación de su figura, en el contexto y en el momento que le tocó vivir; y el de fomentar el pensamiento democrático y socialmente avanzado&lt;/p&gt;
-
 &lt;p&gt;La Fundación Juan Negrín  centró su actividad en la restauración del patrimonio familiar y del archivo personal con la inestimable ayuda de la familia, el Gobierno de España, el Cabildo Insular y el gobierno de Canarias, y, en consecuencia, facilitó la divulgación de parte de su propio archivo.&lt;/p&gt;
-
 &lt;p&gt;Nominaciones tales como El Aula Juan Negrín de la Universidad Autónoma de Madrid; el monumento alegórico en la calle natal por el Ayuntamiento de Las Palmas; un colegio de EGB en la ciudad de Telde, calles en el Puerto de La Cruz y al mayor y más moderno Hospital de Canarias Dr Negrín en Las Palmas en 1998.&lt;/p&gt;
-
 &lt;p&gt;Publicaciones testimoniales, como la de Mariano Ansó en 1976,  investigaciones como la de Ángel Viñas 1978 sobre el depósito del oro; acopio de opiniones en Joan Llarch y de significaciones en Marichal en 1985; de José Lluis Barona en 1991 relativos a la historia de la Medicina; de discursos ordenados en Santiago Álvarez en 1994; esclarecedores como el de Tuñón de Lara en 1996 con “El hombre necesario” en equipo con el fisiólogo Díaz Chico y el profesor Miralles, quien continuó en 2003, con Juan Negrín la República en Guerra, Sin olvidar la obra esclarecedora de investigación de Helen Grahan en el mismo año. Los historiadores; Enrique Moradiellos, con una completa biografía en 2006. El pasado año de 2008 sendos trabajos historiográficos publicados, uno por Gabriel Jackson sobre la personalidad de Juan Negrín y, el otro, de Angel Viñas su magnífica y densa trilogía. El Abandono; La Defensa y El Honor de la República. Todos  ellos rompieron el silencio instigado.&lt;/p&gt;
-
 &lt;p&gt;Exposiciones llevadas a cabo con motivo del 50 aniversario de su muerte en París en 1956; la primera en Las Palmas en el 2005 bajo el lema Juan Negrín El Estadista, del profesor Sergio Millares promovida por la Fundación Juan Negrín. La de título Jun Negrín, Médico y Jefe de Gobierno celebradas en Madrid; La Laguna, Las Palmas Barcelona, y Valencia entre 2006  y 2007 organizadas por la Sociedad Española de Conmemoraciones Culturales, la Fundación Pablo Iglesias y la FCJN dirigida por el catedrático de Historia de la UPV Ricardo Miralles.&lt;/p&gt;
-
 &lt;p&gt;Y como colofón la designación de una sede y centro de investigación histórico a Juan Negrín en el barrio de Vegueta en Las Palmas, propiciada por el Cabildo de Gran Canaria, estando en proceso el concurso para la rehabilitación de inmueble que recoja para la posteridad esta figura canaria, española, europea.&lt;/p&gt;
-
-&lt;p class="firma"&gt;José Medina Jiménez&lt;br /&gt;Presidente&lt;/p&gt;</field><field type="TextField" name="content_en">&lt;h1&gt;President&lt;/h1&gt;
+&lt;p class="firma"&gt;José Medina Jiménez&lt;br /&gt;Presidente&lt;/p&gt;</field><field type="TextField" name="content_en">&lt;h1&gt;President: José Medina Jiménez.&lt;/h1&gt;
 
 &lt;p&gt;
 	&lt;strong&gt;Spain we once lost, don’t you lose us;&lt;/strong&gt;&lt;br /&gt;
@@ -160,8 +144,6 @@ y el latido del mar en la garganta.&lt;/p&gt;
 	&lt;strong&gt;And the sea’s beat in our throats.&lt;/strong&gt;&lt;br /&gt;
 	&lt;strong&gt;&lt;em&gt;Pedro Garfias&lt;/em&gt;&lt;/strong&gt;
 &lt;/p&gt;
-
-&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
 
 &lt;div&gt;&lt;img src="/var/www/test/presidente-foto-jose-medina.jpg" width="10%" height="13" alt="Sr. Juan Medina Jiménez" longdesc="Sr. Juan Medina Jiménez" hspace="25" vspace="5" /&gt;&lt;/div&gt;
 &lt;p&gt;Here we meet the poet’s call on his heartrending appeal to the common Homeland, which he put into verses during his forced exile on foreign lands. This has been possible only after defeating the stubborn intransigence that those historians working for the dictatorship managed to spread and inject into generations following the Spanish Civil War. We are grateful to the exhaustive work of those rigorous researchers following present day methods and techniques: they have brought us closer to the facts and have restored the value of truth by making use of original sources, critical interpretations and real chronologies.&lt;/p&gt;
@@ -176,7 +158,7 @@ y el latido del mar en la garganta.&lt;/p&gt;
 &lt;p&gt;Presidente.&lt;/p&gt;</field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="3" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/honorary-president/</field><field type="CharField" name="url_es">/presidenta-de-honor/</field><field type="CharField" name="url_en">/honorary-president/</field><field type="CharField" name="title">Honorary President</field><field type="CharField" name="title_es">Presidenta de Honor</field><field type="CharField" name="title_en">Honorary President</field><field type="TextField" name="content">&lt;div class="flat-page"&gt;
 &lt;h1&gt;Honorary President&lt;/h1&gt;
 
-&lt;div&gt;&lt;img src="/var/www/test/presidenta-honoraria-carmen-negrin-jpg" width="815" height="1031" alt="Carmen Negrín" longdesc="Presidenta Honoraria de la Fundación Juan Negrín: Dña. Carmen Negrín." /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src="/var/www/test/presidenta-honoraria-carmen-negrin-jpg" width="200"  alt="Carmen Negrín" longdesc="Presidenta Honoraria de la Fundación Juan Negrín: Dña. Carmen Negrín." /&gt;&lt;/div&gt;
 &lt;p&gt;As a direct descendant of Juan Negrín and someone who had the privilege of being raised by him during the last years of his life, I had an inkling, in as much as a child can, of both his hopes and his disappointments. I will never forget the profound pain I could sense over the deaths he could not prevent, over a defeated, humiliated, mistreated and forgotten Spain; pain over his failure to convince his natural allies of the urgency of saving the Republic and democracy in his country; pain over failing to make himself understood by his own peers at the height of the conflict; ultimately pain over the forced exile.&lt;/p&gt;
 &lt;p&gt;Having said that, I also have the immense satisfaction of knowing that he understood and clearly foresaw the dangers of fascism before every one else, a fascism which could only be defeated after the Spanish War and a long world war. I also take pride in knowing that he succeeded in maintaining the Republic and its ideals alive on a certain 1st of April 1939, despite being away in exile.&lt;/p&gt;
 &lt;p&gt;The Fundación Juan Negrín is committed to the truth and does not accept "passive nostalgia but only active memory". Concealing the rigour of facts cannot contribute to the consolidation of peace; it only damages it. To those who ask: "why bother bringing up the past?", I respond that a democracy can only be strengthened when facing its past, sometimes pleasant and sometimes not as pleasant. Conflicts do not emerge from memory, but from oblivion. In fact, they rise when the much-desired peace has not been consolidated, and this because the causes and wounds are still there, because traces of fascism persist, and because of the inability to face a painful truth. To this day, this truth is still partly buried in mass graves, hidden behind the falsified identities of tens of thousands of children, in the forgotten suffering of thousands of women mistreated in jails as well as outside; it can also be sought in the memory of those in exile. For transition and reconciliation are two different matters.&lt;/p&gt;
@@ -184,17 +166,19 @@ y el latido del mar en la garganta.&lt;/p&gt;
 &lt;p&gt;The Fundación has been created to restore the memory of my grandfather as well as that of hundreds of thousands of companions who shared his fate during the war and in exile. It works for all those who were silenced for nearly forty years, but above all its main task is towards future generations, so that they can understand and feel proud of a past that some tried to steal away from them.&lt;/p&gt;
 &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Carmen  Negrín&lt;br /&gt;Honorary President&lt;/strong&gt;&lt;/p&gt;
-&lt;/div&gt;</field><field type="TextField" name="content_es">&lt;h1&gt;Presidenta de Honor&lt;/h1&gt;
-  &lt;img src="http://fundacion.noc4net.com:8080/uploads/assets/e/6/c/3/d/d/6/3/0/4/foto-carmen-negrin-jpg.jpg" width="300" height="400" alt="Carmen negrin" longdesc="Presidenta de Honor de la Fundación Juan Negrín: Dña Carmen Negrín" style="float: left;"/&gt;
-  &lt;p&gt;Como descendiente de Juan Negrín y alguien que tuvo el privilegio de ser educada por él durante sus últimos años de vida, intuía tal como lo puede intuir una niña, sus objetivos, sus ilusiones y sus desilusiones. Es difícil borrar de mi memoria el dolor tan profundo que debió sentir: dolor por los muertos que no pudo evitar; dolor por una España vencida, humillada, mal tratada y olvidada; dolor por no haber podido convencer a sus aliados naturales de la urgencia de salvar la República y la democracia en su país; dolor por no haber logrado hacerse entender en los momentos más difíciles por sus propios correligionarios; dolor por el alejamiento impuesto de los suyos y de su patria.&lt;/p&gt;
-  &lt;p&gt;No obstante tengo también la inmensa satisfacción de saber que entendió mejor y antes que nadie el peligro que representaba el fascismo, un fascismo que solo pudo ser derrotado tras la Guerra de España y una larga guerra mundial. También me enorgullece saber que un día, un 1° de abril de 1939, logró mantener viva, pese al exilio, la República y sus ideales.&lt;/p&gt;
-  &lt;p&gt;La Fundación Juan Negrín comprometida con la verdad, no acepta “el pasivo de la nostalgia sino el activo de la memoria”. Ocultar el rigor de los hechos, no consolida la paz, tan solo la perjudica. A aquellos que dicen ¿para que remover el pasado? contesto que una democracia solo puede fortalecerse encarando su pasado, a veces grato y a veces no tan grato. Los conflictos no surgen de la memoria, surgen del olvido, surgen precisamente por no haber sabido consolidar la paz tan buscada, dejando persistir las causas y las llagas, dejando perdurar las huellas del fascismo y por la incapacidad de enfrentar una verdad dolorosa. Esta verdad se encuentra, en parte, todavía hoy en día enterrada en fosas comunes, escondida en la identidad falsificada de decenas de miles de niños, en el olvido del sufrimiento de miles de mujeres, maltratadas en las cárceles y fuera, en la memoria del exilio. Porque la transición es una cosa, pero la reconciliación es otra.&lt;/p&gt;
-  &lt;p&gt;Afortunadamente, y pese a la larga historia revisionista, hoy en día, hay historiadores que van directamente a las fuentes y que, basándose en la documentación existente, han podido reconstruir poco a poco la historia, tal y como fue y no como algunos intentaron reinventarla.&lt;/p&gt;
-  &lt;p&gt;La tarea de nuestra Fundación ha sido emprendida para la memoria de mi abuelo Juan Negrín y para la de los cientos de miles de compañeros que compartieron su suerte durante la guerra y en el exilio, para todos aquellos que durante casi cuarenta años fueron silenciados, y sobre todo para que las generaciones futuras puedan conocer y enorgullecerse de un pasado que les quisieron robar.&lt;/p&gt;
-  &lt;p class="firma"&gt;Carmen Negrín&lt;br /&gt;Presidenta de Honor&lt;/strong&gt;&lt;/p&gt;</field><field type="TextField" name="content_en">&lt;div class="flat-page"&gt;
+&lt;/div&gt;</field><field type="TextField" name="content_es">&lt;figure style="float: left;"&gt;
+&lt;img src="/media/uploads/flatpages/presidenta-de-honor.jpg" width="200" height="267" alt="Sra. Carmen Negrín" longdesc="Fotografía de la Sra. Carmen Negrín, actual Presidente de Honor de la Fundación Juan Negrín" /&gt;
+&lt;figcaption&gt;Dña. Carmen Negrín&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Como descendiente de Juan Negrín y alguien que tuvo el privilegio de ser educada por él durante sus últimos años de vida, intuía tal como lo puede intuir una niña, sus objetivos, sus ilusiones y sus desilusiones. Es difícil borrar de mi memoria el dolor tan profundo que debió sentir: dolor por los muertos que no pudo evitar; dolor por una España vencida, humillada, mal tratada y olvidada; dolor por no haber podido convencer a sus aliados naturales de la urgencia de salvar la República y la democracia en su país; dolor por no haber logrado hacerse entender en los momentos más difíciles por sus propios correligionarios; dolor por el alejamiento impuesto de los suyos y de su patria.&lt;/p&gt;
+&lt;p&gt;No obstante tengo también la inmensa satisfacción de saber que entendió mejor y antes que nadie el peligro que representaba el fascismo, un fascismo que solo pudo ser derrotado tras la Guerra de España y una larga guerra mundial. También me enorgullece saber que un día, un 1° de abril de 1939, logró mantener viva, pese al exilio, la República y sus ideales.&lt;/p&gt;
+&lt;p&gt;La Fundación Juan Negrín comprometida con la verdad, no acepta “el pasivo de la nostalgia sino el activo de la memoria”. Ocultar el rigor de los hechos, no consolida la paz, tan solo la perjudica. A aquellos que dicen ¿para que remover el pasado? contesto que una democracia solo puede fortalecerse encarando su pasado, a veces grato y a veces no tan grato. Los conflictos no surgen de la memoria, surgen del olvido, surgen precisamente por no haber sabido consolidar la paz tan buscada, dejando persistir las causas y las llagas, dejando perdurar las huellas del fascismo y por la incapacidad de enfrentar una verdad dolorosa. Esta verdad se encuentra, en parte, todavía hoy en día enterrada en fosas comunes, escondida en la identidad falsificada de decenas de miles de niños, en el olvido del sufrimiento de miles de mujeres, maltratadas en las cárceles y fuera, en la memoria del exilio. Porque la transición es una cosa, pero la reconciliación es otra.&lt;/p&gt;
+&lt;p&gt;Afortunadamente, y pese a la larga historia revisionista, hoy en día, hay historiadores que van directamente a las fuentes y que, basándose en la documentación existente, han podido reconstruir poco a poco la historia, tal y como fue y no como algunos intentaron reinventarla.&lt;/p&gt;
+&lt;p&gt;La tarea de nuestra Fundación ha sido emprendida para la memoria de mi abuelo Juan Negrín y para la de los cientos de miles de compañeros que compartieron su suerte durante la guerra y en el exilio, para todos aquellos que durante casi cuarenta años fueron silenciados, y sobre todo para que las generaciones futuras puedan conocer y enorgullecerse de un pasado que les quisieron robar.&lt;/p&gt;
+&lt;p class="firma"&gt;Carmen Negrín&lt;br /&gt;Presidenta de Honor&lt;/strong&gt;&lt;/p&gt;</field><field type="TextField" name="content_en">&lt;div class="flat-page"&gt;
 &lt;h1&gt;Honorary President&lt;/h1&gt;
 
-&lt;div&gt;&lt;img src="/var/www/test/presidenta-honoraria-carmen-negrin-jpg" width="815" height="1031" alt="Carmen Negrín" longdesc="Presidenta Honoraria de la Fundación Juan Negrín: Dña. Carmen Negrín." /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src="/var/www/test/presidenta-honoraria-carmen-negrin-jpg" width="200"  alt="Carmen Negrín" longdesc="Presidenta Honoraria de la Fundación Juan Negrín: Dña. Carmen Negrín." /&gt;&lt;/div&gt;
 &lt;p&gt;As a direct descendant of Juan Negrín and someone who had the privilege of being raised by him during the last years of his life, I had an inkling, in as much as a child can, of both his hopes and his disappointments. I will never forget the profound pain I could sense over the deaths he could not prevent, over a defeated, humiliated, mistreated and forgotten Spain; pain over his failure to convince his natural allies of the urgency of saving the Republic and democracy in his country; pain over failing to make himself understood by his own peers at the height of the conflict; ultimately pain over the forced exile.&lt;/p&gt;
 &lt;p&gt;Having said that, I also have the immense satisfaction of knowing that he understood and clearly foresaw the dangers of fascism before every one else, a fascism which could only be defeated after the Spanish War and a long world war. I also take pride in knowing that he succeeded in maintaining the Republic and its ideals alive on a certain 1st of April 1939, despite being away in exile.&lt;/p&gt;
 &lt;p&gt;The Fundación Juan Negrín is committed to the truth and does not accept "passive nostalgia but only active memory". Concealing the rigour of facts cannot contribute to the consolidation of peace; it only damages it. To those who ask: "why bother bringing up the past?", I respond that a democracy can only be strengthened when facing its past, sometimes pleasant and sometimes not as pleasant. Conflicts do not emerge from memory, but from oblivion. In fact, they rise when the much-desired peace has not been consolidated, and this because the causes and wounds are still there, because traces of fascism persist, and because of the inability to face a painful truth. To this day, this truth is still partly buried in mass graves, hidden behind the falsified identities of tens of thousands of children, in the forgotten suffering of thousands of women mistreated in jails as well as outside; it can also be sought in the memory of those in exile. For transition and reconciliation are two different matters.&lt;/p&gt;
@@ -222,9 +206,7 @@ Fernando Ortiz Wiot&lt;br /&gt; Mª. Carmen Llopis Carbonell&lt;br /&gt; Rafael 
 &lt;h3&gt;Honorary Members&lt;/h3&gt;
 Santiago Carrillo Solares&lt;br /&gt; Alfonso Guerra González&lt;br /&gt; Manuel Negrin Angulo&lt;br /&gt; Agustín Millares Cantero&lt;br /&gt; José Luís Ruiz Martín&lt;br /&gt; Gonzalo Angulo González&lt;br /&gt;
 &lt;/div&gt;
-&lt;/div&gt;</field><field type="TextField" name="content_es">&lt;h1&gt;PATRONATO&lt;/h1&gt;
-
-&lt;dl&gt;
+&lt;/div&gt;</field><field type="TextField" name="content_es">&lt;dl&gt;
 	&lt;dt&gt;Presidencia de Honor&lt;/dt&gt;
 	&lt;dd&gt;Carmen Negrín Fetter&lt;/dd&gt;
 	&lt;dd&gt;Juan Negrín Fetter&lt;/dd&gt;
@@ -286,14 +268,13 @@ Fernando Ortiz Wiot&lt;br /&gt; Mª. Carmen Llopis Carbonell&lt;br /&gt; Rafael 
 &lt;h3&gt;Honorary Members&lt;/h3&gt;
 Santiago Carrillo Solares&lt;br /&gt; Alfonso Guerra González&lt;br /&gt; Manuel Negrin Angulo&lt;br /&gt; Agustín Millares Cantero&lt;br /&gt; José Luís Ruiz Martín&lt;br /&gt; Gonzalo Angulo González&lt;br /&gt;
 &lt;/div&gt;
-&lt;/div&gt;</field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="5" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/objetives/</field><field type="CharField" name="url_es">/objetivos/</field><field type="CharField" name="url_en">/objetives/</field><field type="CharField" name="title">Objetivos</field><field type="CharField" name="title_es">Objetivos</field><field type="CharField" name="title_en">Objetivos</field><field type="TextField" name="content">&lt;h1&gt;Objetivos&lt;/h1&gt;
-
-	&lt;p&gt;La &lt;em&gt;FUNDACIÓN JUAN NEGRÍN&lt;/em&gt; es una Fundación cultural privada de interés público, sin ánimo de lucro, que tiene como objeto la investigación, el desarrollo y la difusión del pensamiento humanista democrático y socialmente avanzado, atendiendo especialmente al objetivo de divulgar el pensamiento de &lt;em&gt;JUAN NEGRÍN LÓPEZ (1892-1956)&lt;/em&gt;, eminente científico y político que simbolizó, como &lt;i&gt;Presidente del Gobierno de la IIª República&lt;/i&gt;, la resistencia frente a la dictadura y el totalitarismo.&lt;/p&gt;
+&lt;/div&gt;</field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="5" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/objetives/</field><field type="CharField" name="url_es">/objetivos/</field><field type="CharField" name="url_en">/objetives/</field><field type="CharField" name="title">Objetivos</field><field type="CharField" name="title_es">Objetivos</field><field type="CharField" name="title_en">Objetivos</field><field type="TextField" name="content">&lt;p&gt;La &lt;span style="font-variant: small-caps;"&gt;Fundación Juan Negrín&lt;/span&gt; es una Fundación cultural privada de interés público, sin ánimo de lucro, que tiene como objeto la investigación, el desarrollo y la difusión del pensamiento humanista democrático y socialmente avanzado, atendiendo especialmente al objetivo de divulgar el pensamiento de &lt;span style="font-variant: small-caps;"&gt;Juan Negrín López&lt;/span&gt; (1892-1956) eminente científico y político que simbolizó, como &lt;i&gt;Presidente del Gobierno de la IIª República&lt;/i&gt;, la resistencia frente a la dictadura y el totalitarismo.&lt;/p&gt;
 
 	&lt;blockquote&gt;
 		&lt;span&gt;&lt;strong&gt;Los fines de la Fundación son:&lt;/strong&gt;&lt;/span&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
 		&lt;blockquote&gt;
-			&lt;ol style="list-style-type:upper-alpha;"&gt;
+			&lt;ol style="list-style-type:disc;"&gt;
 				&lt;li&gt;Fomentar los valores del humanismo democrático y el progreso social.&lt;/li&gt;
 				&lt;li&gt;Fomentar la investigación, estudio y difusión de la historia del pensamiento humanista socialmente avanzado.&lt;/li&gt;
 				&lt;li&gt;El estudio e investigación de los problemas de la sociedad actual, en el marco europeo.&lt;/li&gt;
@@ -305,14 +286,13 @@ Santiago Carrillo Solares&lt;br /&gt; Alfonso Guerra González&lt;br /&gt; Manue
 				&lt;li&gt;El estudio e investigación de la historia de Canarias.&lt;/li&gt;
 			&lt;/ol&gt;
 		&lt;/blockquote&gt;
-	&lt;/blockquote&gt;</field><field type="TextField" name="content_es">&lt;h1&gt;Objetivos&lt;/h1&gt;
-
-	&lt;p&gt;La &lt;em&gt;FUNDACIÓN JUAN NEGRÍN&lt;/em&gt; es una Fundación cultural privada de interés público, sin ánimo de lucro, que tiene como objeto la investigación, el desarrollo y la difusión del pensamiento humanista democrático y socialmente avanzado, atendiendo especialmente al objetivo de divulgar el pensamiento de &lt;em&gt;JUAN NEGRÍN LÓPEZ (1892-1956)&lt;/em&gt;, eminente científico y político que simbolizó, como &lt;i&gt;Presidente del Gobierno de la IIª República&lt;/i&gt;, la resistencia frente a la dictadura y el totalitarismo.&lt;/p&gt;
+	&lt;/blockquote&gt;</field><field type="TextField" name="content_es">&lt;p&gt;La &lt;span style="font-variant: small-caps;"&gt;Fundación Juan Negrín&lt;/span&gt; es una Fundación cultural privada de interés público, sin ánimo de lucro, que tiene como objeto la investigación, el desarrollo y la difusión del pensamiento humanista democrático y socialmente avanzado, atendiendo especialmente al objetivo de divulgar el pensamiento de &lt;span style="font-variant: small-caps;"&gt;Juan Negrín López&lt;/span&gt; (1892-1956) eminente científico y político que simbolizó, como &lt;i&gt;Presidente del Gobierno de la IIª República&lt;/i&gt;, la resistencia frente a la dictadura y el totalitarismo.&lt;/p&gt;
 
 	&lt;blockquote&gt;
 		&lt;span&gt;&lt;strong&gt;Los fines de la Fundación son:&lt;/strong&gt;&lt;/span&gt;
+                &lt;div&gt;&lt;br /&gt;&lt;/div&gt;
 		&lt;blockquote&gt;
-			&lt;ol style="list-style-type:upper-alpha;"&gt;
+			&lt;ol style="list-style-type:disc;"&gt;
 				&lt;li&gt;Fomentar los valores del humanismo democrático y el progreso social.&lt;/li&gt;
 				&lt;li&gt;Fomentar la investigación, estudio y difusión de la historia del pensamiento humanista socialmente avanzado.&lt;/li&gt;
 				&lt;li&gt;El estudio e investigación de los problemas de la sociedad actual, en el marco europeo.&lt;/li&gt;
@@ -324,9 +304,7 @@ Santiago Carrillo Solares&lt;br /&gt; Alfonso Guerra González&lt;br /&gt; Manue
 				&lt;li&gt;El estudio e investigación de la historia de Canarias.&lt;/li&gt;
 			&lt;/ol&gt;
 		&lt;/blockquote&gt;
-	&lt;/blockquote&gt;</field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="6" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/become-member/</field><field type="CharField" name="url_es">/hacerce-amigo-de-la-fundacion/</field><field type="CharField" name="url_en">/become-member/</field><field type="CharField" name="title">Become Member</field><field type="CharField" name="title_es">Hacerse amigo de la Fundación</field><field type="CharField" name="title_en">Become Member</field><field type="TextField" name="content">&lt;div class="flat-page"&gt;
-    &lt;h1&gt;Hacerse amigo de la Fundación&lt;/h1&gt;
-    &lt;form method="post"&gt;
+	&lt;/blockquote&gt;</field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="6" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/become-member/</field><field type="CharField" name="url_es">/hacerce-amigo-de-la-fundacion/</field><field type="CharField" name="url_en">/become-member/</field><field type="CharField" name="title">Become Member</field><field type="CharField" name="title_es">Hacerse amigo de la Fundación</field><field type="CharField" name="title_en">Become Member</field><field type="TextField" name="content">    &lt;form method="post"&gt;
       &lt;input type="hidden" name="member[id]"&gt;&lt;input type="hidden" name="member[token]" value="77245f00dce60ee6c22cf6ed30ad2bab"&gt;
       &lt;fieldset&gt;
         &lt;legend&gt;Datos personales&lt;/legend&gt;
@@ -1932,6 +1910,7 @@ Santiago Carrillo Solares&lt;br /&gt; Alfonso Guerra González&lt;br /&gt; Manue
         &lt;input type="submit" value="Hacerme amigo de la Fundación"&gt;
       &lt;/div&gt;
     &lt;/form&gt;
+
     &lt;script type="text/javascript"&gt;
     $(function() {
                 $('#member_country').change(function() {
@@ -1951,10 +1930,7 @@ Santiago Carrillo Solares&lt;br /&gt; Alfonso Guerra González&lt;br /&gt; Manue
                         }
                 });
         });
-    &lt;/script&gt;
-  &lt;/div&gt;</field><field type="TextField" name="content_es">&lt;div class="flat-page"&gt;
-    &lt;h1&gt;Hacerse amigo de la Fundación&lt;/h1&gt;
-    &lt;form method="post"&gt;
+    &lt;/script&gt;</field><field type="TextField" name="content_es">    &lt;form method="post"&gt;
       &lt;input type="hidden" name="member[id]"&gt;&lt;input type="hidden" name="member[token]" value="77245f00dce60ee6c22cf6ed30ad2bab"&gt;
       &lt;fieldset&gt;
         &lt;legend&gt;Datos personales&lt;/legend&gt;
@@ -3560,6 +3536,7 @@ Santiago Carrillo Solares&lt;br /&gt; Alfonso Guerra González&lt;br /&gt; Manue
         &lt;input type="submit" value="Hacerme amigo de la Fundación"&gt;
       &lt;/div&gt;
     &lt;/form&gt;
+
     &lt;script type="text/javascript"&gt;
     $(function() {
                 $('#member_country').change(function() {
@@ -3579,288 +3556,286 @@ Santiago Carrillo Solares&lt;br /&gt; Alfonso Guerra González&lt;br /&gt; Manue
                         }
                 });
         });
-    &lt;/script&gt;
-  &lt;/div&gt;</field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="7" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/biography/</field><field type="CharField" name="url_es">/biografia/</field><field type="CharField" name="url_en">/biography/</field><field type="CharField" name="title">Biography</field><field type="CharField" name="title_es">Biografía</field><field type="CharField" name="title_en">Biography</field><field type="TextField" name="content">&lt;h1&gt;Biografía&lt;/h1&gt;
-	&lt;img src="http://fundacion.noc4net.com:8080/uploads/assets/9/0/2/b/a/3/c/d/a/1/juan-negrin-auto-retrato.jpg" width="226" height="300" alt="Juan Negrin" longdesc="Juan Negrin" style="float: left; " /&gt;
-	&lt;p&gt;Nace en la Calle Mayor de Triana en Las Palmas de Gran Canaria, isla de Gran Canaria, el 3 de febrero de 1892. Hijo primogénito de un próspero hombre de negocios, estudió las primeras letras en su ciudad natal en el colegio privado La Soledad y obtuvo las máximas calificaciones en el Bachillerato, durante el curso 1905-06, a la increíble edad de 14 años.&lt;/p&gt;
-	&lt;p&gt;Durante el curso 1906-07 se traslada a Alemania y comienza la carrera de Medicina a los quince años, primero en la Universidad de Kiel y luego en la de Leipzig, vinculándose a su Escuela de Fisiología dirigida por Ewald Hering. En 1912, a los veinte años, obtuvo el grado de Doctor.&lt;/p&gt;
-	&lt;p&gt;Trabajó como asistente numerario en la misma Universidad y la movilización de sus superiores en la Gran Guerra de 1914 le hizo asumir más responsabilidades docentes. Se convierte en un políglota (inglés, alemán y francés) y traduce del francés al alemán L´Anaphylaxie de Charles Richet.&lt;/p&gt;
-	&lt;p&gt;El 21 de julio de 1914 se casa con María Fidelman Brodsky, pianista e hija de una familia acomodada de rusos exiliados que vivían en Holanda. El matrimonio tuvo cinco hijos, de los que sobrevivieron tres de ellos: Juan, Rómulo y Miguel, adoptando estos el apellido Mijailov.&lt;/p&gt;
-	&lt;p&gt;En 1916 se incorpora al Laboratorio de Fisiología General en Madrid, sito en los sótanos de la Residencia de Estudiantes, y dependiente de la Junta de Ampliación de Estudios. En 1919 convalida en España su título de Licenciado de Medicina y Cirugía y al año siguiente realiza la Tesis Doctoral que fue publicada con el título: "El tono vascular y el mecanismo de la acción vasotónica del esplácnico".&lt;/p&gt;
-	&lt;p&gt;Nombrado en 1922 Secretario de la Facultad de Medicina de la Universidad Central de Madrid, colabora en la Junta para la construcción de la Ciudad Universitaria, siendo Secretario de la misma en 1931.&lt;/p&gt;
-	&lt;p&gt;En plena Dictadura de Primo de Rivera, en 1929, ingresa en el Partido Socialista Obrero Español, perteneciendo al ala centrista del mismo de la mano de Indalecio Prieto. Empieza su actividad política, aunque en un principio predomina su labor científica y académica.&lt;/p&gt;
-	&lt;p&gt;En las primeras elecciones generales de la República es elegido Diputado a Cortes por Las Palmas de Gran Canaria, su ciudad de nacimiento, cargo que ostentará en los dos comicios siguientes (1933 y 1936). En el máximo órgano legislativo es nombrado Presidente de la Comisión de Hacienda. También representa a la República en foros internacionales como la Organización Internacional del Trabajo (OIT) y la Unión Interparlamentaria.&lt;/p&gt;
-	&lt;p&gt;Durante la guerra civil participa en la defensa de Madrid y en septiembre de 1936 es nombrado Ministro de Hacienda del Gobierno de Largo Caballero, poniendo orden a las finanzas españolas y asegurando, mediante la evacuación de las reservas de oro del Banco de España a la URSS y a Francia, el aprovisionamiento de armas y alimentos para la defensa de la República.&lt;/p&gt;
-	&lt;p&gt;En junio de 1937 es nombrado Presidente del Gobierno español y con posterioridad elaborará un proyecto de reconciliación de los españoles denominado Los Trece puntos, que los rebeldes rechazarán. Negrín personifica la resistencia de la República frente a los militares alzados y las potencias fascistas europeas, aunque no podrá evitar la derrota y se exiliará a Francia en 1939 .&lt;/p&gt;
-	&lt;p&gt;En 1940 traslada su residencia a Londres, donde encarnará la suprema autoridad de la República en el exilio, poniendo al servicio de las autoridades británicas su experiencia política internacional y sus conocimientos científicos en beneficio de la causa aliada.&lt;/p&gt;
-	&lt;p&gt;Una vez derrotado el eje fascista en Europa acude a México donde dimite de su cargo de Presidente del Gobierno ante las Cortes españolas en el exilio.&lt;/p&gt;
-	&lt;p&gt;El 12 de noviembre de 1956 muere Juan Negrín en París de un ataque al corazón.&lt;/p&gt;
-	&lt;p class="firma"&gt;Sergio Millares&lt;br /&gt;Historiador&lt;/p&gt;</field><field type="TextField" name="content_es">&lt;h1&gt;Biografía&lt;/h1&gt;
-	&lt;img src="http://fundacion.noc4net.com:8080/uploads/assets/9/0/2/b/a/3/c/d/a/1/juan-negrin-auto-retrato.jpg" width="226" height="300" alt="Juan Negrin" longdesc="Juan Negrin" style="float: left; " /&gt;
-	&lt;p&gt;Nace en la Calle Mayor de Triana en Las Palmas de Gran Canaria, isla de Gran Canaria, el 3 de febrero de 1892. Hijo primogénito de un próspero hombre de negocios, estudió las primeras letras en su ciudad natal en el colegio privado La Soledad y obtuvo las máximas calificaciones en el Bachillerato, durante el curso 1905-06, a la increíble edad de 14 años.&lt;/p&gt;
-	&lt;p&gt;Durante el curso 1906-07 se traslada a Alemania y comienza la carrera de Medicina a los quince años, primero en la Universidad de Kiel y luego en la de Leipzig, vinculándose a su Escuela de Fisiología dirigida por Ewald Hering. En 1912, a los veinte años, obtuvo el grado de Doctor.&lt;/p&gt;
-	&lt;p&gt;Trabajó como asistente numerario en la misma Universidad y la movilización de sus superiores en la Gran Guerra de 1914 le hizo asumir más responsabilidades docentes. Se convierte en un políglota (inglés, alemán y francés) y traduce del francés al alemán L´Anaphylaxie de Charles Richet.&lt;/p&gt;
-	&lt;p&gt;El 21 de julio de 1914 se casa con María Fidelman Brodsky, pianista e hija de una familia acomodada de rusos exiliados que vivían en Holanda. El matrimonio tuvo cinco hijos, de los que sobrevivieron tres de ellos: Juan, Rómulo y Miguel, adoptando estos el apellido Mijailov.&lt;/p&gt;
-	&lt;p&gt;En 1916 se incorpora al Laboratorio de Fisiología General en Madrid, sito en los sótanos de la Residencia de Estudiantes, y dependiente de la Junta de Ampliación de Estudios. En 1919 convalida en España su título de Licenciado de Medicina y Cirugía y al año siguiente realiza la Tesis Doctoral que fue publicada con el título: "El tono vascular y el mecanismo de la acción vasotónica del esplácnico".&lt;/p&gt;
-	&lt;p&gt;Nombrado en 1922 Secretario de la Facultad de Medicina de la Universidad Central de Madrid, colabora en la Junta para la construcción de la Ciudad Universitaria, siendo Secretario de la misma en 1931.&lt;/p&gt;
-	&lt;p&gt;En plena Dictadura de Primo de Rivera, en 1929, ingresa en el Partido Socialista Obrero Español, perteneciendo al ala centrista del mismo de la mano de Indalecio Prieto. Empieza su actividad política, aunque en un principio predomina su labor científica y académica.&lt;/p&gt;
-	&lt;p&gt;En las primeras elecciones generales de la República es elegido Diputado a Cortes por Las Palmas de Gran Canaria, su ciudad de nacimiento, cargo que ostentará en los dos comicios siguientes (1933 y 1936). En el máximo órgano legislativo es nombrado Presidente de la Comisión de Hacienda. También representa a la República en foros internacionales como la Organización Internacional del Trabajo (OIT) y la Unión Interparlamentaria.&lt;/p&gt;
-	&lt;p&gt;Durante la guerra civil participa en la defensa de Madrid y en septiembre de 1936 es nombrado Ministro de Hacienda del Gobierno de Largo Caballero, poniendo orden a las finanzas españolas y asegurando, mediante la evacuación de las reservas de oro del Banco de España a la URSS y a Francia, el aprovisionamiento de armas y alimentos para la defensa de la República.&lt;/p&gt;
-	&lt;p&gt;En junio de 1937 es nombrado Presidente del Gobierno español y con posterioridad elaborará un proyecto de reconciliación de los españoles denominado Los Trece puntos, que los rebeldes rechazarán. Negrín personifica la resistencia de la República frente a los militares alzados y las potencias fascistas europeas, aunque no podrá evitar la derrota y se exiliará a Francia en 1939 .&lt;/p&gt;
-	&lt;p&gt;En 1940 traslada su residencia a Londres, donde encarnará la suprema autoridad de la República en el exilio, poniendo al servicio de las autoridades británicas su experiencia política internacional y sus conocimientos científicos en beneficio de la causa aliada.&lt;/p&gt;
-	&lt;p&gt;Una vez derrotado el eje fascista en Europa acude a México donde dimite de su cargo de Presidente del Gobierno ante las Cortes españolas en el exilio.&lt;/p&gt;
-	&lt;p&gt;El 12 de noviembre de 1956 muere Juan Negrín en París de un ataque al corazón.&lt;/p&gt;
-	&lt;p class="firma"&gt;Sergio Millares&lt;br /&gt;Historiador&lt;/p&gt;</field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="8" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/chronology/</field><field type="CharField" name="url_es">/cronobiografía/</field><field type="CharField" name="url_en">/chronology/</field><field type="CharField" name="title">Chronology</field><field type="CharField" name="title_es">Cronobiografía</field><field type="CharField" name="title_en">Chronology</field><field type="TextField" name="content">&lt;dl&gt;
-	&lt;h1&gt;Cronobiografía&lt;/h1&gt;
-	&lt;dt&gt;&lt;time datetime="1892-2-3"&gt;1892, 3 de febrero&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt; Juan Negrín López nace en Las Palmas de Gran Canaria.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1906-1"&gt;1906&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Tras cursar primeras letras en su ciudad natal en el colegio privado masculino Nuestra Señora de la Soledad, obtuvo la máxima calificación de matrícula de honor en el bachillerato, en el Instituto General y Técnico de Canarias, ubicado en La Laguna, y en octubre de ese año llega a la ciudad alemana de Hamburgo, trasladándose después a Kiel.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1907-9"&gt;1907 Septiembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;inicia sus estudios de Medicina en la Universidad de Kiel a los 15 años, trasladándose al año siguiente a Leipzig para continuar su carrera en la Facultad de Medicina, vinculándose a la famosa Escuela de Fisiología dirigida por Ewald Hering, y consolidando su faceta de investigador.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1912-8-3"&gt;1912, 3 de agosto&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;A los 20 años obtuvo el grado de doctor en Medicina por la Universidad de Leipzig, publicando su tesis doctoral en alemán: Zur frage nach der genese der Piqûre-Glykosurie.&lt;/dd&gt;
+    &lt;/script&gt;</field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="7" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/biography/</field><field type="CharField" name="url_es">/biografia/</field><field type="CharField" name="url_en">/biography/</field><field type="CharField" name="title">Biography</field><field type="CharField" name="title_es">Biografía</field><field type="CharField" name="title_en">Biography</field><field type="TextField" name="content">&lt;figure&gt;
+&lt;img src="/media/uploads/flatpages/juan-negrin-autoretrato.jpg" width="200" height="267" alt="Juan Negrin" longdesc="Juan Negrin López" /&gt;
+&lt;figcaption&gt;Juan Negrín&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;time datetime="1892-2-3"&gt;Nace en la Calle Mayor de Triana en Las Palmas de Gran Canaria, isla de Gran Canaria&lt;/time&gt;, el 3 de febrero de 1892. Hijo primogénito de un próspero hombre de negocios, estudió las primeras letras en su ciudad natal en el colegio privado La Soledad y obtuvo las máximas calificaciones en el Bachillerato, durante el curso 1905-06, a la increíble edad de 14 años.&lt;/p&gt;
+&lt;p&gt;Durante el curso 1906-07 se traslada a Alemania y comienza la carrera de Medicina a los quince años, primero en la Universidad de Kiel y luego en la de Leipzig, vinculándose a su Escuela de Fisiología dirigida por Ewald Hering. En 1912, a los veinte años, obtuvo el grado de Doctor.&lt;/p&gt;
+&lt;p&gt;Trabajó como asistente numerario en la misma Universidad y la movilización de sus superiores en la Gran Guerra de 1914 le hizo asumir más responsabilidades docentes. Se convierte en un políglota (inglés, alemán y francés) y traduce del francés al alemán L´Anaphylaxie de Charles Richet.&lt;/p&gt;
+&lt;p&gt;El 21 de julio de 1914 se casa con María Fidelman Brodsky, pianista e hija de una familia acomodada de rusos exiliados que vivían en Holanda. El matrimonio tuvo cinco hijos, de los que sobrevivieron tres de ellos: Juan, Rómulo y Miguel, adoptando estos el apellido Mijailov.&lt;/p&gt;
+&lt;p&gt;En 1916 se incorpora al Laboratorio de Fisiología General en Madrid, sito en los sótanos de la Residencia de Estudiantes, y dependiente de la Junta de Ampliación de Estudios. En 1919 convalida en España su título de Licenciado de Medicina y Cirugía y al año siguiente realiza la Tesis Doctoral que fue publicada con el título: "El tono vascular y el mecanismo de la acción vasotónica del esplácnico".&lt;/p&gt;
+&lt;p&gt;Nombrado en 1922 Secretario de la Facultad de Medicina de la Universidad Central de Madrid, colabora en la Junta para la construcción de la Ciudad Universitaria, siendo Secretario de la misma en 1931.&lt;/p&gt;
+&lt;p&gt;En plena Dictadura de Primo de Rivera, en 1929, ingresa en el Partido Socialista Obrero Español, perteneciendo al ala centrista del mismo de la mano de Indalecio Prieto. Empieza su actividad política, aunque en un principio predomina su labor científica y académica.&lt;/p&gt;
+&lt;p&gt;En las primeras elecciones generales de la República es elegido Diputado a Cortes por Las Palmas de Gran Canaria, su ciudad de nacimiento, cargo que ostentará en los dos comicios siguientes (1933 y 1936). En el máximo órgano legislativo es nombrado Presidente de la Comisión de Hacienda. También representa a la República en foros internacionales como la Organización Internacional del Trabajo (OIT) y la Unión Interparlamentaria.&lt;/p&gt;
+&lt;p&gt;Durante la guerra civil participa en la defensa de Madrid y en septiembre de 1936 es nombrado Ministro de Hacienda del Gobierno de Largo Caballero, poniendo orden a las finanzas españolas y asegurando, mediante la evacuación de las reservas de oro del Banco de España a la URSS y a Francia, el aprovisionamiento de armas y alimentos para la defensa de la República.&lt;/p&gt;
+&lt;p&gt;En junio de 1937 es nombrado Presidente del Gobierno español y con posterioridad elaborará un proyecto de reconciliación de los españoles denominado Los Trece puntos, que los rebeldes rechazarán. Negrín personifica la resistencia de la República frente a los militares alzados y las potencias fascistas europeas, aunque no podrá evitar la derrota y se exiliará a Francia en 1939 .&lt;/p&gt;
+&lt;p&gt;En 1940 traslada su residencia a Londres, donde encarnará la suprema autoridad de la República en el exilio, poniendo al servicio de las autoridades británicas su experiencia política internacional y sus conocimientos científicos en beneficio de la causa aliada.&lt;/p&gt;
+&lt;p&gt;Una vez derrotado el eje fascista en Europa acude a México donde dimite de su cargo de Presidente del Gobierno ante las Cortes españolas en el exilio.&lt;/p&gt;
+&lt;p&gt;El 12 de noviembre de 1956 muere Juan Negrín en París de un ataque al corazón.&lt;/p&gt;
+&lt;p class="firma"&gt;Sergio Millares&lt;br /&gt;Historiador&lt;/p&gt;</field><field type="TextField" name="content_es">&lt;figure&gt;
+&lt;img src="/media/uploads/flatpages/juan-negrin-autoretrato.jpg" width="200" height="267" alt="Juan Negrin" longdesc="Juan Negrin López" /&gt;
+&lt;figcaption&gt;Juan Negrín&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;time datetime="1892-2-3"&gt;Nace en la Calle Mayor de Triana en Las Palmas de Gran Canaria, isla de Gran Canaria&lt;/time&gt;, el 3 de febrero de 1892. Hijo primogénito de un próspero hombre de negocios, estudió las primeras letras en su ciudad natal en el colegio privado La Soledad y obtuvo las máximas calificaciones en el Bachillerato, durante el curso 1905-06, a la increíble edad de 14 años.&lt;/p&gt;
+&lt;p&gt;Durante el curso 1906-07 se traslada a Alemania y comienza la carrera de Medicina a los quince años, primero en la Universidad de Kiel y luego en la de Leipzig, vinculándose a su Escuela de Fisiología dirigida por Ewald Hering. En 1912, a los veinte años, obtuvo el grado de Doctor.&lt;/p&gt;
+&lt;p&gt;Trabajó como asistente numerario en la misma Universidad y la movilización de sus superiores en la Gran Guerra de 1914 le hizo asumir más responsabilidades docentes. Se convierte en un políglota (inglés, alemán y francés) y traduce del francés al alemán L´Anaphylaxie de Charles Richet.&lt;/p&gt;
+&lt;p&gt;El 21 de julio de 1914 se casa con María Fidelman Brodsky, pianista e hija de una familia acomodada de rusos exiliados que vivían en Holanda. El matrimonio tuvo cinco hijos, de los que sobrevivieron tres de ellos: Juan, Rómulo y Miguel, adoptando estos el apellido Mijailov.&lt;/p&gt;
+&lt;p&gt;En 1916 se incorpora al Laboratorio de Fisiología General en Madrid, sito en los sótanos de la Residencia de Estudiantes, y dependiente de la Junta de Ampliación de Estudios. En 1919 convalida en España su título de Licenciado de Medicina y Cirugía y al año siguiente realiza la Tesis Doctoral que fue publicada con el título: "El tono vascular y el mecanismo de la acción vasotónica del esplácnico".&lt;/p&gt;
+&lt;p&gt;Nombrado en 1922 Secretario de la Facultad de Medicina de la Universidad Central de Madrid, colabora en la Junta para la construcción de la Ciudad Universitaria, siendo Secretario de la misma en 1931.&lt;/p&gt;
+&lt;p&gt;En plena Dictadura de Primo de Rivera, en 1929, ingresa en el Partido Socialista Obrero Español, perteneciendo al ala centrista del mismo de la mano de Indalecio Prieto. Empieza su actividad política, aunque en un principio predomina su labor científica y académica.&lt;/p&gt;
+&lt;p&gt;En las primeras elecciones generales de la República es elegido Diputado a Cortes por Las Palmas de Gran Canaria, su ciudad de nacimiento, cargo que ostentará en los dos comicios siguientes (1933 y 1936). En el máximo órgano legislativo es nombrado Presidente de la Comisión de Hacienda. También representa a la República en foros internacionales como la Organización Internacional del Trabajo (OIT) y la Unión Interparlamentaria.&lt;/p&gt;
+&lt;p&gt;Durante la guerra civil participa en la defensa de Madrid y en septiembre de 1936 es nombrado Ministro de Hacienda del Gobierno de Largo Caballero, poniendo orden a las finanzas españolas y asegurando, mediante la evacuación de las reservas de oro del Banco de España a la URSS y a Francia, el aprovisionamiento de armas y alimentos para la defensa de la República.&lt;/p&gt;
+&lt;p&gt;En junio de 1937 es nombrado Presidente del Gobierno español y con posterioridad elaborará un proyecto de reconciliación de los españoles denominado Los Trece puntos, que los rebeldes rechazarán. Negrín personifica la resistencia de la República frente a los militares alzados y las potencias fascistas europeas, aunque no podrá evitar la derrota y se exiliará a Francia en 1939 .&lt;/p&gt;
+&lt;p&gt;En 1940 traslada su residencia a Londres, donde encarnará la suprema autoridad de la República en el exilio, poniendo al servicio de las autoridades británicas su experiencia política internacional y sus conocimientos científicos en beneficio de la causa aliada.&lt;/p&gt;
+&lt;p&gt;Una vez derrotado el eje fascista en Europa acude a México donde dimite de su cargo de Presidente del Gobierno ante las Cortes españolas en el exilio.&lt;/p&gt;
+&lt;p&gt;El 12 de noviembre de 1956 muere Juan Negrín en París de un ataque al corazón.&lt;/p&gt;
+&lt;p class="firma"&gt;Sergio Millares&lt;br /&gt;Historiador&lt;/p&gt;</field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="8" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/chronology/</field><field type="CharField" name="url_es">/cronobiografía/</field><field type="CharField" name="url_en">/chronology/</field><field type="CharField" name="title">Chronology</field><field type="CharField" name="title_es">Cronobiografía</field><field type="CharField" name="title_en">Chronology</field><field type="TextField" name="content">&lt;dl&gt;
+    &lt;dt&gt;&lt;time datetime="1892-2-3"&gt;1892, 3 de febrero&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt; Juan Negrín López nace en Las Palmas de Gran Canaria.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1906-1"&gt;1906&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Tras cursar primeras letras en su ciudad natal en el colegio privado masculino Nuestra Señora de la Soledad, obtuvo la máxima calificación de matrícula de honor en el bachillerato, en el Instituto General y Técnico de Canarias, ubicado en La Laguna, y en octubre de ese año llega a la ciudad alemana de Hamburgo, trasladándose después a Kiel.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1907-9"&gt;1907 Septiembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;inicia sus estudios de Medicina en la Universidad de Kiel a los 15 años, trasladándose al año siguiente a Leipzig para continuar su carrera en la Facultad de Medicina, vinculándose a la famosa Escuela de Fisiología dirigida por Ewald Hering, y consolidando su faceta de investigador.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1912-8-3"&gt;1912, 3 de agosto&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;A los 20 años obtuvo el grado de doctor en Medicina por la Universidad de Leipzig, publicando su tesis doctoral en alemán: Zur frage nach der genese der Piqûre-Glykosurie.&lt;/dd&gt;
 
-	&lt;div&gt;
-		&lt;figure&gt;
-			&lt;a href="http://fundacion.noc4net.com:8080/uploads/assets/b/a/6/1/3/d/1/f/c/0/foto-juan-negrin-en-facultad-de-medicina-en-alemania.jpg" target="_blank" title="Juan Negrin en facultad medicina en Alemania"&gt;
-				&lt;img src=" http://fundacion.noc4net.com:8080/uploads/assets/b/a/6/1/3/d/1/f/c/0/foto-juan-negrin-en-facultad-de-medicina-en-alemania.jpg" width="100%" alt="Juan Negrin en facultad medicina en Alemania" longdesc="Juan Negrin en facultad medicina en Alemania" /&gt;
-			&lt;/a&gt;
-			&lt;figcaption&gt;Juan Negrin en facultad medicina en Alemania&lt;/figcaption&gt;
-		&lt;/figure&gt;
-	&lt;/div&gt;
+    &lt;div&gt;
+        &lt;figure&gt;
+            &lt;a href="/media/uploads/flatpages/foto-juan-negrin-en-facultad-de-medicina-en-alemania.jpg" target="_blank" title="Juan Negrin en su facultad de medicina en Alemania"&gt;&lt;img src="/media/uploads/flatpages/foto-juan-negrin-en-facultad-de-medicina-en-alemania-thb.jpg" alt="Juan Negrin en su facultad de medicina, en Alemania" longdesc="Juan Negrin en su facultad de medicina, en Alemania" /&gt;&lt;/a&gt;
+            &lt;figcaption&gt;Juan Negrin en su facultad de&lt;br /&gt;medicina, en Alemania&lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/div&gt;
 
-	&lt;dt&gt;&lt;time datetime="1914-9-2"&gt;1914, 9 de febrero&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;matrimonio civil en Leipzig de Juan Negrín con María Fidelman Brodsky, pianista e hija de una familia acomodada de judíos rusos. El 21 de julio se &lt;time datetime="1914-7-21"&gt;celebra el matrimonio religioso&lt;/time&gt;, según el rito católico, también en Leipzig, y el 22 de noviembre &lt;time datetime="1914-11-22"&gt;nace el primer hijo del matrimonio&lt;/time&gt;, llamado también Juan Negrín.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1915-1"&gt;1915&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Los alemanes le ofrecen el puesto de &lt;em&gt;Privatdozent&lt;/em&gt; en el Instituto de Fisiología de Leipzig, aunque Negrín lo rechaza y decide volver a España. El 24 de noviembre, la &lt;time datetime="1915-11-24"&gt;familia Negrín llega a Las Palmas de Gran Canaria&lt;/time&gt; en el vapor Santa Isabel, y el día 8 de diciembre &lt;time datetime="1915-12-8"&gt;inscriben en el Juzgado de Vegueta el nacimiento de María Negrín Fidelman, hija de Juan Negrín López&lt;/time&gt;.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1914-9-2"&gt;1914, 9 de febrero&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;matrimonio civil en Leipzig de Juan Negrín con María Fidelman Brodsky, pianista e hija de una familia acomodada de judíos rusos. El 21 de julio se &lt;time datetime="1914-7-21"&gt;celebra el matrimonio religioso&lt;/time&gt;, según el rito católico, también en Leipzig, y el 22 de noviembre &lt;time datetime="1914-11-22"&gt;nace el primer hijo del matrimonio&lt;/time&gt;, llamado también Juan Negrín.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1915-1"&gt;1915&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Los alemanes le ofrecen el puesto de &lt;em&gt;Privatdozent&lt;/em&gt; en el Instituto de Fisiología de Leipzig, aunque Negrín lo rechaza y decide volver a España. El 24 de noviembre, la &lt;time datetime="1915-11-24"&gt;familia Negrín llega a Las Palmas de Gran Canaria&lt;/time&gt; en el vapor Santa Isabel, y el día 8 de diciembre &lt;time datetime="1915-12-8"&gt;inscriben en el Juzgado de Vegueta el nacimiento de María Negrín Fidelman, hija de Juan Negrín López&lt;/time&gt;.&lt;/dd&gt;
 
-	&lt;div&gt;
-		&lt;figure&gt;
-			&lt;img src="http://www.residencia.csic.es/jae/img/protagonistas/protagonistas/negrin.jpg" width="100%" alt="Juan Negrín López" longdesc="Juan Negrín López" /&gt;
-			&lt;figcaption&gt;Juan Negrín López&lt;/figcaption&gt;
-		&lt;/figure&gt;
-	&lt;/div&gt;
+    &lt;div&gt;
+        &lt;figure&gt;
+            &lt;a href="/media/uploads/flatpages/retrato-negrin.jpg" target="_blank"&gt;&lt;img src="/media/uploads/flatpages/retrato-negrin-thb.jpg" alt="Juan Negrín López" longdesc="Juan Negrín López" /&gt;&lt;/a&gt;
+            &lt;figcaption&gt;Juan Negrín López&lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/div&gt;
 
-	&lt;dt&gt;&lt;time datetime="1916-6-15"&gt;1916, 15 de junio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;La Junta de Ampliación de Estudios invita a Negrín a trasladarse a Madrid, y en octubre &lt;time datetime="1916-10"&gt;se crea el Laboratorio de Fisiología General&lt;/time&gt;, sito en los sótanos de la Residencia de Estudiantes, dirigido por Juan Negrín.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1917-1"&gt;1917&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Es nombrado auxiliar interino de la Cátedra de Fisiología en la Facultad de Medicina de Madrid.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1917-5-3"&gt;1917, 3 de mayo&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Nace Rómulo Negrín Fidelman.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1919-9-25"&gt;1919, 25 de septiembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Convalida en España su título de licenciado en Medicina y Cirugía con la calificación de sobresaliente, y obtiene el premio extraordinario de Licenciatura.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1920-6-26"&gt;1920, 26 de junio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Realiza la tésis doctoral que fue publicada con el título: &lt;em&gt;El tono vascular y el mecanismo de la acción vasotónica del esplácnico&lt;/em&gt; y obtiene el título de Doctor por la Universidad española.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1915-3-24"&gt;1922, 4 de marzo&lt;/dt&gt;&lt;dd&gt;A los 30 años gana la Cátedra de Fisiología en la Universidad Central de Madrid, y es nombrado secretario de la Facultad de Medicina.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1922-6-7"&gt;1922, 7 de junio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Nace Miguel Negrín.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1923-1"&gt;1923&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Nace y muere Dolores Negrín, hija de Juan Negrín.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1925-1"&gt;1925&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Muere María Negrín de una epidemia de tifus, a la edad de 10 años.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1926-1"&gt;1926&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Conoce a la que habría de ser su compañera sentimental hasta su muerte, Feli López de Dom Pablo.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1916-6-15"&gt;1916, 15 de junio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;La Junta de Ampliación de Estudios invita a Negrín a trasladarse a Madrid, y en octubre &lt;time datetime="1916-10"&gt;se crea el Laboratorio de Fisiología General&lt;/time&gt;, sito en los sótanos de la Residencia de Estudiantes, dirigido por Juan Negrín.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1917-1"&gt;1917&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Es nombrado auxiliar interino de la Cátedra de Fisiología en la Facultad de Medicina de Madrid.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1917-5-3"&gt;1917, 3 de mayo&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Nace Rómulo Negrín Fidelman.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1919-9-25"&gt;1919, 25 de septiembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Convalida en España su título de licenciado en Medicina y Cirugía con la calificación de sobresaliente, y obtiene el premio extraordinario de Licenciatura.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1920-6-26"&gt;1920, 26 de junio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Realiza la tésis doctoral que fue publicada con el título: &lt;em&gt;El tono vascular y el mecanismo de la acción vasotónica del esplácnico&lt;/em&gt; y obtiene el título de Doctor por la Universidad española.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1915-3-24"&gt;1922, 4 de marzo&lt;/dt&gt;&lt;dd&gt;A los 30 años gana la Cátedra de Fisiología en la Universidad Central de Madrid, y es nombrado secretario de la Facultad de Medicina.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1922-6-7"&gt;1922, 7 de junio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Nace Miguel Negrín.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1923-1"&gt;1923&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Nace y muere Dolores Negrín, hija de Juan Negrín.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1925-1"&gt;1925&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Muere María Negrín de una epidemia de tifus, a la edad de 10 años.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1926-1"&gt;1926&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Conoce a la que habría de ser su compañera sentimental hasta su muerte, Feli López de Dom Pablo.&lt;/dd&gt;
 
-	&lt;div&gt;
-		&lt;figure&gt;
-			&lt;a href="http://fundacion.noc4net.com:8080/uploads/assets/d/8/5/0/2/b/7/d/7/7/foto-familia-negrin-a-finales-de-los-anos-veinte.jpg" target="_blank" title="Familia Negrin a finales de los años veinte"&gt;
-				&lt;img src="http://fundacion.noc4net.com:8080/uploads/assets/d/8/5/0/2/b/7/d/7/7/foto-familia-negrin-a-finales-de-los-anos-veinte.jpg" width="100%" alt="Familia Negrin a finales de los años veinte" longdesc="Familia Negrin a finales de los años veinte" /&gt;
-			&lt;/a&gt;
-			&lt;figcaption&gt;Familia Negrin a finales de los años veinte&lt;/figcaption&gt;
-		&lt;/figure&gt;
-	&lt;/div&gt;
+    &lt;div&gt;
+        &lt;figure&gt;
+            &lt;a href="/media/uploads/flatpages/foto-familia-negrin-a-finales-de-los-anos-veinte.jpg" target="_blank" title="Familia Negrin a finales de los años veinte"&gt;
+                &lt;img src="/media/uploads/flatpages/foto-familia-negrin-a-finales-de-los-anos-veinte-thb.jpg" alt="Familia Negrin a finales de los años veinte" longdesc="Familia Negrin a finales de los años veinte" /&gt;
+            &lt;/a&gt;
+            &lt;figcaption&gt;Familia Negrin a finales&lt;br /&gt;de los años veinte&lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/div&gt;
 
-	&lt;dt&gt;&lt;time datetime="1927-1"&gt;1927&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Es llamado por Florestán Aguilar para figurar como asesor técnico de la Junta de la Ciudad Universitaria de Madrid. Ese año, con el apoyo económico de su familia canaria y junto con los periodistas Julio Álvarez del Vayo y Luis Araquistáin fundan la Editorial España.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1929-4"&gt;1929, Abril&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Ingresa en el Partido Socialista Obrero Español.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1930-12-15"&gt;1930, 15 de diciembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Huelga general convocada por la Conjunción Republicano-Socialista. Negrín pone su laboratorio y coche a disposición de los huelguistas.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1931-6-28"&gt;1931, 28 de junio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Elegido diputado a Cortes por la provincia de Las Palmas; y vocal de la Comisión Directiva del Grupo Parlamentario Socialista en las Cortes, figurando en las comisiones de Estado, Hacienda y Presupuestos en el Congreso de los Diputados.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1933-1"&gt;1933, Noviembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;btiene el acta de diputado a Cortes por Madrid, y es elegido vicepresidente de la Comisión Directiva del Grupo Parlamentario Socialista en las Cortes, formando parte de las comisiones de Hacienda y Presupuestos en el Congreso de los Diputados.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1934-1"&gt;1934&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Cesa en el cargo de secretario de la Facultad de Medicina de Madrid. Apoya, con reservas, el movimiento insurreccional de octubre, apoyando después a las víctimas de la represión.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1935-1"&gt;1935&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín participa en el Congreso Internacional de Fisiología de Leningrado, organizado por Pavlov.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1935-1"&gt;&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Juan Negrín inicia los trámites para su separación matrimonial.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1936-2-16"&gt;1936, 16 de febrero&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Es elegido diputado a Cortes en la candidatura del Frente Popular por la provincia de Las Palmas, figurando en las comisiones de Estado y Presupuestos del Congreso de los Diputados representando a los diputados socialistas.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1936-7"&gt;&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Con el estallido de la guerra cesa de secretario ejecutivo de la Junta de la Ciudad Universitaria de Madrid.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1936-7"&gt;&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Su esposa legal y su hijo más pequeño, Miguel, se refugian en Suiza, mientras que los dos mayores se incorporarán al Ejército republicano. Su madre, sus dos hermanos y una tía logran salir de España y refugiarse finalmente en Lourdes (Francia).&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1936-9"&gt;4 de septiembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;es nombrado ministro de Hacienda en el Gobierno de Largo Caballero.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1927-1"&gt;1927&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Es llamado por Florestán Aguilar para figurar como asesor técnico de la Junta de la Ciudad Universitaria de Madrid. Ese año, con el apoyo económico de su familia canaria y junto con los periodistas Julio Álvarez del Vayo y Luis Araquistáin fundan la Editorial España.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1929-4"&gt;1929, Abril&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Ingresa en el Partido Socialista Obrero Español.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1930-12-15"&gt;1930, 15 de diciembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Huelga general convocada por la Conjunción Republicano-Socialista. Negrín pone su laboratorio y coche a disposición de los huelguistas.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1931-6-28"&gt;1931, 28 de junio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Elegido diputado a Cortes por la provincia de Las Palmas; y vocal de la Comisión Directiva del Grupo Parlamentario Socialista en las Cortes, figurando en las comisiones de Estado, Hacienda y Presupuestos en el Congreso de los Diputados.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1933-1"&gt;1933, Noviembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;btiene el acta de diputado a Cortes por Madrid, y es elegido vicepresidente de la Comisión Directiva del Grupo Parlamentario Socialista en las Cortes, formando parte de las comisiones de Hacienda y Presupuestos en el Congreso de los Diputados.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1934-1"&gt;1934&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Cesa en el cargo de secretario de la Facultad de Medicina de Madrid. Apoya, con reservas, el movimiento insurreccional de octubre, apoyando después a las víctimas de la represión.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1935-1"&gt;1935&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín participa en el Congreso Internacional de Fisiología de Leningrado, organizado por Pavlov.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1935-1"&gt;&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Juan Negrín inicia los trámites para su separación matrimonial.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1936-2-16"&gt;1936, 16 de febrero&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Es elegido diputado a Cortes en la candidatura del Frente Popular por la provincia de Las Palmas, figurando en las comisiones de Estado y Presupuestos del Congreso de los Diputados representando a los diputados socialistas.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1936-7"&gt;&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Con el estallido de la guerra cesa de secretario ejecutivo de la Junta de la Ciudad Universitaria de Madrid.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1936-7"&gt;&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Su esposa legal y su hijo más pequeño, Miguel, se refugian en Suiza, mientras que los dos mayores se incorporarán al Ejército republicano. Su madre, sus dos hermanos y una tía logran salir de España y refugiarse finalmente en Lourdes (Francia).&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1936-9"&gt;4 de septiembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;es nombrado ministro de Hacienda en el Gobierno de Largo Caballero.&lt;/dd&gt;
 
-	&lt;div&gt;
-		&lt;figure&gt;
-			&lt;a href="http://fundacion.noc4net.com:8080/uploads/assets/2/6/7/b/9/7/6/f/6/f/foto-de-juan-negrin-e-indalecio-prieto.jpg" target="_blank" title="Juan Negrin e Indalecio Prieto"&gt;
-				&lt;img src="http://fundacion.noc4net.com:8080/uploads/assets/2/6/7/b/9/7/6/f/6/f/foto-de-juan-negrin-e-indalecio-prieto.jpg" width="100%" alt="Juan Negrin e Indalecio Prieto" longdesc="Juan Negrin e Indalecio Prieto" /&gt;
-			&lt;/a&gt;
-			&lt;figcaption&gt;Juan Negrin e Indalecio Prieto&lt;/figcaption&gt;
-		&lt;/figure&gt;
-	&lt;/div&gt;
+    &lt;div&gt;
+        &lt;figure&gt;
+            &lt;a href="/media/uploads/flatpages/foto-de-juan-negrin-e-indalecio-prieto.jpg" target="_blank" title="Juan Negrin e Indalecio Prieto"&gt;
+                &lt;img src="/media/uploads/flatpages/foto-de-juan-negrin-e-indalecio-prieto-thb.jpg" alt="Juan Negrin e Indalecio Prieto" longdesc="Juan Negrin e Indalecio Prieto" /&gt;
+            &lt;/a&gt;
+            &lt;figcaption&gt;Juan Negrin e Indalecio Prieto&lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/div&gt;
 
-	&lt;dt&gt;&lt;time datetime="1937-5-17"&gt;1937, 17 de mayo&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín es nombrado jefe del Gobierno.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1937-6-2"&gt;2 de julio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Juan Negrín Cabrera es detenido en Las Palmas e ingresado en la Prisión Provincial de Las Palmas.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1938-4-5"&gt;1938, 5 de abril&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Crisis ministerial, con la salida de Prieto, después de su alejamiento con respecto a la estrategia de resistencia.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1938-4-30"&gt;1938, 30 de abril&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Proclamación de los 13 Puntos que contiene un programa de gobierno para la resistencia.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1938-8-7"&gt;1938, 7 de agosto&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Reunión del Comité Nacional del PSOE en Barcelona en la que Negrín recibe el apoyo para continuar su política, a pesar de la posición contraria de Indalecio Prieto.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1938-9-21"&gt;1938, 21 de septiembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín anuncia en la Sociedad de Naciones (Ginebra) la retirada unilateral de las Brigadas Internacionales.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1939-2-1"&gt;1939, 1 de febrero&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Reunión de las Cortes en Figueras que ratifican la confianza en el Gobierno de Negrín.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1939-2-9"&gt;1939, 9 de febrero&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín sale de España, pero vuelve a España al día siguiente.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1939-3-5"&gt;5 de marzo&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;El coronel Casado, desde Madrid, encabeza una rebelión contra la autoridad de Negrín.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1939-3-31"&gt;31 de marzo&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Se reúne en París la Comisión Permanente de las Cortes españolas en donde Negrín defiende su política de resistencia y la legitimidad de su Gobierno.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1939-6-26"&gt;26 de junio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;La Diputación Permanente de las Cortes desautoriza a Negrín y se declara «única institución indiscutible».&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1939-9-13"&gt;13 de septiembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Juan Negrín Cabrera sale del Hospital San Martín de Las Palmas y es puesto en libertad.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1937-5-17"&gt;1937, 17 de mayo&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín es nombrado jefe del Gobierno.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1937-6-2"&gt;2 de julio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Juan Negrín Cabrera es detenido en Las Palmas e ingresado en la Prisión Provincial de Las Palmas.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1938-4-5"&gt;1938, 5 de abril&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Crisis ministerial, con la salida de Prieto, después de su alejamiento con respecto a la estrategia de resistencia.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1938-4-30"&gt;1938, 30 de abril&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Proclamación de los 13 Puntos que contiene un programa de gobierno para la resistencia.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1938-8-7"&gt;1938, 7 de agosto&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Reunión del Comité Nacional del PSOE en Barcelona en la que Negrín recibe el apoyo para continuar su política, a pesar de la posición contraria de Indalecio Prieto.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1938-9-21"&gt;1938, 21 de septiembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín anuncia en la Sociedad de Naciones (Ginebra) la retirada unilateral de las Brigadas Internacionales.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1939-2-1"&gt;1939, 1 de febrero&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Reunión de las Cortes en Figueras que ratifican la confianza en el Gobierno de Negrín.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1939-2-9"&gt;1939, 9 de febrero&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín sale de España, pero vuelve a España al día siguiente.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1939-3-5"&gt;5 de marzo&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;El coronel Casado, desde Madrid, encabeza una rebelión contra la autoridad de Negrín.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1939-3-31"&gt;31 de marzo&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Se reúne en París la Comisión Permanente de las Cortes españolas en donde Negrín defiende su política de resistencia y la legitimidad de su Gobierno.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1939-6-26"&gt;26 de junio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;La Diputación Permanente de las Cortes desautoriza a Negrín y se declara «única institución indiscutible».&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1939-9-13"&gt;13 de septiembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Juan Negrín Cabrera sale del Hospital San Martín de Las Palmas y es puesto en libertad.&lt;/dd&gt;
 
-	&lt;div&gt;
-		&lt;figure&gt;
-			&lt;a href="http://fundacion.noc4net.com:8080/uploads/assets/7/f/3/5/4/1/9/a/0/5/foto-barco-sinaia-a-su-llegada-a-mexico-junio-1939.jpg" target="_blank" title="Barco Sinaia a su llegada a México"&gt;
-				&lt;img src="http://fundacion.noc4net.com:8080/uploads/assets/7/f/3/5/4/1/9/a/0/5/foto-barco-sinaia-a-su-llegada-a-mexico-junio-1939.jpg" width="100%" alt="Barco Sinaia a su llegada a México" longdesc="Barco Sinaia a su llegada a México" /&gt;
-			&lt;/a&gt;
-			&lt;figcaption&gt;Barco Sinaia a su llegada a México&lt;/figcaption&gt;
-		&lt;/figure&gt;
-	&lt;/div&gt;
+    &lt;div&gt;
+        &lt;figure&gt;
+            &lt;a href="/media/uploads/flatpages/foto-barco-sinaia-a-su-llegada-a-mexico-junio-1939.jpg" target="_blank" title="Barco Sinaia a su llegada a México"&gt;
+                &lt;img src="/media/uploads/flatpages/foto-barco-sinaia-a-su-llegada-a-mexico-junio-1939-thb.jpg" alt="Barco Sinaia a su llegada a México" longdesc="Barco Sinaia a su llegada a México" /&gt;
+            &lt;/a&gt;
+            &lt;figcaption&gt;Barco Sinaia a su&lt;br /&gt;llegada a México&lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/div&gt;
 
-	&lt;dt&gt;&lt;time datetime="1940-6-20"&gt;1940, 20 de junio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín y una expedición de republicanos españoles se traslada desde el puerto francés de Burdeos hasta Inglaterra, concediéndole el Gobierno británico, el 3 de julio, derecho de asilo.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1940-6"&gt;1940&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;El franquismo, a través del Tribunal de Responsabilidades Políticas, dicta una sentencia contra Juan Negrín López por la que pierde la nacionalidad española y se le impone una multa de 100 millones de pesetas.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1941-11-26"&gt;1941, 26 de noviembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;El Tribunal Especial para la Represión de la Masonería y el Comunismo condena a Juan Negrín López en ausencia a 30 años de reclusión mayor.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1941-1"&gt;1941&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Se instala con Feli López en la residencia oficial, como jefe del Gobierno republicano en el exilio, de Bovingdon.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1943-1"&gt;1943-1944&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Permanece en Inglaterra todo este tiempo realizando actividades a favor de la República española.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1945-5-19"&gt;1945, 19 de mayo&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Viaja a San Francisco, donde asistirá a la constitución de la Organización de las Naciones Unidas (ONU).&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1945-6-13"&gt;13 de julio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Viaja a México, en donde pronuncia, el 1 de agosto, un discurso en el Palacio de Bellas Artes de la Ciudad de México.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1945-8-17"&gt;17 de agosto&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín presenta su renuncia a la presidencia del Gobierno en las Cortes españolas reunidas en México.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1945-8-26"&gt;26 de agosto&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Giral constituye un Gobierno con la ausencia de Negrín y sus partidarios. Negrín regresa a Inglaterra.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1940-6-20"&gt;1940, 20 de junio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín y una expedición de republicanos españoles se traslada desde el puerto francés de Burdeos hasta Inglaterra, concediéndole el Gobierno británico, el 3 de julio, derecho de asilo.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1940-6"&gt;1940&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;El franquismo, a través del Tribunal de Responsabilidades Políticas, dicta una sentencia contra Juan Negrín López por la que pierde la nacionalidad española y se le impone una multa de 100 millones de pesetas.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1941-11-26"&gt;1941, 26 de noviembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;El Tribunal Especial para la Represión de la Masonería y el Comunismo condena a Juan Negrín López en ausencia a 30 años de reclusión mayor.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1941-1"&gt;1941&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Se instala con Feli López en la residencia oficial, como jefe del Gobierno republicano en el exilio, de Bovingdon.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1943-1"&gt;1943-1944&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Permanece en Inglaterra todo este tiempo realizando actividades a favor de la República española.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1945-5-19"&gt;1945, 19 de mayo&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Viaja a San Francisco, donde asistirá a la constitución de la Organización de las Naciones Unidas (ONU).&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1945-6-13"&gt;13 de julio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Viaja a México, en donde pronuncia, el 1 de agosto, un discurso en el Palacio de Bellas Artes de la Ciudad de México.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1945-8-17"&gt;17 de agosto&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín presenta su renuncia a la presidencia del Gobierno en las Cortes españolas reunidas en México.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1945-8-26"&gt;26 de agosto&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Giral constituye un Gobierno con la ausencia de Negrín y sus partidarios. Negrín regresa a Inglaterra.&lt;/dd&gt;
 
-	&lt;div&gt;
-		&lt;figure&gt;
-			&lt;a href="http://fundacion.noc4net.com:8080/uploads/assets/7/e/d/a/b/1/f/0/0/c/juan-negrin-con-sus-nietos-en-suiza.jpg " target="_blank" title="Juan Negrin con sus nietos en Suiza"&gt;
-				&lt;img src="http://fundacion.noc4net.com:8080/uploads/assets/7/e/d/a/b/1/f/0/0/c/juan-negrin-con-sus-nietos-en-suiza.jpg " width="100%" alt="Juan Negrin con sus nietos en Suiza" longdesc="Juan Negrin con sus nietos en Suiza" /&gt;
-			&lt;/a&gt;
-			&lt;figcaption&gt;Juan Negrin con sus nietos en Suiza&lt;/figcaption&gt;
-		&lt;/figure&gt;
-	&lt;/div&gt;
+    &lt;div&gt;
+        &lt;figure&gt;
+            &lt;a href="/media/uploads/flatpages/juan-negrin-con-sus-nietos-en-suiza.jpg" target="_blank" title="Juan Negrin con sus nietos en Suiza"&gt;
+                &lt;img src="/media/uploads/flatpages/juan-negrin-con-sus-nietos-en-suiza-thb.jpg" alt="Juan Negrin con sus nietos en Suiza" longdesc="Juan Negrin con sus nietos en Suiza" /&gt;
+            &lt;/a&gt;
+            &lt;figcaption&gt;Juan Negrín con sus&lt;br /&gt;nietos en Suiza&lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/div&gt;
 
-	&lt;dt&gt;&lt;time datetime="1946-1"&gt;1946&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Comienza a tener serios problemas cardiacos que le llevarán a la muerte 10 años después.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1948-4-1"&gt;1948, 1-3 de abril&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín publica una serie de artículos en el New York Herald Tribune en los que aboga por la inclusión de España en el Plan Marshall para la reconstrucción de Europa a pesar de la existencia de un régimen dictatorial.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1949-1"&gt;1949-1955&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín se dedica a actividades privadas de consultoría y asesoramiento. Es la etapa que él denominaría «el anonimato del ciudadano Juan». Los hijos de Rómulo, Juan y Carmen, se van a vivir con su abuelo en París a causa de una grave enfermedad de su madre, la norteamericana Jeanne F. Fetter.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1956-1"&gt;1956&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Inicia la escritura de sus Memorias con el título provisional de Contribución a la guerra de España (mundial en España) que no llegó a concluir.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1956-11-12"&gt;12 de noviembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín muere de un ataque al corazón en París.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1956-1"&gt;&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Sus restos son enterrados en la más estricta intimidad.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1946-1"&gt;1946&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Comienza a tener serios problemas cardiacos que le llevarán a la muerte 10 años después.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1948-4-1"&gt;1948, 1-3 de abril&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín publica una serie de artículos en el New York Herald Tribune en los que aboga por la inclusión de España en el Plan Marshall para la reconstrucción de Europa a pesar de la existencia de un régimen dictatorial.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1949-1"&gt;1949-1955&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín se dedica a actividades privadas de consultoría y asesoramiento. Es la etapa que él denominaría «el anonimato del ciudadano Juan». Los hijos de Rómulo, Juan y Carmen, se van a vivir con su abuelo en París a causa de una grave enfermedad de su madre, la norteamericana Jeanne F. Fetter.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1956-1"&gt;1956&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Inicia la escritura de sus Memorias con el título provisional de Contribución a la guerra de España (mundial en España) que no llegó a concluir.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1956-11-12"&gt;12 de noviembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín muere de un ataque al corazón en París.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1956-1"&gt;&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Sus restos son enterrados en la más estricta intimidad.&lt;/dd&gt;
 &lt;/dl&gt;</field><field type="TextField" name="content_es">&lt;dl&gt;
-	&lt;h1&gt;Cronobiografía&lt;/h1&gt;
-	&lt;dt&gt;&lt;time datetime="1892-2-3"&gt;1892, 3 de febrero&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt; Juan Negrín López nace en Las Palmas de Gran Canaria.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1906-1"&gt;1906&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Tras cursar primeras letras en su ciudad natal en el colegio privado masculino Nuestra Señora de la Soledad, obtuvo la máxima calificación de matrícula de honor en el bachillerato, en el Instituto General y Técnico de Canarias, ubicado en La Laguna, y en octubre de ese año llega a la ciudad alemana de Hamburgo, trasladándose después a Kiel.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1907-9"&gt;1907 Septiembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;inicia sus estudios de Medicina en la Universidad de Kiel a los 15 años, trasladándose al año siguiente a Leipzig para continuar su carrera en la Facultad de Medicina, vinculándose a la famosa Escuela de Fisiología dirigida por Ewald Hering, y consolidando su faceta de investigador.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1912-8-3"&gt;1912, 3 de agosto&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;A los 20 años obtuvo el grado de doctor en Medicina por la Universidad de Leipzig, publicando su tesis doctoral en alemán: Zur frage nach der genese der Piqûre-Glykosurie.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1892-2-3"&gt;1892, 3 de febrero&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt; Juan Negrín López nace en Las Palmas de Gran Canaria.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1906-1"&gt;1906&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Tras cursar primeras letras en su ciudad natal en el colegio privado masculino Nuestra Señora de la Soledad, obtuvo la máxima calificación de matrícula de honor en el bachillerato, en el Instituto General y Técnico de Canarias, ubicado en La Laguna, y en octubre de ese año llega a la ciudad alemana de Hamburgo, trasladándose después a Kiel.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1907-9"&gt;1907 Septiembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;inicia sus estudios de Medicina en la Universidad de Kiel a los 15 años, trasladándose al año siguiente a Leipzig para continuar su carrera en la Facultad de Medicina, vinculándose a la famosa Escuela de Fisiología dirigida por Ewald Hering, y consolidando su faceta de investigador.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1912-8-3"&gt;1912, 3 de agosto&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;A los 20 años obtuvo el grado de doctor en Medicina por la Universidad de Leipzig, publicando su tesis doctoral en alemán: Zur frage nach der genese der Piqûre-Glykosurie.&lt;/dd&gt;
 
-	&lt;div&gt;
-		&lt;figure&gt;
-			&lt;a href="http://fundacion.noc4net.com:8080/uploads/assets/b/a/6/1/3/d/1/f/c/0/foto-juan-negrin-en-facultad-de-medicina-en-alemania.jpg" target="_blank" title="Juan Negrin en facultad medicina en Alemania"&gt;
-				&lt;img src=" http://fundacion.noc4net.com:8080/uploads/assets/b/a/6/1/3/d/1/f/c/0/foto-juan-negrin-en-facultad-de-medicina-en-alemania.jpg" width="100%" alt="Juan Negrin en facultad medicina en Alemania" longdesc="Juan Negrin en facultad medicina en Alemania" /&gt;
-			&lt;/a&gt;
-			&lt;figcaption&gt;Juan Negrin en facultad medicina en Alemania&lt;/figcaption&gt;
-		&lt;/figure&gt;
-	&lt;/div&gt;
+    &lt;div&gt;
+        &lt;figure&gt;
+            &lt;a href="/media/uploads/flatpages/foto-juan-negrin-en-facultad-de-medicina-en-alemania.jpg" target="_blank" title="Juan Negrin en su facultad de medicina en Alemania"&gt;&lt;img src="/media/uploads/flatpages/foto-juan-negrin-en-facultad-de-medicina-en-alemania-thb.jpg" alt="Juan Negrin en su facultad de medicina, en Alemania" longdesc="Juan Negrin en su facultad de medicina, en Alemania" /&gt;&lt;/a&gt;
+            &lt;figcaption&gt;Juan Negrin en su facultad de&lt;br /&gt;medicina, en Alemania&lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/div&gt;
 
-	&lt;dt&gt;&lt;time datetime="1914-9-2"&gt;1914, 9 de febrero&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;matrimonio civil en Leipzig de Juan Negrín con María Fidelman Brodsky, pianista e hija de una familia acomodada de judíos rusos. El 21 de julio se &lt;time datetime="1914-7-21"&gt;celebra el matrimonio religioso&lt;/time&gt;, según el rito católico, también en Leipzig, y el 22 de noviembre &lt;time datetime="1914-11-22"&gt;nace el primer hijo del matrimonio&lt;/time&gt;, llamado también Juan Negrín.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1915-1"&gt;1915&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Los alemanes le ofrecen el puesto de &lt;em&gt;Privatdozent&lt;/em&gt; en el Instituto de Fisiología de Leipzig, aunque Negrín lo rechaza y decide volver a España. El 24 de noviembre, la &lt;time datetime="1915-11-24"&gt;familia Negrín llega a Las Palmas de Gran Canaria&lt;/time&gt; en el vapor Santa Isabel, y el día 8 de diciembre &lt;time datetime="1915-12-8"&gt;inscriben en el Juzgado de Vegueta el nacimiento de María Negrín Fidelman, hija de Juan Negrín López&lt;/time&gt;.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1914-9-2"&gt;1914, 9 de febrero&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;matrimonio civil en Leipzig de Juan Negrín con María Fidelman Brodsky, pianista e hija de una familia acomodada de judíos rusos. El 21 de julio se &lt;time datetime="1914-7-21"&gt;celebra el matrimonio religioso&lt;/time&gt;, según el rito católico, también en Leipzig, y el 22 de noviembre &lt;time datetime="1914-11-22"&gt;nace el primer hijo del matrimonio&lt;/time&gt;, llamado también Juan Negrín.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1915-1"&gt;1915&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Los alemanes le ofrecen el puesto de &lt;em&gt;Privatdozent&lt;/em&gt; en el Instituto de Fisiología de Leipzig, aunque Negrín lo rechaza y decide volver a España. El 24 de noviembre, la &lt;time datetime="1915-11-24"&gt;familia Negrín llega a Las Palmas de Gran Canaria&lt;/time&gt; en el vapor Santa Isabel, y el día 8 de diciembre &lt;time datetime="1915-12-8"&gt;inscriben en el Juzgado de Vegueta el nacimiento de María Negrín Fidelman, hija de Juan Negrín López&lt;/time&gt;.&lt;/dd&gt;
 
-	&lt;div&gt;
-		&lt;figure&gt;
-			&lt;img src="http://www.residencia.csic.es/jae/img/protagonistas/protagonistas/negrin.jpg" width="100%" alt="Juan Negrín López" longdesc="Juan Negrín López" /&gt;
-			&lt;figcaption&gt;Juan Negrín López&lt;/figcaption&gt;
-		&lt;/figure&gt;
-	&lt;/div&gt;
+    &lt;div&gt;
+        &lt;figure&gt;
+            &lt;a href="/media/uploads/flatpages/retrato-negrin.jpg" target="_blank"&gt;&lt;img src="/media/uploads/flatpages/retrato-negrin-thb.jpg" alt="Juan Negrín López" longdesc="Juan Negrín López" /&gt;&lt;/a&gt;
+            &lt;figcaption&gt;Juan Negrín López&lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/div&gt;
 
-	&lt;dt&gt;&lt;time datetime="1916-6-15"&gt;1916, 15 de junio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;La Junta de Ampliación de Estudios invita a Negrín a trasladarse a Madrid, y en octubre &lt;time datetime="1916-10"&gt;se crea el Laboratorio de Fisiología General&lt;/time&gt;, sito en los sótanos de la Residencia de Estudiantes, dirigido por Juan Negrín.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1917-1"&gt;1917&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Es nombrado auxiliar interino de la Cátedra de Fisiología en la Facultad de Medicina de Madrid.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1917-5-3"&gt;1917, 3 de mayo&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Nace Rómulo Negrín Fidelman.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1919-9-25"&gt;1919, 25 de septiembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Convalida en España su título de licenciado en Medicina y Cirugía con la calificación de sobresaliente, y obtiene el premio extraordinario de Licenciatura.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1920-6-26"&gt;1920, 26 de junio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Realiza la tésis doctoral que fue publicada con el título: &lt;em&gt;El tono vascular y el mecanismo de la acción vasotónica del esplácnico&lt;/em&gt; y obtiene el título de Doctor por la Universidad española.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1915-3-24"&gt;1922, 4 de marzo&lt;/dt&gt;&lt;dd&gt;A los 30 años gana la Cátedra de Fisiología en la Universidad Central de Madrid, y es nombrado secretario de la Facultad de Medicina.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1922-6-7"&gt;1922, 7 de junio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Nace Miguel Negrín.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1923-1"&gt;1923&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Nace y muere Dolores Negrín, hija de Juan Negrín.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1925-1"&gt;1925&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Muere María Negrín de una epidemia de tifus, a la edad de 10 años.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1926-1"&gt;1926&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Conoce a la que habría de ser su compañera sentimental hasta su muerte, Feli López de Dom Pablo.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1916-6-15"&gt;1916, 15 de junio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;La Junta de Ampliación de Estudios invita a Negrín a trasladarse a Madrid, y en octubre &lt;time datetime="1916-10"&gt;se crea el Laboratorio de Fisiología General&lt;/time&gt;, sito en los sótanos de la Residencia de Estudiantes, dirigido por Juan Negrín.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1917-1"&gt;1917&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Es nombrado auxiliar interino de la Cátedra de Fisiología en la Facultad de Medicina de Madrid.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1917-5-3"&gt;1917, 3 de mayo&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Nace Rómulo Negrín Fidelman.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1919-9-25"&gt;1919, 25 de septiembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Convalida en España su título de licenciado en Medicina y Cirugía con la calificación de sobresaliente, y obtiene el premio extraordinario de Licenciatura.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1920-6-26"&gt;1920, 26 de junio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Realiza la tésis doctoral que fue publicada con el título: &lt;em&gt;El tono vascular y el mecanismo de la acción vasotónica del esplácnico&lt;/em&gt; y obtiene el título de Doctor por la Universidad española.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1915-3-24"&gt;1922, 4 de marzo&lt;/dt&gt;&lt;dd&gt;A los 30 años gana la Cátedra de Fisiología en la Universidad Central de Madrid, y es nombrado secretario de la Facultad de Medicina.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1922-6-7"&gt;1922, 7 de junio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Nace Miguel Negrín.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1923-1"&gt;1923&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Nace y muere Dolores Negrín, hija de Juan Negrín.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1925-1"&gt;1925&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Muere María Negrín de una epidemia de tifus, a la edad de 10 años.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1926-1"&gt;1926&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Conoce a la que habría de ser su compañera sentimental hasta su muerte, Feli López de Dom Pablo.&lt;/dd&gt;
 
-	&lt;div&gt;
-		&lt;figure&gt;
-			&lt;a href="http://fundacion.noc4net.com:8080/uploads/assets/d/8/5/0/2/b/7/d/7/7/foto-familia-negrin-a-finales-de-los-anos-veinte.jpg" target="_blank" title="Familia Negrin a finales de los años veinte"&gt;
-				&lt;img src="http://fundacion.noc4net.com:8080/uploads/assets/d/8/5/0/2/b/7/d/7/7/foto-familia-negrin-a-finales-de-los-anos-veinte.jpg" width="100%" alt="Familia Negrin a finales de los años veinte" longdesc="Familia Negrin a finales de los años veinte" /&gt;
-			&lt;/a&gt;
-			&lt;figcaption&gt;Familia Negrin a finales de los años veinte&lt;/figcaption&gt;
-		&lt;/figure&gt;
-	&lt;/div&gt;
+    &lt;div&gt;
+        &lt;figure&gt;
+            &lt;a href="/media/uploads/flatpages/foto-familia-negrin-a-finales-de-los-anos-veinte.jpg" target="_blank" title="Familia Negrin a finales de los años veinte"&gt;
+                &lt;img src="/media/uploads/flatpages/foto-familia-negrin-a-finales-de-los-anos-veinte-thb.jpg" alt="Familia Negrin a finales de los años veinte" longdesc="Familia Negrin a finales de los años veinte" /&gt;
+            &lt;/a&gt;
+            &lt;figcaption&gt;Familia Negrin a finales&lt;br /&gt;de los años veinte&lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/div&gt;
 
-	&lt;dt&gt;&lt;time datetime="1927-1"&gt;1927&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Es llamado por Florestán Aguilar para figurar como asesor técnico de la Junta de la Ciudad Universitaria de Madrid. Ese año, con el apoyo económico de su familia canaria y junto con los periodistas Julio Álvarez del Vayo y Luis Araquistáin fundan la Editorial España.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1929-4"&gt;1929, Abril&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Ingresa en el Partido Socialista Obrero Español.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1930-12-15"&gt;1930, 15 de diciembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Huelga general convocada por la Conjunción Republicano-Socialista. Negrín pone su laboratorio y coche a disposición de los huelguistas.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1931-6-28"&gt;1931, 28 de junio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Elegido diputado a Cortes por la provincia de Las Palmas; y vocal de la Comisión Directiva del Grupo Parlamentario Socialista en las Cortes, figurando en las comisiones de Estado, Hacienda y Presupuestos en el Congreso de los Diputados.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1933-1"&gt;1933, Noviembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;btiene el acta de diputado a Cortes por Madrid, y es elegido vicepresidente de la Comisión Directiva del Grupo Parlamentario Socialista en las Cortes, formando parte de las comisiones de Hacienda y Presupuestos en el Congreso de los Diputados.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1934-1"&gt;1934&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Cesa en el cargo de secretario de la Facultad de Medicina de Madrid. Apoya, con reservas, el movimiento insurreccional de octubre, apoyando después a las víctimas de la represión.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1935-1"&gt;1935&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín participa en el Congreso Internacional de Fisiología de Leningrado, organizado por Pavlov.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1935-1"&gt;&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Juan Negrín inicia los trámites para su separación matrimonial.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1936-2-16"&gt;1936, 16 de febrero&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Es elegido diputado a Cortes en la candidatura del Frente Popular por la provincia de Las Palmas, figurando en las comisiones de Estado y Presupuestos del Congreso de los Diputados representando a los diputados socialistas.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1936-7"&gt;&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Con el estallido de la guerra cesa de secretario ejecutivo de la Junta de la Ciudad Universitaria de Madrid.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1936-7"&gt;&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Su esposa legal y su hijo más pequeño, Miguel, se refugian en Suiza, mientras que los dos mayores se incorporarán al Ejército republicano. Su madre, sus dos hermanos y una tía logran salir de España y refugiarse finalmente en Lourdes (Francia).&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1936-9"&gt;4 de septiembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;es nombrado ministro de Hacienda en el Gobierno de Largo Caballero.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1927-1"&gt;1927&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Es llamado por Florestán Aguilar para figurar como asesor técnico de la Junta de la Ciudad Universitaria de Madrid. Ese año, con el apoyo económico de su familia canaria y junto con los periodistas Julio Álvarez del Vayo y Luis Araquistáin fundan la Editorial España.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1929-4"&gt;1929, Abril&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Ingresa en el Partido Socialista Obrero Español.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1930-12-15"&gt;1930, 15 de diciembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Huelga general convocada por la Conjunción Republicano-Socialista. Negrín pone su laboratorio y coche a disposición de los huelguistas.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1931-6-28"&gt;1931, 28 de junio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Elegido diputado a Cortes por la provincia de Las Palmas; y vocal de la Comisión Directiva del Grupo Parlamentario Socialista en las Cortes, figurando en las comisiones de Estado, Hacienda y Presupuestos en el Congreso de los Diputados.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1933-1"&gt;1933, Noviembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;btiene el acta de diputado a Cortes por Madrid, y es elegido vicepresidente de la Comisión Directiva del Grupo Parlamentario Socialista en las Cortes, formando parte de las comisiones de Hacienda y Presupuestos en el Congreso de los Diputados.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1934-1"&gt;1934&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Cesa en el cargo de secretario de la Facultad de Medicina de Madrid. Apoya, con reservas, el movimiento insurreccional de octubre, apoyando después a las víctimas de la represión.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1935-1"&gt;1935&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín participa en el Congreso Internacional de Fisiología de Leningrado, organizado por Pavlov.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1935-1"&gt;&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Juan Negrín inicia los trámites para su separación matrimonial.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1936-2-16"&gt;1936, 16 de febrero&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Es elegido diputado a Cortes en la candidatura del Frente Popular por la provincia de Las Palmas, figurando en las comisiones de Estado y Presupuestos del Congreso de los Diputados representando a los diputados socialistas.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1936-7"&gt;&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Con el estallido de la guerra cesa de secretario ejecutivo de la Junta de la Ciudad Universitaria de Madrid.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1936-7"&gt;&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Su esposa legal y su hijo más pequeño, Miguel, se refugian en Suiza, mientras que los dos mayores se incorporarán al Ejército republicano. Su madre, sus dos hermanos y una tía logran salir de España y refugiarse finalmente en Lourdes (Francia).&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1936-9"&gt;4 de septiembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;es nombrado ministro de Hacienda en el Gobierno de Largo Caballero.&lt;/dd&gt;
 
-	&lt;div&gt;
-		&lt;figure&gt;
-			&lt;a href="http://fundacion.noc4net.com:8080/uploads/assets/2/6/7/b/9/7/6/f/6/f/foto-de-juan-negrin-e-indalecio-prieto.jpg" target="_blank" title="Juan Negrin e Indalecio Prieto"&gt;
-				&lt;img src="http://fundacion.noc4net.com:8080/uploads/assets/2/6/7/b/9/7/6/f/6/f/foto-de-juan-negrin-e-indalecio-prieto.jpg" width="100%" alt="Juan Negrin e Indalecio Prieto" longdesc="Juan Negrin e Indalecio Prieto" /&gt;
-			&lt;/a&gt;
-			&lt;figcaption&gt;Juan Negrin e Indalecio Prieto&lt;/figcaption&gt;
-		&lt;/figure&gt;
-	&lt;/div&gt;
+    &lt;div&gt;
+        &lt;figure&gt;
+            &lt;a href="/media/uploads/flatpages/foto-de-juan-negrin-e-indalecio-prieto.jpg" target="_blank" title="Juan Negrin e Indalecio Prieto"&gt;
+                &lt;img src="/media/uploads/flatpages/foto-de-juan-negrin-e-indalecio-prieto-thb.jpg" alt="Juan Negrin e Indalecio Prieto" longdesc="Juan Negrin e Indalecio Prieto" /&gt;
+            &lt;/a&gt;
+            &lt;figcaption&gt;Juan Negrin e Indalecio Prieto&lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/div&gt;
 
-	&lt;dt&gt;&lt;time datetime="1937-5-17"&gt;1937, 17 de mayo&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín es nombrado jefe del Gobierno.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1937-6-2"&gt;2 de julio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Juan Negrín Cabrera es detenido en Las Palmas e ingresado en la Prisión Provincial de Las Palmas.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1938-4-5"&gt;1938, 5 de abril&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Crisis ministerial, con la salida de Prieto, después de su alejamiento con respecto a la estrategia de resistencia.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1938-4-30"&gt;1938, 30 de abril&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Proclamación de los 13 Puntos que contiene un programa de gobierno para la resistencia.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1938-8-7"&gt;1938, 7 de agosto&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Reunión del Comité Nacional del PSOE en Barcelona en la que Negrín recibe el apoyo para continuar su política, a pesar de la posición contraria de Indalecio Prieto.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1938-9-21"&gt;1938, 21 de septiembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín anuncia en la Sociedad de Naciones (Ginebra) la retirada unilateral de las Brigadas Internacionales.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1939-2-1"&gt;1939, 1 de febrero&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Reunión de las Cortes en Figueras que ratifican la confianza en el Gobierno de Negrín.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1939-2-9"&gt;1939, 9 de febrero&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín sale de España, pero vuelve a España al día siguiente.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1939-3-5"&gt;5 de marzo&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;El coronel Casado, desde Madrid, encabeza una rebelión contra la autoridad de Negrín.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1939-3-31"&gt;31 de marzo&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Se reúne en París la Comisión Permanente de las Cortes españolas en donde Negrín defiende su política de resistencia y la legitimidad de su Gobierno.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1939-6-26"&gt;26 de junio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;La Diputación Permanente de las Cortes desautoriza a Negrín y se declara «única institución indiscutible».&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1939-9-13"&gt;13 de septiembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Juan Negrín Cabrera sale del Hospital San Martín de Las Palmas y es puesto en libertad.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1937-5-17"&gt;1937, 17 de mayo&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín es nombrado jefe del Gobierno.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1937-6-2"&gt;2 de julio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Juan Negrín Cabrera es detenido en Las Palmas e ingresado en la Prisión Provincial de Las Palmas.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1938-4-5"&gt;1938, 5 de abril&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Crisis ministerial, con la salida de Prieto, después de su alejamiento con respecto a la estrategia de resistencia.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1938-4-30"&gt;1938, 30 de abril&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Proclamación de los 13 Puntos que contiene un programa de gobierno para la resistencia.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1938-8-7"&gt;1938, 7 de agosto&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Reunión del Comité Nacional del PSOE en Barcelona en la que Negrín recibe el apoyo para continuar su política, a pesar de la posición contraria de Indalecio Prieto.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1938-9-21"&gt;1938, 21 de septiembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín anuncia en la Sociedad de Naciones (Ginebra) la retirada unilateral de las Brigadas Internacionales.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1939-2-1"&gt;1939, 1 de febrero&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Reunión de las Cortes en Figueras que ratifican la confianza en el Gobierno de Negrín.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1939-2-9"&gt;1939, 9 de febrero&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín sale de España, pero vuelve a España al día siguiente.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1939-3-5"&gt;5 de marzo&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;El coronel Casado, desde Madrid, encabeza una rebelión contra la autoridad de Negrín.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1939-3-31"&gt;31 de marzo&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Se reúne en París la Comisión Permanente de las Cortes españolas en donde Negrín defiende su política de resistencia y la legitimidad de su Gobierno.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1939-6-26"&gt;26 de junio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;La Diputación Permanente de las Cortes desautoriza a Negrín y se declara «única institución indiscutible».&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1939-9-13"&gt;13 de septiembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Juan Negrín Cabrera sale del Hospital San Martín de Las Palmas y es puesto en libertad.&lt;/dd&gt;
 
-	&lt;div&gt;
-		&lt;figure&gt;
-			&lt;a href="http://fundacion.noc4net.com:8080/uploads/assets/7/f/3/5/4/1/9/a/0/5/foto-barco-sinaia-a-su-llegada-a-mexico-junio-1939.jpg" target="_blank" title="Barco Sinaia a su llegada a México"&gt;
-				&lt;img src="http://fundacion.noc4net.com:8080/uploads/assets/7/f/3/5/4/1/9/a/0/5/foto-barco-sinaia-a-su-llegada-a-mexico-junio-1939.jpg" width="100%" alt="Barco Sinaia a su llegada a México" longdesc="Barco Sinaia a su llegada a México" /&gt;
-			&lt;/a&gt;
-			&lt;figcaption&gt;Barco Sinaia a su llegada a México&lt;/figcaption&gt;
-		&lt;/figure&gt;
-	&lt;/div&gt;
+    &lt;div&gt;
+        &lt;figure&gt;
+            &lt;a href="/media/uploads/flatpages/foto-barco-sinaia-a-su-llegada-a-mexico-junio-1939.jpg" target="_blank" title="Barco Sinaia a su llegada a México"&gt;
+                &lt;img src="/media/uploads/flatpages/foto-barco-sinaia-a-su-llegada-a-mexico-junio-1939-thb.jpg" alt="Barco Sinaia a su llegada a México" longdesc="Barco Sinaia a su llegada a México" /&gt;
+            &lt;/a&gt;
+            &lt;figcaption&gt;Barco Sinaia a su&lt;br /&gt;llegada a México&lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/div&gt;
 
-	&lt;dt&gt;&lt;time datetime="1940-6-20"&gt;1940, 20 de junio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín y una expedición de republicanos españoles se traslada desde el puerto francés de Burdeos hasta Inglaterra, concediéndole el Gobierno británico, el 3 de julio, derecho de asilo.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1940-6"&gt;1940&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;El franquismo, a través del Tribunal de Responsabilidades Políticas, dicta una sentencia contra Juan Negrín López por la que pierde la nacionalidad española y se le impone una multa de 100 millones de pesetas.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1941-11-26"&gt;1941, 26 de noviembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;El Tribunal Especial para la Represión de la Masonería y el Comunismo condena a Juan Negrín López en ausencia a 30 años de reclusión mayor.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1941-1"&gt;1941&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Se instala con Feli López en la residencia oficial, como jefe del Gobierno republicano en el exilio, de Bovingdon.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1943-1"&gt;1943-1944&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Permanece en Inglaterra todo este tiempo realizando actividades a favor de la República española.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1945-5-19"&gt;1945, 19 de mayo&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Viaja a San Francisco, donde asistirá a la constitución de la Organización de las Naciones Unidas (ONU).&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1945-6-13"&gt;13 de julio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Viaja a México, en donde pronuncia, el 1 de agosto, un discurso en el Palacio de Bellas Artes de la Ciudad de México.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1945-8-17"&gt;17 de agosto&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín presenta su renuncia a la presidencia del Gobierno en las Cortes españolas reunidas en México.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1945-8-26"&gt;26 de agosto&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Giral constituye un Gobierno con la ausencia de Negrín y sus partidarios. Negrín regresa a Inglaterra.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1940-6-20"&gt;1940, 20 de junio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín y una expedición de republicanos españoles se traslada desde el puerto francés de Burdeos hasta Inglaterra, concediéndole el Gobierno británico, el 3 de julio, derecho de asilo.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1940-6"&gt;1940&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;El franquismo, a través del Tribunal de Responsabilidades Políticas, dicta una sentencia contra Juan Negrín López por la que pierde la nacionalidad española y se le impone una multa de 100 millones de pesetas.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1941-11-26"&gt;1941, 26 de noviembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;El Tribunal Especial para la Represión de la Masonería y el Comunismo condena a Juan Negrín López en ausencia a 30 años de reclusión mayor.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1941-1"&gt;1941&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Se instala con Feli López en la residencia oficial, como jefe del Gobierno republicano en el exilio, de Bovingdon.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1943-1"&gt;1943-1944&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Permanece en Inglaterra todo este tiempo realizando actividades a favor de la República española.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1945-5-19"&gt;1945, 19 de mayo&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Viaja a San Francisco, donde asistirá a la constitución de la Organización de las Naciones Unidas (ONU).&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1945-6-13"&gt;13 de julio&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Viaja a México, en donde pronuncia, el 1 de agosto, un discurso en el Palacio de Bellas Artes de la Ciudad de México.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1945-8-17"&gt;17 de agosto&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín presenta su renuncia a la presidencia del Gobierno en las Cortes españolas reunidas en México.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1945-8-26"&gt;26 de agosto&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Giral constituye un Gobierno con la ausencia de Negrín y sus partidarios. Negrín regresa a Inglaterra.&lt;/dd&gt;
 
-	&lt;div&gt;
-		&lt;figure&gt;
-			&lt;a href="http://fundacion.noc4net.com:8080/uploads/assets/7/e/d/a/b/1/f/0/0/c/juan-negrin-con-sus-nietos-en-suiza.jpg " target="_blank" title="Juan Negrin con sus nietos en Suiza"&gt;
-				&lt;img src="http://fundacion.noc4net.com:8080/uploads/assets/7/e/d/a/b/1/f/0/0/c/juan-negrin-con-sus-nietos-en-suiza.jpg " width="100%" alt="Juan Negrin con sus nietos en Suiza" longdesc="Juan Negrin con sus nietos en Suiza" /&gt;
-			&lt;/a&gt;
-			&lt;figcaption&gt;Juan Negrin con sus nietos en Suiza&lt;/figcaption&gt;
-		&lt;/figure&gt;
-	&lt;/div&gt;
+    &lt;div&gt;
+        &lt;figure&gt;
+            &lt;a href="/media/uploads/flatpages/juan-negrin-con-sus-nietos-en-suiza.jpg" target="_blank" title="Juan Negrin con sus nietos en Suiza"&gt;
+                &lt;img src="/media/uploads/flatpages/juan-negrin-con-sus-nietos-en-suiza-thb.jpg" alt="Juan Negrin con sus nietos en Suiza" longdesc="Juan Negrin con sus nietos en Suiza" /&gt;
+            &lt;/a&gt;
+            &lt;figcaption&gt;Juan Negrín con sus&lt;br /&gt;nietos en Suiza&lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/div&gt;
 
-	&lt;dt&gt;&lt;time datetime="1946-1"&gt;1946&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Comienza a tener serios problemas cardiacos que le llevarán a la muerte 10 años después.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1948-4-1"&gt;1948, 1-3 de abril&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín publica una serie de artículos en el New York Herald Tribune en los que aboga por la inclusión de España en el Plan Marshall para la reconstrucción de Europa a pesar de la existencia de un régimen dictatorial.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1949-1"&gt;1949-1955&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín se dedica a actividades privadas de consultoría y asesoramiento. Es la etapa que él denominaría «el anonimato del ciudadano Juan». Los hijos de Rómulo, Juan y Carmen, se van a vivir con su abuelo en París a causa de una grave enfermedad de su madre, la norteamericana Jeanne F. Fetter.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1956-1"&gt;1956&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Inicia la escritura de sus Memorias con el título provisional de Contribución a la guerra de España (mundial en España) que no llegó a concluir.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1956-11-12"&gt;12 de noviembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín muere de un ataque al corazón en París.&lt;/dd&gt;
-	&lt;dt&gt;&lt;time datetime="1956-1"&gt;&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Sus restos son enterrados en la más estricta intimidad.&lt;/dd&gt;
-&lt;/dl&gt;</field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="13" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/where-we-are/</field><field type="CharField" name="url_es">/donde-estamos</field><field type="CharField" name="url_en">/where-we-are/</field><field type="CharField" name="title">Where we are</field><field type="CharField" name="title_es">Dónde estamos</field><field type="CharField" name="title_en">Where we are</field><field type="TextField" name="content">&lt;div&gt;
-		&lt;h1&gt;Dónde estamos&lt;/h1&gt;
+    &lt;dt&gt;&lt;time datetime="1946-1"&gt;1946&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Comienza a tener serios problemas cardiacos que le llevarán a la muerte 10 años después.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1948-4-1"&gt;1948, 1-3 de abril&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín publica una serie de artículos en el New York Herald Tribune en los que aboga por la inclusión de España en el Plan Marshall para la reconstrucción de Europa a pesar de la existencia de un régimen dictatorial.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1949-1"&gt;1949-1955&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín se dedica a actividades privadas de consultoría y asesoramiento. Es la etapa que él denominaría «el anonimato del ciudadano Juan». Los hijos de Rómulo, Juan y Carmen, se van a vivir con su abuelo en París a causa de una grave enfermedad de su madre, la norteamericana Jeanne F. Fetter.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1956-1"&gt;1956&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Inicia la escritura de sus Memorias con el título provisional de Contribución a la guerra de España (mundial en España) que no llegó a concluir.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1956-11-12"&gt;12 de noviembre&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Negrín muere de un ataque al corazón en París.&lt;/dd&gt;
+    &lt;dt&gt;&lt;time datetime="1956-1"&gt;&lt;/time&gt;&lt;/dt&gt;&lt;dd&gt;Sus restos son enterrados en la más estricta intimidad.&lt;/dd&gt;
+&lt;/dl&gt;</field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="13" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/where-we-are/</field><field type="CharField" name="url_es">/donde-estamos/</field><field type="CharField" name="url_en">/where-we-are/</field><field type="CharField" name="title">Where we are</field><field type="CharField" name="title_es">Dónde estamos</field><field type="CharField" name="title_en">Where we are</field><field type="TextField" name="content">&lt;div&gt;
 		&lt;div class="where_we_are"&gt;
 			&lt;div class="map"&gt;
-				&lt;iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.es/maps?f=q&amp;amp;source=s_q&amp;amp;hl=es&amp;amp;geocode=&amp;amp;q=C%2F+Sor+Br%C3%ADgida+1+35001+Las+Palmas+de+Gran+Canaria&amp;amp;sll=40.396764,-3.713379&amp;amp;sspn=9.03366,26.367188&amp;amp;ie=UTF8&amp;amp;z=14&amp;amp;iwloc=A&amp;amp;ll=28.108175,-15.412102&amp;amp;output=embed"&gt;&lt;/iframe&gt;&lt;br /&gt;
-				&lt;small&gt;&lt;a href="http://maps.google.es/maps?f=q&amp;amp;source=embed&amp;amp;hl=es&amp;amp;geocode=&amp;amp;q=C%2F+Sor+Br%C3%ADgida+1+35001+Las+Palmas+de+Gran+Canaria&amp;amp;sll=40.396764,-3.713379&amp;amp;sspn=9.03366,26.367188&amp;amp;ie=UTF8&amp;amp;z=14&amp;amp;iwloc=A&amp;amp;ll=28.108175,-15.412102"&gt;Ver mapa más grande&lt;/a&gt;&lt;/small&gt;
-			&lt;/div&gt;
+                               &lt;iframe width="512" height="384" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.es/maps?f=q&amp;amp;source=s_q&amp;amp;hl=es&amp;amp;geocode=&amp;amp;q=Calle+Reyes+Cat%C3%B3licos,+30,+Las+Palmas+de+Gran+Canaria&amp;amp;aq=0&amp;amp;oq=reyes+cat%C3%B3licos,+30&amp;amp;sll=28.098803,-15.41399&amp;amp;sspn=0.001318,0.002411&amp;amp;ie=UTF8&amp;amp;hq=&amp;amp;hnear=Calle+Reyes+Cat%C3%B3licos,+30,+Las+Palmas&amp;amp;t=m&amp;amp;ll=28.101399,-15.413668&amp;amp;spn=0.009086,0.013733&amp;amp;z=16&amp;amp;output=embed"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;small&gt;&lt;a href="https://maps.google.es/maps?f=q&amp;amp;source=embed&amp;amp;hl=es&amp;amp;geocode=&amp;amp;q=Calle+Reyes+Cat%C3%B3licos,+30,+Las+Palmas+de+Gran+Canaria&amp;amp;aq=0&amp;amp;oq=reyes+cat%C3%B3licos,+30&amp;amp;sll=28.098803,-15.41399&amp;amp;sspn=0.001318,0.002411&amp;amp;ie=UTF8&amp;amp;hq=&amp;amp;hnear=Calle+Reyes+Cat%C3%B3licos,+30,+Las+Palmas&amp;amp;t=m&amp;amp;ll=28.101399,-15.413668&amp;amp;spn=0.009086,0.013733&amp;amp;z=16" style="color:#0000FF;text-align:left"&gt;Ver mapa más grande&lt;/a&gt;&lt;/small&gt;
+				
+&lt;/div&gt;
 			&lt;div class="text"&gt;
-				&lt;strong&gt;Fundación Juan Negrín&lt;/strong&gt;&lt;br&gt;
-				C/ Sor Brígida Castelló, 1&lt;br&gt;
-				35001 Las Palmas de Gran Canaria&lt;br&gt;
-				Telf: +34 928 33 75 75&lt;br&gt;
+				&lt;strong&gt;&lt;H1&gt;Fundación Juan Negrín&lt;/H1&gt;&lt;/strong&gt;&lt;br&gt;
+				
 				&lt;div&gt;
 					&lt;div&gt;
-						&lt;a href="../uploads/assets/5/b/3/8/4/c/e/3/2/d/donde-estamos-004-1024.jpg" target="_blank"&gt;&lt;img src="../uploads/assets/c/b/7/a/1/d/7/7/5/e/donde-estamos-004-160.png" alt="Fachada de la actual sede de la Fundación" width="160" height="213" hspace="1"&gt;&lt;/a&gt;
+						&lt;a href="/media/uploads/flatpages/museo-foto-1024.jpg" target="_blank"&gt;&lt;img src="/media/uploads/flatpages/museo-foto-200x266-thb.jpg" alt="Fachada de la actual sede de la Fundación" width="160" height="120" hspace="1"&gt;&lt;/a&gt;
+                                                &lt;p&gt;Fachada de la actual sede de la Fundación&lt;/p&gt;
 					&lt;/div&gt;
 					&lt;div&gt;
-						&lt;a href="../uploads/assets/f/1/f/8/3/6/c/b/4/e/donde-estamos-000-1024.png" target="_blank"&gt;&lt;img src="../uploads/assets/b/6/6/9/2/e/a/5/d/f/donde-estamos-foto-160.png" alt="Patio central de la actual sede de la Fundación" width="160" height="120" hspace="1"&gt;&lt;/a&gt;
+						&lt;a href="/media/uploads/flatpages/donde-estamos-000-1024.jpg" target="_blank"&gt;&lt;img src="/media/uploads/flatpages/donde-estamos-000-1024-thb.jpg" alt="Patio central de la actual sede de la Fundación" width="160" height="120" hspace="1"&gt;&lt;/a&gt;
+                                                &lt;p&gt;Patio central de la actual sede de la Fundación&lt;/p&gt;
+
 					&lt;/div&gt;
 					&lt;div&gt;
-						&lt;a href="../uploads/assets/f/c/0/7/4/d/5/0/1/3/donde-estamos-002-1024.jpg" target="_blank"&gt;&lt;img src="../uploads/assets/9/7/2/a/6/7/c/4/8/1/donde-estamos-002-160.png" alt="Otra vista de la fachada de la sede actual de la Fundación" width="160" height="120" hspace="1"&gt;&lt;/a&gt;
+						&lt;a href="/media/uploads/flatpages/museo-foto-1024.jpg" target="_blank"&gt;&lt;img src="/media/uploads/flatpages/museo-foto-200x266-thb.jpg" alt="Otra vista de la fachada de la actual sede de la Fundación" width="160" height="120" hspace="1"&gt;&lt;/a&gt;
+                                                &lt;p&gt;Otra vista de la fachada de la actual sede de la Fundación&lt;/p&gt;
 					&lt;/div&gt;
 				&lt;/div&gt;
 			&lt;/div&gt;
@@ -3871,36 +3846,37 @@ Santiago Carrillo Solares&lt;br /&gt; Alfonso Guerra González&lt;br /&gt; Manue
 	&lt;div id="" class="vcard"&gt;
 		&lt;span class="fn n"&gt;&lt;/span&gt;
 		&lt;div class="org"&gt;Fundación Juan Negrín&lt;/div&gt;
-		&lt;a class="email" href="mailto:eMail"&gt;eMail&lt;/a&gt;
+		&lt;a class="email" href="mailto:fundacionjuannegrin@gmail.com"&gt;fundacionjuannegrin@gmail.com&lt;/a&gt;
 		&lt;div class="adr"&gt;
-			&lt;div class="street-address"&gt;Calle&lt;/div&gt;
-			&lt;span class="locality"&gt;Ciudad&lt;/span&gt; , &lt;span class="region"&gt;Provincia&lt;/span&gt;, &lt;span class="postal-code"&gt;Código Postal&lt;/span&gt; - &lt;span class="country-name"&gt;País&lt;/span&gt;
+			&lt;div class="street-address"&gt;C/ Reyes Católicos, 30&lt;/div&gt;
+			&lt;span class="locality"&gt;Las Palmas de Gran Canaria&lt;/span&gt; , &lt;span class="region"&gt;Las Palmas&lt;/span&gt;, &lt;span class="postal-code"&gt;35001&lt;/span&gt; - &lt;span class="country-name"&gt;España&lt;/span&gt;
 		&lt;/div&gt;
-		&lt;div class="tel"&gt;Teléfono&lt;/div&gt;
+		&lt;div class="tel"&gt;+34 928 33 75 75&lt;/div&gt;
 		&lt;div&gt;
 			&lt;span class="category"&gt;cat1&lt;/span&gt;, &lt;span class="category"&gt;cat2&lt;/span&gt;, &lt;span class="category"&gt;cat3&lt;/span&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;</field><field type="TextField" name="content_es">&lt;div&gt;
-		&lt;h1&gt;Dónde estamos&lt;/h1&gt;
 		&lt;div class="where_we_are"&gt;
 			&lt;div class="map"&gt;
-				&lt;iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.es/maps?f=q&amp;amp;source=s_q&amp;amp;hl=es&amp;amp;geocode=&amp;amp;q=C%2F+Sor+Br%C3%ADgida+1+35001+Las+Palmas+de+Gran+Canaria&amp;amp;sll=40.396764,-3.713379&amp;amp;sspn=9.03366,26.367188&amp;amp;ie=UTF8&amp;amp;z=14&amp;amp;iwloc=A&amp;amp;ll=28.108175,-15.412102&amp;amp;output=embed"&gt;&lt;/iframe&gt;&lt;br /&gt;
-				&lt;small&gt;&lt;a href="http://maps.google.es/maps?f=q&amp;amp;source=embed&amp;amp;hl=es&amp;amp;geocode=&amp;amp;q=C%2F+Sor+Br%C3%ADgida+1+35001+Las+Palmas+de+Gran+Canaria&amp;amp;sll=40.396764,-3.713379&amp;amp;sspn=9.03366,26.367188&amp;amp;ie=UTF8&amp;amp;z=14&amp;amp;iwloc=A&amp;amp;ll=28.108175,-15.412102"&gt;Ver mapa más grande&lt;/a&gt;&lt;/small&gt;
-			&lt;/div&gt;
+                               &lt;iframe width="512" height="384" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.es/maps?f=q&amp;amp;source=s_q&amp;amp;hl=es&amp;amp;geocode=&amp;amp;q=Calle+Reyes+Cat%C3%B3licos,+30,+Las+Palmas+de+Gran+Canaria&amp;amp;aq=0&amp;amp;oq=reyes+cat%C3%B3licos,+30&amp;amp;sll=28.098803,-15.41399&amp;amp;sspn=0.001318,0.002411&amp;amp;ie=UTF8&amp;amp;hq=&amp;amp;hnear=Calle+Reyes+Cat%C3%B3licos,+30,+Las+Palmas&amp;amp;t=m&amp;amp;ll=28.101399,-15.413668&amp;amp;spn=0.009086,0.013733&amp;amp;z=16&amp;amp;output=embed"&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;small&gt;&lt;a href="https://maps.google.es/maps?f=q&amp;amp;source=embed&amp;amp;hl=es&amp;amp;geocode=&amp;amp;q=Calle+Reyes+Cat%C3%B3licos,+30,+Las+Palmas+de+Gran+Canaria&amp;amp;aq=0&amp;amp;oq=reyes+cat%C3%B3licos,+30&amp;amp;sll=28.098803,-15.41399&amp;amp;sspn=0.001318,0.002411&amp;amp;ie=UTF8&amp;amp;hq=&amp;amp;hnear=Calle+Reyes+Cat%C3%B3licos,+30,+Las+Palmas&amp;amp;t=m&amp;amp;ll=28.101399,-15.413668&amp;amp;spn=0.009086,0.013733&amp;amp;z=16" style="color:#0000FF;text-align:left"&gt;Ver mapa más grande&lt;/a&gt;&lt;/small&gt;
+				
+&lt;/div&gt;
 			&lt;div class="text"&gt;
-				&lt;strong&gt;Fundación Juan Negrín&lt;/strong&gt;&lt;br&gt;
-				C/ Sor Brígida Castelló, 1&lt;br&gt;
-				35001 Las Palmas de Gran Canaria&lt;br&gt;
-				Telf: +34 928 33 75 75&lt;br&gt;
+				&lt;strong&gt;&lt;H1&gt;Fundación Juan Negrín&lt;/H1&gt;&lt;/strong&gt;&lt;br&gt;
+				
 				&lt;div&gt;
 					&lt;div&gt;
-						&lt;a href="../uploads/assets/5/b/3/8/4/c/e/3/2/d/donde-estamos-004-1024.jpg" target="_blank"&gt;&lt;img src="../uploads/assets/c/b/7/a/1/d/7/7/5/e/donde-estamos-004-160.png" alt="Fachada de la actual sede de la Fundación" width="160" height="213" hspace="1"&gt;&lt;/a&gt;
+						&lt;a href="/media/uploads/flatpages/museo-foto-1024.jpg" target="_blank"&gt;&lt;img src="/media/uploads/flatpages/museo-foto-200x266-thb.jpg" alt="Fachada de la actual sede de la Fundación" width="160" height="120" hspace="1"&gt;&lt;/a&gt;
+                                                &lt;p&gt;Fachada de la actual sede de la Fundación&lt;/p&gt;
 					&lt;/div&gt;
 					&lt;div&gt;
-						&lt;a href="../uploads/assets/f/1/f/8/3/6/c/b/4/e/donde-estamos-000-1024.png" target="_blank"&gt;&lt;img src="../uploads/assets/b/6/6/9/2/e/a/5/d/f/donde-estamos-foto-160.png" alt="Patio central de la actual sede de la Fundación" width="160" height="120" hspace="1"&gt;&lt;/a&gt;
+						&lt;a href="/media/uploads/flatpages/donde-estamos-000-1024.jpg" target="_blank"&gt;&lt;img src="/media/uploads/flatpages/donde-estamos-000-1024-thb.jpg" alt="Patio central de la actual sede de la Fundación" width="160" height="120" hspace="1"&gt;&lt;/a&gt;
+                                                &lt;p&gt;Patio central de la actual sede de la Fundación&lt;/p&gt;
+
 					&lt;/div&gt;
 					&lt;div&gt;
-						&lt;a href="../uploads/assets/f/c/0/7/4/d/5/0/1/3/donde-estamos-002-1024.jpg" target="_blank"&gt;&lt;img src="../uploads/assets/9/7/2/a/6/7/c/4/8/1/donde-estamos-002-160.png" alt="Otra vista de la fachada de la sede actual de la Fundación" width="160" height="120" hspace="1"&gt;&lt;/a&gt;
+						&lt;a href="/media/uploads/flatpages/museo-foto-1024.jpg" target="_blank"&gt;&lt;img src="/media/uploads/flatpages/museo-foto-200x266-thb.jpg" alt="Otra vista de la fachada de la actual sede de la Fundación" width="160" height="120" hspace="1"&gt;&lt;/a&gt;
+                                                &lt;p&gt;Otra vista de la fachada de la actual sede de la Fundación&lt;/p&gt;
 					&lt;/div&gt;
 				&lt;/div&gt;
 			&lt;/div&gt;
@@ -3911,16 +3887,16 @@ Santiago Carrillo Solares&lt;br /&gt; Alfonso Guerra González&lt;br /&gt; Manue
 	&lt;div id="" class="vcard"&gt;
 		&lt;span class="fn n"&gt;&lt;/span&gt;
 		&lt;div class="org"&gt;Fundación Juan Negrín&lt;/div&gt;
-		&lt;a class="email" href="mailto:eMail"&gt;eMail&lt;/a&gt;
+		&lt;a class="email" href="mailto:fundacionjuannegrin@gmail.com"&gt;fundacionjuannegrin@gmail.com&lt;/a&gt;
 		&lt;div class="adr"&gt;
-			&lt;div class="street-address"&gt;Calle&lt;/div&gt;
-			&lt;span class="locality"&gt;Ciudad&lt;/span&gt; , &lt;span class="region"&gt;Provincia&lt;/span&gt;, &lt;span class="postal-code"&gt;Código Postal&lt;/span&gt; - &lt;span class="country-name"&gt;País&lt;/span&gt;
+			&lt;div class="street-address"&gt;C/ Reyes Católicos, 30&lt;/div&gt;
+			&lt;span class="locality"&gt;Las Palmas de Gran Canaria&lt;/span&gt; , &lt;span class="region"&gt;Las Palmas&lt;/span&gt;, &lt;span class="postal-code"&gt;35001&lt;/span&gt; - &lt;span class="country-name"&gt;España&lt;/span&gt;
 		&lt;/div&gt;
-		&lt;div class="tel"&gt;Teléfono&lt;/div&gt;
+		&lt;div class="tel"&gt;+34 928 33 75 75&lt;/div&gt;
 		&lt;div&gt;
 			&lt;span class="category"&gt;cat1&lt;/span&gt;, &lt;span class="category"&gt;cat2&lt;/span&gt;, &lt;span class="category"&gt;cat3&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/div&gt;</field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="14" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/contact/</field><field type="CharField" name="url_es">/contacto/</field><field type="CharField" name="url_en">/contact/</field><field type="CharField" name="title">Contact</field><field type="CharField" name="title_es">Contacto</field><field type="CharField" name="title_en">Contact</field><field type="TextField" name="content">&lt;h1&gt;Contacto&lt;/h1&gt;
+	&lt;/div&gt;</field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="14" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/contact/</field><field type="CharField" name="url_es">/contacto/</field><field type="CharField" name="url_en">/contact/</field><field type="CharField" name="title">Contact</field><field type="CharField" name="title_es">Contacto</field><field type="CharField" name="title_en">Contact</field><field type="TextField" name="content">
 	&lt;form class="formu" action="../ru/switch-culture?identifier=es&amp;path=%252Fcontact" method="post"&gt;
 		&lt;div id="row_contact_name" class="row"&gt;
 			&lt;div class="label"&gt;&lt;label for="contact_name"&gt;Nombre&lt;/label&gt;&lt;/div&gt;
@@ -3958,7 +3934,7 @@ Santiago Carrillo Solares&lt;br /&gt; Alfonso Guerra González&lt;br /&gt; Manue
 			&lt;div class="clear_left"&gt;&lt;/div&gt;
 		&lt;/div&gt;
 		&lt;div class="row-button"&gt;&lt;input type="submit" value="Enviar"&gt;&lt;/div&gt;
-	&lt;/form&gt;</field><field type="TextField" name="content_es">&lt;h1&gt;Contacto&lt;/h1&gt;
+	&lt;/form&gt;</field><field type="TextField" name="content_es">
 	&lt;form class="formu" action="../ru/switch-culture?identifier=es&amp;path=%252Fcontact" method="post"&gt;
 		&lt;div id="row_contact_name" class="row"&gt;
 			&lt;div class="label"&gt;&lt;label for="contact_name"&gt;Nombre&lt;/label&gt;&lt;/div&gt;
@@ -3996,7 +3972,7 @@ Santiago Carrillo Solares&lt;br /&gt; Alfonso Guerra González&lt;br /&gt; Manue
 			&lt;div class="clear_left"&gt;&lt;/div&gt;
 		&lt;/div&gt;
 		&lt;div class="row-button"&gt;&lt;input type="submit" value="Enviar"&gt;&lt;/div&gt;
-	&lt;/form&gt;</field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="15" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/corporate-image/</field><field type="CharField" name="url_es">/imagen-corporativa/</field><field type="CharField" name="url_en">/corporate-image/</field><field type="CharField" name="title">Corporate Image</field><field type="CharField" name="title_es">Imagen Corporativa</field><field type="CharField" name="title_en">Corporate Image</field><field type="TextField" name="content">&lt;h1&gt;Imagen Corporativa&lt;/h1&gt;
+	&lt;/form&gt;</field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="15" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/corporate-image/</field><field type="CharField" name="url_es">/imagen-corporativa/</field><field type="CharField" name="url_en">/corporate-image/</field><field type="CharField" name="title">Corporate Image</field><field type="CharField" name="title_es">Imagen Corporativa</field><field type="CharField" name="title_en">Corporate Image</field><field type="TextField" name="content">
 	&lt;div&gt;
 		&lt;div&gt;
 			&lt;div&gt;
@@ -4021,7 +3997,7 @@ Santiago Carrillo Solares&lt;br /&gt; Alfonso Guerra González&lt;br /&gt; Manue
 		&lt;div&gt;
 			&lt;a href="http://fundacion.noc4net.com/uploads/assets/a/f/3/e/1/3/3/4/2/8/logotipo-imagen-corporativa-svg.xml"&gt;Versión Vectorial SVG&lt;/a&gt;
 		&lt;/div&gt;
-	&lt;/div&gt;</field><field type="TextField" name="content_es">&lt;h1&gt;Imagen Corporativa&lt;/h1&gt;
+	&lt;/div&gt;</field><field type="TextField" name="content_es">
 	&lt;div&gt;
 		&lt;div&gt;
 			&lt;div&gt;
@@ -4046,4 +4022,340 @@ Santiago Carrillo Solares&lt;br /&gt; Alfonso Guerra González&lt;br /&gt; Manue
 		&lt;div&gt;
 			&lt;a href="http://fundacion.noc4net.com/uploads/assets/a/f/3/e/1/3/3/4/2/8/logotipo-imagen-corporativa-svg.xml"&gt;Versión Vectorial SVG&lt;/a&gt;
 		&lt;/div&gt;
-	&lt;/div&gt;</field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="16" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/archivos/</field><field type="CharField" name="url_es">/archivos/</field><field type="CharField" name="url_en">/archivos/</field><field type="CharField" name="title">Archives</field><field type="CharField" name="title_es">Archivos</field><field type="CharField" name="title_en">Archives</field><field type="TextField" name="content">(FIXME) En breve se colocará aquí un enlace a la aplicación de archivos.</field><field type="TextField" name="content_es">(FIXME) En breve se colocará aquí un enlace a la aplicación de archivos.</field><field type="TextField" name="content_en">(FIXME) En breve se colocará aquí un enlace a la aplicación de archivos.</field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="17" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/biblioteca/</field><field type="CharField" name="url_es">/biblioteca/</field><field type="CharField" name="url_en">/biblioteca/</field><field type="CharField" name="title">Library</field><field type="CharField" name="title_es">Biblioteca</field><field type="CharField" name="title_en">Library</field><field type="TextField" name="content">(FIXME) En breve se pondrá aquí el enlace a la aplicación de biblioteca.</field><field type="TextField" name="content_es">(FIXME) En breve se pondrá aquí el enlace a la aplicación de biblioteca.</field><field type="TextField" name="content_en">(FIXME) En breve se pondrá aquí el enlace a la aplicación de biblioteca.</field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object></django-objects>
+	&lt;/div&gt;</field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="16" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/archivos/</field><field type="CharField" name="url_es">/archivos/</field><field type="CharField" name="url_en">/archivos/</field><field type="CharField" name="title">Archives</field><field type="CharField" name="title_es">Archivos</field><field type="CharField" name="title_en">Archives</field><field type="TextField" name="content">(FIXME) En breve se colocará aquí un enlace a la aplicación de archivos.</field><field type="TextField" name="content_es">(FIXME) En breve se colocará aquí un enlace a la aplicación de archivos.</field><field type="TextField" name="content_en">(FIXME) En breve se colocará aquí un enlace a la aplicación de archivos.</field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="17" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/biblioteca/</field><field type="CharField" name="url_es">/biblioteca/</field><field type="CharField" name="url_en">/biblioteca/</field><field type="CharField" name="title">Library</field><field type="CharField" name="title_es">Biblioteca</field><field type="CharField" name="title_en">Library</field><field type="TextField" name="content">(FIXME) En breve se pondrá aquí el enlace a la aplicación de biblioteca.</field><field type="TextField" name="content_es">(FIXME) En breve se pondrá aquí el enlace a la aplicación de biblioteca.</field><field type="TextField" name="content_en">(FIXME) En breve se pondrá aquí el enlace a la aplicación de biblioteca.</field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="18" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/legal-notice/</field><field type="CharField" name="url_es">/aviso-legal/</field><field type="CharField" name="url_en">/legal-notice/</field><field type="CharField" name="title">Legal Notice</field><field type="CharField" name="title_es">Aviso Legal</field><field type="CharField" name="title_en">Legal Notice</field><field type="TextField" name="content">
+&lt;H2&gt;1. Condiciones generales de uso del portal&lt;/H2&gt;&lt;br&gt;
+&lt;p&gt;Le pedimos que lea cuidadosamente los términos y consejos para acceder a esta dirección y a cualquier página o link inserto en la misma. En caso de acceso usted se compromete a cumplir con los términos y condiciones que aparecen a continuación.&lt;/p&gt;
+
+&lt;p&gt;La Fundación Juan Negrín se reserva el derecho a modificar unilateralmente la configuración de esta página o los servicios en ella prestados, en cualquier momento y sin necesidad de previo aviso. Si no estuviese de acuerdo con los siguientes términos o condiciones le rogamos no acceda a esta dirección o a cualquier página o link de la misma.&lt;/p&gt;&lt;br&gt;
+
+&lt;H2&gt;2. Copyright. La Fundación Juan Negrín se reserva todos los derechos&lt;/H2&gt;&lt;br&gt;
+&lt;p&gt;Los logos de La Fundación Juan Negrín son marcas registradas e identificativas de los servicios que se prestan. Asimismo La Fundación Juan Negrín, puede reclamar derechos de marca registrada y marca identificativa de servicios sobre las marcas que pertenezcan a su Fundación y aparezcan en la Web Site.&lt;/p&gt;&lt;br&gt;
+
+&lt;H2&gt;3. Marcas registradas&lt;H2&gt;&lt;br&gt;
+&lt;p&gt;Los Derechos de Propiedad Intelectual de estas páginas, de las pantallas que muestran estas páginas, y de la información y material que aparecen en las mismas, así como de su disposición, pertenecen a La Fundación Juan Negrín, salvo que se indique lo contrario.&lt;/p&gt;&lt;br&gt;
+
+&lt;H2&gt;4. Condiciones de utilización de la página web&lt;H2&gt;&lt;br&gt;
+&lt;p&gt;El contenido de esta página Web Site está protegido por las leyes de propiedad intelectual. Dichos contenidos deberán ser usados de forma correcta y lícita por el usuario y, en particular, queda obligado a utilizar dichos contenidos de forma diligente, correcta y lícita.&lt;/p&gt;
+
+&lt;p&gt;No podrán usarse los contenidos de forma contraria a la ley, a la moral o a las buenas costumbres aceptadas en orden público.&lt;/p&gt;
+
+&lt;p&gt;Está prohibida la transmisión de cualquier tipo de datos que usted pueda realizar a esta Web Site, o a otras pertenecientes a La Fundación Juan Negrín cuyos links podrá encontrar dentro de esta página, que atente contra los derechos de propiedad de terceros, sean obscenos, pornográficos, difamatorios, de carácter amenazador o material que pueda ser considerado delito o falta en virtud del vigente Código Penal.&lt;/p&gt;
+
+&lt;p&gt;Queda prohibida la reproducción, copia, distribución, transformación o modificación de contenidos (textos, imágenes, voces o estructura) a menos que se cuente con la autorización expresa y por escrito del titular de los derechos adquiridos.&lt;/p&gt;&lt;br&gt;
+
+&lt;H2&gt;5. Responsablidades por daños y perjuicios&lt;H2&gt;&lt;br&gt;
+&lt;p&gt;El usuario de la Web Site de La Fundación Juan Negrín será responsable de los Daños y Perjuicios que La Fundación Juan Negrín pueda sufrir directa o indirectamente, como consecuencia del incumplimiento de cualquiera de las obligaciones derivadas establecidas en el presente Aviso Legal.&lt;/p&gt;&lt;br&gt;
+
+&lt;H2&gt;6. Limite de responsabilidad&lt;H2&gt;&lt;br&gt;
+&lt;p&gt;En ningún caso La Fundación Juan Negrín será responsable de algún daño, incluyendo sin límite daños, pérdidas o gastos directos, indirectos inherentes o consecuentes que surjan en relación con la utilización de esta Web Site o de los enlaces con otras páginas aquí recogidas.&lt;/p&gt;
+
+&lt;p&gt;En todo caso, de ser requerido por orden judicial, La Fundación Juan Negrín colaborará con las autoridades pertinentes en la identificación de las personas responsables de aquellos contenidos que puedan violar la ley.&lt;/p&gt;
+
+&lt;p&gt;De igual forma, La Fundación Juan Negrín eluden toda responsabilidad en los supuestos de fallo en el rendimiento, error, omisión, interrupción, defecto de demora en la operación de transmisión, virus informático, fallo del sistema o línea, así como en el contenido, exactitud y opiniones expresadas y otras conexiones suministradas por estos medios.&lt;/p&gt;
+
+&lt;p&gt;La Web Site de La Fundación Juan Negrín conecta con ciertos links de otras páginas web que pertenecen a terceros sobre los que La Fundación Juan Negrín no tiene control alguno. En estos supuestos La Fundación Juan Negrín no asume responsabilidad alguna ni compromiso sobre la información contenida en estas páginas.&lt;/p&gt;&lt;br&gt;
+
+    </field><field type="TextField" name="content_es">
+&lt;H2&gt;1. Condiciones generales de uso del portal&lt;/H2&gt;&lt;br&gt;
+&lt;p&gt;Le pedimos que lea cuidadosamente los términos y consejos para acceder a esta dirección y a cualquier página o link inserto en la misma. En caso de acceso usted se compromete a cumplir con los términos y condiciones que aparecen a continuación.&lt;/p&gt;
+
+&lt;p&gt;La Fundación Juan Negrín se reserva el derecho a modificar unilateralmente la configuración de esta página o los servicios en ella prestados, en cualquier momento y sin necesidad de previo aviso. Si no estuviese de acuerdo con los siguientes términos o condiciones le rogamos no acceda a esta dirección o a cualquier página o link de la misma.&lt;/p&gt;&lt;br&gt;
+
+&lt;H2&gt;2. Copyright. La Fundación Juan Negrín se reserva todos los derechos&lt;/H2&gt;&lt;br&gt;
+&lt;p&gt;Los logos de La Fundación Juan Negrín son marcas registradas e identificativas de los servicios que se prestan. Asimismo La Fundación Juan Negrín, puede reclamar derechos de marca registrada y marca identificativa de servicios sobre las marcas que pertenezcan a su Fundación y aparezcan en la Web Site.&lt;/p&gt;&lt;br&gt;
+
+&lt;H2&gt;3. Marcas registradas&lt;H2&gt;&lt;br&gt;
+&lt;p&gt;Los Derechos de Propiedad Intelectual de estas páginas, de las pantallas que muestran estas páginas, y de la información y material que aparecen en las mismas, así como de su disposición, pertenecen a La Fundación Juan Negrín, salvo que se indique lo contrario.&lt;/p&gt;&lt;br&gt;
+
+&lt;H2&gt;4. Condiciones de utilización de la página web&lt;H2&gt;&lt;br&gt;
+&lt;p&gt;El contenido de esta página Web Site está protegido por las leyes de propiedad intelectual. Dichos contenidos deberán ser usados de forma correcta y lícita por el usuario y, en particular, queda obligado a utilizar dichos contenidos de forma diligente, correcta y lícita.&lt;/p&gt;
+
+&lt;p&gt;No podrán usarse los contenidos de forma contraria a la ley, a la moral o a las buenas costumbres aceptadas en orden público.&lt;/p&gt;
+
+&lt;p&gt;Está prohibida la transmisión de cualquier tipo de datos que usted pueda realizar a esta Web Site, o a otras pertenecientes a La Fundación Juan Negrín cuyos links podrá encontrar dentro de esta página, que atente contra los derechos de propiedad de terceros, sean obscenos, pornográficos, difamatorios, de carácter amenazador o material que pueda ser considerado delito o falta en virtud del vigente Código Penal.&lt;/p&gt;
+
+&lt;p&gt;Queda prohibida la reproducción, copia, distribución, transformación o modificación de contenidos (textos, imágenes, voces o estructura) a menos que se cuente con la autorización expresa y por escrito del titular de los derechos adquiridos.&lt;/p&gt;&lt;br&gt;
+
+&lt;H2&gt;5. Responsablidades por daños y perjuicios&lt;H2&gt;&lt;br&gt;
+&lt;p&gt;El usuario de la Web Site de La Fundación Juan Negrín será responsable de los Daños y Perjuicios que La Fundación Juan Negrín pueda sufrir directa o indirectamente, como consecuencia del incumplimiento de cualquiera de las obligaciones derivadas establecidas en el presente Aviso Legal.&lt;/p&gt;&lt;br&gt;
+
+&lt;H2&gt;6. Limite de responsabilidad&lt;H2&gt;&lt;br&gt;
+&lt;p&gt;En ningún caso La Fundación Juan Negrín será responsable de algún daño, incluyendo sin límite daños, pérdidas o gastos directos, indirectos inherentes o consecuentes que surjan en relación con la utilización de esta Web Site o de los enlaces con otras páginas aquí recogidas.&lt;/p&gt;
+
+&lt;p&gt;En todo caso, de ser requerido por orden judicial, La Fundación Juan Negrín colaborará con las autoridades pertinentes en la identificación de las personas responsables de aquellos contenidos que puedan violar la ley.&lt;/p&gt;
+
+&lt;p&gt;De igual forma, La Fundación Juan Negrín eluden toda responsabilidad en los supuestos de fallo en el rendimiento, error, omisión, interrupción, defecto de demora en la operación de transmisión, virus informático, fallo del sistema o línea, así como en el contenido, exactitud y opiniones expresadas y otras conexiones suministradas por estos medios.&lt;/p&gt;
+
+&lt;p&gt;La Web Site de La Fundación Juan Negrín conecta con ciertos links de otras páginas web que pertenecen a terceros sobre los que La Fundación Juan Negrín no tiene control alguno. En estos supuestos La Fundación Juan Negrín no asume responsabilidad alguna ni compromiso sobre la información contenida en estas páginas.&lt;/p&gt;&lt;br&gt;
+
+    </field><field type="TextField" name="content_en"></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="19" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/Service-Chart/</field><field type="CharField" name="url_es">/carta-de-servicios/</field><field type="CharField" name="url_en">/Service-Chart/</field><field type="CharField" name="title">Carta de servicios</field><field type="CharField" name="title_es">Carta de servicios</field><field type="CharField" name="title_en"><None></None></field><field type="TextField" name="content">&lt;H1&gt;CARTA DE SERVICIOS DE LA FUNDACIÓN JUAN NEGRÍN&lt;/H1&gt;&lt;br&gt;
+&lt;H2&gt;1- DATOS IDENTIFICATIVOS, HISTORIA Y FINES DEL ARCHIVO&lt;/H2&gt;
+&lt;div&gt;&lt;br&gt;&lt;/div&gt;
+&lt;p&gt;El Archivo de la Fundación Juan Negrín es un archivo de titularidad privada gestionado por la Fundación Juan Negrín. En él se conservan fundamentalmente dos fondos: el familiar Juan Negrín y el fundacional. El Fondo familiar, de carácter histórico, recoge toda aquella documentación generada por las familias de Juan Negrín y Juan Negrín en el ejercicio de sus actividades tanto públicas como privadas. Esta documentación fue pasando de generación en generación hasta llegar a manos
+de Carmen Negrín, Presidenta de Honor de la Fundación Juan Negrín.&lt;/p&gt;
+&lt;p&gt;Se trata de un fondo cerrado si bien se contempla el ingreso de documentación en los supuestos de donación, compra, legado o cualquier otro tipo de cesión o adquisición. El Fondo fundacional recoge la documentación generada en el desempeño de sus funciones por la Fundación Juan Negrín desde 1892 en adelante. Se trata de un fondo abierto dado que se distinguen en él las tres fases de
+archivo: oficina, central e histórico.&lt;/p&gt;
+&lt;p&gt;El Archivo de la Fundación Juan Negrín tiene como finalidad organizar, reunir, custodiar, evaluar, conservar, hacer accesible y difundir la documentación que custodia. Por razón de la calidad de los documentos que conserva (fundamentalmente de carácter histórico), presta un servicio preferente a la consulta con fines culturales y de investigación. Sin embargo, en su Fondo fundacional, mantiene
+un carácter de archivo “abierto” debido al ingreso periódico de fondos documentales procedentes de los archivos de oficina de la Fundación Juan Negrín a su fase de archivo central. Los fondos correspondientes a las etapas de archivo central y de oficina no son accesibles para usuarios externos.&lt;/p&gt;&lt;br&gt;
+&lt;H2&gt;2- SERVICIOS DEL ARCHIVO DE LA FUNDACIÓN NEGRÍN&lt;/H2&gt;
+&lt;div&gt;&lt;br&gt;&lt;/div&gt;
+&lt;p&gt;Información&lt;/p&gt;
+&lt;p&gt;Cualquier usuario tiene derecho a recibir información general sobre los fondos históricos del Archivo de la Fundación Juan Negrín y particular sobre cualquier tema relativo a la época de los mismos.&lt;/p&gt;
+&lt;blockquote&gt;&lt;span&gt;&lt;strong&gt;Consulta de unidades documentales&lt;/strong&gt;&lt;/span&gt;
+&lt;div&gt;&lt;br&gt;Los usuarios externos deberán cumplimentar los impresos de Solicitudes de consulta establecidos al efecto. El Servicio de Archivo se reserva el derecho de solicitar la presentación del DNI o de cualquier otro documento que permita la identificación del peticionario. El funcionamiento de la sala
+se rige por unas normas internas que se encuentran a disposición de los usuarios. En la sala de consulta se proporcionan los siguientes servicios:&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;ol style="list-style-type:disc;"&gt;
+
+&lt;li&gt;Información inmediata y personalizada al investigador sobre fondos documentales y
+bibliográficos del archivo y fuentes documentales complementarias.&lt;/li&gt;
+&lt;li&gt;Orientación sobre el manejo de los instrumentos de descripción y de las bases de datos disponibles en la sala de consulta.&lt;/li&gt;
+&lt;li&gt;Consulta de documentos originales: cada investigador puede solicitar un máximo de una caja o bien de tres unidades documentales (en el caso de que éstas no estén contenidas en la misma caja) cada vez, pudiendo efectuar nuevas peticiones a medida que vaya devolviendo la documentación consultada. La consulta de documentos originales puede quedar limitada por las necesidades de conservación y de descripción.&lt;/li&gt;
+&lt;li&gt;Reserva de peticiones: cada investigador puede reservar una caja o bien tres unidades documentales (en el caso de que éstas no estén contenidas en la misma caja) durante un período máximo de cinco días. La sala de consulta dispone de 6 plazas, equipadas con punto de conexión para equipos informáticos personales. La sala es accesible para personas con movilidad reducida. Asimismo, el investigador puede obtener información de los fondos documentales del Archivo mediante llamada telefónica o correspondencia en sus modalidades de correo ordinario, electrónico o fax.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;&lt;br&gt;
+&lt;H2&gt;3- REPRODUCCIÓN DE DOCUMENTOS&lt;/H2&gt;
+&lt;div&gt;&lt;br&gt;&lt;/div&gt;
+&lt;p&gt;El Archivo podrá proporcionar copia impresa de los materiales cuya consulta haya sido autorizada. La normativa para la utilización de éste servicio puede ser consultada en el Reglamento del Archivo de la Fundación Juan Negrín. Se establecen unas tarifas de reproducción a disposición de los usuarios. Las reproducciones podrán solicitarse rellenando el impreso de solicitud ya sea en sala o por correo (ordinario o electrónico).
+Se elaborará entonces un presupuesto de reproducción de documentos del Archivo y se procederá a la reproducción de los mismos previa aceptación del presupuesto por el solicitante.
+El Archivo se reserva la facultad de elegir qué modalidad de reproducción se utilizará en cada caso. Ante todo, deberá primar el estado de conservación del ejemplar a reproducir, pues si éste fuera malo se desechará la petición.
+Asimismo, los fondos de la biblioteca auxiliar del archivo pueden ser parcialmente reproducidos en fotocopia, de acuerdo con lo establecido en la Ley de Propiedad Intelectual.
+La publicación o difusión de reproducciones de documentos del Archivo exige autorización expresa del Archivo de la Fundación Juan Negrín según las condiciones expresas en el Art. XX del Reglamento del Archivo.&lt;/p&gt;
+&lt;p&gt;Préstamos temporales de documentos&lt;/p&gt;
+&lt;p&gt;El préstamo de documentación original para exposiciones y actividades de difusión cultural requerirá la autorización expresa del Patronato de la Fundación Juan Negrín y se realizará siguiendo los trámites y especificaciones establecidas en el Art. XX del Reglamento del Archivo.&lt;/p&gt;
+&lt;p&gt;Biblioteca auxiliar&lt;/p&gt;
+&lt;p&gt;El usuario tiene libre acceso a los fondos de la biblioteca auxiliar del archivo especializada en temas de archivística, historia, genealogía y heráldica. Se trata de una biblioteca de consulta en sala pero no de préstamo domiciliario.&lt;/p&gt;&lt;br&gt;
+&lt;H2&gt;4-VISITAS GUIADAS&lt;/H2&gt;
+&lt;div&gt;&lt;br&gt;&lt;/div&gt;
+&lt;p&gt;Existe la posibilidad de realizar visitas guiadas al Archivo. Para ello se requiere solicitud previa 8 días antes de la actividad. Se trata de un servicio abierto a Asociaciones, Centros Educativos y, en general, a grupos no inferiores a 6 personas ni superiores a 15.&lt;/p&gt;
+&lt;blockquote&gt;&lt;span&gt;&lt;strong&gt;Derechos de los usuarios&lt;/strong&gt;&lt;/span&gt;
+&lt;div&gt;&lt;br&gt;Los usuarios del archivo tienen los siguientes derechos:&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;ol style="list-style-type:disc;"&gt;
+&lt;li&gt;Acceso libre y gratuito al archivo, en las condiciones establecidas por la normativa vigente.&lt;/li&gt;
+&lt;li&gt;A recibir información sobre los fondos documentales y bibliográficos conservados en el archivo.&lt;/li&gt;
+&lt;li&gt;Acceso a la sala de consulta, previa acreditación y aceptación de sus normas internas.&lt;/li&gt;
+&lt;li&gt;Acceso a los documentos y a su reproducción de acuerdo con las normas y procedimientos establecidos por el archivo.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;&lt;span&gt;&lt;strong&gt;Participación de los usuarios&lt;/strong&gt;&lt;/span&gt;
+&lt;div&gt;&lt;br&gt;Los usuarios del Archivo pueden participar en la mejora y utilización de los servicios a través de las siguientes vías:&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;ol style="list-style-type:disc;"&gt;
+&lt;li&gt;Formulación de quejas y sugerencias, conforme a lo previsto en esta Carta de Servicios.&lt;/li&gt;
+&lt;li&gt;Mediante escritos dirigidos a la Dirección del Archivo, responsable de esta Carta de Servicios.&lt;/li&gt;
+&lt;li&gt;A través de la cumplimentación de cuestionarios sobre las condiciones de la prestación de los servicios.&lt;/li&gt;
+&lt;li&gt;Mediante la donación de publicaciones resultado del estudio e investigación de los fondos del Archivo. &lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;&lt;span&gt;&lt;strong&gt;Sistemas de aseguramiento de la calidad&lt;/strong&gt;&lt;/span&gt;
+&lt;div&gt;&lt;br&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;ol style="list-style-type:disc;"&gt;
+&lt;li&gt;Aplicación de la normativa de prevención de riesgos laborales y de seguridad e higiene en el trabajo.&lt;/li&gt;
+&lt;li&gt;Plan de evacuación y emergencia convenientemente señalizado.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;&lt;br&gt;
+&lt;H2&gt;5- QUEJAS Y SUGERENCIAS&lt;/H2&gt;
+&lt;blockquote&gt;&lt;span&gt;&lt;/span&gt;
+&lt;div&gt;&lt;br&gt;Los usuarios podrán presentar sus quejas y sugerencias sobre el funcionamiento del servicio en los lugares y en la forma que se señalan a continuación:&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;ol style="list-style-type:disc;"&gt;
+&lt;li&gt;En el Libro de Quejas y Sugerencias habilitado en el Archivo.&lt;/li&gt;
+&lt;li&gt;Las quejas deben hacerse constar en el correspondiente Libro, o en cualquier otro formato o carta, por escrito, y serán firmadas, en tanto que las sugerencias pueden ser anónimas.&lt;/li&gt;
+&lt;li&gt;Mediante llamada telefónica, fax, correo postal y correo electrónico a la Dirección del Archivo.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;&lt;br&gt;
+&lt;p&gt;6- COMPROMISO DE CALIDAD&lt;/p&gt;
+&lt;blockquote&gt;&lt;span&gt;&lt;/span&gt;
+&lt;div&gt;&lt;br&gt;El Archivo de la Fundación Juan Negrín ofrece sus servicios con los siguientes compromisos de calidad:&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;ol style="list-style-type:disc;"&gt;
+&lt;li&gt;Información inmediata al usuario sobre el acceso y consulta de documentos y los servicios que ofrece el centro.&lt;/li&gt;
+&lt;li&gt;Entrega de la documentación solicitada en la Sala de Investigación en el plazo máximo de
+20 minutos (siempre y cuando ésta esté debidamente inventariada e identificada).&lt;/li&gt;
+&lt;li&gt;Reserva de unidades de instalación, cuando así lo solicite el investigador, durante un plazo
+máximo de 5 días.&lt;/li&gt;
+&lt;li&gt;Expedición de certificados de asistencia en la Sala de Investigación en el plazo de 24 horas.&lt;/li&gt;
+&lt;li&gt;Respuesta a las consultas (vía fax, teléfono o correo electrónico) de información, recibidas en el Archivo en el plazo máximo de 15 días.&lt;/li&gt;
+&lt;li&gt;Respuesta a las solicitudes de visitas guiadas para grupos al Archivo en un plazo de 48 horas.&lt;/li&gt;
+&lt;li&gt;Emisión de informes sobre las solicitudes de préstamo de documentos para exposiciones ajenas al centro en el plazo máximo de dos meses.&lt;/li&gt;
+&lt;li&gt;Las reproducciones de documentos solicitadas al Archivo se facilitarán en los plazos máximos siguientes, a partir del pago o la aceptación del presupuesto por correo:&lt;/li&gt;
+&lt;li&gt;Documentación que ya se encuentre digitalizada: 1 mes.&lt;/li&gt;
+&lt;li&gt;Documentación sin digitalizar: 2 meses.&lt;/li&gt;
+&lt;li&gt;Facilitar a los investigadores un cuestionario sobre las condiciones de prestación de los servicios.&lt;/li&gt;
+&lt;li&gt;Respuesta a las quejas y sugerencias en un plazo inferior a 20 días.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;br&gt;&lt;H2&gt;7- NORMATIVA REGULADORA&lt;/H2&gt;
+&lt;blockquote&gt;&lt;span&gt;&lt;/span&gt;
+&lt;div&gt;&lt;br&gt;Normativa general:&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;ol style="list-style-type:disc;"&gt;
+&lt;li&gt;&lt;a  href="https://www.boe.es/boe/dias/1985/06/29/pdfs/A20342-20352.pdf" target="_blank"&gt;Ley 16/1985, de 25 de junio, de Patrimonio Histórico Español.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a  href="https://www.boe.es/boe/dias/1996/04/22/pdfs/A14369-14396.pdf" target="_blank"&gt;Real Decreto Legislativo 1/1996, de 12 de abril, por el que se aprueba el texto refundido de la Ley de Propiedad Intelectual.&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;&lt;span&gt;&lt;/span&gt;
+&lt;div&gt;&lt;br&gt;Específica del Archivo de la Fundación Juan Negrín:&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;ol style="list-style-type:disc;"&gt;
+&lt;li&gt;Reglamento del Archivo de la Fundación aprobado por el Patronato el día....&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;&lt;br&gt;
+&lt;H2&gt;8- INFORMACIÓN GENERAL&lt;/H2&gt;
+&lt;div&gt;&lt;br&gt;Horario&lt;/div&gt;
+&lt;div&gt;Abierto: de lunes a viernes.&lt;/div&gt; 
+&lt;div&gt;Mañanas de 10:30 a 13:30. Tardes de 17:00 a 19:00.&lt;/div&gt;
+&lt;div&gt;Cerrado: Sábados, domingos y festivos de acuerdo con el calendario laboral vigente.&lt;/div&gt;
+&lt;div&gt;&lt;br&gt;Ubicación&lt;/div&gt;
+&lt;H2&gt;Fundación Juan Negrín&lt;/H2&gt;
+&lt;div&gt;C/ Reyes Católicos, 2. 35001. Las Palmas de G.C.&lt;/div&gt;
+&lt;div&gt;Teléfono: 928 33 75 75&lt;/div&gt;
+&lt;div&gt;Fax: 928 XX XX XX&lt;/div&gt;
+&lt;div&gt;E-mail: &lt;a class="email" href="mailto:fundacionjuannegrin@gmail.com"&gt;fundacionjuannegrin@gmail.com&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;Página Web: &lt;a  href="http://www.fundacionjuannegrin.com" target="_blank"&gt;http://www.fundacionjuannegrin.com&lt;/a&gt;&lt;/div&gt;
+</field><field type="TextField" name="content_es">&lt;H1&gt;CARTA DE SERVICIOS DE LA FUNDACIÓN JUAN NEGRÍN&lt;/H1&gt;&lt;br&gt;
+&lt;H2&gt;1- DATOS IDENTIFICATIVOS, HISTORIA Y FINES DEL ARCHIVO&lt;/H2&gt;
+&lt;div&gt;&lt;br&gt;&lt;/div&gt;
+&lt;p&gt;El Archivo de la Fundación Juan Negrín es un archivo de titularidad privada gestionado por la Fundación Juan Negrín. En él se conservan fundamentalmente dos fondos: el familiar Juan Negrín y el fundacional. El Fondo familiar, de carácter histórico, recoge toda aquella documentación generada por las familias de Juan Negrín y Juan Negrín en el ejercicio de sus actividades tanto públicas como privadas. Esta documentación fue pasando de generación en generación hasta llegar a manos
+de Carmen Negrín, Presidenta de Honor de la Fundación Juan Negrín.&lt;/p&gt;
+&lt;p&gt;Se trata de un fondo cerrado si bien se contempla el ingreso de documentación en los supuestos de donación, compra, legado o cualquier otro tipo de cesión o adquisición. El Fondo fundacional recoge la documentación generada en el desempeño de sus funciones por la Fundación Juan Negrín desde 1892 en adelante. Se trata de un fondo abierto dado que se distinguen en él las tres fases de
+archivo: oficina, central e histórico.&lt;/p&gt;
+&lt;p&gt;El Archivo de la Fundación Juan Negrín tiene como finalidad organizar, reunir, custodiar, evaluar, conservar, hacer accesible y difundir la documentación que custodia. Por razón de la calidad de los documentos que conserva (fundamentalmente de carácter histórico), presta un servicio preferente a la consulta con fines culturales y de investigación. Sin embargo, en su Fondo fundacional, mantiene
+un carácter de archivo “abierto” debido al ingreso periódico de fondos documentales procedentes de los archivos de oficina de la Fundación Juan Negrín a su fase de archivo central. Los fondos correspondientes a las etapas de archivo central y de oficina no son accesibles para usuarios externos.&lt;/p&gt;&lt;br&gt;
+&lt;H2&gt;2- SERVICIOS DEL ARCHIVO DE LA FUNDACIÓN NEGRÍN&lt;/H2&gt;
+&lt;div&gt;&lt;br&gt;&lt;/div&gt;
+&lt;p&gt;Información&lt;/p&gt;
+&lt;p&gt;Cualquier usuario tiene derecho a recibir información general sobre los fondos históricos del Archivo de la Fundación Juan Negrín y particular sobre cualquier tema relativo a la época de los mismos.&lt;/p&gt;
+&lt;blockquote&gt;&lt;span&gt;&lt;strong&gt;Consulta de unidades documentales&lt;/strong&gt;&lt;/span&gt;
+&lt;div&gt;&lt;br&gt;Los usuarios externos deberán cumplimentar los impresos de Solicitudes de consulta establecidos al efecto. El Servicio de Archivo se reserva el derecho de solicitar la presentación del DNI o de cualquier otro documento que permita la identificación del peticionario. El funcionamiento de la sala
+se rige por unas normas internas que se encuentran a disposición de los usuarios. En la sala de consulta se proporcionan los siguientes servicios:&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;ol style="list-style-type:disc;"&gt;
+
+&lt;li&gt;Información inmediata y personalizada al investigador sobre fondos documentales y
+bibliográficos del archivo y fuentes documentales complementarias.&lt;/li&gt;
+&lt;li&gt;Orientación sobre el manejo de los instrumentos de descripción y de las bases de datos disponibles en la sala de consulta.&lt;/li&gt;
+&lt;li&gt;Consulta de documentos originales: cada investigador puede solicitar un máximo de una caja o bien de tres unidades documentales (en el caso de que éstas no estén contenidas en la misma caja) cada vez, pudiendo efectuar nuevas peticiones a medida que vaya devolviendo la documentación consultada. La consulta de documentos originales puede quedar limitada por las necesidades de conservación y de descripción.&lt;/li&gt;
+&lt;li&gt;Reserva de peticiones: cada investigador puede reservar una caja o bien tres unidades documentales (en el caso de que éstas no estén contenidas en la misma caja) durante un período máximo de cinco días. La sala de consulta dispone de 6 plazas, equipadas con punto de conexión para equipos informáticos personales. La sala es accesible para personas con movilidad reducida. Asimismo, el investigador puede obtener información de los fondos documentales del Archivo mediante llamada telefónica o correspondencia en sus modalidades de correo ordinario, electrónico o fax.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;&lt;br&gt;
+&lt;H2&gt;3- REPRODUCCIÓN DE DOCUMENTOS&lt;/H2&gt;
+&lt;div&gt;&lt;br&gt;&lt;/div&gt;
+&lt;p&gt;El Archivo podrá proporcionar copia impresa de los materiales cuya consulta haya sido autorizada. La normativa para la utilización de éste servicio puede ser consultada en el Reglamento del Archivo de la Fundación Juan Negrín. Se establecen unas tarifas de reproducción a disposición de los usuarios. Las reproducciones podrán solicitarse rellenando el impreso de solicitud ya sea en sala o por correo (ordinario o electrónico).
+Se elaborará entonces un presupuesto de reproducción de documentos del Archivo y se procederá a la reproducción de los mismos previa aceptación del presupuesto por el solicitante.
+El Archivo se reserva la facultad de elegir qué modalidad de reproducción se utilizará en cada caso. Ante todo, deberá primar el estado de conservación del ejemplar a reproducir, pues si éste fuera malo se desechará la petición.
+Asimismo, los fondos de la biblioteca auxiliar del archivo pueden ser parcialmente reproducidos en fotocopia, de acuerdo con lo establecido en la Ley de Propiedad Intelectual.
+La publicación o difusión de reproducciones de documentos del Archivo exige autorización expresa del Archivo de la Fundación Juan Negrín según las condiciones expresas en el Art. XX del Reglamento del Archivo.&lt;/p&gt;
+&lt;p&gt;Préstamos temporales de documentos&lt;/p&gt;
+&lt;p&gt;El préstamo de documentación original para exposiciones y actividades de difusión cultural requerirá la autorización expresa del Patronato de la Fundación Juan Negrín y se realizará siguiendo los trámites y especificaciones establecidas en el Art. XX del Reglamento del Archivo.&lt;/p&gt;
+&lt;p&gt;Biblioteca auxiliar&lt;/p&gt;
+&lt;p&gt;El usuario tiene libre acceso a los fondos de la biblioteca auxiliar del archivo especializada en temas de archivística, historia, genealogía y heráldica. Se trata de una biblioteca de consulta en sala pero no de préstamo domiciliario.&lt;/p&gt;&lt;br&gt;
+&lt;H2&gt;4-VISITAS GUIADAS&lt;/H2&gt;
+&lt;div&gt;&lt;br&gt;&lt;/div&gt;
+&lt;p&gt;Existe la posibilidad de realizar visitas guiadas al Archivo. Para ello se requiere solicitud previa 8 días antes de la actividad. Se trata de un servicio abierto a Asociaciones, Centros Educativos y, en general, a grupos no inferiores a 6 personas ni superiores a 15.&lt;/p&gt;
+&lt;blockquote&gt;&lt;span&gt;&lt;strong&gt;Derechos de los usuarios&lt;/strong&gt;&lt;/span&gt;
+&lt;div&gt;&lt;br&gt;Los usuarios del archivo tienen los siguientes derechos:&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;ol style="list-style-type:disc;"&gt;
+&lt;li&gt;Acceso libre y gratuito al archivo, en las condiciones establecidas por la normativa vigente.&lt;/li&gt;
+&lt;li&gt;A recibir información sobre los fondos documentales y bibliográficos conservados en el archivo.&lt;/li&gt;
+&lt;li&gt;Acceso a la sala de consulta, previa acreditación y aceptación de sus normas internas.&lt;/li&gt;
+&lt;li&gt;Acceso a los documentos y a su reproducción de acuerdo con las normas y procedimientos establecidos por el archivo.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;&lt;span&gt;&lt;strong&gt;Participación de los usuarios&lt;/strong&gt;&lt;/span&gt;
+&lt;div&gt;&lt;br&gt;Los usuarios del Archivo pueden participar en la mejora y utilización de los servicios a través de las siguientes vías:&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;ol style="list-style-type:disc;"&gt;
+&lt;li&gt;Formulación de quejas y sugerencias, conforme a lo previsto en esta Carta de Servicios.&lt;/li&gt;
+&lt;li&gt;Mediante escritos dirigidos a la Dirección del Archivo, responsable de esta Carta de Servicios.&lt;/li&gt;
+&lt;li&gt;A través de la cumplimentación de cuestionarios sobre las condiciones de la prestación de los servicios.&lt;/li&gt;
+&lt;li&gt;Mediante la donación de publicaciones resultado del estudio e investigación de los fondos del Archivo. &lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;&lt;span&gt;&lt;strong&gt;Sistemas de aseguramiento de la calidad&lt;/strong&gt;&lt;/span&gt;
+&lt;div&gt;&lt;br&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;ol style="list-style-type:disc;"&gt;
+&lt;li&gt;Aplicación de la normativa de prevención de riesgos laborales y de seguridad e higiene en el trabajo.&lt;/li&gt;
+&lt;li&gt;Plan de evacuación y emergencia convenientemente señalizado.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;&lt;br&gt;
+&lt;H2&gt;5- QUEJAS Y SUGERENCIAS&lt;/H2&gt;
+&lt;blockquote&gt;&lt;span&gt;&lt;/span&gt;
+&lt;div&gt;&lt;br&gt;Los usuarios podrán presentar sus quejas y sugerencias sobre el funcionamiento del servicio en los lugares y en la forma que se señalan a continuación:&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;ol style="list-style-type:disc;"&gt;
+&lt;li&gt;En el Libro de Quejas y Sugerencias habilitado en el Archivo.&lt;/li&gt;
+&lt;li&gt;Las quejas deben hacerse constar en el correspondiente Libro, o en cualquier otro formato o carta, por escrito, y serán firmadas, en tanto que las sugerencias pueden ser anónimas.&lt;/li&gt;
+&lt;li&gt;Mediante llamada telefónica, fax, correo postal y correo electrónico a la Dirección del Archivo.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;&lt;br&gt;
+&lt;p&gt;6- COMPROMISO DE CALIDAD&lt;/p&gt;
+&lt;blockquote&gt;&lt;span&gt;&lt;/span&gt;
+&lt;div&gt;&lt;br&gt;El Archivo de la Fundación Juan Negrín ofrece sus servicios con los siguientes compromisos de calidad:&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;ol style="list-style-type:disc;"&gt;
+&lt;li&gt;Información inmediata al usuario sobre el acceso y consulta de documentos y los servicios que ofrece el centro.&lt;/li&gt;
+&lt;li&gt;Entrega de la documentación solicitada en la Sala de Investigación en el plazo máximo de
+20 minutos (siempre y cuando ésta esté debidamente inventariada e identificada).&lt;/li&gt;
+&lt;li&gt;Reserva de unidades de instalación, cuando así lo solicite el investigador, durante un plazo
+máximo de 5 días.&lt;/li&gt;
+&lt;li&gt;Expedición de certificados de asistencia en la Sala de Investigación en el plazo de 24 horas.&lt;/li&gt;
+&lt;li&gt;Respuesta a las consultas (vía fax, teléfono o correo electrónico) de información, recibidas en el Archivo en el plazo máximo de 15 días.&lt;/li&gt;
+&lt;li&gt;Respuesta a las solicitudes de visitas guiadas para grupos al Archivo en un plazo de 48 horas.&lt;/li&gt;
+&lt;li&gt;Emisión de informes sobre las solicitudes de préstamo de documentos para exposiciones ajenas al centro en el plazo máximo de dos meses.&lt;/li&gt;
+&lt;li&gt;Las reproducciones de documentos solicitadas al Archivo se facilitarán en los plazos máximos siguientes, a partir del pago o la aceptación del presupuesto por correo:&lt;/li&gt;
+&lt;li&gt;Documentación que ya se encuentre digitalizada: 1 mes.&lt;/li&gt;
+&lt;li&gt;Documentación sin digitalizar: 2 meses.&lt;/li&gt;
+&lt;li&gt;Facilitar a los investigadores un cuestionario sobre las condiciones de prestación de los servicios.&lt;/li&gt;
+&lt;li&gt;Respuesta a las quejas y sugerencias en un plazo inferior a 20 días.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;br&gt;&lt;H2&gt;7- NORMATIVA REGULADORA&lt;/H2&gt;
+&lt;blockquote&gt;&lt;span&gt;&lt;/span&gt;
+&lt;div&gt;&lt;br&gt;Normativa general:&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;ol style="list-style-type:disc;"&gt;
+&lt;li&gt;&lt;a  href="https://www.boe.es/boe/dias/1985/06/29/pdfs/A20342-20352.pdf" target="_blank"&gt;Ley 16/1985, de 25 de junio, de Patrimonio Histórico Español.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a  href="https://www.boe.es/boe/dias/1996/04/22/pdfs/A14369-14396.pdf" target="_blank"&gt;Real Decreto Legislativo 1/1996, de 12 de abril, por el que se aprueba el texto refundido de la Ley de Propiedad Intelectual.&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;&lt;span&gt;&lt;/span&gt;
+&lt;div&gt;&lt;br&gt;Específica del Archivo de la Fundación Juan Negrín:&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;ol style="list-style-type:disc;"&gt;
+&lt;li&gt;Reglamento del Archivo de la Fundación aprobado por el Patronato el día....&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;&lt;br&gt;
+&lt;H2&gt;8- INFORMACIÓN GENERAL&lt;/H2&gt;
+&lt;div&gt;&lt;br&gt;Horario&lt;/div&gt;
+&lt;div&gt;Abierto: de lunes a viernes.&lt;/div&gt; 
+&lt;div&gt;Mañanas de 10:30 a 13:30. Tardes de 17:00 a 19:00.&lt;/div&gt;
+&lt;div&gt;Cerrado: Sábados, domingos y festivos de acuerdo con el calendario laboral vigente.&lt;/div&gt;
+&lt;div&gt;&lt;br&gt;Ubicación&lt;/div&gt;
+&lt;H2&gt;Fundación Juan Negrín&lt;/H2&gt;
+&lt;div&gt;C/ Reyes Católicos, 2. 35001. Las Palmas de G.C.&lt;/div&gt;
+&lt;div&gt;Teléfono: 928 33 75 75&lt;/div&gt;
+&lt;div&gt;Fax: 928 XX XX XX&lt;/div&gt;
+&lt;div&gt;E-mail: &lt;a class="email" href="mailto:fundacionjuannegrin@gmail.com"&gt;fundacionjuannegrin@gmail.com&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;Página Web: &lt;a  href="http://www.fundacionjuannegrin.com" target="_blank"&gt;http://www.fundacionjuannegrin.com&lt;/a&gt;&lt;/div&gt;
+</field><field type="TextField" name="content_en"><None></None></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object><object pk="20" model="flatpages_i18n.flatpage_i18n"><field type="CharField" name="url">/portada/</field><field type="CharField" name="url_es">/portada/</field><field type="CharField" name="url_en"><None></None></field><field type="CharField" name="title">Portada</field><field type="CharField" name="title_es">Portada</field><field type="CharField" name="title_en"><None></None></field><field type="TextField" name="content">Somos una fundación destinada al estudio, investigación y difusión  de la personalidad política y científica de Juan Negrín López (Las Palmas de Gran Canaria, 1892-París, 1956) y de las claves políticas, sociales y culturales de su tiempo, particularmente el primer tercio del siglo XX (Edad de Plata de la cultura y la ciencia españolas), la II República y la guerra civil.</field><field type="TextField" name="content_es">Somos una fundación destinada al estudio, investigación y difusión  de la personalidad política y científica de Juan Negrín López (Las Palmas de Gran Canaria, 1892-París, 1956) y de las claves políticas, sociales y culturales de su tiempo, particularmente el primer tercio del siglo XX (Edad de Plata de la cultura y la ciencia españolas), la II República y la guerra civil.</field><field type="TextField" name="content_en"><None></None></field><field type="BooleanField" name="enable_comments">False</field><field type="CharField" name="template_name"></field><field type="BooleanField" name="registration_required">False</field><field type="IntegerField" name="weight">0</field><field to="sites.site" name="sites" rel="ManyToManyRel"><object pk="1"></object></field></object></django-objects>

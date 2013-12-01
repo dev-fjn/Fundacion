@@ -1,18 +1,10 @@
 [
 {
-    "pk": 1, 
-    "model": "sites.site", 
-    "fields": {
-        "domain": "localhost:8000", 
-        "name": "localhost:8000"
-    }
-},
-{
-    "pk": 2, 
-    "model": "sites.site", 
-    "fields": {
-        "domain": "www.fundacionjuannegrin.com", 
-        "name": "Fundaci\u00f3n"
-    }
+ "pk": 1, 
+ "model": "sites.site", 
+ "fields": {
+  "domain": "example.com", 
+  "name": "example.com"
+ }
 }
 ]

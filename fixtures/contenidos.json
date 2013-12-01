@@ -1,0 +1,2396 @@
+[
+{
+ "pk": 1, 
+ "model": "contenidos.carrusel", 
+ "fields": {
+  "titulo": "1.jpg", 
+  "titulo_es": "1.jpg", 
+  "filename": "/media/uploads/carrusel/1.jpg", 
+  "titulo_en": "1.jpg", 
+  "orden": 1
+ }
+},
+{
+ "pk": 2, 
+ "model": "contenidos.carrusel", 
+ "fields": {
+  "titulo": "2.jpg", 
+  "titulo_es": "2.jpg", 
+  "filename": "/media/uploads/carrusel/2.jpg", 
+  "titulo_en": "2.jpg", 
+  "orden": 2
+ }
+},
+{
+ "pk": 3, 
+ "model": "contenidos.carrusel", 
+ "fields": {
+  "titulo": "3.jpg", 
+  "titulo_es": "3.jpg", 
+  "filename": "/media/uploads/carrusel/3.jpg", 
+  "titulo_en": "3.jpg", 
+  "orden": 3
+ }
+},
+{
+ "pk": 4, 
+ "model": "contenidos.carrusel", 
+ "fields": {
+  "titulo": "4.jpg", 
+  "titulo_es": "4.jpg", 
+  "filename": "/media/uploads/carrusel/4.jpg", 
+  "titulo_en": "4.jpg", 
+  "orden": 4
+ }
+},
+{
+ "pk": 5, 
+ "model": "contenidos.carrusel", 
+ "fields": {
+  "titulo": "5.jpg", 
+  "titulo_es": "5.jpg", 
+  "filename": "/media/uploads/carrusel/5.jpg", 
+  "titulo_en": "5.jpg", 
+  "orden": 5
+ }
+},
+{
+ "pk": 6, 
+ "model": "contenidos.carrusel", 
+ "fields": {
+  "titulo": "6.jpg", 
+  "titulo_es": "6.jpg", 
+  "filename": "/media/uploads/carrusel/6.jpg", 
+  "titulo_en": "6.jpg", 
+  "orden": 6
+ }
+},
+{
+ "pk": 7, 
+ "model": "contenidos.carrusel", 
+ "fields": {
+  "titulo": "7.jpg", 
+  "titulo_es": "7.jpg", 
+  "filename": "/media/uploads/carrusel/7.jpg", 
+  "titulo_en": "7.jpg", 
+  "orden": 7
+ }
+},
+{
+ "pk": 8, 
+ "model": "contenidos.carrusel", 
+ "fields": {
+  "titulo": "8.jpg", 
+  "titulo_es": "8.jpg", 
+  "filename": "/media/uploads/carrusel/8.jpg", 
+  "titulo_en": "8.jpg", 
+  "orden": 8
+ }
+},
+{
+ "pk": 9, 
+ "model": "contenidos.carrusel", 
+ "fields": {
+  "titulo": "9.jpg", 
+  "titulo_es": "9.jpg", 
+  "filename": "/media/uploads/carrusel/9.jpg", 
+  "titulo_en": "9.jpg", 
+  "orden": 9
+ }
+},
+{
+ "pk": 10, 
+ "model": "contenidos.carrusel", 
+ "fields": {
+  "titulo": "10.jpg", 
+  "titulo_es": "10.jpg", 
+  "filename": "/media/uploads/carrusel/10.jpg", 
+  "titulo_en": "10.jpg", 
+  "orden": 10
+ }
+},
+{
+ "pk": 11, 
+ "model": "contenidos.carrusel", 
+ "fields": {
+  "titulo": "11.jpg", 
+  "titulo_es": "11.jpg", 
+  "filename": "/media/uploads/carrusel/11.jpg", 
+  "titulo_en": "11.jpg", 
+  "orden": 11
+ }
+},
+{
+ "pk": 12, 
+ "model": "contenidos.carrusel", 
+ "fields": {
+  "titulo": "12.jpg", 
+  "titulo_es": "12.jpg", 
+  "filename": "/media/uploads/carrusel/12.jpg", 
+  "titulo_en": "12.jpg", 
+  "orden": 12
+ }
+},
+{
+ "pk": 13, 
+ "model": "contenidos.carrusel", 
+ "fields": {
+  "titulo": "13.jpg", 
+  "titulo_es": "13.jpg", 
+  "filename": "/media/uploads/carrusel/13.jpg", 
+  "titulo_en": "13.jpg", 
+  "orden": 13
+ }
+},
+{
+ "pk": 14, 
+ "model": "contenidos.carrusel", 
+ "fields": {
+  "titulo": "14.jpg", 
+  "titulo_es": "14.jpg", 
+  "filename": "/media/uploads/carrusel/14.jpg", 
+  "titulo_en": "14.jpg", 
+  "orden": 14
+ }
+},
+{
+ "pk": 15, 
+ "model": "contenidos.carrusel", 
+ "fields": {
+  "titulo": "15.jpg", 
+  "titulo_es": "15.jpg", 
+  "filename": "/media/uploads/carrusel/15.jpg", 
+  "titulo_en": "15.jpg", 
+  "orden": 15
+ }
+},
+{
+ "pk": 16, 
+ "model": "contenidos.carrusel", 
+ "fields": {
+  "titulo": "16.jpg", 
+  "titulo_es": "16.jpg", 
+  "filename": "/media/uploads/carrusel/16.jpg", 
+  "titulo_en": "16.jpg", 
+  "orden": 16
+ }
+},
+{
+ "pk": 17, 
+ "model": "contenidos.carrusel", 
+ "fields": {
+  "titulo": "17.jpg", 
+  "titulo_es": "17.jpg", 
+  "filename": "/media/uploads/carrusel/17.jpg", 
+  "titulo_en": "17.jpg", 
+  "orden": 17
+ }
+},
+{
+ "pk": 18, 
+ "model": "contenidos.carrusel", 
+ "fields": {
+  "titulo": "18.jpg", 
+  "titulo_es": "18.jpg", 
+  "filename": "/media/uploads/carrusel/18.jpg", 
+  "titulo_en": "18.jpg", 
+  "orden": 18
+ }
+},
+{
+ "pk": 19, 
+ "model": "contenidos.carrusel", 
+ "fields": {
+  "titulo": "19.jpg", 
+  "titulo_es": "19.jpg", 
+  "filename": "/media/uploads/carrusel/19.jpg", 
+  "titulo_en": "19.jpg", 
+  "orden": 19
+ }
+},
+{
+ "pk": 1, 
+ "model": "contenidos.evento", 
+ "fields": {
+  "titulo": "Evento prueba", 
+  "resumen": "Evento pruebaEvento pruebaEvento pruebaEvento pruebaEvento pruebaEvento prueba", 
+  "imagen": "eventos/imagenes/skype.png", 
+  "fecha_y_lugar": "Evento pruebaEvento pruebaEvento pruebaEvento prueba", 
+  "pdf": ""
+ }
+},
+{
+ "pk": 2, 
+ "model": "contenidos.evento", 
+ "fields": {
+  "titulo": "prueba", 
+  "resumen": "probando", 
+  "imagen": "eventos/imagenes/Cruz.bmp", 
+  "fecha_y_lugar": "09/11/2013", 
+  "pdf": ""
+ }
+},
+{
+ "pk": 3, 
+ "model": "contenidos.evento", 
+ "fields": {
+  "titulo": "Evento futuro2", 
+  "resumen": "Suspendisse a lectus mollis, dapibus nisi id, ultrices dui. Duis pulvinar nibh eros, nec pharetra est gravida lacinia? Aenean a blandit enim; vitae posuere libero. Nullam eget lorem nisi. Integer at blandit nulla. Aenean aliquet eu augue eu faucibus. Nunc quis blandit odio. Nunc quis tortor eget nulla dictum pharetra at sed ipsum. Etiam eget fringilla libero. Vestibulum ante ipsum primis in metus.\r\n", 
+  "imagen": "eventos/imagenes/003_-_Fotos_Antiguas_-_Gran_Canaria.jpg", 
+  "fecha_y_lugar": "Cras luctus ligula vitae placerat porttitor! Nulla a magna blandit, ullamcorper lacus ac, semper nunc. Vivamus orci lacus, commodo sit amet congue nec, vestibulum eget libero. In nunc tortor, fermentum sed sapien eget; consectetur tincidunt sem. Curabitur ligula nulla, rhoncus vel erat et, tempus varius lacus! Fusce non lorem fringilla, ornare odio et, hendrerit magna. Sed a risus neque cras amet.\r\n", 
+  "pdf": "eventos/pdf/Microsoft_PowerPoint_-_La_LOPD_y_su_aplicacion.ppt_-_Administrador.pdf"
+ }
+},
+{
+ "pk": 4, 
+ "model": "contenidos.evento", 
+ "fields": {
+  "titulo": "Evento de Prueba 12", 
+  "resumen": "Este es un evento de prueba que se va a poner en el d\u00eda 12 de noviembre", 
+  "imagen": "", 
+  "fecha_y_lugar": "Para ello vamos a poner dicho evento en esa fecha.", 
+  "pdf": ""
+ }
+},
+{
+ "pk": 1, 
+ "model": "contenidos.fechaevento", 
+ "fields": {
+  "evento": 1, 
+  "fecha": "2013-11-02", 
+  "hora_final": "18:00:00", 
+  "hora_inicio": "17:00:00"
+ }
+},
+{
+ "pk": 2, 
+ "model": "contenidos.fechaevento", 
+ "fields": {
+  "evento": 1, 
+  "fecha": "2013-11-09", 
+  "hora_final": "18:00:00", 
+  "hora_inicio": "17:00:00"
+ }
+},
+{
+ "pk": 3, 
+ "model": "contenidos.fechaevento", 
+ "fields": {
+  "evento": 2, 
+  "fecha": "2013-11-09", 
+  "hora_final": "00:21:23", 
+  "hora_inicio": "00:21:23"
+ }
+},
+{
+ "pk": 4, 
+ "model": "contenidos.fechaevento", 
+ "fields": {
+  "evento": 3, 
+  "fecha": "2013-11-15", 
+  "hora_final": "15:48:19", 
+  "hora_inicio": "13:48:18"
+ }
+},
+{
+ "pk": 5, 
+ "model": "contenidos.fechaevento", 
+ "fields": {
+  "evento": 4, 
+  "fecha": "2013-11-12", 
+  "hora_final": "17:48:16", 
+  "hora_inicio": "17:48:14"
+ }
+},
+{
+ "pk": 1, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "978-84-3205-6", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "1976-01-01", 
+  "precio": null, 
+  "autor": "Mariano Ans\u00f3", 
+  "miniatura": "/media/uploads/bibliografia/yo-fui-ministro-de-negrin.jpg", 
+  "editorial": "Planeta", 
+  "pais": "Espa\u00f1a (Barcelona)", 
+  "titulo": "Yo fui ministro de Negr\u00edn", 
+  "idioma": "Espa\u00f1ol", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 2, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "1976-01-01", 
+  "precio": null, 
+  "autor": "Edmundo Dom\u00ednguez Aragon\u00e9s (comisario del Ej\u00e9rcito del Centro de las fuerzas republicanas durante la Guerra Civil espa\u00f1ola)", 
+  "miniatura": "/media/uploads/bibliografia/los-vencedores-de-negrin.jpg", 
+  "editorial": "Roca", 
+  "pais": "M\u00e9xico", 
+  "titulo": "Los Vencedores de Negr\u00edn", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 3, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "978-84-3204-3", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "1985-01-01", 
+  "precio": null, 
+  "autor": "Joan Llarch", 
+  "miniatura": "/media/uploads/bibliografia/negrin-resistir-es-vencer.jpg", 
+  "editorial": "Planeta", 
+  "pais": "Espa\u00f1a (Barcelona)", 
+  "titulo": "Negr\u00edn. \u00a1Resistir es vencer!", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 4, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "", 
+  "tipo": "Ponencias", 
+  "url": "", 
+  "fecha": "1988-01-01", 
+  "precio": null, 
+  "autor": "A. Gallego", 
+  "miniatura": "", 
+  "editorial": "Conferencias Plenarias, Mesas Redondas, Res\u00famenes de Comunicaciones del XXIII Congreso Nacional de la Sociedad espa\u00f1ola de Ciencias Fisiol\u00f3gicas", 
+  "pais": "Espa\u00f1a (Tenerife, Puerto de la Cruz)", 
+  "titulo": "El Fisi\u00f3logo Juan Negr\u00edn", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 5, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "1990-01-01", 
+  "precio": null, 
+  "autor": "Juan Marichal", 
+  "miniatura": "/media/uploads/bibliografia/el-intelectual-y-la-politica.jpg", 
+  "editorial": "Residencia de Estudiantes", 
+  "pais": "Espa\u00f1a (Madrid)", 
+  "titulo": "El intelectual y la pol\u00edtica. Unamuno, Ortega, Aza\u00f1a, Negr\u00edn.", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 6, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "1991-01-01", 
+  "precio": null, 
+  "autor": "Jordi Palafox", 
+  "miniatura": "/media/uploads/bibliografia/atraso-economico-y-democracia.jpg", 
+  "editorial": "Cr\u00edtica, DL", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "Atraso econ\u00f3mico y democracia : la Segunda Rep\u00fablica y la econom\u00eda espa\u00f1ola, 1892-1936", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 7, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "", 
+  "tipo": "Bolet\u00edn", 
+  "url": "", 
+  "fecha": "1993-01-01", 
+  "precio": null, 
+  "autor": "Josep Llu\u00eds Barona", 
+  "miniatura": "", 
+  "editorial": " Bolet\u00edn Instituci\u00f3n Libre de Ense\u00f1anza, II \u00e9poca", 
+  "pais": "Espa\u00f1a (Madrid, 1987)", 
+  "titulo": "Juan Negr\u00edn y la modernizaci\u00f3n cient\u00edfica en Espa\u00f1a", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 8, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "84-7960-093-4", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "1994-01-01", 
+  "precio": null, 
+  "autor": "Santiago \u00c1lvarez", 
+  "miniatura": "/media/uploads/bibliografia/negrin-personalidad-historica.jpg", 
+  "editorial": "Ediciones de La Torre", 
+  "pais": "Espa\u00f1a (Madrid)", 
+  "titulo": "Negr\u00edn, personalidad hist\u00f3rica. Biograf\u00eda", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 9, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "84-7960-094-2", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "1994-01-01", 
+  "precio": null, 
+  "autor": "Santiago \u00c1lvarez", 
+  "miniatura": "/media/uploads/bibliografia/negrin-personalidad-historica-documentos.jpg", 
+  "editorial": "Ediciones de La Torre", 
+  "pais": "Espa\u00f1a (Madrid)", 
+  "titulo": "Negr\u00edn, personalidad hist\u00f3rica. Documentos", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 10, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "84-96326-09-8", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "1996-01-01", 
+  "precio": null, 
+  "autor": "Francisco Olaya Morales", 
+  "miniatura": "/media/uploads/bibliografia/la-gran-estafa.jpg", 
+  "editorial": "Nossa y Jara Editores", 
+  "pais": "Espa\u00f1a (Madrid)", 
+  "titulo": "La Gran Estafa: Negr\u00edn, Prieto y el Patrimonio espa\u00f1ol", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 11, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "1996-01-01", 
+  "precio": null, 
+  "autor": "Manuel Tu\u00f1\u00f3n de Lara", 
+  "miniatura": "/media/uploads/bibliografia/juan-negrin-el-hombre-necesario.jpg", 
+  "editorial": "Consejer\u00eda de Educaci\u00f3n, Cultura y Deportes del Gobierno de Canarias", 
+  "pais": "Espa\u00f1a (Canarias)", 
+  "titulo": "Juan Negr\u00edn L\u00f3pez. El hombre necesario", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 12, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "978-84-3060-4", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2001-01-01", 
+  "precio": null, 
+  "autor": "Pablo Mart\u00edn Ace\u00f1a", 
+  "miniatura": "/media/uploads/bibliografia/el-oro-de-moscu-y-el-oro-de-berlin.jpg", 
+  "editorial": "Taurus", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "El Oro de Mosc\u00fa y el Oro de Berl\u00edn", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 13, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "84-8460-301-6", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2003-01-01", 
+  "precio": null, 
+  "autor": "Ricardo Miralles", 
+  "miniatura": "/media/uploads/bibliografia/juan-negrin-la-republica-en-guerra.jpg", 
+  "editorial": "Temas de hoy", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "Juan Negr\u00edn. La Rep\u00fablica en guerra.", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 14, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "978-84-7813-2", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2003-01-01", 
+  "precio": null, 
+  "autor": " Stoy\u00e1n M\u00ednev (Step\u00e1nov), delegado en Espa\u00f1a de la Komintern (1937 - 1039). \u00c1ngel L. Encinas Moral, traducci\u00f3n y edici\u00f3n.", 
+  "miniatura": "/media/uploads/bibliografia/las-causas-de-la-derrota-de-la-republica.jpg", 
+  "editorial": "Miraguano, S.A. Ediciones", 
+  "pais": "Espa\u00f1a (Madrid)", 
+  "titulo": "Las causas de la derrota de la Rep\u00fablica Espa\u00f1ola", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 15, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "978-184-5193-", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2010-01-01", 
+  "precio": null, 
+  "autor": "Gabriel Jockson", 
+  "miniatura": "/media/uploads/bibliografia/juan-negrin-physiologist-socialist-and-spanish-republican-war-leader.jpg", 
+  "editorial": "Sussex Academic Press", 
+  "pais": "Reino Unido", 
+  "titulo": "Juan Negrin: Physiologist, Socialist, and Spanish Republican War Leader", 
+  "idioma": "Ingl\u00e9s", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 16, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2004-01-01", 
+  "precio": null, 
+  "autor": "Francisco Olaya Morales", 
+  "miniatura": "/media/uploads/bibliografia/el-expolio-de-la-republica.jpg", 
+  "editorial": "Belacqua de ediciones y publicaciones, S.", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "El Expolio de la Segunda Rep\u00fablica", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 17, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2004-01-01", 
+  "precio": null, 
+  "autor": "Gabriel Jackson, Victor Alba", 
+  "miniatura": "/media/uploads/bibliografia/juan-negrin.jpg", 
+  "editorial": "B Ediciones", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "Juan Negr\u00edn", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 18, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "978-84-9892-0", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2006-01-01", 
+  "precio": null, 
+  "autor": "Angel Vi\u00f1as", 
+  "miniatura": "/media/uploads/bibliografia/la-soledad-de-la-republica.jpg", 
+  "editorial": "Critica", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "La soledad de la Rep\u00fablica: El abandono de las democracias y el viraje hacia la Uni\u00f3n Sovi\u00e9tica", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 19, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2006-01-01", 
+  "precio": null, 
+  "autor": "Jos\u00e9 Andr\u00e9s Rojo", 
+  "miniatura": "/media/uploads/bibliografia/vicente-rojo-retrato-de-un-general.jpg", 
+  "editorial": "Tusquets Editores", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "Vicente Rojo, Retrato de un general republicano", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 20, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "978-84-9892-0", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2007-01-01", 
+  "precio": 5.0, 
+  "autor": "Angel Vi\u00f1as", 
+  "miniatura": "/media/uploads/bibliografia/el-escudo-de-la-republica.jpg", 
+  "editorial": "Critica", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "El escudo de la Rep\u00fablica: El oro de Espa\u00f1a, la apuesta sovi\u00e9tica y los hechos de mayo de 1937", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 21, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "84-96411-13-3", 
+  "tipo": "Cat\u00e1logo", 
+  "url": "", 
+  "fecha": "2007-01-01", 
+  "precio": null, 
+  "autor": "Varios", 
+  "miniatura": "/media/uploads/bibliografia/juan-negrin-medico-y-jefe-de-gobierno.jpg", 
+  "editorial": "Sociedad Estatal de Conmemoraciones Culturales", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "Juan Negr\u00edn. M\u00e9dico y Jefe de Gobierno (1892-1956)", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 22, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "84-96411-13-3", 
+  "tipo": "Cat\u00e1logo", 
+  "url": "", 
+  "fecha": "2007-01-01", 
+  "precio": 6.3, 
+  "autor": "Varios", 
+  "miniatura": "/media/uploads/bibliografia/juan-negrin-1892-1956-barcelona-capital-de-la-republica .jpg", 
+  "editorial": "Sociedad Estatal de Conmemoraciones Culturales", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "Juan Negr\u00edn 1892-1956  Barcelona, capital de la Rep\u00fablica", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 23, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "84-95599-20-1", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2007-01-01", 
+  "precio": null, 
+  "autor": "Josep Llu\u00eds Barona", 
+  "miniatura": "/media/uploads/bibliografia/medicina-y-compromiso.gif", 
+  "editorial": "Nivola Ediciones", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "Medicina y compromiso. Entre la experimentaci\u00f3n y la pol\u00edtica", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 24, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "978-84-8432-996-1", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2008-01-01", 
+  "precio": null, 
+  "autor": "Gabriel Jackson", 
+  "miniatura": "/media/uploads/bibliografia/juan-negrin-medico-socialista-y-jefe-del-gobierno-de-la-II-republica.jpg", 
+  "editorial": "Critica", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "Juan Negr\u00edn m\u00e9dico socialista y jefe del gobierno de la II Rep\u00fablica", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 25, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "978-84-96764-34-7", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2008-01-01", 
+  "precio": null, 
+  "autor": "Antonio Cruz Gonz\u00e1lez", 
+  "miniatura": "/media/uploads/bibliografia/las-victimas-de-negrin.jpg", 
+  "editorial": "Sepha", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "Las v\u00edctimas de Negr\u00edn", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 26, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "978-84-8307-753-1", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2008-01-01", 
+  "precio": null, 
+  "autor": "Enrique Moradiellos", 
+  "miniatura": "/media/uploads/bibliografia/don-juan-negrin.jpg", 
+  "editorial": "Quinteto Bolsillo", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "Don Juan Negr\u00edn", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 27, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "978-84-670-3107-2", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2008-01-01", 
+  "precio": null, 
+  "autor": "Helen Graham", 
+  "miniatura": "/media/uploads/bibliografia/breve-historia-de-la-guerra-civil.jpg", 
+  "editorial": "Espasa CalpeEspasa Calpe", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "Breve historia de la Guerra Civil", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 29, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "978-84-7423-765-8", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2009-01-01", 
+  "precio": null, 
+  "autor": "Angel Vi\u00f1a", 
+  "miniatura": "/media/uploads/bibliografia/el-honor-de-la-republica.jpg", 
+  "editorial": "Critica", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "El Honor de la Rep\u00fablica: entre el acoso fascista, la hostilidad brit\u00e1nica y la pol\u00edtica de Stalin", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 30, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "978-84-9892-031-4", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2009-01-01", 
+  "precio": null, 
+  "autor": "Angel Vi\u00f1as y Fernando Hern\u00e1ndez S\u00e1nchez", 
+  "miniatura": "/media/uploads/bibliografia/el-desplome-de-la-republica.jpg", 
+  "editorial": "Critica", 
+  "pais": "Espa\u00f1a", 
+  "titulo": "El desplome de la Rep\u00fablica: la verdadera historia del final de la Guerra Civil", 
+  "idioma": "Castellano", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 31, 
+ "model": "contenidos.libro", 
+ "fields": {
+  "isbn": "978-184-5193-768", 
+  "tipo": "Libro", 
+  "url": "", 
+  "fecha": "2010-01-01", 
+  "precio": null, 
+  "autor": "Gabriel Jackson", 
+  "miniatura": "/media/uploads/bibliografia/juan-negrin-physiologist-socialist-and-spanish-republican-war-leader.jpg", 
+  "editorial": "Sussex Academic Press", 
+  "pais": "Reino Unido", 
+  "titulo": "Juan Negrin: Physiologist, Socialist, and Spanish Republican War Leader", 
+  "idioma": "Ingl\u00e9s", 
+  "resumen": ""
+ }
+},
+{
+ "pk": 1, 
+ "model": "contenidos.categoria", 
+ "fields": {
+  "nombre": "", 
+  "tipo": 1
+ }
+},
+{
+ "pk": 2, 
+ "model": "contenidos.categoria", 
+ "fields": {
+  "nombre": "Noticias", 
+  "tipo": 2
+ }
+},
+{
+ "pk": 3, 
+ "model": "contenidos.categoria", 
+ "fields": {
+  "nombre": "", 
+  "tipo": 3
+ }
+},
+{
+ "pk": 4, 
+ "model": "contenidos.categoria", 
+ "fields": {
+  "nombre": "Art\u00edculos", 
+  "tipo": 2
+ }
+},
+{
+ "pk": 5, 
+ "model": "contenidos.categoria", 
+ "fields": {
+  "nombre": "Entrevistas", 
+  "tipo": 2
+ }
+},
+{
+ "pk": 1, 
+ "model": "contenidos.autor", 
+ "fields": {
+  "nombre": "Eligio Hern\u00e1ndez"
+ }
+},
+{
+ "pk": 2, 
+ "model": "contenidos.autor", 
+ "fields": {
+  "nombre": "Silvina Monroy"
+ }
+},
+{
+ "pk": 3, 
+ "model": "contenidos.autor", 
+ "fields": {
+  "nombre": "Sergio Millares Cantero"
+ }
+},
+{
+ "pk": 4, 
+ "model": "contenidos.autor", 
+ "fields": {
+  "nombre": "Gabriel Jackson"
+ }
+},
+{
+ "pk": 5, 
+ "model": "contenidos.autor", 
+ "fields": {
+  "nombre": "Jos\u00e9 A. Medina Jim\u00e9nez"
+ }
+},
+{
+ "pk": 6, 
+ "model": "contenidos.autor", 
+ "fields": {
+  "nombre": "Cira Morote Medina"
+ }
+},
+{
+ "pk": 7, 
+ "model": "contenidos.autor", 
+ "fields": {
+  "nombre": "Jos\u00e9 Miguel P\u00e9rez Garc\u00eda"
+ }
+},
+{
+ "pk": 8, 
+ "model": "contenidos.autor", 
+ "fields": {
+  "nombre": "Antonio Aguado Su\u00e1rez"
+ }
+},
+{
+ "pk": 9, 
+ "model": "contenidos.autor", 
+ "fields": {
+  "nombre": "Nicol\u00e1s Guerra Aguiar"
+ }
+},
+{
+ "pk": 10, 
+ "model": "contenidos.autor", 
+ "fields": {
+  "nombre": "An\u00f3nimo"
+ }
+},
+{
+ "pk": 11, 
+ "model": "contenidos.autor", 
+ "fields": {
+  "nombre": "Javier Dur\u00e1n"
+ }
+},
+{
+ "pk": 12, 
+ "model": "contenidos.autor", 
+ "fields": {
+  "nombre": "Rafael G. Morera"
+ }
+},
+{
+ "pk": 13, 
+ "model": "contenidos.autor", 
+ "fields": {
+  "nombre": "Juan Marichal"
+ }
+},
+{
+ "pk": 14, 
+ "model": "contenidos.autor", 
+ "fields": {
+  "nombre": "Jorge Balb\u00e1s"
+ }
+},
+{
+ "pk": 15, 
+ "model": "contenidos.autor", 
+ "fields": {
+  "nombre": "Carlos Santana"
+ }
+},
+{
+ "pk": 16, 
+ "model": "contenidos.autor", 
+ "fields": {
+  "nombre": "Anonimo"
+ }
+},
+{
+ "pk": 4, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 4, 
+  "fuente": "La Provincia", 
+  "fecha": "2007-05-02", 
+  "autor": 12, 
+  "descripcion": "Descripci\u00f3n del Art\u00edculo", 
+  "titulo": "Dr. Juan Negr\u00edn", 
+  "slug": "dr-juan-negrin"
+ }
+},
+{
+ "pk": 5, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 4, 
+  "fuente": "La Provincia", 
+  "fecha": "2007-04-22", 
+  "autor": 5, 
+  "descripcion": "Descripci\u00f3n", 
+  "titulo": "Negr\u00edn en La Regenta", 
+  "slug": "negrin-en-la-regenta"
+ }
+},
+{
+ "pk": 6, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 4, 
+  "fuente": "La Provincia", 
+  "fecha": "2006-11-11", 
+  "autor": 8, 
+  "descripcion": "Descripci\u00f3n", 
+  "titulo": "Juan Negr\u00edn y su Fundaci\u00f3n", 
+  "slug": "juan-negrin-y-su-fundacion"
+ }
+},
+{
+ "pk": 7, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 4, 
+  "fuente": "La Provincia", 
+  "fecha": "2004-05-16", 
+  "autor": 9, 
+  "descripcion": "Descripci\u00f3n", 
+  "titulo": "Por R\u00f3mulo Negr\u00edn", 
+  "slug": "por-romulo-negrin"
+ }
+},
+{
+ "pk": 8, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 4, 
+  "fuente": "Rueda de escritores", 
+  "fecha": "2003-12-11", 
+  "autor": 4, 
+  "descripcion": "Descripci\u00f3n", 
+  "titulo": "Historia accidentada de un archivo", 
+  "slug": "historia-accidentada-de-un-archivo"
+ }
+},
+{
+ "pk": 9, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 4, 
+  "fuente": "La Provincia", 
+  "fecha": "2003-09-28", 
+  "autor": 10, 
+  "descripcion": "Descripci\u00f3n", 
+  "titulo": "El patrimonio Negr\u00edn", 
+  "slug": "el-patrimonio-negrin"
+ }
+},
+{
+ "pk": 10, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 4, 
+  "fuente": "El Pais", 
+  "fecha": "2002-03-31", 
+  "autor": 13, 
+  "descripcion": "Descripci\u00f3n", 
+  "titulo": "El legado patriota de Juan Negr\u00edn", 
+  "slug": "el-legado-patriota-de-juan-negrin"
+ }
+},
+{
+ "pk": 11, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 4, 
+  "fuente": "La Provincia", 
+  "fecha": "2001-03-15", 
+  "autor": 1, 
+  "descripcion": "", 
+  "titulo": "Evocaci\u00f3n de Espa\u00f1a y Canarias en el sepelio de Juan Negr\u00edn", 
+  "slug": "evocacion-de-espana-y-canarias-en-el-sepelio-de-ju"
+ }
+},
+{
+ "pk": 12, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 4, 
+  "fuente": "La Provincia", 
+  "fecha": "2001-03-14", 
+  "autor": 5, 
+  "descripcion": "", 
+  "titulo": "Un Hombre de ciencia", 
+  "slug": "un-hombre-de-ciencia"
+ }
+},
+{
+ "pk": 13, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 4, 
+  "fuente": "Tribuna de Canarias", 
+  "fecha": "1999-11-07", 
+  "autor": 3, 
+  "descripcion": "", 
+  "titulo": "El discreto silencio de Negr\u00edn", 
+  "slug": "el-discreto-silencio-de-negrin"
+ }
+},
+{
+ "pk": 14, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 4, 
+  "fuente": "La Provincia", 
+  "fecha": "1999-02-21", 
+  "autor": 7, 
+  "descripcion": "", 
+  "titulo": "Sobre Juan Negr\u00edn: El Pol\u00edtico", 
+  "slug": "sobre-juan-negrin-el-politico"
+ }
+},
+{
+ "pk": 15, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 4, 
+  "fuente": "La Provincia", 
+  "fecha": "1998-11-05", 
+  "autor": 5, 
+  "descripcion": "", 
+  "titulo": "La Universidad y el Doctor Negr\u00edn", 
+  "slug": "la-universidad-y-el-doctor-negrin"
+ }
+},
+{
+ "pk": 16, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "Canarias7", 
+  "fecha": "1999-11-13", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Juan Negr\u00edn gobern\u00f3 en equilibrio entre socialistas y comunistas", 
+  "slug": "juan-negrin-goberno-en-equilibrio-entre-socialista"
+ }
+},
+{
+ "pk": 17, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Tribuna de Canarias", 
+  "fecha": "1999-11-13", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Miralles: \"El PSOE ha hecho m\u00e1s da\u00f1o a Negr\u00edn que el franquismo\"", 
+  "slug": "miralles-el-psoe-ha-hecho-mas-dano-a-negrin-que-el"
+ }
+},
+{
+ "pk": 18, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "1999-11-13", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Medina explica el silencio sobre Negr\u00edn por la rapi\u00f1a que sufri\u00f3 el patrimonio familiar", 
+  "slug": "medina-explica-el-silencio-sobre-negrin-por-la-rap"
+ }
+},
+{
+ "pk": 19, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Tribuna de Canarias", 
+  "fecha": "1999-11-11", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Garc\u00eda del Rosario: \"Negr\u00edn fue un gran l\u00edder nacido en Las Palmas\"", 
+  "slug": "garcia-del-rosario-negrin-fue-un-gran-lider-nacido"
+ }
+},
+{
+ "pk": 20, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "1999-11-11", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Millares afirma que Negr\u00edn represent\u00f3 el orden tras el caos en la Hacienda espa\u00f1ola", 
+  "slug": "millares-afirma-que-negrin-represento-el-orden-tra"
+ }
+},
+{
+ "pk": 21, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "1999-11-09", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Eligio Hern\u00e1ndez describe a Negr\u00edn como el espa\u00f1ol m\u00e1s europeo de su generaci\u00f3n", 
+  "slug": "eligio-hernandez-describe-a-negrin-como-el-espanol"
+ }
+},
+{
+ "pk": 22, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Tribuna de Canarias", 
+  "fecha": "1999-11-09", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Rom\u00e1n Rodriguez aboga por recuperar en las Islas la figura de Juan Negr\u00edn", 
+  "slug": "roman-rodriguez-aboga-por-recuperar-en-las-islas-l"
+ }
+},
+{
+ "pk": 23, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Tribuna de Canarias", 
+  "fecha": "1999-11-07", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Una figura hist\u00f3rica para el siglo XXI", 
+  "slug": "una-figura-historica-para-el-siglo-xxi"
+ }
+},
+{
+ "pk": 24, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "1999-11-07", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Un isle\u00f1o de nombre Negr\u00edn", 
+  "slug": "un-isleno-de-nombre-negrin"
+ }
+},
+{
+ "pk": 25, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "1999-11-06", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "La Fundaci\u00f3n Juan Negr\u00edn rescata del silencio al pol\u00edtico y cient\u00edfico canario", 
+  "slug": "la-fundacion-juan-negrin-rescata-del-silencio-al-p"
+ }
+},
+{
+ "pk": 26, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Tribuna de Canarias", 
+  "fecha": "1999-11-06", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Los silencios de Juan Negr\u00edn se rompen buscando la verdad", 
+  "slug": "los-silencios-de-juan-negrin-se-rompen-buscando-la"
+ }
+},
+{
+ "pk": 27, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "1999-05-15", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Bonis afirma que el hospital Doctor Negr\u00edn es un edificio \"hecho como dicen los libros\"", 
+  "slug": "bonis-afirma-que-el-hospital-doctor-negrin-es-un-e"
+ }
+},
+{
+ "pk": 28, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Tribuna de Canarias", 
+  "fecha": "1999-05-15", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Una lucha de 13 a\u00f1os que culmina con un edificio vanguardista", 
+  "slug": "una-lucha-de-13-anos-que-culmina-con-un-edificio-v"
+ }
+},
+{
+ "pk": 29, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "1998-11-15", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Un hospital para recuperar a Negr\u00edn", 
+  "slug": "un-hospital-para-recuperar-a-negrin"
+ }
+},
+{
+ "pk": 30, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "2005-03-14", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Conmemoraci\u00f3n 50 a\u00f1os muerte Negr\u00edn", 
+  "slug": "conmemoracion-50-anos-muerte-negrin"
+ }
+},
+{
+ "pk": 31, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "2004-08-01", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Muere en M\u00e9xico R\u00f3mulo Negr\u00edn, hijo del presidente del Gobierno de la II Rep\u00fablica", 
+  "slug": "muere-en-mexico-romulo-negrin-hijo-del-presidente-"
+ }
+},
+{
+ "pk": 32, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "Canarias7", 
+  "fecha": "2003-10-13", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Negr\u00edn sab\u00eda que se enfrentaba a una guerra de exterminio", 
+  "slug": "negrin-sabia-que-se-enfrentaba-a-una-guerra-de-ext"
+ }
+},
+{
+ "pk": 33, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "2003-11-13", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Graham: \"Negr\u00edn vio la pol\u00edtica como un ejercicio de virtud c\u00edvica, no como los pol\u00edticos 'mercaderes' de ahora\"", 
+  "slug": "graham-negrin-vio-la-politica-como-un-ejercicio-de"
+ }
+},
+{
+ "pk": 34, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "2003-10-17", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Jackon: \"No conozco un gran estadista tan mal entendido como Juan Negr\u00edn\"", 
+  "slug": "jackon-no-conozco-un-gran-estadista-tan-mal-entend"
+ }
+},
+{
+ "pk": 35, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "2003-10-15", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Jackson: \"Negr\u00edn acudi\u00f3 a la URSS para frenar a Franco, como Churchill para frenar a Hitler\"", 
+  "slug": "jackson-negrin-acudio-a-la-urss-para-frenar-a-fran"
+ }
+},
+{
+ "pk": 36, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "Canarias7", 
+  "fecha": "2003-09-28", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Los Negr\u00edn in\u00e9ditos", 
+  "slug": "los-negrin-ineditos"
+ }
+},
+{
+ "pk": 37, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "2003-09-21", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Una herida de la Historia", 
+  "slug": "una-herida-de-la-historia"
+ }
+},
+{
+ "pk": 38, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "2003-02-12", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "La nieta de Negr\u00edn inaugura un espacio dedicado a su abuelo en el Museo Elder", 
+  "slug": "la-nieta-de-negrin-inaugura-un-espacio-dedicado-a-"
+ }
+},
+{
+ "pk": 39, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "Canarias7", 
+  "fecha": "2003-02-12", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "El Museo de la Ciencia muestra documentos in\u00e9ditos de Juan Negr\u00edn", 
+  "slug": "el-museo-de-la-ciencia-muestra-documentos-ineditos"
+ }
+},
+{
+ "pk": 40, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "2002-01-01", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "EL Cabildo grancanario aprueba la creaci\u00f3n de la beca Juan Negr\u00edn dotado con 24.040\u20ac", 
+  "slug": "el-cabildo-grancanario-aprueba-la-creacion-de-la-b"
+ }
+},
+{
+ "pk": 41, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "2001-06-03", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "La familia de Juan Negr\u00edn accede a vender la casa maternal al municipio de San Mateo", 
+  "slug": "la-familia-de-juan-negrin-accede-a-vender-la-casa-"
+ }
+},
+{
+ "pk": 42, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "Canarias7", 
+  "fecha": "2007-04-29", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Una invitaci\u00f3n para conocer a Juan Negr\u00edn", 
+  "slug": "una-invitacion-para-conocer-a-juan-negrin"
+ }
+},
+{
+ "pk": 43, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "Canarias7", 
+  "fecha": "2007-04-28", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "El archivo de Negr\u00edn busca un lugar para quedarse en la isla", 
+  "slug": "el-archivo-de-negrin-busca-un-lugar-para-quedarse-"
+ }
+},
+{
+ "pk": 44, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "2007-04-28", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Una muestra \"hace justicia\" a la figura de Negr\u00edn como cient\u00edfico y pol\u00edtico", 
+  "slug": "una-muestra-hace-justicia-a-la-figura-de-negrin-co"
+ }
+},
+{
+ "pk": 45, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "Canarias7", 
+  "fecha": "2007-04-26", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Para ver a Negr\u00edn con ojos limpios", 
+  "slug": "para-ver-a-negrin-con-ojos-limpios"
+ }
+},
+{
+ "pk": 46, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "Canarias7", 
+  "fecha": "2006-05-12", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "Historia y humor, la mirada de Schommer sobre la Transici\u00f3n", 
+  "slug": "historia-y-humor-la-mirada-de-schommer-sobre-la-tr"
+ }
+},
+{
+ "pk": 47, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 2, 
+  "fuente": "La Provincia", 
+  "fecha": "2006-05-12", 
+  "autor": null, 
+  "descripcion": "", 
+  "titulo": "El Gabinete Literario muestra las fotograf\u00edas de Schommer sobre la Transici\u00f3n", 
+  "slug": "el-gabinete-literario-muestra-las-fotografias-de-s"
+ }
+},
+{
+ "pk": 48, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 5, 
+  "fuente": "La Provincia", 
+  "fecha": "2003-10-19", 
+  "autor": 2, 
+  "descripcion": "Entrevistado: Gabriel Jackson, historiador hispanista", 
+  "titulo": "El PP de Aznar es franquismo disfrazado de democracia", 
+  "slug": "el-pp-de-aznar-es-franquismo-disfrazado-de-democra"
+ }
+},
+{
+ "pk": 49, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 5, 
+  "fuente": "La Provincia", 
+  "fecha": "2003-10-14", 
+  "autor": 6, 
+  "descripcion": "Entrevistado: Jos\u00e9 A. Medina Jim\u00e9nez", 
+  "titulo": "La verdad sobre los Negr\u00edn fue ocultada durante 40 a\u00f1os de manipulaci\u00f3n", 
+  "slug": "la-verdad-sobre-los-negrin-fue-ocultada-durante-40"
+ }
+},
+{
+ "pk": 50, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 5, 
+  "fuente": "La Provincia", 
+  "fecha": "2003-02-19", 
+  "autor": 14, 
+  "descripcion": "Entrevistado: Ricardo Miralles", 
+  "titulo": "Nuevos datos abrir\u00e1n pistas sobre el exilio, la guerra y las cuentas de Negr\u00edn", 
+  "slug": "nuevos-datos-abriran-pistas-sobre-el-exilio-la-gue"
+ }
+},
+{
+ "pk": 51, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 5, 
+  "fuente": "La Provincia", 
+  "fecha": "2003-02-13", 
+  "autor": 11, 
+  "descripcion": "Entrevistado: Carmen Negr\u00edn Fetter", 
+  "titulo": "Los que no quieran abrir los ojos con Negr\u00edn seguir\u00e1n as\u00ed, pese a sus memorias", 
+  "slug": "los-que-no-quieran-abrir-los-ojos-con-negrin-segui"
+ }
+},
+{
+ "pk": 52, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 1, 
+  "fuente": "", 
+  "fecha": "2013-11-28", 
+  "autor": 16, 
+  "descripcion": "<p>Compromiso con la historia - homenaje a Juan Negr&iacute;n en Ferraz</p>", 
+  "titulo": "Compromiso con la historia - homenaje a Juan Negr\u00edn en Ferraz", 
+  "slug": "compromiso-con-la-historia-homenaje-juan-negrin-en"
+ }
+},
+{
+ "pk": 53, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 1, 
+  "fuente": "", 
+  "fecha": "2013-11-29", 
+  "autor": 16, 
+  "descripcion": "<p>V&iacute;deo</p>", 
+  "titulo": "Exposici\u00f3n sobre Juan Negr\u00edn en Gu\u00eda de Isora 2009", 
+  "slug": "exposicion-sobre-juan-negrin-en-guia-de-isora-2009"
+ }
+},
+{
+ "pk": 54, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 1, 
+  "fuente": "", 
+  "fecha": "2013-11-29", 
+  "autor": null, 
+  "descripcion": "<p>himno-republica.mp3</p>", 
+  "titulo": "Himno de la rep\u00fablica", 
+  "slug": "himno-republica"
+ }
+},
+{
+ "pk": 55, 
+ "model": "contenidos.documento", 
+ "fields": {
+  "categoria": 1, 
+  "fuente": "A mano", 
+  "fecha": "2013-11-30", 
+  "autor": 16, 
+  "descripcion": "<p>Documento <strong>de prueba</strong> que ha de ser eliminado cuando entremos en producci&oacute;n.</p>", 
+  "titulo": "Dr. Juan Negr\u00edn", 
+  "slug": "dr-juan-negrin"
+ }
+},
+{
+ "pk": 1, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version PDF", 
+  "filename": "/media/uploads/documentos/articulos-dr-juan-negrin.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/articulos-dr-juan-negrin.jpg", 
+  "documento": 4
+ }
+},
+{
+ "pk": 3, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-juan-negrin-goberno-en-equilibrio.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-juan-negrin-goberno-en-equilibrio.jpg", 
+  "documento": 16
+ }
+},
+{
+ "pk": 4, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/entrevista-a-carmen-negrin.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/entrevista-a-carmen-negrin.jpg", 
+  "documento": 51
+ }
+},
+{
+ "pk": 5, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/entrevista-a-ricardo-miralles.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/entrevista-a-ricardo-miralles.jpg", 
+  "documento": 50
+ }
+},
+{
+ "pk": 6, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/entrevista-a-jose-medina.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/entrevista-a-jose-medina.jpg", 
+  "documento": 49
+ }
+},
+{
+ "pk": 7, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/entrevista-a-gabriel-jackson.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/entrevista-a-gabriel-jackson.jpg", 
+  "documento": 48
+ }
+},
+{
+ "pk": 8, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-el-gabinete-literario-muestra-las-fotografias.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-el-gabinete-literario-muestra-las-fotografias.jpg", 
+  "documento": 47
+ }
+},
+{
+ "pk": 9, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-historia-y-humor-la-mirada-de-schommer.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-historia-y-humor-la-mirada-de-schommer.jpg", 
+  "documento": 46
+ }
+},
+{
+ "pk": 10, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-para-ver-a-negrin-con-ojos-limpios.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-para-ver-a-negrin-con-ojos-limpios.jpg", 
+  "documento": 45
+ }
+},
+{
+ "pk": 11, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-el-archivo-de-negrin-busca-un-lugar.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-el-archivo-de-negrin-busca-un-lugar.jpg", 
+  "documento": 43
+ }
+},
+{
+ "pk": 12, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-una-muestra-hace-justicia.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-una-muestra-hace-justicia.jpg", 
+  "documento": 44
+ }
+},
+{
+ "pk": 13, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-una-invitacion-para-conocer-a-juan-negrin.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-una-invitacion-para-conocer-a-juan-negrin.jpg", 
+  "documento": 42
+ }
+},
+{
+ "pk": 14, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/articulos-un-hombre-de-ciencia.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/articulos-un-hombre-de-ciencia.jpg", 
+  "documento": 12
+ }
+},
+{
+ "pk": 15, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-una-lucha-de-13-anos-que-culmina.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-una-lucha-de-13-anos-que-culmina.jpg", 
+  "documento": 28
+ }
+},
+{
+ "pk": 16, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-una-figura-historica-para-el-siglo-xxi.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-una-figura-historica-para-el-siglo-xxi.jpg", 
+  "documento": 23
+ }
+},
+{
+ "pk": 17, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-un-isleno-de-nombre-negrin.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-un-isleno-de-nombre-negrin.jpg", 
+  "documento": 24
+ }
+},
+{
+ "pk": 18, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-negrin-sabia-que-se-enfrentaba-a-una-guerra.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-negrin-sabia-que-se-enfrentaba-a-una-guerra.jpg", 
+  "documento": 32
+ }
+},
+{
+ "pk": 19, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-muere-en-mexico-romulo-negrin.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-muere-en-mexico-romulo-negrin.jpg", 
+  "documento": 31
+ }
+},
+{
+ "pk": 20, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-los-silencios-de-juan-negrin-se-rompen.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-los-silencios-de-juan-negrin-se-rompen.jpg", 
+  "documento": 26
+ }
+},
+{
+ "pk": 21, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-la-fundacion-juan-negrin-recata-del-silencio.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-la-fundacion-juan-negrin-recata-del-silencio.jpg", 
+  "documento": 25
+ }
+},
+{
+ "pk": 22, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-roman-rodriguez-aboga-por-recuperar.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-roman-rodriguez-aboga-por-recuperar.jpg", 
+  "documento": 22
+ }
+},
+{
+ "pk": 23, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-millares-afirma-que-negrin-represento.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-millares-afirma-que-negrin-represento.jpg", 
+  "documento": 20
+ }
+},
+{
+ "pk": 24, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-medina-explica-el-silencio-sobre-negrin.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-medina-explica-el-silencio-sobre-negrin.jpg", 
+  "documento": 18
+ }
+},
+{
+ "pk": 25, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-miralles-el-psoe-ha-hecho-mas-dano-a-negrin.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-miralles-el-psoe-ha-hecho-mas-dano-a-negrin.jpg", 
+  "documento": 17
+ }
+},
+{
+ "pk": 26, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-garcia-del-rosario-negrin-fue-un-gran-lider.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-garcia-del-rosario-negrin-fue-un-gran-lider.jpg", 
+  "documento": 19
+ }
+},
+{
+ "pk": 27, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-eligio-hernandez-describe-a-negrin.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-eligio-hernandez-describe-a-negrin.jpg", 
+  "documento": 21
+ }
+},
+{
+ "pk": 28, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-conmemoracion-50-anos-muerte-negrin.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-conmemoracion-50-anos-muerte-negrin.jpg", 
+  "documento": 30
+ }
+},
+{
+ "pk": 29, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/noticias-bonis-afirma-que-el-hospital-doctor-negrin.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/noticias-bonis-afirma-que-el-hospital-doctor-negrin.jpg", 
+  "documento": 27
+ }
+},
+{
+ "pk": 30, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/articulos-juan-negrin-y-su-fundacion.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/articulos-juan-negrin-y-su-fundacion.jpg", 
+  "documento": 6
+ }
+},
+{
+ "pk": 31, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Version en PDF", 
+  "filename": "/media/uploads/documentos/articulos-negrin-en-la-regenta.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/articulos-negrin-en-la-regenta.jpg", 
+  "documento": 5
+ }
+},
+{
+ "pk": 32, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Compromiso con la historia - homenaje a Juan Negr\u00edn en Ferraz", 
+  "filename": "/media/uploads/videos/CompromisoconlahistoriahomenajeaJuanNegr\u00ednenFerraz_x264.mp4", 
+  "miniatura": "", 
+  "documento": 52
+ }
+},
+{
+ "pk": 33, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Exposici\u00f3n sobre Juan Negr\u00edn en Gu\u00eda de Isora 2009", 
+  "filename": "/media/uploads/videos/Exposici\u00f3nsobreJuanNegr\u00ednenGu\u00edadeIsora2009_x264.mp4", 
+  "miniatura": "", 
+  "documento": 53
+ }
+},
+{
+ "pk": 34, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "Himno de la rep\u00fablica", 
+  "filename": "/media/uploads/audios/himno-republica.mp3", 
+  "miniatura": "", 
+  "documento": 54
+ }
+},
+{
+ "pk": 35, 
+ "model": "contenidos.ficheroadjunto", 
+ "fields": {
+  "titulo": "T\u00edtulo del documento", 
+  "filename": "/media/uploads/documentos/articulos-un-hombre-de-ciencia.pdf", 
+  "miniatura": "/media/uploads/documentos/miniaturas/articulos-dr-juan-negrin_small.jpg", 
+  "documento": 55
+ }
+},
+{
+ "pk": 1, 
+ "model": "contenidos.citade", 
+ "fields": {
+  "contenido": "Bravura, combatientes frescos, material b\u00e9lico en abundancia. Todo eso tenemos. \u00bfQu\u00e9 necesitamos adem\u00e1s para asegurar una l\u00ednea infranqueable de resistencia? Necesitamos una fe ciega, absoluta en el resultado de nuestra lucha. Necesitamos que recobren el dominio de sus nervios los que lo hayan perdido. Ser\u00e9nese la retaguardia. Cumpla cada uno su misi\u00f3n cotidiana consider\u00e1ndola una misi\u00f3n de guerra. J\u00farense los soldados no retroceder ni un paso cuando el mando ordene clavarse en el suelo.", 
+  "descripcion": "Discurso", 
+  "fecha": "1939-01-27", 
+  "fecha_literal": ""
+ }
+},
+{
+ "pk": 2, 
+ "model": "contenidos.citade", 
+ "fields": {
+  "contenido": "La guerra se pierde cuando da uno la guerra por perdida. El vencedor lo proclama el vencido: no es \u00e9l quien se erige en vencedor. Y mientras haya esp\u00edritu de resistencia, hay posibilidad de triunfo.", 
+  "descripcion": "Discurso ante la C\u00e1mara de diputados en 1938", 
+  "fecha": "1938-04-16", 
+  "fecha_literal": ""
+ }
+},
+{
+ "pk": 3, 
+ "model": "contenidos.citade", 
+ "fields": {
+  "contenido": "Con fe en la victoria, con entusiasmo y disciplina, podremos en d\u00edas o semanas limpiar de invasores las tierras que acaban de arrebatarnos y abrir los caminos del resto de Espa\u00f1a a nuestro ej\u00e9rcito, el ej\u00e9rcito de la independencia.", 
+  "descripcion": "Discurso", 
+  "fecha": "1938-04-16", 
+  "fecha_literal": ""
+ }
+},
+{
+ "pk": 4, 
+ "model": "contenidos.citade", 
+ "fields": {
+  "contenido": "Si Hitler triunfara, Espa\u00f1a, como las dem\u00e1s naciones de Europa y el mundo, se ver\u00edan sometidas a la m\u00e1s abyecta esclavitud, sin vislumbre de redenci\u00f3n posible. Por obligaci\u00f3n patri\u00f3tica y por nuestro ego\u00edsmo individual, es deber de espa\u00f1oles no hacer nada que pueda favorecer, es deber nuestro hacer todo lo que pueda da\u00f1ar, a la hidra apocal\u00edptica del nazismo, el mayor peligro que ha conocido la humanidad desde que tiene historia.", 
+  "descripcion": "Discurso de Londres", 
+  "fecha": "1941-07-20", 
+  "fecha_literal": ""
+ }
+},
+{
+ "pk": 5, 
+ "model": "contenidos.citade", 
+ "fields": {
+  "contenido": "\u2026 frente a la pol\u00edtica de no intervenci\u00f3n y manteniendo inc\u00f3lume el derecho del pueblo espa\u00f1ol a disponer de su destino, ha sabido el Gobierno de la Rep\u00fablica organizar la resistencia y crear un ej\u00e9rcito que lleno de fe se prepara para las jornadas decisivas, que nos han de conducir a la victoria \u2026", 
+  "descripcion": "Discurso", 
+  "fecha": "1938-04-16", 
+  "fecha_literal": ""
+ }
+},
+{
+ "pk": 6, 
+ "model": "contenidos.citade", 
+ "fields": {
+  "contenido": "Someto al mundo tres puntos que estimo condensa el esp\u00edritu por el cual combate el pueblo espa\u00f1ol. Son ellos: Primero. La garant\u00eda de la independencia de nuestra patria, libre de ingerencias extranjeras. Segundo. La seguridad de que sea el pueblo espa\u00f1ol el \u00fanico que escoja su r\u00e9gimen y rija sus destinos. Tercero. El cese todas las persecuciones y represalias una vez liquidada la guerra.", 
+  "descripcion": "Discurso ante las Cortes celebrada en Figueras", 
+  "fecha": "1939-02-01", 
+  "fecha_literal": ""
+ }
+},
+{
+ "pk": 7, 
+ "model": "contenidos.citade", 
+ "fields": {
+  "contenido": "\u00a1Animo y aliento, espa\u00f1oles de la retaguardia y del frente! Del coraje de los actos de hero\u00edsmo, depende la existencia de todos y lo que vale m\u00e1s, el porvenir de Espa\u00f1a. No os dej\u00e9is descorazonar por las desgracias. Sea nuestro temple el del acero. Vendr\u00e1n d\u00edas mejores en los que habremos de recordar orgullosos nuestro comportamiento en la adversidad.", 
+  "descripcion": "Discurso entre 1937-1939", 
+  "fecha": "1937-01-01", 
+  "fecha_literal": ""
+ }
+},
+{
+ "pk": 8, 
+ "model": "contenidos.citade", 
+ "fields": {
+  "contenido": "Cada d\u00eda de resistencia es una batalla ganada", 
+  "descripcion": "Discurso entre 1937-1939", 
+  "fecha": "1937-01-01", 
+  "fecha_literal": ""
+ }
+},
+{
+ "pk": 9, 
+ "model": "contenidos.citade", 
+ "fields": {
+  "contenido": "La victoria impone a quienes la desean sacrificios considerables. Y uno de estos. Que no puede ser descuidado, si no queremos comprometerla, es la de producir m\u00e1s.", 
+  "descripcion": "Discurso en 1938", 
+  "fecha": "1938-01-01", 
+  "fecha_literal": ""
+ }
+},
+{
+ "pk": 10, 
+ "model": "contenidos.citade", 
+ "fields": {
+  "contenido": "Tenemos la valent\u00eda comprobada de nuestros soldados. Tenemos fuerzas de refresco que han de preservarnos de un agotamiento. Tenemos material (ya empezamos a ponerlo en servicio) en cantidad, proporci\u00f3n y calidad que no so\u00f1\u00e1bamos. Ha llegado tarde como, lleg\u00f3 tarde a Madrid, pero ha llegado a\u00fan a tiempo, como lleg\u00f3 a justo tiempo en 1936.", 
+  "descripcion": "Discurso en 1939", 
+  "fecha": "1939-01-01", 
+  "fecha_literal": ""
+ }
+},
+{
+ "pk": 1, 
+ "model": "contenidos.citasobre", 
+ "fields": {
+  "contenido": "\u2026 Espa\u00f1a pierde con \u00e9l un gran hombre de Estado; sus amigos, un coraz\u00f3n ardiente y una inteligencia fuera de lo com\u00fan.", 
+  "autor": "Jules Moch", 
+  "fecha": null, 
+  "fecha_literal": "", 
+  "cargo": "Ministro franc\u00e9s"
+ }
+},
+{
+ "pk": 2, 
+ "model": "contenidos.citasobre", 
+ "fields": {
+  "contenido": "\u2026 Siento su muerte, en la certeza de que Espa\u00f1a lo honrar\u00e1 un d\u00eda no lejano como a uno de sus mejores hijos.", 
+  "autor": "Pietro Nenni", 
+  "fecha": null, 
+  "fecha_literal": "", 
+  "cargo": "Vicepresidente de la Rep\u00fablica de Italia"
+ }
+},
+{
+ "pk": 3, 
+ "model": "contenidos.citasobre", 
+ "fields": {
+  "contenido": "\u2026 Negr\u00edn abri\u00f3 amplias y fascinantes posibilidades en mi imaginaci\u00f3n, no s\u00f3lo a trav\u00e9s de sus conferencias y ense\u00f1anzas de laboratorio sino mediante su consejo, \u00e1nimo y est\u00edmulo a leer monograf\u00edas cient\u00edficas en otras lenguas distintas al espa\u00f1ol.", 
+  "autor": "Severo Ochoa", 
+  "fecha": null, 
+  "fecha_literal": "", 
+  "cargo": "Cient\u00edfico - Premio Nobel"
+ }
+},
+{
+ "pk": 4, 
+ "model": "contenidos.citasobre", 
+ "fields": {
+  "contenido": "\u2026 Debo decir, en honor a la verdad, que no pod\u00eda haberlo hecho mejor. No ten\u00eda nada que reprocharse, salvo a lo mejor el haber dejado a su coraz\u00f3n quemar su vida ardiente, todav\u00eda corta y, para nosotros, tan necesaria.", 
+  "autor": "Vicent Auriol", 
+  "fecha": null, 
+  "fecha_literal": "", 
+  "cargo": "Ministro franc\u00e9s"
+ }
+},
+{
+ "pk": 5, 
+ "model": "contenidos.citasobre", 
+ "fields": {
+  "contenido": "\u2026 Sus actos estaban motivados s\u00f3lo por su intelecto, que era de buena fibra. Favorec\u00eda la ley y el orden. Su integridad y valor eran tanto f\u00edsicos como morales. De una gran capacidad de trabajo.", 
+  "autor": "Claude G. Bowers", 
+  "fecha": null, 
+  "fecha_literal": "", 
+  "cargo": "Embajador de los EE.UU. en Espa\u00f1a durante la guerra"
+ }
+},
+{
+ "pk": 6, 
+ "model": "contenidos.citasobre", 
+ "fields": {
+  "contenido": "\u2026 Su visi\u00f3n internacional que lo llevaba a contemplar y a analizar los problemas espa\u00f1oles encuadrados en un marco universal. Esto es (...) lo que m\u00e1s contribuy\u00f3 a hacer de Negr\u00edn un gobernante moderno, enteramente limpio de ese tufillo pueblerino, de pol\u00edtica de campanario, que con algunas excepciones muy honrosas, caracteriza la vida pol\u00edtica espa\u00f1ola contempor\u00e1nea.", 
+  "autor": "Pablo de Azc\u00e1rate", 
+  "fecha": null, 
+  "fecha_literal": "", 
+  "cargo": "Diplom\u00e1tico y Ministro espa\u00f1ol"
+ }
+},
+{
+ "pk": 7, 
+ "model": "contenidos.citasobre", 
+ "fields": {
+  "contenido": "\u2026 No fue pol\u00edtico, era m\u00e1s y menos. Dio la medida que se necesitaba en el momento preciso, cuando lo que se requer\u00eda era hombr\u00eda y decisi\u00f3n. Ajeno a los juegos naturales de la conquista y conservaci\u00f3n del poder, cuando no tuvo que dar la cara, fue perdido ...", 
+  "autor": "Max Aub", 
+  "fecha": null, 
+  "fecha_literal": "", 
+  "cargo": "Intelectual"
+ }
+},
+{
+ "pk": 8, 
+ "model": "contenidos.citasobre", 
+ "fields": {
+  "contenido": "\u2026 Negr\u00edn merece ocupar un puesto importante en la historia de nuestro pa\u00eds. (\u2026) En aquel momento represent\u00f3 no s\u00f3lo la lucha por la democracia frente al naciente nazismo y fascismo europeo sino la voluntad de aunar los esfuerzos de todos en beneficio de un futuro de convivencia y de prosperidad para Espa\u00f1a que se trunc\u00f3 por la p\u00e9rdida de la guerra.", 
+  "autor": "Alfonso Guerra", 
+  "fecha": "2006-10-08", 
+  "fecha_literal": "", 
+  "cargo": "ex0Vicepresidente del Gobierno de Espa\u00f1a , Diputado del PSOE y Presidente de la Fundaci\u00f3n Pablo Iglesias"
+ }
+},
+{
+ "pk": 1, 
+ "model": "contenidos.presencia", 
+ "fields": {
+  "lugar": "Las Palmas de Gran Canaria", 
+  "latitud": null, 
+  "imagen": "/media/uploads/presencia/hospital-dr-juan-negrin-gc.jpg", 
+  "url_lugar": "http://maps.google.es/maps?q=28.120369,+-15.444785&num=1&sll=28.113423,-15.447193&sspn=0.006295,0.006295&hl=es&ie=UTF8&ll=28.120723,-15.444632&spn=0.008876,0.013797&z=16&iwloc=A", 
+  "denominacion": "Hospital General de Gran Canaria Dr. Negr\u00edn", 
+  "descripcion": "Se encuentra situado junto a la cincunvalaci\u00f3n, en la salida Norte, de la ciudad de Las Palmas de Gran Canaria en la parte baja el barranco de la Ballena.", 
+  "longitud": null
+ }
+},
+{
+ "pk": 2, 
+ "model": "contenidos.presencia", 
+ "fields": {
+  "lugar": "Las Palmas Gran Canaria", 
+  "latitud": null, 
+  "imagen": "/media/uploads/presencia/cp-juan-negrin-3palmas.jpg", 
+  "url_lugar": " ", 
+  "denominacion": "Colegio P\u00fablico Dr. Juan Negr\u00edn", 
+  "descripcion": "Sito en el barrio capitalino Hoya de la Plata de las Palmas de Gran Canaria. Colegio P\u00fablico de Ense\u00f1anza primaria, secundaria y bachillerato.", 
+  "longitud": null
+ }
+},
+{
+ "pk": 3, 
+ "model": "contenidos.presencia", 
+ "fields": {
+  "lugar": "Telde, Gran Canaria", 
+  "latitud": null, 
+  "imagen": "/media/uploads/presencia/ceip-juan-negrin-remudas-telde.jpg", 
+  "url_lugar": "http://maps.google.com/maps?f=q&source=s_q&hl=es&geocode=&q=Colegio+de+Ense%C3%B1anza+Infantil+y+Primaria+Juan+Negr%C3%ADn&sll=28.109935,-15.416565&sspn=0.00846,0.013711&ie=UTF8", 
+  "denominacion": "Colegio de Ense\u00f1anza Infantil y Primaria Juan Negr\u00edn", 
+  "descripcion": "Colegio p\u00fablico de Ense\u00f1anza Infantil y Primaria, ubicado en el barrio de las Remudas en el municipio de Telde, isla de Gran Canaria. Ha obtenido un premio del Gobierno de Canarias por su vocaci\u00f3n acad\u00e9mica.", 
+  "longitud": null
+ }
+},
+{
+ "pk": 4, 
+ "model": "contenidos.presencia", 
+ "fields": {
+  "lugar": "Las Palmas de Gran Canaria", 
+  "latitud": null, 
+  "imagen": "/media/uploads/presencia/escultura-juan-negrin-triana-lpgc.jpg", 
+  "url_lugar": "http://maps.google.es/maps?ll=28.103462,-15.415036&spn=0,0.004823&z=18&lci=com.panoramio.all&layer=c&cbll=28.103467,-15.415063&cbp=12,0,,0,5&photoid=po-26756147", 
+  "denominacion": "Escultura de Juan Negr\u00edn", 
+  "descripcion": "Escultura de Juan Negr\u00edn realizada por el escultor Juan Borges, ubicada en la calle Mayor de Triana, en Las Palmas de Gran Canaria", 
+  "longitud": null
+ }
+},
+{
+ "pk": 5, 
+ "model": "contenidos.presencia", 
+ "fields": {
+  "lugar": "Telde, Gran Canaria", 
+  "latitud": null, 
+  "imagen": "/media/uploads/presencia/calle-juan-negrin-telde.jpg", 
+  "url_lugar": "http://maps.google.es/maps?f=q&source=s_q&hl=es&geocode=&q=juan+negr%C3%ADn&sll=28.097792,-15.4163&sspn=0.014443,0.01929&ie=UTF8&hq=juan+negr%C3%ADn&hnear=&ll=27.91817,-15.424547&spn=0.028934,0.038581", 
+  "denominacion": "Calle Juan Negr\u00edn", 
+  "descripcion": "Calle situada en el barrio de San Gregorio del municipio de Telde en la isla de Gran Canaria.", 
+  "longitud": null
+ }
+},
+{
+ "pk": 6, 
+ "model": "contenidos.presencia", 
+ "fields": {
+  "lugar": "Telde, Gran Canaria", 
+  "latitud": null, 
+  "imagen": "/media/uploads/presencia/agrupacion-socialista-juan-negrin-telde.jpg", 
+  "url_lugar": "http://maps.google.es/maps?f=q&source=s_q&hl=es&geocode=&q=Agrupaci%C3%B3n+Socialista+Juan+Negr%C3%ADn+PSOE+telde&sll=27.91817,-15.424547&sspn=0.028934,0.038581&ie=UTF8&hq=Agrupaci%C3%B3n+Socialista+J", 
+  "denominacion": "Agrupaci\u00f3n Socialista Juan Negr\u00edn PSOE", 
+  "descripcion": "Sede socialista ubicada en el barrio de San Gregorio del municipio de Telde, isla de Gran Canaria.", 
+  "longitud": null
+ }
+},
+{
+ "pk": 7, 
+ "model": "contenidos.presencia", 
+ "fields": {
+  "lugar": "Las Palmas de Gran Canaria", 
+  "latitud": null, 
+  "imagen": "/media/uploads/presencia/cabildo-insular-de-gc1.jpg", 
+  "url_lugar": "http://maps.google.es/maps?f=q&source=s_q&hl=es&geocode=&q=cabildo+insular+de+gran+canaria&g=Calle+Juan+De+Quesada,+30,+35001+Las+Palmas+De+Gran+Canaria&ie=UTF8&hq=cabildo+insular&hnear=Gran+Canaria&l", 
+  "denominacion": "Beca de Investigaci\u00f3n Cient\u00edfica Juan Negr\u00edn", 
+  "descripcion": "Beca creada por el Cabildo Insular de Gran Canaria. El objetivo de la misma es apoyar a los j\u00f3venes investigadores en el \u00e1mbito de la Medicina, Farmacia, Biolog\u00eda, Bioqu\u00edmica y Veterinaria.", 
+  "longitud": null
+ }
+},
+{
+ "pk": 8, 
+ "model": "contenidos.presencia", 
+ "fields": {
+  "lugar": "Las Palmas de Gran Canaria", 
+  "latitud": null, 
+  "imagen": "/media/uploads/presencia/calle-dr-juan-negrin-lopez-en-las-palmas-de-gran-canaria.jpg", 
+  "url_lugar": "http://maps.google.com/maps?f=q&source=s_q&hl=es&geocode=&q=Doctor.+Juan+Negr%C3%ADn+L%C3%B3pez+Las+Palmas+de+Gran+Canaria,+Las+Palmas,+Islas+Canarias,+Espa%C3%B1a&sll=28.105951,-15.415333&sspn=0.0084", 
+  "denominacion": "Calle Dr. Juan Negr\u00edn", 
+  "descripcion": "Calle ubicada en la zona comercial de Triana. Esta calle se encuentra paralela entre las calles Rafael Cabrera y Francisco Gourie. El acceso a la misma es por la zona de la plaza del Teatro P\u00e9rez Galdos.", 
+  "longitud": null
+ }
+},
+{
+ "pk": 9, 
+ "model": "contenidos.presencia", 
+ "fields": {
+  "lugar": "Facultad de Medicina,  Universidad Complutense de Madrid", 
+  "latitud": null, 
+  "imagen": "/media/uploads/presencia/aula-juan-negrin-univ-complutense-madrid.jpg", 
+  "url_lugar": "", 
+  "denominacion": "Aula Juan Negr\u00edn de Inform\u00e1tica M\u00e9dica", 
+  "descripcion": "Aula destinada a la ense\u00f1anza inform\u00e1tica de aplicaci\u00f3n en medicina, durante varios a\u00f1os se desarrollo en la misma el Proyecto Dosis-2000 de la Facultad de Medicina, Pabell\u00f3n IV. Bajos Aula 15. Objetivos del Proyecto DOSIS-2000: Formaci\u00f3n te\u00f3rico-pr\u00e1ctica para trabajar como profesionales en el \u00e1rea de conocimiento de la documentaci\u00f3n cient\u00edfica asistencial y sanitaria en el marco del Sistema Nacional de Salud definido la Ley General de Sanidad.", 
+  "longitud": null
+ }
+},
+{
+ "pk": 10, 
+ "model": "contenidos.presencia", 
+ "fields": {
+  "lugar": "Ingenio, Gran Canaria", 
+  "latitud": null, 
+  "imagen": "/media/uploads/presencia/calle-juan-negrin-ingenio.jpg", 
+  "url_lugar": "http://maps.google.es/maps?f=q&source=s_q&hl=es&geocode=&q=Calle+Juan+Negr%C3%ADn+ingenio&sll=28.097792,-15.4163&sspn=0.014443,0.01929&ie=UTF8&hq=&hnear=Calle+de+Juan+Negr%C3%ADn,+35259+Ingenio,+Las+P", 
+  "denominacion": "Calle Juan Negr\u00edn", 
+  "descripcion": "Calle situada en el casco urbano del municipio de Ingenio en la isla de Gran Canaria.", 
+  "longitud": null
+ }
+},
+{
+ "pk": 11, 
+ "model": "contenidos.presencia", 
+ "fields": {
+  "lugar": "Fuenlabrada, Comunidad de Madrid", 
+  "latitud": null, 
+  "imagen": "/media/uploads/presencia/calle-juan-negrin-en-fuenlabrada-madrid.jpg", 
+  "url_lugar": "http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Calle+de+Juan+Negr%C3%ADn,+28942+Fuenlabrada,+Madrid,+Comunidad+de+Madrid,+Spain&sll=40.288246,-3.814246&sspn=0.001029,0.001714&ie=UTF8&hq=&", 
+  "denominacion": "Calle de Juan Negr\u00edn", 
+  "descripcion": "Se encuentra situada junto al Hospital de Fuenlabrada, en una calle lateral del mismo y paralela a la Autov\u00eda de Mostoles a Pinto. En \u00e9sta zona pr\u00f3xima al hospital, los nombres de calles est\u00e1n dedicadas a personalidades de la investigaci\u00f3n de las ciencias de la medicina.", 
+  "longitud": null
+ }
+},
+{
+ "pk": 12, 
+ "model": "contenidos.presencia", 
+ "fields": {
+  "lugar": "Getafe, Comunidad de Madrid", 
+  "latitud": null, 
+  "imagen": "/media/uploads/presencia/calle-juan-negrin-en-getafe-madrid.jpg", 
+  "url_lugar": "http://maps.google.com/maps?f=q&source=s_q&hl=en&q=Av+de+Juan+Negr%C3%ADn,+28905+Getafe,+Madrid,+Comunidad+de+Madrid,+Spain&sll=40.044438,-3.735352&sspn=8.390464,14.040527&ie=UTF8&cd=2&geocode=FY31ZgI", 
+  "denominacion": "Avenida de Juan Negr\u00edn", 
+  "descripcion": "Esta avenida est\u00e1 situada en la nueva zona de expansi\u00f3n urbana de Getafe. Se encuentra a unos 750 metros del Conservatorio de M\u00fasica de Getafe, unos 10 minutos de camino aproximadamente. Los nombres de las calles de \u00e9sta nueva zona urbana est\u00e1n dedicados a la Segunda Rep\u00fablica Espa\u00f1ola. La fotograf\u00eda es de la zona Cerro Buenavista, al fondo se encuentra ubicada \u00e9sta nueva urbanizaci\u00f3n.", 
+  "longitud": null
+ }
+},
+{
+ "pk": 13, 
+ "model": "contenidos.presencia", 
+ "fields": {
+  "lugar": "Leganes, Comunidad de Madrid", 
+  "latitud": null, 
+  "imagen": "/media/uploads/presencia/calle-juan-negrin-en-leganes-madrid.jpg", 
+  "url_lugar": "http://maps.google.com/maps?f=q&source=s_q&hl=en&q=Calle+de+Juan+Negr%C3%ADn,+28911+Legan%C3%A9s,+Madrid,+Comunidad+de+Madrid,+Spain&sll=40.044438,-3.735352&sspn=8.390464,14.040527&ie=UTF8&cd=3&geocod", 
+  "denominacion": "Calle de Juan Negr\u00edn", 
+  "descripcion": "Se encuentra situada junto al Pol\u00edgono Industrial Polvoranca, junto a la carretera de circunvalaci\u00f3n M 406.  Los nombres de las calles de \u00e9sta zona urbana est\u00e1n dedicados a personalidades y l\u00edderes de la Segunda Rep\u00fablica Espa\u00f1ola.", 
+  "longitud": null
+ }
+},
+{
+ "pk": 14, 
+ "model": "contenidos.presencia", 
+ "fields": {
+  "lugar": "Elche, Alicante, Comunidad de Valencia", 
+  "latitud": null, 
+  "imagen": "/media/uploads/presencia/calle-juan-negrin-en-elche-alicante.jpg", 
+  "url_lugar": "http://maps.google.com/maps?f=q&source=s_q&hl=en&q=Carrer+Juan+Negr%C3%ADn,+03203+Elx,+Alacant,+Comunitat+Valenciana,+Spain&sll=40.044438,-3.735352&sspn=8.390464,14.040527&ie=UTF8&cd=4&geocode=FexaSAI", 
+  "denominacion": "Carrer Juan Negr\u00edn", 
+  "descripcion": "Esta calle est\u00e1 situada en una zona industrial, en el Parque Industrial de Elche, junto a la autopista del Mediterr\u00e1neo, a unos 8 Kil\u00f3metros del centro de Elche. Los nombres de las calles de \u00e9ste Parque industrial est\u00e1n dedicados a personalidades cient\u00edficas e investigadores internacionales.", 
+  "longitud": null
+ }
+},
+{
+ "pk": 15, 
+ "model": "contenidos.presencia", 
+ "fields": {
+  "lugar": "Gij\u00f3n, Asturias", 
+  "latitud": null, 
+  "imagen": "/media/uploads/presencia/parque-juan-negrin-en-gijon.jpg", 
+  "url_lugar": "http://maps.google.com/maps?f=q&source=s_q&hl=es&geocode=&q=Parque+Dr.+Juan+Negrin,+Gij%C3%B3n,+Espa%C3%B1a&sll=43.535592,-5.6724&sspn=0.001956,0.003428&ie=UTF8&hq=Parque+Dr.+Juan+Negrin,&hnear=Gij%C3", 
+  "denominacion": "Parque Dr. Juan Negr\u00edn", 
+  "descripcion": "Se encuentra situado en pleno centro de la ciudad de Gij\u00f3n, junto a la calle Carlos Marx. La inauguraci\u00f3n del parque se realiz\u00f3 el 25 de noviembre de 2009, con la asistencia del concejal y portavoz de Izquierda Unida en el Ayuntamiento de Gij\u00f3n, Jes\u00fas Montes Estrada, la presidenta de Honor de la Fundaci\u00f3n Juan Negr\u00edn, Carmen Negr\u00edn, y el historiador Gabriel Jackson.", 
+  "longitud": null
+ }
+}
+]

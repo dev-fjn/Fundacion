@@ -60,7 +60,7 @@
   "url": "#", 
   "menu": 1, 
   "rank": 2, 
-  "caption": "Fondos y Recursos Documentales", 
+  "caption": "Fondos y recursos documentales", 
   "named_url": ""
  }
 },
@@ -73,7 +73,7 @@
   "url": "#", 
   "menu": 1, 
   "rank": 3, 
-  "caption": "Sala de Prensa", 
+  "caption": "Sala de prensa", 
   "named_url": ""
  }
 },
@@ -240,9 +240,9 @@
   "parent": 5, 
   "level": 2, 
   "url": "", 
-  "menu": null, 
+  "menu": 1, 
   "rank": 2, 
-  "caption": "Recursos Audiovisuales", 
+  "caption": "Recursos audiovisuales", 
   "named_url": "recursos_audiovisuales"
  }
 },
@@ -253,9 +253,9 @@
   "parent": 5, 
   "level": 2, 
   "url": "", 
-  "menu": null, 
+  "menu": 1, 
   "rank": 3, 
-  "caption": "Presencia en Prensa", 
+  "caption": "Presencia en prensa", 
   "named_url": "presencia_en_prensa"
  }
 },
@@ -266,9 +266,9 @@
   "parent": 5, 
   "level": 2, 
   "url": "", 
-  "menu": null, 
+  "menu": 1, 
   "rank": 4, 
-  "caption": "Cat\u00e1logo de Publicaciones", 
+  "caption": "Cat\u00e1logo de publicaciones", 
   "named_url": "catalogo_de_publicaciones"
  }
 },
@@ -281,7 +281,7 @@
   "url": "/imagen-corporativa/", 
   "menu": 1, 
   "rank": 0, 
-  "caption": "Imagen Corporativa", 
+  "caption": "Imagen corporativa", 
   "named_url": ""
  }
 },
@@ -292,9 +292,9 @@
   "parent": 6, 
   "level": 2, 
   "url": "", 
-  "menu": null, 
+  "menu": 1, 
   "rank": 0, 
-  "caption": "Dossieres de Prensa", 
+  "caption": "Dossieres de prensa", 
   "named_url": "dossieres_de_prensa"
  }
 },
@@ -426,6 +426,19 @@
   "rank": 0, 
   "caption": "Aviso legal", 
   "named_url": ""
+ }
+},
+{
+ "pk": 35, 
+ "model": "treemenus.menuitem", 
+ "fields": {
+  "parent": 17, 
+  "level": 3, 
+  "url": "", 
+  "menu": 1, 
+  "rank": 0, 
+  "caption": "Citas de Juan Negr\u00edn", 
+  "named_url": "citas_de_juan_negrin"
  }
 },
 {
