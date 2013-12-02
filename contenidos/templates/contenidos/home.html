@@ -1,6 +1,16 @@
 {% extends 'base_3col.html' %}
 {% load contenidosblocks %}
 
+{% block extra_head %}
+    {{block.super}}
+    <style>
+       .cycle-slideshow .carrusel { text-align: center; height: 300px; width: 100%; }
+       .cycle-slideshow .carrusel img { height: 100%; }
+       .cycle-slideshow .sub .left { float: left; }
+       .cycle-slideshow .sub .right { float: right; }
+    </style>
+{% endblock extra_head %}
+
 {% block extra_footer %}
 <script src="http://malsup.github.io/jquery.cycle2.js"></script>
 {% endblock extra_footer %}
@@ -16,17 +26,32 @@
     <div class="cycle-slideshow" 
         data-cycle-fx="scrollHorz" 
         data-cycle-timeout="2000"
+        data-cycle-overlay-template="{% templatetag openvariable %}title{% templatetag closevariable %} <span>({% templatetag openvariable %}slideNum{% templatetag closevariable %}/{% templatetag openvariable %}slideCount{% templatetag closevariable %})</span>"
+        data-cycle-auto-height="calc"
+        data-cycle-pause-on-hover="true"
+        data-cycle-slides="> div.carrusel"
+        data-cycle-next="#next"
+        data-cycle-prev="#prev"
         >
+        <div class="sub">
+            <div class="left"><a href="#" id="prev">&lt;</a></div>
+            <div class="right"><a href="#" id="next">&gt;</a></div>
+        </div>
+        <div class="cycle-overlay">Esto se lo carga</div>
         {% for carrusel in carruseles %}
             {% if carrusel.es_imagen %}
-                <img style="width: 100%;" alt="{{carrusel.titulo}}" src="{{carrusel.filename}}">
+            <div class="carrusel" data-cycle-title="{{carrusel.titulo}}">
+                <img alt="{{carrusel.titulo}}" src="{{carrusel.filename}}">
+            </div>
             {% elif carrusel.es_video %}
-                <div>
-                    <video poster=""  controls="controls" width="320" height="240" id="player" preload="metadata">
-                        Your browser does not support the <code>video</code> element.
-                        <source src="{{carrusel.filename}}" type="ESTOHAYQUEPONERALGO">
-                    </video>
-                </div>
+            <div class="carrusel" data-cycle-title="{{carrusel.titulo}}">
+                <video poster=""  controls="controls" width="400" height="300" id="player" preload="metadata">
+                    Your browser does not support the <code>video</code> element.
+                    {% for fichero, extension in carrusel.busca_videos_extensiones %}
+                        <source src="{{MEDIA_URL}}{{fichero}}" type="{{extension}}">
+                    {% endfor %}
+                </video>
+            </div>
             {% endif %}
         {% endfor %}
     </div>
