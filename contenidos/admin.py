@@ -82,3 +82,23 @@ admin.site.register(Documento, DocumentoAdmin)
 admin.site.register(CitaDe, CitasDeAdmin)
 admin.site.register(CitaSobre, CitasSobreAdmin)
 admin.site.register(Presencia, PresenciaAdmin)
+
+
+# FIXME
+# 
+# Esto es un poco chapucero ponerlo aqui dentro. Lo ideal seria hacer una
+# app completa de flatpages heredando o rehaciendo la original. Pero eso
+# implica tumbarse todos los datos existentes y recrear las tablas. Cuando
+# nos independicemos de flatpages, quitar esto de aqui.
+# 
+# Ojito: a esto puede afectar el orden en el que se cargue en el installed_apps.
+
+from flatpages_i18n.models import FlatPage_i18n
+from flatpages_i18n.admin import FlatPageAdmin
+
+class MyFlatPageAdmin(FlatPageAdmin):
+    formfield_overrides = FORMFIELD_TINYMCE_SIMPLE
+
+admin.site.unregister(FlatPage_i18n)
+admin.site.register(FlatPage_i18n, MyFlatPageAdmin)
+
