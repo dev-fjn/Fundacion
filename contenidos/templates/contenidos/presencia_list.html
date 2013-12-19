@@ -16,11 +16,6 @@
 	<div class="presencia">
 
 		<h1>Presencia</h1>
-
-        <hr />
-
-        <br style="clear:both;" />
-
 		<dl>
 		{% for object in object_list %}
 			{% include "contenidos/_presencia.html" %}
@@ -31,6 +26,8 @@
 <!--            <br style="clear:both;" />-->
 		{% endfor %}
 		</dl>
+
+        {% include "contenidos/_paginator.html" %}
 
 		<p>Este apartado está abierto a aquellos que conozcan algún dato sobre la presencia de Juan Negrín en la sociedad. Enviar dicha aportación a través de nuestro correo electrónico o por carta a nuestra dirección. Es de agradecer si pueden aportar alguna fotografía.</p>
 

@@ -89,11 +89,6 @@ section#variable_1col{
 
 			}
 
-			div.paginator{
-				background-color: transparent;
-				text-align: center;
-			}
-
 		}
 
 		div.documento_list{
@@ -181,3 +176,10 @@ section#variable_1col{
 		}
 	}
 }
+
+div.paginator{
+    background-color: transparent;
+    text-align: center;
+    padding-bottom: em(10px);
+}
+

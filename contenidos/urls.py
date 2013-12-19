@@ -4,6 +4,7 @@ from contenidos.models import CitaDe, CitaSobre, Evento, Presencia
 from contenidos.models import TIPO
 from contenidos.views import Home, Calendario, Libros, LibroDetalle, Documentos, DocumentoDetalle, BusquedaGeneral
 from django.conf.urls import patterns, include, url
+from django.conf import settings
 from django.views.generic import TemplateView, ListView, DetailView
 
 urlpatterns = patterns('',
@@ -24,7 +25,7 @@ urlpatterns = patterns('',
     url(r'evento/(?P<pk>\d+)$', DetailView.as_view(model=Evento), name='evento_view'),
     url(r'presencia_en_prensa/$', Documentos.as_view(tipo=TIPO.PRESENCIA_EN_PRENSA), name="presencia_en_prensa"),
     url(r'presencia_en_prensa/(?P<slug>[-\w]+)$', DocumentoDetalle.as_view(tipo=TIPO.PRESENCIA_EN_PRENSA), name="presencia_en_prensa_detalle"),
-    url(r'presencia/$', ListView.as_view(model=Presencia), name="presencia"),
+    url(r'presencia/$', ListView.as_view(model=Presencia, paginate_by=settings.CONTENIDOS_PAGINADOR_MAX), name="presencia"),
     url(r'recursos_audiovisuales/$', Documentos.as_view(tipo=TIPO.RECURSOS_AUDIOVISUALES), name="recursos_audiovisuales"),
     url(r'recursos_audiovisuales/(?P<slug>[-\w]+)$', DocumentoDetalle.as_view(tipo=TIPO.RECURSOS_AUDIOVISUALES), name="recurso_audiovisual_detalle"),
     url(r'^$', Home.as_view(), name='home'),
