@@ -41,7 +41,7 @@
         {% for carrusel in carruseles %}
             {% if carrusel.es_imagen %}
             <div class="carrusel" data-cycle-title="{{carrusel.titulo}}">
-                <img alt="{{carrusel.titulo}}" src="{{carrusel.filename}}">
+                <img alt="{{carrusel.titulo}}" src="{{carrusel.filename}}" />
             </div>
             {% elif carrusel.es_video %}
             <div class="carrusel" data-cycle-title="{{carrusel.titulo}}">
@@ -60,8 +60,10 @@
 {% block section_expo %}
     {% if flatpage %}
         <section id="expo">
-            {{ flatpage.content|safe }}
-            {% if user.is_superuser %}<a href="{% url 'admin:flatpages_i18n_flatpage_i18n_change' flatpage.id %}">&#9998;</a>{% endif %}
+			<div id="expo_sep">
+            	{{ flatpage.content|safe }}
+				{% if user.is_superuser %}<div style="text-align: right;"><a href="{% url 'admin:flatpages_i18n_flatpage_i18n_change' flatpage.id %}">&#9998;</a></div> {% endif %}
+			</div>
         </section>
     {% else %}
         (Cambiar el texto de la flatpage "Portada")
