@@ -1,106 +1,108 @@
 <div class="doc">
 
+                {% if user.is_superuser %}<div style="float: right"><a href="{% url 'admin:contenidos_documento_change' object.id %}">&#9998;</a></div> {% endif %}
 	<div class="documentos_adjuntos">
 
 		<ul class="adjuntos">
-
 		{% for adjunto in object.adjuntos %}
 			<!-- <li>{# {% include adjunto.template %} #}</li> -->
 			<li>
 			{% if adjunto.es_imagen or adjunto.extension = ".pdf" %}
-				
 				<div itemscope itemtype="http://schema.org/Book">
 					<header>
 						<div>
-							{% if user.is_superuser %}<span><a href="{% url 'admin:contenidos_documento_change' object.id %}">&#9998;</a></span> {% endif %}
 								<span id="titulo" itemprop="name">{{object.titulo}}</span>
 							{% if object.autor %}
 								, por <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span id="autor" itemprop="name">{{object.autor}}</span></span>
 							{% else %}
-								{{object.autor|default:""}}
+								, {{object.autor|default:""}}
 							{% endif %}
 						</div>
 					</header>
-					
+
 					<hr />
-					
+
 					<section>
 
 						<div>
-							{% if object.miniatura %}
-							<img src="{{object.miniatura}}" alt="{{object.titulo}}" longdesc="{{object.titulo}} - {{object.autor}}" />
+							{% if adjunto.miniatura %}
+							<img src="{{adjunto.miniatura}}" alt="{{object.titulo}}" longdesc="{{object.titulo}} - {{object.autor}}" />
 							{% else %}
 							<img src="{{MEDIA_URL}}uploads/bibliografia/portada-no-disponible.png" alt="Portada no disponible." />
 							{% endif %}
 						</div>
-						
-						<dl itemscope itemtype="http://schema.org/Book">
-							{% if object.titulo %}
-							<dt>Titulo:</dt>
-							<dd itemprop="name">
-							{% if object.url %}
-								<a itemprop="url" href="{{object.url}}">{{object.titulo}}</a>
-							{% else %}
-								<span>{{object.titulo}}</span>
-							{% endif %}
-				
-							&nbsp;{% if user.is_superuser %}<a href="{% url 'admin:contenidos_libro_change' object.id %}">&#9998;</a>{% endif %}</dd>
-							{% endif %}
-				
-							{% if object.descripcion %}
-							<dt>Descripcion:</dt>
-							<dd itemprop="description">{{object.resumen}}</dd>
-							{% endif %}
-				
-							{% if object.autor %}
-							<dt>Autor:</dt>
-							<dd itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{object.autor}}</span></dd>
-							{% endif %}
-				
-							{% if object.editorial %}
-							<dt>Publicado por:</dt>
-							<dd itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">{{object.editorial}}</span></dd>
-							{% endif %}
-				
-							{% if object.fecha %}
-							<dt>Publicacion:</dt>
-							<dd><meta itemprop="datePublished" content="{{object.fecha|date:"Y-m-d"}}">{{object.fecha|date:"Y"}}</dd>
-							{% endif %}
-				
-							{% if object.edicionlibro %}
-							<dt>Edicion:</dt>
-							<dd><span itemprop="bookEdition">{{object.edicionlibro}}</span></dd>
-							{% endif %}
-				
-							{% if object.tipo %}
-							<dt>Disponible en</dt>
-							<dd><link itemprop="bookFormat" href="http://schema.org/Hardcover">{{object.tipo}}</dd>
-							{% endif %}
-				
-							{% if object.pais %}
-							<dt>Pais:</dt>
-							<dd>{{object.pais}}</dd>
-							{% endif %}
-				
-							{% if object.idioma %}
-							<dt>Idioma:</dt>
-							<dd>{{object.idioma}}</dd>
-							{% endif %}
-				
-							{% if object.isbn %}
-							<dt>ISBN:</dt>
-							<dd><span itemprop="isbn">{{object.isbn}}</span></dd>
-							{% endif %}
-				
-							{% if object.precio %}
-							<dt>Precio:</dt>
-							<dd>{{object.precio}} €</dd>
-							{% endif %}
-						</dl>
 
 					</section>
-					
+
+					<hr />
+{% comment %}
 					<footer>
+						<div class="lista_de_datos">
+							<dl itemscope itemtype="http://schema.org/Book">
+								{% if object.titulo %}
+								<dt>TituloXXx</dt>
+								<dd itemprop="name">
+								{% if object.url %}
+									<a itemprop="url" href="{{object.url}}">{{object.titulo}}</a>
+								{% else %}
+									<span>{{object.titulo}}</span>
+								{% endif %}
+
+                                </dd>
+								{% endif %}
+
+								{% if object.resumen %}
+								<dt>Descripcion</dt>
+								<dd itemprop="description">{{object.resumen}}</dd>
+								{% endif %}
+
+								{% if object.autor %}
+								<dt>Autor</dt>
+								<dd itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{object.autor}}</span></dd>
+								{% endif %}
+
+								{% if object.editorial %}
+								<dt>Publicado por</dt>
+								<dd itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">{{object.editorial}}</span></dd>
+								{% endif %}
+
+								{% if object.fecha %}
+								<dt>Publicacion</dt>
+								<dd><meta itemprop="datePublished" content="{{object.fecha|date:"Y-m-d"}}">{{object.fecha|date:"Y"}}</dd>
+								{% endif %}
+
+								{% if object.edicionlibro %}
+								<dt>Edicion</dt>
+								<dd><span itemprop="bookEdition">{{object.edicionlibro}}</span></dd>
+								{% endif %}
+
+								{% if object.tipo %}
+								<dt>Disponible en</dt>
+								<dd><link itemprop="bookFormat" href="http://schema.org/Hardcover">{{object.tipo}}</dd>
+								{% endif %}
+
+								{% if object.pais %}
+								<dt>Pais</dt>
+								<dd>{{object.pais}}</dd>
+								{% endif %}
+
+								{% if object.idioma %}
+								<dt>Idioma</dt>
+								<dd>{{object.idioma}}</dd>
+								{% endif %}
+
+								{% if object.isbn %}
+								<dt>ISBN</dt>
+								<dd><span itemprop="isbn">{{object.isbn}}</span></dd>
+								{% endif %}
+
+								{% if object.precio %}
+								<dt>Precio</dt>
+								<dd>{{object.precio}} €</dd>
+								{% endif %}
+							</dl>
+						</div>
+
 						<!--<h1>{{object.titulo}}</h1>-->
 						<!--<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{object.autor|default:"Sin autor"}}</span></span>-->
 						<div itemprop="description">{{object.descripcion|safe}}</div>
@@ -109,17 +111,17 @@
 						</div>
 						<div><time datetime="{{object.fecha|date:"Y-m-d"}}">{{object.fecha|date:"d/m/Y"}}</time></div>
 					</footer>
+{% endcomment %}
 
 				</div>
 
 			{% elif adjunto.es_video %}
 				<!--https://support.google.com/webmasters/answer/2413309?hl=es&ref_topic=1088474-->
 				<div itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
-				
+
 					<header>
 
 						<div>
-						{% if user.is_superuser %}<span><a href="{% url 'admin:contenidos_documento_change' object.id %}">&#9998;</a></span> {% endif %}
 						<span id="titulo" itemprop="name">{{object.titulo}}</span>
 						{% if object.autor %}
 							, por <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span id="autor" itemprop="name">{{object.autor}}</span></span>
@@ -137,9 +139,9 @@
 						<!--<meta itemprop="expires" content="2012-01-30T19:00:00+08:00" />-->
 
 					</header>
-	
+
 					<hr />
-					
+
 					<section>
 						<video poster=""  controls="controls" width="320" height="240" id="player" preload="metadata">
 							Your browser does not support the <code>video</code> element.
@@ -148,29 +150,28 @@
                             {% endfor %}
 						</video>
 					</section>
-					
+
 					<hr />
-					
+
 					<footer>
 						<!--<h1>{{object.titulo}}</h1>-->
 						<!--<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{object.autor|default:"Sin autor"}}</span></span>-->
-				
+
 						<div itemprop="description">{{object.descripcion|safe}}</div>
 						<div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
 							<span itemprop="name">{{object.fuente|default:"No hay fuente"}}</span>
 						</div>
 						<div><time datetime="{{object.fecha|date:"Y-m-d"}}">{{object.fecha|date:"d/m/Y"}}</time></div>
 					</footer>
-				
-				</div>				
-				
+
+				</div>
+
 			{% elif adjunto.es_audio %}
 				<!--https://support.google.com/webmasters/answer/1623047?hl=es&ref_topic=1088474-->
 				<!--http://www.schema.org/MediaObject-->
 				<div itemscope itemtype="http://schema.org/AudioObject">
 					<header>
 						<div>
-						{% if user.is_superuser %}<span><a href="{% url 'admin:contenidos_documento_change' object.id %}">&#9998;</a></span> {% endif %}
 						<span id="titulo" itemprop="name">{{object.titulo}}</span>
 						{% if object.autor %}
 							, por <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span id="autor" itemprop="name">{{object.autor}}</span></span>
@@ -191,9 +192,9 @@
 						<meta itemprop="contentURL" content="{{adjunto.filename}}" />
 						<!--<meta itemprop="duration" content="T0M15S" />-->
 					</header>
-	
+
 					<hr />
-					
+
 					<section>
 						<audio id="audiofile" controls="controls">
 							Your browser does not support the <code>audio</code> element.
@@ -204,7 +205,7 @@
 					</section>
 
 					<hr />
-					
+
 					<footer>
 						<!--<h1>{{object.titulo}}</h1>-->
 						<!--<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{object.autor|default:"Sin autor"}}</span></span>-->
@@ -215,17 +216,31 @@
 						<div><time datetime="{{object.fecha|date:"Y-m-d"}}">{{object.fecha|date:"d/m/Y"}}</time></div>
 					</footer>
 				</div>
-				
+
 		{% else %}
 
 				<div>
-					<a href="{{adjunto.filename}}">{{adjunto.titulo}}</a>
+                    <a href="{{adjunto.filename}}">{{object}} - {{adjunto.titulo}}</a>
 				</div>
-    		
+
 		{% endif %}
 			</li>
 		{% empty %}
-			<li>(no hay adjuntos)</li>
+            <li>
+				<div>
+					<header>
+						<div>
+                            <span id="titulo" itemprop="name">{{object.titulo}}</span>
+                            {% if object.autor %}
+							, por <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span id="autor" itemprop="name">{{object.autor}}</span></span>
+                            {% endif %}
+						</div>
+					</header>
+					<footer>
+                        <div>(No hay adjunto)</div>
+					</footer>
+				</div>
+            </li>
 		{% endfor %}
 		</ul>
 
