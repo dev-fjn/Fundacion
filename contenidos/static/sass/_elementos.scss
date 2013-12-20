@@ -1,0 +1,50 @@
+// Diversos elementos que se encontraban dispersos:
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+a:link {
+	color: $color00;
+	text-decoration: none;
+			transition: opacity .3s ease-in, color .3s ease-in, background-color .3s ease-in;
+	-webkit-transition: opacity .3s ease-in, color .3s ease-in, background-color .3s ease-in;
+	   -moz-transition: opacity .3s ease-in, color .3s ease-in, background-color .3s ease-in;
+		-ms-transition: opacity .3s ease-in, color .3s ease-in, background-color .3s ease-in;
+		 -o-transition: opacity .3s ease-in, color .3s ease-in, background-color .3s ease-in;
+}
+
+a:active{
+	color: $color00;
+	text-decoration: none;
+}
+
+a:visited{
+	color: $color00;
+	text-decoration: none;
+	//&:visited:before {
+	//    content:  "\2713 ";  // CheckPoint Guapillo
+	//}
+}
+
+a:hover{
+	color: $color00;
+	text-decoration: underline;
+}
+
+// -------------------------------------
+
+html {
+	font-size: $font_base;
+	font-family: cantarell, sans-serif;
+	line-height: $font_base_line_height;
+}
+
+
+img {
+	border: 0;
+	max-width: 100%;
+}
+
+
+h1, h22, h3, h4, h5, h6 {
+	padding: em(5px) 0;
+}
+

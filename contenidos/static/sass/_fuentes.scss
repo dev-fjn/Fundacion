@@ -1,0 +1,48 @@
+// Fuentes externas
+// ~~~~~~~~~~~~~~~~
+@include font-face("sf-speakeasy", font-files("sf-speakeasy/SF_Speakeasy-webfont.woff", "sf-speakeasy/SF_Speakeasy-webfont.ttf", "sf-speakeasy/SF_Speakeasy-webfont.svg"), "sf-speakeasy/SF_Speakeasy-webfont.eot");
+@include font-face("glyphicons", font-files("glyphicons/glyphicons-halflings-regular.woff", "glyphicons/glyphicons-halflings-regular.ttf", "glyphicons/glyphicons-halflings-regular.svg"), "glyphicons/glyphicons-halflings-regular.eot");
+@include font-face("tron", font-files("tron/tron-webfont.woff", "tron/tron-webfont.ttf", "tron/tron-webfont.svg"), "tron/tron-webfont.eot");
+
+@include font-face("entypo",font-files("entypo/entypo.woff","entypo/entypo.ttf","entypo/entypo.svg"),"entypo/entypo.eot");
+@include font-face("entypo-social",font-files("entypo-social/entypo-social.woff","entypo-social/entypo-social.ttf","entypo-social/entypo-social.svg"),"entypo-social/entypo-social.eot");
+
+// Clases para aplicar las fuentes:
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.sf-speakeasy {
+    font-family: "sf-speakeasy";
+    //font-size: 1.0em;
+}
+.glyphicons{
+    font-family: "glyphicons";
+    //font-size: 1.0em;
+}
+.tron{
+    font-family: "tron";
+    //font-size: 1.0em;
+}
+
+// Google Font:
+.opensans{
+    font-family: 'Open Sans', sans-serif;
+    //font-size: 1.0em;
+}
+.cantarell{
+    font-family: 'Cantarell', sans-serif;
+    //font-size: 1em;
+}
+
+// IconFont ←→ FontIcon
+// ~~~~~~~~~~~~~~~~~~~~
+// http://weloveiconfonts.com/
+// http://cssdeck.com/labs/social-footer
+
+/* entypo-social */
+[class*="entypo-social-"]:before {
+  font-family: 'entypo-social', sans-serif;
+}
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}

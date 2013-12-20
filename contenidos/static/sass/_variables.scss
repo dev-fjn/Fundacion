@@ -1,0 +1,19 @@
+// Variables generales
+// ~~~~~~~~~~~~~~~~~~~
+
+@import "functions";
+
+// Tamaño base para las fuentes
+$size_base: 16px;
+
+// Factor de relaci´on entre texto y altura de linea:
+$factor_texto: 1.22;
+
+// Fuente base:
+$font_base: $size_base;
+
+// Altura de linea:
+$font_base_line_height: em($font_base * $factor_texto);
+
+// Usado en diferentes partes de la web:
+$radio-standar: em(10px);

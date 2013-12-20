@@ -1,0 +1,37 @@
+// COLORES
+// ~~~~~~~
+//
+// http://webcolourdata.com/profile/60980
+$color00: #000000;
+$color01: #FFFFFF;
+$color02: #C2BEAF; // #B6B09E; color_marron_suave_del_logo
+$color03: #918B74; // #ABA28E; color_marron_fuerte_del_logo
+$color04: darken($color02, 20%);    // #EB2C2D; // Rojo
+$color05: Red;     // #F3171B; // Rojo
+$color06: Green;   // #74644D; // → Texto
+$color07: #C6C1B3;
+$color08: #C1B7A4;
+$color09: #A39579;
+$color10: #C6AD73;
+$color11: #977856;
+$color12: #9AA6AD;
+$color13: #F5F5F5;
+
+// Foreground (color principal del texto) de los menus
+$color_texto_menus_raiz: $color00;    // #000000; // Negro
+$color_texto_menus: $color01;        // #FFFFFF; // Blanco
+
+$color_marron_suave_del_logo:  $color02;
+$color_marron_fuerte_del_logo: $color03;
+
+// Colores de los menus.
+$color_menu01: #fefefe; // PELIGRO, Hay una fuga que afecta a toda la pagina. LOCALIZAR
+$color_menu02: #e6e6e6; //#eee9f0; // PELIGRO, Hay una fuga que afecta a toda la pagina. LOCALIZAR
+$color_menu03: $color09; // $color04; // #db000b; //rojo
+$color_menu04: lighten($color02, 20%); // #ececec;
+$color_menu05: $color00; //$color_texto_menus_raiz;
+$color_menu06: Blue; //$color_menu01;
+$color_menu07: lighten($color02, 20%); //$color05; // #ff0f1b; //rojo
+$color_menu08: $color01; //$color_texto_menus;
+$color_menu09: $color03; // #a80008; //rojo oscuro
+$color_menu10: darken($color03, 20%); // #8f0007; //rojo mas oscuro
