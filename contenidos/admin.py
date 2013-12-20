@@ -97,8 +97,20 @@ from flatpages_i18n.models import FlatPage_i18n
 from flatpages_i18n.admin import FlatPageAdmin
 
 class MyFlatPageAdmin(FlatPageAdmin):
-    formfield_overrides = FORMFIELD_TINYMCE_SIMPLE
+    from django import forms
+    formfield_overrides = {
+        models.TextField: {'widget': forms.Textarea,},
+    }
 
-admin.site.unregister(FlatPage_i18n)
-admin.site.register(FlatPage_i18n, MyFlatPageAdmin)
+class MyFlatPageAdmin2(FlatPageAdmin):
+    formfield_overrides = FORMFIELD_TINYMCE_AVANZADO
+
+# Editor avanzado
+# ~~~~~~~~~~~~~~~
+#admin.site.unregister(FlatPage_i18n)
+#admin.site.register(FlatPage_i18n, MyFlatPageAdmin)
+
+# TextArea
+# ~~~~~~~~
+admin.site.register(FlatPage_i18n, MyFlatPageAdmin2)
 
