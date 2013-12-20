@@ -11,7 +11,7 @@
 section#variable_2col{
 
 	section#body{
-		
+
 		div.flatpage-i18n{
 			@include border-radius($radio-standar);
 			text-align: justify;
@@ -63,7 +63,57 @@ section#variable_2col{
 				}
 			}
 
+			div#grp_logo{
+				div#img_logo{
+					text-align: center;
+				}
+				div#colores_logo{
+					text-align: center;
+					table {
+						margin: 0 auto;
+						text-align:center;
+						width: 98%;
+						margin: 0;
+						background: #FFFFFF;
+						border: 1px solid #333333;
+						border-collapse: collapse;
+					}
+					td, th {
+						border-bottom: 1px solid #333333;
+						padding: 6px 16px;
+						text-align: left;
+					}
+					th {
+						background: #EEEEEE;
+					}
+					caption {
+						background: #E0E0E0;
+						margin: 0;
+						border: 1px solid #333333;
+						border-bottom: none;
+						padding: 6px 16px;
+						font-weight: bold;
+					}
+					.p341{
+						background-color:#007A53;
+						color: #FFFFFF;
+					}
+					.p032{
+						background-color: #EF3340;
+						color: #FFFFFF;
+					}
+					.p012{
+						background-color: #FFD700;
+						color: #000000;
+					}
+					.p2587{
+						background-color: #8246AF;
+						color: #FFFFFF;
+					}
+				}
+			}
 		}
+
 		div.presencia{
 			@include border-radius($radio-standar);
 			text-align: justify;
@@ -72,8 +122,8 @@ section#variable_2col{
 			min-height:em(480px);
 			margin: em($font_base);
 			border: em($font_base);
-			padding: em($font_base) 0px em($font_base) em($font_base);   
-	
+			padding: em($font_base) 0px em($font_base) em($font_base);
+
 			h1{font-weight:700;}
 
 			dl{
@@ -99,6 +149,7 @@ section#variable_2col{
 
 
 		}
+
 		div.evento{
 			@include border-radius($radio-standar);
 			min-height:em(480px);
@@ -127,6 +178,7 @@ section#variable_2col{
 				}
 			}
 		}
+
 		div.zinnia{
 			@include border-radius($radio-standar);
 			min-height:em(480px);
@@ -134,5 +186,6 @@ section#variable_2col{
 			border: em($font_base);
 			padding: em($font_base);
 		}
+
 	}
 }
