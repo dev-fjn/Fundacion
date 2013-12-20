@@ -1,10 +1,10 @@
+@import "colores";
+
 // Clases listas para usar:
 // ~~~~~~~~~~~~~~~~~~~~~~~
 
-// Variables usadas en la clase .box
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-$radio: em(4px);
-$fondo: lighten($color02, 10%);
+
+
 
 
 figure{
@@ -12,158 +12,202 @@ figure{
 	//figcaption{@include drop-shadow-raised;}
 }
 
+
+
+$ancho_lista_de_datos: 100%;
+
+.lista_de_datos{
+	padding: 1em;
+	border: 1em;
+	margin: 0 auto;
+	width: $ancho_lista_de_datos;
+//	width: 60em;
+//	background-color: Maroon;
+
+	dl {
+		overflow: hidden;
+		margin: 0;
+//		background-color: Red;
+	}
+
+	dt {
+		float:left;
+		width: ( ($ancho_lista_de_datos / 100) * 20) ;
+		margin: 0;
+		font-weight: 700;
+		text-align: right;
+		&:after { content: ":"; }
+//		background-color: Yellow;
+	}
+
+	dd {
+		float:left;
+		width: ( ($ancho_lista_de_datos / 100) * 78) ;
+		margin: 0;
+		text-align: justify;
+		padding-left: ( ($ancho_lista_de_datos / 100) * 2) ;
+//		background-color: Blue;
+	}
+}
+
+
 .box{
-    // http://demo.web3designs.com/css3-box-shadow-effect.htm
-    position: relative;
-    width: 60%;
-    background: $fondo;
-        border-radius: $radio;
-    -moz-border-radius: $radio;
-    padding: 2em 1.5em;
-    color: rgba(0,0,0, .8);
-    text-shadow: 0 1px 0 #fff;
-    line-height: 1.5;
-    margin: 60px auto;
+	// http://demo.web3designs.com/css3-box-shadow-effect.htm
+	//
+	// Variables usadas en la clase .box
+	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	$radio: em(4px);
+	$fondo: lighten($color02, 10%);
+	position: relative;
+	width: 60%;
+	background: $fondo;
+		border-radius: $radio;
+	-moz-border-radius: $radio;
+	padding: 2em 1.5em;
+	color: rgba(0,0,0, .8);
+	text-shadow: 0 1px 0 #fff;
+	line-height: 1.5;
+	margin: 60px auto;
 
-    &:before, &:after{
-        z-index: -1;
-        position: absolute;
-        content: "";
-        bottom: em(15px);
-        left: em(10px);
-        width: 50%;
-        top: 80%;
-        max-width: em(300px);
-        background: rgba(0, 0, 0, 0.7);
-        -webkit-box-shadow: 0 em(15px) em(10px) rgba(0, 0, 0, 0.7);
-        -moz-box-shadow: 0 em(15px) em(10px) rgba(0, 0, 0, 0.7);
-                box-shadow: 0 em(15px) em(10px) rgba(0, 0, 0, 0.7);
-        -webkit-transform: rotate(-3deg);
-        -moz-transform: rotate(-3deg);
-            -o-transform: rotate(-3deg);
-            -ms-transform: rotate(-3deg);
-                transform: rotate(-3deg);
-    }
+	&:before, &:after{
+		z-index: -1;
+		position: absolute;
+		content: "";
+		bottom: em(15px);
+		left: em(10px);
+		width: 50%;
+		top: 80%;
+		max-width: em(300px);
+		background: rgba(0, 0, 0, 0.7);
+		-webkit-box-shadow: 0 em(15px) em(10px) rgba(0, 0, 0, 0.7);
+		-moz-box-shadow: 0 em(15px) em(10px) rgba(0, 0, 0, 0.7);
+				box-shadow: 0 em(15px) em(10px) rgba(0, 0, 0, 0.7);
+		-webkit-transform: rotate(-3deg);
+		-moz-transform: rotate(-3deg);
+			-o-transform: rotate(-3deg);
+			-ms-transform: rotate(-3deg);
+				transform: rotate(-3deg);
+	}
 
-    &:after{
-        -webkit-transform: rotate(3deg);
-        -moz-transform: rotate(3deg);
-            -o-transform: rotate(3deg);
-            -ms-transform: rotate(3deg);
-                transform: rotate(3deg);
-        right: em(10px);
-        left: auto;
-    }
+	&:after{
+		-webkit-transform: rotate(3deg);
+		-moz-transform: rotate(3deg);
+			-o-transform: rotate(3deg);
+			-ms-transform: rotate(3deg);
+				transform: rotate(3deg);
+		right: em(10px);
+		left: auto;
+	}
 }
 
 .ellipsis {
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    -ms-text-overflow: ellipsis; /* Required for IE8 */
-     -o-text-overflow: ellipsis; /* Required for Opera */
-        text-overflow: ellipsis;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	-ms-text-overflow: ellipsis; /* Required for IE8 */
+	 -o-text-overflow: ellipsis; /* Required for Opera */
+		text-overflow: ellipsis;
 }
 
 // Clase usada en la pagina del presidente.
 .poema {
-    margin: auto;
-    padding: em(20px) 0;
-    text-align: left;
-    //width: em(390px);
-    font-style:italic;
-    h1, h2 {
-        font-weight: normal;
-        text-align: center;
-    }
-    h1 {
-        font-size: em(34px);
-        line-height: 1.2;
-        margin-bottom: em(10px);
-    }
-    h2 {
-        color: #666;
-        font-size: em(18px);
-        font-style: italic;
-        margin-bottom: em(5px);
-    }
-    p {
-        line-height: 1.2;
-        margin-bottom: em(8px);
-    }
-    h2 {
-        &:before {
-            content: '— ';
-        }
-        &:after {
-            content: ' —';
-        }
-        + p:first-letter {
-            float: left;
-            font-size: em(38px);
-            line-height: 1;
-            margin: em(2px) em(5px) 0 0;
-        }
-    }
-    p {
-        &:first-line {
-            //font-variant: small-caps;
-            letter-spacing: em(1px);
-        }
-        &:last-child {
-            margin-bottom: em(10px);
-            padding-bottom: em(10px);
-        }
-    }
+	margin: auto;
+	padding: em(20px) 0;
+	text-align: left;
+	//width: em(390px);
+	font-style:italic;
+	h1, h2 {
+		font-weight: normal;
+		text-align: center;
+	}
+	h1 {
+		font-size: em(34px);
+		line-height: 1.2;
+		margin-bottom: em(10px);
+	}
+	h2 {
+		color: #666;
+		font-size: em(18px);
+		font-style: italic;
+		margin-bottom: em(5px);
+	}
+	p {
+		line-height: 1.2;
+		margin-bottom: em(8px);
+	}
+	h2 {
+		&:before {
+			content: '— ';
+		}
+		&:after {
+			content: ' —';
+		}
+		+ p:first-letter {
+			float: left;
+			font-size: em(38px);
+			line-height: 1;
+			margin: em(2px) em(5px) 0 0;
+		}
+	}
+	p {
+		&:first-line {
+			//font-variant: small-caps;
+			letter-spacing: em(1px);
+		}
+		&:last-child {
+			margin-bottom: em(10px);
+			padding-bottom: em(10px);
+		}
+	}
 }
 
 // Todas las firmas las he ido poniendo en un parrafo con esta clase.
 .firma{
-    text-align: right;
+	text-align: right;
 }
 
 // Usada en la pagina del Patronato
 .fallecidos{
-    text-indent: em($font_base * 1.5);
-    &:after{
-        content: "\205C";
-    }
+	text-indent: em($font_base * 1.5);
+	&:after{
+		content: "\205C";
+	}
 }
 
 // Citas de y sobre Juan Negrín.
 .cita {
-    //font-family: Georgia, serif;
-    //font-size: 18px;
-    font-style: italic;
-    //width: 500px;
-    margin: 0.25em 0;
-    padding: 0.5em em(40px);
-    line-height: 1.45;
-    position: relative;
-    color: #383838;
+	//font-family: Georgia, serif;
+	//font-size: 18px;
+	font-style: italic;
+	//width: 500px;
+	margin: 0.25em 0;
+	padding: 0.5em em(40px);
+	line-height: 1.45;
+	position: relative;
+	color: #383838;
 
-    &:before {
-        display: block;
-        //content: "\201C";
-        content: "\275D";
-        font-size: em(80px);
-        position: absolute;
-        left: -20px;
-        top: -20px;
-        color: #7a7a7a;
-    }
+	&:before {
+		display: block;
+		//content: "\201C";
+		content: "\275D";
+		font-size: em(80px);
+		position: absolute;
+		left: -20px;
+		top: -20px;
+		color: #7a7a7a;
+	}
 
 
-    footer {
-        color: #999999;
-        font-size: 14px;
-        //display: block;
-        margin-top: 5px;
-        text-align: right;
-    }
+	footer {
+		color: #999999;
+		font-size: 14px;
+		//display: block;
+		margin-top: 5px;
+		text-align: right;
+	}
 
-    footer:before {
-        //content: "\2014 \2009";
-        content: "\2014 ";
-    }
+	footer:before {
+		//content: "\2014 \2009";
+		content: "\2014 ";
+	}
 }
