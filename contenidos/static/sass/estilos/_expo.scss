@@ -3,8 +3,10 @@
 section#expo{
 	@include border-radius($radio-standar);
 	border: 1px solid $color08 ;
-	text-align: center;
+	text-align: justify;
 	vertical-align: middle;
-	padding: .2em;
-	margin: .2em;
+	div#expo_sep{
+		padding: em($font_base/2);
+		margin: em($font_base/2);
+	}
 }
