@@ -1,5 +1,5 @@
 {% load staticfiles webdesign %}<!DOCTYPE html>
-<html lang="es">
+<html class="no-js" lang="es">
 	<head>
 		{% block head_title %}<title>{% block title %}Título{% endblock title %}</title>{% endblock head_title %}
 
@@ -82,7 +82,7 @@
 
 							<div class="buscador" id="buscador" role="search" aria-labelledby="searchLabel">
 								{% block buscador %}
-					{% include "contenidos/_form_busqueda_general.html" %}
+									{% include "contenidos/_form_busqueda_general.html" %}
 								{% endblock buscador %}
 							</div>
 
@@ -399,9 +399,12 @@
 
 											{% block section_expo %}
 												<section id="expo">
-													{% block expo %}
-														<img src="{% static 'img/dummy-Expo-Virtual+(384x288).png' %}" alt="Exposición Virtual" />
-													{% endblock expo %}
+													<div id="expo_sep">
+														aaa
+														{% block expo %}
+															<img src="{% static 'img/dummy-Expo-Virtual+(384x288).png' %}" alt="Exposición Virtual" />
+														{% endblock expo %}
+													</div>
 												</section>
 											{% endblock section_expo %}
 
@@ -461,69 +464,87 @@
 			<footer id="footer" role="contentinfo">
 				{% block footer %}
 					<div id="finicial">&nbsp;</div>
-					<div id="col1">
-						<ul>
-							{% block links1 %}
-								<li>
-									<a href="#">Enlace 1</a>
-								</li>
-								<li>
-									<a href="#">Enlace 2</a>
-								</li>
-								<li>
-									<a href="#">Enlace 3</a>
-								</li>
-							{% endblock links1 %}
-						</ul>
-					</div>
-					<div id="col2">
-						<ul>
-							{% block links2 %}
-								<li>
-									<a href="#">Enlace 1</a>
-								</li>
-								<li>
-									<a href="#">Enlace 2</a>
-								</li>
-								<li>
-									<a href="#">Enlace 3</a>
-								</li>
-							{% endblock links2 %}
-						</ul>
-					</div>
-					<div id="col3">
-						<ul>
-							{% block links3 %}
-								<li>
-									<a href="#">Enlace 1</a>
-								</li>
-								<li>
-									<a href="#">Enlace 2</a>
-								</li>
-								<li>
-									<a href="#">Enlace 3</a>
-								</li>
-							{% endblock links3 %}
-						</ul>
-					</div>
-					<div id="col4">
-						<ul>
-							{% block links4 %}
-								<li>
-									<a href="#">Enlace 1</a>
-								</li>
-								<li>
-									<a href="#">Enlace 2</a>
-								</li>
-								<li>
-									<a href="#">Enlace 3</a>
-								</li>
-							{% endblock links4 %}
-						</ul>
+					<div id="enlaces">
+						<div id="col1">
+							<ul>
+								{% block links1 %}
+									<li>
+										<a href="#">Enlace 1</a>
+									</li>
+									<li>
+										<a href="#">Enlace 2</a>
+									</li>
+									<li>
+										<a href="#">Enlace 3</a>
+									</li>
+								{% endblock links1 %}
+							</ul>
+						</div>
+						<div id="col2">
+							<ul>
+								{% block links2 %}
+									<li>
+										<a href="#">Enlace 1</a>
+									</li>
+									<li>
+										<a href="#">Enlace 2</a>
+									</li>
+									<li>
+										<a href="#">Enlace 3</a>
+									</li>
+								{% endblock links2 %}
+							</ul>
+						</div>
+						<div id="col3">
+							<ul>
+								{% block links3 %}
+									<li>
+										<a href="#">Enlace 1</a>
+									</li>
+									<li>
+										<a href="#">Enlace 2</a>
+									</li>
+									<li>
+										<a href="#">Enlace 3</a>
+									</li>
+								{% endblock links3 %}
+							</ul>
+						</div>
+						<div id="col4">
+							<ul>
+								{% block links4 %}
+									<li>
+										<a href="#">Enlace 1</a>
+									</li>
+									<li>
+										<a href="#">Enlace 2</a>
+									</li>
+									<li>
+										<a href="#">Enlace 3</a>
+									</li>
+								{% endblock links4 %}
+							</ul>
+						</div>
+						<div id="col5">
+							<ul>
+								{% block links5 %}
+									<li>
+										<a href="#">Enlace 1</a>
+									</li>
+									<li>
+										<a href="#">Enlace 2</a>
+									</li>
+									<li>
+										<a href="#">Enlace 3</a>
+									</li>
+								{% endblock links5 %}
+							</ul>
+						</div>
 					</div>
 					<div id="ffinal">&nbsp;</div>
-					<div id="legal" style="font-size: 18px;">
+					<div id="legal">
 						<span id="copyright">{% now "DATE_FORMAT" %} - &copy; Fundación Juan Negrín</span>&nbsp;
+<!--
 						<span class="entypo">&#62208;</span>
 						<span class="entypo">&#62217;</span>
 						<span class="entypo">&#62220;</span>
@@ -560,6 +581,7 @@
 						<span class="entypo">&#128274;</span>
 						<span class="entypo">&#128275;</span>
 						<span class="entypo"></span>
+-->
 						&nbsp;
 					</div>
 				{% endblock footer %}
