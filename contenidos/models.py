@@ -234,6 +234,9 @@ class Documento(models.Model):
         else:
             raise RuntimeError("Tipo no soportado")
 
+    def __unicode__(self):
+        return u"%s: %s" % (self.categoria, self.titulo)
+
 class Adjunto(models.Model):
     documento = models.ForeignKey(Documento)
     titulo = models.CharField(max_length=250)
