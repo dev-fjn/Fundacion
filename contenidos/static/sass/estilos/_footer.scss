@@ -8,7 +8,7 @@ $color_texto_alternativo: $color01;
 $color_fondo: $color_texto;
 $background_fondo: $color07;
 
-$color_legal: darken($color_texto_alternativo, 20%);
+$color_legal: darken($color_texto_alternativo, 10%);
 $background_legal: darken($background_fondo, 5%);
 
 
@@ -23,23 +23,28 @@ footer#footer{
     div#finicial{
         min-height:2em;
     }
-
-    div#col1{
-        @include border-radius($radio-standar);
-    }
-
-    div#col2{
-        @include border-radius($radio-standar);
-
-    }
-
-    div#col3{
-        @include border-radius($radio-standar);
-    }
-
-    div#col4{
-        @include border-radius($radio-standar);
-    }
+	div#enlaces{
+		div#col1, div#col2, div#col3, div#col4, div#col5 {
+			@include border-radius($radio-standar);
+			border: 0 1em;
+			ul{
+				li{
+					a{
+						color: $color_top-bottom;
+						//color: Yellow;
+						background-color: transparent;
+						text-decoration: none;
+					}
+					&:hover{
+						color: darken($color_top-bottom, 10%);
+						//color: Blue;
+						background-color: transparent;
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
 
     div#ffinal{
         min-height:2em;
@@ -48,6 +53,7 @@ footer#footer{
 
     div#legal{
         text-align:right;
+		font-size: em($font_base - 2);
         color: $color_legal;
         background-color: $background_legal;
     }
