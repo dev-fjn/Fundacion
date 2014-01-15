@@ -1,0 +1,13 @@
+{% load static %}
+<div class="left">
+    <img src="{% static myicon %}" alt="icon" longdesc="icon" />
+    {% if adjunto.url %}
+        {{adjunto.titulo|default:adjunto.url}}
+    {% else %}
+        {{adjunto.titulo|default:adjunto.filename.filename}}
+        ({{adjunto.filename.filesize|filesizeformat}})
+        {% if adjunto.filename.width %}
+            {{adjunto.filename.width}}x{{adjunto.filename.height}}
+        {% endif %}
+    {% endif %}
+</div>

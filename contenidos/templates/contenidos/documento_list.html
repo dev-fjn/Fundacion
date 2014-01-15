@@ -1,5 +1,43 @@
 {% extends 'base_1col.html' %}
 
+{% block extra_head %}
+{# FIXME ESTO QUITARLO DE AQUI #}
+{{block.super}}
+<style>
+
+/* hijos de ul.adjuntos */
+ul.adjuntos .left {
+    /* estilo */
+    vertical-align: top;
+    text-align: right;
+    /* primera columna */
+    width: 50%;
+    float: left;
+    clear: both;
+}
+ul.adjuntos .right {
+    /* segunda columna */
+    width: 50%; 
+    float: right;
+}
+ul.adjuntos .left, ul.adjuntos .right {
+    border-top: 1px dotted gray;
+    padding-top: 4px;
+    padding-bottom: 20px;
+}
+
+/* cosas genericas que pueden ser utiles en cualquier sitio */
+img.scale200 {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+hr.clear {
+    clear: both;
+}
+</style>
+{% endblock extra_head %}
+
 {% block title %}
 	{{block.super}} - {{tipo}} - {{ count|yesno:"Busqueda,Listado" }}
 {% endblock title %}
@@ -19,6 +57,8 @@
 
 		{% if count %}
 			<h2>{{count}} resultados {% if user.is_superuser %}<a href="{% url 'admin:contenidos_documento_add' %}">&#8862;</a>{% endif %}</h2>
+
+            <br />
 
 			{% for object in object_list %}
 				{% include "contenidos/_documento.html" %}

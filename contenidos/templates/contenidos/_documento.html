@@ -1,251 +1,191 @@
+{% load static %}
 <div class="doc">
 
-                {% if user.is_superuser %}<div style="float: right"><a href="{% url 'admin:contenidos_documento_change' object.id %}">&#9998;</a></div> {% endif %}
+    {% if user.is_superuser %}<div style="float: right"><a href="{% url 'admin:contenidos_documento_change' object.id %}">&#9998;</a></div> {% endif %}
 	<div class="documentos_adjuntos">
 
-		<ul class="adjuntos">
-		{% for adjunto in object.adjuntos %}
-			<!-- <li>{# {% include adjunto.template %} #}</li> -->
-			<li>
-			{% if adjunto.es_imagen or adjunto.extension = ".pdf" %}
-				<div itemscope itemtype="http://schema.org/Book">
-					<header>
-						<div>
-								<span id="titulo" itemprop="name">{{object.titulo}}</span>
-							{% if object.autor %}
-								, por <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span id="autor" itemprop="name">{{object.autor}}</span></span>
-							{% else %}
-								, {{object.autor|default:""}}
-							{% endif %}
-						</div>
-					</header>
+        <header>
+            <div>
+                <span id="titulo" itemprop="name">{{object.titulo}}</span>
+                {% if object.autor %}
+                    , por <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span id="autor" itemprop="name">{{object.autor}}</span></span>
+                {% else %}
+                    , {{object.autor|default:""}}
+                {% endif %}
+            </div>
+        </header>
+        <hr />
+        <section>
+            <ul class="adjuntos">
+                {% for adjunto in object.adjuntos %}
+                    <li>
+                        <!--{{adjunto.id}}-{{adjunto.extension}}-->
+                        {% if adjunto.extension = ".pdf" %}
+                            <div itemscope itemtype="http://schema.org/Book">
+                                {% include "contenidos/_adjunto_filename.html" with myicon='img/emblem-documents.png' %}
+                                {% include "contenidos/_adjunto_miniatura.html" with downloadicon=1 %}
+                            </div>
+                        {% elif adjunto.es_imagen %}
+                            <div>
+                                {% include "contenidos/_adjunto_filename.html" with myicon='img/emblem-photos.png' %}
+                                {% include "contenidos/_adjunto_miniatura.html" %}
+                            </div>
+                        {% elif adjunto.es_video %}
+                            <!--https://support.google.com/webmasters/answer/2413309?hl=es&ref_topic=1088474-->
+                            <div itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+                                {% include "contenidos/_adjunto_filename.html" with myicon='img/video-x-generic.png' %}
+                                <!--<meta itemprop="duration" content="T1M33S" />-->
+                                <!--<meta itemprop="thumbnailUrl" content="thumbnail.jpg" />-->
+                                <meta itemprop="contentURL" content="{{adjunto.filename}}" />
+                                <meta itemprop="embedURL" content="{{adjunto.filename}}" />
+                                <meta itemprop="uploadDate" content="{{object.fecha|date:"Y-m-d"}}" />
+                                <meta itemprop="datePublished" content="{{object.fecha|date:"Y-m-d"}}" />
+                                <!--<meta itemprop="expires" content="2012-01-30T19:00:00+08:00" />-->
+                                <video poster=""  controls="controls" width="320" height="240" id="player" preload="metadata">
+                                    Your browser does not support the <code>video</code> element.
+                                    {% for fichero, extension in adjunto.busca_videos_extensiones %}
+                                        <source src="{{MEDIA_URL}}{{fichero}}" type="{{extension}}">
+                                    {% endfor %}
+                                </video>
+                            </div>
+                        {% elif adjunto.es_audio %}
+                            <!--https://support.google.com/webmasters/answer/1623047?hl=es&ref_topic=1088474-->
+                            <!--http://www.schema.org/MediaObject-->
+                            <div itemscope itemtype="http://schema.org/AudioObject">
+                                {% include "contenidos/_adjunto_filename.html" with myicon='img/audio-x-generic.png' %}
+                                <!--<meta itemprop="duration" content="T1M33S" />-->
+                                <!--<meta itemprop="thumbnailUrl" content="" />-->
+                                <meta itemprop="contentURL" content="{{adjunto.filename}}" />
+                                <meta itemprop="embedURL" content="{{adjunto.filename}}" />
+                                <meta itemprop="uploadDate" content="{{object.fecha|date:"Y-m-d"}}" />
+                                <meta itemprop="datePublished" content="{{object.fecha|date:"Y-m-d"}}" />
+                                <!--<meta itemprop="expires" content="{{object.fecha|date:"Y-m-d"}}" />-->
 
-					<hr />
-
-					<section>
-
-						<div>
-							{% if adjunto.miniatura %}
-							<img src="{{adjunto.miniatura}}" alt="{{object.titulo}}" longdesc="{{object.titulo}} - {{object.autor}}" />
-							{% else %}
-							<img src="{{MEDIA_URL}}uploads/bibliografia/portada-no-disponible.png" alt="Portada no disponible." />
-							{% endif %}
-						</div>
-
-					</section>
-
-					<hr />
-{% comment %}
-					<footer>
-						<div class="lista_de_datos">
-							<dl itemscope itemtype="http://schema.org/Book">
-								{% if object.titulo %}
-								<dt>TituloXXx</dt>
-								<dd itemprop="name">
-								{% if object.url %}
-									<a itemprop="url" href="{{object.url}}">{{object.titulo}}</a>
-								{% else %}
-									<span>{{object.titulo}}</span>
-								{% endif %}
-
-                                </dd>
-								{% endif %}
-
-								{% if object.resumen %}
-								<dt>Descripcion</dt>
-								<dd itemprop="description">{{object.resumen}}</dd>
-								{% endif %}
-
-								{% if object.autor %}
-								<dt>Autor</dt>
-								<dd itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{object.autor}}</span></dd>
-								{% endif %}
-
-								{% if object.editorial %}
-								<dt>Publicado por</dt>
-								<dd itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">{{object.editorial}}</span></dd>
-								{% endif %}
-
-								{% if object.fecha %}
-								<dt>Publicacion</dt>
-								<dd><meta itemprop="datePublished" content="{{object.fecha|date:"Y-m-d"}}">{{object.fecha|date:"Y"}}</dd>
-								{% endif %}
-
-								{% if object.edicionlibro %}
-								<dt>Edicion</dt>
-								<dd><span itemprop="bookEdition">{{object.edicionlibro}}</span></dd>
-								{% endif %}
-
-								{% if object.tipo %}
-								<dt>Disponible en</dt>
-								<dd><link itemprop="bookFormat" href="http://schema.org/Hardcover">{{object.tipo}}</dd>
-								{% endif %}
-
-								{% if object.pais %}
-								<dt>Pais</dt>
-								<dd>{{object.pais}}</dd>
-								{% endif %}
-
-								{% if object.idioma %}
-								<dt>Idioma</dt>
-								<dd>{{object.idioma}}</dd>
-								{% endif %}
-
-								{% if object.isbn %}
-								<dt>ISBN</dt>
-								<dd><span itemprop="isbn">{{object.isbn}}</span></dd>
-								{% endif %}
-
-								{% if object.precio %}
-								<dt>Precio</dt>
-								<dd>{{object.precio}} €</dd>
-								{% endif %}
-							</dl>
-						</div>
-
-						<!--<h1>{{object.titulo}}</h1>-->
-						<!--<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{object.autor|default:"Sin autor"}}</span></span>-->
-						<div itemprop="description">{{object.descripcion|safe}}</div>
-						<div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-							<span itemprop="name">{{object.fuente|default:"No hay fuente"}}</span>
-						</div>
-						<div><time datetime="{{object.fecha|date:"Y-m-d"}}">{{object.fecha|date:"d/m/Y"}}</time></div>
-					</footer>
-{% endcomment %}
-
-				</div>
-
-			{% elif adjunto.es_video %}
-				<!--https://support.google.com/webmasters/answer/2413309?hl=es&ref_topic=1088474-->
-				<div itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
-
-					<header>
-
-						<div>
-						<span id="titulo" itemprop="name">{{object.titulo}}</span>
-						{% if object.autor %}
-							, por <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span id="autor" itemprop="name">{{object.autor}}</span></span>
-						{% else %}
-							{{object.autor|default:""}}
-						{% endif %}
-						</div>
-
-						<!--<meta itemprop="duration" content="T1M33S" />-->
-						<!--<meta itemprop="thumbnailUrl" content="thumbnail.jpg" />-->
-						<meta itemprop="contentURL" content="{{adjunto.filename}}" />
-						<meta itemprop="embedURL" content="{{adjunto.filename}}" />
-						<meta itemprop="uploadDate" content="{{object.fecha|date:"Y-m-d"}}" />
-						<meta itemprop="datePublished" content="{{object.fecha|date:"Y-m-d"}}" />
-						<!--<meta itemprop="expires" content="2012-01-30T19:00:00+08:00" />-->
-
-					</header>
-
-					<hr />
-
-					<section>
-						<video poster=""  controls="controls" width="320" height="240" id="player" preload="metadata">
-							Your browser does not support the <code>video</code> element.
-                            {% for fichero, extension in adjunto.busca_videos_extensiones %}
-                                <source src="{{MEDIA_URL}}{{fichero}}" type="{{extension}}">
-                            {% endfor %}
-						</video>
-					</section>
-
-					<hr />
-
-					<footer>
-						<!--<h1>{{object.titulo}}</h1>-->
-						<!--<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{object.autor|default:"Sin autor"}}</span></span>-->
-
-						<div itemprop="description">{{object.descripcion|safe}}</div>
-						<div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-							<span itemprop="name">{{object.fuente|default:"No hay fuente"}}</span>
-						</div>
-						<div><time datetime="{{object.fecha|date:"Y-m-d"}}">{{object.fecha|date:"d/m/Y"}}</time></div>
-					</footer>
-
-				</div>
-
-			{% elif adjunto.es_audio %}
-				<!--https://support.google.com/webmasters/answer/1623047?hl=es&ref_topic=1088474-->
-				<!--http://www.schema.org/MediaObject-->
-				<div itemscope itemtype="http://schema.org/AudioObject">
-					<header>
-						<div>
-						<span id="titulo" itemprop="name">{{object.titulo}}</span>
-						{% if object.autor %}
-							, por <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span id="autor" itemprop="name">{{object.autor}}</span></span>
-						{% else %}
-							{{object.autor|default:""}}
-						{% endif %}
-						</div>
-
-						<!--<meta itemprop="duration" content="T1M33S" />-->
-						<!--<meta itemprop="thumbnailUrl" content="" />-->
-						<meta itemprop="contentURL" content="{{adjunto.filename}}" />
-						<meta itemprop="embedURL" content="{{adjunto.filename}}" />
-						<meta itemprop="uploadDate" content="{{object.fecha|date:"Y-m-d"}}" />
-						<meta itemprop="datePublished" content="{{object.fecha|date:"Y-m-d"}}" />
-						<!--<meta itemprop="expires" content="{{object.fecha|date:"Y-m-d"}}" />-->
-
-						<meta itemprop="encodingFormat" content="audio/mpeg" />
-						<meta itemprop="contentURL" content="{{adjunto.filename}}" />
-						<!--<meta itemprop="duration" content="T0M15S" />-->
-					</header>
-
-					<hr />
-
-					<section>
-						<audio id="audiofile" controls="controls">
-							Your browser does not support the <code>audio</code> element.
-                            {% for fichero, extension in adjunto.busca_audios_extensiones %}
-                                <source src="{{MEDIA_URL}}{{fichero}}" type="{{extension}}">
-                            {% endfor %}
-						</audio>
-					</section>
-
-					<hr />
-
-					<footer>
-						<!--<h1>{{object.titulo}}</h1>-->
-						<!--<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{object.autor|default:"Sin autor"}}</span></span>-->
-						<div itemprop="description">{{object.descripcion|safe}}</div>
-						<div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-							<span itemprop="name">{{object.fuente|default:"No hay fuente"}}</span>
-						</div>
-						<div><time datetime="{{object.fecha|date:"Y-m-d"}}">{{object.fecha|date:"d/m/Y"}}</time></div>
-					</footer>
-				</div>
-
-		{% else %}
-
-				<div>
-                    <a href="{{adjunto.filename}}">{{object}} - {{adjunto.titulo}}</a>
-				</div>
-
-		{% endif %}
-			</li>
-		{% empty %}
-            <li>
-				<div>
-					<header>
-						<div>
-                            <span id="titulo" itemprop="name">{{object.titulo}}</span>
-                            {% if object.autor %}
-							, por <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span id="autor" itemprop="name">{{object.autor}}</span></span>
-                            {% endif %}
-						</div>
-					</header>
-					<footer>
-                        <div>(No hay adjunto)</div>
-					</footer>
-				</div>
-            </li>
-		{% endfor %}
-		</ul>
-
+                                <meta itemprop="encodingFormat" content="audio/mpeg" />
+                                <meta itemprop="contentURL" content="{{adjunto.filename}}" />
+                                <!--<meta itemprop="duration" content="T0M15S" />-->
+                                <audio id="audiofile" controls="controls">
+                                    Your browser does not support the <code>audio</code> element.
+                                    {% for fichero, extension in adjunto.busca_audios_extensiones %}
+                                        <source src="{{MEDIA_URL}}{{fichero}}" type="{{extension}}">
+                                    {% endfor %}
+                                </audio>
+                            </div>
+                        {% elif adjunto.url %}
+                            <div>
+                                {% include "contenidos/_adjunto_filename.html" with myicon='img/emblem-web.png' %}
+                                {% include "contenidos/_adjunto_miniatura.html" with downloadicon=1 %}
+                            </div>
+                        {% else %}
+                            <div>
+                                {% include "contenidos/_adjunto_filename.html" with myicon='img/emblem-documents.png' %}
+                                {% include "contenidos/_adjunto_miniatura.html" with downloadicon=1 %}
+                            </div>
+                        {% endif %}
+                    </li>
+                {% empty %}
+                    <li>
+                        <div>
+                            <footer>
+                                <div>(No hay adjunto)</div>
+                            </footer>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </section>
+        <hr class="clear" />
+        <footer>
+            <!--<h1>{{object.titulo}}</h1>-->
+            <!--<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{object.autor|default:"Sin autor"}}</span></span>-->
+            <div itemprop="description">{{object.descripcion|safe}}</div>
+            <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                <span itemprop="name">{{object.fuente|default:"No hay fuente"}}</span>
+            </div>
+            <div><time datetime="{{object.fecha|date:"Y-m-d"}}">{{object.fecha|date:"d/m/Y"}}</time></div>
+        </footer>
 	</div>
-
 </div>
 
-<div><br style="clear: both;" /></div>
+<div><br class="clear" /></div>
+
+
+
+
+        {% comment %}
+                            <footer>
+                                <div class="lista_de_datos">
+                                    <dl itemscope itemtype="http://schema.org/Book">
+                                        {% if object.titulo %}
+                                        <dt>TituloXXx</dt>
+                                        <dd itemprop="name">
+                                        {% if object.url %}
+                                            <a itemprop="url" href="{{object.url}}">{{object.titulo}}</a>
+                                        {% else %}
+                                            <span>{{object.titulo}}</span>
+                                        {% endif %}
+
+                                        </dd>
+                                        {% endif %}
+
+                                        {% if object.resumen %}
+                                        <dt>Descripcion</dt>
+                                        <dd itemprop="description">{{object.resumen}}</dd>
+                                        {% endif %}
+
+                                        {% if object.autor %}
+                                        <dt>Autor</dt>
+                                        <dd itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{object.autor}}</span></dd>
+                                        {% endif %}
+
+                                        {% if object.editorial %}
+                                        <dt>Publicado por</dt>
+                                        <dd itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">{{object.editorial}}</span></dd>
+                                        {% endif %}
+
+                                        {% if object.fecha %}
+                                        <dt>Publicacion</dt>
+                                        <dd><meta itemprop="datePublished" content="{{object.fecha|date:"Y-m-d"}}">{{object.fecha|date:"Y"}}</dd>
+                                        {% endif %}
+
+                                        {% if object.edicionlibro %}
+                                        <dt>Edicion</dt>
+                                        <dd><span itemprop="bookEdition">{{object.edicionlibro}}</span></dd>
+                                        {% endif %}
+
+                                        {% if object.tipo %}
+                                        <dt>Disponible en</dt>
+                                        <dd><link itemprop="bookFormat" href="http://schema.org/Hardcover">{{object.tipo}}</dd>
+                                        {% endif %}
+
+                                        {% if object.pais %}
+                                        <dt>Pais</dt>
+                                        <dd>{{object.pais}}</dd>
+                                        {% endif %}
+
+                                        {% if object.idioma %}
+                                        <dt>Idioma</dt>
+                                        <dd>{{object.idioma}}</dd>
+                                        {% endif %}
+
+                                        {% if object.isbn %}
+                                        <dt>ISBN</dt>
+                                        <dd><span itemprop="isbn">{{object.isbn}}</span></dd>
+                                        {% endif %}
+
+                                        {% if object.precio %}
+                                        <dt>Precio</dt>
+                                        <dd>{{object.precio}} €</dd>
+                                        {% endif %}
+                                    </dl>
+                                </div>
+
+                                <!--<h1>{{object.titulo}}</h1>-->
+                                <!--<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{object.autor|default:"Sin autor"}}</span></span>-->
+                                <div itemprop="description">{{object.descripcion|safe}}</div>
+                                <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                                    <span itemprop="name">{{object.fuente|default:"No hay fuente"}}</span>
+                                </div>
+                                <div><time datetime="{{object.fecha|date:"Y-m-d"}}">{{object.fecha|date:"d/m/Y"}}</time></div>
+                            </footer>
+        {% endcomment %}
