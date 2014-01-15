@@ -16,165 +16,165 @@ $fondo: $color02;
 
 section#variable_1col{
 
-	@include border-radius($radio-standar);
+    @include border-radius($radio-standar);
 
-	section#body{
+    section#body{
 
-		div#libro_list{
-			@include border-radius($radio-standar);
-			min-height:em(480px);
-			margin: em($font_base);
-			border: em($font_base);
-			padding: em($font_base);
+        div#libro_list{
+            @include border-radius($radio-standar);
+            min-height:em(480px);
+            margin: em($font_base);
+            border: em($font_base);
+            padding: em($font_base);
 
-			h1{
-				font-weight:700;
-			}
+            h1{
+                font-weight:700;
+            }
 
-			h2{
-				text-align: center;
-			}
+            h2{
+                text-align: center;
+            }
 
-			div.ficha{
-				$default-box-shadow-inset: false;
-				@include clearfix;
-				//background-color: $fondo;
-				@include background-image(linear-gradient(
-					lighten($color02, 15%),
-					lighten($color03, 15%)
-					));
-				margin: 0 auto;
-				width: 86%;
+            div.ficha{
+                $default-box-shadow-inset: false;
+                @include clearfix;
+                //background-color: $fondo;
+                @include background-image(linear-gradient(
+                    lighten($color02, 15%),
+                    lighten($color03, 15%)
+                    ));
+                margin: 0 auto;
+                width: 86%;
 
-				.datos_libro {
+                .datos_libro {
 
-					dl {
-						width: 100%;
-						padding: em($font_base/2);
+                    dl {
+                        width: 100%;
+                        padding: em($font_base/2);
 
-						dt {
-							float: left;
-							clear: left;
-							width: 24%; /* adjust the width; make sure the total of both is 100% */
-							text-align: right;
-							font-weight: 400;
+                        dt {
+                            float: left;
+                            clear: left;
+                            width: 24%; /* adjust the width; make sure the total of both is 100% */
+                            text-align: right;
+                            font-weight: 400;
 
-							//&:after{
-							//	content: "\00A0";
-							//}
-							//&:before{
-							//	content: "←";
-							//}
-						}
+                            //&:after{
+                            //    content: "\00A0";
+                            //}
+                            //&:before{
+                            //    content: "←";
+                            //}
+                        }
 
-						dd {
-							float: left;
-							width: 76%; /* adjust the width; make sure the total of both is 100% */
-							text-indent: 2ex;
+                        dd {
+                            float: left;
+                            width: 76%; /* adjust the width; make sure the total of both is 100% */
+                            text-indent: 2ex;
 
-						}
-					}
-				}
+                        }
+                    }
+                }
 
-				.portada_libro {
+                .portada_libro {
 
-					img{
-						@include single-box-shadow;
-						text-align: center;
-						max-width: em(200px);
-						max-height: em(266px);
-						margin: auto 0;
-					}
-				}
+                    img{
+                        @include single-box-shadow;
+                        text-align: center;
+                        max-width: em(200px);
+                        max-height: em(266px);
+                        margin: auto 0;
+                    }
+                }
 
-			}
+            }
 
-		}
+        }
 
-		div.documento_list{
-			@include border-radius($radio-standar);
-			min-height:em(480px);
-			margin: em($font_base);
-			border: em($font_base);
-			padding: em($font_base);
-			h1{
-				font-weight:700;
-			}
+        div.documento_list{
+            @include border-radius($radio-standar);
+            min-height:em(480px);
+            margin: em($font_base);
+            border: em($font_base);
+            padding: em($font_base);
+            h1{
+                font-weight:700;
+            }
 
-			h2{
-				font-weight:500;
-			}
+            h2{
+                text-align: center;
+            }
 
-			div.doc{
-				margin: em($font_base);
-				border: em($font_base);
-				padding: em($font_base);
-				$default-box-shadow-inset: false;
-				@include clearfix;
-				//background-color: $fondo;
-				@include background-image(linear-gradient(
-					lighten($color02, 15%),
-					lighten($color03, 15%)
-					));
-				margin: 0 auto;
-				width: 86%;
-				header{
-					span#titulo{
-						font-weight: 700;
-					}
-					span#autor{
-						font-weight: 400;
-					}
-				}
-				div.documentos_adjuntos{
-					//background-color: Red;
-					margin: em($font_base);
-					border: em($font_base);
-					padding: em($font_base);
-					text-align: center;
-					ul.adjuntos{
-						li{
-							section{
-								audio{
-									//outline: $color03 em(4px) solid;
-									min-width: em(320px);
-								}
-								video{
-									outline: $color03 em(4px) solid;
-									min-height: em(240px);
-									min-width: em(320px);
-								}
-							}
-						}
-					}
-				}
-			}
-		}
+            div.doc{
+                margin: em($font_base);
+                border: em($font_base);
+                padding: em($font_base);
+                $default-box-shadow-inset: false;
+                @include clearfix;
+                //background-color: $fondo;
+                @include background-image(linear-gradient(
+                    lighten($color02, 15%),
+                    lighten($color03, 15%)
+                    ));
+                margin: 0 auto;
+                width: 86%;
+                header{
+                    span#titulo{
+                        font-weight: 700;
+                    }
+                    span#autor{
+                        font-weight: 400;
+                    }
+                }
+                div.documentos_adjuntos{
+                    //background-color: Red;
+                    margin: em($font_base);
+                    border: em($font_base);
+                    padding: em($font_base);
+                    text-align: center;
+                    ul.adjuntos{
+                        li{
+                            section{
+                                audio{
+                                    //outline: $color03 em(4px) solid;
+                                    min-width: em(320px);
+                                }
+                                video{
+                                    outline: $color03 em(4px) solid;
+                                    min-height: em(240px);
+                                    min-width: em(320px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
-		div#citade{
-			@include border-radius($radio-standar);
-			min-height:em(480px);
-			margin: em($font_base);
-			border: em($font_base);
-			padding: em($font_base);
+        div#citade{
+            @include border-radius($radio-standar);
+            min-height:em(480px);
+            margin: em($font_base);
+            border: em($font_base);
+            padding: em($font_base);
 
-			h1{
-				font-weight:700;
-			}
-		}
+            h1{
+                font-weight:700;
+            }
+        }
 
-		div#citasobre{
-			@include border-radius($radio-standar);
-			min-height:em(480px);
-			margin: em($font_base);
-			border: em($font_base);
-			padding: em($font_base);
+        div#citasobre{
+            @include border-radius($radio-standar);
+            min-height:em(480px);
+            margin: em($font_base);
+            border: em($font_base);
+            padding: em($font_base);
 
-			h1{
-				font-weight:700;
-			}
-		}
-	}
+            h1{
+                font-weight:700;
+            }
+        }
+    }
 }
 
 div.paginator{
