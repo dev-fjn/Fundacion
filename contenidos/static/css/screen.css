@@ -963,7 +963,7 @@ section#variable_1col section#body div.documento_list h1 {
 }
 /* line 104, ../sass/estilos/_variable_1col.scss */
 section#variable_1col section#body div.documento_list h2 {
-  font-weight: 500;
+  text-align: center;
 }
 /* line 108, ../sass/estilos/_variable_1col.scss */
 section#variable_1col section#body div.documento_list div.doc {
@@ -1853,5 +1853,17 @@ footer#footer div#legal {
   /* line 48, ../sass/screen.scss */
   .container {
     background-color: Maroon;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 48, ../sass/screen.scss */
+  .container {
+    background-color: Blue;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 48, ../sass/screen.scss */
+  .container {
+    background-color: Red;
   }
 }
