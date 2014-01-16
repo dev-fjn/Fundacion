@@ -82,6 +82,7 @@
                                 {% include "contenidos/_adjunto_miniatura.html" with downloadicon=1 %}
                             </div>
                         {% endif %}
+                        <div class="clear"></div>
                     </li>
                 {% empty %}
                     <li>
@@ -94,7 +95,7 @@
                 {% endfor %}
             </ul>
         </section>
-        <hr class="clear" />
+        {# <hr class="clear" /> #}
         <footer>
             <!--<h1>{{object.titulo}}</h1>-->
             <!--<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{object.autor|default:"Sin autor"}}</span></span>-->
