@@ -1168,6 +1168,7 @@ section#variable_2col section#body div.presencia {
 /* line 132, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.presencia h1 {
   font-weight: 700;
+  padding-bottom: 2em;
 }
 /* line 136, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.presencia dl dt figure {

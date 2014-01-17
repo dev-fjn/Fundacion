@@ -129,7 +129,7 @@ section#variable_2col{
 			border: em($font_base);
 			padding: em($font_base) 0px em($font_base) em($font_base);
 
-			h1{font-weight:700;}
+			h1{font-weight:700; padding-bottom: em(2*$font_base);}
 
 			dl{
 				dt{
