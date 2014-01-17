@@ -91,22 +91,13 @@
                         {% endif %}
                         <div class="clear"></div>
                     </li>
-                {% empty %}
-                    <li>
-                        <div>
-                            <footer>
-                                <div>(No hay adjunto)</div>
-                            </footer>
-                        </div>
-                    </li>
                 {% endfor %}
             </ul>
         </section>
         <footer>
             <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                <span><time datetime="{{object.fecha|date:"Y-m-d"}}">{{object.fecha|date:"d/m/Y"}}</time></span>,
                 <span itemprop="name">{{object.fuente|default:"No hay fuente"}}</span>
-                -
-                <span><time datetime="{{object.fecha|date:"Y-m-d"}}">{{object.fecha|date:"d/m/Y"}}</time></span>
             </div>
         </footer>
 	</div>
