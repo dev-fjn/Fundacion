@@ -1,7 +1,7 @@
 {% load static %}
 <div class="doc">
 
-    {% if user.is_superuser %}<div style="float: right"><a href="{% url 'admin:contenidos_documento_change' object.id %}">&#9998;</a></div> {% endif %}
+
 	<div class="documentos_adjuntos">
 
         <header>
@@ -12,9 +12,16 @@
                 {% else %}
                     , {{object.autor|default:""}}
                 {% endif %}
+				{% if user.is_superuser %}<div style="float: right"><a href="{% url 'admin:contenidos_documento_change' object.id %}">&#9998;</a></div> {% endif %}
             </div>
         </header>
         <hr />
+        <section class="justify">
+            <!--<h1>{{object.titulo}}</h1>-->
+            <!--<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{object.autor|default:"Sin autor"}}</span></span>-->
+            <div itemprop="description">{{object.descripcion|safe}}</div>
+        </section>
+        <hr class="clear" />
         <section>
             <ul class="adjuntos">
                 {% for adjunto in object.adjuntos %}
@@ -95,15 +102,12 @@
                 {% endfor %}
             </ul>
         </section>
-        {# <hr class="clear" /> #}
         <footer>
-            <!--<h1>{{object.titulo}}</h1>-->
-            <!--<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{object.autor|default:"Sin autor"}}</span></span>-->
-            <div itemprop="description">{{object.descripcion|safe}}</div>
             <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
                 <span itemprop="name">{{object.fuente|default:"No hay fuente"}}</span>
+                -
+                <span><time datetime="{{object.fecha|date:"Y-m-d"}}">{{object.fecha|date:"d/m/Y"}}</time></span>
             </div>
-            <div><time datetime="{{object.fecha|date:"Y-m-d"}}">{{object.fecha|date:"d/m/Y"}}</time></div>
         </footer>
 	</div>
 </div>
