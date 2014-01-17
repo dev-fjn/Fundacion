@@ -35,6 +35,10 @@ section#variable_2col{
 				color: lighten($color02, 20%);
 			}
 
+            ol {
+                padding-left: 2ex;
+            }
+
 			figure{
 				//@include drop-shadow-transform-requirement($color01);
 				//display: inline;
