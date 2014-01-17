@@ -8,6 +8,11 @@
 
 // Sección 'variable' con 2 columnas
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$ancho_maximo_thbl: 267px;
+$alto_maximo_thbl: 200px;
+
+
 section#variable_2col{
 
 	section#body{
@@ -129,8 +134,14 @@ section#variable_2col{
 			dl{
 				dt{
 					figure{
+                        text-align: center;
+						img {
+                            width: inherit;
+                            height: inherit;
+                            max-width: em($ancho_maximo_thbl);
+                            max-height: em($alto_maximo_thbl);
+                        }
 						figcaption{
-							text-align: center;
 						}
 					}
 				}

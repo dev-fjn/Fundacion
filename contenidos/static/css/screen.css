@@ -1042,7 +1042,7 @@ div.paginator {
   padding-bottom: 0.625em;
 }
 
-/* line 15, ../sass/estilos/_variable_2col.scss */
+/* line 20, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n {
   -webkit-border-radius: 0.25em;
   -moz-border-radius: 0.25em;
@@ -1055,26 +1055,26 @@ section#variable_2col section#body div.flatpage-i18n {
   border: 1em;
   padding: 1em 0px 1em 1em;
 }
-/* line 25, ../sass/estilos/_variable_2col.scss */
+/* line 30, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n h1 {
   font-weight: 700;
 }
-/* line 29, ../sass/estilos/_variable_2col.scss */
+/* line 34, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n hr {
   color: #eeede9;
 }
-/* line 33, ../sass/estilos/_variable_2col.scss */
+/* line 38, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n figure {
   float: right;
   text-align: center;
   padding: 0.5em;
   border-bottom: #c2beaf 1px solid;
 }
-/* line 49, ../sass/estilos/_variable_2col.scss */
+/* line 54, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n p {
   padding-bottom: 1em;
 }
-/* line 52, ../sass/estilos/_variable_2col.scss */
+/* line 57, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n dl {
   -webkit-border-radius: 0.25em;
   -moz-border-radius: 0.25em;
@@ -1082,28 +1082,28 @@ section#variable_2col section#body div.flatpage-i18n dl {
   -o-border-radius: 0.25em;
   border-radius: 0.25em;
 }
-/* line 54, ../sass/estilos/_variable_2col.scss */
+/* line 59, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n dl dt {
   font-weight: 700;
   padding-top: 1em;
 }
-/* line 58, ../sass/estilos/_variable_2col.scss */
+/* line 63, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n dl dd {
   text-indent: 1.5em;
 }
-/* line 60, ../sass/estilos/_variable_2col.scss */
+/* line 65, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n dl dd:before {
   content: "\25B9\00A0";
 }
-/* line 67, ../sass/estilos/_variable_2col.scss */
+/* line 72, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n div#grp_logo div#img_logo {
   text-align: center;
 }
-/* line 70, ../sass/estilos/_variable_2col.scss */
+/* line 75, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n div#grp_logo div#colores_logo {
   text-align: center;
 }
-/* line 72, ../sass/estilos/_variable_2col.scss */
+/* line 77, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n div#grp_logo div#colores_logo table {
   margin: 0 auto;
   text-align: center;
@@ -1113,17 +1113,17 @@ section#variable_2col section#body div.flatpage-i18n div#grp_logo div#colores_lo
   border: 1px solid #333333;
   border-collapse: collapse;
 }
-/* line 81, ../sass/estilos/_variable_2col.scss */
+/* line 86, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n div#grp_logo div#colores_logo td, section#variable_2col section#body div.flatpage-i18n div#grp_logo div#colores_logo th {
   border-bottom: 1px solid #333333;
   padding: 6px 16px;
   text-align: left;
 }
-/* line 86, ../sass/estilos/_variable_2col.scss */
+/* line 91, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n div#grp_logo div#colores_logo th {
   background: #EEEEEE;
 }
-/* line 89, ../sass/estilos/_variable_2col.scss */
+/* line 94, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n div#grp_logo div#colores_logo caption {
   background: #E0E0E0;
   margin: 0;
@@ -1132,27 +1132,27 @@ section#variable_2col section#body div.flatpage-i18n div#grp_logo div#colores_lo
   padding: 6px 16px;
   font-weight: bold;
 }
-/* line 97, ../sass/estilos/_variable_2col.scss */
+/* line 102, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n div#grp_logo div#colores_logo .p341 {
   background-color: #007A53;
   color: #FFFFFF;
 }
-/* line 101, ../sass/estilos/_variable_2col.scss */
+/* line 106, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n div#grp_logo div#colores_logo .p032 {
   background-color: #EF3340;
   color: #FFFFFF;
 }
-/* line 105, ../sass/estilos/_variable_2col.scss */
+/* line 110, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n div#grp_logo div#colores_logo .p012 {
   background-color: #FFD700;
   color: #000000;
 }
-/* line 109, ../sass/estilos/_variable_2col.scss */
+/* line 114, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n div#grp_logo div#colores_logo .p2587 {
   background-color: #8246AF;
   color: #FFFFFF;
 }
-/* line 117, ../sass/estilos/_variable_2col.scss */
+/* line 122, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.presencia {
   -webkit-border-radius: 0.25em;
   -moz-border-radius: 0.25em;
@@ -1165,29 +1165,36 @@ section#variable_2col section#body div.presencia {
   border: 1em;
   padding: 1em 0px 1em 1em;
 }
-/* line 127, ../sass/estilos/_variable_2col.scss */
+/* line 132, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.presencia h1 {
   font-weight: 700;
 }
-/* line 132, ../sass/estilos/_variable_2col.scss */
-section#variable_2col section#body div.presencia dl dt figure figcaption {
+/* line 136, ../sass/estilos/_variable_2col.scss */
+section#variable_2col section#body div.presencia dl dt figure {
   text-align: center;
 }
-/* line 137, ../sass/estilos/_variable_2col.scss */
+/* line 138, ../sass/estilos/_variable_2col.scss */
+section#variable_2col section#body div.presencia dl dt figure img {
+  width: inherit;
+  height: inherit;
+  max-width: 16.6875em;
+  max-height: 12.5em;
+}
+/* line 148, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.presencia dl dd {
   border: 0 1em;
 }
-/* line 139, ../sass/estilos/_variable_2col.scss */
+/* line 150, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.presencia dl dd h2 {
   font-weight: 700;
   text-align: inherit;
   font-size: inherit;
 }
-/* line 146, ../sass/estilos/_variable_2col.scss */
+/* line 157, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.presencia dl hr {
   color: #eeede9;
 }
-/* line 153, ../sass/estilos/_variable_2col.scss */
+/* line 164, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.evento {
   -webkit-border-radius: 0.25em;
   -moz-border-radius: 0.25em;
@@ -1199,31 +1206,31 @@ section#variable_2col section#body div.evento {
   border: 1em;
   padding: 1em;
 }
-/* line 159, ../sass/estilos/_variable_2col.scss */
+/* line 170, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.evento h1 {
   color: white;
   background-color: #918b74;
   padding-left: 1em;
 }
-/* line 165, ../sass/estilos/_variable_2col.scss */
+/* line 176, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.evento figure img {
   width: 100%;
 }
-/* line 167, ../sass/estilos/_variable_2col.scss */
+/* line 178, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.evento figure figcaption h2 {
   padding-left: 1em;
   color: white;
   background-color: #918b74;
 }
-/* line 172, ../sass/estilos/_variable_2col.scss */
+/* line 183, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.evento figure figcaption h2 span a {
   color: white;
 }
-/* line 175, ../sass/estilos/_variable_2col.scss */
+/* line 186, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.evento figure figcaption button {
   text-align: right;
 }
-/* line 182, ../sass/estilos/_variable_2col.scss */
+/* line 193, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.zinnia {
   -webkit-border-radius: 0.25em;
   -moz-border-radius: 0.25em;
