@@ -1071,17 +1071,21 @@ section#variable_2col section#body div.flatpage-i18n ol {
   padding-left: 2ex;
 }
 /* line 42, ../sass/estilos/_variable_2col.scss */
+section#variable_2col section#body div.flatpage-i18n blockquote {
+  padding-left: 1ex;
+}
+/* line 46, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n figure {
   float: right;
   text-align: center;
   padding: 0.5em;
   border-bottom: #c2beaf 1px solid;
 }
-/* line 58, ../sass/estilos/_variable_2col.scss */
+/* line 62, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n p {
   padding-bottom: 1em;
 }
-/* line 61, ../sass/estilos/_variable_2col.scss */
+/* line 65, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n dl {
   -webkit-border-radius: 0.25em;
   -moz-border-radius: 0.25em;
@@ -1089,28 +1093,28 @@ section#variable_2col section#body div.flatpage-i18n dl {
   -o-border-radius: 0.25em;
   border-radius: 0.25em;
 }
-/* line 63, ../sass/estilos/_variable_2col.scss */
+/* line 67, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n dl dt {
   font-weight: 700;
   padding-top: 1em;
 }
-/* line 67, ../sass/estilos/_variable_2col.scss */
+/* line 71, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n dl dd {
   text-indent: 1.5em;
 }
-/* line 69, ../sass/estilos/_variable_2col.scss */
+/* line 73, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n dl dd:before {
   content: "\25B9\00A0";
 }
-/* line 76, ../sass/estilos/_variable_2col.scss */
+/* line 80, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n div#grp_logo div#img_logo {
   text-align: center;
 }
-/* line 79, ../sass/estilos/_variable_2col.scss */
+/* line 83, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n div#grp_logo div#colores_logo {
   text-align: center;
 }
-/* line 81, ../sass/estilos/_variable_2col.scss */
+/* line 85, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n div#grp_logo div#colores_logo table {
   margin: 0 auto;
   text-align: center;
@@ -1120,17 +1124,17 @@ section#variable_2col section#body div.flatpage-i18n div#grp_logo div#colores_lo
   border: 1px solid #333333;
   border-collapse: collapse;
 }
-/* line 90, ../sass/estilos/_variable_2col.scss */
+/* line 94, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n div#grp_logo div#colores_logo td, section#variable_2col section#body div.flatpage-i18n div#grp_logo div#colores_logo th {
   border-bottom: 1px solid #333333;
   padding: 6px 16px;
   text-align: left;
 }
-/* line 95, ../sass/estilos/_variable_2col.scss */
+/* line 99, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n div#grp_logo div#colores_logo th {
   background: #EEEEEE;
 }
-/* line 98, ../sass/estilos/_variable_2col.scss */
+/* line 102, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n div#grp_logo div#colores_logo caption {
   background: #E0E0E0;
   margin: 0;
@@ -1139,27 +1143,27 @@ section#variable_2col section#body div.flatpage-i18n div#grp_logo div#colores_lo
   padding: 6px 16px;
   font-weight: bold;
 }
-/* line 106, ../sass/estilos/_variable_2col.scss */
+/* line 110, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n div#grp_logo div#colores_logo .p341 {
   background-color: #007A53;
   color: #FFFFFF;
 }
-/* line 110, ../sass/estilos/_variable_2col.scss */
+/* line 114, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n div#grp_logo div#colores_logo .p032 {
   background-color: #EF3340;
   color: #FFFFFF;
 }
-/* line 114, ../sass/estilos/_variable_2col.scss */
+/* line 118, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n div#grp_logo div#colores_logo .p012 {
   background-color: #FFD700;
   color: #000000;
 }
-/* line 118, ../sass/estilos/_variable_2col.scss */
+/* line 122, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.flatpage-i18n div#grp_logo div#colores_logo .p2587 {
   background-color: #8246AF;
   color: #FFFFFF;
 }
-/* line 126, ../sass/estilos/_variable_2col.scss */
+/* line 130, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.presencia {
   -webkit-border-radius: 0.25em;
   -moz-border-radius: 0.25em;
@@ -1172,37 +1176,37 @@ section#variable_2col section#body div.presencia {
   border: 1em;
   padding: 1em 0px 1em 1em;
 }
-/* line 136, ../sass/estilos/_variable_2col.scss */
+/* line 140, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.presencia h1 {
   font-weight: 700;
   padding-bottom: 2em;
 }
-/* line 140, ../sass/estilos/_variable_2col.scss */
+/* line 144, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.presencia dl dt figure {
   text-align: center;
 }
-/* line 142, ../sass/estilos/_variable_2col.scss */
+/* line 146, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.presencia dl dt figure img {
   width: inherit;
   height: inherit;
   max-width: 16.6875em;
   max-height: 12.5em;
 }
-/* line 152, ../sass/estilos/_variable_2col.scss */
+/* line 156, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.presencia dl dd {
   border: 0 1em;
 }
-/* line 154, ../sass/estilos/_variable_2col.scss */
+/* line 158, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.presencia dl dd h2 {
   font-weight: 700;
   text-align: inherit;
   font-size: inherit;
 }
-/* line 161, ../sass/estilos/_variable_2col.scss */
+/* line 165, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.presencia dl hr {
   color: #eeede9;
 }
-/* line 168, ../sass/estilos/_variable_2col.scss */
+/* line 172, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.evento {
   -webkit-border-radius: 0.25em;
   -moz-border-radius: 0.25em;
@@ -1214,31 +1218,31 @@ section#variable_2col section#body div.evento {
   border: 1em;
   padding: 1em;
 }
-/* line 174, ../sass/estilos/_variable_2col.scss */
+/* line 178, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.evento h1 {
   color: white;
   background-color: #918b74;
   padding-left: 1em;
 }
-/* line 180, ../sass/estilos/_variable_2col.scss */
+/* line 184, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.evento figure img {
   width: 100%;
 }
-/* line 182, ../sass/estilos/_variable_2col.scss */
+/* line 186, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.evento figure figcaption h2 {
   padding-left: 1em;
   color: white;
   background-color: #918b74;
 }
-/* line 187, ../sass/estilos/_variable_2col.scss */
+/* line 191, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.evento figure figcaption h2 span a {
   color: white;
 }
-/* line 190, ../sass/estilos/_variable_2col.scss */
+/* line 194, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.evento figure figcaption button {
   text-align: right;
 }
-/* line 197, ../sass/estilos/_variable_2col.scss */
+/* line 201, ../sass/estilos/_variable_2col.scss */
 section#variable_2col section#body div.zinnia {
   -webkit-border-radius: 0.25em;
   -moz-border-radius: 0.25em;
