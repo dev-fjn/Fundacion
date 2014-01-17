@@ -148,7 +148,7 @@ class Libro(models.Model):
     titulo = models.CharField(max_length=250)
     autor = models.CharField(max_length=250)
     editorial = models.CharField(max_length=250)
-    tipo = models.CharField(max_length=40, choices=TIPO.CHOICES, default=TIPO.LIBRO)
+    tipo = models.CharField(max_length=40, choices=TIPO.CHOICES, default=TIPO.LIBRO, blank=True, null=True)
     pais = models.CharField(u'país', max_length=40)# , default=u'España')
     fecha = models.DateField()
     idioma = models.CharField(max_length=40, default=u'Castellano')
