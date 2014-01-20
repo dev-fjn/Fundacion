@@ -1,4 +1,4 @@
-{% load staticfiles webdesign %}<!DOCTYPE html>
+{% load staticfiles webdesign %}{% load url from future %}<!DOCTYPE html>
 <html class="no-js" lang="es">
 	<head>
 		{% block head_title %}<title>{% block title %}Título{% endblock title %}</title>{% endblock head_title %}
@@ -543,7 +543,15 @@
 					</div>
 					<div id="ffinal">&nbsp;</div>
 					<div id="legal">
-						<span id="copyright">{% now "DATE_FORMAT" %} - &copy; Fundación Juan Negrín</span>&nbsp;
+                        <span id="copyright">
+                            &#9742; +34 928 33 75 75 - 
+                            <a href="mailto:fundacionjuannegrin@gmail.com">&#9993; fundacionjuannegrin@gmail.com</a> - 
+                            C/ Reyes Católicos, 30. Las Palmas de Gran Canaria
+                            <br/>
+                            {% now "DATE_FORMAT" %} 
+                            {% if not user.is_authenticated %}<a href="{% url "admin:index" %}" title="login">&copy;</a>{% else %}&copy;{% endif %}
+                             Fundación Juan Negrín
+                        </span>
 <!--
 						<span class="entypo">&#62208;</span>
 						<span class="entypo">&#62217;</span>
