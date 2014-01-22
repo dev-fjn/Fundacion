@@ -1,8 +1,13 @@
 {% extends 'base_2col2.html' %}
+{% load contenidosblocks %}
 
 {% block title %}
 {{block.super}} - Agenda {{start|date:"F Y"}}
 {% endblock title %}
+
+{% block agenda %}
+{% calendario_eventos start.year start.month %}
+{% endblock agenda %}
 
 {% block hormiga %}
 <ul>
@@ -12,7 +17,7 @@
 {% endblock hormiga %}
 
 {% block contentl %}
-	{% include "contenidos/_calendario_eventos.html" %}
+    ESTO NO VA, cambiar a 1 col
 {% endblock contentl %}
 
 {% block contentr %}

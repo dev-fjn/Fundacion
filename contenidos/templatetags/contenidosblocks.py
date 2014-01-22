@@ -4,7 +4,7 @@ from django import template
 register = template.Library()
 
 from contenidos.models import Evento, FechaEvento
-from contenidos.utiles import inicio_fin_mes, calendario_por_meses
+from contenidos.utiles import inicio_fin_mes, inicio_fin_ano_mes, calendario_por_meses
 from django.conf import settings
 from django.utils import timezone
 from zinnia.models import Category
@@ -23,8 +23,11 @@ def proximos_eventos(context, cuenta):
         }
 
 @register.inclusion_tag('contenidos/_calendario_eventos.html', takes_context=True)
-def calendario_eventos(context, meses_atras):
-    start, end = inicio_fin_mes(meses_atras)
+def calendario_eventos(context, ano=None, mes=None):
+    if not ano or not mes:
+        now = timezone.now()
+        ano, mes = now.year, now.month
+    start, end = inicio_fin_ano_mes(ano, mes)
     diccionario = Evento.datos_para_calendario(start, end)
     semanas = calendario_por_meses(start, end, diccionario)
     return {

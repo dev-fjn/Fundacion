@@ -11,6 +11,11 @@ def inicio_fin_mes(meses_adelante): # acepta negativos tb
 	end = start + relativedelta(months=1) - datetime.timedelta(seconds=1)
 	return start, end
 
+def inicio_fin_ano_mes(ano, mes): # acepta negativos tb
+	start = datetime.datetime(ano, mes, 1)
+	end = start + relativedelta(months=1) - datetime.timedelta(seconds=1)
+	return start, end
+
 def calendario_por_meses(start, end, diccionario):
 	# obtenemos las semanas+dias de un calendario del mes
 	c = calendar.Calendar(calendar.MONDAY)
