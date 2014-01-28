@@ -6,12 +6,29 @@ from tinymce.widgets import TinyMCE
 
 from models import *
 
-# http://www.tinymce.com/wiki.php/Configuration3x
-FORMFIELD_TINYMCE_AVANZADO = {
-    models.TextField: {'widget': TinyMCE(attrs={'cols': 10, 'cols': 80}, mce_attrs={'theme': 'advanced'}),},
+TINYMCE_COMMON = {
+    # http://www.tinymce.com/wiki.php/Configuration3x
+    'theme': 'advanced',
+    'entity_encoding': 'raw',
+    # ojo, que hay que poner por cada tag, los atributos que se dejan! por ejemplo  a[href|target|title]
+    #'extended_valid_elements': 'figure[corregir|esto],caption[y|esto]', ... casi mejor ponerlo todo
+    'valid_elements': '*[*]',
 }
+
+TINYMCE_SIMPLE = {
+    'theme_advanced_buttons1': "bold,italic,underline,strikethrough,|,bullist,numlist,|,cut,copy,paste,|,undo,redo,|,link,unlink,image,|,cleanup,removeformat,code",
+}
+
+TINYMCE_ADVANCED = {
+}
+
+
 FORMFIELD_TINYMCE_SIMPLE = {
-    models.TextField: {'widget': TinyMCE(attrs={'cols': 10, 'cols': 80}, mce_attrs={'theme': 'simple'}), },
+    models.TextField: {'widget': TinyMCE(attrs={'cols': 10, 'cols': 80}, mce_attrs=dict(TINYMCE_COMMON.items() + TINYMCE_SIMPLE.items()))},
+}
+
+FORMFIELD_TINYMCE_AVANZADO = {
+    models.TextField: {'widget': TinyMCE(attrs={'cols': 10, 'cols': 80}, mce_attrs=dict(TINYMCE_COMMON.items() + TINYMCE_ADVANCED.items()))},
 }
 
 class CarruselAdmin(TranslationAdmin):
@@ -97,20 +114,12 @@ from flatpages_i18n.models import FlatPage_i18n
 from flatpages_i18n.admin import FlatPageAdmin
 
 class MyFlatPageAdmin(FlatPageAdmin):
-    from django import forms
-    formfield_overrides = {
-        models.TextField: {'widget': forms.Textarea,},
-    }
+    formfield_overrides = FORMFIELD_TINYMCE_SIMPLE
 
-class MyFlatPageAdmin2(FlatPageAdmin):
-    formfield_overrides = FORMFIELD_TINYMCE_AVANZADO
+try:
+    admin.site.unregister(FlatPage_i18n)
+except admin.sites.NotRegistered:
+    pass # por alguna razon hace este fallo de vez en cuando
 
-# Editor avanzado
-# ~~~~~~~~~~~~~~~
-#admin.site.unregister(FlatPage_i18n)
-#admin.site.register(FlatPage_i18n, MyFlatPageAdmin)
-
-# TextArea
-# ~~~~~~~~
-admin.site.register(FlatPage_i18n, MyFlatPageAdmin2)
+admin.site.register(FlatPage_i18n, MyFlatPageAdmin)
 
