@@ -4,15 +4,20 @@ Tareas pendientes de CSS
 ===================
 Marco redondeado a "Donde estamos" y otro para "Carta de servicios"
 Cuadro presentacion sea de igual ancho (no mayor) que el cuadro de video
-Formatear agenda del mes http://dev.fundacionjuannegrin.com/calendario/2014/2
+Formatear agenda del mes p.ej: http://dev.fundacionjuannegrin.com/calendario/2014/2
+Media queries?
 
 Tareas pendientes de contenido o html
 ==========================
-Recuperar el "contacto" (de fjn-beta o prod, o de las fixtures, se perdió por lo del wysiwyg)
+Recuperar el "contacto" y otras páginas perdidas por lo del wysiwyg (de fjn-beta o prod, o de las fixtures)
 Cambiar "Objetivos" por "Objetivos de la fundacion" en el pie (menu y flatpage)
 "Contacto" sería un "Donde estamos" sin mapa
-Licencia creative commons
+Licencia creative commons al pie y con su página
 WAI-A o AA
+
+Tarea final
+============
+Emparejar beta y prod con dev (limpio de pruebas), tanto git + media_root + fixtures/base de datos + passwords.
 
 Otros
 ==========
