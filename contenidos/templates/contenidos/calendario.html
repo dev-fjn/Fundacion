@@ -6,7 +6,9 @@
 {% endblock title %}
 
 {% block agenda %}
-{% calendario_eventos start.year start.month %}
+    <div class="calendario_eventos">
+        {% calendario_eventos start.year start.month %}
+    </div>
 {% endblock agenda %}
 
 {% block hormiga %}
@@ -36,3 +38,4 @@
 		{% endfor %}
 	</ul>
 {% endblock contentr %}
+

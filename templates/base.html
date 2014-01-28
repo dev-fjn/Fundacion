@@ -69,7 +69,9 @@ SE DEJA AQUI SOLO COMO REFERENCIA, HABRA QUE CAMBIARLO POR ALGO BASADO EN BANDER
 {% endblock noticias %}
 
 {% block agenda %}
-{% calendario_eventos %}
+    <div class="calendario_eventos">
+        {% calendario_eventos %}
+    </div>
 {% endblock agenda %}
 
 {% block actividades_internas %}
@@ -104,3 +106,19 @@ SE DEJA AQUI SOLO COMO REFERENCIA, HABRA QUE CAMBIARLO POR ALGO BASADO EN BANDER
     </li>
 </ul>
 {% endblock links5 %}
+
+{% block js_footer %}
+    {{block.super}}
+
+    $(document).ready(function(){ 
+        $('body').on("click", "#mes_previo", function(event) {
+            event.preventDefault();
+            $('.calendario_eventos').load(prev_month);
+        });
+
+        $('body').on("click", "#mes_siguiente", function(event) {
+            event.preventDefault();
+            $('.calendario_eventos').load(next_month);
+        });
+    });
+{% endblock js_footer %}

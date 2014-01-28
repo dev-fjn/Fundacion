@@ -39,6 +39,11 @@
 
 		{% block extra_head %}{% endblock extra_head %}
 
+		<script>
+            {% block js_head %}
+            {% endblock js_head %}
+		</script>
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 
@@ -668,6 +673,8 @@
 		<script src="{% static 'js/uisearch.js' %}"></script>
 		<script>
 			new UISearch( document.getElementById( 'buscador' ) );
+            {% block js_footer %}
+            {% endblock js_footer %}
 		</script>
 		{% block extra_footer %}
 		{% endblock extra_footer %}

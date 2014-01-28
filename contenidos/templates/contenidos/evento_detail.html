@@ -1,4 +1,5 @@
 {% extends 'base_2col.html' %}
+{% load contenidosblocks %}
 
 {% block title %}
 	{{block.super}} - Evento - {{object.titulo}}
@@ -10,6 +11,14 @@
 	<li><a href="#">{{object.titulo}}</a></li>
 </ul>
 {% endblock hormiga %}
+
+{% block agenda %}
+    <div class="calendario_eventos">
+        {% with start=object.fechaevento_set.all.0.fecha %}
+            {% calendario_eventos start.year start.month %}
+        {% endwith %}
+    </div>
+{% endblock agenda %}
 
 {% block body %}
 
@@ -26,12 +35,12 @@
 
                 <h2>Resumen {% if user.is_superuser %}<span><a href="{% url 'admin:contenidos_evento_change' object.id %}">&#9998;</a></span>{% endif %}</h2>
 
-				<div>{{object.resumen}}</div>
+				<div>{{object.resumen|safe}}</div>
 				<br />
 
                 <h2>Fecha y lugar de celebración {% if user.is_superuser %}<span><a href="{% url 'admin:contenidos_evento_change' object.id %}">&#9998;</a></span>{% endif %}</h2>
 
-				<div>{{object.fecha_y_lugar}}</div>
+				<div>{{object.fecha_y_lugar|safe}}</div>
 				<br />
 
 				{% if object.pdf %}
@@ -52,6 +61,4 @@
 		</figure>
 
 	</div>
-
 {% endblock body %}
-
