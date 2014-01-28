@@ -14,10 +14,6 @@ Cambiar "Objetivos" por "Objetivos de la fundacion" en el pie (menu y flatpage)
 Licencia creative commons
 WAI-A o AA
 
-Tareas de django
-=============
-Poner Meta description a todo lo que se pueda
-
 Otros
 ==========
 Presup sw y migracion mysql
@@ -26,3 +22,4 @@ Futuro
 =======
 Flatpages: Independizarlo para poder eliminar su dependencia con sites y use admin propio (no el de contenidos.admin)
 TinyMCE: Poner una lista explicita de tags html y atributos soportados
+Zinnia: no se puede poner el meta description

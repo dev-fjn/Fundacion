@@ -44,9 +44,8 @@ img.scale200 {
 </style>
 {% endblock extra_head %}
 
-{% block title %}
-	{{block.super}} - {{tipo}} - {{ count|yesno:"Busqueda,Listado" }}
-{% endblock title %}
+{% block title %} {{block.super}} - {{tipo}} - {{ count|yesno:"Busqueda,Listado" }} {% endblock title %}
+{% block head_description %} {{block.super}} - {{tipo}} - {{ count|yesno:"Busqueda,Listado" }} {% endblock head_description %}
 
 {% block hormiga %}
 	<ul>

@@ -4,9 +4,8 @@
 {% load zinnia_tags %}
 {% load url from future %}
 
-{% block title %}
-{% if site_name %}{{ site_name }} : {% else %}Fundacion Juan Negrin{% endif %}
-{% endblock title %}
+{% block title %}{% if site_name %}{{ site_name }} : {% else %}Fundacion Juan Negrin{% endif %}{% endblock title %}
+{% block head_description %}{% if site_name %}{{ site_name }} : {% else %}Fundacion Juan Negrin{% endif %}{% endblock head_description %}
 
 {% block extra_head %}
 {{block.super}}

@@ -1,9 +1,8 @@
 {% extends 'base_2col2.html' %}
 {% load contenidosblocks %}
 
-{% block title %}
-{{block.super}} - Agenda {{start|date:"F Y"}}
-{% endblock title %}
+{% block title %} {{block.super}} - Agenda {{start|date:"F Y"}} {% endblock title %}
+{% block head_description %} {{block.super}} - Agenda {{start|date:"F Y"}} {% endblock head_description %}
 
 {% block agenda %}
     <div class="calendario_eventos">

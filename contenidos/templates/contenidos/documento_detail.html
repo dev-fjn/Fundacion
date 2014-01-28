@@ -1,8 +1,7 @@
 {% extends 'base_1col.html' %}
 
-{% block title %}
-    {{block.super}} Listado de {{tipo}} - {{object.titulo}}
-{% endblock title %}
+{% block title %} {{block.super}} Listado de {{tipo}} - {{object.titulo}} {% endblock title %}
+{% block head_description %} {{block.super}} Listado de {{tipo}} - {{object.titulo}} {% endblock head_description %}
 
 {% block hormiga %}
     <ul>

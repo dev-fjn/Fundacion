@@ -1,8 +1,7 @@
 {% extends 'base_1col.html' %}
 
-{% block title %}
-	{{block.super}} - {{page_title}} - {{count|yesno:"Busqueda,Listado"}}
-{% endblock title %}
+{% block title %} {{block.super}} - {{page_title}} - {{count|yesno:"Busqueda,Listado"}} {% endblock title %}
+{% block head_description %} {{block.super}} - {{page_head_description}} - {{count|yesno:"Busqueda,Listado"}} {% endblock head_description %}
 
 {% block hormiga %}
 <ul>
