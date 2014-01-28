@@ -39,12 +39,9 @@ class FechaEventoInline(admin.StackedInline):
     extra = 1
 
 class EventoAdmin(admin.ModelAdmin):
-    list_display = ['titulo', 'fechas']
+    list_display = ['titulo', 'fecha_simple']
     inlines = [FechaEventoInline, ]
     formfield_overrides = FORMFIELD_TINYMCE_SIMPLE
-
-    def fechas(self, obj):
-        return ", ".join([fecha.simple() for fecha in obj.fechaevento_set.all()]) 
 
 
 class LibroAdmin(admin.ModelAdmin):

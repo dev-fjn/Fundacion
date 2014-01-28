@@ -14,9 +14,9 @@ import datetime
 def proximos_eventos(context, cuenta):
     cuenta = int(cuenta)
     start = timezone.now()
-    #end = start+datetime.timedelta(days=60)
+    end = start+datetime.timedelta(days=60)
     # buscar eventos en rango
-    qs = FechaEvento.objects.filter(fecha__gte=start) #, fecha__lte=end)
+    qs = FechaEvento.objects.filter(fecha_inicio__lte=end, fecha_final__gte=start)
     return {
             'user': context.get('user'),
             'object_list': qs[:cuenta], 

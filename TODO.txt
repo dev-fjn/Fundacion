@@ -16,7 +16,6 @@ WAI-A o AA
 
 Tareas de django
 =============
-Agenda: rango de fechas y horas opcionales
 Poner Meta description a todo lo que se pueda
 
 Otros

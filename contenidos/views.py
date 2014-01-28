@@ -52,7 +52,7 @@ class Calendario(TemplateView):
                 'semanas': semanas,
                 'prev': start - datetime.timedelta(days=1),
                 'next': end + datetime.timedelta(days=1),
-                'object_list': FechaEvento.objects.filter(fecha__gte=start, fecha__lte=end),
+                'object_list': FechaEvento.objects.filter(fecha_inicio__lte=end, fecha_final__gte=start),
             })
         return context
 

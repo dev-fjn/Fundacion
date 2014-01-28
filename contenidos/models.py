@@ -8,6 +8,7 @@ from django.db.models.signals import post_save, pre_save
 from django.dispatch import receiver
 from filebrowser.fields import FileBrowseField
 from zinnia.models import Category as CategoryZinnia, Entry as EntryZinnia
+import datetime
 import os
 
 #
@@ -103,37 +104,62 @@ class Evento(models.Model):
         # CUIDADO CUIDADO: Si aparecen efectos de duplicidad de eventos, hay que quitar esto.
         # De momento solo lo veo en /admin/contenidos/evento/ con lo cual está limitado.
         # Pero es que si no me aparecen desordenados y es feo.
-        ordering = ('fechaevento__fecha', )
+        ordering = ('fechaevento__fecha_inicio', )
 
     def fecha_simple(self):
         return ", ".join([ev.simple() for ev in self.fechaevento_set.all()])
 
     @staticmethod
     def datos_para_calendario(start, end):
-        qs = FechaEvento.objects.filter(fecha__gte=start, fecha__lte=end)
+        qs = FechaEvento.objects.filter(fecha_inicio__gte=start, fecha_final__lte=end)
         # clasificamos los resultados por dias
         v = {}
         for fe in qs:
-            dmy = fe.fecha
-            if not dmy in v:
-                v[dmy] = []
-            v[dmy].append(fe.evento)
+            dias = (fe.fecha_final-fe.fecha_inicio).days
+            if dias >= settings.MAXIMOS_DIAS_SEGUIDOS_CALENDARIO:
+                continue # pasamos de pintar cuando hay eventos de más de una semana porque nos va a colorear todo el calendario
+            elif dias < 0:
+                continue # no mola ir hacia atras en el bucle siguiente
+            dmy = fe.fecha_inicio
+            while True:
+                if not dmy in v:
+                    v[dmy] = []
+                v[dmy].append(fe.evento)
+                if dmy == fe.fecha_final:
+                    break
+                else:
+                    dmy += datetime.timedelta(days=1)
         return v
+    
 
 class FechaEvento(models.Model):
     evento = models.ForeignKey(Evento)
-    fecha = models.DateField()
-    hora_inicio = models.TimeField()
-    hora_final = models.TimeField()
+    fecha_inicio = models.DateField(help_text=u"Fecha de inicio del evento")
+    fecha_final = models.DateField(blank=True, null=True, help_text=u"Fecha final del evento inclusive (de no escribir nada se pondrá igual a la fecha de inicio)")
+    hora_inicio = models.TimeField(blank=True, null=True, help_text=u"Hora inicio del evento, vacío si todo el dia")
+    hora_final = models.TimeField(blank=True, null=True, help_text=u"Hora final del evento (de no escribir nada se pondrá igual que la hora de inicio)")
+
+    def fechas(self):
+        if self.fecha_final and self.fecha_inicio != self.fecha_final:
+            return u"%s...%s" % (self.fecha_inicio, self.fecha_final)
+        else:
+            return u"%s" % (self.fecha_inicio, )
+
+    def horas(self):
+        if self.hora_inicio and self.hora_final:
+            return u"%s...%s" % (self.hora_inicio, self.hora_final)
+        else:
+            return u"todo el día"
 
     def simple(self):
-        return u"%s %s...%s" % (self.fecha, self.hora_inicio, self.hora_final, )
+        return u"%s (%s)" % (self.fechas(), self.horas())
 
     def __unicode__(self):
-        return u"%s %s-%s (%s)" % (self.fecha, self.hora_inicio, self.hora_final, self.evento)
+        return u"%s %s (%s)" % (self.fechas(), self.horas(), self.evento)
 
     class Meta:
-        ordering = ('fecha', )
+        ordering = ('fecha_inicio', )
+
 
 class TIPO:
     PONENCIAS = u'Ponencias'
@@ -310,6 +336,19 @@ class Presencia(models.Model):
 #
 # SEÑALES
 # 
+
+@receiver(pre_save, sender=FechaEvento)
+def asigna_finales_al_guardar(sender, instance, **kwargs):
+    # no pueden ser vacias
+    if not instance.fecha_final:
+        instance.fecha_final = instance.fecha_inicio
+    if not instance.hora_final:
+        instance.hora_final = instance.hora_inicio
+    # no pueden estar al reves, les damos la vuelta
+    if instance.fecha_final < instance.fecha_inicio:
+        instance.fecha_final, instance.fecha_inicio = instance.fecha_inicio, instance.fecha_final
+    if instance.hora_final < instance.hora_inicio:
+        instance.hora_final, instance.hora_inicio = instance.hora_inicio, instance.hora_final
 
 @receiver(post_save, sender=Evento)
 def crea_blog_al_guardar_evento(sender, instance, **kwargs):
