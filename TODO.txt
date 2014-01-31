@@ -22,6 +22,7 @@ Emparejar beta y prod con dev (limpio de pruebas), tanto git + media_root + fixt
 Otros
 ==========
 Presup sw y migracion mysql
+Formulario de hacerse amigo ???
 
 Futuro
 =======
