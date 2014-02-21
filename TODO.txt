@@ -9,7 +9,7 @@ Media queries?
 
 Tareas pendientes de contenido o html
 ==========================
-Recuperar el "contacto" y otras páginas perdidas por lo del wysiwyg (de fjn-beta o prod, o de las fixtures)
+Afinar "Sala de prensa > Imagen corporativa"
 Cambiar "Objetivos" por "Objetivos de la fundacion" en el pie (menu y flatpage)
 "Contacto" sería un "Donde estamos" sin mapa
 Licencia creative commons al pie y con su página
@@ -23,9 +23,11 @@ Otros
 ==========
 Presup sw y migracion mysql
 Formulario de hacerse amigo ???
+Indicacion de como se sube los adjuntos (pulsar el boton subir!!)
 
 Futuro
 =======
 Flatpages: Independizarlo para poder eliminar su dependencia con sites y use admin propio (no el de contenidos.admin)
 TinyMCE: Poner una lista explicita de tags html y atributos soportados
 Zinnia: no se puede poner el meta description
+Zinnia: cuando guardas algo, dice "se modifico el entrada de blog", verificar traducciones si son de django o de zinnia
