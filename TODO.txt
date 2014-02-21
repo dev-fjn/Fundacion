@@ -1,5 +1,22 @@
 (hay que hacer la primera y borrar la linea cuando se acabe)
 
+Durante reunion
+================
+Calendario tiene que contemplar los finales de mes!
+Lapiz para bitacora
+Eliminar página del mes y poner una pagina de yyyy/mm/dd
+Boton que se resalte (tanto en pagina inicial como en bbtk y archivos)
+Archivos (poner link a ica atom)
+Burbuja "PARA CONCERTAR VISITAS" con un lapiz y con un if para que si no hay nada lo elimine si 
+Crear usuario periodista con permiso para modificar: Eventos, Noticias, Blog, Notas de Prensa
+Icono de PDF (pasar de lo que diga la miniatura) y eliminar la palabra version
+TXT DOC ODT RTF
+En los dossieres de prensa "Descargar este fichero"
+Poner pareja de botones centrados en vertical
+Migrar a mysql?
+Pasar a dev
+CORREO WASAP desde que esté.
+
 Tareas pendientes de CSS
 ===================
 Marco redondeado a "Donde estamos" y otro para "Carta de servicios"
@@ -21,7 +38,6 @@ Emparejar beta y prod con dev (limpio de pruebas), tanto git + media_root + fixt
 
 Otros
 ==========
-Presup sw y migracion mysql
 Formulario de hacerse amigo ???
 Indicacion de como se sube los adjuntos (pulsar el boton subir!!)
 
