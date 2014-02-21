@@ -6,6 +6,8 @@ server {
     access_log  /var/log/nginx/fjn_dev.access.log;
     error_log  /var/log/nginx/fjn_dev.error.log;
 
+    include conf.d/post.conf;
+
     location /media  {
         alias /home/fjn_dev/Fundacion/media/;
     }
