@@ -52,9 +52,14 @@ footer#footer{
 
 
     div#legal{
-        text-align:right;
+        text-align:center;
 		font-size: em($font_base - 2);
         color: $color_legal;
         background-color: $background_legal;
+        div {
+            margin-left: 5px;
+            margin-right: 5px;
+            display: inline-block;
+        }
     }
 }

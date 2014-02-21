@@ -94,7 +94,7 @@
 							<div>
 								<ul class="ct-connect">
 									<li>
-										<a href=""><img
+										<a href="/weblog/feeds/"><img
 											src="{% static 'img/rss.png' %}"
 											alt="RSS"
 											width="34"
@@ -102,7 +102,7 @@
 											/></a>
 									</li>
 									<li>
-										<a href=""><img
+										<a href="mailto:fundacionjuannegrin@gmail.com"><img
 											src="{% static 'img/mail.png' %}"
 											alt="Correo Electrónico"
 											width="34"
@@ -110,7 +110,7 @@
 											/></a>
 									</li>
 									<li>
-										<a href=""><img
+										<a href="https://twitter.com/FundacionNegrin"><img
 											src="{% static 'img/t.png' %}"
 											alt="Twitter"
 											width="34"
@@ -118,7 +118,7 @@
 											/></a>
 									</li>
 									<li>
-										<a href=""><img
+										<a href="https://www.facebook.com/FundacionJuanNegrin?fref=ts"><img
 											src="{% static 'img/f.png' %}"
 											alt="Facebook"
 											width="34"
@@ -548,15 +548,16 @@
 					</div>
 					<div id="ffinal">&nbsp;</div>
 					<div id="legal">
-                        <span id="copyright">
-                            &#9742; +34 928 33 75 75 - 
-                            <a href="mailto:fundacionjuannegrin@gmail.com">&#9993; fundacionjuannegrin@gmail.com</a> - 
-                            C/ Reyes Católicos, 30. Las Palmas de Gran Canaria
-                            <br/>
-                            {% now "DATE_FORMAT" %} 
+                        <div>&#9742; +34 928 33 75 75 </div>
+                        &nbsp;&nbsp;&nbsp;
+                        <div><a href="mailto:fundacionjuannegrin@gmail.com">&#9993; fundacionjuannegrin@gmail.com</a></div>
+                        &nbsp;&nbsp;&nbsp;
+                        <div>C/ Reyes Católicos, 30. 35001. Las Palmas de Gran Canaria.</div>
+                        <div>
+                            {% now "Y" %} 
                             {% if not user.is_authenticated %}<a href="{% url "admin:index" %}" title="login">&copy;</a>{% else %}&copy;{% endif %}
-                             Fundación Juan Negrín
-                        </span>
+                            Fundación Juan Negrín
+                        </div>
 <!--
 						<span class="entypo">&#62208;</span>
 						<span class="entypo">&#62217;</span>
