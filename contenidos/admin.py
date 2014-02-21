@@ -36,7 +36,7 @@ class CarruselAdmin(TranslationAdmin):
 
 class FechaEventoInline(admin.StackedInline):
     model = FechaEvento
-    extra = 1
+    extra = 0
 
 class EventoAdmin(admin.ModelAdmin):
     list_display = ['titulo', 'fecha_simple']
