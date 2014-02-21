@@ -2,7 +2,7 @@
 <div class="doc">
 
 
-	<div class="documentos_adjuntos">
+    <div class="documentos_adjuntos">
 
         <header>
             <div>
@@ -12,7 +12,7 @@
                 {% else %}
                     , {{object.autor|default:""}}
                 {% endif %}
-				{% if user.is_superuser %}<div style="float: right"><a href="{% url 'admin:contenidos_documento_change' object.id %}">&#9998;</a></div> {% endif %}
+                {% if user.is_superuser %}<div style="float: right"><a href="{% url 'admin:contenidos_documento_change' object.id %}">&#9998;</a></div> {% endif %}
             </div>
         </header>
         <hr />
@@ -100,7 +100,7 @@
                 <span itemprop="name">{{object.fuente|default:"No hay fuente"}}</span>
             </div>
         </footer>
-	</div>
+    </div>
 </div>
 
 <div><br class="clear" /></div>
