@@ -39,7 +39,7 @@
         <div class="cycle-overlay">---</div>
         {% for carrusel in carruseles %}
             {% if carrusel.es_imagen %}
-            <div class="carrusel" data-cycle-title="{{carrusel.titulo}}">
+            <div class="carrusel" data-cycle-title="{{carrusel.titulo}}" {% if not forloop.first %} style="display:none" {% endif %}>
                 <img alt="{{carrusel.titulo}}" src="{{carrusel.filename}}" />
             </div>
             {% elif carrusel.es_video %}
