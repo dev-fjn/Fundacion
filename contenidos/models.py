@@ -285,8 +285,11 @@ class UrlAdjunto(Adjunto):
         verbose_name_plural = u'Referencias al documento en internet'
 
 class FicheroAdjunto(ComunesMultimedia, Adjunto):
-    filename = FileBrowseField("fichero", max_length=200, directory="documentos")
-    miniatura = FileBrowseField("miniaturas", max_length=200, directory="documentos/miniaturas", help_text=u"Miniatura del contenido, si procede", blank=True, null=True)
+    # NO-FIXME no hay mucha forma de que segun el tipo de contenido cambie la carpeta, y como tendremos media (videos) y documentos, hay que disparar al raiz
+    #filename = FileBrowseField("fichero", max_length=200, directory="documentos")
+    #miniatura = FileBrowseField("miniaturas", max_length=200, directory="documentos/miniaturas", help_text=u"Miniatura del contenido, si procede", blank=True, null=True)
+    filename = FileBrowseField("fichero", max_length=200, directory="")
+    miniatura = FileBrowseField("miniaturas", max_length=200, directory="", help_text=u"Miniatura del contenido, si procede", blank=True, null=True)
 
     class Meta:
         verbose_name = u'Enlace al documento almacenado por FTP'
