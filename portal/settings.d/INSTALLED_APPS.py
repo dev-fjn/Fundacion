@@ -4,6 +4,6 @@ INSTALLED_APPS += (
     'django.contrib.admin',
     'django.contrib.admindocs',
     'django.contrib.webdesign',
-    'south',
+    #mejor asi un ratito bueno'south',
     'gunicorn',
 )
