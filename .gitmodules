@@ -1,6 +1,3 @@
-[submodule "external/django-contactme"]
-	path = external/django-contactme
-	url = git@github.com:dev-fjn/django-contactme.git
 [submodule "external/django-scheduler"]
 	path = external/django-scheduler
 	url = git@github.com:dev-fjn/django-scheduler.git
