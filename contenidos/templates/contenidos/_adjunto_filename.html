@@ -1,6 +1,10 @@
 {% load static %}
 <div class="left">
+    {% if myicon %}
     <img src="{% static myicon %}" alt="icon" longdesc="icon" />
+    {% else %}
+    <img src="{% static "Free-file-icons/16px/" %}{{adjunto.extension}}.png" alt="icon" longdesc="icon" />
+    {% endif %}
     {% if adjunto.url %}
         {{adjunto.titulo|default:adjunto.url}}
     {% else %}

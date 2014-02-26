@@ -27,14 +27,14 @@
                 {% for adjunto in object.adjuntos %}
                     <li>
                         <!--{{adjunto.id}}-{{adjunto.extension}}-->
-                        {% if adjunto.extension = ".pdf" %}
+                        {% if adjunto.es_documento %}
                             <div itemscope itemtype="http://schema.org/Book">
-                                {% include "contenidos/_adjunto_filename.html" with myicon='img/emblem-documents.png' %}
+                                {% include "contenidos/_adjunto_filename.html" %}
                                 {% include "contenidos/_adjunto_miniatura.html" with downloadicon=1 %}
                             </div>
                         {% elif adjunto.es_imagen %}
                             <div>
-                                {% include "contenidos/_adjunto_filename.html" with myicon='img/emblem-photos.png' %}
+                                {% include "contenidos/_adjunto_filename.html" %}
                                 {% include "contenidos/_adjunto_miniatura.html" %}
                             </div>
                         {% elif adjunto.es_video %}

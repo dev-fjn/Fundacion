@@ -5,12 +5,12 @@
         {% else %}
         title="{{adjunto.filename.filename}}" href="{{adjunto.filename}}"
         {% endif %} >
-        {% if adjunto.miniatura %}
+        {% if not downloadicon and adjunto.miniatura %}
             <img src="{{adjunto.miniatura}}" class="scale200" alt="{{adjunto.titulo}}" longdesc="{{adjunto.titulo}} - {{object.autor}}" />
-        {% elif downloadicon or not adjunto.filename %}
-            <img src="{% static 'img/emblem-downloads.png' %}" alt="icon"/>
+        {% elif adjunto.url %}
+            Ir a esta web
         {% else %}
-            <img src="{{adjunto.filename}}" class="scale200" alt="{{adjunto.titulo}}" longdesc="{{adjunto.titulo}} - {{object.autor}}" />
+            Descargar este fichero
         {% endif %}
     </a>
 </div>

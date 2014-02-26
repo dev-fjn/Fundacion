@@ -5,9 +5,6 @@ Durante reunion
 Boton que se resalte (tanto en pagina inicial como en bbtk y archivos)
 Archivos (poner link a ica atom)
 Crear usuario periodista con permiso para modificar: Eventos, Noticias, Blog, Notas de Prensa
-Icono de PDF (pasar de lo que diga la miniatura) y eliminar la palabra version
-TXT DOC ODT RTF
-En los dossieres de prensa "Descargar este fichero"
 Poner pareja de botones centrados en vertical
 Migrar a mysql?
 Pasar a dev

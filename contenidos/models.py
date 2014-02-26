@@ -19,9 +19,10 @@ def _siguiente_orden():
     m = Carrusel.objects.aggregate(models.Max("orden"))["orden__max"]
     return 1 if not m else m+1
 
-EXTENSIONES_IMAGEN = ['.png', '.jpg', '.jpeg', '.gif', '.svg']
-EXTENSIONES_AUDIO = ['.mp3', '.ogg', '.wav']
-EXTENSIONES_VIDEO = ['.flv', '.mp4', '.ogv', '.webm']
+EXTENSIONES_IMAGEN = ['png', 'jpg', 'jpeg', 'gif', 'svg']
+EXTENSIONES_AUDIO = ['mp3', 'ogg', 'wav']
+EXTENSIONES_VIDEO = ['flv', 'mp4', 'ogv', 'webm']
+EXTENSIONES_DOCUMENTO = ['txt', 'rtf', 'doc', 'odt', 'docx', 'pdf']
 
 COLETILLAS_AUDIO = [
     ('.mp3', 'audio/mpeg'),
@@ -42,17 +43,25 @@ class ComunesMultimedia(object):
     # pero, aunque podria, no pongo ese field aqui ya que cada hijo lo lleva
     # configurado en una carpeta diferente.
 
+    @property
     def extension(self):
-        return os.path.splitext(self.filename.path)[1]
+        return os.path.splitext(self.filename.path)[1][1:]
 
+    @property
     def es_imagen(self):
-        return self.extension() in EXTENSIONES_IMAGEN
+        return self.extension in EXTENSIONES_IMAGEN
 
+    @property
     def es_audio(self):
-        return self.extension() in EXTENSIONES_AUDIO
+        return self.extension in EXTENSIONES_AUDIO
 
+    @property
     def es_video(self):
-        return self.extension() in EXTENSIONES_VIDEO
+        return self.extension in EXTENSIONES_VIDEO
+
+    @property
+    def es_documento(self):
+        return self.extension in EXTENSIONES_DOCUMENTO
 
     def _busca_por_coletillas(self, lista_coletillas):
         fichero_sin_coletilla = None
