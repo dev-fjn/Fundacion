@@ -1,0 +1,67 @@
+{% extends 'base_2col.html' %}
+{% load contenidosblocks %}
+
+{% block title %} {{block.super}} - Agenda {{now|date:"DATE_FORMAT"}} {% endblock title %}
+{% block head_description %} {{block.super}} - Agenda {{now|date:"DATE_FORMAT"}} {% endblock head_description %}
+
+{% block hormiga %}
+<ul>
+	<li><a href="#">Agenda</a></li>
+	<li><a href="#">Eventos para el {{now|date:"DATE_FORMAT"}}</a></li>
+</ul>
+{% endblock hormiga %}
+
+{% block agenda %}
+    <div class="calendario_eventos">
+        {% calendario_eventos now.year now.month %}
+    </div>
+{% endblock agenda %}
+
+{% block body %}
+<h2>{{object_list.count}} {{object_list.count|pluralize:"evento,eventos"}} para el dia {{now|date:"DATE_FORMAT"}}</h2>
+    {% for object in object_list %}
+        <div class="evento" itemscope itemtype="http://schema.org/Event">
+            <h1 itemprop="name">{{object.titulo}}</h1>
+            <figure>
+                {% if object.imagen %}
+                <img itemprop="image" src="{{MEDIA_URL}}{{object.imagen}}" alt="{{object.titulo}}" />
+                {% endif %}
+
+                <figcaption>
+                    <h2>Resumen {% if user.is_superuser %}<span><a href="{% url 'admin:contenidos_evento_change' object.id %}">&#9998;</a></span>{% endif %}</h2>
+                    <div>{{object.resumen|safe}}</div>
+                    <br />
+
+                    <h2>Fecha y lugar de celebración {% if user.is_superuser %}<span><a href="{% url 'admin:contenidos_evento_change' object.id %}">&#9998;</a></span>{% endif %}</h2>
+                    <div>{{object.fecha_y_lugar|safe}}</div>
+                    <br />
+
+                    {% if object.pdf %}
+                        <div><button itemprop="url" href="{{object.pdf}}">Más información</button></div>
+                        <br />
+                    {% endif %}
+
+                    {% for fecha in object.fechaevento_set.all %}
+                        <div>
+                            {% if fecha.fecha_inicio != fecha.fecha_final %}
+                                Desde el día <time datetime="{{fecha.fecha_inicio|date:'Y-m-d'}}">{{fecha.fecha_inicio}}</time> hasta el día <time datetime="{{fecha.fecha_final|date:'Y-m-d'}}">{{fecha.fecha_final}}</time> inclusive
+                            {% else %}
+                                El día <time datetime="{{fecha.fecha_inicio|date:'Y-m-d'}}">{{fecha.fecha_inicio}}</time>
+                            {% endif %}
+                            {% if not fecha.hora_inicio %}
+                                durante todo el día.
+                            {% else %}
+                                desde las <time datetime="{{fecha.hora_inicio}}">{{fecha.hora_inicio}}</time> hasta las <time datetime="{{fecha.hora_final}}">{{fecha.hora_final}}</a>.
+                            {% endif %}
+                        </div>
+                    {% empty %}
+                        (no se ha asignado fecha a este evento)
+                    {% endfor %}
+                </figcaption>
+            </figure>
+        </div>
+    {% empty %}
+    <div>No hay eventos para este día.</div>
+    {% endfor %}
+{% endblock body %}
+

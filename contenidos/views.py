@@ -25,34 +25,36 @@ class Home(TemplateView):
         return context
 
 class Calendario(TemplateView):
-    only = False
+    template_name = "contenidos/_calendario_eventos.html"
 
-    def get_template_names(self):
-        if self.only:
-            return "contenidos/_calendario_eventos.html"
-        else:
-            return "contenidos/calendario.html"
-
-    def get_context_data(self, **kwargs):
+    def get_context_data(self, year, month, **kwargs):
         context = super(Calendario, self).get_context_data(**kwargs)
         now = timezone.now()
-        if not 'year' in kwargs or not 'month' in kwargs:
-            year, month = now.year, now.month
-        else:
-            year, month = int(kwargs.get('year')), int(kwargs.get('month'))
+        year, month = int(year), int(month, 10)
         start = datetime.date(year, month, 1)
         dsemana, dultimo = calendar.monthrange(year, month)
         end = start + datetime.timedelta(days=dultimo-1)
         diccionario = Evento.datos_para_calendario(start, end)
         semanas = calendario_por_meses(start, end, diccionario)
         context.update({
-                'only': self.only,
                 'hoy': now,
                 'start': start,
                 'semanas': semanas,
                 'prev': start - datetime.timedelta(days=1),
                 'next': end + datetime.timedelta(days=1),
-                'object_list': FechaEvento.objects.filter(fecha_inicio__lte=end, fecha_final__gte=start),
+            })
+        return context
+
+class EventoDay(TemplateView):
+    template_name = "contenidos/evento_day.html"
+
+    def get_context_data(self, year, month, day, **kwargs):
+        context = super(EventoDay, self).get_context_data(**kwargs)
+        now = datetime.date(int(year), int(month, 10), int(day, 10))
+        print now
+        context.update({
+                'now': now,
+                'object_list': Evento.objects.filter(fechaevento__fecha_inicio__lte=now, fechaevento__fecha_final__gte=now),
             })
         return context
 

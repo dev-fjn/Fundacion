@@ -111,14 +111,12 @@ class Evento(models.Model):
 
     @staticmethod
     def datos_para_calendario(start, end):
-        qs = FechaEvento.objects.filter(fecha_inicio__gte=start, fecha_final__lte=end)
+        qs = FechaEvento.objects.filter(fecha_final__gte=start, fecha_inicio__lte=end)
         # clasificamos los resultados por dias
         v = {}
         for fe in qs:
             dias = (fe.fecha_final-fe.fecha_inicio).days
-            if dias >= settings.MAXIMOS_DIAS_SEGUIDOS_CALENDARIO:
-                continue # pasamos de pintar cuando hay eventos de más de una semana porque nos va a colorear todo el calendario
-            elif dias < 0:
+            if dias < 0:
                 continue # no mola ir hacia atras en el bucle siguiente
             dmy = fe.fecha_inicio
             while True:

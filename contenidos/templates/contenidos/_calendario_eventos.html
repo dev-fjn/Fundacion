@@ -1,16 +1,7 @@
 <div>
-    {#<span><a {% if only %}id="mes_previo"{% endif %} href="{% url 'calendario' prev.year prev.month %}">&nbsp;&#9664;&nbsp;</a></span> #}
-    <span><a {% if only %}id="mes_previo" {% else %}href="{% url 'calendario' prev.year prev.month %}"{% endif %} >&nbsp;&#9664;&nbsp;</a></span>
-
-    <span>
-        {% if only %}
-            <a href="{% url 'calendario' start.year start.month %}">{{start|date:"F Y"}}</a>
-        {% else %}
-            {{start|date:"F Y"}}
-        {% endif %}
-    </span>
-
-    <span><a {% if only %}id="mes_siguiente" {% else %}href="{% url 'calendario' next.year next.month %}"{% endif %} >&nbsp;&#9654;&nbsp;</a></span>
+    <span><a id="mes_previo">&nbsp;&#9664;&nbsp;</a></span>
+    <span>{{start|date:"F Y"}}</span>
+    <span><a id="mes_siguiente">&nbsp;&#9654;&nbsp;</a></span>
 </div>
 
 <table style="align:center; width:100%;" accesskey="a" role="grid">
@@ -34,9 +25,9 @@
             {% for dia, lista_eventos in semana %}
                 {% if dia.month == start.month %}
                     {% if lista_eventos|length == 1 %}
-                        <td class="{% if hoy == dia %}evento_hoy{% else %}evento{% endif %}"><span><a href="{% url 'evento_view' lista_eventos.0.pk %}" title="{{lista_eventos.0}}">{{dia.day}}</a></span></td>
+                        <td class="{% if hoy == dia %}evento_hoy{% else %}evento{% endif %}"><span><a href="{% url 'evento_day' dia.year dia.month dia.day %}" title="{{lista_eventos.0}}">{{dia.day}}</a></span></td>
                     {% elif lista_eventos %}
-                        <td class="{% if hoy == dia %}evento_hoy{% else %}evento{% endif %}"><span><a href="{% url 'calendario' start.year start.month %}" title="{{lista_eventos|length}} eventos disponibles">{{dia.day}}</a></span></td>
+                        <td class="{% if hoy == dia %}evento_hoy{% else %}evento{% endif %}"><span><a href="{% url 'evento_day' dia.year dia.month dia.day %}" title="{{lista_eventos|length}} eventos disponibles">{{dia.day}}</a></span></td>
                     {% elif hoy == dia %}
                         <td class="actual"><span>{{dia.day}}</span></td>
                     {% else %}
@@ -52,8 +43,8 @@
 </table>
 
 <script type="text/javascript">
-    prev_month="{% url 'calendario_only' prev.year prev.month %}";
-    next_month="{% url 'calendario_only' next.year next.month %}";
+    prev_month="{% url 'calendario_js' prev.year prev.month %}";
+    next_month="{% url 'calendario_js' next.year next.month %}";
 </script>
 
 
