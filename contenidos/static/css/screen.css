@@ -829,18 +829,20 @@ section#slide {
 }
 
 /* line 3, ../sass/estilos/_expo.scss */
-section#expo {
+section.expo {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
   -ms-border-radius: 0.625em;
   -o-border-radius: 0.625em;
   border-radius: 0.625em;
   border: 1px solid #c1b7a4;
-  text-align: justify;
+  padding: .5em;
+  margin: .5em;
+  text-align: center;
   vertical-align: middle;
 }
-/* line 8, ../sass/estilos/_expo.scss */
-section#expo div#expo_sep {
+/* line 15, ../sass/estilos/_expo.scss */
+section.expo div.expo_sep {
   padding: 0.5em;
   margin: 0.5em;
 }
@@ -850,31 +852,45 @@ div#ourinfo {
   clear: both;
   text-align: center;
 }
-/* line 7, ../sass/estilos/_botones_centrales.scss */
-div#ourinfo section#where {
+
+/* line 10, ../sass/estilos/_botones_centrales.scss */
+.boton {
+  position: relative;
+  text-align: center;
+}
+/* line 15, ../../../../../../var/lib/gems/1.9.1/gems/compass-recipes-0.3.0/stylesheets/recipes/shadow/drop/_transform-requirement.scss */
+.boton > :last-child::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: white;
+}
+
+/* line 15, ../sass/estilos/_botones_centrales.scss */
+.boton a {
   -webkit-border-radius: 0.625em;
   -moz-border-radius: 0.625em;
   -ms-border-radius: 0.625em;
   -o-border-radius: 0.625em;
   border-radius: 0.625em;
+  -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3);
   text-align: center;
   vertical-align: middle;
   padding-top: .2em;
   padding-bottom: .2em;
+  padding-left: 1em;
+  padding-right: 1em;
   min-height: 1.5em;
 }
-/* line 16, ../sass/estilos/_botones_centrales.scss */
-div#ourinfo section#services {
-  -webkit-border-radius: 0.625em;
-  -moz-border-radius: 0.625em;
-  -ms-border-radius: 0.625em;
-  -o-border-radius: 0.625em;
-  border-radius: 0.625em;
-  text-align: center;
-  vertical-align: middle;
-  padding-top: .2em;
-  padding-bottom: .2em;
-  min-height: 1.5em;
+/* line 26, ../sass/estilos/_botones_centrales.scss */
+.boton a:hover {
+  background-color: #c1b7a4;
 }
 
 /* line 17, ../sass/estilos/_variable_1col.scss */
@@ -1257,9 +1273,9 @@ section#variable_2col section#body div.zinnia {
 
 /* line 5, ../sass/estilos/_variable_2col_especial.scss */
 section#variable_2col_especial section#body {
-  width: 74.57627%;
+  width: 74.76636%;
   float: left;
-  margin-right: 1.69492%;
+  margin-right: 0.93458%;
   display: inline;
   -webkit-border-radius: 0.25em;
   -moz-border-radius: 0.25em;
@@ -1277,25 +1293,25 @@ section#variable_2col_especial section#body div#space {
 }
 /* line 17, ../sass/estilos/_variable_2col_especial.scss */
 section#variable_2col_especial section#body div#space section#bodyleft {
-  width: 43.18182%;
+  width: 43.75%;
   float: left;
-  margin-right: 2.27273%;
+  margin-right: 1.25%;
   display: inline;
 }
 /* line 21, ../sass/estilos/_variable_2col_especial.scss */
 section#variable_2col_especial section#body div#space section#bodyright {
-  width: 54.54545%;
+  width: 55.0%;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: -0.5em;
   display: inline;
 }
 /* line 27, ../sass/estilos/_variable_2col_especial.scss */
 section#variable_2col_especial aside#asider {
-  width: 23.72881%;
+  width: 24.29907%;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: -0.5em;
   display: inline;
 }
 /* line 35, ../sass/estilos/_variable_2col_especial.scss */
@@ -1569,10 +1585,16 @@ footer#footer div#ffinal {
 }
 /* line 54, ../sass/estilos/_footer.scss */
 footer#footer div#legal {
-  text-align: right;
+  text-align: center;
   font-size: 0.875em;
   color: #e6e6e6;
   background-color: #bbb5a4;
+}
+/* line 59, ../sass/estilos/_footer.scss */
+footer#footer div#legal div {
+  margin-left: 5px;
+  margin-right: 5px;
+  display: inline-block;
 }
 
 /* -------------------------------------------------------------------------*/
@@ -1611,17 +1633,17 @@ footer#footer div#legal {
 }
 /* line 57, ../sass/screen.scss */
 .container header section#banner section#relleno {
-  width: 66.10169%;
+  width: 66.35514%;
   float: left;
-  margin-right: 1.69492%;
+  margin-right: 0.93458%;
   display: inline;
 }
 /* line 61, ../sass/screen.scss */
 .container header section#banner section#caja {
-  width: 32.20339%;
+  width: 32.71028%;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: -0.5em;
   display: inline;
 }
 /* line 64, ../sass/screen.scss */
@@ -1629,7 +1651,7 @@ footer#footer div#legal {
   width: 100%;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: -0.5em;
   display: inline;
 }
 /* line 69, ../sass/screen.scss */
@@ -1637,7 +1659,7 @@ footer#footer div#legal {
   width: 100%;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: -0.5em;
   display: inline;
 }
 /* line 73, ../sass/screen.scss */
@@ -1645,7 +1667,7 @@ footer#footer div#legal {
   width: 100%;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: -0.5em;
   display: inline;
 }
 /* line 79, ../sass/screen.scss */
@@ -1653,7 +1675,7 @@ footer#footer div#legal {
   width: 100%;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: -0.5em;
   display: inline;
 }
 /* line 124, ../sass/screen.scss */
@@ -1661,7 +1683,7 @@ footer#footer div#legal {
   width: 100%;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: -0.5em;
   display: inline;
 }
 /* line 128, ../sass/screen.scss */
@@ -1669,7 +1691,7 @@ footer#footer div#legal {
   width: 100%;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: -0.5em;
   display: inline;
 }
 /* line 150, ../sass/screen.scss */
@@ -1677,7 +1699,7 @@ footer#footer div#legal {
   width: 100%;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: -0.5em;
   display: inline;
 }
 /* line 154, ../sass/screen.scss */
@@ -1685,21 +1707,21 @@ footer#footer div#legal {
   width: 100%;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: -0.5em;
   display: inline;
 }
 /* line 157, ../sass/screen.scss */
 .container div.content section#variable aside#asidel {
-  width: 23.72881%;
+  width: 24.29907%;
   float: left;
-  margin-right: 1.69492%;
+  margin-right: 0.93458%;
   display: inline;
 }
 /* line 177, ../sass/screen.scss */
 .container div.content section#variable section#body {
-  width: 49.15254%;
+  width: 49.53271%;
   float: left;
-  margin-right: 1.69492%;
+  margin-right: 0.93458%;
   display: inline;
   overflow: hidden;
   *zoom: 1;
@@ -1710,112 +1732,112 @@ footer#footer div#legal {
 .container div.content section#variable section#body div#ourinfo {
   width: 100%;
   float: left;
-  margin-right: 3.44828%;
+  margin-right: 1.88679%;
   display: inline;
 }
 /* line 187, ../sass/screen.scss */
 .container div.content section#variable section#body div#ourinfo section#where {
-  width: 48.27586%;
+  width: 49.0566%;
   float: left;
-  margin-right: 3.44828%;
+  margin-right: 1.88679%;
   display: inline;
 }
 /* line 191, ../sass/screen.scss */
 .container div.content section#variable section#body div#ourinfo section#services {
-  width: 48.27586%;
+  width: 49.0566%;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: -0.5em;
   display: inline;
 }
 /* line 203, ../sass/screen.scss */
 .container div.content section#variable aside#asider {
-  width: 23.72881%;
+  width: 24.29907%;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: -0.5em;
   display: inline;
 }
 /* line 217, ../sass/screen.scss */
 .container div.content section#variable_1col section#body {
   width: 100%;
   float: left;
-  margin-right: 3.44828%;
+  margin-right: 1.88679%;
   display: inline;
 }
 /* line 222, ../sass/screen.scss */
 .container div.content section#variable_1col section#body div#libro_list div.ficha div.portada_libro {
-  width: 31.03448%;
+  width: 32.07547%;
   float: left;
-  margin-right: 3.44828%;
+  margin-right: 1.88679%;
   display: inline;
 }
 /* line 225, ../sass/screen.scss */
 .container div.content section#variable_1col section#body div#libro_list div.ficha div.datos_libro {
-  width: 65.51724%;
+  width: 66.03774%;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: -0.5em;
   display: inline;
 }
 /* line 238, ../sass/screen.scss */
 .container div.content section#variable_2col section#body {
-  width: 74.57627%;
+  width: 74.76636%;
   float: left;
-  margin-right: 1.69492%;
+  margin-right: 0.93458%;
   display: inline;
 }
 /* line 243, ../sass/screen.scss */
 .container div.content section#variable_2col section#body div.presencia dl dt {
-  width: 54.54545%;
+  width: 55.0%;
   float: left;
-  margin-right: 2.27273%;
+  margin-right: 1.25%;
   display: inline;
 }
 /* line 246, ../sass/screen.scss */
 .container div.content section#variable_2col section#body div.presencia dl dd {
-  width: 43.18182%;
+  width: 43.75%;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: -0.5em;
   display: inline;
 }
 /* line 254, ../sass/screen.scss */
 .container div.content section#variable_2col aside#asider {
-  width: 23.72881%;
+  width: 24.29907%;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: -0.5em;
   display: inline;
 }
 /* line 273, ../sass/screen.scss */
 .container div.content section#variable_2col_especial section#body {
-  width: 74.57627%;
+  width: 74.76636%;
   float: left;
-  margin-right: 1.69492%;
+  margin-right: 0.93458%;
   display: inline;
 }
 /* line 278, ../sass/screen.scss */
 .container div.content section#variable_2col_especial section#body div#space section#bodyleft {
-  width: 43.18182%;
+  width: 43.75%;
   float: left;
-  margin-right: 2.27273%;
+  margin-right: 1.25%;
   display: inline;
 }
 /* line 282, ../sass/screen.scss */
 .container div.content section#variable_2col_especial section#body div#space section#bodyright {
-  width: 54.54545%;
+  width: 55.0%;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: -0.5em;
   display: inline;
 }
 /* line 290, ../sass/screen.scss */
 .container div.content section#variable_2col_especial aside#asider {
-  width: 23.72881%;
+  width: 24.29907%;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: -0.5em;
   display: inline;
 }
 /* line 316, ../sass/screen.scss */
@@ -1823,7 +1845,7 @@ footer#footer div#legal {
   width: 100%;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: -0.5em;
   display: inline;
 }
 /* line 319, ../sass/screen.scss */
@@ -1831,22 +1853,22 @@ footer#footer div#legal {
   width: 100%;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: -0.5em;
   display: inline;
 }
 /* line 323, ../sass/screen.scss */
 .container footer#footer div#col1, .container footer#footer div#col2, .container footer#footer div#col3, .container footer#footer div#col4 {
-  width: 16.66667%;
+  width: 18.18182%;
   float: left;
-  margin-right: 4.16667%;
+  margin-right: 2.27273%;
   display: inline;
 }
 /* line 327, ../sass/screen.scss */
 .container footer#footer div#col5 {
-  width: 16.66667%;
+  width: 18.18182%;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: -0.5em;
   display: inline;
 }
 /* line 331, ../sass/screen.scss */
@@ -1854,7 +1876,7 @@ footer#footer div#legal {
   width: 100%;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: -0.5em;
   display: inline;
 }
 /* line 336, ../sass/screen.scss */
@@ -1862,7 +1884,7 @@ footer#footer div#legal {
   width: 100%;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: -0.5em;
   display: inline;
 }
 @media print {

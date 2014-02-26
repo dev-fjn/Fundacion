@@ -47,7 +47,6 @@ class EventoDay(TemplateView):
     def get_context_data(self, year, month, day, **kwargs):
         context = super(EventoDay, self).get_context_data(**kwargs)
         now = datetime.date(int(year), int(month, 10), int(day, 10))
-        print now
         context.update({
                 'now': now,
                 'object_list': Evento.objects.filter(fechaevento__fecha_inicio__lte=now, fechaevento__fecha_final__gte=now),
