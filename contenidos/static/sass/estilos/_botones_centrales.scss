@@ -22,4 +22,8 @@ div#ourinfo{
     padding-left: 1em;
     padding-right: 1em;
     min-height: 1.5em;
+
+    &:hover {
+        background-color: $color08;
+    }
 }
