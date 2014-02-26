@@ -14,6 +14,7 @@ Emparejar beta y prod con dev (limpio de pruebas), tanto git + media_root + fixt
 Licencia creative commons al pie y con su página
 WAI-A o AA
 Media queries?
+http://webdevchecklist.com/
 
 Waiting
 ==========
