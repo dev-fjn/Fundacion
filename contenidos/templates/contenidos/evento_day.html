@@ -6,8 +6,8 @@
 
 {% block hormiga %}
 <ul>
-	<li><a href="#">Agenda</a></li>
-	<li><a href="#">Eventos para el {{now|date:"DATE_FORMAT"}}</a></li>
+    <li><a href="#">Agenda</a></li>
+    <li><a href="#">Eventos para el {{now|date:"DATE_FORMAT"}}</a></li>
 </ul>
 {% endblock hormiga %}
 
@@ -18,7 +18,7 @@
 {% endblock agenda %}
 
 {% block body %}
-<h2>{{object_list.count}} {{object_list.count|pluralize:"evento,eventos"}} para el dia {{now|date:"DATE_FORMAT"}}</h2>
+<div style="margin-left: 1em; margin-top: 1em;"><h2>{{object_list.count}} {{object_list.count|pluralize:"evento,eventos"}} para el dia {{now|date:"DATE_FORMAT"}}</h2></div>
     {% for object in object_list %}
         <div class="evento" itemscope itemtype="http://schema.org/Event">
             <h1 itemprop="name">{{object.titulo}}</h1>
@@ -59,7 +59,11 @@
                     {% endfor %}
                 </figcaption>
             </figure>
+            
         </div>
+		{% if not forloop.last %}
+		<div><hr style="width: 60%; text-align: center;" /></div>
+		{% endif %}
     {% empty %}
     <div>No hay eventos para este día.</div>
     {% endfor %}
