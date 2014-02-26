@@ -2,7 +2,6 @@
 
 Durante reunion
 ================
-Lapiz para bitacora
 Boton que se resalte (tanto en pagina inicial como en bbtk y archivos)
 Archivos (poner link a ica atom)
 Burbuja "PARA CONCERTAR VISITAS" con un lapiz y con un if para que si no hay nada lo elimine si 

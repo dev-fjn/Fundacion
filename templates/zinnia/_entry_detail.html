@@ -1,0 +1,10 @@
+{% extends "zinnia/_entry_detail_base.html" %}
+{% load zinnia_tags %}
+
+{% block entry-title %}
+<h2 class="entry-title">
+    <a href="{{ object.get_absolute_url }}" title="{{ object.title }}" rel="bookmark"> {{ object.title|widont }} </a>
+    {% if user.is_superuser %}<a href="{% url "admin:zinnia_entry_change" object.pk %}">&#9998;</a>{% endif %}
+</h2>
+{% endblock %}
+
