@@ -1,4 +1,4 @@
-{% load staticfiles webdesign %}{% load url from future %}<!DOCTYPE html>
+{% load staticfiles webdesign flatpagesblocks %}{% load url from future %}<!DOCTYPE html>
 <html class="no-js" lang="es">
 	<head>
 		{% block head_title %}<title>{% block title %}Título{% endblock title %}</title>{% endblock head_title %}
@@ -403,9 +403,8 @@
 											{% endblock section_slide %}
 
 											{% block section_expo %}
-												<section id="expo">
-													<div id="expo_sep">
-														aaa
+												<section class="expo">
+													<div class="expo_sep">
 														{% block expo %}
 															<img src="{% static 'img/dummy-Expo-Virtual+(384x288).png' %}" alt="Exposición Virtual" />
 														{% endblock expo %}
@@ -414,19 +413,18 @@
 											{% endblock section_expo %}
 
 											<div><br /></div>
-											<div><br /></div>
 
 											{% block div_ourinfo %}
-											<div id="ourinfo">
-												<section id="where"><a href="/donde-estamos/">Dónde estamos</a></section>
-												<section id="services"><a href="/carta-de-servicios/">Carta de Servicios</a></section>
+											<div id="ourinfo" class="boton">
+                                                <a href="/donde-estamos/" style="width: 50%">Dónde estamos</a>
+                                                &nbsp;&nbsp;
+                                                <a href="/carta-de-servicios/">Carta de Servicios</a>
 											</div>
 											{% endblock div_ourinfo %}
 
 											<div><br /></div>
 											<div><br /></div>
-
-
+											<div><br /></div>
 										{% endblock body %}
 									</section>
 								{% endblock section_body %}
@@ -456,6 +454,7 @@
 												{% endblock actividades_externas %}
 											</section>
 										</section>
+                                        {% flatblock "bloque-portada-derecha" %}
 									</aside>
 								{% endblock aside_asider %}
 							{% endblock variable %}

@@ -1,5 +1,5 @@
 {% extends 'base_3col.html' %}
-{% load contenidosblocks %}
+{% load contenidosblocks flatpagesblocks %}
 
 {% block extra_head %}
     {{block.super}}
@@ -57,16 +57,12 @@
 {% endblock slide %}
 
 {% block section_expo %}
-    {% if flatpage %}
-        <section id="expo">
-			<div id="expo_sep">
-            	{{ flatpage.content|safe }}
-				{% if user.is_superuser %}<div style="text-align: right;"><a href="{% url 'admin:flatpages_i18n_flatpage_i18n_change' flatpage.id %}">&#9998;</a></div> {% endif %}
-			</div>
-        </section>
-    {% else %}
-        (Cambiar el texto de la flatpage "Portada")
-    {% endif %}
+    {% flatblock "bloque-portada-centro" %}
 {% endblock section_expo %}
+
+{% block section_noticias %}
+    {{block.super}}
+    {% flatblock "bloque-portada-izquierda" %}
+{% endblock section_noticias %}
 
 

@@ -1,0 +1,10 @@
+    {% if object and object.content %}
+        <section id="{{flatpage_url}}" class="expo">
+			<div class="expo_sep">
+                {{ object.content|safe }}
+                {% if user.is_superuser %}<div style="text-align: right;"><a href="{% url 'admin:flatpages_i18n_flatpage_i18n_change' object.id %}">&#9998;</a></div> {% endif %}
+            </div>
+        </section>
+    {% else %}
+        <!-- Cambiar el texto de la flatpage "{{flatpage_url}}" -->
+    {% endif %}

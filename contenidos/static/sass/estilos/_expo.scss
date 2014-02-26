@@ -1,11 +1,18 @@
 // Presentacion de la Fundacion en portada
 
-section#expo{
+section.expo{
 	@include border-radius($radio-standar);
+//	border: 1px solid $color08 ;
+//	text-align: justify;
+//	vertical-align: middle;
+
 	border: 1px solid $color08 ;
-	text-align: justify;
+	padding: .5em;
+	margin: .5em;
+	text-align: center;
 	vertical-align: middle;
-	div#expo_sep{
+
+	div.expo_sep{
 		padding: em($font_base/2);
 		margin: em($font_base/2);
 	}

@@ -4,7 +4,6 @@ Durante reunion
 ================
 Boton que se resalte (tanto en pagina inicial como en bbtk y archivos)
 Archivos (poner link a ica atom)
-Burbuja "PARA CONCERTAR VISITAS" con un lapiz y con un if para que si no hay nada lo elimine si 
 Crear usuario periodista con permiso para modificar: Eventos, Noticias, Blog, Notas de Prensa
 Icono de PDF (pasar de lo que diga la miniatura) y eliminar la palabra version
 TXT DOC ODT RTF
