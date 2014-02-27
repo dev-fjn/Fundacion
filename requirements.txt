@@ -16,7 +16,8 @@ django-tinymce
 
 # en produccion
 gunicorn
-psycopg2
+mysql-python
+#psycopg2
 
 # requerido por algo (django?)
 pytz
