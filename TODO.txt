@@ -1,25 +1,18 @@
 (hay que hacer la primera y borrar la linea cuando se acabe)
 
-Durante reunion
-================
-Archivos (poner link a ica atom)
-Migrar a mysql?
-Pasar a dev
-
-CORREO WASAP desde que esté.
-
 Final
 ============
-Emparejar beta y prod con dev (limpio de pruebas), tanto git + media_root + fixtures/base de datos + passwords.
+Indicacion de como se suben los adjuntos (eso de pulsar el boton subir!!)
 Licencia creative commons al pie y con su página
-WAI-A o AA
-Media queries?
+XHTML compliant
+WAI-A o AA compliant
 http://webdevchecklist.com/
+Media queries
 
 Waiting
 ==========
+Poner link a ica atom cuando esté ???
 Formulario de hacerse amigo ???
-Indicacion de como se sube los adjuntos (pulsar el boton subir!!)
 
 Futuro
 =======
