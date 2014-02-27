@@ -37,6 +37,7 @@ section#variable_1col{
 
             div.ficha{
                 $default-box-shadow-inset: false;
+@include drop-shadow-raised;
                 @include clearfix;
                 //background-color: $fondo;
                 @include background-image(linear-gradient(
@@ -103,6 +104,7 @@ section#variable_1col{
             }
 
             div.doc{
+                @include drop-shadow-raised;
                 margin: em($font_base);
                 border: em($font_base);
                 padding: em($font_base);
