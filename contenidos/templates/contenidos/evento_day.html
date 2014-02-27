@@ -24,9 +24,11 @@
             <h1 itemprop="name">{{object.titulo}}</h1>
             <figure>
                 {% if object.imagen %}
+                <div>
                 <img itemprop="image" src="{{MEDIA_URL}}{{object.imagen}}" alt="{{object.titulo}}" />
+                </div>
                 {% endif %}
-
+                <br />
                 <figcaption>
                     <h2>Resumen {% if user.is_superuser %}<span><a href="{% url 'admin:contenidos_evento_change' object.id %}">&#9998;</a></span>{% endif %}</h2>
                     <div>{{object.resumen|safe}}</div>
@@ -51,7 +53,7 @@
                             {% if not fecha.hora_inicio %}
                                 durante todo el día.
                             {% else %}
-                                desde las <time datetime="{{fecha.hora_inicio}}">{{fecha.hora_inicio}}</time> hasta las <time datetime="{{fecha.hora_final}}">{{fecha.hora_final}}</a>.
+                                desde las <time datetime="{{fecha.hora_inicio}}">{{fecha.hora_inicio}}</time> hasta las <time datetime="{{fecha.hora_final}}">{{fecha.hora_final}}</time>.
                             {% endif %}
                         </div>
                     {% empty %}
@@ -59,11 +61,11 @@
                     {% endfor %}
                 </figcaption>
             </figure>
-            
+
         </div>
-		{% if not forloop.last %}
-		<div><hr style="width: 60%; text-align: center;" /></div>
-		{% endif %}
+        {% if not forloop.last %}
+        <div><hr style="width: 60%; text-align: center;" /></div>
+        {% endif %}
     {% empty %}
     <div>No hay eventos para este día.</div>
     {% endfor %}
