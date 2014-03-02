@@ -51,6 +51,12 @@
 	//@include sticky-footer(200px);
 	@include box-shadow(rgba(black, 0.4) 0 0 em(25px), rgba(black, 0.2) 0 0 em(3px) em(1px) inset);
 
+	-webkit-transition: opacity .3s ease-in, color .3s ease-in, background-color .3s ease-in;
+	   -moz-transition: opacity .3s ease-in, color .3s ease-in, background-color .3s ease-in;
+		-ms-transition: opacity .3s ease-in, color .3s ease-in, background-color .3s ease-in;
+		 -o-transition: opacity .3s ease-in, color .3s ease-in, background-color .3s ease-in;
+			transition: opacity .3s ease-in, color .3s ease-in, background-color .3s ease-in;    
+	
 	header {
 
 		section#banner{
@@ -339,35 +345,212 @@
 	}
 
 
+	@media only screen and (min-width: em(320px)) {
+		/* smartphones, iPhone, portrait 480x320 phones */
+		header {
 
+			section#banner{
+				section#relleno{
+					@include span-columns(12 omega, 12);
+				}
 
+				section#caja{
+					@include span-columns(12 omega, 12);
 
+					section#acceso{
+						@include span-columns(12 omega, 12);
+						// Buscador
+					}
 
+					section#social{
+						@include span-columns(12 omega, 12);
+					}
 
+					section#contacto{
+						@include span-columns(12 omega, 12);
+					}
+				}
+			}
 
+			section#menus{
+				@include span-columns(12 omega, 12);
+			}
+		}
+/////////////////////////////////////////////////////////////
+		div.content{
+			@include span-columns(12 omega, 12);
+			section#hormiga{
+				@include span-columns(12 omega, 12);
+			}
+
+			section#info{
+				@include span-columns(12 omega, 12);
+			}
+
+			section#variable{
+				@include span-columns(12 omega, 12);
+				aside#asidel{
+					@include span-columns(12 omega, 12);
+				}
+
+				section#body{
+					@include span-columns(12 omega, 12);
+					@include clearfix;
+					div#ourinfo{
+						@include span-columns(12 omega, 12);
+
+						section#where{
+							@include span-columns(12 omega, 12);
+						}
+						section#services{
+							@include span-columns(12 omega, 12);
+						}
+					}
+					@include clearfix;
+					section#expo{}
+				}
+
+				aside#asider{
+					@include span-columns(12 omega, 12);
+					section#agenda{}
+					section#varios{}
+				}
+			}
+
+			// Sección 'variable' con una sola columna
+			// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			section#variable_1col{
+				section#body{
+					@include span-columns(12 omega, 12);
+					div#libro_list{
+						div.ficha{
+							div.portada_libro{
+								@include span-columns(12 omega, 12);
+							}
+							div.datos_libro{
+								@include span-columns(12 omega, 12);
+							}
+						}
+					}
+					div#space{}
+				}
+			}
+
+			// Sección 'variable' con 2 columnas
+			// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			section#variable_2col{
+				section#body{
+					@include span-columns(12 omega, 12);
+
+					div.presencia{
+						dl{
+							dt{
+								@include span-columns(12 omega, 12);
+							}
+							dd{
+								@include span-columns(12 omega, 12);
+							}
+						}
+
+					}
+				}
+
+				aside#asider{
+					@include span-columns(12 omega, 12);
+					section#agenda{
+						h2{}
+					}
+					section#varios{
+						section#internal{
+							h2{}
+						}
+						section#externas{
+							h2{}
+						}
+					}
+				}
+			}
+
+			// Sección "varioable", con 2 columnas (especial)
+			section#variable_2col_especial{
+
+				section#body{
+					@include span-columns(12 omega, 12);
+
+					div#space{
+
+						section#bodyleft{
+							@include span-columns(12 omega, 12);
+						}
+
+						section#bodyright{
+							@include span-columns(12 omega, 12);
+						}
+
+					}
+
+				}
+
+				aside#asider{
+					@include span-columns(12 omega, 12);
+
+					section#agenda{
+						h2{}
+					}
+
+					section#varios{
+
+						section#internal{
+							h2{}
+						}
+
+						section#externas{
+							h2{}
+						}
+					}
+
+				}
+
+			}
+
+		}
+/////////////////////////////////////////////////////////////
+        footer#footer{
+            @include span-columns(12 omega, 12);
+            div#finicial{@include span-columns(12 omega, 12);}
+            div#col1 {@include span-columns(12 omega, 12);}
+            div#col2 {@include span-columns(12 omega, 12);}
+            div#col3 {@include span-columns(12 omega, 12);}
+            div#col4 {@include span-columns(12 omega, 12);}
+            div#col5 {@include span-columns(12 omega, 12);}
+            div#ffinal{@include span-columns(12 omega, 12);}
+            div#legal{@include span-columns(12 omega, 12);}
+        }
+	}
+
+	@media only screen and (min-width: em(481px)) {
+		/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+		background-color: Blue;
+	}
+	@media only screen and (min-width: em(641px)) {
+		/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+		background-color: Yellow;
+	}
+	@media only screen and (min-width: em(961px)) {
+		/* tablet, landscape iPad, lo-res laptops ands desktops */
+		background-color: Gold;
+	}
+	@media only screen and (min-width: em(1025px)) {
+		/* big landscape tablets, laptops, and desktops */
+		background-color: Khaki;
+	}
+	@media only screen and (min-width: em(1281px)) {
+		/* hi-res laptops and desktops */
+		background-color: Quartz;
+	}
 
 	@media print {
 		background-color: Maroon;
-	}
-
-	@media screen and (max-width: 1280px) {
-//		background-color: Yellow;
-	}
-
-	@media screen and (max-width: 960px) {
-//		background-color: Green;
-	}
-
-	@media screen and (max-width: 800px) {
-//		background-color: Silver;
-	}
-
-	@media screen and (max-width: 480px) {
-		background-color: Blue;
-	}
-
-	@media screen and (max-width: 320px) {
-		background-color: Red;
 	}
 
 }
