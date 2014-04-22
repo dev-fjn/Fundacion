@@ -66,7 +66,7 @@ img.scale200 {
             <br />
 
 			{% for object in object_list %}
-				{% include "contenidos/_documento.html" %}
+				{% include "contenidos/_documento.html" with link=1 %}
 			{% endfor %}
 
 			{% include "contenidos/_paginator.html" %}

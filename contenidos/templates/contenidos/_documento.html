@@ -13,6 +13,7 @@
                     , {{object.autor|default:""}}
                 {% endif %}
                 {% if user.is_superuser %}<div style="float: right"><a href="{% url 'admin:contenidos_documento_change' object.id %}">&#9998;</a></div> {% endif %}
+                {% if link %}<div style="float: right"><a id="titulo" itemprop="name" href="{% url 'dossier_de_prensa_detalle' object.slug %}">#</a></div>{% endif %}
             </div>
         </header>
         <hr />
