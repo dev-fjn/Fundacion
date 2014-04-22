@@ -270,6 +270,10 @@ class Documento(models.Model):
     def __unicode__(self):
         return u"%s: %s" % (self.categoria, self.titulo)
 
+    class Meta:
+        ordering = ('-fecha', )
+
+
 class Adjunto(models.Model):
     documento = models.ForeignKey(Documento)
     titulo = models.CharField(max_length=250)
