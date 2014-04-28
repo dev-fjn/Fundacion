@@ -317,7 +317,7 @@
 
 	}
 
-@include clearfix;
+	@include clearfix;
 
 	footer#footer{
 		@include span-columns(12 omega, 12);
@@ -345,8 +345,14 @@
 	}
 
 
-	@media only screen and (min-width: em(320px)) {
+//	(min-device-pixel-ratio: 2.0)
+//	(min-color-index: 256)
+//	
+
+
+	@media only screen and (max-width: em(640px)) {
 		/* smartphones, iPhone, portrait 480x320 phones */
+		background-color: Red;
 		header {
 
 			section#banner{
@@ -402,6 +408,7 @@
 						section#where{
 							@include span-columns(12 omega, 12);
 						}
+						@include clearfix;
 						section#services{
 							@include span-columns(12 omega, 12);
 						}
@@ -528,29 +535,23 @@
         }
 	}
 
-	@media only screen and (min-width: em(481px)) {
+	@media only screen and (min-width: em(641px)) and (max-width: em(1280px)) {
+	//@media only screen and (min-width: em(481px)) {
 		/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-		background-color: Blue;
+		//background-color: Blue;
 	}
-	@media only screen and (min-width: em(641px)) {
-		/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-		background-color: Yellow;
-	}
-	@media only screen and (min-width: em(961px)) {
-		/* tablet, landscape iPad, lo-res laptops ands desktops */
-		background-color: Gold;
-	}
-	@media only screen and (min-width: em(1025px)) {
-		/* big landscape tablets, laptops, and desktops */
-		background-color: Khaki;
-	}
+
 	@media only screen and (min-width: em(1281px)) {
 		/* hi-res laptops and desktops */
-		background-color: Quartz;
+		//background-color: Green; //Khaki;
+		//$container-width: 100%;
+		//$container-style: fluid;
+		//$factor_texto: 2.22;
+		//$radio-standar: em(10px);
 	}
 
 	@media print {
-		background-color: Maroon;
+		//background-color: Maroon;
 	}
 
 }
