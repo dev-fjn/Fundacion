@@ -64,6 +64,7 @@
 				@include span-columns(8, 12);
 			}
 
+
 			section#caja{
 				@include span-columns(4 omega, 12);
 
@@ -352,7 +353,7 @@
 
 	@media only screen and (max-width: em(640px)) {
 		/* smartphones, iPhone, portrait 480x320 phones */
-		background-color: Red;
+		//background-color: Red;
 		header {
 
 			section#banner{
