@@ -3,17 +3,19 @@
 
 @import "functions";
 
+// Factor de relación entre texto y altura de linea:
+//$factor_texto: 1.22;
+$factor_texto: 1.1;
+
 // Tamaño base para las fuentes
 $size_base: 16px;
 
-// Factor de relaci´on entre texto y altura de linea:
-$factor_texto: 1.22;
-
 // Fuente base:
-$font_base: $size_base;
+$font_base: $size_base * $factor_texto;
 
 // Altura de linea:
-$font_base_line_height: em($font_base * $factor_texto);
+//$font_base_line_height: em($font_base * $factor_texto);
+$font_base_line_height: em($font_base);
 
 // Usado en diferentes partes de la web:
-$radio-standar: em(10px);
+$radio-standar: em(10px * $factor_texto);
