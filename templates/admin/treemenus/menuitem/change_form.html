@@ -29,3 +29,14 @@ Note the "super.super", as the direct parent has the wrong url.
 </div>
 {% endblock %}
 
+
+{% block footer %}
+{{block.super}}
+<ul class="messagelist">
+    <li class="warning">
+        Nota: para eliminar un elemento de menú es condición previa que su <b>Parent</b> sea <b>root</b>.
+        Por tanto, primero deje el <b>Parent</b> como <b>root</b>, pulse <b>Grabar y continuar editando</b> y luego pulse <b>Eliminar<b>.
+    </li>
+</ul>
+{% endblock footer %}
+
